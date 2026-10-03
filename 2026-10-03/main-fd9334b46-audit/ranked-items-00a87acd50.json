@@ -1,0 +1,356 @@
+[
+  {
+    "rank": 1,
+    "title": "Parked cars have jagged panels and incorrect material islands",
+    "severity": "High",
+    "cameras": [
+      "e04-front",
+      "e04-street"
+    ],
+    "defect": "Sedan lamp borders and wheel spokes are ragged; the van has angular arch/sill damage and a blue sliding-door rail. Tail lamps lose their red regions, glass is opaque cobalt, and door features disappear. The five close-ups linked below isolate these defects. These are visible asset faults, beyond the intended flat-colour treatment.",
+    "owner": "Vehicle asset lane (%65): tools/assets/build-vehicle-models.py; tools/assets/reduce-vehicle-surfaces.mjs; scripts/environment_modules/module_meshes.ts.",
+    "cause": "Texture-colour classification and label smoothing split painted/reflective pixels into incorrect physical materials; seam reduction and per-triangle normals exaggerate panel damage. Shared glass shading contributes the cobalt fill.",
+    "acceptance": "Recheck both models from front, rear and side at 3\u20136 m, in sun and shade; preserve panel silhouettes, lamp regions and wheel circles."
+  },
+  {
+    "rank": 2,
+    "title": "Furman closure barriers float above the paving",
+    "severity": "High",
+    "cameras": [
+      "gate15",
+      "gate16"
+    ],
+    "defect": "The long concrete/chain-link closure crosses above the lower pavement with daylight underneath and isolated dark triangular supports. At gate15 it also cuts through the existing park fence. The stepped grade is not resolved as a believable grounded closure.",
+    "owner": "Closure placement lane: tools/maps/dumbo/fit-cordon-props.mjs; scripts/dumbo_cordon_visuals.ts; scripts/dumbo_cordon_prop_ground.generated.ts.",
+    "cause": "A long rigid barrier span uses fitted floor/pitch/roll and local aprons without resolving the full stepped ground footprint or pre-existing fence.",
+    "acceptance": "Fit every closure segment to actual ground and remove intersecting street furniture/fences along the entire closure, rather than hiding one camera gap."
+  },
+  {
+    "rank": 3,
+    "title": "Empire park paths break into disconnected white islands",
+    "severity": "High",
+    "cameras": [
+      "e02-street",
+      "e02-front",
+      "park-west",
+      "c02"
+    ],
+    "defect": "The park path consists of separate white slabs interrupted by lawn; the foreground slab ends, a narrow green stripe separates the next piece, and the continuation disappears across the lawn. It reads as a missing or buried path, not a designed junction. This is separate from the previously repaired gate02 path.",
+    "owner": "Ground/park geometry lane: tools/maps/sands-pearl/build.mjs; scripts/client/ground_facets.ts; surveyed path/grass surface outlines.",
+    "cause": "Path and lawn planes or clipping ownership disagree, allowing grass to cover sections or leaving incomplete joins.",
+    "acceptance": "Walk the full path from both ends and across every junction; retain continuous paving through the surveyed park route."
+  },
+  {
+    "rank": 4,
+    "title": "Tree branches have open-looking cuts at their joints",
+    "severity": "High",
+    "cameras": [
+      "e01-street",
+      "gate15"
+    ],
+    "defect": "Several forks show bright wedges of sky between successive brown branch segments. The nearest gate15 right-hand tree and both foreground trees at e01-street show abrupt broken-looking joints and exposed cut ends.",
+    "owner": "Vegetation geometry lane (%65): scripts/environment_modules/vegetation_family.ts, branch() and familyTree().",
+    "cause": "Independent tapered seven-sided tubes meet with different ring orientations/radii without a continuous joint; the visible gaps are consistent with insufficient overlap.",
+    "acceptance": "Inspect every branch silhouette at eye level against bright sky; joints must remain connected for all generated sizes and leans."
+  },
+  {
+    "rank": 5,
+    "title": "Bridge towers and underside still read as coarse scaffolding",
+    "severity": "High",
+    "cameras": [
+      "underbridge",
+      "e02-front",
+      "c03",
+      "shore-06"
+    ],
+    "defect": "The near bridge support is an enormous blank faceted prism with little masonry articulation; deck and cable structure read as thin lines and sparse horizontal beams. The dominant waterfront landmark has a much lower level of structural detail than nearby buildings.",
+    "owner": "Bridge/horizon geometry lane: tools/maps/modules/build-horizon.mjs; scripts/client/horizon_transport.generated.ts and horizon_view_geometry.generated.ts.",
+    "cause": "Simplified surveyed tower extrusion and lightweight transport line geometry provide the outline but omit substantial tower openings, base structure and deck/underside members.",
+    "acceptance": "Review the near support from both sides and directly underneath; improve structure without introducing giant blocking slabs."
+  },
+  {
+    "rank": 6,
+    "title": "Shaded streets lose cars, wheels and road readability",
+    "severity": "High",
+    "cameras": [
+      "e04-front",
+      "gate12",
+      "e04-street"
+    ],
+    "defect": "In the deeply shaded street, asphalt is nearly black navy and dark sedans merge into it; lower panels, tyres and inset details become hard to separate. The pale pavement remains legible, making the loss of road detail especially conspicuous.",
+    "owner": "Lighting/surface lane (%64 and bake lane C): environment lighting, asphalt palette, ambient/SSAO and baked indirect light.",
+    "cause": "Dark asphalt and dark vehicle materials combine with cool weak indirect illumination/contact darkening. The image alone cannot assign the loss exclusively to the bake or shader.",
+    "acceptance": "Maintain shade direction and contrast while recovering visible separation of tyres, bodies and asphalt across all shaded streets."
+  },
+  {
+    "rank": 7,
+    "title": "Tree crowns repeat the same lime-green pompon silhouette",
+    "severity": "High",
+    "cameras": [
+      "e01-street",
+      "e02-street",
+      "pier-path",
+      "shore-07"
+    ],
+    "defect": "Repeated overlapping round lobes, thick similar forks and light yellow-green foliage dominate streets and parks. They read as a repeated toy-tree family rather than the concepts' varied, more designed angular crowns and deeper olive foliage.",
+    "owner": "Vegetation family/placement lane (%65): scripts/environment_modules/vegetation_family.ts and vegetation_instances.ts.",
+    "cause": "The same lobe arrangement and bark proportions recur with limited silhouette and colour variation. The later tree-variety preview is not evidence that this pinned main already contains it.",
+    "acceptance": "Check mixed species, silhouette, size and lean along entire streets and park edges, with enough coherent planting structure to avoid random clutter."
+  },
+  {
+    "rank": 8,
+    "title": "River waves are too shallow and foam reads as surface marks",
+    "severity": "High",
+    "cameras": [
+      "c06",
+      "c07",
+      "shore-03",
+      "c03"
+    ],
+    "defect": "The approved 06/07 have strong angular crests, dark troughs and layered cyan/navy planes. Main is a comparatively level teal surface with small cream streaks; overhead, long aligned bands remain apparent. At rocks, thin closed foam outlines read as drawn loops instead of broken turbulent patches. Whitecaps themselves are approved.",
+    "owner": "Water lane (#887 owner): scripts/client/waterfront.ts and the water material/mesh generation in tools/maps/modules/build-waterfront.mjs.",
+    "cause": "Low visible wave relief and a directionally coherent wave field flatten the river; crest/shore foam masks produce streaks and closed contours.",
+    "acceptance": "Check 06/07, both bridge directions, shoreline corners and overhead distance views; preserve readable relief without regular ribbons or excessive white foreground."
+  },
+  {
+    "rank": 9,
+    "title": "Ferry piers remain giant unfinished concrete slabs",
+    "severity": "High",
+    "cameras": [
+      "c03",
+      "shore-06"
+    ],
+    "defect": "The large projecting platform and T-shaped pier are blank pale extrusions with abrupt notch corners and almost no visible edge fascia, supporting structure, guard treatment or landing details. From eye level their thick white walls dominate the waterfront.",
+    "owner": "Waterfront/pier geometry lane: tools/maps/modules/build-waterfront.mjs and build-waterfront-props.mjs; scripts/client/waterfront.ts.",
+    "cause": "Survey footprints are extruded into coarse slabs without a completed pier construction/dressing layer.",
+    "acceptance": "Review every projecting platform at eye height, including its underside and shore connection; use a coherent support, edge and access treatment."
+  },
+  {
+    "rank": 10,
+    "title": "A long dark strip protrudes through the river",
+    "severity": "High",
+    "cameras": [
+      "shore-09"
+    ],
+    "defect": "Left of the skyline, a long dark brown-purple flat strip runs across the water toward the middle distance. It has a hard land-like silhouette and no surrounding wave relief. This is visibly distinct from the small low horizon sliver and from approved whitecaps.",
+    "owner": "Ground/water boundary lane: tools/maps/modules/build-waterfront.mjs and build-horizon.mjs; surveyed terrain/shore clipping and water height.",
+    "cause": "Likely a terrain/shore surface above the river or an uncovered boundary strip. Source attribution needs an inspector hide-group check; it is not proven from the screenshot.",
+    "acceptance": "Inspect and remove the unintended exposed strip, then sweep the river edge from both directions; do not replace it with a larger shelf or pale wall."
+  },
+  {
+    "rank": 11,
+    "title": "Ground-floor glazing reads as opaque blue wall panels",
+    "severity": "Medium",
+    "cameras": [
+      "e01-street",
+      "e02-street",
+      "underbridge"
+    ],
+    "defect": "Large storefront-sized openings are filled with identical dark navy/cobalt rectangles and thick black mullions. They lack visible entrance/threshold differentiation and convincing glass depth; the street frontage reads as sealed blue panels.",
+    "owner": "Facade/glass lane: tools/maps/modules/facade.mjs; scripts/client/dumbo_facades.ts; scripts/environment_modules/module_meshes.ts and shared morning glass material.",
+    "cause": "One opaque sky-coloured glass treatment is reused across ground-floor and upper-window roles, with limited entry-specific geometry.",
+    "acceptance": "Compare shaded and sunny frontages; distinguish doors, display windows and upper windows while keeping the approved material style."
+  },
+  {
+    "rank": 12,
+    "title": "Buildings repeat one window-frame grammar and lack distinct bases",
+    "severity": "Medium",
+    "cameras": [
+      "c01",
+      "e01-front",
+      "e04-front",
+      "e05-front"
+    ],
+    "defect": "Whole blocks repeat the same bright picture-frame windows, colour bands and fire-escape rhythm. Large blind walls and ground floors have little architectural purpose or service detail. Different footprints still read as variants of the same building kit.",
+    "owner": "Building architecture lane (#892 owner): tools/maps/modules/build-masonry.mjs, facade.mjs and facade style modules.",
+    "cause": "Facade generation varies colour and dimensions more than building-specific bay rhythm, base, entrance, cornice and blind-wall treatment.",
+    "acceptance": "Give coherent identities to representative buildings and carry each treatment around corners; avoid dressing only the concept-facing elevation."
+  },
+  {
+    "rank": 13,
+    "title": "Skyline facades form a uniform punched-window grid",
+    "severity": "Medium",
+    "cameras": [
+      "c06",
+      "c07",
+      "shore-03",
+      "shore-09"
+    ],
+    "defect": "Window detail is present again, so the old blank-box failure is not repeated. However, most skyline buildings share a cool blue-grey finish and evenly punched rectangular grid, with limited facade hierarchy and crown variation. The concepts have more varied warm/cool masses and irregular architectural detail.",
+    "owner": "Skyline lane (%64): tools/maps/modules/build-horizon.mjs; scripts/client/city_horizon.generated.ts and assets/shaders/city_building.gdshader.",
+    "cause": "A small facade palette and repeated window rule dominate surveyed massing; fog further equalizes colour.",
+    "acceptance": "Retain clean distant detail while varying building materials, bay/storey rhythm and silhouettes; do not reintroduce distant grain."
+  },
+  {
+    "rank": 14,
+    "title": "Timber pilings look like pale faceted obelisks",
+    "severity": "Medium",
+    "cameras": [
+      "c06",
+      "c07",
+      "shore-03",
+      "shore-08"
+    ],
+    "defect": "Pilings have large angled pale tops, uniform beige bodies and very little wet-line darkening, collar or end-cap definition. The 06 arrangement is also much sparser than the approved cluster of shorter and taller timber piles.",
+    "owner": "Waterfront prop lane (#887 owner): tools/maps/modules/build-waterfront-props.mjs; scripts/client/waterfront.ts.",
+    "cause": "Coarse solid post geometry and a uniform material omit timber construction cues and submerged/wet zones; placement uses sparse isolated posts.",
+    "acceptance": "Check individual piles and bundles along the entire edge, including height variation, caps, bindings and water contact."
+  },
+  {
+    "rank": 15,
+    "title": "07 landing still lacks the concept gangway and dock hardware",
+    "severity": "Medium",
+    "cameras": [
+      "c07"
+    ],
+    "defect": "The large retaining face and timber clusters are present, but the short cross-braced metal gangway, hanging fender and compact landing equipment shown in the concept are missing or not readable. The upper edge remains a long mostly blank railing run.",
+    "owner": "Landing/dock dressing lane: tools/maps/modules/build-waterfront-props.mjs; scripts/client/waterfront.ts.",
+    "cause": "The platform/retaining wall was completed ahead of its access bridge and hardware kit.",
+    "acceptance": "Compare the whole landing silhouette and access sequence, then inspect it from the adjacent shoreline rather than only 07."
+  },
+  {
+    "rank": 16,
+    "title": "Riprap has too little stone-size and material hierarchy",
+    "severity": "Medium",
+    "cameras": [
+      "c06",
+      "c07",
+      "shore-08",
+      "c03"
+    ],
+    "defect": "The shore is now covered, but much of it is a dense carpet of similarly blue-grey rounded faceted stones. Compared with the approved concepts it lacks a convincing mixture of large angular boulders, smaller infill, strong dark gaps and warm/cool stone faces.",
+    "owner": "Shore rock lane (#887 owner): tools/maps/modules/build-waterfront-props.mjs and rock instances/materials in scripts/client/waterfront.ts.",
+    "cause": "Repeated rock families, narrow size distribution and a uniform cool material flatten the stone belt.",
+    "acceptance": "Review long stretches and inner corners; introduce controlled size/shape hierarchy without recreating a rock wall or covering walkable paving."
+  },
+  {
+    "rank": 17,
+    "title": "Waterfront railing is too dark and visually heavy",
+    "severity": "Medium",
+    "cameras": [
+      "c06",
+      "c07",
+      "shore-02",
+      "shore-04"
+    ],
+    "defect": "Posts, rails and footplates are almost black navy, with thick closely repeated vertical masses and large dark bases. The concepts show a lighter grey metal edge that lets the stone and water remain dominant. Coverage is improved; this item is about proportions and finish.",
+    "owner": "Railing lane (%65): scripts/environment_modules/waterfront_railing.ts; scripts/client/waterfront_railing.ts.",
+    "cause": "Dark shared metal palette and heavy post/rail profiles exaggerate the edge. Apparent off-axis leaning alone is not a confirmed geometry fault.",
+    "acceptance": "Check long straights, corners and slope transitions at eye level; keep continuous coverage while matching the concept's visual weight."
+  },
+  {
+    "rank": 18,
+    "title": "Concrete has no convincing panel joints or construction edges",
+    "severity": "Medium",
+    "cameras": [
+      "c06",
+      "c07",
+      "e02-street",
+      "shore-01"
+    ],
+    "defect": "Promenade and footways are broad lavender-white faceted sheets. The concept 06 has clear large panel joints, bevelled edge/contact detail and restrained concrete character. Current random facet boundaries do not supply that construction layout.",
+    "owner": "Ground/concrete lane (%64): scripts/client/ground_facets.ts; ground surface generation in tools/maps/sands-pearl/build.mjs; shared environment material.",
+    "cause": "The world facet lattice controls tone, but concrete slab segmentation and edge detail are absent. The approved textured-concrete exception may help finish, but does not alone author panel joints.",
+    "acceptance": "Keep flat per-facet variation; add coherent panel/edge treatment that survives along all footways and promenade lengths without texture seams."
+  },
+  {
+    "rank": 19,
+    "title": "Lawns read as pale green sheets with hard geometric edges",
+    "severity": "Medium",
+    "cameras": [
+      "e02-street",
+      "pier-path",
+      "underbridge",
+      "shore-07"
+    ],
+    "defect": "Large lawns have almost no small-scale grass or soil cues; straight paving boundaries and uniformly light green fill dominate. Sparse trees cast isolated round shadows without a convincing planted ground layer. The approved 1 m facet tones themselves are not the defect.",
+    "owner": "Lawn/ground lane (%64): grass material, scripts/client/ground_facets.ts and surveyed lawn outlines.",
+    "cause": "Flat lawn fill and missing boundary/ground-cover detail provide little grass-specific visual information. The later grass previews need their own quality gate and should not be assumed merged.",
+    "acceptance": "Check close lawn edges and wide Pier 1 views; retain readable grass without lime carpet, dominant bands or dark shard tufts."
+  },
+  {
+    "rank": 20,
+    "title": "Shrubs repeat bright green bead rows",
+    "severity": "Medium",
+    "cameras": [
+      "e01-street",
+      "e04-front",
+      "gate15",
+      "shore-07"
+    ],
+    "defect": "Planters and fence strips use rows of similarly round yellow-green clumps with uniform height and weak branching/leaf silhouette. Long kerb-side runs resemble decorative beads rather than varied, coherent planting.",
+    "owner": "Shrub/planting lane (%65): scripts/environment_modules/vegetation_family.ts and vegetation_instances.ts; planting placement layout.",
+    "cause": "The same leaf-lobe family and palette are scaled and repeated without enough hedge/clump structure or colour depth.",
+    "acceptance": "Review entire planter and kerb runs; keep planting contained and grounded while varying coherent masses rather than scattering isolated blobs."
+  },
+  {
+    "rank": 21,
+    "title": "Roof hardware is sparse, repetitive and weakly connected",
+    "severity": "Medium",
+    "cameras": [
+      "c01",
+      "c04",
+      "old04"
+    ],
+    "defect": "Large roofs have a few repeated white fan boxes, long straight segmented ducts and isolated vents over otherwise empty surfaces. Duct runs terminate without a clear installation story; access, service pads and varied equipment clusters are limited.",
+    "owner": "Roof detail lane: tools/maps/modules/roof.mjs; generated roof/environment modules.",
+    "cause": "A small repeated hardware kit and sparse placement rules leave oversized empty roofs and weak connections between equipment.",
+    "acceptance": "Check several roofs from different directions; improve believable clusters and connections without random clutter or renewed busy facet noise."
+  },
+  {
+    "rank": 22,
+    "title": "Street furnishings feel scattered rather than integrated",
+    "severity": "Medium",
+    "cameras": [
+      "e01-street",
+      "e02-street",
+      "shore-07"
+    ],
+    "defect": "Racks, bins, hydrants and small planters appear as isolated objects in broad paving, while seating/planting sequences are weak. In e01-street a rack sits prominently near the centre of the pedestrian corridor. The concepts arrange detail into coherent edge and seating zones.",
+    "owner": "Street dressing lane (%65, #896): tools/maps/modules/street.mjs; scripts/client/environment_detail_layout.ts and environment_detail.ts.",
+    "cause": "Independent object placement rules do not consistently compose an unobstructed pedestrian route and a furnished edge.",
+    "acceptance": "Walk each corridor both ways and verify clear routes plus coherent seating/service zones. Later #896 fixes must be checked on the baked integration, not presumed present here."
+  },
+  {
+    "rank": 23,
+    "title": "Small street props have crude silhouettes and material blocks",
+    "severity": "Medium",
+    "cameras": [
+      "e01-street",
+      "gate15"
+    ],
+    "defect": "The foreground hydrant is a chunky dark plug with stark white bands; bike-rack bends are visibly segmented and utility objects have little rim, cap or fixture definition. These nearby props look much rougher than their surrounding facade trim.",
+    "owner": "Street prop asset/module lane: tools/maps/modules/street.mjs; scripts/environment_modules/module_meshes.ts; source prop reduction/material palette.",
+    "cause": "Low silhouette resolution and coarse material grouping remove recognisable small construction details. Exact asset ownership should be confirmed before changing shared materials.",
+    "acceptance": "Review at ordinary 1\u20134 m eye-level distances; improve silhouette and fittings while keeping the approved simplified colour language."
+  },
+  {
+    "rank": 24,
+    "title": "Road surfaces and markings lack material and design hierarchy",
+    "severity": "Medium",
+    "cameras": [
+      "e04-street",
+      "e03-front",
+      "c03",
+      "e05-street"
+    ],
+    "defect": "Asphalt is a largely uniform dark sheet; fresh bright paint and repeated zebra crossings dominate it. The multi-arm waterfront intersection becomes a conspicuous field of stripes, while road repair, drain and edge transitions contribute little street character.",
+    "owner": "Street-fidelity lane (%69, #895): scripts/client/street_fidelity.ts, street_fidelity_layout.ts and street_kerb_layout.ts; asphalt surface palette.",
+    "cause": "Uniform road material and globally consistent paint treatment give crossings similar emphasis regardless of context. This is a fidelity/composition issue, not a claim that every crossing is incorrectly surveyed.",
+    "acceptance": "Check intersections and shaded/sunny straights map-wide; tune paint scale/brightness and surface/kerb transitions without obstructing vehicle or pedestrian routes."
+  },
+  {
+    "rank": 25,
+    "title": "Sky is a nearly featureless gradient",
+    "severity": "Low",
+    "cameras": [
+      "c06",
+      "c07",
+      "e02-street"
+    ],
+    "defect": "The large sky area is a smooth pale blue gradient with very little atmospheric structure. The approved views have subtle cloud/haze variation and a more layered blue field, making the current sky feel like an unfinished backdrop.",
+    "owner": "Sky/environment lane (%64): procedural sky material and environment lighting configuration.",
+    "cause": "The current procedural gradient supplies colour but little cloud or atmospheric variation.",
+    "acceptance": "Keep the approved morning light and horizon readability; add restrained structure without changing weather or hiding geometry in stronger fog."
+  }
+]
