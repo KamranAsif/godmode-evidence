@@ -1,0 +1,73 @@
+{
+  "head": "4e4e393374c044ccc872668d83f4afea479be75c",
+  "base": "277c19b0847dadfaccc554d05c10973f875478bc",
+  "before": {
+    "beforeHead": "5036493f",
+    "modulePlacements": 45575,
+    "groundPlacements": 3331,
+    "moduleRenderNodes": 6454,
+    "moduleMeshTriangles": 12227764,
+    "temporaryVectorWrappers": 85594348,
+    "authoredTrees": 136,
+    "authoredSoilBeds": 98,
+    "authoredEdging": 0,
+    "authoredRenderNodes": 234
+  },
+  "after": {
+    "moduleInstances": 56350,
+    "moduleRenderNodes": 3657,
+    "fittedShrubInstances": 10774,
+    "sharedFittedShrubShapes": 7,
+    "fittedGroundInstances": 3332,
+    "fittedGroundChunkMeshes": 72,
+    "authoredInstances": 234,
+    "authoredRenderNodes": 81,
+    "authoredGroundChunks": 18,
+    "temporaryMeshUploadVectorWrappers": 0
+  },
+  "fullClient": {
+    "bakeLoaded": false,
+    "aliveSecondsAfterReadiness": 120,
+    "scriptErrors": 0,
+    "fatalErrors": 0,
+    "renderStats": {
+      "accepted": true,
+      "frame": {
+        "fps": 61,
+        "physicsMs": 4.545,
+        "processMs": 29.754
+      },
+      "memory": {
+        "bufferMb": 631,
+        "textureMb": 693,
+        "videoMb": 2333
+      },
+      "scene": {
+        "nodes": 28494,
+        "orphanNodes": 0,
+        "resources": 2878
+      },
+      "shadow": {
+        "drawCalls": 6320,
+        "objects": 7739,
+        "primitives": 22607613
+      },
+      "total": {
+        "drawCalls": 11796,
+        "objects": 14382,
+        "primitives": 40828467
+      },
+      "visible": {
+        "drawCalls": 5468,
+        "objects": 6587,
+        "primitives": 18220422
+      }
+    }
+  },
+  "testsPassed": 36,
+  "notes": [
+    "Before render-node counts are calculated from pre-batching source 5036493f; transient Vector3 count estimates seven wrappers per old uploaded triangle. They are not simultaneous resident object counts.",
+    "Baseline with the available bake stopped at a stale Study lightmap mesh binding before reproducing the reported lane C OOM.",
+    "Full normal rendered roguelite client and server loaded on main 277c19b0 plus #891; captures are unbaked. Lane C owns the final stacked bake."
+  ]
+}
