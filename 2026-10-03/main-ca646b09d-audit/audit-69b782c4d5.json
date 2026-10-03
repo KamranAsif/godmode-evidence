@@ -1,0 +1,1032 @@
+{
+  "sourceCommit": "ca646b09d3cb81a6f58087de238a255860734a94",
+  "capturedAt": "2026-10-03T04:15:14.657969+00:00",
+  "verdict": "FAIL high-fidelity concept target",
+  "captureCount": 32,
+  "playerEyeCount": 20,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "bakedLighting": "static:1647;probeOnly:290;environmentOnly:541",
+  "worktreeClean": true,
+  "backlog": [
+    {
+      "rank": 1,
+      "severity": "High",
+      "camera": "gate10",
+      "xz": [
+        -513.3761934378774,
+        -303.6528273048024
+      ],
+      "title": "Facade layers collide",
+      "defect": "Large black facade sheets and projecting white window/frame families overlap smaller blue windows. The exterior reads as detached layers, not a solid building.",
+      "likelyCause": "Conflicting source/module facade layers, or wrong wall basis/depth offsets.",
+      "likelyOwner": "Facade pipeline: scripts/environment_modules/placement_rules.ts; facade_modules.generated.ts; tools/maps/sands-pearl/rich-buildings.mjs",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate10-15a9442fef.png"
+    },
+    {
+      "rank": 2,
+      "severity": "High",
+      "camera": "gate04",
+      "xz": [
+        -509.11696841706316,
+        -318.34705330361976
+      ],
+      "title": "Planters float above the slope",
+      "defect": "The near garden exposes its flat underside and hangs above sloping grass; planted bases are not seated in the terrain.",
+      "likelyCause": "A rigid garden footprint is positioned from one ground sample without fitting its base to the full slope.",
+      "likelyOwner": "Landscaping fit: scripts/environment_modules/placement_rules.ts; garden_yard_modules.generated.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate04-9868fa532a.png"
+    },
+    {
+      "rank": 3,
+      "severity": "High",
+      "camera": "gate02",
+      "xz": [
+        -229.38520285884542,
+        -460.57775909034143
+      ],
+      "title": "Duplicate white bridge deck",
+      "defect": "A broad white slab cuts across the detailed steel bridge and looks unsupported by that structure.",
+      "likelyCause": "Retained geographic transport top faces coexist with the horizon bridge.",
+      "likelyOwner": "Bridge presentation: scripts/client/horizon_transport.generated.ts; horizon_view_geometry.generated.ts; tools/maps/modules/build-horizon.mjs",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate02-6aabfb8d66.png"
+    },
+    {
+      "rank": 4,
+      "severity": "High",
+      "camera": "gate12",
+      "xz": [
+        -553.8492152808083,
+        -215.298706497507
+      ],
+      "title": "Car glass and body geometry look broken",
+      "defect": "The sedan has a large black triangular wedge inside its blue side window, splintered glazing, jagged wheels and fragmented body/taillight planes. Also visible in area04.",
+      "likelyCause": "Generated asset geometry/material segmentation fails to preserve clean pane and body shapes.",
+      "likelyOwner": "Vehicle assets: tools/assets/build-vehicle-models.py; scripts/environment_modules/vehicle_models.generated.ts; vehicle_models.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate12-722f024142.png"
+    },
+    {
+      "rank": 5,
+      "severity": "High",
+      "camera": "gate12",
+      "xz": [
+        -553.8492152808083,
+        -215.298706497507
+      ],
+      "title": "Drain grates protrude and tilt",
+      "defect": "The near sidewalk grate sits above the footway at an incompatible angle; gate10 shows another raised road plate.",
+      "likelyCause": "Support fitting or lift disagrees with the final visible footway/road surface.",
+      "likelyOwner": "Ground detail: scripts/client/environment_ground_details.ts; environment_ground_layout.ts; pavement_layout.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate12-722f024142.png"
+    },
+    {
+      "rank": 6,
+      "severity": "High",
+      "camera": "gate04",
+      "xz": [
+        -509.11696841706316,
+        -318.34705330361976
+      ],
+      "title": "Tree intersects closure barrier",
+      "defect": "A brown tree trunk passes through the Jersey barrier instead of occupying a clear planting footprint.",
+      "likelyCause": "Landscaping and cordon generators do not exclude each other.",
+      "likelyOwner": "Placement coordination: scripts/environment_modules/placement_rules.ts; scripts/dumbo_cordon_visuals.ts; dumbo_cordon_prop_ground.generated.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate04-9868fa532a.png"
+    },
+    {
+      "rank": 7,
+      "severity": "High",
+      "camera": "gate16",
+      "xz": [
+        -645.9824830591533,
+        -133.8119568527091
+      ],
+      "title": "Closure pieces tip and fail to form a coherent line",
+      "defect": "An isolated tarp section is strongly tilted at the hill crest; adjacent booth/fence/barrier pieces do not share a convincing apron or continuous assembly.",
+      "likelyCause": "Whole modules inherit incompatible local terrain fits.",
+      "likelyOwner": "Cordon ground fit: scripts/dumbo_cordon_visuals.ts; dumbo_cordon_prop_ground.generated.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate16-2b4a016204.png"
+    },
+    {
+      "rank": 8,
+      "severity": "High",
+      "camera": "gate16",
+      "xz": [
+        -645.9824830591533,
+        -133.8119568527091
+      ],
+      "title": "Terrain forms an abrupt wedge beside streets",
+      "defect": "The lawn ends in a steep geometric face above the road and runs into built surfaces; it reads as an unjoined terrain export.",
+      "likelyCause": "Coarse terrain and independent street/building grades are not reconciled at their shared boundaries.",
+      "likelyOwner": "Surveyed surface joins: tools/maps/sands-pearl/terrain.mjs; build.mjs; scripts/client/pavement_layout.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate16-2b4a016204.png"
+    },
+    {
+      "rank": 9,
+      "severity": "High",
+      "camera": "e01-street",
+      "xz": [
+        -402,
+        -392
+      ],
+      "title": "Mixed tree families and excessive crowding",
+      "defect": "Huge simple brown-trunk crowns alternate with dark branching trees; rows crowd the pedestrian route, windows and fire escapes. The same mismatch recurs in both parks and Pier1.",
+      "likelyCause": "Authored detail trees and module trees both populate the same streets with inconsistent silhouette, crown width and spacing.",
+      "likelyOwner": "Foliage placement/style: scripts/environment_detail.ts; scripts/environment_modules/placement_rules.ts; concept_variants_modules.generated.ts; foliage_shades.generated.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e01-street-eb8ded65dd.png"
+    },
+    {
+      "rank": 10,
+      "severity": "High",
+      "camera": "e04-front",
+      "xz": [
+        -566,
+        -254
+      ],
+      "title": "Street shade loses material and contact readability",
+      "defect": "Road, parked cars and closure silhouettes merge into near-black/navy areas. The concepts retain grey asphalt and readable shadowed objects.",
+      "likelyCause": "Asphalt palette, exposure and shade/bounce balance combine to crush shadow detail; exact contribution needs a controlled lighting comparison.",
+      "likelyOwner": "Lighting/materials: scripts/client/western_block_lighting.ts; western_block_materials.ts; scripts/study_lightmaps.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e04-front-27c0498b75.png"
+    },
+    {
+      "rank": 11,
+      "severity": "Medium-high",
+      "camera": "c02",
+      "xz": [
+        -485,
+        -405
+      ],
+      "title": "Water forms regular corrugated rows",
+      "defect": "Parallel ridges repeat across nearly the entire river at overview distance; eye-level white highlights also collect into repeated bands. Whitecaps themselves are approved.",
+      "likelyCause": "Directional wave terms over a regular faceted mesh create a conspicuous repeating pattern.",
+      "likelyOwner": "Water: assets/maps/waterfront/faceted-river.gdshader; scripts/client/waterfront.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c02-a2eb10d2fa.png"
+    },
+    {
+      "rank": 12,
+      "severity": "Medium-high",
+      "camera": "c01",
+      "xz": [
+        -427,
+        -342
+      ],
+      "title": "Facet scale and contrast overpower architecture",
+      "defect": "Large high-contrast triangles dominate roofs and wall planes; the bridge tower has the same camouflage-like finish. Architectural shapes become secondary. Flat per-facet tone is allowed; this is scale/contrast.",
+      "likelyCause": "The shared 7m wall lattice and strong wall tone/normal tilt do not reflect each surface hierarchy.",
+      "likelyOwner": "Surface finish: assets/maps/western_block/faceted-surface.gdshaderinc; scripts/client/faceted_surface.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c01-7600237128.png"
+    },
+    {
+      "rank": 13,
+      "severity": "Medium",
+      "camera": "e05-front",
+      "xz": [
+        -760,
+        -250
+      ],
+      "title": "Shrubs read as pyramids and miniature trees",
+      "defect": "Park edging consists of isolated pointed green solids; front gardens use tiny tree trunks under broad simple crowns. They read as placeholder shapes rather than designed shrubs.",
+      "likelyCause": "Over-simple low-poly shrub silhouettes and repeated garden variants.",
+      "likelyOwner": "Planting kit: scripts/environment_modules/garden_yard_modules.generated.ts; concept_variants_modules.generated.ts; scripts/client/western_block_dressing.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e05-front-e18b639739.png"
+    },
+    {
+      "rank": 14,
+      "severity": "Medium",
+      "camera": "pier-path",
+      "xz": [
+        -790,
+        -220
+      ],
+      "title": "Paths terminate as raised slabs and have poor joins",
+      "defect": "The white path stops as a blunt rectangular end in grass. Narrow dark gaps/edges and incompatible path grades remain visible at Pier1.",
+      "likelyCause": "Independent path/terrain outlines and surface lifts leave exposed edges instead of joined endpoints.",
+      "likelyOwner": "Paths/footways: tools/maps/sands-pearl/build.mjs; scripts/client/western_block_pavement.ts; pavement_layout.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/pier-path-d59ce8c22e.png"
+    },
+    {
+      "rank": 15,
+      "severity": "Medium",
+      "camera": "e01-street",
+      "xz": [
+        -402,
+        -392
+      ],
+      "title": "Windows look like blue painted panels",
+      "defect": "Large uniform bright-blue rectangles dominate nearby buildings, with little recess/depth or pane hierarchy compared with the dark glazing in the concepts.",
+      "likelyCause": "Glass palette/sky tint and shallow window geometry combine to flatten the openings.",
+      "likelyOwner": "Glazing/facades: assets/maps/western_block/morning-glass.gdshader; scripts/client/faceted_surface.ts; scripts/environment_modules/facade_modules.generated.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e01-street-eb8ded65dd.png"
+    },
+    {
+      "rank": 16,
+      "severity": "Medium",
+      "camera": "c01",
+      "xz": [
+        -427,
+        -342
+      ],
+      "title": "Facades lack architectural hierarchy",
+      "defect": "Even intact facades repeat the same framed rectangles and fire-escape stacks across broad slabs; base, middle and roofline lack the coherent hierarchy of the concepts.",
+      "likelyCause": "Generic facade variants are tiled across surveyed shells without enough frontage/storey/cornice differentiation.",
+      "likelyOwner": "Architecture kit: tools/maps/modules/facade.mjs; scripts/environment_modules/facade_styles_modules.generated.ts; window_dressings.generated.ts; trim_tones.generated.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c01-7600237128.png"
+    },
+    {
+      "rank": 17,
+      "severity": "Medium",
+      "camera": "c01",
+      "xz": [
+        -427,
+        -342
+      ],
+      "title": "Large roofs are empty or carry awkward placeholder hardware",
+      "defect": "Several enormous roof planes have only a few small fittings or long thin white pipe/stilt assemblies, unlike the concepts coherent HVAC boxes, vents and connected rooftop infrastructure.",
+      "likelyCause": "Roof-pattern coverage or kit retirement leaves sparse equipment; some retained source fittings remain crude.",
+      "likelyOwner": "Roof dressing: scripts/client/reference_block_patterns.ts; western_block_dressing.ts; tools/maps/modules/roof.mjs; tools/maps/sands-pearl/building-detail.mjs",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c01-7600237128.png"
+    },
+    {
+      "rank": 18,
+      "severity": "Medium",
+      "camera": "c06",
+      "xz": [
+        -794.4651340080532,
+        -266.5485437797311
+      ],
+      "title": "Rock apron is too sparse at the visible shore",
+      "defect": "Only scattered small exposed rock crowns appear behind the rail; the concept has a broad interlocking belt with varied rock sizes.",
+      "likelyCause": "Rock placement/submergence and clearance rules expose too little of the intended apron.",
+      "likelyOwner": "Shore props: tools/maps/modules/build-waterfront-props.mjs; assets/maps/waterfront/props.json",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c06-9d8304ec40.png"
+    },
+    {
+      "rank": 19,
+      "severity": "Medium",
+      "camera": "c06",
+      "xz": [
+        -794.4651340080532,
+        -266.5485437797311
+      ],
+      "title": "Timber pilings are coarse rectangular blocks",
+      "defect": "Pilings have long nearly planar rectangular sides and simple caps, missing the designed taper, shoulder and irregular silhouette of the concept.",
+      "likelyCause": "Low-detail piling geometry/finish.",
+      "likelyOwner": "Timber props: assets/props/waterfront; tools/maps/modules/build-waterfront-props.mjs; waterfront shaders",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c06-9d8304ec40.png"
+    },
+    {
+      "rank": 20,
+      "severity": "Medium",
+      "camera": "c07",
+      "xz": [
+        -579.4482268862174,
+        -463.590037959206
+      ],
+      "title": "Area07 pier-side composition remains incomplete",
+      "defect": "The concept articulated left pier/bulkhead face, upper platform/rail and grouped timber supports are visually replaced by two ordinary low-rise facade boxes.",
+      "likelyCause": "The surveyed scene and dressing do not yet reproduce the approved pier-side architectural composition.",
+      "likelyOwner": "Waterfront architecture: scripts/client/waterfront.ts; tools/maps/modules/build-waterfront.mjs; tools/maps/sands-pearl/build.mjs",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c07-a57f913a66.png"
+    },
+    {
+      "rank": 21,
+      "severity": "Medium",
+      "camera": "c06",
+      "xz": [
+        -794.4651340080532,
+        -266.5485437797311
+      ],
+      "title": "Skyline uses facet noise in place of facade structure",
+      "defect": "Towers have dense triangular speckle but very sparse window rows; their silhouettes are recognizable boxes rather than finished buildings. Chain25 flattening is not present in this main.",
+      "likelyCause": "Source-confirmed: horizon windows are capped at five rows/columns per face; shared facet retention keeps projected triangles strong at river distance.",
+      "likelyOwner": "Skyline: scripts/environment_modules/city_horizon_modules.generated.ts; scripts/client/city_horizon.generated.ts; assets/maps/western_block/faceted-surface.gdshaderinc",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c06-9d8304ec40.png"
+    },
+    {
+      "rank": 22,
+      "severity": "Medium",
+      "camera": "c06",
+      "xz": [
+        -794.4651340080532,
+        -266.5485437797311
+      ],
+      "title": "Far land is a hard pale horizontal wall",
+      "defect": "The left river horizon ends in a long pale strip with abrupt vertical/block faces rather than a convincing receding shoreline.",
+      "likelyCause": "Low-detail horizon land geometry and haze flatten its edge into a hard band.",
+      "likelyOwner": "Horizon land: scripts/environment_modules/horizon_survey.generated.ts; city_horizon_modules.generated.ts; tools/maps/modules/build-horizon.mjs",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c06-9d8304ec40.png"
+    },
+    {
+      "rank": 23,
+      "severity": "Medium",
+      "camera": "park-west",
+      "xz": [
+        -460,
+        -455
+      ],
+      "title": "Furniture islands look like prefabs pasted onto grass",
+      "defect": "Benches, bins, trees and pointed shrubs sit on conspicuous dark rectangular/polygon pads with repeated arrangements. Some pads expose edges on the grade.",
+      "likelyCause": "Individual prop bases/planting slabs are placed without a coherent landscape paving and planting design.",
+      "likelyOwner": "Park dressing: scripts/environment_detail.ts; environment_detail_layout.ts; scripts/environment_modules/placement_rules.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/park-west-ad58a56168.png"
+    },
+    {
+      "rank": 24,
+      "severity": "Medium",
+      "camera": "gate10",
+      "xz": [
+        -513.3761934378774,
+        -303.6528273048024
+      ],
+      "title": "Parked vehicles conflict with crosswalks",
+      "defect": "The white sedan occupies the zebra crossing; parked vehicles crowd crossing approaches elsewhere in the overview.",
+      "likelyCause": "Vehicle placement and road-paint generation lack shared crossing clearance.",
+      "likelyOwner": "Street coordination: tools/maps/sands-pearl/vehicles.mjs; scripts/client/street_vehicle_ground.ts; western_block_road_layout.ts",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate10-15a9442fef.png"
+    },
+    {
+      "rank": 25,
+      "severity": "Medium",
+      "camera": "e05-front",
+      "xz": [
+        -760,
+        -250
+      ],
+      "title": "Ground finish alternates huge grass polygons and blank paving",
+      "defect": "At eye height grass is divided into very large flat tonal regions while promenade/path concrete is largely featureless. The concept ground has smaller designed facets.",
+      "likelyCause": "Surface scale is inherited from coarse source triangulation/shared large lattice; pavement has no equivalent designed near-field finish.",
+      "likelyOwner": "Ground finish: scripts/client/western_block_pavement.ts; western_block_architecture.ts; assets/maps/western_block/faceted-surface.gdshaderinc",
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e05-front-e18b639739.png"
+    }
+  ],
+  "perImage": [
+    {
+      "camera": "c01",
+      "label": "Water / Washington waterfront blocks",
+      "position": [
+        -427,
+        47.86400032043457,
+        -342
+      ],
+      "yaw": -0.4636476090008061,
+      "pitch": -0.860510290074884,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c01-7600237128.png",
+      "findings": [
+        9,
+        11,
+        12,
+        15,
+        16,
+        17,
+        24
+      ]
+    },
+    {
+      "camera": "c02",
+      "label": "Empire Fulton Ferry park",
+      "position": [
+        -485,
+        47.78649950027466,
+        -405
+      ],
+      "yaw": -0.4636476090008061,
+      "pitch": -0.860510290074884,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c02-a2eb10d2fa.png",
+      "findings": [
+        9,
+        11,
+        12,
+        13,
+        23,
+        25
+      ]
+    },
+    {
+      "camera": "c03",
+      "label": "Dock / Old Fulton undercroft seam",
+      "position": [
+        -611,
+        47.76356506347656,
+        -294
+      ],
+      "yaw": -0.4636476090008061,
+      "pitch": -0.860510290074884,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c03-6c7b4e1692.png",
+      "findings": [
+        11,
+        12,
+        16,
+        17,
+        20,
+        25
+      ]
+    },
+    {
+      "camera": "c04",
+      "label": "Old Fulton inland spur",
+      "position": [
+        -591,
+        49.51599979400635,
+        -204
+      ],
+      "yaw": -0.4636476090008061,
+      "pitch": -0.860510290074884,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c04-988c0c8e2c.png",
+      "findings": [
+        9,
+        10,
+        12,
+        16,
+        17
+      ]
+    },
+    {
+      "camera": "c05",
+      "label": "Pier 1 waterfront",
+      "position": [
+        -785,
+        51.771374225616455,
+        -200
+      ],
+      "yaw": -0.4636476090008061,
+      "pitch": -0.860510290074884,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c05-ab5c819316.png",
+      "findings": [
+        9,
+        11,
+        13,
+        14,
+        23,
+        25
+      ]
+    },
+    {
+      "camera": "c06",
+      "label": "Pier 1 edge toward Lower Manhattan",
+      "position": [
+        -794.4651340080532,
+        -15.521999999999998,
+        -266.5485437797311
+      ],
+      "yaw": 0.8406828258921301,
+      "pitch": -0.13,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c06-9d8304ec40.png",
+      "findings": [
+        18,
+        19,
+        21,
+        22,
+        25
+      ],
+      "coverageNote": "Direct matched approved waterfront concept camera. Promenade alignment repair is accepted; foreground blowout is absent."
+    },
+    {
+      "camera": "c07",
+      "label": "Empire Fulton Ferry along the bulkhead",
+      "position": [
+        -579.4482268862174,
+        -15.521999999999998,
+        -463.590037959206
+      ],
+      "yaw": 1.9980361897166294,
+      "pitch": -0.13,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/c07-a57f913a66.png",
+      "findings": [
+        15,
+        16,
+        20,
+        21,
+        25
+      ],
+      "coverageNote": "Direct matched approved waterfront concept camera. Promenade alignment repair is accepted; foreground blowout is absent."
+    },
+    {
+      "camera": "old01",
+      "label": "Original inland concept pose",
+      "position": [
+        -584.9974379484134,
+        30.066666984558104,
+        5.861874196849891
+      ],
+      "yaw": -0.6612564376077028,
+      "pitch": -0.8593372010553886,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/old01-04e48348cf.png",
+      "findings": [],
+      "coverageNote": "Original inland concept pose outside arena C. Retained as context only; no missing-building, palette or ground-hole backlog claim from this image. old02/03 are obstructed by nearer roofs/source geometry."
+    },
+    {
+      "camera": "old02",
+      "label": "Original inland concept pose",
+      "position": [
+        -426.93326822916663,
+        43.90000031789144,
+        53.93062337239583
+      ],
+      "yaw": -0.7853981633974483,
+      "pitch": -1.1,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/old02-dde38585fe.png",
+      "findings": [],
+      "coverageNote": "Original inland concept pose outside arena C. Retained as context only; no missing-building, palette or ground-hole backlog claim from this image. old02/03 are obstructed by nearer roofs/source geometry."
+    },
+    {
+      "camera": "old03",
+      "label": "Original inland concept pose",
+      "position": [
+        -526.5495280108096,
+        29.850000445048014,
+        89.7970564977237
+      ],
+      "yaw": 0.015353467144963872,
+      "pitch": -0.8593372010553886,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/old03-2b8e9d6512.png",
+      "findings": [],
+      "coverageNote": "Original inland concept pose outside arena C. Retained as context only; no missing-building, palette or ground-hole backlog claim from this image. old02/03 are obstructed by nearer roofs/source geometry."
+    },
+    {
+      "camera": "old04",
+      "label": "Original inland concept pose",
+      "position": [
+        -542.5834340001027,
+        28.86666685740153,
+        -107.52829729480109
+      ],
+      "yaw": -2.9211403334029247,
+      "pitch": -0.8593372010553886,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/old04-c53ee3b0ee.png",
+      "findings": [],
+      "coverageNote": "Original inland concept pose outside arena C. Retained as context only; no missing-building, palette or ground-hole backlog claim from this image. old02/03 are obstructed by nearer roofs/source geometry."
+    },
+    {
+      "camera": "e01-street",
+      "label": "Water / Washington waterfront blocks",
+      "position": [
+        -402,
+        -15.43599967956543,
+        -392
+      ],
+      "yaw": 0,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e01-street-eb8ded65dd.png",
+      "findings": [
+        9,
+        15,
+        16
+      ]
+    },
+    {
+      "camera": "e01-front",
+      "label": "Water / Washington waterfront blocks",
+      "position": [
+        -402,
+        -15.43599967956543,
+        -392
+      ],
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e01-front-b669cd0ab1.png",
+      "findings": [
+        9,
+        15,
+        16
+      ]
+    },
+    {
+      "camera": "e02-street",
+      "label": "Empire Fulton Ferry park",
+      "position": [
+        -460,
+        -15.513500499725343,
+        -455
+      ],
+      "yaw": -1.57,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e02-street-673b13695e.png",
+      "findings": [
+        9,
+        13,
+        23,
+        25
+      ]
+    },
+    {
+      "camera": "e02-front",
+      "label": "Empire Fulton Ferry park",
+      "position": [
+        -460,
+        -15.513500499725343,
+        -455
+      ],
+      "yaw": 1.571592653589793,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e02-front-7ecbb3c589.png",
+      "findings": [
+        9,
+        12,
+        23,
+        25
+      ]
+    },
+    {
+      "camera": "e03-street",
+      "label": "Dock / Old Fulton undercroft seam",
+      "position": [
+        -586,
+        -15.536434936523438,
+        -344
+      ],
+      "yaw": 1.57,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e03-street-db672d1c8d.png",
+      "findings": [
+        9,
+        13,
+        23,
+        25
+      ]
+    },
+    {
+      "camera": "e03-front",
+      "label": "Dock / Old Fulton undercroft seam",
+      "position": [
+        -586,
+        -15.536434936523438,
+        -344
+      ],
+      "yaw": 4.711592653589793,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e03-front-56ee120922.png",
+      "findings": [
+        9,
+        15,
+        16,
+        24
+      ]
+    },
+    {
+      "camera": "e04-street",
+      "label": "Old Fulton inland spur",
+      "position": [
+        -566,
+        -13.784000205993653,
+        -254
+      ],
+      "yaw": 0,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e04-street-b741959b9b.png",
+      "findings": [
+        4,
+        9,
+        10,
+        13,
+        15,
+        16
+      ]
+    },
+    {
+      "camera": "e04-front",
+      "label": "Old Fulton inland spur",
+      "position": [
+        -566,
+        -13.784000205993653,
+        -254
+      ],
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e04-front-27c0498b75.png",
+      "findings": [
+        4,
+        9,
+        10,
+        12,
+        15,
+        16
+      ]
+    },
+    {
+      "camera": "e05-street",
+      "label": "Pier 1 waterfront",
+      "position": [
+        -760,
+        -11.528625774383546,
+        -250
+      ],
+      "yaw": 0.7,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e05-street-94a23bd49b.png",
+      "findings": [
+        13,
+        14,
+        21,
+        22,
+        23,
+        25
+      ]
+    },
+    {
+      "camera": "e05-front",
+      "label": "Pier 1 waterfront",
+      "position": [
+        -760,
+        -11.528625774383546,
+        -250
+      ],
+      "yaw": 3.8415926535897933,
+      "pitch": 0,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/e05-front-e18b639739.png",
+      "findings": [
+        9,
+        12,
+        13,
+        14,
+        16,
+        23,
+        25
+      ]
+    },
+    {
+      "camera": "gate01",
+      "label": "Riverwalk east gate",
+      "position": [
+        -223.06048210326344,
+        -15.532098767510877,
+        -484.256517473733
+      ],
+      "yaw": -0.1021938556021325,
+      "pitch": -0.08,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate01-2e10387194.png",
+      "findings": [
+        19,
+        21
+      ],
+      "coverageNote": "Repaired shoreline rail reads supported and continuous in this shot; old hanging-rail defect is not carried forward."
+    },
+    {
+      "camera": "gate02",
+      "label": "Park / Plymouth approach",
+      "position": [
+        -229.38520285884542,
+        -15.504647972328605,
+        -460.57775909034143
+      ],
+      "yaw": -1.2183187816716818,
+      "pitch": -0.08,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate02-6aabfb8d66.png",
+      "findings": [
+        3,
+        9
+      ]
+    },
+    {
+      "camera": "gate04",
+      "label": "Bridge plaza east remnant",
+      "position": [
+        -509.11696841706316,
+        -14.087563461752776,
+        -318.34705330361976
+      ],
+      "yaw": -2.5583938098269234,
+      "pitch": -0.08,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate04-9868fa532a.png",
+      "findings": [
+        1,
+        2,
+        6,
+        9,
+        13,
+        15
+      ]
+    },
+    {
+      "camera": "gate10",
+      "label": "Front-side east gate",
+      "position": [
+        -513.3761934378774,
+        -13.899320466213547,
+        -303.6528273048024
+      ],
+      "yaw": -2.7972060686636433,
+      "pitch": -0.08,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate10-15a9442fef.png",
+      "findings": [
+        1,
+        4,
+        5,
+        9,
+        24
+      ]
+    },
+    {
+      "camera": "gate12",
+      "label": "Old Fulton south gate",
+      "position": [
+        -553.8492152808083,
+        -9.367578967780178,
+        -215.298706497507
+      ],
+      "yaw": 2.129244363311869,
+      "pitch": -0.08,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate12-722f024142.png",
+      "findings": [
+        4,
+        5,
+        9,
+        10,
+        15
+      ]
+    },
+    {
+      "camera": "gate16",
+      "label": "Elevated approach apron",
+      "position": [
+        -645.9824830591533,
+        -6.7873511811976455,
+        -133.8119568527091
+      ],
+      "yaw": 2.6491817996331,
+      "pitch": -0.08,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/gate16-2b4a016204.png",
+      "findings": [
+        7,
+        8,
+        9,
+        10,
+        12
+      ]
+    },
+    {
+      "camera": "park-east",
+      "label": "East park / bridge foot",
+      "position": [
+        -402,
+        -15.43599967956543,
+        -392
+      ],
+      "yaw": 1.1,
+      "pitch": -0.1,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/park-east-82170476d4.png",
+      "findings": [
+        9,
+        15,
+        16
+      ]
+    },
+    {
+      "camera": "park-west",
+      "label": "Empire park towards river",
+      "position": [
+        -460,
+        -15.513500499725343,
+        -455
+      ],
+      "yaw": 1.9,
+      "pitch": -0.1,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/park-west-ad58a56168.png",
+      "findings": [
+        9,
+        12,
+        13,
+        23,
+        25
+      ]
+    },
+    {
+      "camera": "pier-path",
+      "label": "Pier 1 hill / path",
+      "position": [
+        -790,
+        -12.118915367126466,
+        -220
+      ],
+      "yaw": 0.8,
+      "pitch": -0.1,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/pier-path-d59ce8c22e.png",
+      "findings": [
+        13,
+        14,
+        21,
+        22,
+        25
+      ]
+    },
+    {
+      "camera": "underbridge",
+      "label": "Brooklyn undercroft interior",
+      "position": [
+        -614,
+        -15.525522545595788,
+        -330
+      ],
+      "yaw": -1,
+      "pitch": -0.1,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/underbridge-7613dd6620.png",
+      "findings": [
+        9,
+        12,
+        15,
+        16,
+        25
+      ]
+    },
+    {
+      "camera": "old05",
+      "label": "Original inland concept pose",
+      "position": [
+        -465.80839915068515,
+        27.850000445048014,
+        -44.287560628066934
+      ],
+      "yaw": -1.9921121151914623,
+      "pitch": -0.8593372010553886,
+      "fov": 75,
+      "screenshot": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/old05-dbbcfa859c.png",
+      "findings": [],
+      "coverageNote": "Original inland concept pose outside arena C. Retained as context only; no missing-building, palette or ground-hole backlog claim from this image. old02/03 are obstructed by nearer roofs/source geometry."
+    }
+  ],
+  "sheets": [
+    {
+      "sheet": "sheet-01",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/sheet-01-27ec727483.png"
+    },
+    {
+      "sheet": "sheet-02",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/sheet-02-64dbe6cee2.png"
+    },
+    {
+      "sheet": "sheet-03",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/sheet-03-681b2db648.png"
+    },
+    {
+      "sheet": "sheet-04",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/sheet-04-81c41c0db2.png"
+    },
+    {
+      "sheet": "sheet-05",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/sheet-05-eb177ca73c.png"
+    },
+    {
+      "sheet": "sheet-06",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/sheet-06-cc1ab3b3a0.png"
+    },
+    {
+      "sheet": "sheet-07",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/sheet-07-15032a8e3b.png"
+    },
+    {
+      "sheet": "sheet-08",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-03/main-ca646b09d-audit/sheet-08-74e9a3d869.png"
+    }
+  ],
+  "limits": [
+    "Free-fly eye-height sweep, not a collision/navigation certification.",
+    "Static images do not establish temporal z-fighting or certify watertight geometry.",
+    "No definite walkable ground holes were confirmed.",
+    "Initial stale-compiled launch, a native GodotJS reference-object crash, and duplicate frames captured while paused were excluded. All retained images have distinct SHA256.",
+    "Ca646b09d is chain24 merged into main; chain25/#886 and PR887 changes are excluded."
+  ],
+  "styleChecks": [
+    "Flat per-facet tone and water whitecaps are approved.",
+    "No definite in-facet texture-grain or drawn-joint violation identified in retained arena views. Source checks found no albedo, normal or roughness textures in the seven barrier GLB payloads.",
+    "Sky gradient is serviceable: no concrete sky defect or missing-cloud requirement. Horizon/skyline mismatch is ranked separately."
+  ],
+  "acceptedRepairs": [
+    "Promenade orientation/breadth",
+    "Eastern waterfront railing continuity in checked views",
+    "Filled inland channel cleanup",
+    "White foreground blowout removed"
+  ]
+}
