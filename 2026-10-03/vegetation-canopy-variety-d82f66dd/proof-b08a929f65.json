@@ -1,0 +1,127 @@
+{
+  "sourceCommit": "d82f66ddfbbdf8ac2e6a85a479d44576a05d185c",
+  "beforeCommit": "de20e7fdeb2175c8280d2d62da371d640f9ec5bb",
+  "engine": "4.6.1.stable.custom_build.14d19694e",
+  "bakeLoaded": false,
+  "stableSecondsAfterReadiness": 120,
+  "beforeBatches": [
+    "instances:234:nodes:81:groundInstances:98:groundChunks:18:shrubShapes:11",
+    "instances:56340:nodes:3655:groundInstances:3330:groundChunks:72:shrubShapes:7"
+  ],
+  "afterBatches": [
+    "instances:234:nodes:90:groundInstances:98:groundChunks:18:shrubShapes:5:treeShapes:6",
+    "instances:56340:nodes:3642:groundInstances:3330:groundChunks:72:shrubShapes:7:treeShapes:6"
+  ],
+  "sceneCountComparisonNote": "Before stats were captured immediately after the four views; after stats were captured 120 seconds later. Total scene/resource counts include live gameplay and are not an isolated vegetation benchmark. Module batch counts are the comparable vegetation measurements.",
+  "beforeScene": {
+    "nodes": 27844,
+    "orphanNodes": 0,
+    "resources": 2667
+  },
+  "afterScene": {
+    "nodes": 28499,
+    "orphanNodes": 0,
+    "resources": 2877
+  },
+  "views": [
+    {
+      "id": "08",
+      "area": "02",
+      "kind": "waterfront-concept-v2",
+      "label": "Park lawn with trees and benches",
+      "groundPosition": [
+        -460,
+        -17.213500499725342,
+        -455
+      ],
+      "groundSource": {
+        "chunk": "-4_-4",
+        "mesh": "Ground_terrain_chunk_-4_-4",
+        "triangle": 1776
+      },
+      "position": [
+        -460,
+        -15.513500499725343,
+        -455
+      ],
+      "yaw": -1.57,
+      "pitch": -0.08,
+      "fov": 75,
+      "sourceCommit": "ca646b09d3cb81a6f58087de238a255860734a94",
+      "recordedSourceCommit": null,
+      "recordedInput": null,
+      "matchesRecordedInput": null,
+      "allowSourceChange": true,
+      "allowInputChange": true,
+      "input": {
+        "sha256": "29ada3c55729d6be66b8615601c666996ed08eff67ed27df8f39c0ee0decc79c",
+        "size": [
+          1920,
+          1080
+        ]
+      }
+    },
+    {
+      "id": "e01-street",
+      "label": "Auditor backlog e01-street",
+      "position": [
+        -402,
+        -15.290000000000001,
+        -392
+      ],
+      "yaw": -0.6,
+      "pitch": -0.06,
+      "fov": 75
+    },
+    {
+      "id": "e05-front",
+      "label": "Auditor backlog e05-front",
+      "position": [
+        -760,
+        -11.320000000000002,
+        -250
+      ],
+      "yaw": 1.5,
+      "pitch": -0.06,
+      "fov": 75
+    },
+    {
+      "id": "park-west",
+      "label": "Auditor backlog park-west",
+      "position": [
+        -460,
+        -15.37,
+        -455
+      ],
+      "yaw": -2.2,
+      "pitch": -0.12,
+      "fov": 75
+    }
+  ],
+  "survivalNavigation": {
+    "polygons": 18964,
+    "spawns": 1484,
+    "boxes": 0,
+    "environmentDetails": 270,
+    "cordonSolids": 400,
+    "parkedCars": 18,
+    "spawnsKeptOutOfProps": 1585,
+    "parkedCarsFingerprint": "62c126df",
+    "routeFailures": 0,
+    "start": [
+      -406.0060273477419,
+      -16.098080842925377,
+      -385.0072677238386
+    ],
+    "chunks": 34
+  },
+  "nonVegetationDiagnostics": [
+    "Camera3D unproject_position p.d == 0 during inspection snapshots",
+    "PATROL_VISIBLE_BIRTH gameplay diagnostic",
+    "Existing headless dummy-renderer shader diagnostic"
+  ],
+  "sharedTreeMeshes": 6,
+  "perTreeNativeNodes": 0,
+  "perTreeMaterials": 0,
+  "navigationCollisionFootprintsChanged": false
+}
