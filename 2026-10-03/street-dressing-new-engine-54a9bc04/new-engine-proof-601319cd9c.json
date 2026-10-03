@@ -1,0 +1,98 @@
+{
+  "sourceCommit": "54a9bc0439eb12a88f289defb80f0f50eb677d48",
+  "baseCommit": "277c19b0847dadfaccc554d05c10973f875478bc",
+  "bakeLoaded": false,
+  "normalRogueliteClient": true,
+  "aliveSecondsAfterCaptures": 120,
+  "captureViews": 3,
+  "scriptErrors": 0,
+  "fatalErrors": 0,
+  "batches": [
+    "GODMODE_STREET_DRESSING=placements:597:cells:39:renderNodes:159:shrubShapes:4:shrubInstances:879:collisionShapes:423",
+    "GODMODE_STREET_DRESSING=placements:597:cells:39:renderNodes:0:shrubShapes:0:shrubInstances:0:collisionShapes:423"
+  ],
+  "renderStats": {
+    "accepted": true,
+    "frame": {
+      "fps": 61,
+      "physicsMs": 4.478,
+      "processMs": 31.148
+    },
+    "memory": {
+      "bufferMb": 387,
+      "textureMb": 723,
+      "videoMb": 2132
+    },
+    "scene": {
+      "nodes": 30740,
+      "orphanNodes": 0,
+      "resources": 2878
+    },
+    "shadow": {
+      "drawCalls": 5283,
+      "objects": 7487,
+      "primitives": 10063003
+    },
+    "total": {
+      "drawCalls": 14833,
+      "objects": 20133,
+      "primitives": 25181730
+    },
+    "visible": {
+      "drawCalls": 9542,
+      "objects": 12590,
+      "primitives": 15118295
+    }
+  },
+  "navigation": {
+    "polygons": 22767,
+    "spawns": 1528,
+    "boxes": 0,
+    "environmentDetails": 285,
+    "streetDressing": 597,
+    "streetDressingFingerprint": "5df66a5",
+    "cordonSolids": 400,
+    "parkedCars": 18,
+    "spawnsKeptOutOfProps": 2287,
+    "parkedCarsFingerprint": "62c126df",
+    "routeFailures": 0,
+    "start": [
+      -406.00610534402864,
+      -16.10240297840116,
+      -385.0072300323127
+    ],
+    "chunks": 34
+  },
+  "notes": [
+    "Full normal rendered roguelite client, offscreen 1920x1080, with normal arena collision and navigation.",
+    "Lighting is deliberately unbaked; lane C owns the final stacked bake."
+  ],
+  "engine": {
+    "godotPath": "C:\\tools\\GodotJS-4.6.1-v8-nopc\\editor\\godot.windows.editor.x86_64.exe",
+    "version": "4.6.1.stable.custom_build.14d19694e",
+    "platform": "win32"
+  },
+  "survivalNavigationBake": {
+    "completed": true,
+    "command": "godot-cli game run --headless --scene res://scenes/maps/dumbo_survival_bake.tscn --project . --session <owned-session> --instance <unique-instance>",
+    "receipt": {
+      "polygons": 22767,
+      "spawns": 1528,
+      "boxes": 0,
+      "environmentDetails": 285,
+      "streetDressing": 597,
+      "streetDressingFingerprint": "5df66a5",
+      "cordonSolids": 400,
+      "parkedCars": 18,
+      "spawnsKeptOutOfProps": 2287,
+      "parkedCarsFingerprint": "62c126df",
+      "routeFailures": 0,
+      "start": [
+        -406.00610534402864,
+        -16.10240297840116,
+        -385.0072300323127
+      ],
+      "chunks": 34
+    }
+  }
+}
