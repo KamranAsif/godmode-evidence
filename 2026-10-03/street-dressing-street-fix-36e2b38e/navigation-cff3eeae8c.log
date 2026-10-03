@@ -1,0 +1,27 @@
+Godot Engine v4.6.1.stable.custom_build.14d19694e (2026-02-16 15:13:51 UTC) - https://godotengine.org
+
+[JSDebugger][Debug] devtools://devtools/bundled/inspector.html?v8only=true&ws=127.0.0.1:9229/1
+[jsb][Debug] slow process JSRealm._load_module: 0.037651 s (modules\GodotJS\bridge\jsb_environment.cpp:1131)
+[jsb][Debug] slow process JSRealm._require: 0.038854 s (modules\GodotJS\bridge\jsb_builtins.cpp:61)
+[jsb][Debug] slow process JSRealm._load_module: 0.047163 s (modules\GodotJS\bridge\jsb_environment.cpp:1131)
+[jsb][Debug] slow process JSRealm._require: 0.048186 s (modules\GodotJS\bridge\jsb_builtins.cpp:61)
+[jsb][Debug] slow process JSRealm._load_module: 0.094945 s (modules\GodotJS\bridge\jsb_environment.cpp:1131)
+[jsb][Debug] slow process JSRealm._require: 0.095612 s (modules\GodotJS\bridge\jsb_builtins.cpp:61)
+[jsb][Debug] slow process JSRealm._load_module: 0.100833 s (modules\GodotJS\bridge\jsb_environment.cpp:1131)
+[jsb][Debug] slow process JSRealm.load: 0.101509 s (modules\GodotJS\bridge\jsb_environment.cpp:1518)
+[jsb][Debug] slow process GodotJSScript.load_module: 0.102108 s (modules\GodotJS\weaver\jsb_script.cpp:520)
+WARNING: Navigation region synchronization had 56 edge error(s).
+More than 2 edges tried to occupy the same map rasterization space.
+This causes a logical error in the navigation mesh geometry and is commonly caused by overlap or too densely placed edges.
+Consider baking with a higher 'cell_size', greater geometry margin, and less detailed bake objects to cause fewer edges.
+Consider lowering the 'navigation/3d/merge_rasterizer_cell_scale' in the project settings.
+This warning can be toggled under 'navigation/3d/warnings/navmesh_edge_merge_errors' in the project settings.
+   at: NavRegionBuilder3D::_build_step_find_edge_connection_pairs (modules\navigation_3d\3d\nav_region_builder_3d.cpp:221)
+[JS] GODMODE_BROOKLYN_NAV_READY=meshMs=57:areasMs=11:graphMs=1479:totalMs=1546:polygons=140582:areas=7673
+WARNING: Source geometry parsing for navigation mesh baking had to parse RenderingServer meshes at runtime.
+		This poses a significant performance issues as visual meshes store geometry data on the GPU and transferring this data back to the CPU blocks the rendering.
+		For runtime (re)baking navigation meshes use and parse collision shapes as source geometry or create geometry data procedurally in scripts.
+   at: NavigationMeshSourceGeometryData3D::add_mesh (scene\resources\3d\navigation_mesh_source_geometry_data_3d.cpp:204)
+[JS] GODMODE_SURVIVAL_RAW=polygons:40975
+[JS] GODMODE_SURVIVAL_AUDIT=polygons:20583:boxes:0
+[JS] GODMODE_DUMBO_SURVIVAL_BAKED=polygons:20583:spawns:1519:routeFailures:0
