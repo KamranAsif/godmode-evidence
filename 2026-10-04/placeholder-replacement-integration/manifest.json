@@ -1,0 +1,62 @@
+{
+  "issue": 939,
+  "stage": "integrated approved replacements",
+  "gameCommit": "b9c41209330bed6a84c978b42e71e109c6c09b91",
+  "gameBase": "e0f748c3f",
+  "archiveCommit": "17ec8c53204c294e00d3e52861bb998f7d42f451",
+  "engine": "GodotJS 4.6.1",
+  "run": "placeholder-939-final-captures",
+  "captureSize": [
+    1920,
+    1080
+  ],
+  "checks": [
+    "pnpm format",
+    "pnpm build",
+    "pnpm lint",
+    "godot-cli project import",
+    "headless runtime smoke/setup",
+    "pnpm capture:check",
+    "offscreen runtime captures",
+    "source/derived SHA256 and texture counts",
+    "48 concave polygons + bridged hole exact triangulation comparison"
+  ],
+  "files": {
+    "ammo-crate-provenance.json": {
+      "sha256": "2953a28e59a0dfcd71552da28db1d8d666ff8aaa7d61026f32961ee0bab8e361",
+      "bytes": 1512
+    },
+    "approvals.json": {
+      "sha256": "afdf1bde0b73eecdd1b0b16396c40e850310794872d09cc251657f75ab4a936a",
+      "bytes": 3245
+    },
+    "icon-provenance.json": {
+      "sha256": "437c2a685df7f3f07a5b76cd7f845d50a6312c301dac27c58e5337e62ab08fe6",
+      "bytes": 761
+    },
+    "in-game-ammo.png": {
+      "sha256": "2241d1d38d951bc55686cb851fcecb71b1fc3ec465525af5f31f143d87187ac9",
+      "bytes": 2335510
+    },
+    "in-game-medic.png": {
+      "sha256": "9c789d5bd0d80f03a80d132eab06c4f9a68b4ab9274ccbccc0b25eeed233a907",
+      "bytes": 2028225
+    },
+    "in-game-officer.png": {
+      "sha256": "e1e0e1541621ad708709b6df0f969f1237300e2d4c3f7f396e68f627f9865cc9",
+      "bytes": 1122290
+    },
+    "in-game-tablet.png": {
+      "sha256": "1539de6f1ecaab0c2a4609fc2dce063dd7a4435f1b506963e70bdb928438e6d2",
+      "bytes": 1678713
+    },
+    "killstreak-tablet-provenance.json": {
+      "sha256": "a246573bca1130d1e0523141cc2aa070bd9303904b2e3e034dd0b67020e9f14d",
+      "bytes": 894
+    },
+    "README.md": {
+      "sha256": "18cdb380dae0bd48d79f82c74f8bd1670a18994831e6adcb25f01701935fb43a",
+      "bytes": 2513
+    }
+  }
+}
