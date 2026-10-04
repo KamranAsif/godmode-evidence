@@ -1,0 +1,378 @@
+{
+  "status": "Concrete finish approved in chat; implementation verification in progress",
+  "authorization": {
+    "date": "2026-09-14",
+    "quote": "Their mesh won't change, but we need to texture them and add normal map + detail normals. I also want to see if we can use our BAKED lighting w/ normals to generate accurate shadows, like mirror edge did. Try PolyHaven + ambientCG",
+    "scope": "Poly Haven and ambientCG structure texture trial; no Meshy submission"
+  },
+  "sources": [
+    {
+      "id": "Concrete016",
+      "provider": "ambientCG",
+      "url": "https://ambientcg.com/view?id=Concrete016",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://docs.ambientcg.com/license/",
+      "author": "Lennart Demes",
+      "download": "https://ambientcg.com/get?file=Concrete016_1K-PNG.zip",
+      "resolution": "1K PNG",
+      "tileMeters": [
+        2.4,
+        2.4
+      ],
+      "scaleNote": "Art-directed; provider does not specify physical dimensions.",
+      "archiveSha256": "a8712f4b29d6dbe8dc4c3b09c82e97d79afdf71bcded702f5d62675812b14fde"
+    },
+    {
+      "id": "PaintedPlaster017",
+      "provider": "ambientCG",
+      "url": "https://ambientcg.com/view?id=PaintedPlaster017",
+      "license": "CC0-1.0",
+      "licenseUrl": "https://docs.ambientcg.com/license/",
+      "author": "Lennart Demes",
+      "download": "https://ambientcg.com/get?file=PaintedPlaster017_1K-PNG.zip",
+      "resolution": "1K PNG",
+      "tileMeters": [
+        2,
+        1
+      ],
+      "scaleNote": "Art-directed scale; provider does not state physical dimensions.",
+      "archiveSha256": "b03f902257f07d1d07963e20c59ab4998c394a801b3929ebbd2fd3b5e2737407"
+    }
+  ],
+  "files": {
+    "concrete-albedo.png": {
+      "sourceFile": "Concrete016_1K-PNG_Color.png",
+      "sourceId": "Concrete016",
+      "sha256": "65ae425de6adb99e1a37cb3c226c9c67d2f693ae88bf79383d0e762603995944",
+      "modified": false
+    },
+    "concrete-normal.png": {
+      "sourceFile": "Concrete016_1K-PNG_NormalGL.png",
+      "sourceId": "Concrete016",
+      "sha256": "139c35fdf4240c9df2d913f486617f270eb22339264126bb5b443dc9eaf4522c",
+      "modified": false
+    },
+    "concrete-roughness.png": {
+      "sourceFile": "Concrete016_1K-PNG_Roughness.png",
+      "sourceId": "Concrete016",
+      "sha256": "4f5dbeebb962cc6b99f2ae20a4807c2f390d8a8920cb78e0b6b4e823536646b6",
+      "modified": false
+    },
+    "plaster-albedo.png": {
+      "sourceFile": "PaintedPlaster017_1K-PNG_Color.png",
+      "sha256": "d974cb15b5aa31c19a08d383fdda06036dad60fb0c5f888d111efebfb3172244",
+      "modified": false,
+      "sourceId": "PaintedPlaster017"
+    },
+    "plaster-normal.png": {
+      "sourceFile": "PaintedPlaster017_1K-PNG_NormalGL.png",
+      "sha256": "4f769e50d57823a8105cdbe4893ca071b4970090f2baaca1bdfb72a49f7b835f",
+      "modified": false,
+      "sourceId": "PaintedPlaster017"
+    },
+    "plaster-roughness.png": {
+      "sourceFile": "PaintedPlaster017_1K-PNG_Roughness.png",
+      "sha256": "3254b37e0ce91f1b1b27882e5d8fc194a2ccf99247281d89c310cb941ddb9fe3",
+      "modified": false,
+      "sourceId": "PaintedPlaster017"
+    }
+  },
+  "trials": [
+    {
+      "version": 1,
+      "source": {
+        "id": "concrete_wall_008",
+        "provider": "Poly Haven",
+        "url": "https://polyhaven.com/a/concrete_wall_008",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://polyhaven.com/license",
+        "authors": [
+          "Charlotte Baglioni",
+          "Dario Barresi"
+        ],
+        "resolution": "1k PNG",
+        "tileMeters": [
+          2.7,
+          2.7
+        ]
+      },
+      "files": {
+        "concrete-albedo.png": {
+          "sourceFile": "concrete_wall_008_diff_1k.png",
+          "sha256": "72686751abff9fd701cf9c419b3f84090e255ee10a865be47a89930ecfd966b3",
+          "modified": false,
+          "sourceId": "concrete_wall_008",
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/concrete_wall_008/concrete_wall_008_diff_1k.png",
+          "providerMd5": "28b99bf8056aba1efc21ef09f0477820"
+        },
+        "concrete-normal.png": {
+          "sourceFile": "concrete_wall_008_nor_gl_1k.png",
+          "sha256": "76b85b25ec9d3c0b79aaad02690b9f2a0fe5613001d5c8063e0c2a56698e0d2f",
+          "modified": false,
+          "sourceId": "concrete_wall_008",
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/concrete_wall_008/concrete_wall_008_nor_gl_1k.png",
+          "providerMd5": "514111a547adc8b3870732f864fc46b4"
+        },
+        "concrete-roughness.png": {
+          "sourceFile": "concrete_wall_008_rough_1k.png",
+          "sha256": "aa4d1d51f856d104b9e3254b0723ced26d368e626cb2fec194f6305e51edd79b",
+          "modified": false,
+          "sourceId": "concrete_wall_008",
+          "downloadUrl": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/concrete_wall_008/concrete_wall_008_rough_1k.png",
+          "providerMd5": "f7fdbaef34b034e53e5fd31c64e09b71"
+        }
+      },
+      "feedback": [
+        "the wall looks exactly the same lol it doesnt look great",
+        "the normal makes it look better but why is it tiled like that"
+      ],
+      "decision": "Replace the conspicuous formwork grid with continuous concrete; keep normal detail."
+    },
+    {
+      "versions": [
+        2,
+        3,
+        4
+      ],
+      "source": {
+        "id": "Concrete034",
+        "provider": "ambientCG",
+        "url": "https://ambientcg.com/view?id=Concrete034",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://docs.ambientcg.com/license/",
+        "author": "Lennart Demes",
+        "download": "https://ambientcg.com/get?file=Concrete034_1K-PNG.zip",
+        "resolution": "1K PNG",
+        "tileMeters": [
+          1.1,
+          0.55
+        ],
+        "archiveSha256": "d79cbba91fa35bcd491400baf69e4428f60c33522e0221e17b2c0431025d0ecc"
+      },
+      "files": {
+        "concrete-albedo.png": {
+          "sourceFile": "Concrete034_1K-PNG_Color.png",
+          "sourceId": "Concrete034",
+          "sha256": "dffbbd0fd7249e938a30b650675262034fe0face516b0d036e9c34cae5a99190",
+          "modified": false
+        },
+        "concrete-normal.png": {
+          "sourceFile": "Concrete034_1K-PNG_NormalGL.png",
+          "sourceId": "Concrete034",
+          "sha256": "7378313b5e38d138a2048d0a300194444ba7b205b062751a93a91bde8dfbccf9",
+          "modified": false
+        },
+        "concrete-roughness.png": {
+          "sourceFile": "Concrete034_1K-PNG_Roughness.png",
+          "sourceId": "Concrete034",
+          "sha256": "b2f8b937d4c9d1d305fc30b915b28712d166939bba1c3823ad39767dd22e1f07",
+          "modified": false
+        }
+      },
+      "parameters": {
+        "version3": {
+          "tileMeters": [
+            1.1,
+            0.55
+          ],
+          "normalStrength": 0.35,
+          "albedoStrength": 0.45,
+          "rotateQuarterTurn": true,
+          "baseColor": [
+            0.48,
+            0.51,
+            0.55,
+            1
+          ]
+        },
+        "version4": {
+          "normalStrength": 0.15
+        }
+      },
+      "decision": "Reject repeating brush relief. Isolated normal-layer renders identified Concrete034 base normal as the main visible motif; strength reduction made it quieter without changing its plaster-like identity."
+    },
+    {
+      "version": 5,
+      "sourceId": "Concrete046",
+      "parameters": {
+        "tileMeters": [
+          2.4,
+          2.4
+        ],
+        "normalStrength": 0.35,
+        "albedoStrength": 0.45,
+        "detailStrength": 0.18,
+        "rotateQuarterTurn": true,
+        "baseColor": [
+          0.48,
+          0.51,
+          0.55,
+          1
+        ]
+      },
+      "decision": "Better concrete pore relief and broad quiet surfaces; lower albedo contrast to reduce recurring scraped colour patch."
+    },
+    {
+      "versions": [
+        6,
+        7
+      ],
+      "source": {
+        "id": "Concrete046",
+        "provider": "ambientCG",
+        "url": "https://ambientcg.com/view?id=Concrete046",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://docs.ambientcg.com/license/",
+        "author": "Lennart Demes",
+        "download": "https://ambientcg.com/get?file=Concrete046_1K-PNG.zip",
+        "resolution": "1K PNG",
+        "tileMeters": [
+          2.4,
+          2.4
+        ],
+        "archiveSha256": "c62d34f7f57b1d1e6a04ee9e4471e1d16b3445737ddd195a3a21ef5a7698a533"
+      },
+      "files": {
+        "concrete-albedo.png": {
+          "sourceFile": "Concrete046_1K-PNG_Color.png",
+          "sourceId": "Concrete046",
+          "sha256": "cecef1d44000ecb4b12abd6f2309350e1f00d83c974ec7712f67f399e8c14b85",
+          "modified": false
+        },
+        "concrete-normal.png": {
+          "sourceFile": "Concrete046_1K-PNG_NormalGL.png",
+          "sourceId": "Concrete046",
+          "sha256": "75ce4fdeba33a32f6cad844cf52f4a7d555ce2b5f36d4a241485d9109ebe84bd",
+          "modified": false
+        },
+        "concrete-roughness.png": {
+          "sourceFile": "Concrete046_1K-PNG_Roughness.png",
+          "sourceId": "Concrete046",
+          "sha256": "0bd829037364b14f05f181c607e780aaad4a2a3c15189a50fa201838f3939896",
+          "modified": false
+        }
+      },
+      "parameters": {
+        "version6": {
+          "tileMeters": [
+            2.4,
+            2.4
+          ],
+          "normalStrength": 0.8,
+          "albedoStrength": 0.18,
+          "detailStrength": 0.18,
+          "rotateQuarterTurn": true,
+          "baseColor": [
+            0.48,
+            0.51,
+            0.55,
+            1
+          ]
+        },
+        "version7": {
+          "normalStrength": 1.2
+        }
+      },
+      "decision": "User rejected v6 as looking untextured in the screenshot. Raising Concrete046 base strength to 1.2 still did not provide sufficiently readable surface detail at the matched camera. Supersede the previous agent recommendation."
+    },
+    {
+      "version": 8,
+      "sourceId": "Concrete016",
+      "normalStrength": 0.8,
+      "decision": "Visibly textured at review camera; viable stronger option. Compare .55 to soften abrasive interstitial relief without losing material identity."
+    }
+  ],
+  "version": 8,
+  "feedback": [
+    {
+      "versionReviewed": 2,
+      "quote": "much better, but color feels off . Also can you rotate this 90 degree? let me see what that looks like",
+      "decision": "Preview a 90-degree texture rotation and a cooler, darker concrete tint. Appearance remains pending review."
+    },
+    {
+      "versionReviewed": 3,
+      "quote": "color is better but somethign about this still feels wrong. the normal feels like its too easy to spot as a pattern? can you audit w/ a new gpt6 subagent and get some opinons/ideas",
+      "decision": "Retain cooler colour direction; isolate layers with fresh GPT-6 critique. Appearance not approved."
+    },
+    {
+      "versionReviewed": 4,
+      "quote": "ok lets keep iterating w/ the subagent until we get approval. def try and use mirror edge as baseline",
+      "decision": "Continue local rendered comparison and GPT-6 critiques. Use original Mirror\u2019s Edge concrete as visual reference, without copying its assets. User approval remains pending."
+    },
+    {
+      "versionReviewed": 6,
+      "quote": "am i crazy or does  your new version look like..nothing? i cant see any texture in your screenshot at all",
+      "decision": "Rejected as too flat. Require material detail that is visibly readable at the actual review camera, not only fine grain apparent on close inspection."
+    }
+  ],
+  "currentParameters": {
+    "tileMeters": [
+      2.4,
+      2.4
+    ],
+    "normalStrength": 0.8,
+    "albedoStrength": 0.18,
+    "detailStrength": 0.18,
+    "rotateQuarterTurn": true,
+    "baseColor": [
+      0.48,
+      0.51,
+      0.55,
+      1
+    ]
+  },
+  "reviewReference": {
+    "url": "https://littlelostpoly.com/mirrors-edge-b",
+    "artist": "Robert Briscoe",
+    "criteria": "Broad coherent sunlit concrete planes; restrained pores and irregular grain up close; grazing light may reveal relief; avoid recognizable repeated brush gestures. Reference only; no game imagery imported."
+  },
+  "agentReview": {
+    "model": "gpt-6-astra",
+    "version": 9,
+    "recommendation": "Prefer v9 .55: pits and grain plainly visible at actual review camera, less abrasive than v8 .8. Present both. User approval pending.",
+    "supersedes": "V6 recommendation retracted after user rejected its nearly invisible detail."
+  },
+  "approval": {
+    "date": "2026-09-14",
+    "version": 8,
+    "quote": "yes i like the stronger one",
+    "image": "artifacts/structure-surfaces/wall-v8-pitted-concrete.png",
+    "imageSha256": "0b14e77b0f63a20f89707087c7da33b572d388d6ca98e1adef42f4b584e80a54",
+    "scope": "Select stronger Concrete016 finish shown in v8, including cooler colour, 90-degree rotation, .8 base normal and .18 albedo contrast. No Meshy submission or merge authorization."
+  },
+  "rogueliteGroundReuse": {
+    "date": "2026-10-03",
+    "approver": "Kamran",
+    "quote": "Let's start adding some textures. In the original fps game we started a concrete texture on the wall and it looked fucking amazing... a big texture and smaller detail texture and randomized repeat or something. That STRATEGY was really good. And no seams in the texture. Let's start small with just doing ground... try applying that concrete texture for the sidewalks and promenade. Make sure we are fixing the whole map not just this one area.",
+    "scope": "Concrete016 albedo, roughness and normal plus the PaintedPlaster017 normal as the detail layer, reused unmodified by assets/maps/western_block/faceted-surface.gdshaderinc for roguelite footways, kerb tops, plazas, paths and the promenade.",
+    "tiling": "World-metre XZ projection, hex-tile blending with a random rotation and offset per cell; no image bytes modified."
+  },
+  "trialScope": {
+    "date": "2026-10-04",
+    "status": "Part 2 proposal only; no approval to ship",
+    "sourceMaps": "Unmodified existing Concrete016 and PaintedPlaster017 files",
+    "trials": {
+      "roof": {
+        "source": "PaintedPlaster017",
+        "tileMeters": 1.4,
+        "albedoStrength": 0.12,
+        "normalStrength": 0.25,
+        "detailStrength": 0.18
+      },
+      "trim": {
+        "source": "Concrete016",
+        "tileMeters": 2.4,
+        "albedoStrength": 0.2,
+        "normalStrength": 0.45,
+        "detailStrength": 0.18
+      },
+      "uprightConcrete": {
+        "source": "Concrete016",
+        "tileMeters": 2.4,
+        "albedoStrength": 0.2,
+        "normalStrength": 0.45,
+        "detailStrength": 0.18
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+        if (name === "audit_textures" && payload?.enabled === true) {
+            const trials: { path: string; surface: number; family: string }[] = [];
+            const changed = new Set<number>();
+            const matches = (c: Color, rgb: readonly number[]) => Math.abs(c.r-rgb[0])+Math.abs(c.g-rgb[1])+Math.abs(c.b-rgb[2]) < 0.002;
+            const stoneColours: readonly (readonly number[])[] = [...Object.entries(MATERIAL_SLOTS).filter(([slot]) => slot.startsWith("trim")).map(([,rgb]) => rgb), MATERIAL_SLOTS.masonryTan, [0.86,0.82,0.73]];
+            const visit = (node: Node): void => {
+                if (node instanceof MeshInstance3D || node instanceof MultiMeshInstance3D) {
+                    const mesh=node instanceof MeshInstance3D ? node.mesh : node.multimesh?.mesh;
+                    for(let i=0;mesh && i<mesh.get_surface_count();i++) {
+                        const original=node instanceof MeshInstance3D ? node.get_active_material(i) : node.material_override ?? mesh.surface_get_material(i);
+                        if (!(original instanceof ShaderMaterial) || original.resource_name.startsWith("BridgeAshlar")) continue;
+                        if(original.shader?.resource_path !== "res://assets/maps/western_block/faceted-surface.gdshader") continue;
+                        if(changed.has(original.get_instance_id())) continue;
+                        const colour=original.get_shader_parameter("base_color");
+                        if (!(colour instanceof Color)) continue;
+                        const family=matches(colour, MATERIAL_SLOTS.roofMembrane) ? "roof" : stoneColours.some(rgb => matches(colour,rgb)) ? "trim" :
+                            matches(colour,MATERIAL_SLOTS.concrete) || matches(colour,[0.74,0.72,0.66]) ? "kerb" : null;
+                        if(!family) continue;
+                        const ambient=["structure_ambient_strength","structure_base_y","structure_height"].map(uniform => original.get_shader_parameter(uniform));
+                        const material=original;
+                        changed.add(original.get_instance_id());
+                        applyWallTexture(material, "concrete");
+                        material.set_shader_parameter("wall_texture_all_faces", family !== "kerb");
+                        material.set_shader_parameter("wall_albedo_strength", family === "roof" ? 0.12 : 0.20);
+                        material.set_shader_parameter("wall_normal_strength", family === "roof" ? 0.25 : 0.45);
+                        material.set_shader_parameter("wall_detail_strength", 0.18);
+                        if(family === "roof") {
+                            for(const [uniform,file] of Object.entries({wall_albedo:"plaster-albedo.png",wall_roughness:"plaster-roughness.png",wall_normal:"plaster-normal.png",wall_detail_normal:"plaster-normal.png"}))
+                                material.set_shader_parameter(uniform,loadShared(`res://assets/maps/car_garage/structures/${file}`,"Texture2D"));
+                            material.set_shader_parameter("wall_albedo_mean", 0.517935);
+                            material.set_shader_parameter("wall_tile", 1.4);
+                        }
+                        // Preview changes textures only: keep Part 1's ambient parameters exactly.
+                        ["structure_ambient_strength","structure_base_y","structure_height"].forEach((uniform,index)=>material.set_shader_parameter(uniform,ambient[index]));
+                        trials.push({path:String(node.get_path()),surface:i,family});
+                    }
+                }
+                for(const child of node.get_children()) visit(child);
+            };
+            visit(this);
+            return JSON.stringify({accepted:true,trials});
+        }
