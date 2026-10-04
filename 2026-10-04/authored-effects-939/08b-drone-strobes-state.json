@@ -1,0 +1,6100 @@
+{
+  "store": {
+    "aiBudget": {
+      "assistanceMs": 0.09131,
+      "decisionsMs": 1.27699,
+      "maxMs": 2.75,
+      "meanMs": 1.36929,
+      "meanRays": 0,
+      "p95Ms": 2.353,
+      "ticks": 300
+    },
+    "audio": {
+      "activeFootstepPlayers": 0,
+      "activeLocalPlayers": 1,
+      "activeWorldPlayers": 9,
+      "buses": [
+        "GameplaySfx",
+        "GameplayUI",
+        "GameplayAmbience",
+        "Music"
+      ],
+      "cheatLoops": {
+        "cheat-drone-hover": [
+          {
+            "playing": true,
+            "volumeDb": 0
+          },
+          {
+            "playing": false,
+            "volumeDb": 0
+          }
+        ],
+        "cheat-drone-swarm-hover": [
+          {
+            "playing": false,
+            "volumeDb": 0
+          }
+        ],
+        "cheat-turret-idle": [
+          {
+            "playing": true,
+            "volumeDb": 0
+          },
+          {
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "playing": false,
+            "volumeDb": 0
+          }
+        ],
+        "enemy-heli-rotor": [
+          {
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "playing": false,
+            "volumeDb": 0
+          }
+        ]
+      },
+      "cheatTakes": {
+        "cheat-drone-shot-01.ogg": 113,
+        "cheat-drone-shot-02.ogg": 119,
+        "cheat-drone-shot-03.ogg": 106,
+        "cheat-grenade-blast-02.ogg": 1,
+        "cheat-rpg-blast-01.ogg": 2,
+        "cheat-rpg-blast-02.ogg": 1,
+        "cheat-rpg-launch-01.ogg": 1,
+        "cheat-rpg-launch-02.ogg": 1,
+        "cheat-turret-deploy-01.ogg": 6,
+        "cheat-turret-expire-01.ogg": 5,
+        "cheat-turret-shot-01.ogg": 83,
+        "cheat-turret-shot-02.ogg": 68,
+        "cheat-turret-shot-03.ogg": 83,
+        "enemy-plate-break-01.ogg": 2,
+        "enemy-plate-break-02.ogg": 1,
+        "enemy-uav-online-01.ogg": 1
+      },
+      "cheatVoices": [],
+      "cueLog": [
+        {
+          "atMs": 649958,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 649959,
+          "id": "drone-crash",
+          "spatial": true
+        },
+        {
+          "atMs": 649959,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 649959,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 649960,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 649969,
+          "id": "drone-sputter",
+          "spatial": true
+        },
+        {
+          "atMs": 666638,
+          "id": "picket-chirp",
+          "spatial": true
+        },
+        {
+          "atMs": 667666,
+          "id": "picket-chirp",
+          "spatial": true
+        },
+        {
+          "atMs": 674651,
+          "id": "picket-chirp",
+          "spatial": true
+        },
+        {
+          "atMs": 675652,
+          "id": "picket-chirp",
+          "spatial": true
+        },
+        {
+          "atMs": 681101,
+          "id": "pickup-success",
+          "spatial": false
+        },
+        {
+          "atMs": 681664,
+          "id": "picket-chirp",
+          "spatial": true
+        },
+        {
+          "atMs": 688630,
+          "id": "picket-chirp",
+          "spatial": true
+        },
+        {
+          "atMs": 701385,
+          "id": "pickup-success",
+          "spatial": false
+        },
+        {
+          "atMs": 706703,
+          "id": "kill-confirm",
+          "spatial": false
+        },
+        {
+          "atMs": 706704,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 706704,
+          "id": "drone-crash",
+          "spatial": true
+        },
+        {
+          "atMs": 706705,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 706705,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 706705,
+          "id": "drone-crash",
+          "spatial": true
+        },
+        {
+          "atMs": 706706,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 706706,
+          "id": "enemy-death",
+          "spatial": true
+        },
+        {
+          "atMs": 706713,
+          "id": "drone-sputter",
+          "spatial": true
+        },
+        {
+          "atMs": 706713,
+          "id": "drone-sputter",
+          "spatial": true
+        }
+      ],
+      "enemyLoops": {
+        "mend": [
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          }
+        ],
+        "motor": [
+          {
+            "cutoffHz": 20500,
+            "held": false,
+            "pitch": 1.101,
+            "playing": false,
+            "volumeDb": -7.3
+          },
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          }
+        ],
+        "rotor": [
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          }
+        ],
+        "shimmer": [
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          }
+        ],
+        "sweep": [
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          },
+          {
+            "cutoffHz": 5000,
+            "held": false,
+            "pitch": 1,
+            "playing": false,
+            "volumeDb": 0
+          }
+        ]
+      },
+      "enemyTells": [],
+      "healthDistress": {
+        "breathingPlaying": false,
+        "breathingVolumeDb": 0,
+        "heartbeatPlaying": false,
+        "heartbeatRate": 1,
+        "heartbeatVolumeDb": 0
+      },
+      "lastPlayed": {
+        "cue": "drone-sputter",
+        "spatial": true
+      },
+      "lastSpatialByCue": {
+        "cheat-drone-hover": true,
+        "cheat-drone-shot": true,
+        "cheat-grenade-blast": true,
+        "cheat-rpg-blast": true,
+        "cheat-rpg-launch": true,
+        "cheat-turret-deploy": true,
+        "cheat-turret-expire": true,
+        "cheat-turret-idle": true,
+        "cheat-turret-shot": true,
+        "combat-enemy-rifle": true,
+        "combat-hit-direction": true,
+        "combat-pistol-windup": true,
+        "combat-player-hit": false,
+        "combat-rifle-windup": true,
+        "drone-crash": true,
+        "drone-sputter": true,
+        "enemy-death": true,
+        "enemy-heli-rotor": true,
+        "enemy-plate-break": true,
+        "enemy-uav-online": false,
+        "impact-flesh": true,
+        "impact-metal": true,
+        "kill-confirm": false,
+        "landing": false,
+        "machine-death": true,
+        "match-start": false,
+        "minigun-spinup": true,
+        "motor-loop": true,
+        "picket-chirp": true,
+        "pickup-success": false,
+        "rccar-beep": true,
+        "ui-open": false
+      },
+      "missingReviewedResources": [],
+      "playedCounts": {
+        "cheat-drone-hover": 1,
+        "cheat-drone-shot": 338,
+        "cheat-grenade-blast": 1,
+        "cheat-rpg-blast": 3,
+        "cheat-rpg-launch": 2,
+        "cheat-turret-deploy": 6,
+        "cheat-turret-expire": 5,
+        "cheat-turret-idle": 6,
+        "cheat-turret-shot": 234,
+        "combat-enemy-rifle": 481,
+        "combat-hit-direction": 2,
+        "combat-pistol-windup": 5,
+        "combat-player-hit": 2,
+        "combat-rifle-windup": 86,
+        "drone-crash": 3,
+        "drone-sputter": 3,
+        "enemy-death": 50,
+        "enemy-heli-rotor": 11954,
+        "enemy-plate-break": 3,
+        "enemy-uav-online": 1,
+        "heavy-step": 9,
+        "impact-flesh": 561,
+        "impact-metal": 6,
+        "kill-confirm": 17,
+        "landing": 1,
+        "machine-death": 2,
+        "match-start": 1,
+        "minigun-spinup": 2,
+        "motor-loop": 1,
+        "picket-chirp": 63,
+        "pickup-success": 8,
+        "rccar-beep": 1,
+        "soldier-step": 602,
+        "ui-open": 2
+      },
+      "recentFootsteps": [
+        {
+          "pitch": 0.988,
+          "take": "soldier-step-04.ogg",
+          "volumeDb": 8.6
+        },
+        {
+          "pitch": 0.989,
+          "take": "soldier-step-02.ogg",
+          "volumeDb": 7
+        },
+        {
+          "pitch": 0.982,
+          "take": "soldier-step-02.ogg",
+          "volumeDb": 6.8
+        },
+        {
+          "pitch": 1.024,
+          "take": "soldier-step-01.ogg",
+          "volumeDb": 14.4
+        },
+        {
+          "pitch": 0.96,
+          "take": "soldier-step-01.ogg",
+          "volumeDb": 8
+        },
+        {
+          "pitch": 0.994,
+          "take": "soldier-step-02.ogg",
+          "volumeDb": 7.8
+        },
+        {
+          "pitch": 0.963,
+          "take": "soldier-step-02.ogg",
+          "volumeDb": 7.1
+        },
+        {
+          "pitch": 0.926,
+          "take": "soldier-step-03.ogg",
+          "volumeDb": 6
+        }
+      ],
+      "recentPlayed": [
+        {
+          "id": "drone_sputter",
+          "spatial": true
+        },
+        {
+          "id": "drone_sputter",
+          "spatial": true
+        },
+        {
+          "id": "enemy_death",
+          "spatial": true
+        },
+        {
+          "id": "enemy_death",
+          "spatial": true
+        },
+        {
+          "id": "drone_crash",
+          "spatial": true
+        }
+      ],
+      "scheduledCount": 0,
+      "score": {
+        "boss": {
+          "gain": 0,
+          "loaded": true,
+          "outputGain": 0,
+          "playing": false,
+          "target": 0
+        },
+        "combat": {
+          "gain": 0,
+          "loaded": true,
+          "outputGain": 0,
+          "playing": false,
+          "target": 0
+        },
+        "explore": {
+          "gain": 0.1995,
+          "loaded": true,
+          "outputGain": 0.1995,
+          "playing": true,
+          "target": 0.1995
+        },
+        "traffic": {
+          "gain": 0.0635,
+          "loaded": true,
+          "outputGain": 0.0635,
+          "playing": true,
+          "target": 0.0635
+        },
+        "water": {
+          "gain": 0.0199,
+          "loaded": true,
+          "outputGain": 0.0199,
+          "playing": true,
+          "target": 0.0199
+        },
+        "wind": {
+          "gain": 0.015,
+          "loaded": true,
+          "outputGain": 0.015,
+          "playing": true,
+          "target": 0.015
+        }
+      },
+      "volumePercent": 100
+    },
+    "combatVfxPrewarmed": true,
+    "consoleLines": [
+      "upgrade done",
+      "timeScale done",
+      "timeScale done",
+      "timeScale done",
+      "timeScale done",
+      "killEnemies done: 9 killed",
+      "spawn done",
+      "timeScale done",
+      "timeScale done",
+      "clock done",
+      "killEnemies done: 19 killed",
+      "spawn done",
+      "ERROR: levels must be 1-5",
+      "ERROR: levels must be 1-5",
+      "killEnemies done: 25 killed",
+      "ERROR: scale must be 0.05-4",
+      "spawn done",
+      "killEnemies done: 25 killed",
+      "ERROR: scale must be 0.05-4",
+      "spawn done"
+    ],
+    "consoleOpen": false,
+    "controlsCanSave": true,
+    "controlsCapture": null,
+    "controlsMenuOpen": false,
+    "controlsStatus": "",
+    "controlsWarning": "",
+    "debugFreeFly": [
+      -280.244873046875,
+      -11.5494136810303,
+      -430.776519775391
+    ],
+    "desktopTrainer": {
+      "closed": false,
+      "contentScale": 0.928125023841858,
+      "maximized": false,
+      "minimized": false,
+      "open": false,
+      "rect": {
+        "height": 584.569606801275,
+        "width": 908.990435706695,
+        "x": 185.504782146652,
+        "y": 52.7948990435707
+      },
+      "tab": "CHEATS",
+      "visible": false
+    },
+    "firstRunHints": {
+      "current": null,
+      "seen": [
+        "aimbot",
+        "infoPanel",
+        "knife",
+        "ammo",
+        "streak"
+      ]
+    },
+    "input": {
+      "cursorCaptureRequested": true,
+      "cursorCaptured": true,
+      "injected": {
+        "active": false,
+        "expiresInMs": null,
+        "form": null,
+        "holdId": null,
+        "lastCompletedTapFrames": null,
+        "lastCompletedTapHoldId": null,
+        "lastCompletedTapSequence": null,
+        "lastSampledSequence": -1,
+        "restoresHoldId": null,
+        "sampledHoldId": 0,
+        "samples": 0,
+        "sequence": 24082,
+        "tapFramesRemaining": null
+      },
+      "mouseMode": 2
+    },
+    "lattice": {
+      "live": 0,
+      "merged": 341,
+      "opened": 512,
+      "slots": [],
+      "view": {
+        "enemyMarks": [
+          {
+            "adminId": "soldier-e47",
+            "aimed": false,
+            "bodyAtBirth": [
+              -233.3408203125,
+              -16.703125,
+              -379.423828125
+            ],
+            "bodyMoved": 0,
+            "bornAtMs": 354632.65,
+            "frames": 15,
+            "maxGap": 1.0769163338864e-14,
+            "reachLostAtMs": null,
+            "ref": {
+              "opened": false,
+              "slot": 1,
+              "startedAtMs": 353279.65
+            },
+            "startGap": 1.0769163338864e-14
+          },
+          {
+            "adminId": "soldier-e47",
+            "aimed": false,
+            "bodyAtBirth": [
+              -233.3408203125,
+              -16.703125,
+              -379.423828125
+            ],
+            "bodyMoved": 0,
+            "bornAtMs": 354781.65,
+            "frames": 15,
+            "maxGap": 1.0769163338864e-14,
+            "reachLostAtMs": null,
+            "ref": {
+              "opened": false,
+              "slot": 1,
+              "startedAtMs": 353279.65
+            },
+            "startGap": 1.0769163338864e-14
+          },
+          {
+            "adminId": "soldier-e47",
+            "aimed": false,
+            "bodyAtBirth": [
+              -233.3408203125,
+              -16.703125,
+              -379.423828125
+            ],
+            "bodyMoved": 0,
+            "bornAtMs": 354864.65,
+            "frames": 17,
+            "maxGap": 1.0769163338864e-14,
+            "reachLostAtMs": null,
+            "ref": {
+              "opened": false,
+              "slot": 1,
+              "startedAtMs": 353279.65
+            },
+            "startGap": 1.0769163338864e-14
+          },
+          {
+            "adminId": "soldier-e47",
+            "aimed": false,
+            "bodyAtBirth": [
+              -233.3408203125,
+              -16.703125,
+              -379.423828125
+            ],
+            "bodyMoved": 0,
+            "bornAtMs": 355017.65,
+            "frames": 11,
+            "maxGap": 1.0769163338864e-14,
+            "reachLostAtMs": null,
+            "ref": {
+              "opened": false,
+              "slot": 1,
+              "startedAtMs": 353279.65
+            },
+            "startGap": 1.0769163338864e-14
+          },
+          {
+            "adminId": "soldier-e49",
+            "aimed": false,
+            "bodyAtBirth": [
+              -243.1357421875,
+              -17.1435546875,
+              -391.9462890625
+            ],
+            "bodyMoved": 0,
+            "bornAtMs": 355265.65,
+            "frames": 15,
+            "maxGap": -1.40443212615082e-14,
+            "reachLostAtMs": null,
+            "ref": {
+              "opened": true,
+              "slot": 0,
+              "startedAtMs": 355265.65
+            },
+            "startGap": -1.40443212615082e-14
+          },
+          {
+            "adminId": "rccar-e67",
+            "aimed": false,
+            "bodyAtBirth": [
+              -249.7724609375,
+              -17.2410335540771,
+              -392.784118652344
+            ],
+            "bodyMoved": 1.28262366278268,
+            "bornAtMs": 355519.65,
+            "frames": 15,
+            "maxGap": 5.77315972805081e-15,
+            "reachLostAtMs": null,
+            "ref": {
+              "opened": true,
+              "slot": 5,
+              "startedAtMs": 355519.65
+            },
+            "startGap": -8.93729534823251e-15
+          },
+          {
+            "adminId": "rccar-e67",
+            "aimed": false,
+            "bodyAtBirth": [
+              -249.771240234375,
+              -17.2207012176514,
+              -391.421508789062
+            ],
+            "bodyMoved": 1.31195088803808,
+            "bornAtMs": 355768.65,
+            "frames": 15,
+            "maxGap": 1.32778355124938,
+            "reachLostAtMs": 46,
+            "ref": {
+              "opened": false,
+              "slot": 5,
+              "startedAtMs": 355519.65
+            },
+            "startGap": 0.0661767848201478
+          },
+          {
+            "adminId": "rccar-e67",
+            "aimed": false,
+            "bodyAtBirth": [
+              -249.7705078125,
+              -17.2164611816406,
+              -391.141845703125
+            ],
+            "bodyMoved": 1.30233764648438,
+            "bornAtMs": 355814.65,
+            "frames": 15,
+            "maxGap": 1.59556298649428,
+            "reachLostAtMs": 17,
+            "ref": {
+              "opened": false,
+              "slot": 5,
+              "startedAtMs": 355519.65
+            },
+            "startGap": 0.319983127628803
+          },
+          {
+            "adminId": "rccar-e67",
+            "aimed": false,
+            "bodyAtBirth": [
+              -249.7705078125,
+              -17.1966896057129,
+              -390.028656005859
+            ],
+            "bodyMoved": 1.29531897163903,
+            "bornAtMs": 356018.65,
+            "frames": 15,
+            "maxGap": 7.21644966006352e-16,
+            "reachLostAtMs": null,
+            "ref": {
+              "opened": true,
+              "slot": 7,
+              "startedAtMs": 356018.65
+            },
+            "startGap": -9.43689570931383e-16
+          },
+          {
+            "adminId": "rccar-e67",
+            "aimed": false,
+            "bodyAtBirth": [
+              -249.76953125,
+              -17.1822986602783,
+              -388.924621582031
+            ],
+            "bodyMoved": 1.00860642979967,
+            "bornAtMs": 356216.65,
+            "frames": 11,
+            "maxGap": 0.761510436892959,
+            "reachLostAtMs": 99,
+            "ref": {
+              "opened": false,
+              "slot": 7,
+              "startedAtMs": 356018.65
+            },
+            "startGap": -3.21964677141295e-14
+          },
+          {
+            "adminId": "rccar-e67",
+            "aimed": false,
+            "bodyAtBirth": [
+              -249.76953125,
+              -17.1787109375,
+              -388.649322509766
+            ],
+            "bodyMoved": 0.733307535021277,
+            "bornAtMs": 356267.65,
+            "frames": 8,
+            "maxGap": 0.761510436892959,
+            "reachLostAtMs": 48,
+            "ref": {
+              "opened": false,
+              "slot": 7,
+              "startedAtMs": 356018.65
+            },
+            "startGap": 0.0697567084497691
+          },
+          {
+            "adminId": "soldier-e49",
+            "aimed": false,
+            "bodyAtBirth": [
+              -243.1357421875,
+              -17.1435546875,
+              -391.9462890625
+            ],
+            "bodyMoved": 0,
+            "bornAtMs": 356543.15,
+            "frames": 168,
+            "maxGap": -1.40443212615082e-14,
+            "reachLostAtMs": null,
+            "ref": {
+              "opened": true,
+              "slot": 4,
+              "startedAtMs": 356543.15
+            },
+            "startGap": -1.40443212615082e-14
+          }
+        ],
+        "hits": 0,
+        "impactFrames": 3077,
+        "showing": false
+      }
+    },
+    "localPeerId": 2,
+    "localServerTick": {
+      "maxMs": 12.7787596682288,
+      "meanMs": 0.409629210844319
+    },
+    "mainMenuOpen": false,
+    "mainMenuStatus": "",
+    "matchLoadingOpen": false,
+    "matchLoadingProgress": 1,
+    "matchLoadingStatus": "STARTING RUN...",
+    "metaMenu": {
+      "dollars": 1,
+      "message": "",
+      "open": false,
+      "shelf": [
+        {
+          "fresh": true,
+          "id": "lagSwitch",
+          "price": 2
+        },
+        {
+          "fresh": true,
+          "id": "autoAmmo",
+          "price": 5
+        },
+        {
+          "fresh": true,
+          "id": "enemyRadar",
+          "price": 8
+        }
+      ],
+      "tab": "upgrades",
+      "tabOpen": true,
+      "unlocked": [],
+      "upgrades": {}
+    },
+    "mode": "client",
+    "navStats": {
+      "failed": 500,
+      "outOfBounds": 0,
+      "queries": 1053,
+      "queryMs": 1978.595,
+      "queryPeakMs": 36.465,
+      "routeMs": 400.468,
+      "routePeakMs": 24.948,
+      "routes": 1053,
+      "syncQueries": 125
+    },
+    "navigation": {
+      "areas": 1125,
+      "polygons": 15596,
+      "ready": true,
+      "source": "dumbo-survival"
+    },
+    "pauseOpen": false,
+    "pauseRespawnAvailable": false,
+    "pauseRespawnNote": "",
+    "presentation": {
+      "aim": {
+        "aimPitchRadians": 0.158654401957789,
+        "aimYawRadians": 0.693401959476849,
+        "pitchRadians": 0.158654401957789,
+        "viewKickRadians": 0,
+        "viewKickYawRadians": 0,
+        "yawRadians": 0.693401959476849
+      },
+      "aiming": {
+        "blend": 0,
+        "crosshairVisible": true,
+        "foregroundBlurBlend": 0,
+        "requested": false
+      },
+      "artDirection": "white-red-cyan-faceted",
+      "body": {
+        "alive": true,
+        "armor": 0,
+        "health": 100,
+        "runArmor": 0
+      },
+      "cameraFov": 35,
+      "cameraMode": "first-person",
+      "characterAnimationSource": "Mixamo",
+      "combatVfx": {
+        "activeBulletHoles": 0,
+        "activeDebris": 0,
+        "activeDust": 0,
+        "activeShells": 0,
+        "impactSpawnCount": 0,
+        "lastImpact": null,
+        "recentImpacts": [],
+        "shellSpawnCount": 0
+      },
+      "debugThirdPerson": false,
+      "defenses": [
+        {
+          "armorVisible": false,
+          "playerId": 2
+        }
+      ],
+      "firstPersonFiringResidual": 9.5367431640625e-7,
+      "firstPersonReload": {
+        "active": false,
+        "blend": 0,
+        "choreographed": false,
+        "phase": 0,
+        "pinned": false,
+        "pose": {
+          "supportHandEulerRadians": [
+            0,
+            0,
+            0
+          ],
+          "supportHandOffset": [
+            0,
+            0,
+            0
+          ],
+          "weaponEulerRadians": [
+            0,
+            0,
+            0
+          ],
+          "weaponOffset": [
+            0,
+            0,
+            0
+          ]
+        },
+        "weapon": "machineGun"
+      },
+      "firstPersonRigBoneCount": 41,
+      "healthDistress": {
+        "breathing": 0,
+        "heartbeat": 0,
+        "heartbeatRate": 1,
+        "intensity": 0,
+        "overlayVisible": false,
+        "targetIntensity": 0
+      },
+      "hud": {
+        "ammo": "30 / 90",
+        "armor": "0",
+        "category": "",
+        "grenades": "G:0",
+        "health": "100",
+        "interactionPrompt": "",
+        "kills": "0/1000000",
+        "layoutMode": "wide",
+        "safeMargin": 24,
+        "status": "",
+        "viewportSize": [
+          1280,
+          720
+        ],
+        "weapon": "MG-30"
+      },
+      "knife": {
+        "category": null,
+        "clip": "KnifeSlash",
+        "elapsedMs": 600,
+        "lastPress": null,
+        "loaded": false,
+        "playing": false,
+        "slashes": 0
+      },
+      "localBodyVisible": false,
+      "playerVisibility": [
+        {
+          "playerId": 2,
+          "renderedVisible": false
+        }
+      ],
+      "prediction": {
+        "active": true,
+        "correctionMetres": 0,
+        "corrections": 1,
+        "framesHeld": 24073,
+        "framesMoved": 5,
+        "historyDepth": 20,
+        "lastInputSequence": 24062,
+        "renderedPosition": [
+          -249.740234375,
+          -16.8505859375,
+          -362.99609375
+        ],
+        "serverPosition": [
+          -249.740234375,
+          -16.8505859375,
+          -362.99609375
+        ],
+        "snaps": 0,
+        "snapshotsApplied": 2632,
+        "submittedSequence": 24082
+      },
+      "reticle": {
+        "arms": {
+          "bottom": [
+            -1.5,
+            31.9780330657959
+          ],
+          "left": [
+            -39.9780311584473,
+            -1.5
+          ],
+          "right": [
+            31.9780330657959,
+            -1.5
+          ],
+          "top": [
+            -1.5,
+            -39.9780311584473
+          ]
+        },
+        "authoritativeSpreadRadians": 0.028,
+        "gapPx": 31.9780329705921,
+        "visible": true
+      },
+      "rigPose": null,
+      "stancePlacement": {
+        "anchor": [
+          -0.107,
+          1.278,
+          -0.033
+        ],
+        "bakedHands": false,
+        "bones": null,
+        "borePitchRadians": 0,
+        "butt": [
+          -0.107,
+          1.278,
+          -0.033
+        ],
+        "buttToShoulder": 7.45058059692383e-9,
+        "palmResidualMeters": null
+      },
+      "supportHandContact": {
+        "bakedHands": false,
+        "firingCurl": null,
+        "firingResidual": 5.02914190292358e-8,
+        "leftArm": {
+          "clip": "MachineGunFirstPersonIdle",
+          "elbow": [
+            0.068035677075386,
+            -0.366640210151672,
+            -0.493928223848343
+          ],
+          "hand": [
+            0.122015848755836,
+            -0.125855326652527,
+            -0.570082604885101
+          ],
+          "shoulder": [
+            -0.11506050825119,
+            -0.317891359329224,
+            -0.515688896179199
+          ]
+        },
+        "residual": 4.71216097253091e-8,
+        "socket": "WorldLeftGripSocket",
+        "supportCurl": null
+      },
+      "systemAdmins": [
+        {
+          "animation": "deathright",
+          "animationAvailable": true,
+          "animationPlays": 11,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0.552739429061954,
+          "gaitPlaybackRate": 0.201490893959999,
+          "gaitSecondary": "ShotgunWalk",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "soldier-e85",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "deathfront",
+          "animationAvailable": true,
+          "animationPlays": 3,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0,
+          "gaitPlaybackRate": 0,
+          "gaitSecondary": "none",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "soldier-e92",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "deathback",
+          "animationAvailable": true,
+          "animationPlays": 3,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0,
+          "gaitPlaybackRate": 0,
+          "gaitSecondary": "none",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "soldier-e93",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "deathright",
+          "animationAvailable": true,
+          "animationPlays": 3,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0,
+          "gaitPlaybackRate": 0,
+          "gaitSecondary": "none",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "soldier-e94",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "deathback",
+          "animationAvailable": true,
+          "animationPlays": 83,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0.707807177574354,
+          "gaitPlaybackRate": 0.150000005960464,
+          "gaitSecondary": "MachineGunWalk",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "minigun-e96",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "unavailable",
+          "animationAvailable": false,
+          "animationPlays": 0,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0,
+          "gaitPlaybackRate": 0,
+          "gaitSecondary": "none",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "drone-e99",
+          "level": "soldier",
+          "nativeDeath": false,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 0,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "deathback",
+          "animationAvailable": true,
+          "animationPlays": 79,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0.304453971581486,
+          "gaitPlaybackRate": 0.216904893517494,
+          "gaitSecondary": "ShotgunWalk",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "soldier-e100",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "deathright",
+          "animationAvailable": true,
+          "animationPlays": 79,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0.270927485746027,
+          "gaitPlaybackRate": 0.225087270140648,
+          "gaitSecondary": "ShotgunStrafeLeft",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "soldier-e101",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "unavailable",
+          "animationAvailable": false,
+          "animationPlays": 0,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0,
+          "gaitPlaybackRate": 0,
+          "gaitSecondary": "none",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "drone-e107",
+          "level": "soldier",
+          "nativeDeath": false,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 0,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "deathfront",
+          "animationAvailable": true,
+          "animationPlays": 53,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 1.49753307672122,
+          "gaitPlaybackRate": 0.160995632410049,
+          "gaitSecondary": "ShotgunStrafeLeft",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "soldier-e114",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "deathright",
+          "animationAvailable": true,
+          "animationPlays": 37,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 1.51788886371606,
+          "gaitPlaybackRate": 0.172262698411942,
+          "gaitSecondary": "ShotgunStrafeLeft",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "soldier-e119",
+          "level": "soldier",
+          "nativeDeath": true,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 41,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        },
+        {
+          "animation": "unavailable",
+          "animationAvailable": false,
+          "animationPlays": 0,
+          "assetProvenance": "unavailable",
+          "bodyShotAtMs": 0,
+          "gaitBlendWeight": 0,
+          "gaitFacingYaw": 0,
+          "gaitPlaybackRate": 0,
+          "gaitSecondary": "none",
+          "gaitSpeed": 0,
+          "gaitVelocityX": 0,
+          "gaitVelocityZ": 0,
+          "id": "drone-e121",
+          "level": "soldier",
+          "nativeDeath": false,
+          "nativeStunned": false,
+          "pullVisible": false,
+          "radioActive": false,
+          "radioAtMs": 0,
+          "releaseSafe": false,
+          "rigBoneCount": 0,
+          "slamAtMs": 0,
+          "swordDashPlayed": false,
+          "upperBodyAnimation": "none",
+          "upperBodyProgress": 0,
+          "upperBodyTracks": 0
+        }
+      ],
+      "viewmodelPass": {
+        "limbScale": {
+          "forearmMetres": 0.2582
+        },
+        "meshDepths": [],
+        "sightScreen": {
+          "ButtSocket": [
+            1.8647,
+            1.7624
+          ],
+          "FrontSightSocket": [
+            0.6005,
+            0.4885
+          ],
+          "MuzzleSocket": [
+            0.5725,
+            0.5584
+          ],
+          "RearSightSocket": [
+            0.7882,
+            0.5421
+          ],
+          "RightGripSocket": [
+            0.8175,
+            1.0716
+          ]
+        },
+        "subViewportSize": [
+          1280,
+          720
+        ],
+        "viewmodelCullMask": 524288,
+        "viewmodelFov": 50,
+        "visibleRect": [
+          1280,
+          720
+        ],
+        "weaponAxes": {
+          "bore": [
+            -0.102,
+            0.054,
+            -0.993
+          ],
+          "x": [
+            0.991,
+            -0.087,
+            -0.106
+          ],
+          "y": [
+            0.092,
+            0.995,
+            0.044
+          ]
+        },
+        "weaponMaterial": "StandardMaterial3D albedoTexture=true override=none visible=false",
+        "weaponMeshLayers": 0,
+        "windowSize": [
+          1920,
+          1080
+        ],
+        "worldCullMask": 524287,
+        "worldFov": 35
+      },
+      "weaponCalibration": {
+        "enabled": false
+      },
+      "weaponRecoil": 0,
+      "weaponSwitch": {
+        "active": false,
+        "endsAtMs": 225158,
+        "progress": 1,
+        "verticalOffset": 0
+      },
+      "worldShot": {
+        "count": 0,
+        "muzzleFlashVisible": false,
+        "recoil": 0,
+        "steadyAim": false,
+        "weapon": "none",
+        "weaponSwitchOffset": 0,
+        "weaponSwitchProgress": 1
+      },
+      "worldShots": {
+        "2": {
+          "count": 0,
+          "muzzleFlashVisible": false,
+          "recoil": 0,
+          "steadyAim": false,
+          "weapon": "none",
+          "weaponSwitchOffset": 0,
+          "weaponSwitchProgress": 1
+        }
+      }
+    },
+    "roguelite": {
+      "aimbot": {
+        "ads": false,
+        "angle": 0,
+        "killSnaps": 0,
+        "lastSnap": null,
+        "lastTurn": null,
+        "switched": 0,
+        "target": null,
+        "turning": false
+      },
+      "cheatEngine": {
+        "aimbot": "",
+        "armed": false,
+        "banishArmed": false,
+        "cards": [],
+        "maximized": false,
+        "mode": null,
+        "offers": [],
+        "open": false,
+        "openForMs": 0,
+        "rows": [],
+        "selected": 0,
+        "sent": false
+      },
+      "cheatScene": {
+        "blasts": 0,
+        "drones": 1,
+        "mines": 0,
+        "mortars": 0,
+        "thrown": 0
+      },
+      "cloakers": [],
+      "enemies": [
+        {
+          "health": 457,
+          "id": "drone-e121",
+          "position": [
+            -257.4736328125,
+            -16.466796875,
+            -431.9375
+          ]
+        }
+      ],
+      "gameHud": {
+        "banner": {
+          "text": "SUPPLY DROP INBOUND",
+          "visible": false
+        },
+        "killFeedKills": 28,
+        "killFeedRows": 0,
+        "scoreboardOpen": false,
+        "standings": [],
+        "streakPills": {
+          "1": {
+            "id": "predatorMissile",
+            "mark": "",
+            "state": "ready"
+          },
+          "2": {
+            "id": "precisionAirstrike",
+            "mark": "",
+            "state": "ready"
+          }
+        }
+      },
+      "hitIndicator": {
+        "bearing": null,
+        "showing": 0
+      },
+      "lastMultiKill": "7X MULTI KILL",
+      "lastShakeRadians": 0.0216623410582542,
+      "localReload": null,
+      "lootOverlay": {
+        "banner": "",
+        "blur": 0,
+        "muffled": false,
+        "taskbar": false
+      },
+      "medicAura": {
+        "held": [],
+        "overhealed": [],
+        "rising": 0,
+        "shed": 0
+      },
+      "minimap": {
+        "hidden": true,
+        "markers": 0,
+        "visible": false
+      },
+      "run": {
+        "combatUntilMs": 358861.65,
+        "interactables": [
+          {
+            "id": "special-1",
+            "kind": "upgrade",
+            "label": "SPECIAL",
+            "position": [
+              -250.50032043457,
+              -16.8195220947266,
+              -380.542358398438
+            ]
+          }
+        ],
+        "seed": 3200010945,
+        "startedAtMs": 224558,
+        "survival": {
+          "bestKps": 1,
+          "bonusHealth": 0,
+          "bonusHealthMax": 0,
+          "boss": null,
+          "bosses": [],
+          "build": {
+            "banishes": 0,
+            "claymores": [],
+            "drones": 1,
+            "evolved": [],
+            "evolvedIds": [],
+            "mortars": [],
+            "perkSlots": 3,
+            "ready": [],
+            "rerolls": 0,
+            "slowed": [],
+            "specialIds": [],
+            "specials": [],
+            "stats": [],
+            "stunned": [],
+            "thrown": [],
+            "turrets": [
+              {
+                "x": -247.466609338209,
+                "y": -16.8503608703613,
+                "z": -364.036491358946
+              }
+            ],
+            "weaponSlots": 3,
+            "weapons": [
+              {
+                "id": "drone",
+                "level": 1,
+                "name": "Drone",
+                "ready": false
+              },
+              {
+                "id": "turret",
+                "level": 1,
+                "name": "Sentry Turret",
+                "ready": false
+              }
+            ]
+          },
+          "dead": false,
+          "diedTo": "",
+          "drops": [
+            {
+              "kind": "special",
+              "x": -250.50032043457,
+              "z": -380.542358398438
+            },
+            {
+              "kind": "crate",
+              "x": -248.322875976562,
+              "z": -362.994110107422
+            },
+            {
+              "kind": "crate",
+              "x": -248.322875976562,
+              "z": -362.994110107422
+            },
+            {
+              "kind": "crate",
+              "x": -248.322875976562,
+              "z": -362.994110107422
+            },
+            {
+              "kind": "crate",
+              "x": -269.912353515625,
+              "z": -355.085571289062
+            },
+            {
+              "kind": "crate",
+              "x": -270.817932128906,
+              "z": -386.5517578125
+            },
+            {
+              "kind": "crate",
+              "x": -290.668518066406,
+              "z": -367.330413818359
+            },
+            {
+              "kind": "crate",
+              "x": -303.732513427734,
+              "z": -357.449432373047
+            }
+          ],
+          "elapsedMs": 904614.75,
+          "elites": [],
+          "enemies": 1,
+          "events": {
+            "commanded": [],
+            "heli": null,
+            "uavUntilMs": 282908.05
+          },
+          "godmodeUntilMs": 0,
+          "kills": 28,
+          "kps": 0,
+          "lock": null,
+          "mapHack": false,
+          "mapHackMeters": 45,
+          "message": "",
+          "meta": {
+            "ammoBoxes": [],
+            "autoAmmo": false,
+            "boxBanishes": 0,
+            "boxRerolls": 0,
+            "enemyRadar": false,
+            "extraLives": 0,
+            "lagSwitch": false,
+            "report": null
+          },
+          "minute": "DRONES, SHOTGUNNERS  |  BREATHER",
+          "offer": null,
+          "secondLife": false,
+          "shield": 0,
+          "shieldMax": 0,
+          "snapLock": false,
+          "spin": null,
+          "streaks": {
+            "activation": null,
+            "adrenalineUntilMs": 0,
+            "blasts": [],
+            "burning": [],
+            "chainEndsAtMs": 360395.65,
+            "chainWindowMs": 4000,
+            "counter": 0,
+            "dogs": [],
+            "dogsUntilMs": 0,
+            "empAtMs": 0,
+            "exitAtMs": 0,
+            "fires": [],
+            "flights": [],
+            "held": [
+              {
+                "id": "predatorMissile",
+                "marked": false
+              },
+              {
+                "id": "precisionAirstrike",
+                "marked": false
+              }
+            ],
+            "juggernautUntilMs": 0,
+            "ladder": [
+              {
+                "id": "predatorMissile",
+                "key": 1,
+                "kills": 3,
+                "name": "Predator Missile"
+              },
+              {
+                "id": "precisionAirstrike",
+                "key": 2,
+                "kills": 5,
+                "name": "Precision Airstrike"
+              }
+            ],
+            "maxHeldEach": 1,
+            "next": {
+              "id": "predatorMissile",
+              "key": 1,
+              "kills": 3,
+              "name": "Predator Missile"
+            },
+            "nowMs": 361163.85,
+            "nuke": null,
+            "out": false,
+            "returning": null,
+            "ride": null,
+            "strikes": []
+          },
+          "streamKills": [
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 283151.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "heavygunner",
+              "frozen": false,
+              "head": false,
+              "range": 17.6,
+              "seq": 1,
+              "tier": "elite"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 286186.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 14.5,
+              "seq": 2,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 293559.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 19.3,
+              "seq": 3,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 294810.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 25.6,
+              "seq": 4,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 296845.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 22.7,
+              "seq": 5,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 302383.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 10.2,
+              "seq": 6,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 305469.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 5.9,
+              "seq": 7,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 307003.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "smg",
+              "frozen": false,
+              "head": false,
+              "range": 11.7,
+              "seq": 8,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 312458.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 11.2,
+              "seq": 9,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 315227.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 9.5,
+              "seq": 10,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 319397.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 6.8,
+              "seq": 11,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 319497.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "smg",
+              "frozen": false,
+              "head": false,
+              "range": 8.5,
+              "seq": 12,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 321516.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 9.1,
+              "seq": 13,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 323033.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "smg",
+              "frozen": false,
+              "head": false,
+              "range": 8.4,
+              "seq": 14,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 325669.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 11.8,
+              "seq": 15,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 330139.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "smg",
+              "frozen": false,
+              "head": false,
+              "range": 6.7,
+              "seq": 16,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 335611.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 18.2,
+              "seq": 17,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 336445.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 17.5,
+              "seq": 18,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 337012.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 17.1,
+              "seq": 19,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 339764.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 17.5,
+              "seq": 20,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 339864.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 19.9,
+              "seq": 21,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 340882.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 18.8,
+              "seq": 22,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 343801.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 15.5,
+              "seq": 23,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 348255.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 15.3,
+              "seq": 24,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 352258.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "smg",
+              "frozen": false,
+              "head": false,
+              "range": 7.4,
+              "seq": 25,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 352758.65,
+              "by": "drone",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 23.5,
+              "seq": 26,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 355194.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rifleman",
+              "frozen": false,
+              "head": false,
+              "range": 23.2,
+              "seq": 27,
+              "tier": "regular"
+            },
+            {
+              "ads": false,
+              "aimbot": false,
+              "atMs": 356395.65,
+              "by": "turret",
+              "cause": "cheat",
+              "enemy": "rccar",
+              "frozen": false,
+              "head": false,
+              "range": 24.7,
+              "seq": 28,
+              "tier": "regular"
+            }
+          ],
+          "supply": {
+            "drops": [
+              {
+                "calledAtMs": 376744,
+                "fall": [
+                  {
+                    "atMs": 0,
+                    "position": [
+                      -248.24,
+                      -15.63,
+                      -363
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 652,
+                    "position": [
+                      -248.24,
+                      -17.69,
+                      -363
+                    ],
+                    "velocity": [
+                      -0.14,
+                      2.04,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 1078,
+                    "position": [
+                      -248.3,
+                      -17.7,
+                      -362.99
+                    ],
+                    "velocity": [
+                      -0.12,
+                      0.68,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 1242,
+                    "position": [
+                      -248.32,
+                      -17.72,
+                      -362.99
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "heliYaw": 5.63634236561618,
+                "hold": 0,
+                "id": 1,
+                "landAtMs": 377986,
+                "landed": false,
+                "releaseAtMs": 376744,
+                "smokeAtMs": 383544,
+                "x": -248.322875976562,
+                "y": -17.7166957855225,
+                "z": -362.994110107422
+              },
+              {
+                "calledAtMs": 416911,
+                "fall": [
+                  {
+                    "atMs": 0,
+                    "position": [
+                      -248.24,
+                      -15.63,
+                      -363
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 652,
+                    "position": [
+                      -248.24,
+                      -17.69,
+                      -363
+                    ],
+                    "velocity": [
+                      -0.14,
+                      2.04,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 1078,
+                    "position": [
+                      -248.3,
+                      -17.7,
+                      -362.99
+                    ],
+                    "velocity": [
+                      -0.12,
+                      0.68,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 1242,
+                    "position": [
+                      -248.32,
+                      -17.72,
+                      -362.99
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "heliYaw": 1.34043280421117,
+                "hold": 0,
+                "id": 2,
+                "landAtMs": 418153,
+                "landed": false,
+                "releaseAtMs": 416911,
+                "smokeAtMs": 423711,
+                "x": -248.322875976562,
+                "y": -17.7166957855225,
+                "z": -362.994110107422
+              },
+              {
+                "calledAtMs": 424335,
+                "fall": [
+                  {
+                    "atMs": 0,
+                    "position": [
+                      -248.24,
+                      -15.63,
+                      -363
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 652,
+                    "position": [
+                      -248.24,
+                      -17.69,
+                      -363
+                    ],
+                    "velocity": [
+                      -0.14,
+                      2.04,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 1078,
+                    "position": [
+                      -248.3,
+                      -17.7,
+                      -362.99
+                    ],
+                    "velocity": [
+                      -0.12,
+                      0.68,
+                      0
+                    ]
+                  },
+                  {
+                    "atMs": 1242,
+                    "position": [
+                      -248.32,
+                      -17.72,
+                      -362.99
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "heliYaw": 5.5114196119876,
+                "hold": 0,
+                "id": 3,
+                "landAtMs": 425577,
+                "landed": false,
+                "releaseAtMs": 424335,
+                "smokeAtMs": 431135,
+                "x": -248.322875976562,
+                "y": -17.7166957855225,
+                "z": -362.994110107422
+              },
+              {
+                "calledAtMs": 528626,
+                "fall": [
+                  {
+                    "atMs": 0,
+                    "position": [
+                      -268.94,
+                      3.7,
+                      -356.87
+                    ],
+                    "velocity": [
+                      -0.58,
+                      0,
+                      -0.16
+                    ]
+                  },
+                  {
+                    "atMs": 2101,
+                    "position": [
+                      -270.15,
+                      -17.91,
+                      -357.21
+                    ],
+                    "velocity": [
+                      0.07,
+                      6.12,
+                      2.85
+                    ]
+                  },
+                  {
+                    "atMs": 2948,
+                    "position": [
+                      -270.09,
+                      -16.24,
+                      -354.82
+                    ],
+                    "velocity": [
+                      0.15,
+                      -1.2,
+                      -0.9
+                    ]
+                  },
+                  {
+                    "atMs": 3474,
+                    "position": [
+                      -270.01,
+                      -18.2,
+                      -355.29
+                    ],
+                    "velocity": [
+                      0.18,
+                      2.03,
+                      0.3
+                    ]
+                  },
+                  {
+                    "atMs": 3907,
+                    "position": [
+                      -269.93,
+                      -18.23,
+                      -355.16
+                    ],
+                    "velocity": [
+                      0.13,
+                      0.63,
+                      0.43
+                    ]
+                  },
+                  {
+                    "atMs": 4073,
+                    "position": [
+                      -269.91,
+                      -18.26,
+                      -355.09
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "heliYaw": 2.6665168799812,
+                "hold": 0,
+                "id": 4,
+                "landAtMs": 540699,
+                "landed": false,
+                "releaseAtMs": 536626,
+                "smokeAtMs": 535426,
+                "x": -269.912353515625,
+                "y": -18.2561817169189,
+                "z": -355.085571289062
+              },
+              {
+                "calledAtMs": 276752.65,
+                "fall": [
+                  {
+                    "atMs": 0,
+                    "position": [
+                      -269.68,
+                      3.82,
+                      -387.04
+                    ],
+                    "velocity": [
+                      -0.49,
+                      0,
+                      0.35
+                    ]
+                  },
+                  {
+                    "atMs": 2103,
+                    "position": [
+                      -270.7,
+                      -17.84,
+                      -386.29
+                    ],
+                    "velocity": [
+                      -0.09,
+                      6.6,
+                      -0.12
+                    ]
+                  },
+                  {
+                    "atMs": 3453,
+                    "position": [
+                      -270.82,
+                      -17.84,
+                      -386.46
+                    ],
+                    "velocity": [
+                      0.01,
+                      2.12,
+                      -0.17
+                    ]
+                  },
+                  {
+                    "atMs": 3895,
+                    "position": [
+                      -270.82,
+                      -17.84,
+                      -386.53
+                    ],
+                    "velocity": [
+                      0.02,
+                      0.7,
+                      -0.13
+                    ]
+                  },
+                  {
+                    "atMs": 4064,
+                    "position": [
+                      -270.82,
+                      -17.86,
+                      -386.55
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "heliYaw": 5.60074661771312,
+                "hold": 0,
+                "id": 5,
+                "landAtMs": 288816.65,
+                "landed": true,
+                "releaseAtMs": 284752.65,
+                "smokeAtMs": 283552.65,
+                "x": -270.817932128906,
+                "y": -17.8641834259033,
+                "z": -386.5517578125
+              },
+              {
+                "calledAtMs": 330506.65,
+                "fall": [
+                  {
+                    "atMs": 0,
+                    "position": [
+                      -292.46,
+                      4.52,
+                      -367.73
+                    ],
+                    "velocity": [
+                      0.44,
+                      0,
+                      -0.41
+                    ]
+                  },
+                  {
+                    "atMs": 2104,
+                    "position": [
+                      -291.54,
+                      -17.15,
+                      -368.59
+                    ],
+                    "velocity": [
+                      0.5,
+                      6.55,
+                      0.83
+                    ]
+                  },
+                  {
+                    "atMs": 3448,
+                    "position": [
+                      -290.87,
+                      -17.18,
+                      -367.48
+                    ],
+                    "velocity": [
+                      0.36,
+                      2.13,
+                      0.29
+                    ]
+                  },
+                  {
+                    "atMs": 3890,
+                    "position": [
+                      -290.71,
+                      -17.18,
+                      -367.35
+                    ],
+                    "velocity": [
+                      0.23,
+                      0.71,
+                      0.11
+                    ]
+                  },
+                  {
+                    "atMs": 4059,
+                    "position": [
+                      -290.67,
+                      -17.2,
+                      -367.33
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "heliYaw": 4.31224119012515,
+                "hold": 0,
+                "id": 6,
+                "landAtMs": 342565.65,
+                "landed": true,
+                "releaseAtMs": 338506.65,
+                "smokeAtMs": 337306.65,
+                "x": -290.668518066406,
+                "y": -17.2005767822266,
+                "z": -367.330413818359
+              },
+              {
+                "calledAtMs": 356550,
+                "fall": [
+                  {
+                    "atMs": 0,
+                    "position": [
+                      -305.26,
+                      5.05,
+                      -358
+                    ],
+                    "velocity": [
+                      0.52,
+                      0,
+                      0.29
+                    ]
+                  },
+                  {
+                    "atMs": 2104,
+                    "position": [
+                      -304.16,
+                      -16.62,
+                      -357.39
+                    ],
+                    "velocity": [
+                      0.24,
+                      6.6,
+                      -0.02
+                    ]
+                  },
+                  {
+                    "atMs": 3454,
+                    "position": [
+                      -303.84,
+                      -16.62,
+                      -357.41
+                    ],
+                    "velocity": [
+                      0.19,
+                      2.12,
+                      -0.07
+                    ]
+                  },
+                  {
+                    "atMs": 3896,
+                    "position": [
+                      -303.75,
+                      -16.63,
+                      -357.44
+                    ],
+                    "velocity": [
+                      0.13,
+                      0.71,
+                      -0.06
+                    ]
+                  },
+                  {
+                    "atMs": 4065,
+                    "position": [
+                      -303.73,
+                      -16.65,
+                      -357.45
+                    ],
+                    "velocity": [
+                      0,
+                      0,
+                      0
+                    ]
+                  }
+                ],
+                "heliYaw": 2.84669955336438,
+                "hold": 0,
+                "id": 7,
+                "landAtMs": 368615,
+                "landed": false,
+                "releaseAtMs": 364550,
+                "smokeAtMs": 363350,
+                "x": -303.732513427734,
+                "y": -16.646448135376,
+                "z": -357.449432373047
+              }
+            ],
+            "nextCrateInMs": 80886.1499999999,
+            "owned": []
+          }
+        }
+      },
+      "startingWeapon": "machineGun",
+      "streakView": {
+        "gun": null,
+        "polarity": "whiteHot",
+        "ride": null,
+        "tablet": false
+      },
+      "stream": {
+        "challenge": {
+          "id": "aimbot5",
+          "progress": 0
+        },
+        "challengesDone": 0,
+        "chat": {
+          "lines": [
+            {
+              "text": "I've watched this for 4 hours straight",
+              "user": "sleepyscope"
+            },
+            {
+              "text": "chat say something nice",
+              "user": "spud_sniper"
+            },
+            {
+              "text": "5 aimbot kills in 15 seconds",
+              "user": "the_ratio_guy"
+            },
+            {
+              "text": "challenge accepted",
+              "user": "NoScopeNana"
+            },
+            {
+              "text": "we're so back",
+              "user": "doomer_dale"
+            },
+            {
+              "text": "followed for the chaos",
+              "user": "Orbit"
+            },
+            {
+              "text": "you should crouch more",
+              "user": "backseat_bex"
+            }
+          ],
+          "visible": true
+        },
+        "followers": 8,
+        "hype": 100,
+        "live": true,
+        "liveTube": false,
+        "overlay": {
+          "alerts": 0,
+          "endCard": false,
+          "opener": false,
+          "overlay": {
+            "caption": "",
+            "challenge": {
+              "pay": 15,
+              "progress": 0,
+              "result": null,
+              "secondsLeft": 37.846,
+              "text": "5 aimbot kills in 15 seconds",
+              "user": "the_ratio_guy"
+            },
+            "hype": 100,
+            "tips": 110,
+            "viewers": 51,
+            "visible": true
+          },
+          "visible": true
+        },
+        "peakViewers": 51,
+        "request": null,
+        "streams": 1,
+        "style": null,
+        "styleBonus": 1,
+        "tipBot": "",
+        "tipBotQueued": 0,
+        "tipCount": 23,
+        "tips": 110,
+        "viewers": 51
+      },
+      "survivalPlayer": {
+        "armor": 0,
+        "at": [
+          -249.740234375,
+          -16.8505859375,
+          -362.99609375
+        ],
+        "health": 100,
+        "loaded": 30,
+        "reserve": 90
+      },
+      "weapon": "machineGun",
+      "weaponRefill": ""
+    },
+    "routeWork": {
+      "cancelled": 34,
+      "completed": 926,
+      "deferred": 0,
+      "discarded": 2,
+      "exhaustedRoutes": 0,
+      "expired": 0,
+      "latencyPeakMs": 728,
+      "nativeCompleted": 928,
+      "nativePeakMs": 36.465,
+      "peakFrameMs": 31.7569999999832,
+      "peakStepMs": 31.7509999999893,
+      "pending": 0,
+      "pollPeakMs": 0.16,
+      "queriesPerFramePeak": 1,
+      "steps": 2116,
+      "submitPeakMs": 30.146,
+      "submitted": 928
+    },
+    "runSummary": {
+      "ammoBoxes": 0,
+      "open": false,
+      "shown": null
+    },
+    "schemaVersion": 1,
+    "selectedCategory": "assault",
+    "settings": {
+      "audioPercent": 100,
+      "fullscreen": true,
+      "keyBindings": {
+        "aim": [
+          "mouse:2",
+          null
+        ],
+        "crouch": [
+          "key:67",
+          "key:4194326"
+        ],
+        "dash": [
+          "key:4194328",
+          null
+        ],
+        "dropCheat": [
+          "key:71",
+          null
+        ],
+        "fire": [
+          "mouse:1",
+          null
+        ],
+        "interact": [
+          "key:70",
+          null
+        ],
+        "jump": [
+          "key:32",
+          null
+        ],
+        "knife": [
+          "key:86",
+          null
+        ],
+        "moveBackward": [
+          "key:83",
+          null
+        ],
+        "moveForward": [
+          "key:87",
+          null
+        ],
+        "moveLeft": [
+          "key:65",
+          null
+        ],
+        "moveRight": [
+          "key:68",
+          null
+        ],
+        "reload": [
+          "key:82",
+          null
+        ],
+        "scoreboard": [
+          "key:4194306",
+          null
+        ],
+        "sprint": [
+          "key:4194325",
+          null
+        ],
+        "swapWeapon": [
+          "key:81",
+          null
+        ],
+        "toggleHelp": [
+          "key:4194332",
+          null
+        ],
+        "toggleMap": [
+          "key:77",
+          null
+        ]
+      },
+      "resolutionHeight": 720,
+      "resolutionWidth": 1280,
+      "screenShakePercent": 100,
+      "sendCrashReports": true,
+      "showFpsCounter": false
+    },
+    "settingsMenuOpen": false,
+    "settingsStatus": "",
+    "simulationHz": 60,
+    "slowestNavQuery": {
+      "from": [
+        -273.421600341797,
+        -16.6055946350098,
+        -366.573364257812
+      ],
+      "ms": 36.465,
+      "to": [
+        -267.919761209914,
+        -16.6839637520839,
+        -364.114581862725
+      ]
+    },
+    "snapshot": {
+      "aiFrozen": false,
+      "corpses": [],
+      "endsAtMs": 86624232,
+      "killLimit": 1000000,
+      "matchDurationMs": 86400000,
+      "maxPlayers": 1,
+      "modeId": "roguelite",
+      "players": [
+        {
+          "accuracySpreadRadians": 0.028,
+          "aiming": false,
+          "alive": true,
+          "armor": 0,
+          "category": "assault",
+          "crouching": false,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "deaths": 0,
+          "fireRateMultiplier": 1,
+          "firedRevealPosition": [
+            0,
+            0,
+            0
+          ],
+          "firedRevealUntilMs": 0,
+          "grenades": 0,
+          "grounded": true,
+          "health": 100,
+          "id": 2,
+          "infiniteAmmo": false,
+          "invincible": true,
+          "kills": 0,
+          "lastInputSequence": 24062,
+          "loadedAmmo": 30,
+          "mantle": null,
+          "movementMultiplier": 1,
+          "name": "RapidHornet",
+          "pitch": 0,
+          "position": [
+            -249.740234375,
+            -16.8505859375,
+            -362.99609375
+          ],
+          "reloadScale": 1,
+          "reloading": false,
+          "reserveAmmo": 90,
+          "respawnAtMs": null,
+          "role": "cheater",
+          "runArmor": 0,
+          "sprintRaiseEndsAtMs": 0,
+          "sprinting": false,
+          "startingWeapon": "machineGun",
+          "team": "",
+          "verticalVelocity": 0,
+          "weapon": "machineGun",
+          "weaponReadyAtMs": 225158,
+          "weaponSwitchEndsAtMs": 225158,
+          "yaw": -1.57075743048897
+        }
+      ],
+      "serverTimeMs": 361150,
+      "systemAdmins": [
+        {
+          "attackPhase": "none",
+          "attackPhaseStartedAtMs": 0,
+          "flinchUntilMs": 0,
+          "health": 457,
+          "id": "drone-e121",
+          "laggedUntilMs": 0,
+          "lastAttackAtMs": 0,
+          "lastShotHit": false,
+          "leakUntilMs": 0,
+          "level": "soldier",
+          "markedUntilMs": 0,
+          "maxHealth": 457,
+          "position": [
+            -257.4736328125,
+            -16.466796875,
+            -431.9375
+          ],
+          "shieldHealth": 0,
+          "targetId": null,
+          "weapon": "drone"
+        }
+      ]
+    },
+    "snapshotLastFullPacket": {
+      "bytes": 103,
+      "delta": false,
+      "sequence": 0,
+      "serverTimeMs": 224806
+    },
+    "snapshotPacket": {
+      "bytes": 64,
+      "delta": true,
+      "sequence": 2632
+    },
+    "soldierPools": "SoldierMuzzleFlash built=26 reused=90 released=115 discarded=0 idle=25 · SoldierTracer built=26 reused=90 released=115 discarded=0 idle=25 · MarksmanLaser built=0 reused=0 released=0 discarded=0 idle=0 · SniperGlint built=0 reused=0 released=0 discarded=0 idle=0",
+    "soldierStats": {
+      "aims": 93,
+      "damage": 298,
+      "hits": 151,
+      "maxTokensHeld": 3,
+      "pickMs": 451.691,
+      "pickRayMs": 274.929999999904,
+      "pickRays": 28867,
+      "pickRouteMaxMs": 0.461,
+      "pickRouteMs": 16.0160000000001,
+      "pickRouteSlow": 0,
+      "pickRoutes": 2259,
+      "pickSnapMs": 69.036999999996,
+      "pickSnaps": 30390,
+      "pickStraightMs": 15.827,
+      "pickStraights": 676,
+      "rounds": 490,
+      "sightMs": 416.549999999991,
+      "spacingAwake": 25,
+      "spacingLowestMeters": 0.0874944832565595,
+      "spacingMeanNearestMeters": 52.9793752310005,
+      "spacingMinNearestMeters": 19.7199670096841,
+      "spacingNowMeanMeters": 31.1406955693408,
+      "spacingNowMinMeters": 3.88092581498187,
+      "spacingSamples": 242,
+      "spotPicks": 516,
+      "spotPicksDeferred": 144,
+      "spotsUnreachable": 246,
+      "steerMs": 3977.69599999984,
+      "updateMs": 15578.2680000003,
+      "volleys": 81
+    },
+    "stepClimbStats": {
+      "attempted": 237,
+      "climbed": 125,
+      "collisions": 703,
+      "moves": 133472,
+      "skippedMoving": 5623,
+      "skippedNoHeadroom": 0,
+      "skippedNotPressed": 127559,
+      "skippedRemembered": 53,
+      "skippedSpentMotion": 0,
+      "wasted": 112
+    },
+    "waterfront": {
+      "pilingCount": 224,
+      "simulationTime": 361.16555
+    },
+    "window": {
+      "mode": 0,
+      "position": [
+        -10000,
+        -10000
+      ],
+      "primaryScreen": 0,
+      "screen": 0,
+      "screenPosition": [
+        0,
+        0
+      ],
+      "screenSize": [
+        2560,
+        1440
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "usableRect": [
+        0,
+        0,
+        2560,
+        1400
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "aabb": {
+        "position": [
+          -1.29227805137634,
+          6.50850200653076,
+          -0.143777295947075
+        ],
+        "size": [
+          0.571305632591248,
+          0.0785470008850098,
+          0.284161508083344
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -76.7015075683594,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0.984431862831116,
+        0,
+        0.175766497850418
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 641292332561,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/DumboSurvivalArena/StreetProp_lamp_70/lamp/VisibleLampAmberLens",
+      "position": [
+        -536.961669921875,
+        -2.57399845123291,
+        -114.558799743652
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        6587.64599609375,
+        677.989807128906
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -536.3349609375,
+          3.93450355529785,
+          -114.441017150879
+        ],
+        "size": [
+          0.63427734375,
+          0.0785470008850098,
+          0.464317321777344
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -1.29227805137634,
+          6.50850200653076,
+          -0.143777295947075
+        ],
+        "size": [
+          0.571305632591248,
+          0.0785470008850098,
+          0.284161508083344
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -87.3560485839844,
+      "giMode": 0,
+      "globalRotation": [
+        0,
+        0.984737157821655,
+        0,
+        0.17404817044735
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 641359441434,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/DumboSurvivalArena/StreetProp_lamp_72/lamp/VisibleLampAmberLens",
+      "position": [
+        -544.522216796875,
+        -0.894814252853394,
+        -93.8961563110352
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        6110.841796875,
+        683.71337890625
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -543.894165039062,
+          5.61368751525879,
+          -93.7808990478516
+        ],
+        "size": [
+          0.634033203125,
+          0.078547477722168,
+          0.462776184082031
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -1.29227805137634,
+          6.50850200653076,
+          -0.143777295947075
+        ],
+        "size": [
+          0.571305632591248,
+          0.0785470008850098,
+          0.284161508083344
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -78.4622192382812,
+      "giMode": 0,
+      "globalRotation": [
+        0,
+        0.573015451431274,
+        0,
+        0.819544553756714
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 641426550294,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/DumboSurvivalArena/StreetProp_lamp_73/lamp/VisibleLampAmberLens",
+      "position": [
+        -561.075988769531,
+        -1.09478390216827,
+        -91.8918304443359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        6934.87548828125,
+        696.752502441406
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -561.654663085938,
+          5.41371822357178,
+          -91.2640380859375
+        ],
+        "size": [
+          0.4630126953125,
+          0.0785470008850098,
+          0.634140014648438
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -1.29227805137634,
+          6.50850200653076,
+          -0.143777295947075
+        ],
+        "size": [
+          0.571305632591248,
+          0.0785470008850098,
+          0.284161508083344
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -67.7114562988281,
+      "giMode": 0,
+      "globalRotation": [
+        0,
+        -0.818260788917542,
+        0,
+        0.574847161769867
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 641493659159,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/DumboSurvivalArena/StreetProp_lamp_145/lamp/VisibleLampAmberLens",
+      "position": [
+        -580.644165039062,
+        -1.52609145641327,
+        -89.8756103515625
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        8209.8369140625,
+        713.849487304688
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -580.53173828125,
+          4.9824104309082,
+          -91.1389312744141
+        ],
+        "size": [
+          0.4610595703125,
+          0.0785470008850098,
+          0.633819580078125
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -1.29227805137634,
+          6.50850200653076,
+          -0.143777295947075
+        ],
+        "size": [
+          0.571305632591248,
+          0.0785470008850098,
+          0.284161508083344
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -121.810363769531,
+      "giMode": 0,
+      "globalRotation": [
+        0,
+        0.570022284984589,
+        0,
+        0.821629226207733
+      ],
+      "globalScale": [
+        0.999999940395355,
+        1,
+        0.999999940395355
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 641543990816,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/DumboSurvivalArena/StreetProp_lamp_146/lamp/VisibleLampAmberLens",
+      "position": [
+        -581.765258789062,
+        0.487469166517258,
+        -17.2875671386719
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        5290.84912109375,
+        656.944091796875
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -582.352478027344,
+          6.99597120285034,
+          -16.6625785827637
+        ],
+        "size": [
+          0.46624755859375,
+          0.0785470008850098,
+          0.634635925292969
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -1.29227805137634,
+          6.50850200653076,
+          -0.143777295947075
+        ],
+        "size": [
+          0.571305632591248,
+          0.0785470008850098,
+          0.284161508083344
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -102.873962402344,
+      "giMode": 0,
+      "globalRotation": [
+        0,
+        0.569998264312744,
+        0,
+        0.82164591550827
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 641611099695,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/DumboSurvivalArena/StreetProp_lamp_148/lamp/VisibleLampAmberLens",
+      "position": [
+        -602.3720703125,
+        0.993440449237823,
+        -24.9920215606689
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        6268.1904296875,
+        683.663696289062
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -602.959289550781,
+          7.50194263458252,
+          -24.367057800293
+        ],
+        "size": [
+          0.4661865234375,
+          0.0785470008850098,
+          0.6346435546875
+        ]
+      }
+    },
+    {
+      "behindCamera": true,
+      "cameraDepth": -69.6912841796875,
+      "globalRotation": [
+        -0.0776723548769951,
+        0.338129192590714,
+        0.0199728924781084,
+        0.937676250934601
+      ],
+      "globalScale": [
+        0.999999940395355,
+        0.999999940395355,
+        1
+      ],
+      "instanceId": 3522426888239,
+      "localPosition": [
+        -249.980819702148,
+        -15.624963760376,
+        -365.006591796875
+      ],
+      "path": "/root/Game/@Node3D@3626/CrowdBuildScene/CheatDrone",
+      "position": [
+        -249.980819702148,
+        -15.624963760376,
+        -365.006591796875
+      ],
+      "rotationDegrees": [
+        -9.15871524810791,
+        39.72900390625,
+        -0.874652802944183
+      ],
+      "screenPosition": [
+        947.38330078125,
+        475.062561035156
+      ],
+      "type": "Node3D"
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0327223539352417,
+          0.00293289171531796,
+          0.48335388302803
+        ],
+        "size": [
+          0.0566253177821636,
+          0.0319749563932419,
+          0.0173895657062531
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -69.6912841796875,
+      "giMode": 1,
+      "globalRotation": [
+        -0.0199728850275278,
+        0.937676250934601,
+        -0.0776723474264145,
+        -0.338129252195358
+      ],
+      "globalScale": [
+        0.400000005960464,
+        0.400000005960464,
+        0.400000005960464
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 3522477220357,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/@Node3D@3626/CrowdBuildScene/CheatDrone/Frame/FriendlySignal",
+      "position": [
+        -249.980819702148,
+        -15.624963760376,
+        -365.006591796875
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        947.38330078125,
+        475.062561035156
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -250.115829467773,
+          -15.6558847427368,
+          -365.168823242188
+        ],
+        "size": [
+          0.0229949951171875,
+          0.0140743255615234,
+          0.021392822265625
+        ]
+      }
+    },
+    {
+      "behindCamera": true,
+      "cameraDepth": -72.2835998535156,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "instanceId": 3611664899680,
+      "localPosition": [
+        -247.466613769531,
+        -17.3266525268555,
+        -364.036499023438
+      ],
+      "path": "/root/Game/@Node3D@3626/CrowdBuildScene/FriendlyTurret",
+      "position": [
+        -247.466613769531,
+        -17.3266525268555,
+        -364.036499023438
+      ],
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        915.610534667969,
+        450.266326904297
+      ],
+      "type": "Node3D"
+    },
+    {
+      "aabb": {
+        "position": [
+          0.0533864051103592,
+          0.28267914056778,
+          0.430444449186325
+        ],
+        "size": [
+          0.13485786318779,
+          0.280351758003235,
+          0.168330639600754
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -72.2835998535156,
+      "giMode": 1,
+      "globalRotation": [
+        0,
+        0.998827695846558,
+        0,
+        -0.0484064444899559
+      ],
+      "globalScale": [
+        0.770000040531158,
+        0.769999980926514,
+        0.770000040531158
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 3611732009206,
+      "localPosition": [
+        0,
+        -0.100000001490116,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/@Node3D@3626/CrowdBuildScene/FriendlyTurret/Frame/TurretYaw/FriendlySignal",
+      "position": [
+        -247.466613769531,
+        -17.3266525268555,
+        -364.036499023438
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        915.610534667969,
+        450.266326904297
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -247.655471801758,
+          -17.1089897155762,
+          -364.491424560547
+        ],
+        "size": [
+          0.11590576171875,
+          0.215871810913086,
+          0.1390380859375
+        ]
+      }
+    },
+    {
+      "behindCamera": false,
+      "cameraDepth": 497.191131591797,
+      "globalRotation": [
+        -0.0235060341656208,
+        0.918308734893799,
+        -0.0551647394895554,
+        -0.39129701256752
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "instanceId": 1099041913144,
+      "localPosition": [
+        -663.323608398438,
+        24.2996387481689,
+        -759.653564453125
+      ],
+      "path": "/root/Game/@Node3D@3626/ReinforcementHelicopter",
+      "position": [
+        -663.323608398438,
+        24.2996387481689,
+        -759.653564453125
+      ],
+      "rotationDegrees": [
+        6.87549304962158,
+        -133.841690063477,
+        0
+      ],
+      "screenPosition": [
+        446.150848388672,
+        459.310241699219
+      ],
+      "type": "Node3D"
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.233375906944275,
+          -1.23348093032837,
+          -0.220334529876709
+        ],
+        "size": [
+          0.489922702312469,
+          0.0915746688842773,
+          0.505859375
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 497.191131591797,
+      "giMode": 2,
+      "globalRotation": [
+        -0.0235060341656208,
+        0.918308734893799,
+        -0.0551647394895554,
+        -0.39129701256752
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 1099075467596,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/aircraft/production/transport.glb::ArrayMesh_h86ii",
+      "path": "/root/Game/@Node3D@3626/ReinforcementHelicopter/Frame/Beacon",
+      "position": [
+        -663.323608398438,
+        24.2996387481689,
+        -759.653564453125
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        446.150848388672,
+        459.310241699219
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -663.607177734375,
+          23.0408458709717,
+          -759.923583984375
+        ],
+        "size": [
+          0.70953369140625,
+          0.15147590637207,
+          0.70892333984375
+        ]
+      }
+    },
+    {
+      "behindCamera": true,
+      "cameraDepth": -26.8120727539062,
+      "globalRotation": [
+        0,
+        0.114422686398029,
+        0,
+        0.9934321641922
+      ],
+      "globalScale": [
+        0.999991238117218,
+        1,
+        0.999991238117218
+      ],
+      "instanceId": 1100283427154,
+      "localPosition": [
+        -317.801849365234,
+        73.1494140625,
+        -346.637084960938
+      ],
+      "path": "/root/Game/@Node3D@3626/EnemyUav",
+      "position": [
+        -317.801849365234,
+        73.1494140625,
+        -346.637084960938
+      ],
+      "rotationDegrees": [
+        0,
+        13.1406545639038,
+        0
+      ],
+      "screenPosition": [
+        4160.12890625,
+        4195.4033203125
+      ],
+      "type": "Node3D"
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.140392974019051,
+          -0.306270241737366,
+          0.925736784934998
+        ],
+        "size": [
+          0.275348007678986,
+          0.131713703274727,
+          0.159701943397522
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -26.8120727539062,
+      "giMode": 1,
+      "globalRotation": [
+        0,
+        0.114422686398029,
+        0,
+        0.9934321641922
+      ],
+      "globalScale": [
+        0.999991238117218,
+        1,
+        0.999991238117218
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 1100333758847,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/@Node3D@3626/EnemyUav/Frame/SensorGlow",
+      "position": [
+        -317.801849365234,
+        73.1494140625,
+        -346.637084960938
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        4160.12890625,
+        4195.4033203125
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -317.728118896484,
+          72.843147277832,
+          -345.766265869141
+        ],
+        "size": [
+          0.304443359375,
+          0.1317138671875,
+          0.218109130859375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0823605060577393,
+          1.0198837518692,
+          -0.0598598904907703
+        ],
+        "size": [
+          0.155798971652985,
+          0.0333594083786011,
+          0.103672884404659
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 416.796844482422,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 3690584923090,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/props/production/supply-crate.glb::ArrayMesh_pvygp",
+      "path": "/root/Game/SupplyDrops/@Node3D@6949/supply-crate/Beacon",
+      "position": [
+        964.2861328125,
+        206.740493774414,
+        -1968.49536132812
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        5954.39453125,
+        -62.9067268371582
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": false,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          964.203796386719,
+          207.760375976562,
+          -1968.55517578125
+        ],
+        "size": [
+          0.15576171875,
+          0.033355712890625,
+          0.1036376953125
+        ]
+      }
+    },
+    {
+      "behindCamera": false,
+      "cameraDepth": 417.176055908203,
+      "globalRotation": [
+        0.0190573111176491,
+        0.946447372436523,
+        -0.0568550899624825,
+        0.317240625619888
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "instanceId": 3692262644695,
+      "localPosition": [
+        964.2861328125,
+        209.140487670898,
+        -1968.49536132812
+      ],
+      "path": "/root/Game/SupplyDrops/SupplyHelicopter",
+      "position": [
+        964.2861328125,
+        209.140487670898,
+        -1968.49536132812
+      ],
+      "rotationDegrees": [
+        6.87549304962158,
+        502.938598632812,
+        0
+      ],
+      "screenPosition": [
+        5949.564453125,
+        -69.0084762573242
+      ],
+      "type": "Node3D"
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.233375906944275,
+          -1.23348093032837,
+          -0.220334529876709
+        ],
+        "size": [
+          0.489922702312469,
+          0.0915746688842773,
+          0.505859375
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 417.176055908203,
+      "giMode": 1,
+      "globalRotation": [
+        -0.0568550787866116,
+        -0.317240506410599,
+        -0.0190573092550039,
+        0.946447432041168
+      ],
+      "globalScale": [
+        0.670000076293945,
+        0.670000076293945,
+        0.670000016689301
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 3692312977224,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/SupplyDrops/SupplyHelicopter/Frame/FriendlySignal",
+      "position": [
+        964.2861328125,
+        209.140487670898,
+        -1968.49536132812
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        5949.564453125,
+        -69.0084762573242
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          963.9873046875,
+          208.302322387695,
+          -1968.63342285156
+        ],
+        "size": [
+          0.4691162109375,
+          0.101486206054688,
+          0.4722900390625
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0823605060577393,
+          1.0198837518692,
+          -0.0598598904907703
+        ],
+        "size": [
+          0.155798971652985,
+          0.0333594083786011,
+          0.103672884404659
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 14542.8994140625,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 4494029021761,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/props/production/supply-crate.glb::ArrayMesh_pvygp",
+      "path": "/root/Game/SupplyDrops/@Node3D@6956/supply-crate/Beacon",
+      "position": [
+        -17917.189453125,
+        1990.2421875,
+        -4506.841796875
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -220.392074584961,
+        383.521728515625
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": false,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -17917.271484375,
+          1991.26208496094,
+          -4506.90185546875
+        ],
+        "size": [
+          0.15625,
+          0.0333251953125,
+          0.10400390625
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.233375906944275,
+          -1.23348093032837,
+          -0.220334529876709
+        ],
+        "size": [
+          0.489922702312469,
+          0.0915746688842773,
+          0.505859375
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 14543.2783203125,
+      "giMode": 1,
+      "globalRotation": [
+        -0.0469930283725262,
+        0.620037913322449,
+        0.0372469797730446,
+        0.78227698802948
+      ],
+      "globalScale": [
+        0.670000016689301,
+        0.670000016689301,
+        0.670000016689301
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 4494129684707,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/SupplyDrops/@Node3D@6957/Frame/FriendlySignal",
+      "position": [
+        -17917.189453125,
+        1992.64221191406,
+        -4506.841796875
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -220.369644165039,
+        383.335052490234
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -17917.27734375,
+          1991.80407714844,
+          -4507.02197265625
+        ],
+        "size": [
+          0.408203125,
+          0.1015625,
+          0.3984375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0823605060577393,
+          1.0198837518692,
+          -0.0598598904907703
+        ],
+        "size": [
+          0.155798971652985,
+          0.0333594083786011,
+          0.103672884404659
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 2741.05395507812,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 4606235042109,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/props/production/supply-crate.glb::ArrayMesh_pvygp",
+      "path": "/root/Game/SupplyDrops/@Node3D@6966/supply-crate/Beacon",
+      "position": [
+        15890.9560546875,
+        2542.158203125,
+        -16948.341796875
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        10218.1484375,
+        -534.583740234375
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": false,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          15890.8740234375,
+          2543.17797851562,
+          -16948.40234375
+        ],
+        "size": [
+          0.1552734375,
+          0.033447265625,
+          0.103515625
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.233375906944275,
+          -1.23348093032837,
+          -0.220334529876709
+        ],
+        "size": [
+          0.489922702312469,
+          0.0915746688842773,
+          0.505859375
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 2741.43286132812,
+      "giMode": 1,
+      "globalRotation": [
+        -0.0555546469986439,
+        -0.375699907541275,
+        -0.0225690882652998,
+        0.924799382686615
+      ],
+      "globalScale": [
+        0.670000016689301,
+        0.670000016689301,
+        0.670000016689301
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 4606335705708,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/SupplyDrops/@Node3D@6967/Frame/FriendlySignal",
+      "position": [
+        15890.9560546875,
+        2544.55810546875,
+        -16948.341796875
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        10216.8203125,
+        -535.446838378906
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          15890.6416015625,
+          2543.71997070312,
+          -16948.490234375
+        ],
+        "size": [
+          0.4765625,
+          0.1015625,
+          0.474609375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0823605060577393,
+          1.0198837518692,
+          -0.0598598904907703
+        ],
+        "size": [
+          0.155798971652985,
+          0.0333594083786011,
+          0.103672884404659
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -62481.09765625,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 6574873567983,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/props/production/supply-crate.glb::ArrayMesh_pvygp",
+      "path": "/root/Game/SupplyDrops/@Node3D@7043/supply-crate/Beacon",
+      "position": [
+        -77607.625,
+        18691.61328125,
+        149999.890625
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        3483.77734375,
+        888.809997558594
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": false,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -77607.7109375,
+          18692.6328125,
+          149999.828125
+        ],
+        "size": [
+          0.15625,
+          0.033203125,
+          0.109375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.233375906944275,
+          -1.23348093032837,
+          -0.220334529876709
+        ],
+        "size": [
+          0.489922702312469,
+          0.0915746688842773,
+          0.505859375
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -62480.71875,
+      "giMode": 1,
+      "globalRotation": [
+        -0.0141101470217109,
+        0.970171391963959,
+        0.058280237019062,
+        0.234886765480042
+      ],
+      "globalScale": [
+        0.670000016689301,
+        0.670000016689301,
+        0.670000016689301
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 6574974231329,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/SupplyDrops/@Node3D@7044/Frame/FriendlySignal",
+      "position": [
+        -77607.625,
+        18694.013671875,
+        149999.890625
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        3483.79443359375,
+        888.8564453125
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -77607.8125,
+          18693.17578125,
+          149999.546875
+        ],
+        "size": [
+          0.4609375,
+          0.1015625,
+          0.46875
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0823605060577393,
+          1.0198837518692,
+          -0.0598598904907703
+        ],
+        "size": [
+          0.155798971652985,
+          0.0333594083786011,
+          0.103672884404659
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -40.5323486328125,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 6660655474018,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/props/production/supply-crate.glb::ArrayMesh_pvygp",
+      "path": "/root/Game/SupplyDrops/@Node3D@7158/supply-crate/Beacon",
+      "position": [
+        -270.817932128906,
+        -17.8641834259033,
+        -386.5517578125
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        1232.02478027344,
+        362.536682128906
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": false,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -270.900299072266,
+          -16.8442993164062,
+          -386.611602783203
+        ],
+        "size": [
+          0.155792236328125,
+          0.0333595275878906,
+          0.103668212890625
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.233375906944275,
+          -1.23348093032837,
+          -0.220334529876709
+        ],
+        "size": [
+          0.489922702312469,
+          0.0915746688842773,
+          0.505859375
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -157.858306884766,
+      "giMode": 1,
+      "globalRotation": [
+        0,
+        -0.33463642001152,
+        0,
+        0.942347347736359
+      ],
+      "globalScale": [
+        0.670000016689301,
+        0.670000016689301,
+        0.670000016689301
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 6660756137362,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/SupplyDrops/@Node3D@7159/Frame/FriendlySignal",
+      "position": [
+        -683.309448242188,
+        35.7911376953125,
+        121.915397644043
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        5437.1845703125,
+        889.447692871094
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -683.551452636719,
+          34.9647064208984,
+          121.702217102051
+        ],
+        "size": [
+          0.46844482421875,
+          0.0613555908203125,
+          0.470046997070312
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0823605060577393,
+          1.0198837518692,
+          -0.0598598904907703
+        ],
+        "size": [
+          0.155798971652985,
+          0.0333594083786011,
+          0.103672884404659
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -42.4962158203125,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 8119820285834,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/props/production/supply-crate.glb::ArrayMesh_pvygp",
+      "path": "/root/Game/SupplyDrops/@Node3D@9531/supply-crate/Beacon",
+      "position": [
+        -290.668518066406,
+        -17.2005767822266,
+        -367.330413818359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        1944.92541503906,
+        388.918090820312
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": false,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -290.750885009766,
+          -16.1806926727295,
+          -367.390258789062
+        ],
+        "size": [
+          0.155792236328125,
+          0.0333595275878906,
+          0.103668212890625
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.233375906944275,
+          -1.23348093032837,
+          -0.220334529876709
+        ],
+        "size": [
+          0.489922702312469,
+          0.0915746688842773,
+          0.505859375
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 543.515380859375,
+      "giMode": 1,
+      "globalRotation": [
+        0,
+        -0.833532869815826,
+        0,
+        0.552469849586487
+      ],
+      "globalScale": [
+        0.670000016689301,
+        0.670000016689301,
+        0.670000016689301
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 8119920948257,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/SupplyDrops/@Node3D@9532/Frame/FriendlySignal",
+      "position": [
+        -897.382690429688,
+        36.5129776000977,
+        -623.592590332031
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -98.1643676757812,
+        440.432983398438
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -897.625854492188,
+          35.6865463256836,
+          -623.811096191406
+        ],
+        "size": [
+          0.4400634765625,
+          0.0613555908203125,
+          0.434326171875
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0823605060577393,
+          1.0198837518692,
+          -0.0598598904907703
+        ],
+        "size": [
+          0.155798971652985,
+          0.0333594083786011,
+          0.103672884404659
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -50.0801391601562,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 8792519540225,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/props/production/supply-crate.glb::ArrayMesh_pvygp",
+      "path": "/root/Game/SupplyDrops/@Node3D@10482/supply-crate/Beacon",
+      "position": [
+        -312.569702148438,
+        7.82979726791382,
+        -333.935119628906
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        2617.97094726562,
+        990.128051757812
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": false,
+      "visibleInTree": false,
+      "worldAabb": {
+        "position": [
+          -312.652069091797,
+          8.84968090057373,
+          -333.994964599609
+        ],
+        "size": [
+          0.155792236328125,
+          0.0333595275878906,
+          0.103668212890625
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.233375906944275,
+          -1.23348093032837,
+          -0.220334529876709
+        ],
+        "size": [
+          0.489922702312469,
+          0.0915746688842773,
+          0.505859375
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -49.7009582519531,
+      "giMode": 1,
+      "globalRotation": [
+        -0.00880948640406132,
+        0.987369537353516,
+        0.0593133606016636,
+        0.146648451685905
+      ],
+      "globalScale": [
+        0.670000016689301,
+        0.670000016689301,
+        0.670000016689301
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 8792620203028,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/SupplyDrops/@Node3D@10483/Frame/FriendlySignal",
+      "position": [
+        -312.569702148438,
+        10.2297973632812,
+        -333.935119628906
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        2633.06127929688,
+        1049.37780761719
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -312.750152587891,
+          9.39163589477539,
+          -334.261474609375
+        ],
+        "size": [
+          0.41400146484375,
+          0.10148811340332,
+          0.42437744140625
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.00650000013411045,
+          -0.0541818663477898,
+          -0.025000000372529
+        ],
+        "size": [
+          0.0230000000447035,
+          0.10836373269558,
+          0.0600000023841858
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -39.8402404785156,
+      "giMode": 1,
+      "globalRotation": [
+        0.0374021716415882,
+        0.898726105690002,
+        -0.264253556728363,
+        -0.347940474748611
+      ],
+      "globalScale": [
+        1.14999997615814,
+        1.14999997615814,
+        1.14999973773956
+      ],
+      "hasMaterialOverride": false,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9336923416619,
+      "localPosition": [
+        0.156000003218651,
+        -0.0350000001490116,
+        0.119999997317791
+      ],
+      "meshResourcePath": "",
+      "path": "/root/Game/SystemAdminSoldiere96/SystemAdminRig/MixamoAnimationRig/Mixamo/Skeleton3D/SoldierGunMount/SoldierGunPivot/SoldierGun/MinigunFeedIndex",
+      "position": [
+        -270.910491943359,
+        -16.6436347961426,
+        -387.132232666016
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        1233.71606445312,
+        394.831665039062
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -270.958038330078,
+          -16.7170143127441,
+          -387.192840576172
+        ],
+        "size": [
+          0.079010009765625,
+          0.14448356628418,
+          0.12109375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0327223539352417,
+          0.00293289171531796,
+          0.48335388302803
+        ],
+        "size": [
+          0.0566253177821636,
+          0.0319749563932419,
+          0.0173895657062531
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 14.1905212402344,
+      "giMode": 2,
+      "globalRotation": [
+        0.280530482530594,
+        0.222002819180489,
+        0.272051423788071,
+        0.893311500549316
+      ],
+      "globalScale": [
+        1,
+        1,
+        0.999999940395355
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9358784133605,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_a4ibn",
+      "path": "/root/Game/SystemAdminSoldiere99/EnemyGreybox/Frame/Lens",
+      "position": [
+        -300.920349121094,
+        -11.5957345962524,
+        -432.289398193359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -561.600402832031,
+        546.457275390625
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -300.692138671875,
+          -11.8041658401489,
+          -431.933776855469
+        ],
+        "size": [
+          0.06378173828125,
+          0.0634002685546875,
+          0.046630859375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.483416318893433,
+          -0.0119593683630228,
+          0.219911992549896
+        ],
+        "size": [
+          0.0993212461471558,
+          0.00988221541047096,
+          0.0854145586490631
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 14.1905212402344,
+      "giMode": 2,
+      "globalRotation": [
+        0.280530482530594,
+        0.222002819180489,
+        0.272051423788071,
+        0.893311500549316
+      ],
+      "globalScale": [
+        1,
+        1,
+        0.999999940395355
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9358935128328,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_w72qu",
+      "path": "/root/Game/SystemAdminSoldiere99/EnemyGreybox/Frame/StrobeRotor0",
+      "position": [
+        -300.920349121094,
+        -11.5957345962524,
+        -432.289398193359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -561.600402832031,
+        546.457275390625
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -301.162994384766,
+          -12.0153694152832,
+          -432.039489746094
+        ],
+        "size": [
+          0.12530517578125,
+          0.100003242492676,
+          0.09393310546875
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          0.383174300193787,
+          -0.0121457083150744,
+          0.216314122080803
+        ],
+        "size": [
+          0.0889632105827332,
+          0.00969900283962488,
+          0.0954476743936539
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 14.1905212402344,
+      "giMode": 2,
+      "globalRotation": [
+        0.280530482530594,
+        0.222002819180489,
+        0.272051423788071,
+        0.893311500549316
+      ],
+      "globalScale": [
+        1,
+        1,
+        0.999999940395355
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9358951899088,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_t3k8l",
+      "path": "/root/Game/SystemAdminSoldiere99/EnemyGreybox/Frame/StrobeRotor1",
+      "position": [
+        -300.920349121094,
+        -11.5957345962524,
+        -432.289398193359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -561.600402832031,
+        546.457275390625
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -300.511962890625,
+          -11.4887971878052,
+          -432.251220703125
+        ],
+        "size": [
+          0.122955322265625,
+          0.0973672866821289,
+          0.0987548828125
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.372631341218948,
+          0.0265652313828468,
+          -0.370713829994202
+        ],
+        "size": [
+          0.0933111608028412,
+          0.01844871789217,
+          0.0984816551208496
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 14.1905212402344,
+      "giMode": 2,
+      "globalRotation": [
+        0.280530482530594,
+        0.222002819180489,
+        0.272051423788071,
+        0.893311500549316
+      ],
+      "globalScale": [
+        1,
+        1,
+        0.999999940395355
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9358968682728,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_ll2qi",
+      "path": "/root/Game/SystemAdminSoldiere99/EnemyGreybox/Frame/StrobeRotor2",
+      "position": [
+        -300.920349121094,
+        -11.5957345962524,
+        -432.289398193359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -561.600402832031,
+        546.457275390625
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -301.420959472656,
+          -11.7012557983398,
+          -432.480560302734
+        ],
+        "size": [
+          0.131011962890625,
+          0.107254981994629,
+          0.107513427734375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          0.234678685665131,
+          0.0264457017183304,
+          -0.376257836818695
+        ],
+        "size": [
+          0.0895552039146423,
+          0.018402211368084,
+          0.0956227481365204
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 14.1905212402344,
+      "giMode": 2,
+      "globalRotation": [
+        0.280530482530594,
+        0.222002819180489,
+        0.272051423788071,
+        0.893311500549316
+      ],
+      "globalScale": [
+        1,
+        1,
+        0.999999940395355
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9358985456455,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_gjjee",
+      "path": "/root/Game/SystemAdminSoldiere99/EnemyGreybox/Frame/StrobeRotor3",
+      "position": [
+        -300.920349121094,
+        -11.5957345962524,
+        -432.289398193359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -561.600402832031,
+        546.457275390625
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -300.966400146484,
+          -11.3273124694824,
+          -432.631988525391
+        ],
+        "size": [
+          0.12664794921875,
+          0.103841781616211,
+          0.10443115234375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0327223539352417,
+          0.00293289171531796,
+          0.48335388302803
+        ],
+        "size": [
+          0.0566253177821636,
+          0.0319749563932419,
+          0.0173895657062531
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 2.48480224609375,
+      "giMode": 2,
+      "globalRotation": [
+        -0.085162915289402,
+        0.258908659219742,
+        0.382161229848862,
+        0.882987201213837
+      ],
+      "globalScale": [
+        0.999999940395355,
+        0.999999940395355,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9463222297416,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_a4ibn",
+      "path": "/root/Game/SystemAdminSoldiere107/EnemyGreybox/Frame/Lens",
+      "position": [
+        -281.778656005859,
+        -11.2112398147583,
+        -432.703460693359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        663.904541015625,
+        385.314117431641
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -281.632965087891,
+          -11.061502456665,
+          -432.304260253906
+        ],
+        "size": [
+          0.062255859375,
+          0.0639467239379883,
+          0.0458984375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.483416318893433,
+          -0.0119593683630228,
+          0.219911992549896
+        ],
+        "size": [
+          0.0993212461471558,
+          0.00988221541047096,
+          0.0854145586490631
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 2.48480224609375,
+      "giMode": 2,
+      "globalRotation": [
+        -0.085162915289402,
+        0.258908659219742,
+        0.382161229848862,
+        0.882987201213837
+      ],
+      "globalScale": [
+        0.999999940395355,
+        0.999999940395355,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9463373291964,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_w72qu",
+      "path": "/root/Game/SystemAdminSoldiere107/EnemyGreybox/Frame/StrobeRotor0",
+      "position": [
+        -281.778656005859,
+        -11.2112398147583,
+        -432.703460693359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        663.904541015625,
+        385.314117431641
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -281.968322753906,
+          -11.4478731155396,
+          -432.316192626953
+        ],
+        "size": [
+          0.09759521484375,
+          0.0992507934570312,
+          0.125091552734375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          0.383174300193787,
+          -0.0121457083150744,
+          0.216314122080803
+        ],
+        "size": [
+          0.0889632105827332,
+          0.00969900283962488,
+          0.0954476743936539
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 2.48480224609375,
+      "giMode": 2,
+      "globalRotation": [
+        -0.085162915289402,
+        0.258908659219742,
+        0.382161229848862,
+        0.882987201213837
+      ],
+      "globalScale": [
+        0.999999940395355,
+        0.999999940395355,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9463390068779,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_t3k8l",
+      "path": "/root/Game/SystemAdminSoldiere107/EnemyGreybox/Frame/StrobeRotor1",
+      "position": [
+        -281.778656005859,
+        -11.2112398147583,
+        -432.703460693359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        663.904541015625,
+        385.314117431641
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -281.47216796875,
+          -10.9026203155518,
+          -432.766479492188
+        ],
+        "size": [
+          0.095428466796875,
+          0.0960845947265625,
+          0.128204345703125
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.372631341218948,
+          0.0265652313828468,
+          -0.370713829994202
+        ],
+        "size": [
+          0.0933111608028412,
+          0.01844871789217,
+          0.0984816551208496
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 2.48480224609375,
+      "giMode": 2,
+      "globalRotation": [
+        -0.085162915289402,
+        0.258908659219742,
+        0.382161229848862,
+        0.882987201213837
+      ],
+      "globalScale": [
+        0.999999940395355,
+        0.999999940395355,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9463406853840,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_ll2qi",
+      "path": "/root/Game/SystemAdminSoldiere107/EnemyGreybox/Frame/StrobeRotor2",
+      "position": [
+        -281.778656005859,
+        -11.2112398147583,
+        -432.703460693359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        663.904541015625,
+        385.314117431641
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -282.170227050781,
+          -11.5569849014282,
+          -432.871948242188
+        ],
+        "size": [
+          0.105438232421875,
+          0.105951309204102,
+          0.13348388671875
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          0.234678685665131,
+          0.0264457017183304,
+          -0.376257836818695
+        ],
+        "size": [
+          0.0895552039146423,
+          0.018402211368084,
+          0.0956227481365204
+        ]
+      },
+      "behindCamera": false,
+      "cameraDepth": 2.48480224609375,
+      "giMode": 2,
+      "globalRotation": [
+        -0.085162915289402,
+        0.258908659219742,
+        0.382161229848862,
+        0.882987201213837
+      ],
+      "globalScale": [
+        0.999999940395355,
+        0.999999940395355,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 9463423630794,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_gjjee",
+      "path": "/root/Game/SystemAdminSoldiere107/EnemyGreybox/Frame/StrobeRotor3",
+      "position": [
+        -281.778656005859,
+        -11.2112398147583,
+        -432.703460693359
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        663.904541015625,
+        385.314117431641
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -281.823791503906,
+          -11.1759157180786,
+          -433.19189453125
+        ],
+        "size": [
+          0.102142333984375,
+          0.102555274963379,
+          0.1290283203125
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.0327223539352417,
+          0.00293289171531796,
+          0.48335388302803
+        ],
+        "size": [
+          0.0566253177821636,
+          0.0319749563932419,
+          0.0173895657062531
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -14.2432250976562,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 10428398763691,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_a4ibn",
+      "path": "/root/Game/SystemAdminSoldiere121/EnemyGreybox/Frame/Lens",
+      "position": [
+        -257.4736328125,
+        -16.3172721862793,
+        -431.9375
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -823.35888671875,
+        155.617309570312
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -257.50634765625,
+          -16.314338684082,
+          -431.454132080078
+        ],
+        "size": [
+          0.056610107421875,
+          0.0319747924804688,
+          0.017364501953125
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.483416318893433,
+          -0.0119593683630228,
+          0.219911992549896
+        ],
+        "size": [
+          0.0993212461471558,
+          0.00988221541047096,
+          0.0854145586490631
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -14.2432250976562,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 10428549757762,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_w72qu",
+      "path": "/root/Game/SystemAdminSoldiere121/EnemyGreybox/Frame/StrobeRotor0",
+      "position": [
+        -257.4736328125,
+        -16.3172721862793,
+        -431.9375
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -823.35888671875,
+        155.617309570312
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -257.957061767578,
+          -16.329231262207,
+          -431.717590332031
+        ],
+        "size": [
+          0.099334716796875,
+          0.00988197326660156,
+          0.085418701171875
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          0.383174300193787,
+          -0.0121457083150744,
+          0.216314122080803
+        ],
+        "size": [
+          0.0889632105827332,
+          0.00969900283962488,
+          0.0954476743936539
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -14.2432250976562,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 10428566535006,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_t3k8l",
+      "path": "/root/Game/SystemAdminSoldiere121/EnemyGreybox/Frame/StrobeRotor1",
+      "position": [
+        -257.4736328125,
+        -16.3172721862793,
+        -431.9375
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -823.35888671875,
+        155.617309570312
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -257.090454101562,
+          -16.329418182373,
+          -431.72119140625
+        ],
+        "size": [
+          0.088958740234375,
+          0.00969886779785156,
+          0.095458984375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          -0.372631341218948,
+          0.0265652313828468,
+          -0.370713829994202
+        ],
+        "size": [
+          0.0933111608028412,
+          0.01844871789217,
+          0.0984816551208496
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -14.2432250976562,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 10428583312431,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_ll2qi",
+      "path": "/root/Game/SystemAdminSoldiere121/EnemyGreybox/Frame/StrobeRotor2",
+      "position": [
+        -257.4736328125,
+        -16.3172721862793,
+        -431.9375
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -823.35888671875,
+        155.617309570312
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -257.846252441406,
+          -16.2907066345215,
+          -432.308227539062
+        ],
+        "size": [
+          0.093292236328125,
+          0.0184478759765625,
+          0.098480224609375
+        ]
+      }
+    },
+    {
+      "aabb": {
+        "position": [
+          0.234678685665131,
+          0.0264457017183304,
+          -0.376257836818695
+        ],
+        "size": [
+          0.0895552039146423,
+          0.018402211368084,
+          0.0956227481365204
+        ]
+      },
+      "behindCamera": true,
+      "cameraDepth": -14.2432250976562,
+      "giMode": 2,
+      "globalRotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "hasMaterialOverride": true,
+      "hasMesh": true,
+      "hasSkin": false,
+      "instanceId": 10428600089608,
+      "localPosition": [
+        0,
+        0,
+        0
+      ],
+      "meshResourcePath": "res://assets/enemies/production/drone.glb::ArrayMesh_gjjee",
+      "path": "/root/Game/SystemAdminSoldiere121/EnemyGreybox/Frame/StrobeRotor3",
+      "position": [
+        -257.4736328125,
+        -16.3172721862793,
+        -431.9375
+      ],
+      "renderLayers": 1,
+      "rotationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "screenPosition": [
+        -823.35888671875,
+        155.617309570312
+      ],
+      "skeletonPath": "",
+      "type": "MeshInstance3D",
+      "visible": true,
+      "visibleInTree": true,
+      "worldAabb": {
+        "position": [
+          -257.238952636719,
+          -16.2908267974854,
+          -432.313751220703
+        ],
+        "size": [
+          0.08953857421875,
+          0.018402099609375,
+          0.095611572265625
+        ]
+      }
+    }
+  ]
+}

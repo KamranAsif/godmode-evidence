@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "issue": 939,
+  "authorization": "User requested emissive surfaces and model-authored ammo belt on existing approved assets, 2026-10-04",
+  "builder": "tools/assets/build-authored-effects.py",
+  "blenderVersion": "5.2.1 LTS",
+  "inputs": "Exact approved runtime assets at inputGitRevision; existing source approval/provenance remains beside each family",
+  "surfacePolicy": "Native triangles partitioned with unchanged UVs/positions; no floating glow geometry",
+  "entries": [
+    {
+      "runtimeAsset": "assets/enemies/production/drone.glb",
+      "runtimeSha256": "8bd332c03731185f05da5e0e6170dbe24fbce5e010c57de246c65b96449646d3",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "ba5aa8f12e9d2034644fa2cf0c9da81b48cb35dd02ae1ee9c84a68ceb2d6a565",
+      "parts": [
+        {
+          "node": "Lens",
+          "nativeFaces": 27,
+          "surfaceCentreGodot": [
+            -0.004569776821881533,
+            0.021791376173496246,
+            0.49404773116111755
+          ],
+          "selectionRadiiGodot": [
+            0.019,
+            0.014,
+            0.012
+          ],
+          "material": "DroneLens"
+        },
+        {
+          "node": "StrobeRotor0",
+          "nativeFaces": 131,
+          "surfaceCentreGodot": [
+            -0.4348396062850952,
+            -0.011164605617523193,
+            0.2657337188720703
+          ],
+          "selectionRadiiGodot": [
+            0.044,
+            0.025,
+            0.044
+          ],
+          "material": "DroneStrobe0"
+        },
+        {
+          "node": "StrobeRotor1",
+          "nativeFaces": 137,
+          "surfaceCentreGodot": [
+            0.42868438363075256,
+            -0.010821305215358734,
+            0.2651427686214447
+          ],
+          "selectionRadiiGodot": [
+            0.044,
+            0.025,
+            0.044
+          ],
+          "material": "DroneStrobe1"
+        },
+        {
+          "node": "StrobeRotor2",
+          "nativeFaces": 84,
+          "surfaceCentreGodot": [
+            -0.3274199664592743,
+            0.0331350676715374,
+            -0.3173198401927948
+          ],
+          "selectionRadiiGodot": [
+            0.044,
+            0.025,
+            0.044
+          ],
+          "material": "DroneStrobe2"
+        },
+        {
+          "node": "StrobeRotor3",
+          "nativeFaces": 82,
+          "surfaceCentreGodot": [
+            0.278621643781662,
+            0.03319802135229111,
+            -0.3284347355365753
+          ],
+          "selectionRadiiGodot": [
+            0.044,
+            0.025,
+            0.044
+          ],
+          "material": "DroneStrobe3"
+        }
+      ],
+      "inputTriangles": 10475,
+      "runtimeTriangles": 10475
+    },
+    {
+      "runtimeAsset": "assets/enemies/production/helicopter.glb",
+      "runtimeSha256": "ba9ddbc560d0c131ab6792a401cd28d283168370d763e569722baf97b6e221c1",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "9dc6de3ba2c788d4901f38e63cf9b1859f0d8e115af54dd088cabf8f7aa4b018",
+      "parts": [
+        {
+          "node": "WeakSpotLeft",
+          "nativeFaces": 417,
+          "surfaceCentreGodot": [
+            -0.446450799703598,
+            0.6469952464103699,
+            -1.1228023767471313
+          ],
+          "selectionRadiiGodot": [
+            0.34,
+            0.31,
+            0.42
+          ],
+          "material": "EngineWeakLeft"
+        },
+        {
+          "node": "WeakSpotRight",
+          "nativeFaces": 424,
+          "surfaceCentreGodot": [
+            0.3760742247104645,
+            0.6464478373527527,
+            -1.1266061067581177
+          ],
+          "selectionRadiiGodot": [
+            0.34,
+            0.31,
+            0.42
+          ],
+          "material": "EngineWeakRight"
+        }
+      ],
+      "inputTriangles": 25230,
+      "runtimeTriangles": 25230
+    },
+    {
+      "runtimeAsset": "assets/aircraft/production/transport.glb",
+      "runtimeSha256": "c4be94119f7a47b7a846bd1cbf1aa74fb3e631c4ca1175fbf7209076dac6b9dc",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "445c14a9d9e0a988594796a8f53675f071f62c6f242408e1ace00d607b8f136b",
+      "parts": [
+        {
+          "node": "Beacon",
+          "nativeFaces": 43,
+          "surfaceCentreGodot": [
+            -0.005362680647522211,
+            -1.1608272790908813,
+            0.03428007289767265
+          ],
+          "selectionRadiiGodot": [
+            0.23,
+            0.14,
+            0.23
+          ],
+          "material": "ThreatSignal"
+        }
+      ],
+      "inputTriangles": 23127,
+      "runtimeTriangles": 23127
+    },
+    {
+      "runtimeAsset": "assets/aircraft/production/uav.glb.bin",
+      "runtimeSha256": "10e43a358382bc89eec6d95a910b11636015c9764d6b52a27adbb43a578cfe9d",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "b3a5bf541648cda8c846600c8036d013cfc25a167a526b755317ca530b489b76",
+      "parts": [
+        {
+          "node": "SensorGlow",
+          "nativeFaces": 128,
+          "surfaceCentreGodot": [
+            -0.003633673069998622,
+            -0.3046504557132721,
+            1.0487452745437622
+          ],
+          "selectionRadiiGodot": [
+            0.16,
+            0.08,
+            0.16
+          ],
+          "material": "ThreatSignal"
+        }
+      ],
+      "inputTriangles": 8000,
+      "runtimeTriangles": 8000
+    },
+    {
+      "runtimeAsset": "assets/support/production/drone.glb.bin",
+      "runtimeSha256": "39baaa7f95b7c5a645c7a171ae8df6a5154d076a40cbde34ce3ab081de03232e",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "d44fb75205c9049417f6d4324774431ac102fee0beea9192ac6006f23abe9ef8",
+      "parts": [
+        {
+          "node": "FriendlySignal",
+          "nativeFaces": 27,
+          "surfaceCentreGodot": [
+            -0.004569776821881533,
+            0.021791376173496246,
+            0.49404773116111755
+          ],
+          "selectionRadiiGodot": [
+            0.019,
+            0.014,
+            0.012
+          ],
+          "material": "FriendlyLens"
+        }
+      ],
+      "inputTriangles": 10475,
+      "runtimeTriangles": 10475
+    },
+    {
+      "runtimeAsset": "assets/support/production/sentry.glb.bin",
+      "runtimeSha256": "24233c5ce11d575a1a7a420b8a08865c05b623f4a25bf2fcb42f2d1a1c17ad84",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "fd1a13bfa1fae0c1ff430723174beef0ffd25e3bca593a7e07c5442e013f797c",
+      "parts": [
+        {
+          "node": "FriendlySignal",
+          "nativeFaces": 11,
+          "surfaceCentreGodot": [
+            0.06333722919225693,
+            0.3366219103336334,
+            0.5466015934944153
+          ],
+          "selectionRadiiGodot": [
+            0.12,
+            0.12,
+            0.09
+          ],
+          "material": "FriendlySignalMaterial"
+        }
+      ],
+      "inputTriangles": 10000,
+      "runtimeTriangles": 10000
+    },
+    {
+      "runtimeAsset": "assets/support/production/transport.glb.bin",
+      "runtimeSha256": "13f0cff3711774693031a781de501dacaf252c69cb9d70dcf47d655dd7f859b3",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "d2cc2c0074e46c797266d422a677d3ca6dbc4dd95ac6a63e2a4cef3172faac31",
+      "parts": [
+        {
+          "node": "FriendlySignal",
+          "nativeFaces": 43,
+          "surfaceCentreGodot": [
+            -0.005362680647522211,
+            -1.1608272790908813,
+            0.03428007289767265
+          ],
+          "selectionRadiiGodot": [
+            0.23,
+            0.14,
+            0.23
+          ],
+          "material": "FriendlySignalMaterial"
+        }
+      ],
+      "inputTriangles": 23127,
+      "runtimeTriangles": 23127
+    },
+    {
+      "runtimeAsset": "assets/props/production/commander-armor.glb.bin",
+      "runtimeSha256": "5eaf6b55ba6630a46e5ac48f83c9015c4b12bbcbc1a2023f332b9c440be3a03d",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "ec186fe71c6d84158f307543c1bbe2e7aa3ca89960055549b72c9e30acaf973c",
+      "parts": [
+        {
+          "node": "Weak_helmet",
+          "contourSource": "Armor_helmet",
+          "scale": 0.8,
+          "faces": 375
+        },
+        {
+          "node": "Weak_chest",
+          "contourSource": "Armor_chest",
+          "scale": 0.8,
+          "faces": 625
+        },
+        {
+          "node": "Weak_back",
+          "contourSource": "Armor_back",
+          "scale": 0.8,
+          "faces": 625
+        },
+        {
+          "node": "Weak_left",
+          "contourSource": "Armor_left",
+          "scale": 0.8,
+          "faces": 250
+        },
+        {
+          "node": "Weak_right",
+          "contourSource": "Armor_right",
+          "scale": 0.8,
+          "faces": 250
+        }
+      ],
+      "inputTriangles": 8500,
+      "runtimeTriangles": 10625
+    },
+    {
+      "runtimeAsset": "assets/props/production/minigun.glb.bin",
+      "runtimeSha256": "b90b39423fcfc53696cf97c90322b48b737c9a1fd188ab8605e9a4f9cf361a93",
+      "inputGitRevision": "cab48bf41",
+      "inputSha256": "559f904c2cfb87079a0ce01d63db56d09b8fab427f2acbc788af64530526725b",
+      "parts": [
+        {
+          "node": "MinigunFeedIndex",
+          "cartridges": 9,
+          "method": "Curved linked belt; rim/case/shoulder/tapered bullet; existing shot-driven index"
+        }
+      ],
+      "inputTriangles": 6000,
+      "runtimeTriangles": 7500
+    }
+  ]
+}
