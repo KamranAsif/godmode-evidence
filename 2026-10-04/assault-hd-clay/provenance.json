@@ -1,0 +1,57 @@
+{
+  "sourceRepo": "KamranAsif/Godmode.exe-roguelite",
+  "sourceCommit": "12bffb5d7eb8014f128a81e358ef0d5dd73e8a49",
+  "pr": 936,
+  "renderer": "GodotJS 4.6.1 custom 14d19694e, OpenGL Compatibility, AMD Radeon RX 9070 XT",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "window": "windowed at -10000,-10000",
+  "material": "Uniform grey StandardMaterial3D, roughness 0.8, no textures or normal maps",
+  "lighting": "One directional key (-35,-35,0), energy 1.3, neutral ambient 0.28",
+  "camera": {
+    "firstPersonRifle": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "fov": 50,
+      "near": 0.005
+    },
+    "firstPersonKnife": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "fov": 75,
+      "near": 0.005
+    },
+    "side": {
+      "position": [
+        -1.9,
+        0.12,
+        -0.45
+      ],
+      "target": [
+        0,
+        -0.25,
+        -0.45
+      ],
+      "fov": 45
+    }
+  },
+  "sourceHashes": {
+    "assets/characters/assault-hd/character-assault-hd-arms.glb": "d250e9fa5cc3f14facf3c5a7c4965b10e260b5e70f39969a99040d2fd057b026",
+    "assets/characters/assault-hd/character-assault-hd-knife-arms.glb": "9f61b5bb42005e701b079d7180c38fdf3b0ba6b482574ceddf03114b8a108918",
+    "scripts/client/weapon_view.ts": "d976b9a265f8b76ffa89b95948975e7b824cd2176dd94b633279d3c705c57efc",
+    "scripts/first_person_pose.ts": "efb53ad3f299f7fffe7499a07f0dc227dc0c620d5dd6095dd3c5526926237b66",
+    "scripts/character_rig.ts": "9628ae45e3c333289ef69bfaa3f9e8c3258606344caf67945bde4157161771f9",
+    "scripts/client/knife_view.ts": "20d978674805082abe2b43d4f76e83f2281645bff969350b78ae61e98f8d9594",
+    "scripts/knife_view_timing.ts": "507c91f17a7d950ac65440bdc36ed6c19bf81a31f4ae0df9176c2b0fef1ff096"
+  },
+  "gameFixes": false,
+  "method": "Production WeaponView composition, hold/ADS socket solvers, applyReloadChoreography and applyFirstPersonArms; unmodified solveFirstPersonArms/placeCharacterPalm/closeCharacterGrip. Production KnifeView.update. Steady sprint carry and sway formula from WeaponView at a prescribed stride phase. Every pose sampled deterministically; solve forced at each captured sample instead of its live 20Hz idle budget. No recoil, draw, movement network or HUD; blur disabled for joint visibility. Material-only GLB copies preserve original binary mesh/skin/animation payload. Native 1920x1080 viewport, no screenshot upscaling."
+}
