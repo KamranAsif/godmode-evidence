@@ -1,0 +1,76 @@
+# Placeholder visuals audit (2026-10-04)
+
+A read-only audit of everything visible in a survival run that code draws from primitives, or that
+stands in for art, rather than coming from an approved asset or the approved art direction.
+
+- **Code audited:** `origin/main` at `ac138defd` (#934).
+- **Captures:** one rendered off-screen 1920x1080 run (`game run --offscreen --offscreen-size 1920x1080`)
+  on the pinned nopc engine. Enemies were spawned with `debug_spawn_encounter` and framed with the free
+  camera's `frameSoldier`. Files ending in `z-…-zoom` are enlarged crops of the full frame beside them.
+- **Excluded, as asked:** world geometry, the approved combat VFX and lattice, the HUD layers
+  (#918–#923, #928, including the `SUPPLY nnM` markers and the boss/event banners), and map props (#930).
+
+**Already in flight:** items 1 and 2, the visor and the rifle charge, are removed by `4d92ea8b4`
+("Remove the rifle charge tell and the soldier visor") on `fix/remove-rifle-charge-tell`. That commit
+was not on `origin/main` when this audit ran. It leaves the other beams (items 3, 9 and 10) alone.
+
+## Ranked by how noticeable each item is
+
+| # | What it is | Where it's built | Appears on | How often the player sees it | Capture | Recommendation |
+|---|---|---|---|---|---|---|
+| 1 | **Glowing box visor**: an emissive `BoxMesh` (0.2×0.05×0.08 m) on the head bone. Red by default; the medic's is green, the sniper's sky-blue, the officer's gold. On the 1.8× commander it pokes through the approved helmet plate. | `scripts/client/soldier_view.ts:847-855` (colours `:210-215`) | Every soldier: rifleman, SMG, shotgun, grenadier, RPG, sniper, medic, riot shield, juggernaut, heavy gunner, officer, commander | Constantly. On every enemy's face from 0:00, and on corpses too. | [01](01-grunt-visor.png), [03](03-sniper-visor.png), [04](04-officer.png), [06](06-heavygunner.png), [16](16-commander-visor.png), [16z](16z-commander-visor-zoom.png) | **Remove.** Fix in flight (`4d92ea8b4`). |
+| 2 | **Rifleman charge**: a translucent magenta `BoxMesh` beam toward the player, plus a magenta `TorusMesh` ring around the muzzle | `soldier_view.ts:121-150`, pools `:368-386`, drawn `:751-765` | Rifleman, the most common enemy from 0:00 | Every rifle volley. Two charging at once lay magenta walls across the crowd ([02b](02b-rifle-charge-crowd.png), [12](12-ammo-box.png)). | [02](02-rifle-charge.png), [02b](02b-rifle-charge-crowd.png) | **Remove.** Fix in flight (`4d92ea8b4`; the wind-up sound stays). |
+| 3 | **Routine aim line**: a thin amber `BoxMesh` beam over the first 55% of the way to the player. Seen end-on it becomes a vertical orange bar. | `soldier_view.ts:100-110`, pool `:367`, drawn `:770` | SMG, shotgun, grenadier, RPG, medic, riot shield, juggernaut, heavy gunner, officer | Every wind-up of nine kinds, so several on screen at once from minute 1 | [09](09-amber-aim-line.png), [09z](09z-amber-aim-line-zoom.png) | **Remove**, for the same reason as the rifle beam: a code-drawn line, not art. The commit above leaves it in. If a visual tell is wanted, author one into the approved weapon models' muzzle flash or pose. |
+| 4 | **Medic aura signs**: billboarded `Label3D` text glyphs with a blurred black outline. A big green "+" over each medic, small "+" signs rising off the enemies it holds up, a green "+" badge on overhealed enemies, and a white "−" when the aura drops. | `scripts/client/medic_aura_view.ts:46-60` (`sign()`), used `:153`, `:194`, `:215` | Medic and every enemy near it (minutes 7 and 13; maxAlive 2) | Whenever a medic is alive. The big "+" reads from across the map. | [07](07-medic-aura.png), [07b](07b-medic-aura-crosses.png), [07z](07z-medic-aura-crosses-zoom.png) | **Replace with an asset**: an approved heal icon or faceted VFX in the art direction. A font glyph is a stand-in. |
+| 5 | **Ammo box**: an olive `BoxMesh` crate with a glowing lime band box. The node is literally `AmmoBoxPlaceholder`, and the comment reads "from primitives until a concept is approved". | `scripts/client/pickup_markers.ts:76-97`, drawn by `ammo_box_view.ts:49` | Kill drops (machine-gun ammo) | Many times a run. Kills drop them from early on. | [12](12-ammo-box.png), [12z](12z-ammo-box-zoom.png), also visible in [14](14-killstreak-tablet.png) | **Replace with an asset.** |
+| 6 | **Killstreak tablet and hands**: a `BoxMesh` slab and bezel, box gloves and sleeves, and `CapsuleMesh` fingers (a "sausage" thumb). The comment says "built here from primitives". | `scripts/client/streak_tablet.ts:63-147` | Every killstreak call-in (viewmodel) | On every streak, filling the centre of the screen | [14](14-killstreak-tablet.png) | **Replace with an asset**: a tablet model, and the approved first-person arms holding it. |
+| 7 | **Officer command chevrons**: flat amber emissive `PrismMesh` triangles bobbing over commanded enemies | `scripts/client/enemy_events_view.ts:31-51` | Officer elite (minutes 6 and 13) and the enemies it commands | While an officer lives, several at once | [08](08-officer-chevrons.png), [08z](08z-officer-chevrons-zoom.png), also in [09](09-amber-aim-line.png) | **Replace** with an approved marker in the HUD style, or **remove** and let the officer's own model and voice carry it |
+| 8 | **Drone scan cone and glows**: a pale-cyan translucent `CylinderMesh` cone from the lens while it locks on. Code also adds an emissive `SphereMesh` lens (white, red while hunting) and red rotor strobes to the approved drone GLB. | Cone `soldier_view.ts:285-304`; lens and strobes `scripts/client/production_mechanical.ts:16-21`, `:65-83` | Quadcopter drone (minutes 5, 11 and 15; up to 10 alive) | Every lock-on. The red lens is always visible. | [10](10-drone-lens-scan-cone.png) | Cone: **remove**, same rule as the beams. Lens and strobes: **replace**, by baking emissive lens and strobe materials into the drone asset. |
+| 9 | **Sniper laser and scope glint**: a red emissive `BoxMesh` laser to the player's chest, plus a four-point star (`SphereMesh` core and two `BoxMesh` arms) on its scope | Laser `soldier_view.ts:98-99`, `:366`, `:748`; glint `:388-415`, `:787-811` | Sniper (minutes 9 and 13; up to 3 alive) | Every sniper aim. The glint twinkles while it hunts. | Not caught on camera in 6 tries (sniper not aiming at the player when captured). Blue visor in [03](03-sniper-visor.png). | **Decide.** GAME.md names "a sniper's glint and laser" as tells, so they are intentional, but both are code primitives. If they stay, have the glint authored as a sprite/VFX asset. Otherwise remove them, consistent with items 2 and 3. |
+| 10 | **Claymore trip lasers and blinkers**: four translucent red `BoxMesh` lasers 2.5 m long (they pass through parked cars), and red emissive `SphereMesh` "Warning" blinkers on claymores, bouncing betties and grenades (enemy grenadier grenades included) | `scripts/client/crowd_build_view.ts:139-146` (lasers), `:129-130`, `:148` (blinkers) | Claymores cheat weapon; martyrdom and betty builds; grenadier grenades | Whenever the player owns claymores (crate card), and on every grenade | [17](17-claymore-trip-lasers.png), [17z](17z-claymore-zoom.png) | **Keep, but get it approved.** Claymore lasers are the genre convention, and the blinker is a readable grenade tell. They should still be signed off like an asset. |
+| 11 | **RC-XD car**: a dark `BoxMesh` chassis and cabin, cyan stripe boxes and box "tyres". `docs/survival/README.md:168-169` calls it a "primitive placeholder until a concept is approved". | `scripts/client/streak_oneclick_view.ts:79-96`, used at `killstreak_view.ts:205` | RC-XD killstreak (third-person drive) | For the whole ride, in the centre of the view | [13](13-rcxd-box-car.png), [13z](13z-rcxd-zoom.png) | **Replace with an asset.** The enemy RC car already has an approved model (`assets/enemies/production/rccar.glb`); a cyan-painted copy would do. |
+| 12 | **Friendly attack dogs**: brown `BoxMesh` blocks (body, head, snout, legs, tail) under a glowing cyan vest box. Same doc line as item 11 calls them placeholders. | `streak_oneclick_view.ts:55-77`, used `:198` | Attack Dogs killstreak | 30 s per use | **Not captured.** In four attempts (at normal speed and at `timescale 0.05`, from first person and from the free camera over the server's reported dog positions), no dog was drawn, even while the server reported six dogs biting at the framed spot. This may be a separate rendering bug. | **Replace with an asset**: the approved enemy dog (`production_dog.ts`) in a cyan vest. Also check why none rendered. |
+| 13 | **Damage-direction wedge**: a solid red `Polygon2D` wedge around the crosshair pointing at the shooter, and a red screen pulse. It predates the HUD layers (#77) and wasn't restyled with them. | `scripts/client/admin_hit_indicator.ts:1-66` | Any hit on the player | Very often in a fight | Not captured: it lasts 900 ms, and a capture takes about 20 s. One shows over the RC-XD view in an earlier frame. | **Keep the function and restyle it** in the #919 HUD layer style. Confirm whether it counts as HUD (excluded). |
+| 14 | **Commander weak spots**: orange emissive `BoxMesh` "Weak_<zone>" at 0.8× plate size, shown when a plate breaks | `soldier_view.ts:997-1005`, toggled by `commander_view.ts` | Juggernaut commander boss (10:00) | Once per run, through the boss fight | Not captured: a dev-spawned commander doesn't run the boss plate logic, and 30 hits broke no plate | **Replace**: author the weak-spot glow into the commander armour asset (`commander-armor.glb.bin`) |
+| 15 | **Attack helicopter weak spots**: two orange emissive `SphereMesh` (r 0.25) on the engines, shown while it hovers | `production_mechanical.ts:32-35`, toggled `helicopter_view.ts:17` | Attack helicopter boss (20:00) | Once per run, in its hover windows | Not captured (helicopter wasn't in a hover phase); approved body visible in run | **Replace**: emissive engine material in the helicopter asset |
+| 16 | **Event aircraft and friendly glows**: a red emissive cylinder "Beacon" under the reinforcement transport, a red "SensorGlow" on the enemy UAV, and a cyan "FriendlySignal" cylinder on the cheat drone, turrets, Sentry Gun perk sentries and the supply helicopter | `scripts/client/production_aircraft.ts:17-32`; `scripts/client/production_support.ts:13-33` | Heli event (minutes 7, 11 and 14), UAV event (minutes 4 and 13), drone and turret cheats | Small, at distance | Not captured | **Replace**: bake into the assets' materials. Low priority. |
+| 17 | **Precision Airstrike / Stealth Bomber / Napalm map overlay**: a red `TorusMesh` target ring, a `PrismMesh` heading arrow, an orange `BoxMesh` strike strip, a cyan "you" arrow, and red `QuadMesh` enemy dots | `scripts/client/killstreak_view.ts:323-360`, driven `:807-831` | Those three streaks' targeting map | A few seconds per use | [15](15-airstrike-map-overlay.png) | **Keep**: it's intentional tactical-map UI and reads as designed. Optionally restyle to the #919 HUD palette. |
+| 18 | **RC bomb car "Warning" light**: an emissive red `SphereMesh`, set 0.55 m *below* the car's frame origin, blinking at 3 Hz | `production_mechanical.ts:26-27`, blink `enemy_greybox.ts:66-75` | Enemy RC car | Not visible in a close-up ([11](11-rccar.png)); the approved model's own amber antenna beacon shows instead | [11](11-rccar.png) | **Remove**: it is hidden or misplaced, and the asset already has a beacon |
+| 19 | **Player grenade-launcher shell and blast**: an orange additive `SphereMesh` slug, and an orange sphere that swells to the blast radius. The comment reads "Placeholder art". | `scripts/client/grenade_view.ts:43-93` | Grenade launcher (dev console `give grenadeLauncher`; not offered in survival) | Not in a normal survival run | Not captured | **Remove**, or replace if the launcher returns |
+| 20 | **Heavy gunner and commander minigun feed**: six brass `CylinderMesh` cartridges | `scripts/client/enemy_weapon_fx.ts:24-47` | Heavy gunner elite (minute 11), commander | Small, while it fires | Pack and minigun in [06](06-heavygunner.png) | **Replace**: author the belt into `minigun.glb.bin`. Low priority. |
+
+### Not seen in a normal run (cleanup only)
+
+- **Body tint wash** (`KIND_TINTS` / `ENEMY_TINT`, "Placeholders until each type's own art lands",
+  `soldier_view.ts:183-209`, applied `:832`). It is only applied to bodies that aren't
+  `character-enemy-*`, which today means only the pistol and cloaker kinds. **Remove** with those kinds.
+- **Borrowed player bodies:** the pistol enemy uses `character-marksman.glb`
+  (`scripts/enemy_character_scenes.ts:7`), and the cloaker uses `character-breach.glb` (`:18`) with
+  the retired Daemon's haymaker and hook (`scripts/presentation.ts:121-127`, `:287`). The cloaker
+  also gets a cyan `BoxMesh` visor and blade (`cloaker_view.ts:75-85`). None of the pistol, cloaker,
+  kamikaze or sentry kinds is in the survival schedule (`crowd_schedule.ts`); they only come from
+  `debug_spawn_encounter`. **Remove**, or give them approved bodies before they're scheduled. The
+  commander still borrows the Daemon clips in a run, but that is animation, not a visual primitive.
+- **Primitive fallbacks that never run** because every asset is present: the supply crate
+  (`supply_drop_view.ts:402-409`), medic pack (`soldier_view.ts:875-890`), minigun barrels (`:903-931`),
+  ammo pack (`:943-956`), commander plates and stripe (`:980-994`), red box enemy body
+  (`scripts/game_world.ts:2334-2341`) and box player body (`:923-931`). **Remove** them, so a missing
+  asset fails loudly instead of shipping a box.
+- **Elite red paint** (`survival_hud.ts:122-123`, "the boss slot's placeholder"). It is dead today,
+  because the elites and bosses lists are always empty (`server/survival_run.ts:1619-1621`). **Remove.**
+- Unused `debrisMesh`, `ringMesh` and `jetMaterial` in `streak_fx.ts:237-240`. **Remove.**
+
+### Checked and left alone (intentional or approved)
+
+- Enemy shot tracers (`enemy_weapon_fx.ts:106-132`) and pyro debris (`pyro_explosion.ts`) are combat VFX.
+- The far-enemy blob shadow quad (`character_detail.ts:105-118`, an asset shader) is a level-of-detail stand-in, not visible art.
+- Reward-drop name labels (`roguelite_interactables.ts:24-37`) use the HUD font, and the drop markers are `pickup_markers.ts:99-141`. They are in-world HUD text.
+- The production enemy bodies, dog, drone, RC car, helicopters, shield, commander armour, medic pack, ammo pack and minigun all carry recorded approvals.
+
+### Docs that still describe something as temporary
+
+- `docs/survival/README.md:168-169`: the friendly dogs and RC-XD are "primitive placeholders". This is still true (items 11 and 12).
+- `docs/survival/enemies.md:160-174`: the "Now" column still says greybox and red wash for enemies that now use production models. Stale.
+- `assets/ordnance/production/README.md:3` says the RPG launcher and jet "remain in separate model review". Stale: both are approved and loaded.
+- `assets/placeholders/ATTRIBUTION.md` header: stale, since nothing loads `assets/placeholders/generated/` any more.
+- `scripts/enemy_character_scenes.ts:23`, `:31` ("A greybox car / aircraft") and the names `enemy_greybox.ts` and `helicopter_greybox.ts`: stale names, because both return production models.
