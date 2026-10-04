@@ -1,0 +1,387 @@
+{
+  "weapon": "shotgun",
+  "configSha256": "8a2dba859d45d69ecaf5916da28be88c6a3aca869fb8bae6d316d74e907bfb11",
+  "referenceSha256": "5990fad43ad255f9b97e00a27a13eff9027e5122daf809c35ecddb81fd358f33",
+  "bodySourceSha256": "004c0cf14f4806263d610d8dceda977a5271e4c9a1837b1147ef98b1d849402c",
+  "bodyTaskId": "01a10810-823e-77ab-aa3c-a34d21daac55",
+  "magazineSourceSha256": "4d4bfe35d7d35fc9e0ad5e9160df99bedf557222ddbf1a63a67d0fa389ad54e9",
+  "magazineTaskId": "01a10810-832f-755b-8574-d63992800199",
+  "outputSha256": "16dcd8f9b3c6f451081bc79c6bc811b442303ebbb1ef1bde7a1092511edc0c05",
+  "referenceLengthMeters": 0.9998880240049666,
+  "bodyLengthMeters": 1.0000911787195028,
+  "bodyFitErrorMeters": 0.0036917701160491282,
+  "sourceBodyTriangles": 257018,
+  "worldTriangles": 80124,
+  "firstPersonTriangles": 73695,
+  "firstPersonCutoffZ": -0.010001574277877807,
+  "sourceMagazineTriangles": 149060,
+  "magazineTriangles": 5999,
+  "magazine": {
+    "kind": "shell",
+    "seatedAt": [
+      0.0,
+      0.1574999985098839,
+      -0.0314839968085289
+    ]
+  },
+  "outputBytes": 4392120,
+  "textures": {
+    "shotgun-texture-0.png": "135bd92f31ee0a450f012b7be04553af4581e3a7291f00dee5847f5499a5a2f6",
+    "shotgun-texture-1.png": "6308562e2de30db5b7d566589a0947cc6d538591cecb09efb0ed5bd76a67ef50",
+    "shotgun-texture-2.png": "3953dd773e04ab8074ba30bf641feecbdcad25dc28598eb14ffc6e9be7fa0c82",
+    "shotgun-texture-3.png": "4c10afffbdbedf14f83d72a2c9f8cb7a59281404d4b3e1c8f8981ef0f6138b34",
+    "shotgun-texture-4.png": "1f6a16607bc48c3aa0dd7714b5501ec22c2504053ab4ca69d2b0c3cc66a848b1",
+    "shotgun-texture-5.png": "16bb95a0b5c0d0d9ccd4dc38885a3631a077d971528805fcab715cec5c907428"
+  },
+  "sockets": {
+    "ButtSocket": [
+      0.0,
+      0.0,
+      0.2750000059604645
+    ],
+    "FrontSightSocket": [
+      0.00010226758604403585,
+      0.030802838504314423,
+      -0.6991972923278809
+    ],
+    "LeftGripCloseSocket": [
+      0.0,
+      -0.005597500130534172,
+      -0.4350000023841858
+    ],
+    "LeftGripSocket": [
+      0.0,
+      -0.06911099702119827,
+      -0.4350000023841858
+    ],
+    "MuzzleSocket": [
+      0.0,
+      0.0,
+      -0.7250000238418579
+    ],
+    "RearSightSocket": [
+      0.00010226758604403585,
+      0.030802838504314423,
+      -0.08800157159566879
+    ],
+    "RightGripCloseSocket": [
+      -0.015098500065505505,
+      -0.1054840013384819,
+      -0.0
+    ],
+    "RightGripSocket": [
+      0.014868499711155891,
+      -0.1054840013384819,
+      -0.0
+    ],
+    "TriggerSocket": [
+      0.0,
+      -0.0664839968085289,
+      -0.08749999850988388
+    ],
+    "WorldLeftGripSocket": [
+      0.0,
+      -0.06877549737691879,
+      -0.3449999988079071
+    ]
+  },
+  "magazineSocket": {
+    "position": [
+      0.0002657496661413461,
+      -0.031712211668491364,
+      -0.15653879940509796
+    ]
+  },
+  "socketDriftMeters": 0.0,
+  "referenceMeanMetallic": 0.37949633598327637,
+  "metallicFactors": {
+    "Material_0": {
+      "sourceMean": 0.674,
+      "factor": 0.5631
+    },
+    "Material_0.001": {
+      "sourceMean": 0.3365,
+      "factor": 1.0
+    }
+  },
+  "rayChecks": [
+    {
+      "name": "clear-above-front-post-1",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-1",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-2",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-2",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-3",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-3",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-4",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-4",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-5",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-5",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-6",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-6",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-7",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-7",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-8",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-8",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-9",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-9",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "rear-aperture-center-open",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "rear-aperture-center-open",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "front-post-below-tip-solid",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": true
+    },
+    {
+      "name": "front-post-below-tip-solid",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": true
+    },
+    {
+      "name": "front-post-above-tip-clear",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "front-post-above-tip-clear",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    }
+  ],
+  "rayCheckChanges": [
+    {
+      "name": "clear-above-front-post-1",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-1",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-2",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-2",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-3",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-3",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-4",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-4",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-5",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-5",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-6",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-6",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-7",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-7",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-8",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-8",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-9",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-front-post-9",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "rear-aperture-center-open",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "rear-aperture-center-open",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "front-post-above-tip-clear",
+      "mesh": "ShotgunModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "front-post-above-tip-clear",
+      "mesh": "FirstPersonShotgunMesh",
+      "hit": true,
+      "expectedHit": false
+    }
+  ]
+}

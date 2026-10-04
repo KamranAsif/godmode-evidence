@@ -1,0 +1,301 @@
+{
+  "weapon": "pistol",
+  "configSha256": "6bd6af34cbd4f85ad181bce28163bebe26907b7fa30d99545cbfbd285ad454af",
+  "referenceSha256": "f811c99986506593e21a7ee564c637fd9acaa5dba2323507b16e2ba896f97904",
+  "bodySourceSha256": "23bd04b69b945ec8f09eea970f89b7b466d302b2d5463c73acd25febd96715a8",
+  "bodyTaskId": "01a10810-8006-75b0-8788-04a297b6cb30",
+  "magazineSourceSha256": "d17c69266283d20083d0c43698913890cadfdbc5fd0f7710488f52890e475599",
+  "magazineTaskId": "01a10810-8003-753d-b60f-dd969f751df5",
+  "outputSha256": "7f6db576985d522c67f56111e86c541316b089d30bd73066058f8beed23bed82",
+  "referenceLengthMeters": 0.25998775626207815,
+  "bodyLengthMeters": 0.26016196013903026,
+  "bodyFitErrorMeters": 0.0035064182773362935,
+  "sourceBodyTriangles": 492488,
+  "worldTriangles": 131557,
+  "firstPersonTriangles": 131557,
+  "firstPersonCutoffZ": 0.28618,
+  "sourceMagazineTriangles": 365170,
+  "magazineTriangles": 19999,
+  "magazine": {
+    "kind": "magazine",
+    "gripOpeningRays": 198,
+    "gripOpeningCentre": [
+      0.001,
+      0.0049,
+      -0.105
+    ],
+    "gripAxis": [
+      -0.043,
+      0.4933,
+      0.8688
+    ],
+    "gripOpeningMeters": [
+      0.048,
+      0.026
+    ],
+    "offsetMeters": [
+      0,
+      -0.009,
+      0
+    ],
+    "residualPoints": 5484,
+    "fitErrorMeters": 0.0046794359977174235
+  },
+  "outputBytes": 7221228,
+  "textures": {
+    "pistol-texture-0.png": "bc8443d2ee0bd0c7421c24bcd54545313a8ccb1611c7cd6423c568d37d41d3b4",
+    "pistol-texture-1.png": "8105647bc1faca9e6dc549494e230301c7cd8aeb88f03b79e85d9b956e5d4762",
+    "pistol-texture-2.png": "eaa7dafdd7d9dce8efd4ec0012b031134ff8580c82501e808b131d3094df43d1",
+    "pistol-texture-3.png": "beadfa3984b67991d2bbeddcffd56efb25a25a5646840cfb128a8c5d74485989",
+    "pistol-texture-4.png": "393a58efb5e54413e05b2f50cd5d904a80fb32474556fa8b50e5476660444e7b",
+    "pistol-texture-5.png": "059a55fd2c3d01564e034f0f21e5122d398e169e17c6a619aba62a121f60dbc1"
+  },
+  "sockets": {
+    "ButtSocket": [
+      0.0,
+      0.0,
+      0.045499999076128006
+    ],
+    "FrontSightSocket": [
+      0.0,
+      0.01902056112885475,
+      -0.19629999995231628
+    ],
+    "LeftGripCloseSocket": [
+      0.013389999978244305,
+      -0.07423923164606094,
+      -0.019500000402331352
+    ],
+    "LeftGripSocket": [
+      -0.019500000402331352,
+      -0.07943923026323318,
+      -0.019500000402331352
+    ],
+    "MuzzleSocket": [
+      0.0,
+      0.0,
+      -0.21449999511241913
+    ],
+    "RearSightSocket": [
+      0.0,
+      0.01902056112885475,
+      -0.001820000004954636
+    ],
+    "RightGripCloseSocket": [
+      -0.013389999978244305,
+      -0.07683923095464706,
+      -0.0
+    ],
+    "RightGripSocket": [
+      0.013389999978244305,
+      -0.07683923095464706,
+      -0.0
+    ],
+    "SlideRearSocket": [
+      0.0,
+      0.0,
+      0.016510000452399254
+    ],
+    "TriggerSocket": [
+      0.0,
+      -0.04693923145532608,
+      -0.06629999727010727
+    ],
+    "WorldLeftGripSocket": [
+      -0.019500000402331352,
+      -0.07943923026323318,
+      -0.019500000402331352
+    ]
+  },
+  "magazineSocket": {
+    "position": [
+      -0.0041357604786753654,
+      0.002445867983624339,
+      -0.05672946572303772
+    ]
+  },
+  "socketDriftMeters": 0.0,
+  "referenceMeanMetallic": 0.6261624097824097,
+  "metallicFactors": {
+    "Material_0": {
+      "sourceMean": 0.8662,
+      "factor": 0.7229
+    },
+    "Material_0.001": {
+      "sourceMean": 0.9805,
+      "factor": 0.6386
+    }
+  },
+  "rayChecks": [
+    {
+      "name": "notch-gap-y-0.0175-z0.602",
+      "mesh": "PistolModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y-0.0175-z0.602",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y-0.0175-z0.604",
+      "mesh": "PistolModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y-0.0175-z0.604",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y0.0175-z0.602",
+      "mesh": "PistolModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y0.0175-z0.602",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y0.0175-z0.604",
+      "mesh": "PistolModel",
+      "hit": false,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y0.0175-z0.604",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": false,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-flat-top",
+      "mesh": "PistolModel",
+      "hit": false,
+      "expectedHit": false
+    },
+    {
+      "name": "clear-above-flat-top",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": false,
+      "expectedHit": false
+    },
+    {
+      "name": "front-post-at-center",
+      "mesh": "PistolModel",
+      "hit": false,
+      "expectedHit": true
+    },
+    {
+      "name": "front-post-at-center",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": false,
+      "expectedHit": true
+    },
+    {
+      "name": "left-rear-shoulder",
+      "mesh": "PistolModel",
+      "hit": true,
+      "expectedHit": true
+    },
+    {
+      "name": "left-rear-shoulder",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": true,
+      "expectedHit": true
+    },
+    {
+      "name": "right-rear-shoulder",
+      "mesh": "PistolModel",
+      "hit": true,
+      "expectedHit": true
+    },
+    {
+      "name": "right-rear-shoulder",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": true,
+      "expectedHit": true
+    },
+    {
+      "name": "front-socket-on-flat-crown",
+      "mesh": "PistolModel",
+      "hit": false,
+      "expectedHit": true
+    },
+    {
+      "name": "front-socket-on-flat-crown",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": false,
+      "expectedHit": true
+    }
+  ],
+  "rayCheckChanges": [
+    {
+      "name": "notch-gap-y-0.0175-z0.602",
+      "mesh": "PistolModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y-0.0175-z0.602",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y-0.0175-z0.604",
+      "mesh": "PistolModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y-0.0175-z0.604",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y0.0175-z0.602",
+      "mesh": "PistolModel",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "notch-gap-y0.0175-z0.602",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": true,
+      "expectedHit": false
+    },
+    {
+      "name": "front-post-at-center",
+      "mesh": "PistolModel",
+      "hit": false,
+      "expectedHit": true
+    },
+    {
+      "name": "front-post-at-center",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": false,
+      "expectedHit": true
+    },
+    {
+      "name": "front-socket-on-flat-crown",
+      "mesh": "PistolModel",
+      "hit": false,
+      "expectedHit": true
+    },
+    {
+      "name": "front-socket-on-flat-crown",
+      "mesh": "FirstPersonPistolMesh",
+      "hit": false,
+      "expectedHit": true
+    }
+  ]
+}
