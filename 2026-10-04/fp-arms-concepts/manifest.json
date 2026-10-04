@@ -13,15 +13,18 @@
   "meshySubmitted": false,
   "generator": "built-in image_gen",
   "concept": {
-    "file": "fp-arms-concept.png",
-    "sha256": "c3e7a17a79aaae2d79e23686e5f455cb8c47857d09b8b6a2453928e6a5fd195f",
-    "prompt": "Create ONE original production concept sheet for a dedicated high-detail first-person arms model for BattleDuty-aimbot. The attached image is the actual current Assault first-person reload view: faithfully retain its subdued dark olive green plain utilitarian woven sleeves and dark cuff palette. Replace exposed blocky fingers with slim close-fitting charcoal-black tactical gloves, an intentional requested upgrade, with no bulky armored fantasy parts. Only TWO forearms and TWO anatomically correct gloved hands per view, sleeves cleanly cut at MID-FOREARM, no upper arms, no torso, no weapon, no props. Both forearms point forward parallel and separated; wrists neutral; hands open, FIVE correctly formed fingers each, slightly spread with CLEAR LIGHT BACKGROUND GAPS between every finger and thumb, no fingers touching or crossed. Sheet has two coordinated views of the SAME symmetric pair: upper half clean top/dorsal orthographic view with all fingers fully visible; lower half three-quarter view showing cuff, palm padding and finger thickness, likewise separated. Both forearms and hands fully in frame generous margins. Real adult hand proportions, slender natural fingers, subtle high quality rounded knuckles under gloves, articulated finger gussets, restrained palm padding, tiny tidy stitched seams, close-fitting cuffs, visible fine olive woven textile and black glove leather/technical fabric grain. Distinct physically modeled glove panels and seam edges that hold up close to camera, while preserving the game's grounded practical military outfit and muted palette. No logos, text, labels, scars, jewelry or markings. Plain warm light-gray background, soft neutral studio light, crisp detailed sculpt/render suitable as exact image-to-3D reference. The four silhouettes on sheet are repeated views of ONE left/right pair, not four different arms. Never mirror right-hand anatomy incorrectly; identify handedness anatomically with outward thumbs in top view. Beautiful clear topology-readable shapes; consistent detailed professional PBR rendering, no game screenshot UI or gun copied from the reference.",
+    "file": "assault-full-body-concept.png",
+    "sha256": "df57fb62a5becadd0034848d9d0d85f99d1bfad3991244bd25b379a12cf62cae",
+    "prompt": "Generate ONE main production FULL-BODY Assault player character concept sheet for BattleDuty-aimbot, using the first attached actual in-engine character-assault body capture as the strict identity, proportions, outfit, palette and gear reference. Second image is the preceding arms-only concept: use its detailed charcoal gloves as the requested hands upgrade, not its severed-arm layout. Exactly TWO complete figures of the SAME original Assault player: front orthographic view left, three-quarter view right. Entire head, fingertips and both boots visible with wide margins, on plain warm light-gray background, soft neutral studio light, crisp high-detail PBR sculpt/render ready for high-res image-to-3D followed by Mixamo full five-finger skeleton rigging. Match the reference adult East Asian male face, short very dark buzzcut hair, clean shaven, average athletic adult build, same realistic height/limb proportions. Match the unarmored muted olive/drab crew-neck long-sleeved plain utilitarian top with darker snug ribbed wrist cuffs and hem, olive cargo trousers with single large flap pouch on each outer thigh and reference folds, matching olive lace-up practical combat boots. Match the simple tall rectangular olive backpack with flat plain outer face, two side utility pouches with flap fasteners, rounded top corners, broad padded shoulder straps and small strap adjusters. Backpack stays worn, prominently visible in three-quarter view. Do not replace outfit with armor, helmet, vest, balaclava, coat, belt attachments or chest magazine pouches. Do not invent new gear. Outfit should retain simple existing subdued military fabric language while improving close-range geometric and textile fidelity. Bare fingers in first reference are intentionally upgraded to SECOND reference slim fitted charcoal-black full-finger technical/leather gloves with natural rounded knuckles, subtle padded dorsal panel, tiny stitched seams, finger gussets, articulated bending creases, fitted wrist cuffs. Give especially high detail to hands and gloves; anatomically correct FIVE individual fingers on every hand (one thumb and four fingers), fingers open slightly spread, clear background spaces between EACH finger and thumb, enough separation for rigging without exaggerated spidery fingers. Both figures in identical neutral A-POSE, arms 40 degrees clear of body so NO hands or forearms touch hips, backpack or straps; palms neutrally facing forward, wrists straight, both feet comfortably apart and straight. NO weapons, props in hands, logos, emblems, text, labels, game HUD, lighting effects, extra figures or isolated hands inset. Preserve player family identity; do not apply enemy family faceted armor style. One clean two-view sheet, no alternatives. Original design detailing based on game-owned model only.",
     "views": [
-      "dorsal/top",
-      "three-quarter palm"
+      "front A-pose",
+      "three-quarter A-pose"
     ],
-    "scope": "One standalone pair of forearms and hands for current Assault outfit; sleeves cut mid-forearm; open fingers separated; two views of same pair.",
-    "palette": "Current Assault dark olive sleeves and dark cuffs; proposed fitted charcoal gloves replace currently bare fingers as requested."
+    "scope": "Full-body current Assault player with exact olive outfit, backpack gear and palette, open separated five-finger hands. Charcoal full-finger gloves are the requested detail upgrade; no other gear changes.",
+    "generationReferences": [
+      "assault-current.png",
+      "fp-arms-concept.png"
+    ]
   },
   "reference": {
     "file": "fp-arms-current.png",
@@ -162,7 +165,7 @@
         ]
       }
     ],
-    "rigContract": "Mixamo native Left/RightArm, ForeArm, Hand chains. New rig should retain invisible upper-arm anchors and complete five-finger chains on both hands, following Breach names/hierarchy. Retarget approved native clips to new rest frames; recompute anatomical palm frames. Detached forearms require dedicated rigging, not an assumption that Mixamo humanoid auto-rig recognizes them.",
+    "rigContract": "Generate and rig the complete body, using Mixamo Standard Skeleton (65). Verify all five finger chains on EACH hand; requesting Standard alone is insufficient because current Assault returned only 41 joints. Preserve native arm/forearm/hand hierarchy and recompute anatomical palm frames/weapon fits for the new hand geometry. Extract arms only after full-body mesh, rig and texture approval, using existing extractor.",
     "socketContract": "Weapon RightGripSocket plus grip/close pairs describe the firing palm frame; WorldLeftGripSocket is the first-person support grip. Existing characterPalmFrame, placeCharacterPalm and closeCharacterGrip fit and wrap native hands. Preserve these semantics and remeasure hand fits on new geometry.",
     "sources": [
       "scripts/character_rig.ts",
@@ -182,7 +185,7 @@
       "should_remesh": false,
       "should_texture": false,
       "image_enhancement": false,
-      "pose_mode": "",
+      "pose_mode": "a-pose",
       "target_formats": [
         "glb",
         "fbx"
@@ -193,7 +196,40 @@
       "enable_pbr": true,
       "should_texture": true
     },
-    "rationale": "4k is the finest geometry pass; disabling remesh retains maximum generated surface detail. Preserve fingers, knuckle shapes, cuffs and seams before rig-ready topology work. An 8192-square base-color atlas dedicated to only the arms provides much higher first-person texel density than the current shared 1024-square full-body atlas. PBR maps support glove and sleeve detail under game lighting. Preserve approved pose and appearance.",
-    "notes": "Omit target_polycount and decimation_mode for the high-detail master. 8k is documented for base color; do not assume all PBR maps have that resolution. Do not use deprecated ultra_mode/hd_texture. Geometry approval precedes texturing and rigging."
+    "rationale": "Use the finest 4k geometry pass without remeshing for a high-detail full-body master, preserving finger separation, knuckles, cuffs and seam shapes. Use the largest 8k base-color texture with PBR; allocate generous UV area to both hands and forearms because arms extraction shares the body atlas. Preserve the approved concept appearance. Highest-detail master precedes any rig-ready topology work.",
+    "notes": "Omit target_polycount and decimation_mode for the high-detail master. 8k is documented for base color, not guaranteed for every PBR map. Verify hand UV texel density after full-body texturing; arms extraction alone does not increase it. Mesh review precedes texture and rig stages. No submission authorized until exact-image chat approval.",
+    "integration": "Mixamo full-body rig with complete finger chains, preserve shared native clips and sockets, then extract first-person arms with tools/assets/extract-mixamo-arms.mjs. Do not regenerate arms-only mesh."
+  },
+  "primaryDeliverable": "assault-full-body-concept.png",
+  "workflow": "After Kamran approves this exact full-body concept: high-detail full-body Assault mesh; mesh approval; highest-resolution texture; Mixamo Standard 65 skeleton verified to include all five finger chains each hand; native animation retarget; extract first-person arms preserving high-detail geometry and texture. Concept-only in this batch.",
+  "previousArmsOnlyConcept": {
+    "file": "fp-arms-concept.png",
+    "sha256": "c3e7a17a79aaae2d79e23686e5f455cb8c47857d09b8b6a2453928e6a5fd195f",
+    "prompt": "Create ONE original production concept sheet for a dedicated high-detail first-person arms model for BattleDuty-aimbot. The attached image is the actual current Assault first-person reload view: faithfully retain its subdued dark olive green plain utilitarian woven sleeves and dark cuff palette. Replace exposed blocky fingers with slim close-fitting charcoal-black tactical gloves, an intentional requested upgrade, with no bulky armored fantasy parts. Only TWO forearms and TWO anatomically correct gloved hands per view, sleeves cleanly cut at MID-FOREARM, no upper arms, no torso, no weapon, no props. Both forearms point forward parallel and separated; wrists neutral; hands open, FIVE correctly formed fingers each, slightly spread with CLEAR LIGHT BACKGROUND GAPS between every finger and thumb, no fingers touching or crossed. Sheet has two coordinated views of the SAME symmetric pair: upper half clean top/dorsal orthographic view with all fingers fully visible; lower half three-quarter view showing cuff, palm padding and finger thickness, likewise separated. Both forearms and hands fully in frame generous margins. Real adult hand proportions, slender natural fingers, subtle high quality rounded knuckles under gloves, articulated finger gussets, restrained palm padding, tiny tidy stitched seams, close-fitting cuffs, visible fine olive woven textile and black glove leather/technical fabric grain. Distinct physically modeled glove panels and seam edges that hold up close to camera, while preserving the game's grounded practical military outfit and muted palette. No logos, text, labels, scars, jewelry or markings. Plain warm light-gray background, soft neutral studio light, crisp detailed sculpt/render suitable as exact image-to-3D reference. The four silhouettes on sheet are repeated views of ONE left/right pair, not four different arms. Never mirror right-hand anatomy incorrectly; identify handedness anatomically with outward thumbs in top view. Beautiful clear topology-readable shapes; consistent detailed professional PBR rendering, no game screenshot UI or gun copied from the reference.",
+    "views": [
+      "dorsal/top",
+      "three-quarter palm"
+    ],
+    "scope": "One standalone pair of forearms and hands for current Assault outfit; sleeves cut mid-forearm; open fingers separated; two views of same pair.",
+    "palette": "Current Assault dark olive sleeves and dark cuffs; proposed fitted charcoal gloves replace currently bare fingers as requested.",
+    "status": "retained as earlier exploratory reference; superseded as main deliverable by full-body Assault concept"
+  },
+  "fullBodyReference": {
+    "file": "assault-current.png",
+    "sha256": "ccaddaf45a2f4cd54fc037075c17cbe0f2a7c62b09f62fd75293e68bd82996b9",
+    "source": "assets/characters/mixamo/character-assault.glb",
+    "sourceSha256": "f67c29e466b0a43531c4e69a7696efd7cecd7c217a7633070164ae03e71f969a",
+    "views": [
+      "front",
+      "three-quarter",
+      "back"
+    ],
+    "materials": "production original PBR; native TPose",
+    "capture": "godot-cli game run --offscreen --inspect --allow-actions --offscreen-size 1920x1080 --scene res://tests/fixtures/assault_body_capture.tscn; game capture --allow-unchecked",
+    "session": "s-muu2f348-61503fac7b60",
+    "instance": "concepts-assault-body",
+    "window": "windowed unfocusable off-screen at -10000,-10000",
+    "stageSource": "import { Node3D, Camera3D, Color, Environment, WorldEnvironment, DirectionalLight3D, Vector3, RenderingServer, OS, AnimationPlayer, Node } from \"godot\";\nimport { instantiatePresentationScene } from \"./presentation\";\nexport default class AssaultBodyCapture extends Node3D {\n    godot_cli_action(request: string): string {\n        if (!OS.is_debug_build()) return JSON.stringify({ accepted: false });\n        const a = JSON.parse(request), output = a.payload?.output;\n        if (a.name !== \"capture\" || typeof output !== \"string\" || !/^[A-Za-z]:[\\\\/].*\\.png$/.test(output)) return JSON.stringify({ accepted: false });\n        RenderingServer.force_draw(false, 0);\n        const error = this.get_viewport()!.get_texture()!.get_image()!.save_png(output);\n        return JSON.stringify({ accepted: error === 0, error, output });\n    }\n    _ready(): void {\n        const env = new Environment(); env.background_mode = Environment.BGMode.BG_COLOR; env.background_color = new Color(0.75, 0.77, 0.79, 1); env.ambient_light_source = Environment.AmbientSource.AMBIENT_SOURCE_COLOR; env.ambient_light_color = new Color(1, 1, 1, 1); env.ambient_light_energy = 0.8;\n        const we = new WorldEnvironment(); we.environment = env; this.add_child(we);\n        const light = new DirectionalLight3D(); light.rotation_degrees = new Vector3(-30, -30, 0); light.light_energy = 1.5; this.add_child(light);\n        const camera = new Camera3D(); camera.projection = Camera3D.ProjectionType.PROJECTION_ORTHOGONAL; camera.size = 2.45; camera.position = new Vector3(0, 1.05, 8); this.add_child(camera); camera.current = true;\n        for (let i = 0; i < 3; i++) {\n            const body = instantiatePresentationScene(\"res://assets/characters/mixamo/character-assault.glb\")!;\n            this.add_child(body); body.position = new Vector3((i - 1) * 1.4, 0, 0); body.rotation_degrees = new Vector3(0, [0, -40, 180][i], 0);\n            const visit = (node: Node): void => { if (node instanceof AnimationPlayer) { node.play(\"TPose\"); node.seek(0, true); node.pause(); } for (const c of node.get_children()) visit(c); }; visit(body);\n        }\n        this.set_meta(\"godot_cli_state\", JSON.stringify({ source: \"character-assault.glb\", views: [\"front\", \"three-quarter\", \"back\"], materials: \"original\", pose: \"native TPose\", fixture: \"production presentation scene in isolated Godot review stage\" }));\n    }\n}\n",
+    "note": "Character rendered by production instantiatePresentationScene in isolated Godot review stage. Current model has bare hands; gloves are explicitly requested upgrade."
   }
 }
