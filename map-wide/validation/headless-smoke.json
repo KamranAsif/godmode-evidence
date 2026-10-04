@@ -1,0 +1,1370 @@
+{
+  "state": {
+    "capturedAtMs": 401403,
+    "frame": 245,
+    "scene": "res://scenes/main.tscn",
+    "schemaVersion": 1,
+    "store": {
+      "aiBudget": {
+        "assistanceMs": 0.117241666666667,
+        "decisionsMs": 0.150308333333333,
+        "maxMs": 7.349,
+        "meanMs": 0.270566666666667,
+        "meanRays": 0,
+        "p95Ms": 1.066,
+        "ticks": 120
+      },
+      "audio": {
+        "activeFootstepPlayers": 0,
+        "activeLocalPlayers": 0,
+        "activeWorldPlayers": 1,
+        "buses": [
+          "GameplaySfx",
+          "GameplayUI",
+          "GameplayAmbience",
+          "Music"
+        ],
+        "cheatLoops": {
+          "cheat-drone-hover": [
+            {
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "playing": false,
+              "volumeDb": 0
+            }
+          ],
+          "cheat-drone-swarm-hover": [
+            {
+              "playing": false,
+              "volumeDb": 0
+            }
+          ],
+          "cheat-turret-idle": [
+            {
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "playing": false,
+              "volumeDb": 0
+            }
+          ],
+          "enemy-heli-rotor": [
+            {
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "playing": false,
+              "volumeDb": 0
+            }
+          ]
+        },
+        "cheatTakes": {},
+        "cheatVoices": [],
+        "cueLog": [
+          {
+            "atMs": 398991,
+            "id": "match-start",
+            "spatial": false
+          },
+          {
+            "atMs": 399184,
+            "id": "landing",
+            "spatial": false
+          },
+          {
+            "atMs": 401017,
+            "id": "picket-chirp",
+            "spatial": true
+          }
+        ],
+        "enemyLoops": {
+          "mend": [
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            }
+          ],
+          "motor": [
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            }
+          ],
+          "rotor": [
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            }
+          ],
+          "shimmer": [
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            }
+          ],
+          "sweep": [
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            },
+            {
+              "cutoffHz": 5000,
+              "held": false,
+              "pitch": 1,
+              "playing": false,
+              "volumeDb": 0
+            }
+          ]
+        },
+        "enemyTells": [],
+        "healthDistress": {
+          "breathingPlaying": false,
+          "breathingVolumeDb": 0,
+          "heartbeatPlaying": false,
+          "heartbeatRate": 1,
+          "heartbeatVolumeDb": 0
+        },
+        "lastPlayed": {
+          "cue": "picket-chirp",
+          "spatial": true
+        },
+        "lastSpatialByCue": {
+          "landing": false,
+          "match-start": false,
+          "picket-chirp": true
+        },
+        "missingReviewedResources": [],
+        "playedCounts": {
+          "landing": 1,
+          "match-start": 1,
+          "picket-chirp": 1
+        },
+        "recentFootsteps": [],
+        "recentPlayed": [
+          {
+            "id": "picket_chirp",
+            "spatial": true
+          },
+          {
+            "id": "player_landing",
+            "spatial": false
+          },
+          {
+            "id": "match_start",
+            "spatial": false
+          }
+        ],
+        "scheduledCount": 0,
+        "score": {
+          "boss": {
+            "gain": 0,
+            "loaded": true,
+            "outputGain": 0,
+            "playing": false,
+            "target": 0
+          },
+          "combat": {
+            "gain": 0,
+            "loaded": true,
+            "outputGain": 0,
+            "playing": false,
+            "target": 0
+          },
+          "explore": {
+            "gain": 0.1995,
+            "loaded": true,
+            "outputGain": 0.1995,
+            "playing": true,
+            "target": 0.1995
+          },
+          "traffic": {
+            "gain": 0.0635,
+            "loaded": true,
+            "outputGain": 0.0635,
+            "playing": true,
+            "target": 0.0635
+          },
+          "water": {
+            "gain": 0.0199,
+            "loaded": true,
+            "outputGain": 0.0199,
+            "playing": true,
+            "target": 0.0199
+          },
+          "wind": {
+            "gain": 0.015,
+            "loaded": true,
+            "outputGain": 0.015,
+            "playing": true,
+            "target": 0.015
+          }
+        },
+        "volumePercent": 100
+      },
+      "combatVfxPrewarmed": true,
+      "consoleLines": [],
+      "consoleOpen": false,
+      "controlsCanSave": true,
+      "controlsCapture": null,
+      "controlsMenuOpen": false,
+      "controlsStatus": "",
+      "controlsWarning": "",
+      "debugFreeFly": null,
+      "desktopTrainer": {
+        "closed": false,
+        "contentScale": 0.928125023841858,
+        "maximized": false,
+        "minimized": false,
+        "open": false,
+        "rect": {
+          "height": 584.88038277512,
+          "width": 909.473684210526,
+          "x": 185.263157894737,
+          "y": 52.822966507177
+        },
+        "tab": "CHEATS",
+        "visible": false
+      },
+      "firstRunHints": {
+        "current": null,
+        "seen": []
+      },
+      "input": {
+        "cursorCaptureRequested": true,
+        "cursorCaptured": false,
+        "injected": {
+          "active": false,
+          "expiresInMs": null,
+          "form": null,
+          "holdId": null,
+          "lastCompletedTapFrames": null,
+          "lastCompletedTapHoldId": null,
+          "lastCompletedTapSequence": null,
+          "lastSampledSequence": -1,
+          "restoresHoldId": null,
+          "sampledHoldId": 0,
+          "samples": 0,
+          "sequence": 121,
+          "tapFramesRemaining": null
+        },
+        "mouseMode": 0
+      },
+      "lattice": {
+        "live": 0,
+        "merged": 0,
+        "opened": 1,
+        "slots": [],
+        "view": {
+          "enemyMarks": [],
+          "hits": 0,
+          "impactFrames": 0,
+          "showing": false
+        }
+      },
+      "localPeerId": 2,
+      "localServerTick": {
+        "maxMs": 105.022260039148,
+        "meanMs": 2.81527932149139
+      },
+      "mainMenuOpen": false,
+      "mainMenuStatus": "",
+      "matchLoadingOpen": false,
+      "matchLoadingProgress": 1,
+      "matchLoadingStatus": "STARTING RUN...",
+      "metaMenu": {
+        "dollars": 0,
+        "message": "",
+        "open": false,
+        "shelf": [],
+        "tab": "upgrades",
+        "tabOpen": false,
+        "unlocked": [],
+        "upgrades": {}
+      },
+      "mode": "client",
+      "navStats": {
+        "failed": 0,
+        "outOfBounds": 0,
+        "queries": 3,
+        "queryMs": 7.091,
+        "queryPeakMs": 3.805,
+        "routeMs": 8.685,
+        "routePeakMs": 4.587,
+        "routes": 3,
+        "syncQueries": 2
+      },
+      "navigation": {
+        "areas": 1125,
+        "polygons": 15596,
+        "ready": true,
+        "source": "dumbo-survival"
+      },
+      "pauseOpen": false,
+      "pauseRespawnAvailable": false,
+      "pauseRespawnNote": "",
+      "presentation": {
+        "aim": {
+          "aimPitchRadians": 0,
+          "aimYawRadians": -1.5707963267949,
+          "pitchRadians": 0,
+          "viewKickRadians": 0,
+          "viewKickYawRadians": 0,
+          "yawRadians": -1.5707963267949
+        },
+        "aiming": {
+          "blend": 0,
+          "crosshairVisible": true,
+          "foregroundBlurBlend": 0,
+          "requested": false
+        },
+        "artDirection": "white-red-cyan-faceted",
+        "body": {
+          "alive": true,
+          "armor": 0,
+          "health": 100,
+          "runArmor": 0
+        },
+        "cameraFov": 75,
+        "cameraMode": "first-person",
+        "characterAnimationSource": "Mixamo",
+        "combatVfx": {
+          "activeBulletHoles": 0,
+          "activeDebris": 0,
+          "activeDust": 0,
+          "activeShells": 0,
+          "impactSpawnCount": 0,
+          "lastImpact": null,
+          "recentImpacts": [],
+          "shellSpawnCount": 0
+        },
+        "debugThirdPerson": false,
+        "defenses": [
+          {
+            "armorVisible": false,
+            "playerId": 2
+          }
+        ],
+        "firstPersonFiringResidual": 0,
+        "firstPersonReload": {
+          "active": false,
+          "blend": 0,
+          "choreographed": false,
+          "phase": 0,
+          "pinned": false,
+          "pose": {
+            "supportHandEulerRadians": [
+              0,
+              0,
+              0
+            ],
+            "supportHandOffset": [
+              0,
+              0,
+              0
+            ],
+            "weaponEulerRadians": [
+              0,
+              0,
+              0
+            ],
+            "weaponOffset": [
+              0,
+              0,
+              0
+            ]
+          },
+          "weapon": "machineGun"
+        },
+        "firstPersonRigBoneCount": 41,
+        "healthDistress": {
+          "breathing": 0,
+          "heartbeat": 0,
+          "heartbeatRate": 1,
+          "intensity": 0,
+          "overlayVisible": false,
+          "targetIntensity": 0
+        },
+        "hud": {
+          "ammo": "30 / 90",
+          "armor": "0",
+          "category": "",
+          "grenades": "G:0",
+          "health": "100",
+          "interactionPrompt": "",
+          "kills": "0/1000000",
+          "layoutMode": "compact",
+          "safeMargin": 32,
+          "status": "",
+          "viewportSize": [
+            1280,
+            1280
+          ],
+          "weapon": "MG-30"
+        },
+        "knife": {
+          "category": null,
+          "clip": "KnifeSlash",
+          "elapsedMs": 600,
+          "lastPress": null,
+          "loaded": false,
+          "playing": false,
+          "slashes": 0
+        },
+        "localBodyVisible": false,
+        "playerVisibility": [
+          {
+            "playerId": 2,
+            "renderedVisible": false
+          }
+        ],
+        "prediction": {
+          "active": true,
+          "correctionMetres": 0,
+          "corrections": 0,
+          "framesHeld": 114,
+          "framesMoved": 3,
+          "historyDepth": 1,
+          "lastInputSequence": 120,
+          "renderedPosition": [
+            -504.6669921875,
+            -16.4443607330322,
+            -376
+          ],
+          "serverPosition": [
+            -504.6669921875,
+            -16.4443359375,
+            -376
+          ],
+          "snaps": 0,
+          "snapshotsApplied": 39,
+          "submittedSequence": 121
+        },
+        "reticle": {
+          "arms": {
+            "bottom": [
+              -1.5,
+              23.3599033355713
+            ],
+            "left": [
+              -31.3599033355713,
+              -1.5
+            ],
+            "right": [
+              23.3599033355713,
+              -1.5
+            ],
+            "top": [
+              -1.5,
+              -31.3599033355713
+            ]
+          },
+          "authoritativeSpreadRadians": 0.028,
+          "gapPx": 23.3599037219177,
+          "visible": true
+        },
+        "rigPose": null,
+        "stancePlacement": {
+          "anchor": [
+            -0.108,
+            1.277,
+            -0.031
+          ],
+          "bakedHands": false,
+          "bones": null,
+          "borePitchRadians": 0,
+          "butt": [
+            -0.108,
+            1.277,
+            -0.031
+          ],
+          "buttToShoulder": 7.45058059692383e-9,
+          "palmResidualMeters": null
+        },
+        "supportHandContact": {
+          "bakedHands": false,
+          "firingCurl": null,
+          "firingResidual": 2.922928921123e-8,
+          "leftArm": {
+            "clip": "MachineGunFirstPersonIdle",
+            "elbow": [
+              0.0678033083677292,
+              -0.366825699806213,
+              -0.494642913341522
+            ],
+            "hand": [
+              0.121985360980034,
+              -0.125851631164551,
+              -0.570052027702332
+            ],
+            "shoulder": [
+              -0.115903787314892,
+              -0.319276690483093,
+              -0.513746321201324
+            ]
+          },
+          "residual": 4.71216097253091e-8,
+          "socket": "WorldLeftGripSocket",
+          "supportCurl": null
+        },
+        "systemAdmins": [
+          {
+            "animation": "machinegunstrafeleft",
+            "animationAvailable": true,
+            "animationPlays": 3,
+            "assetProvenance": "unavailable",
+            "bodyShotAtMs": 0,
+            "gaitBlendWeight": 0.362804182179718,
+            "gaitFacingYaw": 1.83924285804738,
+            "gaitPlaybackRate": 1.16246747970581,
+            "gaitSecondary": "MachineGunWalk",
+            "gaitSpeed": 3.95234472481823,
+            "gaitVelocityX": 0.974574541781098,
+            "gaitVelocityZ": -3.83030459445599,
+            "id": "soldier-e1",
+            "level": "soldier",
+            "nativeDeath": false,
+            "nativeStunned": false,
+            "pullVisible": false,
+            "radioActive": false,
+            "radioAtMs": 0,
+            "releaseSafe": false,
+            "rigBoneCount": 41,
+            "slamAtMs": 0,
+            "swordDashPlayed": false,
+            "upperBodyAnimation": "none",
+            "upperBodyProgress": 0,
+            "upperBodyTracks": 0
+          },
+          {
+            "animation": "rifleaimidle",
+            "animationAvailable": true,
+            "animationPlays": 2,
+            "assetProvenance": "unavailable",
+            "bodyShotAtMs": 0,
+            "gaitBlendWeight": 0,
+            "gaitFacingYaw": 0,
+            "gaitPlaybackRate": 0,
+            "gaitSecondary": "none",
+            "gaitSpeed": 0,
+            "gaitVelocityX": 0,
+            "gaitVelocityZ": 0,
+            "id": "soldier-e2",
+            "level": "soldier",
+            "nativeDeath": false,
+            "nativeStunned": false,
+            "pullVisible": false,
+            "radioActive": false,
+            "radioAtMs": 0,
+            "releaseSafe": false,
+            "rigBoneCount": 41,
+            "slamAtMs": 0,
+            "swordDashPlayed": false,
+            "upperBodyAnimation": "none",
+            "upperBodyProgress": 0,
+            "upperBodyTracks": 0
+          }
+        ],
+        "viewmodelPass": {
+          "limbScale": {
+            "forearmMetres": 0.2582
+          },
+          "meshDepths": [
+            {
+              "layers": 524288,
+              "name": "MachineGunModel",
+              "nearest": 0.0844
+            },
+            {
+              "layers": 524288,
+              "name": "CharacterMesh",
+              "nearest": 0.3025
+            },
+            {
+              "layers": 0,
+              "name": "FirstPersonMachineGunMesh",
+              "nearest": 0.3072
+            }
+          ],
+          "sightScreen": {
+            "ButtSocket": [
+              2.9265,
+              1.7627
+            ],
+            "FrontSightSocket": [
+              0.6787,
+              0.4885
+            ],
+            "MuzzleSocket": [
+              0.6288,
+              0.5584
+            ],
+            "RearSightSocket": [
+              1.0124,
+              0.5421
+            ],
+            "RightGripSocket": [
+              1.0644,
+              1.0716
+            ]
+          },
+          "subViewportSize": [
+            1280,
+            1280
+          ],
+          "viewmodelCullMask": 524288,
+          "viewmodelFov": 50,
+          "visibleRect": [
+            1280,
+            1280
+          ],
+          "weaponAxes": {
+            "bore": [
+              -0.102,
+              0.054,
+              -0.993
+            ],
+            "x": [
+              0.991,
+              -0.087,
+              -0.106
+            ],
+            "y": [
+              0.092,
+              0.995,
+              0.044
+            ]
+          },
+          "weaponMaterial": "StandardMaterial3D albedoTexture=true override=none visible=true",
+          "weaponMeshLayers": 0,
+          "windowSize": [
+            0,
+            0
+          ],
+          "worldCullMask": 524287,
+          "worldFov": 75
+        },
+        "weaponCalibration": {
+          "enabled": false
+        },
+        "weaponRecoil": 0,
+        "weaponSwitch": {
+          "active": false,
+          "endsAtMs": 399273,
+          "progress": 1,
+          "verticalOffset": 0
+        },
+        "worldShot": {
+          "count": 0,
+          "muzzleFlashVisible": false,
+          "recoil": 0,
+          "steadyAim": false,
+          "weapon": "none",
+          "weaponSwitchOffset": 0,
+          "weaponSwitchProgress": 1
+        },
+        "worldShots": {
+          "2": {
+            "count": 0,
+            "muzzleFlashVisible": false,
+            "recoil": 0,
+            "steadyAim": false,
+            "weapon": "none",
+            "weaponSwitchOffset": 0,
+            "weaponSwitchProgress": 1
+          }
+        }
+      },
+      "roguelite": {
+        "aimbot": {
+          "ads": false,
+          "angle": 0,
+          "killSnaps": 0,
+          "lastSnap": null,
+          "lastTurn": null,
+          "switched": 0,
+          "target": null,
+          "turning": false
+        },
+        "cheatEngine": {
+          "aimbot": "",
+          "armed": false,
+          "banishArmed": false,
+          "cards": [],
+          "maximized": false,
+          "mode": null,
+          "offers": [],
+          "open": false,
+          "openForMs": 0,
+          "rows": [],
+          "selected": 0,
+          "sent": false
+        },
+        "cheatScene": {
+          "blasts": 0,
+          "drones": 0,
+          "mines": 0,
+          "mortars": 0,
+          "thrown": 0
+        },
+        "cloakers": [],
+        "enemies": [
+          {
+            "health": 150,
+            "id": "soldier-e1",
+            "position": [
+              -520.16796875,
+              -16.5966796875,
+              -371.8896484375
+            ]
+          },
+          {
+            "health": 151,
+            "id": "soldier-e2",
+            "position": [
+              -523.583984375,
+              -16.46484375,
+              -378.8525390625
+            ]
+          }
+        ],
+        "gameHud": {
+          "banner": {
+            "text": "",
+            "visible": false
+          },
+          "killFeedKills": 0,
+          "killFeedRows": 0,
+          "scoreboardOpen": false,
+          "standings": [],
+          "streakPills": {
+            "1": {
+              "id": "predatorMissile",
+              "mark": "",
+              "state": "idle"
+            },
+            "2": {
+              "id": "precisionAirstrike",
+              "mark": "",
+              "state": "idle"
+            }
+          }
+        },
+        "hitIndicator": {
+          "bearing": null,
+          "showing": 0
+        },
+        "lastMultiKill": null,
+        "lastShakeRadians": 0,
+        "localReload": null,
+        "lootOverlay": {
+          "banner": "",
+          "blur": 0,
+          "muffled": false,
+          "taskbar": false
+        },
+        "medicAura": {
+          "held": [],
+          "overhealed": [],
+          "rising": 0,
+          "shed": 0
+        },
+        "minimap": {
+          "hidden": false,
+          "markers": 0,
+          "visible": true
+        },
+        "run": {
+          "combatUntilMs": 0,
+          "interactables": [],
+          "seed": 735582193,
+          "startedAtMs": 398673,
+          "survival": {
+            "bestKps": 0,
+            "bonusHealth": 0,
+            "bonusHealthMax": 0,
+            "boss": null,
+            "bosses": [],
+            "build": {
+              "banishes": 0,
+              "claymores": [],
+              "drones": 0,
+              "evolved": [],
+              "evolvedIds": [],
+              "mortars": [],
+              "perkSlots": 3,
+              "ready": [],
+              "rerolls": 0,
+              "slowed": [],
+              "specialIds": [],
+              "specials": [],
+              "stats": [],
+              "stunned": [],
+              "thrown": [],
+              "turrets": [],
+              "weaponSlots": 3,
+              "weapons": []
+            },
+            "dead": false,
+            "diedTo": "",
+            "drops": [],
+            "elapsedMs": 2613,
+            "elites": [],
+            "enemies": 2,
+            "events": {
+              "commanded": [],
+              "heli": null,
+              "uavUntilMs": 0
+            },
+            "godmodeUntilMs": 0,
+            "kills": 0,
+            "kps": 0,
+            "lock": null,
+            "mapHack": false,
+            "mapHackMeters": 45,
+            "message": "",
+            "meta": {
+              "ammoBoxes": [],
+              "autoAmmo": false,
+              "boxBanishes": 0,
+              "boxRerolls": 0,
+              "enemyRadar": false,
+              "extraLives": 0,
+              "lagSwitch": false,
+              "report": null
+            },
+            "minute": "RIFLEMEN",
+            "offer": null,
+            "secondLife": false,
+            "shield": 0,
+            "shieldMax": 0,
+            "snapLock": false,
+            "spin": null,
+            "streaks": {
+              "activation": null,
+              "adrenalineUntilMs": 0,
+              "blasts": [],
+              "burning": [],
+              "chainEndsAtMs": 0,
+              "chainWindowMs": 4000,
+              "counter": 0,
+              "dogs": [],
+              "dogsUntilMs": 0,
+              "empAtMs": 0,
+              "exitAtMs": 0,
+              "fires": [],
+              "flights": [],
+              "held": [],
+              "juggernautUntilMs": 0,
+              "ladder": [
+                {
+                  "id": "predatorMissile",
+                  "key": 1,
+                  "kills": 3,
+                  "name": "Predator Missile"
+                },
+                {
+                  "id": "precisionAirstrike",
+                  "key": 2,
+                  "kills": 5,
+                  "name": "Precision Airstrike"
+                }
+              ],
+              "maxHeldEach": 1,
+              "next": {
+                "id": "predatorMissile",
+                "key": 1,
+                "kills": 3,
+                "name": "Predator Missile"
+              },
+              "nowMs": 401299,
+              "nuke": null,
+              "out": false,
+              "returning": null,
+              "ride": null,
+              "strikes": []
+            },
+            "streamKills": [],
+            "supply": {
+              "drops": [],
+              "nextCrateInMs": 27564,
+              "owned": []
+            }
+          }
+        },
+        "startingWeapon": "machineGun",
+        "streakView": {
+          "gun": null,
+          "polarity": "whiteHot",
+          "ride": null,
+          "tablet": false
+        },
+        "stream": {
+          "challenge": null,
+          "challengesDone": 0,
+          "chat": {
+            "lines": [
+              {
+                "text": "LETS GOOOOO",
+                "user": "HYPEKID_ZOOM"
+              },
+              {
+                "text": "hi. reload more this time",
+                "user": "backseat_bex"
+              }
+            ],
+            "visible": true
+          },
+          "followers": 0,
+          "hype": 0,
+          "live": true,
+          "liveTube": false,
+          "overlay": {
+            "alerts": 0,
+            "endCard": false,
+            "opener": true,
+            "overlay": {
+              "caption": "",
+              "challenge": null,
+              "hype": 0,
+              "tips": 0,
+              "viewers": 17,
+              "visible": true
+            },
+            "visible": true
+          },
+          "peakViewers": 18,
+          "request": null,
+          "streams": 0,
+          "style": null,
+          "styleBonus": 1,
+          "tipBot": "",
+          "tipBotQueued": 0,
+          "tipCount": 0,
+          "tips": 0,
+          "viewers": 17
+        },
+        "survivalPlayer": {
+          "armor": 0,
+          "at": [
+            -504.6669921875,
+            -16.4443359375,
+            -376
+          ],
+          "health": 100,
+          "loaded": 30,
+          "reserve": 90
+        },
+        "weapon": "machineGun",
+        "weaponRefill": ""
+      },
+      "routeWork": {
+        "cancelled": 0,
+        "completed": 1,
+        "deferred": 0,
+        "discarded": 0,
+        "exhaustedRoutes": 0,
+        "expired": 0,
+        "latencyPeakMs": 25,
+        "nativeCompleted": 1,
+        "nativePeakMs": 1.473,
+        "peakFrameMs": 0.883999999961816,
+        "peakStepMs": 0.396999999997206,
+        "pending": 0,
+        "pollPeakMs": 0.041,
+        "queriesPerFramePeak": 1,
+        "steps": 2,
+        "submitPeakMs": 0.047,
+        "submitted": 1
+      },
+      "runSummary": {
+        "ammoBoxes": 0,
+        "open": false,
+        "shown": null
+      },
+      "schemaVersion": 1,
+      "selectedCategory": "assault",
+      "settings": {
+        "audioPercent": 100,
+        "fullscreen": true,
+        "keyBindings": {
+          "aim": [
+            "mouse:2",
+            null
+          ],
+          "crouch": [
+            "key:67",
+            "key:4194326"
+          ],
+          "dash": [
+            "key:4194328",
+            null
+          ],
+          "dropCheat": [
+            "key:71",
+            null
+          ],
+          "fire": [
+            "mouse:1",
+            null
+          ],
+          "interact": [
+            "key:70",
+            null
+          ],
+          "jump": [
+            "key:32",
+            null
+          ],
+          "knife": [
+            "key:86",
+            null
+          ],
+          "moveBackward": [
+            "key:83",
+            null
+          ],
+          "moveForward": [
+            "key:87",
+            null
+          ],
+          "moveLeft": [
+            "key:65",
+            null
+          ],
+          "moveRight": [
+            "key:68",
+            null
+          ],
+          "reload": [
+            "key:82",
+            null
+          ],
+          "scoreboard": [
+            "key:4194306",
+            null
+          ],
+          "sprint": [
+            "key:4194325",
+            null
+          ],
+          "swapWeapon": [
+            "key:81",
+            null
+          ],
+          "toggleHelp": [
+            "key:4194332",
+            null
+          ],
+          "toggleMap": [
+            "key:77",
+            null
+          ]
+        },
+        "resolutionHeight": 720,
+        "resolutionWidth": 1280,
+        "screenShakePercent": 100,
+        "sendCrashReports": true,
+        "showFpsCounter": false
+      },
+      "settingsMenuOpen": false,
+      "settingsStatus": "",
+      "simulationHz": 60,
+      "slowestNavQuery": {
+        "from": [
+          -523.584025065104,
+          -16.3333335876465,
+          -378.852193196615
+        ],
+        "ms": 3.805,
+        "to": [
+          -504.666656494141,
+          -16.4441928863525,
+          -375.999969482422
+        ]
+      },
+      "snapshot": {
+        "aiFrozen": false,
+        "corpses": [],
+        "endsAtMs": 86798248,
+        "killLimit": 1000000,
+        "matchDurationMs": 86400000,
+        "maxPlayers": 1,
+        "modeId": "roguelite",
+        "players": [
+          {
+            "accuracySpreadRadians": 0.028,
+            "aiming": false,
+            "alive": true,
+            "armor": 0,
+            "category": "assault",
+            "crouching": false,
+            "dashDirectionX": 0,
+            "dashDirectionZ": 0,
+            "dashEndsAtMs": 0,
+            "dashReadyAtMs": 0,
+            "deaths": 0,
+            "fireRateMultiplier": 1,
+            "firedRevealPosition": [
+              0,
+              0,
+              0
+            ],
+            "firedRevealUntilMs": 0,
+            "grenades": 0,
+            "grounded": true,
+            "health": 100,
+            "id": 2,
+            "infiniteAmmo": false,
+            "invincible": false,
+            "kills": 0,
+            "lastInputSequence": 120,
+            "loadedAmmo": 30,
+            "mantle": null,
+            "movementMultiplier": 1,
+            "name": "QuietNomad",
+            "pitch": 0,
+            "position": [
+              -504.6669921875,
+              -16.4443359375,
+              -376
+            ],
+            "reloadScale": 1,
+            "reloading": false,
+            "reserveAmmo": 90,
+            "respawnAtMs": null,
+            "role": "cheater",
+            "runArmor": 0,
+            "sprintRaiseEndsAtMs": 0,
+            "sprinting": false,
+            "startingWeapon": "machineGun",
+            "team": "",
+            "verticalVelocity": 0,
+            "weapon": "machineGun",
+            "weaponReadyAtMs": 399273,
+            "weaponSwitchEndsAtMs": 399273,
+            "yaw": -1.57075743048897
+          }
+        ],
+        "serverTimeMs": 401401,
+        "systemAdmins": [
+          {
+            "attackPhase": "none",
+            "attackPhaseStartedAtMs": 0,
+            "flinchUntilMs": 0,
+            "health": 150,
+            "id": "soldier-e1",
+            "laggedUntilMs": 0,
+            "lastAttackAtMs": 0,
+            "lastShotHit": false,
+            "leakUntilMs": 0,
+            "level": "soldier",
+            "markedUntilMs": 0,
+            "maxHealth": 150,
+            "position": [
+              -520.16796875,
+              -16.5966796875,
+              -371.8896484375
+            ],
+            "shieldHealth": 0,
+            "targetId": 2,
+            "weapon": "rifle"
+          },
+          {
+            "attackPhase": "none",
+            "attackPhaseStartedAtMs": 0,
+            "flinchUntilMs": 0,
+            "health": 151,
+            "id": "soldier-e2",
+            "laggedUntilMs": 0,
+            "lastAttackAtMs": 0,
+            "lastShotHit": false,
+            "leakUntilMs": 0,
+            "level": "soldier",
+            "markedUntilMs": 0,
+            "maxHealth": 151,
+            "position": [
+              -523.583984375,
+              -16.46484375,
+              -378.8525390625
+            ],
+            "shieldHealth": 0,
+            "targetId": null,
+            "weapon": "rifle"
+          }
+        ]
+      },
+      "snapshotLastFullPacket": {
+        "bytes": 102,
+        "delta": false,
+        "sequence": 0,
+        "serverTimeMs": 398985
+      },
+      "snapshotPacket": {
+        "bytes": 38,
+        "delta": true,
+        "sequence": 39
+      },
+      "soldierPools": "SoldierMuzzleFlash built=2 reused=0 released=0 discarded=0 idle=0 · SoldierTracer built=2 reused=0 released=0 discarded=0 idle=0 · MarksmanLaser built=0 reused=0 released=0 discarded=0 idle=0 · SoldierCharge built=0 reused=0 released=0 discarded=0 idle=0 · RifleCharge built=2 reused=0 released=0 discarded=0 idle=0 · RifleChargeGlow built=2 reused=0 released=0 discarded=0 idle=0 · DroneScan built=0 reused=0 released=0 discarded=0 idle=0 · SniperGlint built=0 reused=0 released=0 discarded=0 idle=0",
+      "soldierStats": {
+        "aims": 0,
+        "damage": 0,
+        "hits": 0,
+        "maxTokensHeld": 0,
+        "pickMs": 2.851,
+        "pickRayMs": 0.717,
+        "pickRays": 54,
+        "pickRouteMaxMs": 0.135,
+        "pickRouteMs": 0.17,
+        "pickRouteSlow": 0,
+        "pickRoutes": 3,
+        "pickSnapMs": 0.478,
+        "pickSnaps": 55,
+        "pickStraightMs": 0,
+        "pickStraights": 0,
+        "rounds": 0,
+        "sightMs": 0.621,
+        "spacingAwake": 0,
+        "spacingLowestMeters": 0,
+        "spacingMeanNearestMeters": 0,
+        "spacingMinNearestMeters": 0,
+        "spacingNowMeanMeters": 0,
+        "spacingNowMinMeters": 0,
+        "spacingSamples": 0,
+        "spotPicks": 1,
+        "spotPicksDeferred": 0,
+        "spotsUnreachable": 0,
+        "steerMs": 2.095,
+        "updateMs": 12.176,
+        "volleys": 0
+      },
+      "stepClimbStats": {
+        "attempted": 0,
+        "climbed": 0,
+        "collisions": 0,
+        "moves": 261,
+        "skippedMoving": 0,
+        "skippedNoHeadroom": 0,
+        "skippedNotPressed": 261,
+        "skippedRemembered": 0,
+        "skippedSpentMotion": 0,
+        "wasted": 0
+      },
+      "waterfront": {
+        "pilingCount": 224,
+        "simulationTime": 401.394
+      },
+      "window": {
+        "mode": 1,
+        "position": [
+          0,
+          0
+        ],
+        "primaryScreen": 0,
+        "screen": -1,
+        "screenPosition": [
+          0,
+          0
+        ],
+        "screenSize": [
+          0,
+          0
+        ],
+        "size": [
+          0,
+          0
+        ],
+        "usableRect": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "logs": {
+    "pid": 29624,
+    "kind": "game",
+    "instance": "material-depth-smoke-headless",
+    "projectPath": "D:\\work\\godmode-roguelite-worktrees\\material-depth-20261004",
+    "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\e2e6262e4562\\game-material-depth-smoke-headless.log",
+    "inspectionUrl": "http://127.0.0.1:61998/inspect",
+    "inspectPort": 61998,
+    "startedAt": "2026-10-04T19:25:54.045Z",
+    "sessionId": "s-muu7o2lc-c5191b14e13c",
+    "processStartToken": "Sunday, October 4, 2026 3:25:51 PM",
+    "output": "Godot Engine v4.6.1.stable.custom_build.14d19694e (2026-02-16 15:13:51 UTC) - https://godotengine.org\r\n[jsb][Debug] slow process GodotJSScriptLanguage.Construct: 0.031719 s (modules\\GodotJS\\weaver\\jsb_script_language.cpp:53)\r\n\r\n[JSDebugger][Debug] [LWS] [2026/10/04 15:26:07:8033] E: [null wsi]: lws_socket_bind: ERROR on binding fd 1196 to port 9229 (-1 10048)\r\n[JSDebugger][Debug] [LWS] [2026/10/04 15:26:07:8044] E: [vh|0|default||9229]: lws_create_vhost: init server failed\r\n[JSDebugger][Debug] [LWS] [2026/10/04 15:26:07:8054] E: lws_create_context: Failed to create default vhost\r\n[JSDebugger][Debug] devtools://devtools/bundled/inspector.html?v8only=true&ws=127.0.0.1:9229/1\r\n[jsb][Debug] slow process JSDebugger.Init: 0.022849 s (modules\\GodotJS\\bridge\\jsb_debugger.cpp:244)\r\n[jsb][Debug] slow process JSEnvironment.Construct: 0.211136 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:257)\r\n[jsb][Debug] slow process GodotJSScriptLanguage.init: 0.237499 s (modules\\GodotJS\\weaver\\jsb_script_language.cpp:80)\r\n[jsb][Debug] slow process ResourceFormatLoaderGodotJSScript.load: 0.151966 s (modules\\GodotJS\\weaver\\jsb_resource_loader.cpp:40)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.044229 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.059015 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.039296 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.040139 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.043922 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.045521 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.081075 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.086816 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.035011 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.047497 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.096659 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.199978 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.288123 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.317211 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.331243 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.331868 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.360294 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.361213 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.174368 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.185298 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.026913 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.057701 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.337192 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.348397 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.386969 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.409839 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.427443 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.446261 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.020563 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.040460 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.081277 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.092202 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.107632 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.133108 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.205583 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.217932 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.253178 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.267761 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 1.393605 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 1.418091 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.026868 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.073417 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.076653 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.028393 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.255932 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.296089 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.020738 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.057338 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.068403 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.090747 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.143313 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.168944 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.028333 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.039075 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.023830 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.045804 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.064902 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.099060 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.048494 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.080563 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.096814 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.059024 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.084194 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.105638 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.118332 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.020212 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.574522 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.605459 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.034067 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.057872 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.044045 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.050136 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.102137 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.152764 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.020023 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.030632 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.079548 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.090534 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.027545 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.036651 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.027510 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.029477 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.311272 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.320168 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.198271 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.199113 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.026984 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.040189 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.864184 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.872440 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.201014 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.209980 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.211635 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.212349 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.271591 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.292865 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.022176 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.030919 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.046111 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.065194 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.031159 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.050304 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.547702 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.556761 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.584207 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.614089 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.033117 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.036808 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.066483 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.067111 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.022978 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.023931 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.031409 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.037611 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 4.588705 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm.load: 4.589415 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1518)\r\n[jsb][Debug] slow process GodotJSScript.load_module: 4.604701 s (modules\\GodotJS\\weaver\\jsb_script.cpp:520)\r\n[JS] GODMODE_LOG_FILE=C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\e2e6262e4562/logs/client-20261004-192614-29624.log\r\n[JS] GODMODE_ROGUELITE_LEVEL_BUILT=0:0\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.030459 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[JS] GODMODE_MODULE_BATCHES=instances:233:nodes:90:groundInstances:97:groundChunks:18:shrubShapes:5:treeShapes:6\r\n[JS] GODMODE_STREET_DRESSING=placements:235:cells:33:renderNodes:137:shrubShapes:4:shrubInstances:385:collisionShapes:162\r\n[JS] GODMODE_PATTERN_RUNTIME_RETIREMENT=[]\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.075835 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[JS] GODMODE_WESTERN_STREET_KIT=frontages:10; practicals:4\r\n[JS] GODMODE_WESTERN_DRESSING=roofKits:0; lowPlanting:210; drains:90; buildMs:32965\r\n[JS] GODMODE_ENVIRONMENT_GROUND=gutters:1506;grates:50;leaves:10288;manholes:11\r\n[JS] GODMODE_STREET_FIDELITY={\"crosswalk\":1265,\"stop\":22,\"centre\":2778,\"lane\":2,\"kerb\":8045}\r\n[JS] GODMODE_ENVIRONMENT_MODULES=39312\r\n[JS] GODMODE_MODULE_BATCHES=instances:46999:nodes:7431:groundInstances:2597:groundChunks:68:shrubShapes:7:treeShapes:6\r\n[JS] GODMODE_WATERFRONT_BATCHES=instances:38898:nodes:207:meshes:8\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.105601 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[JS] GODMODE_ENVIRONMENT_STREET_LIGHTS=visibleHeads:6;pools:5\r\n[JS] GODMODE_STUDY_AUTHORED_PROBES=9234\r\nWARNING: [JS] GODMODE_STUDY_LIGHTMAP=stale:6;first:SurvivalChunks/BridgeDressingVisualOnly; playing unbaked until the next version bake\r\n   at: console.<computed> [as warn] (res:\\\\..\\..\\..\\scripts\\log_file.ts:93)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _start (res://tools/godot-cli/runner/inspection_bridge.gd:148)\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.038790 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.027303 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\nERROR: Condition \"!actions.custom_samplers.has(function->arguments[j].tex_builtin)\" is true. Continuing.\r\n   at: ShaderCompiler::_dump_node_code (servers\\rendering\\shader_compiler.cpp:1292)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _start (res://tools/godot-cli/runner/inspection_bridge.gd:148)\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.102960 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.027671 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[jsb][Debug] slow process JSRealm._load_godot_mod: 0.024712 s (modules\\GodotJS\\bridge\\jsb_godot_module_loader.cpp:13)\r\n[JS] GODMODE_CRASH_REPORT=off\r\n[JS] GODMODE_DISPLAY boot mode=1 fullscreen=true applied=false\r\n[JS] GODMODE_CLIENT_LAUNCHED\r\nGODOT_CLI_INSPECTION=http://127.0.0.1:61998/inspect\r\n[JS] GODMODE_ROGUELITE_LEVEL_BUILT=0:0\r\n[JS] GODMODE_STREET_DRESSING=placements:235:cells:33:renderNodes:0:shrubShapes:0:shrubInstances:0:collisionShapes:162\r\n[JS] GODMODE_SERVER_READY=local\r\n[JS] GODMODE_PEER_CONNECTED=2\r\n[JS] GODMODE_PEER_JOINED=2\r\n[JS] GODMODE_ROGUELITE_SEED=2BD817F1\r\n[JS] GODMODE_ROGUELITE_PRIMARY=2:machineGun\r\n[JS] GODMODE_SURVIVAL_MINUTE=0:rifleman:-\r\n[JS] GODMODE_CLIENT_READY=2\r\n[JS] GODMODE_STREAM_LIVE=18:1\r\n[JS] GODMODE_STREAM_CHAT_EVENT=runStart\r\n[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e1\",\"visual\":false,\"ms\":0.466}\r\n[JS] GODMODE_SYSTEM_ADMIN_SPAWNED=soldier-e1\r\n[JS] GODMODE_PATROL_PRESENTATION={\"id\":\"soldier-e1\",\"distance\":16.63828468322754,\"visible\":false,\"seenPast\":\"\"}\r\n[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e1\",\"visual\":true,\"ms\":348.248}\r\n[JS] GODMODE_SYSTEM_ADMIN_TARGET=soldier-e1:2\r\n[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e2\",\"visual\":false,\"ms\":0.177}\r\n[JS] GODMODE_SYSTEM_ADMIN_SPAWNED=soldier-e2\r\n[JS] GODMODE_PATROL_PRESENTATION={\"id\":\"soldier-e2\",\"distance\":19.142635345458984,\"visible\":false,\"seenPast\":\"\"}\r\n[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e2\",\"visual\":true,\"ms\":1.064}\r\n"
+  }
+}

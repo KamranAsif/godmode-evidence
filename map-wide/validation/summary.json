@@ -1,0 +1,89 @@
+{
+  "build": "pass",
+  "lint": "pass (5 existing max-lines warnings)",
+  "format": "run; root format:check passed",
+  "pnpmTest": "pass: 13 of 13 steps",
+  "rebasedUnitTests": "pass: 554 of 554",
+  "smoke": {
+    "headless": {
+      "frameErrors": 0,
+      "uncaughtScriptErrors": 0,
+      "player": {
+        "alive": true,
+        "grounded": true,
+        "health": 100,
+        "loadedAmmo": 30,
+        "reserveAmmo": 90
+      },
+      "window": {
+        "mode": 1,
+        "position": [
+          0,
+          0
+        ],
+        "primaryScreen": 0,
+        "screen": -1,
+        "screenPosition": [
+          0,
+          0
+        ],
+        "screenSize": [
+          0,
+          0
+        ],
+        "size": [
+          0,
+          0
+        ],
+        "usableRect": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "rendered": {
+      "frameErrors": 0,
+      "uncaughtScriptErrors": 0,
+      "player": {
+        "alive": true,
+        "grounded": true,
+        "health": 100,
+        "loadedAmmo": 30,
+        "reserveAmmo": 90
+      },
+      "window": {
+        "mode": 0,
+        "position": [
+          -10000,
+          -10000
+        ],
+        "primaryScreen": 0,
+        "screen": 0,
+        "screenPosition": [
+          0,
+          0
+        ],
+        "screenSize": [
+          2560,
+          1440
+        ],
+        "size": [
+          1920,
+          1080
+        ],
+        "usableRect": [
+          0,
+          0,
+          2560,
+          1400
+        ]
+      }
+    }
+  },
+  "images": 19,
+  "comparisonPairs": 9,
+  "lightingBakeRun": false,
+  "ownedProcessesRemaining": 0
+}
