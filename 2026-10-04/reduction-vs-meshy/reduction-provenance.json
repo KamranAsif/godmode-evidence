@@ -1,0 +1,671 @@
+{
+  "schemaVersion": 1,
+  "generator": "tools/assets/build-faceted-models.py",
+  "axes": "glTF Y-up, metres; vehicles +X forward, aircraft and parachute nose +Z",
+  "assets": [
+    {
+      "asset": "ac130",
+      "source": "art-source://3d-source/hunyuan/batch01-ac130-20261004/model.glb",
+      "sourceSha256": "053e7e3f54ce1be248dd96f06599ad58ecbbc24414da6754e801bab1d21aefbd",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/ac130.glb",
+      "runtimePath": "assets/aircraft/production/ac130.glb.bin",
+      "sha256": "467bb588372a42d741b8ef8decaa381944368889c80755d6db5184962b526395",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 45516,
+      "facets": 3335,
+      "facetTriangles": 15297,
+      "openEdges": 3,
+      "triangles": 15297,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.1466,
+      "fringeArea": 0.107486,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -16.003,
+          -0.034,
+          -13.777
+        ],
+        [
+          15.992,
+          9.857,
+          13.826
+        ]
+      ],
+      "palette": [
+        "#6b727d",
+        "#3f3833"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "landing-rubber-fender",
+      "source": "art-source://3d-source/hunyuan/batch02-landing-rubber-fender-20261004/model.glb",
+      "sourceSha256": "c4b52d2d87d551e7206d8148eb815dc4680de2a7e142e6973f59ee070ff4b9a5",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/landing-rubber-fender.glb",
+      "runtimePath": null,
+      "sha256": "e0fb76fdd4e124468e6f9bff25f9864564789c66b75d6d5e9e26075c3c45d960",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 9757,
+      "facets": 337,
+      "facetTriangles": 3191,
+      "openEdges": 7,
+      "triangles": 3191,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0125,
+      "fringeArea": 0.000775,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.245,
+          0.004,
+          -0.245
+        ],
+        [
+          0.246,
+          3.62,
+          0.245
+        ]
+      ],
+      "palette": [
+        "#51585c",
+        "#394046"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "landing-service-cabinet",
+      "source": "art-source://3d-source/hunyuan/batch02-landing-service-cabinet-20261004/model.glb",
+      "sourceSha256": "9996065efcfaff14f8f7e4ecc7d6292f50a2d06e88445ebc6ecd06686f1ee92b",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/landing-service-cabinet.glb",
+      "runtimePath": null,
+      "sha256": "01dc1e778dce362656603335485f8aacf0e2dfa419a4213b3f059cc3d8d43ce7",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 13730,
+      "facets": 1081,
+      "facetTriangles": 5918,
+      "openEdges": 0,
+      "triangles": 5918,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0065,
+      "fringeArea": 0.00021,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.531,
+          0.001,
+          -0.382
+        ],
+        [
+          0.534,
+          1.4,
+          0.382
+        ]
+      ],
+      "palette": [
+        "#323438",
+        "#5b5e67"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "newspaper-vending-box",
+      "source": "art-source://3d-source/hunyuan/batch02-newspaper-vending-box-20261004/model.glb",
+      "sourceSha256": "9ec12f006f02960281f99f90dfda51ec8db70e40234e5b6b94ba3949c30182cc",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/newspaper-vending-box.glb",
+      "runtimePath": null,
+      "sha256": "c21ad64a3eeecc932f2a4ff698477cbe8dfb4de1b3c86218e625f4b26406162d",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 10279,
+      "facets": 323,
+      "facetTriangles": 3254,
+      "openEdges": 28,
+      "triangles": 3254,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0043,
+      "fringeArea": 9.4e-05,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.279,
+          0.0,
+          -0.246
+        ],
+        [
+          0.279,
+          1.05,
+          0.246
+        ]
+      ],
+      "palette": [
+        "#393d44",
+        "#9c6b51",
+        "#694c3e",
+        "#d1a791"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "parachute",
+      "source": "art-source://3d-source/hunyuan/batch01-parachute-20261004/model.glb",
+      "sourceSha256": "d362428fdd3c880a35c78a09ad4d7ed7bdfbb083ae4459e85ade128e4e1318b7",
+      "cords": {
+        "rawLines": 111,
+        "trianglesEach": 6,
+        "radius": 0.022,
+        "removedStubTriangles": 756,
+        "rebuilt": 31
+      },
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/parachute.glb",
+      "runtimePath": "assets/props/parachute/parachute.glb.bin",
+      "sha256": "617eea0e8161ac34732dbf9d05a2534744836a8785c5db4d70154e408effce32",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 48902,
+      "facets": 7333,
+      "facetTriangles": 27296,
+      "openEdges": 846,
+      "triangles": 27482,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0285,
+      "fringeArea": 0.004066,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -3.093,
+          -0.011,
+          -1.417
+        ],
+        [
+          3.104,
+          5.006,
+          1.412
+        ]
+      ],
+      "palette": [
+        "#4e4c44",
+        "#1a1d23",
+        "#596c81"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "roof-hvac-basic-unit",
+      "source": "art-source://3d-source/hunyuan/batch02-roof-hvac-basic-unit-20261004/model.glb",
+      "sourceSha256": "56c98fb7beac1d9c555247d26a33836f184b07a213aaf040ea1318d32e362415",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/roof-hvac-basic-unit.glb",
+      "runtimePath": null,
+      "sha256": "7cc62f3476075519d6b15e2aac8a4379576cc144fdbc87b337f5f0dde1522399",
+      "rawTriangles": 499330,
+      "dissolvedFaces": 36541,
+      "facets": 1194,
+      "facetTriangles": 8913,
+      "openEdges": 3,
+      "triangles": 8913,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0124,
+      "fringeArea": 0.000767,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -1.309,
+          -0.001,
+          -0.956
+        ],
+        [
+          1.309,
+          1.712,
+          0.955
+        ]
+      ],
+      "palette": [
+        "#48494c",
+        "#b7b1a6",
+        "#7a7c7a",
+        "#1e1f21"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "roof-vent",
+      "source": "art-source://3d-source/hunyuan/batch02-roof-vent-20261004/model.glb",
+      "sourceSha256": "ca99f0b7f894127e006486606834fdaf47e2688bfedd69a9f006497d1a9348eb",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/roof-vent.glb",
+      "runtimePath": null,
+      "sha256": "02988ef856d478099072224016f106f583c4588d43bd82037a9f4fe8109d55de",
+      "rawTriangles": 499908,
+      "dissolvedFaces": 24391,
+      "facets": 515,
+      "facetTriangles": 4015,
+      "openEdges": 2,
+      "triangles": 4015,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.005,
+      "fringeArea": 0.000125,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.35,
+          0.0,
+          -0.354
+        ],
+        [
+          0.352,
+          1.1,
+          0.353
+        ]
+      ],
+      "palette": [
+        "#353636",
+        "#646564",
+        "#aba79e"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "roof-water-tank",
+      "source": "art-source://3d-source/hunyuan/batch02-roof-water-tank-20261004/model.glb",
+      "sourceSha256": "9457472c4d760cb65216915d17f5f6d399f02098421b83c8611a3148d71bf718",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/roof-water-tank.glb",
+      "runtimePath": null,
+      "sha256": "b7e670aaecf84a9c1bb4d30595bd8901aff8d82744586d2fd7201af96e9abdae",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 57656,
+      "facets": 1915,
+      "facetTriangles": 10793,
+      "openEdges": 3,
+      "triangles": 10793,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0179,
+      "fringeArea": 0.001598,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -1.145,
+          -0.004,
+          -1.176
+        ],
+        [
+          1.143,
+          4.15,
+          1.178
+        ]
+      ],
+      "palette": [
+        "#896a55",
+        "#333539",
+        "#43382a",
+        "#5f4633"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "sedan",
+      "source": "art-source://3d-source/hunyuan/asset-migration-batch-01-v2-20260930/06-car/model.glb",
+      "sourceSha256": "a47b8834b4fbd507c03bf4b7794b5c15ef2e72ecba4550a2f8d10f7c515b2d9b",
+      "wheels": {
+        "count": 4,
+        "segments": 10,
+        "strippedDissolvedFaces": 22424,
+        "radius": 0.4,
+        "track": 0.8,
+        "width": 0.211
+      },
+      "bodyPaint": {
+        "cluster": "#546785",
+        "areaShare": 0.381
+      },
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/sedan.glb",
+      "runtimePath": "assets/props/street/sedan.glb.bin",
+      "sha256": "ba3309236582a714a80e5089a6c5e6ee1efac9e0fc327ad2fcecf9c581733a66",
+      "rawTriangles": 499890,
+      "dissolvedFaces": 61799,
+      "facets": 1863,
+      "facetTriangles": 12899,
+      "openEdges": 258,
+      "triangles": 13443,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0189,
+      "fringeArea": 0.00178,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -2.49,
+          -0.001,
+          -0.95
+        ],
+        [
+          2.49,
+          1.669,
+          0.95
+        ]
+      ],
+      "palette": [
+        "#546785",
+        "#1f1f23",
+        "#ab1110",
+        "#eed6ce"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "simple-park-bench",
+      "source": "art-source://3d-source/hunyuan/batch02-simple-park-bench-20261004/model.glb",
+      "sourceSha256": "d836ab377c64c0687f4d444d0325e5bfac1da5bd7faf5b7a5683a921e306e6f2",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/simple-park-bench.glb",
+      "runtimePath": null,
+      "sha256": "afbfb8d93c2723be50389301a201da86ac6ececa8aecb2c10ed153c068754d4e",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 13834,
+      "facets": 484,
+      "facetTriangles": 4284,
+      "openEdges": 12,
+      "triangles": 4284,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0079,
+      "fringeArea": 0.000313,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.979,
+          -0.0,
+          -0.415
+        ],
+        [
+          0.979,
+          0.975,
+          0.416
+        ]
+      ],
+      "palette": [
+        "#6e4b30",
+        "#9b7453",
+        "#3c2c21",
+        "#4c4f53",
+        "#3c3c3d"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "street-lamp-head",
+      "source": "art-source://3d-source/hunyuan/batch02-street-lamp-head-20261004/model.glb",
+      "sourceSha256": "91d6f02292b02e82ca92ca1ae5257fdcc6e243fcc403d1ee28695ef8c9e40ba5",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/street-lamp-head.glb",
+      "runtimePath": null,
+      "sha256": "525dd3d57b8f61edc8840dd16c815f7d6af7ee04fab9243ebe5b28d0d2c42b12",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 21675,
+      "facets": 340,
+      "facetTriangles": 3146,
+      "openEdges": 0,
+      "triangles": 3146,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.002,
+      "fringeArea": 1.9e-05,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.228,
+          0.0,
+          -0.113
+        ],
+        [
+          0.228,
+          0.28,
+          0.113
+        ]
+      ],
+      "palette": [
+        "#323539",
+        "#c7bead",
+        "#4a5461",
+        "#868176"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "traffic-signal-head",
+      "source": "art-source://3d-source/hunyuan/batch02-traffic-signal-head-20261004/model.glb",
+      "sourceSha256": "945a01f7a56ff2ee4bc0e53232ec1241a0e580344fb4db5452d2f5cf81c9767b",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/traffic-signal-head.glb",
+      "runtimePath": null,
+      "sha256": "38cfd475727bd42596d9cebd8cb54f06e4e2e5058c560ecae7dbfa3441c9e8fb",
+      "rawTriangles": 500004,
+      "dissolvedFaces": 51745,
+      "facets": 574,
+      "facetTriangles": 4771,
+      "openEdges": 3,
+      "triangles": 4771,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0043,
+      "fringeArea": 9.1e-05,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.191,
+          -0.001,
+          -0.288
+        ],
+        [
+          0.192,
+          1.06,
+          0.288
+        ]
+      ],
+      "palette": [
+        "#33373d",
+        "#171615",
+        "#967551",
+        "#545d66"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "utility-cabinet",
+      "source": "art-source://3d-source/hunyuan/batch02-utility-cabinet-20261004/model.glb",
+      "sourceSha256": "4380b4b141c3042e342776d1a6bddc6b8efc4844f0a022acb5041c92c933a243",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/utility-cabinet.glb",
+      "runtimePath": null,
+      "sha256": "5fbf2cd6779de3a0e867b61596d7a2a7fd55f5a4509bf15f44bce5a27c9c0009",
+      "rawTriangles": 500054,
+      "dissolvedFaces": 11557,
+      "facets": 349,
+      "facetTriangles": 3114,
+      "openEdges": 18,
+      "triangles": 3114,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0062,
+      "fringeArea": 0.000192,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.457,
+          -0.001,
+          -0.319
+        ],
+        [
+          0.459,
+          1.46,
+          0.315
+        ]
+      ],
+      "palette": [
+        "#435164",
+        "#a7abaf",
+        "#6c7784"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "van",
+      "source": "art-source://3d-source/hunyuan/batch01-van-20261004/model.glb",
+      "sourceSha256": "b6724e48003bd50065ec1d0f0831f089cd946c88cedae1826e81b3e9db985d00",
+      "wheels": {
+        "count": 4,
+        "segments": 10,
+        "strippedDissolvedFaces": 33716,
+        "radius": 0.395,
+        "track": 0.816,
+        "width": 0.239
+      },
+      "bodyPaint": {
+        "cluster": "#596f96",
+        "areaShare": 0.512
+      },
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/van.glb",
+      "runtimePath": "assets/props/street/van.glb.bin",
+      "sha256": "09973da7ac5ccd35d21e54e9921e934889c99c62587720a32b8beb6677b8268c",
+      "rawTriangles": 500008,
+      "dissolvedFaces": 34813,
+      "facets": 1500,
+      "facetTriangles": 8445,
+      "openEdges": 677,
+      "triangles": 8989,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.02,
+      "fringeArea": 0.001993,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -2.575,
+          0.0,
+          -1.001
+        ],
+        [
+          2.574,
+          2.099,
+          1.001
+        ]
+      ],
+      "palette": [
+        "#3d3d42",
+        "#596f96",
+        "#f7321b",
+        "#ffffff",
+        "#5b5b5b",
+        "#fb9609"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "wheelie-bin",
+      "source": "art-source://3d-source/hunyuan/batch02-wheelie-bin-20261004/model.glb",
+      "sourceSha256": "4ac668e8c00bfa22edd93fc2821f822d3337af8d0b0430675c6cca131d7f8043",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/wheelie-bin.glb",
+      "runtimePath": null,
+      "sha256": "86afbc7eaca0127d46635c1356f56d7ef5b8d1d7ea1053b04ed22d41f21281ef",
+      "rawTriangles": 500000,
+      "dissolvedFaces": 26708,
+      "facets": 604,
+      "facetTriangles": 5198,
+      "openEdges": 27,
+      "triangles": 5198,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.004,
+      "fringeArea": 7.9e-05,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.26,
+          -0.0,
+          -0.295
+        ],
+        [
+          0.26,
+          0.876,
+          0.295
+        ]
+      ],
+      "palette": [
+        "#3f4348",
+        "#757b83",
+        "#1f2020"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "yard-ac-condenser",
+      "source": "art-source://3d-source/hunyuan/batch02-yard-ac-condenser-20261004/model.glb",
+      "sourceSha256": "23477de0fb1705df7cece8b6d992851fef1a2ebfc20c76f74d222b6b15e26424",
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/yard-ac-condenser.glb",
+      "runtimePath": null,
+      "sha256": "e02031b0853103c5c0b7d0e75b81fa0b49c55c0aa79fca7ec594f149cc391f7f",
+      "rawTriangles": 500106,
+      "dissolvedFaces": 38381,
+      "facets": 920,
+      "facetTriangles": 7857,
+      "openEdges": 11,
+      "triangles": 7857,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.0071,
+      "fringeArea": 0.000255,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -0.658,
+          0.007,
+          -0.491
+        ],
+        [
+          0.658,
+          1.343,
+          0.486
+        ]
+      ],
+      "palette": [
+        "#515250",
+        "#d8d8da",
+        "#858683",
+        "#232423"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    }
+  ]
+}
