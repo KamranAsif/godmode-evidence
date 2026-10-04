@@ -1,0 +1,18 @@
+{
+  "sourceCommit": "d492a3f493c3d9fe0761b5ee9aed1b1ceca7423a",
+  "baselineCommit": "3150e8fce",
+  "lighting": "unbaked, GODMODE_STUDY_UNBAKED=1, no bake",
+  "size": [
+    1920,
+    1080
+  ],
+  "cameraFile": "tools/maps/study/street-fidelity-views.json",
+  "checks": {
+    "pnpm build": "passed",
+    "pnpm lint": "passed (existing max-lines warnings only)",
+    "pnpm format": "run",
+    "pnpm test": "13/13 steps passed",
+    "headlessSmoke": "loaded and runtime inspected; no script errors"
+  },
+  "drawCallsNote": "Entire scene including shadows and live soldiers: those actors differ between runs. Vehicle mesh surfaces, per-cell groups and material count stay unchanged. One shared single-surface material per model; instance uniform or INSTANCE_CUSTOM, no extra vehicle draws."
+}

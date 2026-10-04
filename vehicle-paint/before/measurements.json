@@ -1,0 +1,183 @@
+[
+  {
+    "view": {
+      "id": "washington-cordon",
+      "label": "Washington Street lane markings",
+      "position": [
+        -405.45713,
+        -12.7333,
+        -322.25713
+      ],
+      "yaw": 3.141592653589793,
+      "pitch": -0.12,
+      "fov": 75
+    },
+    "frames": {
+      "url": "http://127.0.0.1:51711/frames",
+      "requestedWindowMs": 1000,
+      "warmupMs": 2000,
+      "frames": 51,
+      "engineFrames": 51,
+      "sampled": 51,
+      "dropped": 0,
+      "windowMs": 1013.762,
+      "fps": 50.30766590185863,
+      "meanMs": 19.875823529411765,
+      "medianMs": 15.58899974823,
+      "p95Ms": 45.0660018920898,
+      "p99Ms": 66.1849975585938,
+      "worstMs": 66.185,
+      "bestMs": 10.737,
+      "engine": {
+        "displayServer": "Windows",
+        "drawCalls": 19964,
+        "headless": false,
+        "maxFps": 0,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "vsyncMode": 1
+      },
+      "caveats": [
+        "vsync is on (mode 1) at 60 Hz and 29% of frames landed on that 16.67ms interval, so those frames measure the wait rather than the work",
+        "the window's first 5 frames ran at a median of 43.33ms against 15.24ms for the rest, so the client was still warming up or something else was competing for the machine; raise --warmup-ms, or measure again on a quieter host, before trusting this as steady state"
+      ]
+    }
+  },
+  {
+    "view": {
+      "id": "dock-old-fulton",
+      "label": "Dock / Old Fulton crossing and kerbs",
+      "position": [
+        -580.26666,
+        -14.55,
+        -341.906657
+      ],
+      "yaw": 4.711592653589793,
+      "pitch": -0.16,
+      "fov": 75
+    },
+    "frames": {
+      "url": "http://127.0.0.1:51711/frames",
+      "requestedWindowMs": 1000,
+      "warmupMs": 2000,
+      "frames": 55,
+      "engineFrames": 55,
+      "sampled": 55,
+      "dropped": 0,
+      "windowMs": 1019.396,
+      "fps": 53.95351757315116,
+      "meanMs": 18.53270909090909,
+      "medianMs": 17.8409996032715,
+      "p95Ms": 23.4820003509521,
+      "p99Ms": 41.0909996032715,
+      "worstMs": 41.091,
+      "bestMs": 16.402,
+      "engine": {
+        "displayServer": "Windows",
+        "drawCalls": 30916,
+        "headless": false,
+        "maxFps": 0,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "vsyncMode": 1
+      },
+      "caveats": [
+        "vsync is on (mode 1) at 60 Hz and 80% of frames landed on that 16.67ms interval, so those frames measure the wait rather than the work"
+      ]
+    }
+  },
+  {
+    "view": {
+      "id": "old-fulton",
+      "label": "Old Fulton asphalt facets and kerb edge",
+      "position": [
+        -566,
+        -13.7840002,
+        -254
+      ],
+      "yaw": 0,
+      "pitch": -0.15,
+      "fov": 75
+    },
+    "frames": {
+      "url": "http://127.0.0.1:51711/frames",
+      "requestedWindowMs": 1000,
+      "warmupMs": 2000,
+      "frames": 60,
+      "engineFrames": 60,
+      "sampled": 60,
+      "dropped": 0,
+      "windowMs": 1003.192,
+      "fps": 59.80908938667773,
+      "meanMs": 16.71825,
+      "medianMs": 15.5530004501343,
+      "p95Ms": 30.5839996337891,
+      "p99Ms": 31.2199993133545,
+      "worstMs": 31.22,
+      "bestMs": 13.434,
+      "engine": {
+        "displayServer": "Windows",
+        "drawCalls": 9782,
+        "headless": false,
+        "maxFps": 0,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "vsyncMode": 1
+      },
+      "caveats": [
+        "vsync is on (mode 1) at 60 Hz and 67% of frames landed on that 16.67ms interval, so those frames measure the wait rather than the work"
+      ]
+    }
+  },
+  {
+    "view": {
+      "id": "gate10",
+      "label": "Auditor gate10 — shared crossing and parking reservation",
+      "position": [
+        -513.376,
+        -13.6,
+        -303.653
+      ],
+      "yaw": 3.08,
+      "pitch": -0.14,
+      "fov": 75
+    },
+    "frames": {
+      "url": "http://127.0.0.1:51711/frames",
+      "requestedWindowMs": 1000,
+      "warmupMs": 2000,
+      "frames": 60,
+      "engineFrames": 60,
+      "sampled": 60,
+      "dropped": 0,
+      "windowMs": 1016.082,
+      "fps": 59.050352235351085,
+      "meanMs": 16.93315,
+      "medianMs": 15.2030000686646,
+      "p95Ms": 31.2569999694824,
+      "p99Ms": 32.4910011291504,
+      "worstMs": 32.491,
+      "bestMs": 12.059,
+      "engine": {
+        "displayServer": "Windows",
+        "drawCalls": 21312,
+        "headless": false,
+        "maxFps": 0,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "vsyncMode": 1
+      },
+      "caveats": [
+        "vsync is on (mode 1) at 60 Hz and 43% of frames landed on that 16.67ms interval, so those frames measure the wait rather than the work"
+      ]
+    }
+  }
+]
