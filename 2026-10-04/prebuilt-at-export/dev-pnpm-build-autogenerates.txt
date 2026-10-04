@@ -1,0 +1,19 @@
+
+> godmode-exe@ build D:\work\godmode-roguelite-worktrees\prebuilt-export
+> pnpm build:scripts && node tools/maps/prebuilt/build.mjs --ensure
+
+
+> godmode-exe@ build:scripts D:\work\godmode-roguelite-worktrees\prebuilt-export
+> node tools/build/write-build-info.mjs && pnpm --filter @godmode/game-rules build && pnpm --filter @godmode/godot-cli build && tsc -p tsconfig.json
+
+
+> @godmode/game-rules@0.1.0 build D:\work\godmode-roguelite-worktrees\prebuilt-export\packages\game-rules
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+
+> @godmode/godot-cli@0.1.0 build D:\work\godmode-roguelite-worktrees\prebuilt-export\tools\godot-cli
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+[prebuilt-arena] Generating the survival arena (assets/maps/dumbo/prebuilt/receipt.json is missing); this takes a few minutes.
+[prebuilt-arena] Importing 29 texture(s), then exporting again.
+{"ok":true,"verify":false,"output":"assets/maps/dumbo/prebuilt","client":{"nodes":24693,"fingerprint":"794037162","buildMs":121213,"loadMs":19071,"expandedSoups":5,"importedTextures":29,"expansion":{"position":0.00006103515625,"normal":0.00022396445274353027},"matches":true,"differences":[]},"server":{"nodes":4171,"fingerprint":"1276010704","buildMs":4903,"loadMs":193,"expandedSoups":0,"importedTextures":0,"expansion":{"position":0,"normal":0},"matches":true,"differences":[]}}
