@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "project": "BattleDuty-aimbot",
+  "date": "2026-10-04",
+  "stage": "CONCEPT",
+  "repository": "KamranAsif/Godmode.exe-roguelite",
+  "projectCommit": "ac138defdccbcaf46d2b2b9d7e2fb279e50d3c95",
+  "approval": {
+    "status": "pending",
+    "approver": "Kamran",
+    "exactImageRequiresChatApproval": true
+  },
+  "meshySubmitted": false,
+  "generator": "built-in image_gen",
+  "concept": {
+    "file": "fp-arms-concept.png",
+    "sha256": "c3e7a17a79aaae2d79e23686e5f455cb8c47857d09b8b6a2453928e6a5fd195f",
+    "prompt": "Create ONE original production concept sheet for a dedicated high-detail first-person arms model for BattleDuty-aimbot. The attached image is the actual current Assault first-person reload view: faithfully retain its subdued dark olive green plain utilitarian woven sleeves and dark cuff palette. Replace exposed blocky fingers with slim close-fitting charcoal-black tactical gloves, an intentional requested upgrade, with no bulky armored fantasy parts. Only TWO forearms and TWO anatomically correct gloved hands per view, sleeves cleanly cut at MID-FOREARM, no upper arms, no torso, no weapon, no props. Both forearms point forward parallel and separated; wrists neutral; hands open, FIVE correctly formed fingers each, slightly spread with CLEAR LIGHT BACKGROUND GAPS between every finger and thumb, no fingers touching or crossed. Sheet has two coordinated views of the SAME symmetric pair: upper half clean top/dorsal orthographic view with all fingers fully visible; lower half three-quarter view showing cuff, palm padding and finger thickness, likewise separated. Both forearms and hands fully in frame generous margins. Real adult hand proportions, slender natural fingers, subtle high quality rounded knuckles under gloves, articulated finger gussets, restrained palm padding, tiny tidy stitched seams, close-fitting cuffs, visible fine olive woven textile and black glove leather/technical fabric grain. Distinct physically modeled glove panels and seam edges that hold up close to camera, while preserving the game's grounded practical military outfit and muted palette. No logos, text, labels, scars, jewelry or markings. Plain warm light-gray background, soft neutral studio light, crisp detailed sculpt/render suitable as exact image-to-3D reference. The four silhouettes on sheet are repeated views of ONE left/right pair, not four different arms. Never mirror right-hand anatomy incorrectly; identify handedness anatomically with outward thumbs in top view. Beautiful clear topology-readable shapes; consistent detailed professional PBR rendering, no game screenshot UI or gun copied from the reference.",
+    "views": [
+      "dorsal/top",
+      "three-quarter palm"
+    ],
+    "scope": "One standalone pair of forearms and hands for current Assault outfit; sleeves cut mid-forearm; open fingers separated; two views of same pair.",
+    "palette": "Current Assault dark olive sleeves and dark cuffs; proposed fitted charcoal gloves replace currently bare fingers as requested."
+  },
+  "reference": {
+    "file": "fp-arms-current.png",
+    "sha256": "8771e82229571c8088b15cae442ce62125ac55a1e4f3bf0517803c6b634e54f9",
+    "class": "assault",
+    "weapon": "machineGun",
+    "reloadPhase": 0.5,
+    "capture": "godot-cli game run --offscreen --inspect --allow-actions --offscreen-size 1920x1080 --scene res://tests/fixtures/fp_arms_capture.tscn; runtime action debug_reload_pose {phase:0.5,clay:false}; game capture --allow-unchecked",
+    "instance": "concepts-fp-arms-final",
+    "session": "s-muu2f348-61503fac7b60",
+    "window": "windowed unfocusable off-screen at -10000,-10000",
+    "fixture": "Weapons fixture using production Game and native arms, original materials. Neutral fixture background. Capture shows current low-detail fingertips and cuff.",
+    "import": "Reused engine-generated imports from warmed load-time worktree after verifying SHA-256 equality of each source and importer sidecar."
+  },
+  "currentPipeline": {
+    "documentation": "tools/assets/mixamo/README.md#first-person-arms",
+    "provenance": "assets/characters/mixamo/provenance.json",
+    "derivation": "arms extracted from committed full body, preserve native complete skeleton, skin, material, UV and clips. Ordinary arms are derived companions; no separate ordinary-arms record exists in current provenance.json.",
+    "classes": [
+      {
+        "class": "assault",
+        "path": "assets/characters/mixamo/character-assault-arms.glb",
+        "sha256": "33f0d4422e33f0013819ac0c20cb7cb100063fada51967d26c35c8d0ae01c92b",
+        "triangles": 10578,
+        "jointCount": 41,
+        "fingerChains": [
+          "Thumb",
+          "Index"
+        ],
+        "bodyProvenance": {
+          "sourceTriangles": 50004,
+          "sourceMeshSha256": "e6f4470e416051594b28209ada2ae90fea98ad1595fb438dfc95db330928c524",
+          "mixamoDownloadSha256": "45eea21bf3f518c20a7a478c1e2ff83eca615e2dbd93704b86ec5e388db64ece"
+        },
+        "textures": [
+          {
+            "path": "assets/characters/mixamo/character-assault-pbr-texture-0.png",
+            "sha256": "f2afc25695531efb76b189a0fa5855004c5ecd0855fc1a8010ff17f568499005",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          },
+          {
+            "path": "assets/characters/mixamo/character-assault-pbr-texture-1.png",
+            "sha256": "fd1e46e8fa5f6738c76b0116d3dcd868ec85878c2062c1ea841ce3a4bcdfafb3",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          },
+          {
+            "path": "assets/characters/mixamo/character-assault-pbr-texture-2.png",
+            "sha256": "a651ee01f06bcb988904c3844bda48894a8622a707e269a14ab660c4134cad17",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          }
+        ]
+      },
+      {
+        "class": "breach",
+        "path": "assets/characters/mixamo/character-breach-arms.glb",
+        "sha256": "8218c670c4a9f95c38cdb7ab944bfb34dd806601c0b26b60be87a41ac8bbece3",
+        "triangles": 10675,
+        "jointCount": 65,
+        "fingerChains": [
+          "Thumb",
+          "Index",
+          "Middle",
+          "Ring",
+          "Pinky"
+        ],
+        "bodyProvenance": {
+          "sourceTriangles": 50000,
+          "sourceMeshSha256": "1a7d94e3f5004741b21b3e4792d04de88b648e1aa48f148279ae30cae7fa1a1a",
+          "mixamoDownloadSha256": "bd03af7042662126167e0463c480e93b30909c4b8bf24e44ad5d8396412f2b5a"
+        },
+        "textures": [
+          {
+            "path": "assets/characters/mixamo/character-breach-pbr-texture-0.png",
+            "sha256": "0029d7e1e9863aa58a36fc146186070b315d2471fec220533e2d6442a0a92ca4",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          },
+          {
+            "path": "assets/characters/mixamo/character-breach-pbr-texture-1.png",
+            "sha256": "5c8fd8d8c0e193ae947e234a59f0491470816c34955b35dce99e001d7ad6032f",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          },
+          {
+            "path": "assets/characters/mixamo/character-breach-pbr-texture-2.png",
+            "sha256": "6bfe0f5057380d4c08b17a581a7f515affb5c3d06bfab942280dfa35fcd106a7",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          }
+        ]
+      },
+      {
+        "class": "marksman",
+        "path": "assets/characters/mixamo/character-marksman-arms.glb",
+        "sha256": "aac412257493a0924ca17a971744f4b06e7551d530d85a2ab95ab4725bfe530b",
+        "triangles": 8708,
+        "jointCount": 41,
+        "fingerChains": [
+          "Thumb",
+          "Index"
+        ],
+        "bodyProvenance": {
+          "sourceTriangles": 50004,
+          "sourceMeshSha256": "c8a0f3d726d8484804e678dc5800e116eb1b9f3c87f433fcfef9a61d9874890b",
+          "mixamoDownloadSha256": "62d15a2dd696a56f7f09a8c25c3e9f15908790390c94983486c3609163b2fecc"
+        },
+        "textures": [
+          {
+            "path": "assets/characters/mixamo/character-marksman-pbr-texture-0.png",
+            "sha256": "1000be114d5aa52e5c23c7f2956285581f041689d0c9ba441fe8dc6a91b9150b",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          },
+          {
+            "path": "assets/characters/mixamo/character-marksman-pbr-texture-1.png",
+            "sha256": "5eb7b00eb4a4daefcd14fef3f1b016fe970a86835d1b87640af3f27a9eb985ca",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          },
+          {
+            "path": "assets/characters/mixamo/character-marksman-pbr-texture-2.png",
+            "sha256": "a4fc9e0b12ff8591dd40fdd425cdcf36f50936a6710eb6d834a9f0e4f0f1a727",
+            "width": 1024,
+            "height": 1024,
+            "sharedWithBody": true
+          }
+        ]
+      }
+    ],
+    "rigContract": "Mixamo native Left/RightArm, ForeArm, Hand chains. New rig should retain invisible upper-arm anchors and complete five-finger chains on both hands, following Breach names/hierarchy. Retarget approved native clips to new rest frames; recompute anatomical palm frames. Detached forearms require dedicated rigging, not an assumption that Mixamo humanoid auto-rig recognizes them.",
+    "socketContract": "Weapon RightGripSocket plus grip/close pairs describe the firing palm frame; WorldLeftGripSocket is the first-person support grip. Existing characterPalmFrame, placeCharacterPalm and closeCharacterGrip fit and wrap native hands. Preserve these semantics and remeasure hand fits on new geometry.",
+    "sources": [
+      "scripts/character_rig.ts",
+      "scripts/first_person_pose.ts",
+      "scripts/weapon_catalog.ts",
+      "tools/assets/extract-mixamo-arms.mjs"
+    ]
+  },
+  "meshyRecommendations": {
+    "executeOnlyAfterExactConceptChatApproval": true,
+    "documentation": "https://docs.meshy.ai/en/api/image-to-3d",
+    "checkedOn": "2026-10-04",
+    "geometry": {
+      "model_type": "standard",
+      "ai_model": "meshy-7.1",
+      "geometry_resolution": "4k",
+      "should_remesh": false,
+      "should_texture": false,
+      "image_enhancement": false,
+      "pose_mode": "",
+      "target_formats": [
+        "glb",
+        "fbx"
+      ]
+    },
+    "textureAfterMeshApproval": {
+      "texture_resolution": "8k",
+      "enable_pbr": true,
+      "should_texture": true
+    },
+    "rationale": "4k is the finest geometry pass; disabling remesh retains maximum generated surface detail. Preserve fingers, knuckle shapes, cuffs and seams before rig-ready topology work. An 8192-square base-color atlas dedicated to only the arms provides much higher first-person texel density than the current shared 1024-square full-body atlas. PBR maps support glove and sleeve detail under game lighting. Preserve approved pose and appearance.",
+    "notes": "Omit target_polycount and decimation_mode for the high-detail master. 8k is documented for base color; do not assume all PBR maps have that resolution. Do not use deprecated ultra_mode/hd_texture. Geometry approval precedes texturing and rigging."
+  }
+}
