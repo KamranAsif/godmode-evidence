@@ -1,0 +1,577 @@
+scripts/environment_modules/city_horizon_modules.generated.ts:109:                b.quad("trimStone", point(a, base), point(a, base + baseStorey), point(c, base + baseStorey), point(c, base));
+scripts/environment_modules/city_horizon_modules.generated.ts:110:                b.quad(wall, point(a, base + baseStorey), point(a, top - cap), point(c, top - cap), point(c, base + baseStorey));
+scripts/environment_modules/city_horizon_modules.generated.ts:111:            } else b.quad(wall, point(a, base), point(a, top - cap), point(c, top - cap), point(c, base));
+scripts/environment_modules/city_horizon_modules.generated.ts:112:            b.quad("trim", point(a, top - cap), point(a, top + 0.15), point(c, top + 0.15), point(c, top - cap));
+scripts/environment_modules/city_horizon_modules.generated.ts:126:                    b.quad("glass", w(u - half, base + 0.6), w(u - half, base + baseStorey - 1.0), w(u + half, base + baseStorey - 1.0), w(u + half, base + 0.6));
+scripts/environment_modules/city_horizon_modules.generated.ts:136:                if (bands) for (let y = first + block; y + band < last; y += block) b.quad(frame, w(0, y), w(0, y + band), w(1, y + band), w(1, y));
+scripts/environment_modules/city_horizon_modules.generated.ts:142:                        b.quad(frame, w(u - pier, first), w(u - pier, last), w(u + pier, last), w(u + pier, first));
+scripts/environment_modules/city_horizon_modules.generated.ts:150:                    b.quad("glass", w(0.04, y), w(0.04, y + storey * 1.1), w(0.96, y + storey * 1.1), w(0.96, y));
+scripts/environment_modules/city_horizon_modules.generated.ts:161:                    b.quad("glass", w(u - half, y), w(u - half, y + pane), w(u + half, y + pane), w(u + half, y));
+scripts/environment_modules/city_horizon_modules.generated.ts:164:        for (let i = 1; i < ring.length - 1; i++) b.triangle("roofMembrane", point(ring[0], top), point(ring[i + 1], top), point(ring[i], top));
+scripts/environment_modules/city_horizon_modules.generated.ts:172:                b.quad(wall, point(a, top), point(a, roofTop), point(c, roofTop), point(c, top));
+scripts/environment_modules/city_horizon_modules.generated.ts:174:            for (let i = 1; i < inner.length - 1; i++) b.triangle("roofMembrane", point(inner[0], roofTop), point(inner[i + 1], roofTop), point(inner[i], roofTop));
+scripts/environment_modules/city_horizon_modules.generated.ts:178:            b.box("roofUnit", [x - 1.5, top, z - 1.2], [x + 1.5, top + 1.2, z + 1.2]);
+scripts/environment_modules/city_horizon_modules.generated.ts:183:        b.triangle(
+scripts/environment_modules/city_horizon_modules.generated.ts:196:        b.triangle(
+scripts/environment_modules/city_horizon_modules.generated.ts:203:        b.quad("wallStone", local([ax, -datum - 0.1, az]), local([bx, -datum - 0.1, bz]), local([bx, by, bz]), local([ax, ay, az]));
+scripts/environment_modules/city_horizon_modules.generated.ts:224:    for (let i = 0; i < 4; i++) b.quad(slot, start[i], start[(i + 1) % 4], end[(i + 1) % 4], end[i]);
+scripts/environment_modules/city_horizon_modules.generated.ts:225:    b.quad(slot, ...(end as [Vec3, Vec3, Vec3, Vec3]));
+scripts/environment_modules/city_horizon_modules.generated.ts:226:    b.quad(slot, start[3], start[2], start[1], start[0]);
+scripts/environment_modules/city_horizon_modules.generated.ts:268:        b.quad("vehicleSilver", p(s, 18, deck), p(t, 18, deck), p(t, -18, deck), p(s, -18, deck));
+scripts/environment_modules/city_horizon_modules.generated.ts:269:        b.quad("vehicleSilver", p(s, -18, deck - 0.6), p(t, -18, deck - 0.6), p(t, 18, deck - 0.6), p(s, 18, deck - 0.6));
+scripts/environment_modules/concept_variants_modules.generated.ts:20:    b.prism("bark", 0, 0, 0.22, 0, 3.9, 7, 0.11);
+scripts/environment_modules/concept_variants_modules.generated.ts:25:        b.blob("foliage", [x, 4.25, z], column ? 1.25 : 1.58, column ? 1.65 : 1.45, seed + Math.round((x + z) * 13), 8);
+scripts/environment_modules/concept_variants_modules.generated.ts:27:    b.blob("foliage", [0.1, column ? 5.6 : 5.15, 0], column ? 1.42 : 1.8, 1.65, seed + 91, 8);
+scripts/environment_modules/concept_variants_modules.generated.ts:33:    b.box("frame", [-0.7, 0.04, 0], [0.7, 2.12, 0.025]);
+scripts/environment_modules/concept_variants_modules.generated.ts:35:    b.box("homeGlass", [-0.65, 0.12, 0.027], [0.65, 2.02, 0.04]);
+scripts/environment_modules/concept_variants_modules.generated.ts:37:        b.box("trim", [x - 0.06, 0, MASONRY_DEPTH - 0.03], [x + 0.06, 2.16, MASONRY_DEPTH + 0.10]);
+scripts/environment_modules/concept_variants_modules.generated.ts:38:        b.box("frame", [x < 0 ? -0.68 : 0.64, 0.1, 0.04], [x < 0 ? -0.64 : 0.68, 2.1, 0.17]);
+scripts/environment_modules/concept_variants_modules.generated.ts:40:    b.box("trim", [-0.82, 2.08, MASONRY_DEPTH - 0.03], [0.82, 2.25, MASONRY_DEPTH + 0.15]);
+scripts/environment_modules/concept_variants_modules.generated.ts:41:    b.box("trim", [-0.87, 0, 0.02], [0.87, 0.1, MASONRY_DEPTH + 0.23]);
+scripts/environment_modules/concept_variants_modules.generated.ts:42:    b.box("frame", [-0.68, 0.1, 0.04], [0.68, 0.15, 0.17]);
+scripts/environment_modules/concept_variants_modules.generated.ts:43:    b.box("frame", [-0.68, 2.01, 0.04], [0.68, 2.08, 0.17]);
+scripts/environment_modules/concept_variants_modules.generated.ts:45:        b.box("frame", [-0.018, 0.14, 0.04], [0.018, 2.05, 0.17]);
+scripts/environment_modules/concept_variants_modules.generated.ts:46:        b.box("frame", [-0.65, 1.15, 0.04], [0.65, 1.18, 0.17]);
+scripts/environment_modules/concept_variants_modules.generated.ts:53:    b.box("wallStone", [-1.5, 0, -0.3], [1.5, 0.58, 0]);
+scripts/environment_modules/concept_variants_modules.generated.ts:54:    b.box("trim", [-1.5, 0.58, -0.38], [1.5, 0.69, 0.06]);
+scripts/environment_modules/concept_variants_modules.generated.ts:57:        b.box("metal", [x - 0.022, 0.69, -0.2], [x + 0.022, 1.22, -0.156]);
+scripts/environment_modules/concept_variants_modules.generated.ts:59:    for (const y of [0.87, 1.2]) b.box("metal", [-1.5, y, -0.21], [1.5, y + 0.045, -0.145]);
+scripts/environment_modules/concept_variants_modules.generated.ts:66:    b.box("concrete", [-0.85, 0, -0.9], [0.85, 0.16, 0.95]);
+scripts/environment_modules/concept_variants_modules.generated.ts:67:    b.box("wallStone", [-0.76, 0.16, -0.8], [0.76, 2.48, 0.8]);
+scripts/environment_modules/concept_variants_modules.generated.ts:68:    b.box("trim", [-0.84, 2.48, -0.88], [0.84, 2.63, 0.9]);
+scripts/environment_modules/concept_variants_modules.generated.ts:69:    b.box("frame", [-0.57, 0.16, 0.801], [0.57, 2.31, 0.82]);
+scripts/environment_modules/concept_variants_modules.generated.ts:70:    b.box("metal", [-0.5, 0.17, 0.821], [0.5, 2.24, 0.86]);
+scripts/environment_modules/concept_variants_modules.generated.ts:71:    for (let i = 0; i < 7; i++) b.box("frame", [-0.31, 1.73 + i * 0.045, 0.861], [0.31, 1.75 + i * 0.045, 0.873]);
+scripts/environment_modules/concept_variants_modules.generated.ts:72:    b.box("trim", [0.31, 1.08, 0.87], [0.37, 1.22, 0.91]);
+scripts/environment_modules/concept_variants_modules.generated.ts:73:    b.box("concrete", [-0.65, 0, 0.92], [0.65, 0.13, 1.23]);
+scripts/environment_modules/concept_variants_modules.generated.ts:80:    b.box("concrete", [-1, 0, -0.42], [1, base, 0.42]);
+scripts/environment_modules/concept_variants_modules.generated.ts:81:    b.box("soil", [-0.89, base, -0.31], [0.89, base + 0.025, 0.31]);
+scripts/environment_modules/concept_variants_modules.generated.ts:83:    for (let i = 0; i < 4; i++) shrubs.blob("foliage", [-0.7 + i * 0.46, base + 0.43, 0], 0.49, 0.54, i * 19 + 4, 7);
+scripts/environment_modules/entry_street_details_modules.generated.ts:23:    if (round) builder.prism(slot, 0, 0, radius, 0, length, 8);
+scripts/environment_modules/entry_street_details_modules.generated.ts:24:    else builder.box(slot, [-radius, 0, -radius], [radius, length, radius]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:28:        b.triangle(slot, points[0], points[1], points[2]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:34:    b.box("concrete", [-x, -0.18, 0], [x, -bevel, front], ["+y", "-z"]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:35:    b.quad("concrete", [-x, -bevel, front], [x, -bevel, front], [x - bevel, 0, front - bevel], [-x + bevel, 0, front - bevel]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:36:    b.quad("concrete", [-x, -bevel, 0], [-x, -bevel, front], [-x + bevel, 0, front - bevel], [-x + bevel, 0, 0]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:37:    b.quad("concrete", [x, -bevel, front], [x, -bevel, 0], [x - bevel, 0, 0], [x - bevel, 0, front - bevel]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:38:    b.quad("trim", [-x + bevel, 0, 0], [-x + bevel, 0, front - bevel], [x - bevel, 0, front - bevel], [x - bevel, 0, 0]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:44:    b.box("frame", [-0.95, 2.85, 0], [0.95, 2.94, 0.95], ["-z", "+y"]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:45:    b.quad(glazed ? "glass" : "metal", [-0.92, 3.05, 0], [-0.92, 2.95, 0.92], [0.92, 2.95, 0.92], [0.92, 3.05, 0]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:47:    b.box("metal", [-0.95, 2.92, 0.90], [0.95, 2.98, 0.95]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:49:        b.box("metal", [x - 0.035, 2.54, 0], [x + 0.035, 2.88, 0.045]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:59:    b.prism("metal", 0, 0, 0.16, 0, 0.12, 8);
+scripts/environment_modules/entry_street_details_modules.generated.ts:60:    b.prism("frame", 0, 0, 0.095, 0.12, 0.35, 8);
+scripts/environment_modules/entry_street_details_modules.generated.ts:61:    b.prism("metal", 0, 0, 0.065, 0.35, height, 8);
+scripts/environment_modules/entry_street_details_modules.generated.ts:62:    for (const x of [-0.095, 0.095]) for (const z of [-0.095, 0.095]) b.prism("frame", x, z, 0.015, 0.12, 0.135, 6);
+scripts/environment_modules/entry_street_details_modules.generated.ts:67:    b.box("metal", [x - 0.21, y - 0.53, z - 0.16], [x + 0.21, y + 0.53, z]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:68:    b.box("frame", [x - 0.18, y - 0.50, z], [x + 0.18, y + 0.50, z + 0.025]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:73:        b.box("frame", [x - 0.14, cy + 0.11, z + 0.015], [x + 0.14, cy + 0.14, z + 0.19]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:74:        for (const dx of [-0.14, 0.12]) b.box("frame", [x + dx, cy - 0.035, z + 0.015], [x + dx + 0.02, cy + 0.11, z + 0.15]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:96:    b.box("metal", [-0.65, 3.05, -0.03], [0.65, 3.27, 0.03]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:97:    for (const z of [-0.037, 0.03]) b.box("glass", [-0.61, 3.075, z], [0.61, 3.245, z + 0.007]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:99:        b.box("metal", [-0.03, 2.76, -0.55], [0.03, 2.98, 0.55]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:100:        for (const x of [-0.037, 0.03]) b.box("glass", [x, 2.785, -0.51], [x + 0.007, 2.955, 0.51]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:107:    b.prism("metal", 0, 0, 0.22, 0, 0.09, 10);
+scripts/environment_modules/entry_street_details_modules.generated.ts:108:    b.prism(slot, 0, 0, 0.16, 0.09, height - 0.17, 10);
+scripts/environment_modules/entry_street_details_modules.generated.ts:109:    b.prism(slot, 0, 0, 0.21, height - 0.20, height - 0.10, 10);
+scripts/environment_modules/entry_street_details_modules.generated.ts:110:    b.blob(slot, [0, height - 0.10, 0], 0.19, 0.14, kind, 10);
+scripts/environment_modules/entry_street_details_modules.generated.ts:111:    b.prism("metal", 0, 0, 0.04, height + 0.015, height + 0.075, 6);
+scripts/environment_modules/entry_street_details_modules.generated.ts:125:    b.box("frame", [-0.26, 0, -0.24], [0.26, 0.08, 0.24]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:126:    b.box(slot, [-0.29, 0.08, -0.25], [0.29, 1.05, 0.25], ["+y"]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:127:    b.quad(slot, [-0.29, 1.05, -0.25], [-0.29, 1.05, 0.25], [0.29, 1.05, 0.25], [0.29, 1.05, -0.25]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:128:    b.box("frame", [-0.25, 0.39, 0.25], [0.25, 0.93, 0.275]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:129:    b.box("glass", [-0.205, 0.45, 0.276], [0.205, 0.875, 0.283]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:131:    for (let i = 0; i < 5; i++) b.box("trim", [-0.17, 0.48 + i * 0.015, 0.284], [0.17, 0.489 + i * 0.015, 0.288]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:132:    b.box("trim", [-0.23, 0.95, 0.251], [0.12, 1.015, 0.263]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:133:    b.box("frame", [0.16, 0.975, 0.263], [0.24, 0.989, 0.273]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:135:    for (const y of [0.49, 0.82]) b.box("metal", [-0.27, y, 0.272], [-0.24, y + 0.045, 0.30]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:144:            b.box("metal", [x - 0.085, 0, z - 0.085], [x + 0.085, 0.035, z + 0.085]);
+scripts/environment_modules/entry_street_details_modules.generated.ts:146:            for (const dz of [-0.055, 0.055]) b.prism("frame", x, z + dz, 0.012, 0.035, 0.048, 6);
+scripts/environment_modules/facade_styles_modules.generated.ts:27:        b.quad(slot, point(x0, i), point(x0, j), point(x1, j), point(x1, i));
+scripts/environment_modules/facade_styles_modules.generated.ts:30:        b.triangle(slot, point(x1, 0), point(x1, i), point(x1, i + 1));
+scripts/environment_modules/facade_styles_modules.generated.ts:31:        b.triangle(slot, point(x0, 0), point(x0, i + 1), point(x0, i));
+scripts/environment_modules/facade_styles_modules.generated.ts:48:            b.box("trim", [x - 0.13, 0.34, 0.10], [x + 0.13, 0.41, 0.35]);
+scripts/environment_modules/facade_styles_modules.generated.ts:84:    b.box("bark", [-0.56, 0, 0.012], [0.56, 2.34, 0.085], ["-z"]);
+scripts/environment_modules/facade_styles_modules.generated.ts:85:    b.box("frame", [-0.48, 0.16, 0.085], [0.48, 1.94, 0.095]);
+scripts/environment_modules/facade_styles_modules.generated.ts:86:    for (const y of [0.25, 1.10]) b.box("bark", [-0.40, y, 0.095], [0.40, y + 0.72, 0.12]);
+scripts/environment_modules/facade_styles_modules.generated.ts:87:    b.box("glass", [-0.44, 2.04, 0.09], [0.44, 2.28, 0.11]);
+scripts/environment_modules/facade_styles_modules.generated.ts:88:    b.box("frame", [-0.5, 1.99, 0.10], [0.5, 2.04, 0.14]);
+scripts/environment_modules/facade_styles_modules.generated.ts:89:    b.box("metal", [0.39, 0.97, 0.12], [0.42, 1.30, 0.18]);
+scripts/environment_modules/facade_styles_modules.generated.ts:92:        b.box("trim", [x - 0.10, 0, 0], [x + 0.10, 2.43, 0.23], ["-z"]);
+scripts/environment_modules/facade_styles_modules.generated.ts:94:            b.box("trim", [x - 0.14, 0, 0], [x + 0.14, 0.17, 0.30]);
+scripts/environment_modules/facade_styles_modules.generated.ts:95:            b.box("trim", [x - 0.14, 2.30, 0], [x + 0.14, 2.45, 0.31]);
+scripts/environment_modules/facade_styles_modules.generated.ts:98:            for (let i = 0; i < 6; i++) b.box("trim", [x - 0.11, i * 0.4 + 0.025, 0.23], [x + 0.11, i * 0.4 + 0.365, 0.27]);
+scripts/environment_modules/facade_styles_modules.generated.ts:124:        b.box(slot, [x0, y0, 0], [x1, y1, depth - bevel], ["+z", "-z"]);
+scripts/environment_modules/facade_styles_modules.generated.ts:125:        b.quad(slot, [x0 + bevel, y0 + bevel, depth], [x1 - bevel, y0 + bevel, depth], [x1 - bevel, y1 - bevel, depth], [x0 + bevel, y1 - bevel, depth]);
+scripts/environment_modules/facade_styles_modules.generated.ts:126:        b.quad(slot, [x0, y0, depth - bevel], [x1, y0, depth - bevel], [x1 - bevel, y0 + bevel, depth], [x0 + bevel, y0 + bevel, depth]);
+scripts/environment_modules/facade_styles_modules.generated.ts:127:        b.quad(slot, [x1, y0, depth - bevel], [x1, y1, depth - bevel], [x1 - bevel, y1 - bevel, depth], [x1 - bevel, y0 + bevel, depth]);
+scripts/environment_modules/facade_styles_modules.generated.ts:128:        b.quad(slot, [x1, y1, depth - bevel], [x0, y1, depth - bevel], [x0 + bevel, y1 - bevel, depth], [x1 - bevel, y1 - bevel, depth]);
+scripts/environment_modules/facade_styles_modules.generated.ts:129:        b.quad(slot, [x0, y1, depth - bevel], [x0, y0, depth - bevel], [x0 + bevel, y0 + bevel, depth], [x0 + bevel, y1 - bevel, depth]);
+scripts/environment_modules/facet_builder.ts:21:        return this.triangle(slot, a, b, c).triangle(slot, a, c, d);
+scripts/environment_modules/facet_builder.ts:25:    box(slot: MaterialSlot, min: Vec3, max: Vec3, skip: readonly BoxFace[] = []): this {
+scripts/environment_modules/facet_builder.ts:66:        for (const face of BOX_FACES) if (!skip.includes(face)) this.quad(slot, ...faces[face]);
+scripts/environment_modules/facet_builder.ts:74:    prism(slot: MaterialSlot, x: number, z: number, radius: number, y0: number, y1: number, sides = 6, topRadius = radius): this {
+scripts/environment_modules/facet_builder.ts:84:            this.quad(slot, bottom[i], bottom[j], top[j], top[i]);
+scripts/environment_modules/facet_builder.ts:85:            if (topRadius > 0) this.triangle(slot, [x, y1, z], top[i], top[j]);
+scripts/environment_modules/facet_builder.ts:110:            this.triangle(slot, top, upper[i], upper[j]);
+scripts/environment_modules/facet_builder.ts:111:            this.quad(slot, lower[i], lower[j], upper[j], upper[i]);
+scripts/environment_modules/facet_builder.ts:112:            this.triangle(slot, bottom, lower[j], lower[i]);
+scripts/environment_modules/garden_yard_modules.generated.ts:28:    b.box("soil", [-0.96, 0, -0.42], [0.96, 0.16, 0.34], ["-y"]);
+scripts/environment_modules/garden_yard_modules.generated.ts:31:    b.box(slot, [-1, 0, 0.34], [1, 0.22, 0.45], ["-y"]);
+scripts/environment_modules/garden_yard_modules.generated.ts:32:    b.box(stone ? "trim" : "trimWarm", [-1, 0.22, 0.325], [1, 0.265, 0.45]);
+scripts/environment_modules/garden_yard_modules.generated.ts:33:    for (const x of [-1, 0.89]) b.box(slot, [x, 0, -0.45], [x + 0.11, 0.22, 0.34], ["-y"]);
+scripts/environment_modules/garden_yard_modules.generated.ts:37:        b.prism("bark", x, -0.05, 0.035, 0.16, height * 0.7, 5, 0.02);
+scripts/environment_modules/garden_yard_modules.generated.ts:38:        b.blob("foliage", [x, height, -0.045 + ((i + variant) % 2) * 0.025], 0.27, Math.min(0.18, 1 - height), 47 + i * 17 + variant * 31, 7);
+scripts/environment_modules/garden_yard_modules.generated.ts:39:        b.blob("foliage", [x + 0.04, 0.46, 0.02], 0.225, 0.24, 93 + i * 13 + variant * 19, 6);
+scripts/environment_modules/garden_yard_modules.generated.ts:47:        b.box("frame", [x - 0.025, 0, -0.04], [x + 0.025, 0.96, 0.04], ["-y"]);
+scripts/environment_modules/garden_yard_modules.generated.ts:48:        b.prism("metal", x, 0, 0.025, 0.96, 1, 4, 0);
+scripts/environment_modules/garden_yard_modules.generated.ts:50:    for (const y of [0.13, 0.81]) b.box("frame", [-1, y, -0.026], [1, y + 0.035, 0.026]);
+scripts/environment_modules/garden_yard_modules.generated.ts:53:        b.prism("frame", x, 0, 0.014, 0.06, spear ? 0.925 : 0.9, 4);
+scripts/environment_modules/garden_yard_modules.generated.ts:54:        if (spear) b.prism("metal", x, 0, 0.025, 0.925, 0.985, 4, 0);
+scripts/environment_modules/garden_yard_modules.generated.ts:57:            b.prism("metal", x, 0, 0.028, 0.43, 0.48, 4, 0.014);
+scripts/environment_modules/garden_yard_modules.generated.ts:58:            b.prism("metal", x, 0, 0.014, 0.48, 0.53, 4, 0.028);
+scripts/environment_modules/garden_yard_modules.generated.ts:66:    for (const x of [-0.96, 0.96]) b.box("bark", [x - 0.04, 0, -0.06], [x + 0.04, 1.6, 0.06], ["-y"]);
+scripts/environment_modules/garden_yard_modules.generated.ts:67:    for (const y of [0.25, 1.18]) b.box("bark", [-0.92, y, -0.06], [0.92, y + 0.085, -0.015]);
+scripts/environment_modules/garden_yard_modules.generated.ts:71:        b.box("bark", [x, 0.04, -0.012], [x + 0.139, top, 0.037]);
+scripts/environment_modules/garden_yard_modules.generated.ts:73:        b.quad((i + variant) % 4 === 0 ? "soil" : "bark", [x, 0.04, 0.038], [x + 0.139, 0.04, 0.038], [x + 0.139, top - 0.04, 0.038], [x, top - 0.025, 0.047]);
+scripts/environment_modules/garden_yard_modules.generated.ts:74:        for (const y of [0.29, 1.22]) b.box("metal", [x + 0.063, y, 0.048], [x + 0.075, y + 0.014, 0.051]);
+scripts/environment_modules/garden_yard_modules.generated.ts:84:    for (const x of [-w + 0.1, w - 0.1]) b.box("metal", [x - 0.04, 0, -d], [x + 0.04, 0.15, d + 0.04], ["-y"]);
+scripts/environment_modules/garden_yard_modules.generated.ts:85:    b.box("roofUnit", [-w, 0.15, -d], [w, h, d]);
+scripts/environment_modules/garden_yard_modules.generated.ts:86:    b.box("metal", [-w + 0.045, 0.23, d + 0.001], [w - 0.045, h - 0.08, d + 0.015]);
+scripts/environment_modules/garden_yard_modules.generated.ts:98:        b.quad("frame", point(r, a), point(r, c), point(r - 0.022, c), point(r - 0.022, a));
+scripts/environment_modules/garden_yard_modules.generated.ts:99:        b.triangle("roofUnit", point(0.052, a), point(r - 0.02, a - 0.025), point(r - 0.02, a + 0.025));
+scripts/environment_modules/garden_yard_modules.generated.ts:101:    b.box("roofUnit", [-0.047, cy - 0.047, d + 0.025], [0.047, cy + 0.047, d + 0.045]);
+scripts/environment_modules/garden_yard_modules.generated.ts:102:    for (let i = 0; i < 7; i++) b.box("frame", [-w - 0.015, 0.3 + (i * (h - 0.4)) / 7, -d + 0.07], [-w - 0.001, 0.318 + (i * (h - 0.4)) / 7, d - 0.08]);
+scripts/environment_modules/garden_yard_modules.generated.ts:103:    b.box("metal", [w - 0.065, 0.17, d], [w, 0.3, d + 0.065]);
+scripts/environment_modules/garden_yard_modules.generated.ts:109:    b.box("frame", [-0.265, 0.1, -0.27], [0.265, 0.78, 0.27]);
+scripts/environment_modules/garden_yard_modules.generated.ts:110:    b.box("metal", [-0.3, 0.78, -0.3], [0.3, 0.855, 0.3]);
+scripts/environment_modules/garden_yard_modules.generated.ts:111:    b.box("frame", [-0.14, 0.855, 0.11], [0.14, 0.875, 0.16]);
+scripts/environment_modules/garden_yard_modules.generated.ts:112:    for (const x of [-0.31, 0.26]) b.box("asphalt", [x, 0, -0.29], [x + 0.05, 0.16, -0.12]);
+scripts/environment_modules/garden_yard_modules.generated.ts:113:    for (const x of [-0.21, 0.21]) b.box("metal", [x - 0.012, 0.22, 0.271], [x + 0.012, 0.68, 0.284]);
+scripts/environment_modules/garden_yard_modules.generated.ts:114:    b.box("metal", [-0.17, 0.67, -0.305], [0.17, 0.72, -0.28]);
+scripts/environment_modules/roof_details_modules.generated.ts:21:    const local = new FacetBuilder().box(slot, [-width / 2, 0, -width / 2], [width / 2, length, width / 2]).build()[slot]!;
+scripts/environment_modules/roof_details_modules.generated.ts:24:        b.triangle(slot, points[0], points[1], points[2]);
+scripts/environment_modules/roof_details_modules.generated.ts:36:        b.quad(slot, rings[row - 1][i], rings[row][i], rings[row][j], rings[row - 1][j]);
+scripts/environment_modules/roof_details_modules.generated.ts:40:        b.triangle(slot, [0, bottom, 0], rings[0][i], rings[0][j]);
+scripts/environment_modules/roof_details_modules.generated.ts:41:        b.triangle(slot, [0, top, 0], rings[3][j], rings[3][i]);
+scripts/environment_modules/roof_details_modules.generated.ts:49:        b.quad(slot, point(radius, a), point(radius - width, a), point(radius - width, c), point(radius, c));
+scripts/environment_modules/roof_details_modules.generated.ts:54:    b.prism("frame", x, z, radius, y, y + 0.025, 20);
+scripts/environment_modules/roof_details_modules.generated.ts:59:        b.quad("metal", point(radius * 0.15, a + 0.45), point(radius * 0.83, a + 0.55), point(radius * 0.87, a + 0.1), point(radius * 0.15, a));
+scripts/environment_modules/roof_details_modules.generated.ts:66:    b.prism("metal", x, z, radius * 0.12, y + 0.035, y + 0.105, 8);
+scripts/environment_modules/roof_details_modules.generated.ts:72:    for (const x of [-width * 0.36, width * 0.36]) b.box("metal", [x - 0.085, 0, -depth * 0.45], [x + 0.085, 0.22, depth * 0.45]);
+scripts/environment_modules/roof_details_modules.generated.ts:74:    b.box("frame", [-width * 0.43, 0.46, depth / 2], [width * 0.43, height + 0.02, depth / 2 + 0.025]);
+scripts/environment_modules/roof_details_modules.generated.ts:75:    for (let i = 0; i < 11; i++) b.box("roofUnit", [-width * 0.43, 0.48 + i * (height - 0.45) / 10, depth / 2 + 0.025], [width * 0.43, 0.51 + i * (height - 0.45) / 10, depth / 2 + 0.08]);
+scripts/environment_modules/roof_details_modules.generated.ts:76:    b.box("frame", [-width / 2 - 0.025, 0.55, -0.4], [-width / 2, 1.25, 0.4]);
+scripts/environment_modules/roof_details_modules.generated.ts:89:        b.quad("roofUnit", point(outline[i], 0.55), point(outline[i], 1.25), point(outline[j], 1.25), point(outline[j], 0.55));
+scripts/environment_modules/roof_details_modules.generated.ts:92:        const quad = (a: Vec3, c: Vec3, d: Vec3, e: Vec3): void => { if (y > 1) b.quad("roofUnit", a, c, d, e); else b.quad("roofUnit", e, d, c, a); };
+scripts/environment_modules/roof_details_modules.generated.ts:98:            if (y > 1) b.triangle("roofUnit", [0.05, y, 0], c, a); else b.triangle("roofUnit", [0.05, y, 0], a, c);
+scripts/environment_modules/roof_details_modules.generated.ts:101:    for (const x of [left + 0.35, -0.65]) b.box("metal", [x - 0.05, 0, -0.43], [x + 0.05, 0.55, 0.43]);
+scripts/environment_modules/roof_details_modules.generated.ts:102:    b.box("metal", [-0.33, 0, end - 0.4], [0.53, 0.55, end - 0.3]);
+scripts/environment_modules/roof_details_modules.generated.ts:103:    b.box("frame", [left - 0.01, 0.61, -0.33], [left, 1.19, 0.33]);
+scripts/environment_modules/roof_details_modules.generated.ts:104:    b.box("frame", [-0.23, 0.61, end], [0.43, 1.19, end + 0.01]);
+scripts/environment_modules/roof_details_modules.generated.ts:112:    b.box("concrete", [-width / 2, 0, -depth / 2], [width / 2, 0.35, depth / 2]);
+scripts/environment_modules/roof_details_modules.generated.ts:113:    b.box("frame", [-width / 2 + 0.06, 0.35, -depth / 2 + 0.06], [width / 2 - 0.06, 0.37, depth / 2 - 0.06]);
+scripts/environment_modules/roof_details_modules.generated.ts:116:    b.quad("roofUnit", corners[0], corners[1], corners[2], corners[3]);
+scripts/environment_modules/roof_details_modules.generated.ts:117:    b.quad("roofUnit", ...[...corners].reverse() as [Vec3, Vec3, Vec3, Vec3]);
+scripts/environment_modules/roof_details_modules.generated.ts:126:    b.box("concrete", [-width / 2, 0, -depth / 2], [width / 2, 0.28, depth / 2]);
+scripts/environment_modules/roof_details_modules.generated.ts:128:    b.quad("glass", [-x, 0.3, -z], [-x, 0.3, z], [0, peak, z], [0, peak, -z]);
+scripts/environment_modules/roof_details_modules.generated.ts:129:    b.quad("glass", [0, peak, -z], [0, peak, z], [x, 0.3, z], [x, 0.3, -z]);
+scripts/environment_modules/roof_details_modules.generated.ts:130:    b.triangle("glass", [-x, 0.3, z], [x, 0.3, z], [0, peak, z]);
+scripts/environment_modules/roof_details_modules.generated.ts:131:    b.triangle("glass", [x, 0.3, -z], [-x, 0.3, -z], [0, peak, -z]);
+scripts/environment_modules/roof_details_modules.generated.ts:143:    b.box("trim", [-1.5, 0, -0.3], [1.5, base, 0.03]);
+scripts/environment_modules/roof_details_modules.generated.ts:144:    if (solid) b.box("concrete", [-1.5, base, -0.36], [1.5, base + 0.1, 0.06]);
+scripts/environment_modules/roof_details_modules.generated.ts:147:        b.box("metal", [x - 0.019, base, -0.21], [x + 0.019, base + 0.9, -0.172]);
+scripts/environment_modules/roof_details_modules.generated.ts:149:    for (const y of [base + 0.32, base + 0.87]) b.box("metal", [-1.5, y, -0.23], [1.5, y + 0.055, -0.15]);
+scripts/environment_modules/roof_details_modules.generated.ts:155:    b.box("concrete", [-0.4, 0, -0.4], [0.4, 0.13, 0.4]);
+scripts/environment_modules/roof_details_modules.generated.ts:156:    b.prism("metal", 0, 0, 0.06, 0.13, 1.25, 8);
+scripts/environment_modules/roof_details_modules.generated.ts:167:            if (back) b.triangle(slot, first[2], first[1], first[0]); else b.triangle(slot, ...first);
+scripts/environment_modules/roof_details_modules.generated.ts:170:                if (back) b.quad(slot, points[3], points[2], points[1], points[0]); else b.quad(slot, ...points);
+scripts/environment_modules/roof_details_modules.generated.ts:177:    b.box("frame", [-0.05, feed[1] - 0.05, feed[2] - 0.07], [0.05, feed[1] + 0.05, feed[2] + 0.07]);
+scripts/environment_modules/shopfront_modules.ts:19:    b.box(style === 0 ? "trim" : "metal", [x0, 0.1, 0.02], [x1, riser, 0.16]);
+scripts/environment_modules/shopfront_modules.ts:20:    if (style === 0) b.box("trim", [x0 + 0.08, 0.18, 0.16], [x1 - 0.08, riser - 0.08, 0.19]);
+scripts/environment_modules/shopfront_modules.ts:21:    if (style === 2) for (let x = x0 + 0.12; x < x1 - 0.06; x += 0.16) b.box("metal", [x - 0.02, 0.14, 0.16], [x + 0.02, riser - 0.04, 0.19]);
+scripts/environment_modules/shopfront_modules.ts:22:    b.box("shopGlass", [x0, riser, 0.03], [x1, transom, 0.045]);
+scripts/environment_modules/shopfront_modules.ts:24:    b.box(member, [x0, riser, 0.045], [x1, riser + w, 0.13]);
+scripts/environment_modules/shopfront_modules.ts:25:    b.box(member, [x0, transom - w, 0.045], [x1, transom, 0.13]);
+scripts/environment_modules/shopfront_modules.ts:26:    b.box(member, [x0, riser, 0.045], [x0 + w, transom, 0.13]);
+scripts/environment_modules/shopfront_modules.ts:27:    b.box(member, [x1 - w, riser, 0.045], [x1, transom, 0.13]);
+scripts/environment_modules/shopfront_modules.ts:29:    if (style === 0 && x1 - x0 > 1.2) b.box(member, [(x0 + x1) / 2 - 0.025, riser, 0.045], [(x0 + x1) / 2 + 0.025, transom, 0.12]);
+scripts/environment_modules/shopfront_modules.ts:39:    b.box("shopGlass", [-1.08, transom, 0.03], [1.08, 2.62, 0.045]);
+scripts/environment_modules/shopfront_modules.ts:40:    b.box(member, [-1.08, transom, 0.045], [1.08, transom + 0.06, 0.14]);
+scripts/environment_modules/shopfront_modules.ts:41:    b.box(member, [-1.08, 2.58, 0.045], [1.08, 2.65, 0.14]);
+scripts/environment_modules/shopfront_modules.ts:45:        b.box(member, [Math.max(-1.08, x - 0.03), transom, 0.045], [Math.min(1.08, x + 0.03), 2.62, 0.12]);
+scripts/environment_modules/shopfront_modules.ts:51:        b.box(member, [-0.6, 0.1, 0.02], [-0.5, transom, 0.15]);
+scripts/environment_modules/shopfront_modules.ts:52:        b.box(member, [0.5, 0.1, 0.02], [0.6, transom, 0.15]);
+scripts/environment_modules/shopfront_modules.ts:53:        b.box("shopGlass", [-0.5, 0.3, 0.02], [0.5, 2.0, 0.035]);
+scripts/environment_modules/shopfront_modules.ts:54:        b.box(member, [-0.5, 0.1, 0.035], [0.5, 0.3, 0.1]);
+scripts/environment_modules/shopfront_modules.ts:55:        b.box(member, [-0.5, 2.0, 0.035], [0.5, transom, 0.1]);
+scripts/environment_modules/shopfront_modules.ts:56:        for (const x of [-0.5, 0.42]) b.box(member, [x, 0.3, 0.035], [x + 0.08, 2.0, 0.1]);
+scripts/environment_modules/shopfront_modules.ts:57:        b.box("metal", [-0.36, 1.0, 0.13], [0.36, 1.05, 0.17]);
+scripts/environment_modules/shopfront_modules.ts:58:        for (const x of [-0.33, 0.29]) b.box("metal", [x, 1.0, 0.1], [x + 0.04, 1.05, 0.13]);
+scripts/environment_modules/shopfront_modules.ts:59:        b.box("concrete", [-0.62, -0.18, 0], [0.62, 0, 0.52]);
+scripts/environment_modules/shopfront_modules.ts:60:        b.box("concrete", [-0.58, -0.02, 0.0], [0.58, 0.1, 0.06]);
+scripts/environment_modules/shopfront_modules.ts:64:            b.quad("canvas", [-1.16, 2.98, top], [-1.16, 2.6, 1.12], [1.16, 2.6, 1.12], [1.16, 2.98, top]);
+scripts/environment_modules/shopfront_modules.ts:65:            b.quad("canvas", [-1.16, 2.6, 1.12], [-1.16, 2.38, 1.12], [1.16, 2.38, 1.12], [1.16, 2.6, 1.12]);
+scripts/environment_modules/shopfront_modules.ts:66:            b.triangle("canvas", [-1.16, 2.98, top], [-1.16, 2.38, 1.12], [-1.16, 2.6, 1.12]);
+scripts/environment_modules/shopfront_modules.ts:67:            b.triangle("canvas", [1.16, 2.98, top], [1.16, 2.6, 1.12], [1.16, 2.38, 1.12]);
+scripts/environment_modules/shopfront_modules.ts:69:            b.box("metal", [-1.0, 2.66, FACE], [1.0, 2.74, 0.95]);
+scripts/environment_modules/shopfront_modules.ts:75:    for (const side of [-1, 1]) b.box("trim", [side < 0 ? -1.24 : 1.1, 0, 0.18], [side < 0 ? -1.1 : 1.24, 2.65, FACE + 0.08]);
+scripts/environment_modules/shopfront_modules.ts:76:    b.box(style === 1 ? "metal" : "frame", [-1.24, 2.65, 0.18], [1.24, 2.94, FACE + 0.1]);
+scripts/environment_modules/shopfront_modules.ts:77:    b.box("trim", [-1.28, 2.94, 0.18], [1.28, 3.0, FACE + 0.16]);
+scripts/environment_modules/shopfront_modules.ts:78:    b.box("trim", [-1.24, 2.65, FACE + 0.1], [1.24, 2.69, FACE + 0.13]);
+scripts/environment_modules/shopfront_modules.ts:84:    b.box("frame", [-0.7, 0.04, 0], [0.7, 2.12, 0.025]);
+scripts/environment_modules/shopfront_modules.ts:85:    b.box("homeGlass", [-0.65, 0.12, 0.027], [0.65, 2.02, 0.04]);
+scripts/environment_modules/shopfront_modules.ts:86:    for (const x of [-0.68, 0.62]) b.box(slot, [x, 0.1, z[0]], [x + 0.06, 2.08, z[1]]);
+scripts/environment_modules/shopfront_modules.ts:87:    b.box(slot, [-0.68, 0.1, z[0]], [0.68, 0.16, z[1]]);
+scripts/environment_modules/shopfront_modules.ts:88:    b.box(slot, [-0.68, 2.02, z[0]], [0.68, 2.08, z[1]]);
+scripts/environment_modules/shopfront_modules.ts:91:        b.box(slot, [x - bar, 0.14, z[0]], [x + bar, 2.04, z[1]]);
+scripts/environment_modules/shopfront_modules.ts:95:        b.box(slot, [-0.65, y - bar, z[0]], [0.65, y + bar, z[1]]);
+scripts/environment_modules/shopfront_modules.ts:105:    b.box("trim", [-0.86, 2.08, FACE - 0.03], [0.86, 2.34, FACE + 0.09]);
+scripts/environment_modules/shopfront_modules.ts:106:    b.box("trim", [-0.12, 2.06, FACE + 0.09], [0.12, 2.44, FACE + 0.13]);
+scripts/environment_modules/shopfront_modules.ts:107:    b.box("trim", [-0.82, -0.02, 0.02], [0.82, 0.1, FACE + 0.12]);
+scripts/environment_modules/shopfront_modules.ts:115:    b.box("concrete", [-0.8, -0.04, 0.02], [0.8, 0.1, FACE + 0.1]);
+scripts/environment_modules/shopfront_modules.ts:116:    b.box("metal", [-0.8, 2.08, FACE - 0.02], [0.8, 2.15, FACE + 0.02]);
+scripts/environment_modules/shopfront_modules.ts:124:    b.box("frame", [-0.65, 1.56, 0.04], [0.65, 1.6, 0.15]);
+scripts/environment_modules/shopfront_modules.ts:125:    for (const side of [-1, 1]) b.box("trim", [side < 0 ? -0.8 : 0.68, 0.1, FACE - 0.03], [side < 0 ? -0.68 : 0.8, 2.08, FACE + 0.09]);
+scripts/environment_modules/shopfront_modules.ts:126:    b.box("trim", [-0.92, 2.08, FACE - 0.03], [0.92, 2.24, FACE + 0.09]);
+scripts/environment_modules/shopfront_modules.ts:127:    for (const x of [-0.92, 0.8]) b.box("trim", [x, 1.92, FACE - 0.03], [x + 0.12, 2.08, FACE + 0.09]);
+scripts/environment_modules/shopfront_modules.ts:128:    b.box("trim", [-0.98, 2.24, FACE - 0.03], [0.98, 2.33, FACE + 0.13]);
+scripts/environment_modules/shopfront_modules.ts:129:    b.box("trim", [-0.86, 0, 0.02], [0.86, 0.1, FACE + 0.14]);
+scripts/environment_modules/shopfront_modules.ts:130:    b.box("trim", [-0.62, -0.42, FACE - 0.03], [0.62, 0, FACE + 0.03]);
+scripts/environment_modules/shopfront_modules.ts:140:        b.box("masonryTan", [-0.62, 1.0, FACE], [0.62, 2.9, out - 0.04]);
+scripts/environment_modules/shopfront_modules.ts:141:        for (const x of [-0.74, 0.62]) b.box("trim", [x, 0.95, FACE], [x + 0.12, 3.0, out + 0.02]);
+scripts/environment_modules/shopfront_modules.ts:142:        b.box("trim", [-0.84, 2.95, FACE], [0.84, 3.12, out + 0.06]);
+scripts/environment_modules/shopfront_modules.ts:143:        b.box("trim", [-0.8, 0.88, FACE], [0.8, 1.0, out + 0.1]);
+scripts/environment_modules/shopfront_modules.ts:146:        b.box("frame", [-0.62, 1.9, FACE], [0.62, 2.75, out]);
+scripts/environment_modules/shopfront_modules.ts:147:        for (let y = 1.97; y < 2.7; y += 0.09) b.box("metal", [-0.56, y, out], [0.56, y + 0.045, out + 0.05]);
+scripts/environment_modules/shopfront_modules.ts:148:        b.prism("metal", 0.9, out + 0.06, 0.06, 0, 3.3, 6);
+scripts/environment_modules/shopfront_modules.ts:149:        b.box("metal", [0.8, 0.0, FACE], [1.0, 0.18, out + 0.14]);
+scripts/environment_modules/shopfront_modules.ts:152:        b.box("frame", [-0.6, 0, FACE], [0.6, 2.3, out]);
+scripts/environment_modules/shopfront_modules.ts:153:        b.box("metal", [-0.5, 0.02, out], [0.5, 2.2, out + 0.03]);
+scripts/environment_modules/shopfront_modules.ts:154:        b.box("frame", [-0.5, 0.02, out + 0.03], [0.5, 0.3, out + 0.045]);
+scripts/environment_modules/shopfront_modules.ts:155:        b.box("frame", [0.32, 1.0, out + 0.03], [0.42, 1.08, out + 0.09]);
+scripts/environment_modules/shopfront_modules.ts:156:        b.box("trim", [-0.3, 1.6, out + 0.03], [0.1, 1.85, out + 0.05]);
+scripts/environment_modules/shopfront_modules.ts:157:        b.box("concrete", [-0.7, -0.02, FACE], [0.7, 0.12, out + 0.45]);
+scripts/environment_modules/shopfront_modules.ts:160:        b.box("metal", [-0.45, 0.9, FACE], [0.25, 1.9, out + 0.18]);
+scripts/environment_modules/shopfront_modules.ts:161:        b.box("frame", [-0.42, 1.0, out + 0.18], [0.22, 1.8, out + 0.2]);
+scripts/environment_modules/shopfront_modules.ts:162:        for (const x of [-0.3, -0.1, 0.1]) b.box("metal", [x - 0.03, 1.9, FACE], [x + 0.03, 3.2, out + 0.04]);
+scripts/environment_modules/shopfront_modules.ts:163:        b.box("metal", [-0.75, 3.1, FACE], [0.75, 3.17, out + 0.04]);
+scripts/environment_modules/shopfront_modules.ts:164:        b.box("roofUnit", [0.45, 0.3, FACE], [0.85, 0.9, out + 0.25]);
+scripts/environment_modules/stand_in_modules.ts:12:        build: () => new FacetBuilder().box("trim", [-1.5, 0, -0.3], [1.5, 0.9, 0.1]).build(),
+scripts/environment_modules/stand_in_modules.ts:19:        build: () => new FacetBuilder().box("metal", [-1.4, 0, 0], [1.4, 0.1, 1.2]).build(),
+scripts/environment_modules/stand_in_modules.ts:26:        build: () => new FacetBuilder().box("metal", [-0.3, 0, -0.3], [0.3, 0.015, 0.3]).build(),
+scripts/environment_modules/stand_in_modules.ts:37:                .box("glass", [-0.62, 0.02, 0], [0.62, 1.58, 0.03], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:38:                .box("trim", [-0.72, -0.08, 0], [0.72, 0.02, 0.16], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:39:                .box("trim", [-0.72, 1.58, 0], [0.72, 1.72, 0.12], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:40:                .box("trim", [-0.72, 0.02, 0], [-0.62, 1.58, 0.09], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:41:                .box("trim", [0.62, 0.02, 0], [0.72, 1.58, 0.09], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:42:                .box("frame", [-0.03, 0.02, 0], [0.03, 1.58, 0.05], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:50:        build: () => new FacetBuilder().box("trim", [-1.5, 0, 0], [1.5, 0.6, 0.45], ["-z"]).build(),
+scripts/environment_modules/stand_in_modules.ts:57:        build: () => new FacetBuilder().box("trim", [-1.5, 0, 0], [1.5, 0.25, 0.12], ["-z"]).build(),
+scripts/environment_modules/stand_in_modules.ts:66:                .box("frame", [-0.6, 0, 0], [0.6, 2.4, 0.04], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:67:                .box("trim", [-0.95, 0, 0], [-0.6, 2.75, 0.2], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:68:                .box("trim", [0.6, 0, 0], [0.95, 2.75, 0.2], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:69:                .box("trim", [-0.95, 2.4, 0], [0.95, 3, 0.2], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:80:                .box("concrete", [-0.95, -0.45, 0], [0.95, -0.3, 1.05], ["-z", "-y"])
+scripts/environment_modules/stand_in_modules.ts:81:                .box("concrete", [-0.95, -0.3, 0], [0.95, -0.15, 0.7], ["-z", "-y"])
+scripts/environment_modules/stand_in_modules.ts:82:                .box("concrete", [-0.95, -0.15, 0], [0.95, 0, 0.35], ["-z", "-y"])
+scripts/environment_modules/stand_in_modules.ts:91:        build: () => new FacetBuilder().box("concrete", [-0.85, -0.18, 0], [0.85, 0, 0.45], ["-z", "-y"]).build(),
+scripts/environment_modules/stand_in_modules.ts:101:                .box("metal", [-0.95, 2.85, 0], [0.95, 3.05, 0.95], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:102:                .box("metal", [-0.9, 2.55, 0], [-0.84, 2.85, 0.7], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:103:                .box("metal", [0.84, 2.55, 0], [0.9, 2.85, 0.7], ["-z"])
+scripts/environment_modules/stand_in_modules.ts:114:                .box("roofUnit", [-1.5, 0.2, -0.3], [1.5, 0.8, 0.3])
+scripts/environment_modules/stand_in_modules.ts:115:                .box("metal", [-1.3, 0, -0.35], [-1.1, 0.2, 0.35], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:116:                .box("metal", [1.1, 0, -0.35], [1.3, 0.2, 0.35], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:125:        build: () => new FacetBuilder().box("roofUnit", [-1.1, 0, -0.7], [1.1, 1.6, 0.7], ["-y"]).build(),
+scripts/environment_modules/stand_in_modules.ts:133:        build: () => new FacetBuilder().box("bark", [-0.15, 0, -0.15], [0.15, 3, 0.15], ["-y"]).box("foliage", [-1.5, 2.6, -1.5], [1.5, 6.5, 1.5]).build(),
+scripts/environment_modules/stand_in_modules.ts:144:                .box("metal", [-0.1, 0, -0.1], [0.1, 5, 0.1], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:145:                .box("metal", [-0.08, 4.9, 0.1], [0.08, 5.05, 1.2])
+scripts/environment_modules/stand_in_modules.ts:146:                .box("trim", [-0.2, 4.75, 0.9], [0.2, 4.9, 1.4])
+scripts/environment_modules/stand_in_modules.ts:154:        build: () => new FacetBuilder().box("metal", [-0.3, 0, -0.3], [0.3, 1, 0.3], ["-y"]).build(),
+scripts/environment_modules/stand_in_modules.ts:162:        build: () => new FacetBuilder().box("foliage", [-1, 0, -0.35], [1, 0.9, 0.35], ["-y"]).build(),
+scripts/environment_modules/stand_in_modules.ts:172:                .box("concrete", [-1, 0, 0.35], [1, 0.25, 0.45], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:173:                .box("soil", [-1, 0, -0.45], [1, 0.18, 0.35], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:174:                .blob("foliage", [-0.5, 0.55, -0.05], 0.42, 0.42, 11)
+scripts/environment_modules/stand_in_modules.ts:175:                .blob("foliage", [0.5, 0.5, -0.05], 0.4, 0.4, 23)
+scripts/environment_modules/stand_in_modules.ts:186:                .box("metal", [-1, 0, -0.03], [-0.96, 1, 0.03])
+scripts/environment_modules/stand_in_modules.ts:187:                .box("metal", [0.96, 0, -0.03], [1, 1, 0.03])
+scripts/environment_modules/stand_in_modules.ts:188:                .box("metal", [-1, 0.92, -0.025], [1, 0.97, 0.025])
+scripts/environment_modules/stand_in_modules.ts:189:                .box("metal", [-1, 0.12, -0.025], [1, 0.16, 0.025])
+scripts/environment_modules/stand_in_modules.ts:200:                .box("bark", [-1, 0, -0.06], [-0.92, 1.6, 0.06])
+scripts/environment_modules/stand_in_modules.ts:201:                .box("bark", [0.92, 0, -0.06], [1, 1.6, 0.06])
+scripts/environment_modules/stand_in_modules.ts:202:                .box("bark", [-0.92, 0.05, -0.02], [0.92, 1.5, 0.02])
+scripts/environment_modules/stand_in_modules.ts:212:        build: () => new FacetBuilder().box("metal", [-0.07, 0, -0.07], [0.07, 3.2, 0.07], ["-y"]).box("metal", [-0.18, 3.2, -0.15], [0.18, 4, 0.15]).build(),
+scripts/environment_modules/stand_in_modules.ts:219:        build: () => new FacetBuilder().box("roofUnit", [-0.45, 0, -0.45], [0.45, 1, 0.45], ["-y"]).build(),
+scripts/environment_modules/stand_in_modules.ts:230:                .box("bark", [-1.05, 0, -0.9], [1.05, 1.9, 0.9], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:231:                .quad("roofMembrane", [-1.1, 1.9, 0.95], [1.1, 1.9, 0.95], [1.1, 2.4, 0], [-1.1, 2.4, 0])
+scripts/environment_modules/stand_in_modules.ts:232:                .quad("roofMembrane", [1.1, 1.9, -0.95], [-1.1, 1.9, -0.95], [-1.1, 2.4, 0], [1.1, 2.4, 0])
+scripts/environment_modules/stand_in_modules.ts:233:                .triangle("bark", [-1.05, 1.9, 0.9], [-1.05, 2.4, 0], [-1.05, 1.9, -0.9])
+scripts/environment_modules/stand_in_modules.ts:234:                .triangle("bark", [1.05, 1.9, -0.9], [1.05, 2.4, 0], [1.05, 1.9, 0.9])
+scripts/environment_modules/stand_in_modules.ts:235:                .box("frame", [-0.4, 0, 0.9], [0.4, 1.7, 0.94], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:247:                .box("wallStone", [-1.2, 0, -1.5], [1.2, 2.5, 1.5], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:248:                .box("trim", [-1.25, 2.5, -1.5], [1.25, 2.6, 1.5], ["-y"])
+scripts/environment_modules/stand_in_modules.ts:249:                .box("frame", [-0.45, 0, 1.5], [0.45, 2.1, 1.5], ["-y", "-z"])
+scripts/environment_modules/stand_in_modules.ts:257:        build: () => new FacetBuilder().box("metal", [-0.15, 0, -0.15], [0.15, 0.9, 0.15], ["-y"]).build(),
+scripts/environment_modules/stand_in_modules.ts:265:        build: () => new FacetBuilder().box("roadPaint", [-0.25, 0, -1.5], [0.25, 0.03, 1.5], ["-y", "-x", "+x", "-z", "+z"]).build(),
+scripts/environment_modules/street_furniture.ts:14:        for (let i = 1; i < points.length - 1; i++) b.triangle(slot, points[0], points[i], points[i + 1]);
+scripts/environment_modules/street_furniture.ts:65:        for (let k = 0; k < sides; k++) b.quad(slot, rings[i - 1][k], rings[i - 1][(k + 1) % sides], rings[i][(k + 1) % sides], rings[i][k]);
+scripts/environment_modules/street_furniture.ts:94:        for (const x of [-0.68, 0.68]) b.prism("metal", x, z + 0.044, 0.006, 0.475, 0.478, 12);
+scripts/environment_modules/street_furniture.ts:102:    b.prism("frame", 0, 0, 0.278, 0.035, 0.72, 48);
+scripts/environment_modules/street_furniture.ts:105:        b.prism("metal", Math.cos(a) * 0.289, Math.sin(a) * 0.289, 0.013, 0.1, 0.79, 10);
+scripts/environment_modules/street_furniture.ts:107:    b.prism("metal", 0, 0, 0.315, 0.035, 0.09, 48);
+scripts/environment_modules/street_furniture.ts:108:    b.prism("metal", 0, 0, 0.315, 0.765, 0.815, 48);
+scripts/environment_modules/street_furniture.ts:114:        b.quad("metal", p(0.315, 0.815, a), p(0.315, 0.815, c), p(0.215, 0.855, c), p(0.215, 0.855, a));
+scripts/environment_modules/street_furniture.ts:115:        b.quad("frame", p(0.215, 0.855, a), p(0.215, 0.855, c), p(0.215, 0.72, c), p(0.215, 0.72, a));
+scripts/environment_modules/street_furniture.ts:136:            for (const dz of [-0.055, 0.055]) b.prism("frame", x, z + dz, 0.012, 0.035, 0.048, 6);
+scripts/environment_modules/street_furniture.ts:155:    b.box("soil", [lo[0] + t, hi[1] - 0.06, lo[2] + t], [hi[0] - t, hi[1] - 0.04, hi[2] - t]);
+scripts/environment_modules/vegetation_family.ts:88:    for (const [a, b, c] of shrub ? shrubLobes : lobes) builder.triangle("foliage", point(a), point(b), point(c));
+scripts/environment_modules/vegetation_family.ts:116:        for (let k = 1; k < rings.length; k++) builder.quad("bark", rings[k - 1][i], rings[k - 1][j], rings[k][j], rings[k][i]);
+scripts/environment_modules/vegetation_family.ts:117:        builder.triangle("bark", points[0], rings[0][j], rings[0][i]);
+scripts/environment_modules/vegetation_family.ts:118:        builder.triangle("bark", points[points.length - 1], rings[rings.length - 1][i], rings[rings.length - 1][j]);
+scripts/environment_modules/waterfront_pier.ts:43:        b.quad(slot, start[i], start[j], end[j], end[i]);
+scripts/environment_modules/waterfront_pier.ts:45:    b.quad(slot, start[3], start[2], start[1], start[0]);
+scripts/environment_modules/waterfront_pier.ts:46:    b.quad(slot, end[0], end[1], end[2], end[3]);
+scripts/environment_modules/waterfront_pier.ts:52:    for (const [a, c, d] of deck.triangles) b.triangle("concrete", a, c, d);
+scripts/environment_modules/waterfront_pier.ts:58:        b.quad("wallStone", c, a, lower(a, 0.4), lower(c, 0.4));
+scripts/environment_modules/waterfront_pier.ts:66:            b.prism("bark", p[0], p[2], 0.24, waterY - 1.2, p[1] - 0.5, 8, 0.22);
+scripts/environment_modules/waterfront_pier.ts:67:            b.prism("metal", p[0], p[2], 0.26, p[1] - 0.88, p[1] - 0.72, 8);
+scripts/environment_modules/waterfront_pier.ts:68:            b.box("metal", [p[0] - 0.42, p[1] - 0.66, p[2] - 0.42], [p[0] + 0.42, p[1] - 0.45, p[2] + 0.42]);
+scripts/environment_modules/waterfront_pier.ts:133:    b.prism("bark", 0, 0, 0.19, 0, 3.46, 8, 0.177);
+scripts/environment_modules/waterfront_pier.ts:134:    b.prism("trimWarm", 0, 0, 0.177, 3.46, 3.5, 8);
+scripts/environment_modules/waterfront_pier.ts:135:    for (const y of [2.45, 3.12]) b.prism("metal", 0, 0, 0.196, y, y + 0.095, 8);
+scripts/environment_modules/waterfront_pier.ts:154:        b.quad("wallStone", lower[i], lower[j], shoulder[j], shoulder[i]);
+scripts/environment_modules/waterfront_pier.ts:155:        b.quad("wallStone", shoulder[i], shoulder[j], top[j], top[i]);
+scripts/environment_modules/waterfront_pier.ts:156:        b.triangle("wallStone", [0, 0.7, 0], top[i], top[j]);
+scripts/environment_modules/waterfront_pier.ts:157:        b.triangle("wallStone", [0, 0, 0], lower[j], lower[i]);
+scripts/environment_modules/waterfront_pier.ts:177:        b.quad(slot, top[3], top[2], top[1], top[0]);
+scripts/environment_modules/waterfront_pier.ts:178:        b.quad(slot, a, c, d, e);
+scripts/environment_modules/waterfront_pier.ts:185:            b.quad(slot, [a, c, d, e][i], top[i], top[j], [a, c, d, e][j]);
+scripts/environment_modules/waterfront_pier.ts:189:    box("concrete", -half, half, -landing.depth, 0, floor - 0.28, floor);
+scripts/environment_modules/waterfront_pier.ts:190:    box("wallStone", -half, half, -0.32, 0.05, waterY - 0.5, floor - 0.28);
+scripts/environment_modules/waterfront_pier.ts:191:    box("concrete", -half, half, -0.35, 0.3, floor - 0.28, floor);
+scripts/environment_modules/waterfront_pier.ts:192:    for (let u = -half + 0.7; u < half; u += 2.4) box("metal", u - 0.085, u + 0.085, -0.04, 0.17, waterY - 0.35, floor - 0.3);
+scripts/environment_modules/waterfront_pier.ts:194:    for (const u of landing.supportStations) for (const y of [waterY + 1.1, floor - 0.55]) box("metal", u - 1.25, u + 1.25, 0.25, 2.45, y, y + 0.16);
+scripts/environment_modules/waterfront_pier.ts:199:            b.prism("roofUnit", at[0], at[2], 0.17, waterY + 0.6, floor - 0.9, 10);
+scripts/environment_modules/waterfront_pier.ts:225:    b.quad("metal", p(rampU1, -0.2, floor), p(rampU0, -0.2, floor), along(rampU0, -width / 2, 0.05), along(rampU1, -width / 2, 0.05));
+scripts/environment_modules/waterfront_pier.ts:235:    box("metal", -half + 1, -half + 2.1, -2.7, -1.7, floor, floor + 1.4);
+scripts/environment_modules/waterfront_pier.ts:236:    box("concrete", -half + 1.1, -half + 1.9, -1.68, -1.65, floor + 0.7, floor + 1.15);
+scripts/environment_modules/waterfront_pier.ts:238:    b.prism("frame", lamp[0], lamp[2], 0.07, floor, floor + 3.4, 8);
+scripts/environment_modules/waterfront_pier.ts:240:    box("metal", -half + 0.45, -half + 0.95, -1.85, -1.25, floor + 3.22, floor + 3.36);
+scripts/environment_modules/waterfront_railing.ts:220:        b.quad(slot, top[3], top[2], top[1], top[0]);
+scripts/environment_modules/waterfront_railing.ts:223:            b.quad(slot, post.base[j], post.base[i], top[i], top[j]);
+scripts/environment_modules/waterfront_railing.ts:256:            b.quad(slot, foot[j], foot[i], shoulder[i], shoulder[j]);
+scripts/environment_modules/waterfront_railing.ts:257:            b.quad(slot, shoulder[j], shoulder[i], cap[i], cap[j]);
+scripts/environment_modules/waterfront_railing.ts:259:        b.quad(slot, cap[3], cap[2], cap[1], cap[0]);
+scripts/environment_modules/waterfront_railing.ts:264:                b.prism(slot, p[0], p[2], 0.022, baseY + plateThickness, baseY + plateThickness + 0.024, 6);
+scripts/environment_modules/waterfront_railing.ts:287:                b.quad(slot, start[i], start[j], finish[j], finish[i]);
+scripts/environment_modules/window_dressings.generated.ts:23:            b.quad("wallPlaster", [a, 0.19, z0], [c, 0.17, z1], [c, 1.98, z1], [a, 1.98, z0]);
+scripts/environment_modules/window_dressings.generated.ts:26:    b.box("wallStone", [-0.63, 1.91, 0.049], [0.63, 2.0, 0.078]);
+scripts/environment_modules/window_dressings.generated.ts:33:        b.box("wallStone", [-0.63, bottom, 0.043], [0.63, 2.0, 0.049]);
+scripts/environment_modules/window_dressings.generated.ts:34:        for (let y = bottom + 0.075; y < 1.96; y += 0.105) b.box("wallPlaster", [-0.63, y, 0.049], [0.63, y + 0.017, 0.061]);
+scripts/environment_modules/window_dressings.generated.ts:35:        b.box("wallPlaster", [-0.64, bottom - 0.026, 0.043], [0.64, bottom + 0.015, 0.07]);
+scripts/environment_modules/window_dressings.generated.ts:36:        b.box("wallStone", [0.58, bottom - 0.17, 0.063], [0.587, bottom, 0.071]);
+scripts/environment_modules/window_dressings.generated.ts:40:        b.box("frame", [-0.42, 0.15, 0.04], [0.42, 0.65, 0.18]);
+scripts/environment_modules/window_dressings.generated.ts:41:        b.box("roofUnit", [-0.39, 0.16, 0.16], [0.39, 0.61, 0.60]);
+scripts/environment_modules/window_dressings.generated.ts:42:        b.box("metal", [-0.34, 0.23, 0.601], [0.19, 0.55, 0.608]);
+scripts/environment_modules/window_dressings.generated.ts:43:        for (let i = 0; i < 7; i++) b.box("roofUnit", [-0.34, 0.245 + i * 0.043, 0.608], [0.19, 0.257 + i * 0.043, 0.62]);
+scripts/environment_modules/window_dressings.generated.ts:44:        b.box("frame", [0.25, 0.29, 0.601], [0.30, 0.40, 0.61]);
+scripts/environment_modules/window_dressings.generated.ts:45:        for (const x of [-0.3, 0.26]) b.box("metal", [x, 0.10, 0.22], [x + 0.04, 0.17, 0.54]);
+scripts/environment_modules/window_dressings.generated.ts:47:        b.box("wallBrick", [-0.65, 0.10, 0.26], [0.65, 0.30, 0.57]);
+scripts/environment_modules/window_dressings.generated.ts:48:        b.box("soil", [-0.60, 0.301, 0.29], [0.60, 0.31, 0.54]);
+scripts/environment_modules/window_dressings.generated.ts:51:            b.blob(i % 2 === 0 ? "foliageMuted" : "foliageDeep", [x, 0.40, 0.415], 0.13, 0.15, 19 + i * 7, 6);
+scripts/environment_modules/window_dressings.generated.ts:52:            if (i % 2 === 0) b.blob("wallBrick", [x + 0.035, 0.56, 0.415], 0.045, 0.04, 42 + i, 5);
+scripts/environment_modules/window_dressings.generated.ts:56:        for (const x of [-0.74, 0.70]) b.box("frame", [x, 0.12, 0.50], [x + 0.04, 1.04, 0.54]);
+scripts/environment_modules/window_dressings.generated.ts:57:        for (const y of [0.17, 1.0]) b.box("frame", [-0.74, y, 0.50], [0.74, y + 0.035, 0.55]);
+scripts/environment_modules/window_dressings.generated.ts:60:            b.box("frame", [x - 0.011, 0.20, 0.51], [x + 0.011, 1.0, 0.535]);
+scripts/environment_modules/window_dressings.generated.ts:62:        for (const x of [-0.74, 0.70]) for (const y of [0.17, 0.98]) b.box("frame", [x, y, 0.21], [x + 0.04, y + 0.035, 0.52]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:11:        builder.quad(slot, back[i], back[j], front[j], front[i]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:14:        builder.triangle(slot, front[0], front[i], front[i + 1]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:15:        builder.triangle(slot, back[0], back[i + 1], back[i]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:22:    b.box("concrete", [-1.03, 0, -0.84], [1.03, 0.08, 0.84]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:27:    b.box("frame", [-0.035, 2.36, -0.95], [0.035, 2.4, 0.95]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:28:    for (const x of [-1.02, 0.97]) b.box("trim", [x, 0.08, 0.84], [x + 0.05, 1.94, 0.88]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:29:    b.box("trim", [-1.02, 1.88, 0.84], [1.02, 1.94, 0.88]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:31:    b.box("frame", [-0.45, 0.08, 0.842], [0.45, 1.76, 0.86]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:32:    b.box(wall, [-0.38, 0.13, 0.86], [0.38, 1.69, 0.88]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:33:    for (const x of [-0.46, 0.40]) b.box("trim", [x, 0.08, 0.86], [x + 0.06, 1.8, 0.9]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:34:    b.box("trim", [-0.46, 1.74, 0.86], [0.46, 1.8, 0.9]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:35:    b.box("concrete", [-0.46, 0.08, 0.86], [0.46, 0.13, 0.94]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:36:    for (const y of [0.43, 1.42]) b.box("metal", [-0.40, y, 0.881], [-0.23, y + 0.035, 0.90]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:37:    b.box("metal", [0.25, 0.91, 0.88], [0.31, 1.03, 0.92]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:40:        b.box("soil", [-1.023, y, -0.84], [-1.019, y + 0.008, 0.84]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:41:        b.box("soil", [1.019, y, -0.84], [1.023, y + 0.008, 0.84]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:42:        b.box("soil", [-1.02, y, -0.844], [1.02, y + 0.008, -0.841]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:43:        for (const [x0, x1] of [[-0.97, -0.47], [0.47, 0.97]]) b.box("soil", [x0, y, 0.841], [x1, y + 0.008, 0.845]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:45:    b.box("frame", [1.022, 1.01, -0.37], [1.05, 1.65, 0.37]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:46:    b.box("glass", [1.05, 1.06, -0.32], [1.056, 1.6, 0.32]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:47:    b.box("trim", [1.056, 1.05, -0.025], [1.07, 1.61, 0.025]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:48:    b.box("trim", [1.04, 0.98, -0.39], [1.10, 1.04, 0.39]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:64:        b.quad("frame", rings[i][j], rings[i][k], rings[i + 1][k], rings[i + 1][j]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:70:    b.box("concrete", [-0.18, 0, -0.18], [0.18, 0.045, 0.18]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:71:    b.prism("frame", 0, 0, 0.145, 0.045, 0.3, 8, 0.105);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:72:    b.prism("frame", 0, 0, 0.105, 0.3, 1.05, 8, 0.087);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:73:    b.prism("frame", 0, 0, 0.087, 1.05, 5.3, 8, 0.052);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:74:    b.box("metal", [-0.045, 0.53, 0.088], [0.045, 0.77, 0.096]);
+scripts/environment_modules/yard_shed_lamp_modules.generated.ts:79:    b.box("trim", [-0.135, 5.99, reach - 0.06], [0.135, 6.003, reach + 0.36]);
+tools/maps/modules/build-waterfront.mjs:27:    const part = prism(polygons, -survey.datum - 0.02, -survey.datum - 0.02, { caps: "top", walls: false });
+tools/maps/modules/facade.mjs:5:    m.box("recess", "frame", [0, 1.12, 0.004], [1.55, 2.24, 0.008]);
+tools/maps/modules/facade.mjs:6:    m.box("glass", "glass", [0, 1.12, 0.015], [1.34, 2.02, 0.014]);
+tools/maps/modules/facade.mjs:7:    for (const x of [-0.735, 0.735]) m.box(`jamb-${x}`, "stone", [x, 1.12, 0.055], [0.07, 2.24, 0.11]);
+tools/maps/modules/facade.mjs:8:    m.box("lintel", "stone", [0, 2.21, 0.065], [1.6, 0.09, 0.13]);
+tools/maps/modules/facade.mjs:10:    m.box("mullion", "frame", [0, 1.12, 0.041], [0.035, 2.06, 0.038]);
+tools/maps/modules/facade.mjs:18:    m.box("base", "stone", [0, 0.07, 0.1], [3, 0.14, 0.2]);
+tools/maps/modules/facade.mjs:19:    m.box("course", "stone", [0, 0.21, 0.16], [3, 0.14, 0.32]);
+tools/maps/modules/facade.mjs:20:    m.box("cap", "stone", [0, 0.35, 0.23], [3, 0.14, 0.46]);
+tools/maps/modules/facade.mjs:21:    for (let i = 0; i < 8; i++) m.box(`dentil-${i}`, "stone", [-1.31 + i * 0.375, -0.035, 0.14], [0.16, 0.1, 0.2]);
+tools/maps/modules/facade.mjs:27:    m.box("wall", "stone", [0, 0.42, 0.03], [3, 0.84, 0.5]);
+tools/maps/modules/facade.mjs:34:    m.box("back", "frame", [0, 1.375, 0.012], [2.2, 2.55, 0.024]);
+tools/maps/modules/facade.mjs:35:    m.box("glazing", "glass", [0, 1.375, 0.04], [2.12, 2.47, 0.022]);
+tools/maps/modules/facade.mjs:36:    for (const x of [-1.15, 1.15]) m.box(`pier-${x}`, "trim", [x, 1.375, 0.31], [0.1, 2.75, 0.18]);
+tools/maps/modules/facade.mjs:37:    for (const x of [-1.07, 0, 1.07]) m.box(`sash-${x}`, "frame", [x, 1.375, 0.09], [0.055, 2.55, 0.09]);
+tools/maps/modules/facade.mjs:38:    m.box("transom", "frame", [0, 2.2, 0.09], [2.2, 0.055, 0.09]);
+tools/maps/modules/facade.mjs:46:    m.box("landing", "stone", [0, 0.36, 0.5], [1.8, 0.72, 1]);
+tools/maps/modules/facade.mjs:47:    for (let i = 0; i < 4; i++) m.box(`step-${i}`, "stone", [0, (0.72 - i * 0.18) / 2, 1.15 + i * 0.3], [1.8, 0.72 - i * 0.18, 0.3]);
+tools/maps/modules/facade.mjs:55:            m.beam(`post-${x}-${z}`, "metal", [x, y, z], [x, y + 0.88, z], 0.045);
+tools/maps/modules/facade.mjs:56:        m.beam(`level-rail-${x}`, "metal", [x, 1.6, 0.12], [x, 1.6, 0.88], 0.06);
+tools/maps/modules/facade.mjs:57:        m.beam(`slope-rail-${x}`, "metal", [x, 1.6, 0.88], [x, 1.06, 2.05], 0.06);
+tools/maps/modules/facade.mjs:69:    for (const x of [-0.66, 0.66]) m.box(`jamb-${x}`, "trim", [x, 1.24, 0.12], [0.18, 2.48, 0.24]);
+tools/maps/modules/facade.mjs:71:    m.box("door", "bark", [0, 1.17, 0.045], [1.12, 2.34, 0.08]);
+tools/maps/modules/facade.mjs:72:    m.box("transom", "glass", [0, 2.25, 0.095], [0.88, 0.18, 0.025]);
+tools/maps/modules/facade.mjs:73:    for (const y of [0.65, 1.48]) m.box(`panel-${y}`, "frame", [0, y, 0.095], [0.8, 0.58, 0.025]);
+tools/maps/modules/facade.mjs:74:    m.beam("pull", "metal", [0.39, 0.95, 0.14], [0.39, 1.32, 0.14], 0.035);
+tools/maps/modules/facade.mjs:80:    for (const z of [0.08, 1.1]) m.beam(`floor-frame-${z}`, "metal", [-1.4, 0, z], [1.4, 0, z], 0.1);
+tools/maps/modules/facade.mjs:81:    for (let i = 0; i < 18; i++) m.box(`grating-${i}`, "metal", [-1.35 + i * 0.15, 0, 0.59], [0.055, 0.05, 1.1]);
+tools/maps/modules/facade.mjs:83:        m.beam(`side-rail-${x}`, "metal", [x, 1.02, 0.08], [x, 1.02, 1.12], 0.045);
+tools/maps/modules/facade.mjs:84:        m.beam(`brace-${x}`, "metal", [x, -0.85, 0.04], [x, -0.08, 1.1], 0.06);
+tools/maps/modules/facade.mjs:88:    m.box("stair-entry-deck", "metal", [1.285, 0, 1.465], [0.33, 0.05, 0.78]);
+tools/maps/modules/facade.mjs:89:    m.box("stair-exit-deck", "metal", [-1.285, -3, 1.465], [0.33, 0.05, 0.78]);
+tools/maps/modules/facade.mjs:90:    m.beam("front-rail", "metal", [-1.08, 1.02, 1.12], [1.08, 1.02, 1.12], 0.05);
+tools/maps/modules/facade.mjs:91:    for (let i = 0; i < 11; i++) m.beam(`baluster-${i}`, "metal", [-1 + i * 0.2, 0.02, 1.12], [-1 + i * 0.2, 1.02, 1.12], 0.03);
+tools/maps/modules/facade.mjs:92:    for (let i = 0; i < 15; i++) m.box(`tread-${i}`, "metal", [1.3 - i * 0.18, -i * 0.2, 1.55], [0.21, 0.055, 0.65]);
+tools/maps/modules/facade.mjs:94:        m.beam(`stringer-${z}`, "metal", [1.4, 0.02, z], [-1.4, -3, z], 0.09);
+tools/maps/modules/facade.mjs:95:        m.beam(`stair-rail-${z}`, "metal", [1.4, 1, z], [-1.4, -2, z], 0.05);
+tools/maps/modules/facade.mjs:96:        for (let i = 0; i < 8; i++) m.beam(`stair-post-${z}-${i}`, "metal", [1.3 - i * 0.36, -i * 0.4, z], [1.3 - i * 0.36, 1 - i * 0.4, z], 0.03);
+tools/maps/modules/facade.mjs:103:    m.box("course", "stone", [0, 0.075, 0.06], [3, 0.15, 0.12]);
+tools/maps/modules/geometry.mjs:15:        box(name, slot, at, size) {
+tools/maps/modules/geometry.mjs:17:            box(at, size, triangles);
+tools/maps/modules/geometry.mjs:20:        cylinder(name, slot, at, radius, height, sides = 8) {
+tools/maps/modules/geometry.mjs:22:            cylinder(at, radius, height, triangles, sides);
+tools/maps/modules/geometry.mjs:34:            box(
+tools/maps/modules/roof.mjs:7:    for (const x of [-width * 0.36, width * 0.36]) m.box(`skid-${x}`, "metal", [x, 0.09, 0], [0.12, 0.18, depth * 0.94]);
+tools/maps/modules/roof.mjs:9:    m.box("intake", "metal", [0, 0.18 + height / 2, depth / 2 + 0.008], [width * 0.8, height * 0.7, 0.03]);
+tools/maps/modules/roof.mjs:12:    m.beam("service-drop", "metal", [width * 0.42, 0.12, depth / 2 + 0.02], [width * 0.42, 0.18 + height * 0.4, depth / 2 + 0.02], 0.045);
+tools/maps/modules/roof.mjs:13:    m.beam("service-elbow", "metal", [width * 0.32, 0.12, depth / 2 + 0.02], [width * 0.42, 0.12, depth / 2 + 0.02], 0.045);
+tools/maps/modules/roof.mjs:14:    for (let i = 0; i < 8; i++) m.box(`louvre-${i}`, "equipment", [0, 0.18 + height * 0.18 + i * height * 0.085, depth / 2 + 0.04], [width * 0.8, 0.026, 0.05]);
+tools/maps/modules/roof.mjs:20:        m.cylinder(`fan-well-${index}`, "frame", [x, y, 0], fanRadius, 0.035, 12);
+tools/maps/modules/roof.mjs:46:        m.cylinder(`fan-hub-${index}`, "metal", [x, height + 0.217, 0], fanRadius * 0.18, 0.045, 8);
+tools/maps/modules/roof.mjs:49:            m.beam(`fan-guard-${index}-${i}`, "metal", [x, height + 0.24, 0], [x + Math.cos(a) * fanRadius, height + 0.24, Math.sin(a) * fanRadius], 0.018);
+tools/maps/modules/roof.mjs:67:        miterDuct(
+tools/maps/modules/roof.mjs:76:        m.box(`saddle-${x}`, "metal", [x, 0.125, 0], [0.14, 0.25, 0.75]);
+tools/maps/modules/roof.mjs:77:        m.box(`seam-${x}`, "metal", [x, 0.55, 0], [0.035, 0.64, 0.64]);
+tools/maps/modules/roof.mjs:92:        miterDuct(
+tools/maps/modules/roof.mjs:101:    m.box("saddle", "metal", [0, 0.125, 0], [0.45, 0.25, 0.45]);
+tools/maps/modules/roof.mjs:113:    m.cylinder("stack", "equipment", [0, 0.1, 0], 0.2, 0.75, 8);
+tools/maps/modules/roof.mjs:114:    m.cylinder("dark-opening", "metal", [0, 0.85, 0], 0.22, 0.15, 8);
+tools/maps/modules/roof.mjs:115:    m.cylinder("rain-cap", "equipment", [0, 1.0, 0], 0.32, 0.1, 8);
+tools/maps/modules/roof.mjs:122:    m.box("gasket", "metal", [0, 0.43, 0], [1.14, 0.045, 1.54]);
+tools/maps/modules/roof.mjs:124:    for (const x of [-0.35, 0.35]) m.box(`hinge-${x}`, "metal", [x, 0.52, -0.78], [0.14, 0.09, 0.1]);
+tools/maps/modules/roof.mjs:125:    m.beam("handle", "metal", [-0.13, 0.58, 0.55], [0.13, 0.58, 0.55], 0.045);
+tools/maps/modules/roof.mjs:131:    for (const x of [-0.68, 0.68]) for (const z of [-0.68, 0.68]) m.beam(`leg-${x}-${z}`, "metal", [x, 0, z], [x, 1.4, z], 0.11);
+tools/maps/modules/roof.mjs:133:        m.beam(`brace-a-${z}`, "metal", [-0.68, 0.1, z], [0.68, 1.3, z], 0.05);
+tools/maps/modules/roof.mjs:134:        m.beam(`brace-b-${z}`, "metal", [0.68, 0.1, z], [-0.68, 1.3, z], 0.05);
+tools/maps/modules/roof.mjs:136:    m.cylinder("timber-tank", "wood", [0, 1.35, 0], 1.1, 2.15, 12);
+tools/maps/modules/roof.mjs:137:    for (const y of [1.48, 2.15, 2.82, 3.4]) m.cylinder(`hoop-${y}`, "metal", [0, y, 0], 1.115, 0.055, 12);
+tools/maps/modules/roof.mjs:149:    m.beam("ladder-left", "metal", [0.38, 0.08, 1.18], [0.38, 3.6, 1.18], 0.035);
+tools/maps/modules/roof.mjs:150:    m.beam("ladder-right", "metal", [-0.02, 0.08, 1.18], [-0.02, 3.6, 1.18], 0.035);
+tools/maps/modules/roof.mjs:151:    for (let i = 0; i < 12; i++) m.beam(`rung-${i}`, "metal", [-0.02, 0.28 + i * 0.28, 1.18], [0.38, 0.28 + i * 0.28, 1.18], 0.03);
+tools/maps/modules/roof.mjs:175:    m.part("supply-duct", "equipment", miterDuct(path, 0.5));
+tools/maps/modules/roof.mjs:177:    m.box("curb-flashing", "metal", [penetration[0], 0.025, penetration[2]], [0.92, 0.05, 0.92]);
+tools/maps/modules/roof.mjs:178:    m.box("port-collar", "metal", [port[0], port[1], port[2]], [0.07, 0.56, 0.56]);
+tools/maps/modules/roof.mjs:180:        m.box(`duct-saddle-${p[2]}`, "metal", [p[0], (p[1] - 0.25) / 2, p[2]], [0.12, p[1] - 0.25, 0.62]);
+tools/maps/modules/roof.mjs:193:            for (let i = 1; i < service.length; i++) m.beam(`service-conduit-${i}`, "metal", service[i - 1], service[i], 0.045);
+tools/maps/modules/roof.mjs:194:            m.beam("main-service-riser", "metal", service[0], [1.15, 0.8, -0.62], 0.045);
+tools/maps/modules/roof.mjs:195:            for (const z of [-0.2, 0.75]) m.box(`conduit-foot-${z}`, "metal", [1.15, 0.075, z], [0.16, 0.15, 0.16]);
+tools/maps/modules/street.mjs:5:    m.cylinder("foot", "metal", [0, 0, 0], 0.19, 0.12, 8);
+tools/maps/modules/street.mjs:6:    m.cylinder("base", "metal", [0, 0.12, 0], 0.115, 0.65, 8);
+tools/maps/modules/street.mjs:7:    m.cylinder("shaft", "metal", [0, 0.77, 0], 0.063, 4.35, 8);
+tools/maps/modules/street.mjs:8:    m.beam("neck", "metal", [0, 5.08, 0], [0, 5.4, 0.32], 0.065);
+tools/maps/modules/street.mjs:9:    m.beam("arm", "metal", [0, 5.4, 0.32], [0, 5.4, 1.02], 0.065);
+tools/maps/modules/street.mjs:11:    m.box("lens", "trim", [0, 5.265, 1.05], [0.25, 0.024, 0.57]);
+tools/maps/modules/street.mjs:47:    m.cylinder("trunk", "wood", [0, 0, 0], tall ? 0.14 : 0.18, tall ? 3.3 : 2.6, 7);
+tools/maps/modules/street.mjs:48:    m.beam("branch-left", "wood", [0, 1.55, 0], [-0.68, 2.9, 0.1], 0.14);
+tools/maps/modules/street.mjs:49:    m.beam("branch-right", "wood", [0, 1.9, 0], [0.6, 3.05, -0.3], 0.12);
+tools/maps/modules/street.mjs:59:    m.box("base", "concrete", [0, 0.06, 0], [1.6, 0.12, 0.72]);
+tools/maps/modules/street.mjs:60:    for (const z of [-0.3, 0.3]) m.box(`long-wall-${z}`, "concrete", [0, 0.28, z], [1.6, 0.44, 0.12]);
+tools/maps/modules/street.mjs:61:    for (const x of [-0.74, 0.74]) m.box(`end-wall-${x}`, "concrete", [x, 0.28, 0], [0.12, 0.44, 0.6]);
+tools/maps/modules/street.mjs:62:    m.box("soil", "soil", [0, 0.4, 0], [1.35, 0.045, 0.45]);
+tools/maps/modules/street.mjs:69:    m.cylinder("foot", "metal", [0, 0, 0], 0.29, 0.08, 10);
+tools/maps/modules/street.mjs:70:    m.cylinder("basket", "utility", [0, 0.08, 0], 0.31, 0.74, 10);
+tools/maps/modules/street.mjs:73:        m.beam(`rib-${i}`, "metal", [Math.cos(a) * 0.312, 0.11, Math.sin(a) * 0.312], [Math.cos(a) * 0.312, 0.79, Math.sin(a) * 0.312], 0.022);
+tools/maps/modules/street.mjs:75:    m.cylinder("rim", "metal", [0, 0.82, 0], 0.34, 0.06, 10);
+tools/maps/modules/street.mjs:76:    m.cylinder("opening", "soil", [0, 0.88, 0], 0.255, 0.008, 10);
+tools/maps/modules/street.mjs:82:    m.cylinder("foot", "metal", [0, 0, 0], 0.2, 0.08, 8);
+tools/maps/modules/street.mjs:83:    m.cylinder("barrel", "metal", [0, 0.08, 0], 0.13, 0.6, 8);
+tools/maps/modules/street.mjs:84:    m.cylinder("collar", "equipment", [0, 0.64, 0], 0.16, 0.09, 8);
+tools/maps/modules/street.mjs:86:    m.box("nut", "equipment", [0, 0.88, 0], [0.06, 0.08, 0.06]);
+tools/maps/modules/street.mjs:94:    m.box("plinth", "concrete", [0, 0.07, 0], [0.85, 0.14, 0.6]);
+tools/maps/modules/street.mjs:96:    m.box("door", "metal", [0, 0.8, 0.25], [0.64, 1.14, 0.025]);
+tools/maps/modules/street.mjs:97:    for (let i = 0; i < 5; i++) m.box(`vent-${i}`, "frame", [0, 1.05 + i * 0.055, 0.267], [0.44, 0.02, 0.009]);
+tools/maps/modules/street.mjs:98:    m.box("latch", "equipment", [0.24, 0.73, 0.28], [0.025, 0.16, 0.025]);
+tools/maps/modules/street.mjs:105:        for (const z of [-0.21, 0.21]) m.beam(`leg-${x}-${z}`, "metal", [x, 0, z], [x, 0.46, z], 0.065);
+tools/maps/modules/street.mjs:106:        m.beam(`support-${x}`, "metal", [x, 0.4, -0.27], [x, 0.4, 0.28], 0.06);
+tools/maps/modules/street.mjs:107:        m.beam(`back-support-${x}`, "metal", [x, 0.38, -0.23], [x, 0.94, -0.34], 0.055);
+tools/maps/modules/street.mjs:109:    for (let i = 0; i < 5; i++) m.box(`seat-${i}`, "wood", [0, 0.47, -0.23 + i * 0.11], [1.82, 0.065, 0.08]);
+tools/maps/modules/street.mjs:110:    for (let i = 0; i < 3; i++) m.box(`back-${i}`, "wood", [0, 0.65 + i * 0.12, -0.31], [1.82, 0.09, 0.045]);
+tools/maps/modules/street.mjs:112:        m.beam(`arm-post-${x}`, "metal", [x, 0.45, 0.16], [x, 0.68, 0.16], 0.035);
+tools/maps/modules/street.mjs:113:        m.beam(`arm-${x}`, "metal", [x, 0.68, -0.26], [x, 0.68, 0.23], 0.05);
+tools/maps/modules/street.mjs:120:    m.box("paint", "paint", [0, 0.006, 0], [0.5, 0.012, 3]);
+tools/maps/modules/street.mjs:126:    m.cylinder("rim", "metal", [0, 0, 0], 0.43, 0.018, 12);
+tools/maps/modules/street.mjs:127:    m.cylinder("cover", "frame", [0, 0.018, 0], 0.39, 0.012, 12);
+tools/maps/modules/street.mjs:128:    for (const x of [-0.2, -0.1, 0, 0.1, 0.2]) m.box(`rib-${x}`, "metal", [x, 0.033, 0], [0.014, 0.007, 2 * Math.sqrt(0.36 ** 2 - x ** 2)]);
+tools/maps/modules/street.mjs:129:    for (const z of [-0.18, 0, 0.18]) m.box(`cross-${z}`, "metal", [0, 0.039, z], [2 * Math.sqrt(0.36 ** 2 - z ** 2), 0.007, 0.012]);
+tools/maps/modules/street.mjs:135:    m.box("well", "frame", [0, 0.008, 0], [0.72, 0.016, 0.46]);
+tools/maps/modules/street.mjs:136:    for (const z of [-0.23, 0.23]) m.box(`rim-${z}`, "metal", [0, 0.024, z], [0.78, 0.035, 0.045]);
+tools/maps/modules/street.mjs:137:    for (const x of [-0.365, 0.365]) m.box(`side-${x}`, "metal", [x, 0.024, 0], [0.05, 0.035, 0.46]);
+tools/maps/modules/street.mjs:138:    for (let i = 0; i < 10; i++) m.box(`bar-${i}`, "metal", [-0.315 + i * 0.07, 0.025, 0], [0.025, 0.035, 0.44]);
+tools/maps/modules/street.mjs:144:    m.box("soil-bed", "soil", [0, 0.03, 0], [2, 0.06, 0.7]);
+tools/maps/modules/street.mjs:155:    m.cylinder("foot", "metal", [0, 0, 0], 0.16, 0.06, 8);
+tools/maps/modules/street.mjs:156:    m.cylinder("post", "metal", [0, 0.06, 0], 0.09, 0.72, 8);
+tools/maps/modules/street.mjs:157:    m.cylinder("visibility-band", "trim", [0, 0.66, 0], 0.095, 0.07, 8);
+tools/maps/sands-pearl-detail.test.mjs:49:    mesh = prism(polygons, 0, 9);
+tools/maps/sands-pearl-rich.test.mjs:98:    box([4, 2, -8], [2, 3, 4], triangles, [
+tools/maps/sands-pearl-terrain.test.mjs:115:    const walls = prism(
+tools/maps/sands-pearl-terrain.test.mjs:123:    const cap = prism(rectangle(-4, -4, 4, 4), -1, 0, { walls: false });
+tools/maps/sands-pearl.test.mjs:52:        mesh = prism(polygons, 0, 5);
+tools/maps/sands-pearl/build.mjs:187:            const geometry = prism(polygon, low, high, options);
+tools/maps/sands-pearl/geometry.mjs:38:export function prism(polygons, bottom, top, { caps = true, walls = true } = {}) {
+tools/maps/sands-pearl/maintenance-site.mjs:37:            box([item.at[0] + c * x + s * z, base + y, item.at[1] - s * x + c * z], [width, height, length], target, axes);
+tools/maps/sands-pearl/patterns/roof-service.mjs:53:export function miterDuct(path, width) {
+tools/maps/sands-pearl/patterns/roof-service.mjs:125:        emit(id, finish, physical, (t) => (bevel ? bevelBox(at, size, t) : box(at, size, t)));
+tools/maps/sands-pearl/patterns/roof-service.mjs:215:    emit("connected-miter-duct", "service", true, (t) => t.push(...miterDuct(path, 0.38)));
+tools/maps/sands-pearl/patterns/roof-service.mjs:239:            emit(`${id}-y-${side}`, "metal", false, (t) => box(add(p, scale(w, side * 0.215)), [0.045, 0.035, 0.465], t, basis));
+tools/maps/sands-pearl/patterns/roof-service.mjs:240:            emit(`${id}-z-${side}`, "metal", false, (t) => box(add(p, scale(v, side * 0.215)), [0.045, 0.465, 0.035], t, basis));
+tools/maps/sands-pearl/rich-buildings.mjs:12:export function box(
+tools/maps/sands-pearl/rich-buildings.mjs:38:export function cylinder(center, radius, height, target, sides = 8) {
+tools/maps/sands-pearl/rich-buildings.mjs:145:        const solid = (x, y, width, tall, depth, d, target) => box(world([x, y], d), [width, tall, depth], target, [u, [0, 1, 0], n]);
+tools/maps/sands-pearl/rich-buildings.mjs:269:                        for (const h of [0.55, 1]) box([center[0], y + h, center[2]], [length, 0.065, 0.065], roofs, [u, [0, 1, 0], v]);
+tools/maps/sands-pearl/rich-buildings.mjs:272:                            box(
+tools/maps/sands-pearl/rich-buildings.mjs:280:                        box([center[0], y + 0.275, center[2]], [length, 0.55, 0.18], roofs, [u, [0, 1, 0], v]);
+tools/maps/sands-pearl/rich-buildings.mjs:294:                box([x, y + 0.12, z], [2.1, 0.24, 1.5], equipment);
+tools/maps/sands-pearl/rich-buildings.mjs:295:                box([x, y + 0.7, z], [1.8, 0.95, 1.2], equipment);
+tools/maps/sands-pearl/rich-buildings.mjs:296:                cylinder([x, y + 1.175, z], 0.4, 0.07, trim);
+tools/maps/sands-pearl/rich-buildings.mjs:297:                for (let h = 0.4; h < 1.1; h += 0.15) box([x, y + h, z + 0.607], [1.5, 0.035, 0.025], trim);
+tools/maps/sands-pearl/rich-buildings.mjs:298:                cylinder([x + 1.25, y, z], 0.16, 0.7, equipment);
+tools/maps/sands-pearl/rich-buildings.mjs:299:                cylinder([x + 1.25, y + 0.7, z], 0.28, 0.08, equipment);
+tools/maps/sands-pearl/street-detail.mjs:145:        box(at(-0.5, 1.15, 0), [4.1, 1.9, 2], target, axes);
+tools/maps/sands-pearl/street-detail.mjs:146:        box(at(2.05, 0.6, 0), [1.1, 0.8, 1.94], target, axes);
+tools/maps/sands-pearl/street-detail.mjs:148:        box(at(0, 0.72, 0), [4.3, 0.74, 1.8], target, axes);
+tools/maps/sands-pearl/street-detail.mjs:149:        box(at(-0.3, 1.38, 0), [2.2, 0.58, 1.66], target, axes);
+tools/maps/sands-pearl/street-detail.mjs:151:    for (const forward of [1.45, -1.45]) for (const side of [0.86, -0.86]) box(at(forward, 0.31, side), [0.68, 0.62, 0.26], target, axes);
+tools/maps/sands-pearl/street-detail.mjs:264:                                cylinder([q[0], y, q[1]], 0.09, 0.85, bollards);
+tools/maps/sands-pearl/street-detail.mjs:399:                    cylinder([p[0], y, p[1]], 0.13, 0.35, out.lamps);
+tools/maps/sands-pearl/street-detail.mjs:400:                    cylinder([p[0], y + 0.35, p[1]], 0.065, 6.5, out.lamps);
+tools/maps/sands-pearl/street-detail.mjs:406:                    box([p[0] + n[0] * 0.55, y + 6.8, p[1] + n[1] * 0.55], [1.25, 0.09, 0.09], out.lamps, axes);
+tools/maps/sands-pearl/street-detail.mjs:407:                    box([p[0] + n[0] * 1.1, y + 6.72, p[1] + n[1] * 1.1], [0.65, 0.17, 0.3], out.lamps, axes);
+tools/maps/sands-pearl/street-detail.mjs:419:                        cylinder([h[0], hy, h[1]], 0.13, 0.6, out.hydrants);
+tools/maps/sands-pearl/street-detail.mjs:420:                        cylinder([h[0], hy + 0.6, h[1]], 0.19, 0.08, out.hydrants);
+tools/maps/sands-pearl/street-detail.mjs:421:                        box([h[0], hy + 0.42, h[1]], [0.5, 0.13, 0.16], out.hydrants);

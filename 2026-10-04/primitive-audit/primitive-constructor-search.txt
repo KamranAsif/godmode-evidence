@@ -1,0 +1,168 @@
+scripts/brooklyn_ramp_join.ts:4:    BoxMesh,
+scripts/brooklyn_ramp_join.ts:21:export function rampJoinGeometry(): { readonly mesh: BoxMesh; readonly transform: Transform3D } {
+scripts/brooklyn_ramp_join.ts:24:    const mesh = new BoxMesh();
+scripts/client/building_shell_tones.ts:1:import { Color, FileAccess, Mesh, MeshInstance3D, SurfaceTool, Vector3 } from "godot";
+scripts/client/building_shell_tones.ts:25:    const tool = new SurfaceTool();
+scripts/client/chain_trails.ts:1:import { BaseMaterial3D, Color, GeometryInstance3D, ImmediateMesh, Mesh, MeshInstance3D, Node3D, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/chain_trails.ts:32:        const mesh = new ImmediateMesh();
+scripts/client/cloaker_view.ts:11:    BoxMesh,
+scripts/client/cloaker_view.ts:78:    const mesh = new BoxMesh();
+scripts/client/combat_particles.ts:4:    BoxMesh,
+scripts/client/combat_particles.ts:105:            const box = new BoxMesh();
+scripts/client/crowd_build_view.ts:11:    BoxMesh,
+scripts/client/crowd_build_view.ts:17:    SphereMesh,
+scripts/client/crowd_build_view.ts:76:    const mesh = new BoxMesh();
+scripts/client/crowd_build_view.ts:81:    const mesh = new SphereMesh();
+scripts/client/dumbo_facades.ts:3:import { BoxMesh, BoxShape3D, Color, CollisionShape3D, MeshInstance3D, Node3D, ShaderMaterial, StandardMaterial3D, StaticBody3D, Vector3 } from "godot";
+scripts/client/dumbo_facades.ts:69:    const mesh = new BoxMesh();
+scripts/client/dumbo_shop_frontage.ts:2:import { BoxMesh, Color, MeshInstance3D, Node3D, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/dumbo_shop_frontage.ts:22:    const mesh = new BoxMesh();
+scripts/client/enemy_events_view.ts:6:import { BaseMaterial3D, Color, GeometryInstance3D, MeshInstance3D, Node3D, PrismMesh, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/enemy_events_view.ts:40:            const mesh = new PrismMesh();
+scripts/client/enemy_greybox.ts:3:import { Color, GeometryInstance3D, MeshInstance3D, Node, Node3D, SphereMesh, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/enemy_greybox.ts:51:            const warhead = (child.mesh as SphereMesh | null)?.material as StandardMaterial3D | null;
+scripts/client/enemy_greybox.ts:188:        const lensMaterial = (lens?.mesh as SphereMesh | null)?.material as StandardMaterial3D | null;
+scripts/client/enemy_weapon_fx.ts:2:import { BaseMaterial3D, Color, CylinderMesh, GeometryInstance3D, ImmediateMesh, Mesh, MeshInstance3D, Node3D, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/enemy_weapon_fx.ts:33:    const mesh = new CylinderMesh();
+scripts/client/enemy_weapon_fx.ts:109:    const mesh = new ImmediateMesh();
+scripts/client/environment_ground_details.ts:1:import { Color, FileAccess, Mesh, MeshInstance3D, Node3D, StandardMaterial3D, SurfaceTool, Vector3 } from "godot";
+scripts/client/environment_ground_details.ts:33:    const tools = new Map<Finish, SurfaceTool>();
+scripts/client/environment_ground_details.ts:41:            tool = new SurfaceTool();
+scripts/client/grenade_view.ts:2:import { BaseMaterial3D, Color, GeometryInstance3D, MeshInstance3D, Node3D, SphereMesh, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/grenade_view.ts:48:    private readonly shellMesh: SphereMesh;
+scripts/client/grenade_view.ts:55:        this.shellMesh = new SphereMesh();
+scripts/client/grenade_view.ts:84:        const sphere = new SphereMesh();
+scripts/client/horizon_transport.generated.ts:1:import { Mesh, MeshInstance3D, SurfaceTool, Vector3 } from "godot";
+scripts/client/horizon_transport.generated.ts:16:        tool = new SurfaceTool();
+scripts/client/killstreak_view.ts:22:    BoxMesh,
+scripts/client/killstreak_view.ts:38:    PrismMesh,
+scripts/client/killstreak_view.ts:187:    private readonly mapLineMesh = new BoxMesh();
+scripts/client/killstreak_view.ts:302:        const flat = (mesh: TorusMesh | PrismMesh | BoxMesh | QuadMesh, colour: Color): MeshInstance3D => {
+scripts/client/killstreak_view.ts:314:        const arrow = new PrismMesh();
+scripts/client/killstreak_view.ts:318:        const me = new PrismMesh();
+scripts/client/production_aircraft.ts:1:import { BaseMaterial3D, Color, CylinderMesh, MeshInstance3D, Node3D, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/production_aircraft.ts:23:    const mesh = new CylinderMesh();
+scripts/client/production_mechanical.ts:1:import { BaseMaterial3D, Color, MeshInstance3D, Node3D, SphereMesh, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/production_mechanical.ts:60:    const mesh = new SphereMesh();
+scripts/client/production_support.ts:1:import { BaseMaterial3D, Color, CylinderMesh, MeshInstance3D, Node3D, StandardMaterial3D, Vector3 } from "godot";
+scripts/client/production_support.ts:20:    const mesh = new CylinderMesh();
+scripts/client/pyro_explosion.ts:4:    BoxMesh,
+scripts/client/pyro_explosion.ts:161:    private readonly debrisMesh = new BoxMesh();
+scripts/client/roguelite_map_view.ts:10:    BoxMesh,
+scripts/client/roguelite_map_view.ts:22:    SurfaceTool,
+scripts/client/roguelite_map_view.ts:151:    const housingMesh = new BoxMesh();
+scripts/client/roguelite_map_view.ts:154:    const panelMesh = new BoxMesh();
+scripts/client/roguelite_map_view.ts:211:    private readonly tools = new Map<string, SurfaceTool>();
+scripts/client/roguelite_map_view.ts:216:            tool = new SurfaceTool();
+scripts/client/roguelite_map_view.ts:220:        const shape = new BoxMesh();
+scripts/client/roguelite_map_view.ts:235:function instanced(name: string, mesh: BoxMesh, positions: readonly Vector3[], offsetY: number): MultiMeshInstance3D {
+scripts/client/soldier_view.ts:14:    BoxMesh,
+scripts/client/soldier_view.ts:16:    CylinderMesh,
+scripts/client/soldier_view.ts:20:    SphereMesh,
+scripts/client/soldier_view.ts:270:    const mesh = new BoxMesh();
+scripts/client/soldier_view.ts:289:    const mesh = new CylinderMesh();
+scripts/client/soldier_view.ts:394:            const core = new SphereMesh();
+scripts/client/soldier_view.ts:404:                const mesh = new BoxMesh();
+scripts/client/soldier_view.ts:849:    const visorMesh = new BoxMesh();
+scripts/client/soldier_view.ts:878:        const mesh = new BoxMesh();
+scripts/client/soldier_view.ts:911:            const tube = new CylinderMesh();
+scripts/client/soldier_view.ts:922:        const drumMesh = new CylinderMesh();
+scripts/client/soldier_view.ts:944:    const packMesh = new BoxMesh();
+scripts/client/soldier_view.ts:951:    const bandMesh = new BoxMesh();
+scripts/client/soldier_view.ts:983:            const mesh = new BoxMesh();
+scripts/client/soldier_view.ts:989:            const bandMesh = new BoxMesh();
+scripts/client/soldier_view.ts:999:        const spotMesh = new BoxMesh();
+scripts/client/streak_fx.ts:17:    BoxMesh,
+scripts/client/streak_fx.ts:19:    CylinderMesh,
+scripts/client/streak_fx.ts:25:    PrismMesh,
+scripts/client/streak_fx.ts:231:    private readonly debrisMesh = new PrismMesh();
+scripts/client/streak_tablet.ts:13:    BoxMesh,
+scripts/client/streak_tablet.ts:64:    const mesh = new BoxMesh();
+scripts/client/street_fidelity.ts:1:import { Color, Mesh, MeshInstance3D, Node3D, Shader, ShaderMaterial, StandardMaterial3D, SurfaceTool, Vector3 } from "godot";
+scripts/client/street_fidelity.ts:39:    const tools = new Map<string, SurfaceTool>();
+scripts/client/street_fidelity.ts:44:            tool = new SurfaceTool();
+scripts/client/supply_drop_view.ts:12:    BoxMesh,
+scripts/client/supply_drop_view.ts:112:    const mesh = new BoxMesh();
+scripts/client/western_block_architecture.ts:3:import { Color, FileAccess, Mesh, MeshInstance3D, Node3D, PackedScene, Shader, ShaderMaterial, StandardMaterial3D, SurfaceTool, Vector2, Vector3 } from "godot";
+scripts/client/western_block_architecture.ts:119:        const tool = new SurfaceTool();
+scripts/client/western_block_dressing.ts:5:import { Basis, BoxMesh, Mesh, MeshInstance3D, Node3D, SurfaceTool, Transform3D, Vector3 } from "godot";
+scripts/client/western_block_dressing.ts:26:    private readonly batches = new Map<Finish, SurfaceTool>();
+scripts/client/western_block_dressing.ts:27:    private tool(finish: Finish): SurfaceTool {
+scripts/client/western_block_dressing.ts:30:            tool = new SurfaceTool();
+scripts/client/western_block_dressing.ts:37:        const shape = new BoxMesh();
+scripts/client/western_block_lighting.ts:3:    BoxMesh,
+scripts/client/western_block_lighting.ts:17:    SurfaceTool,
+scripts/client/western_block_lighting.ts:135:                tool = new SurfaceTool();
+scripts/client/western_block_pavement.ts:1:import { ArrayMesh, Color, Mesh, SurfaceTool, Vector2, Vector3 } from "godot";
+scripts/client/western_block_pavement.ts:6:export function appendGroundFacets(tool: SurfaceTool, triangle: PavementTriangle, lift: number): void {
+scripts/client/western_block_pavement.ts:28:    const tool = new SurfaceTool();
+scripts/client/western_block_pavement.ts:42:export function appendPavementFaces(tool: SurfaceTool, faces: readonly PavementFace[]): void {
+scripts/client/western_block_pavement.ts:50:            // SurfaceTool fixes its vertex format on the first vertex. The
+scripts/client/western_block_road_markings.ts:1:import { Color, Mesh, MeshInstance3D, Node3D, Shader, ShaderMaterial, SurfaceTool, Vector3 } from "godot";
+scripts/client/western_block_road_markings.ts:25:    const tool = new SurfaceTool();
+scripts/client/western_block_street_kit.ts:1:import { Basis, BoxMesh, Mesh, MeshInstance3D, Node3D, SurfaceTool, Transform3D, Vector3 } from "godot";
+scripts/client/western_block_street_kit.ts:18:    private readonly tools = new Map<WesternBlockFinish, SurfaceTool>();
+scripts/client/western_block_street_kit.ts:22:            tool = new SurfaceTool();
+scripts/client/western_block_street_kit.ts:26:        const shape = new BoxMesh();
+scripts/clip_browser.ts:6:    BoxMesh,
+scripts/clip_browser.ts:546:        const mesh = new BoxMesh();
+scripts/combat_vfx.ts:4:    BoxMesh,
+scripts/combat_vfx.ts:8:    CylinderMesh,
+scripts/combat_vfx.ts:74:    readonly mesh: BoxMesh;
+scripts/combat_vfx.ts:94:    readonly mesh: CylinderMesh;
+scripts/combat_vfx.ts:504:        const mesh = new CylinderMesh();
+scripts/combat_vfx.ts:667:        const mesh = new BoxMesh();
+scripts/debug/study_palette_proxy_probe.ts:13:    SurfaceTool,
+scripts/debug/study_palette_proxy_probe.ts:31:        local: NonNullable<ReturnType<SurfaceTool["commit"]>>;
+scripts/debug/study_palette_proxy_probe.ts:32:        world: NonNullable<ReturnType<SurfaceTool["commit"]>>;
+scripts/debug/study_palette_proxy_probe.ts:56:                                const tool = new SurfaceTool();
+scripts/dumbo_cordon_visuals.ts:1:import { BaseMaterial3D, Basis, Transform3D, BoxMesh, Color, Mesh, MeshInstance3D, Node3D, StandardMaterial3D, SurfaceTool, Vector3 } from "godot";
+scripts/dumbo_cordon_visuals.ts:13:        tool = new SurfaceTool();
+scripts/dumbo_cordon_visuals.ts:52:        mesh = new BoxMesh();
+scripts/dumbo_cordon_visuals.ts:68:            const tool = new SurfaceTool();
+scripts/dumbo_cordon_visuals.ts:99:export function waterfrontCordonGeometry(): { mesh: BoxMesh; transform: Transform3D }[] {
+scripts/dumbo_cordon_visuals.ts:100:    const result: { mesh: BoxMesh; transform: Transform3D }[] = [];
+scripts/dumbo_cordon_visuals.ts:107:            const mesh = new BoxMesh();
+scripts/dumbo_survival_arena.ts:4:    BoxMesh,
+scripts/dumbo_survival_arena.ts:201:    const mesh = new BoxMesh();
+scripts/dumbo_survival_bake.ts:3:    BoxMesh,
+scripts/dumbo_survival_bake.ts:58:            const mesh = new BoxMesh();
+scripts/dumbo_survival_bake.ts:75:            const mesh = new BoxMesh();
+scripts/environment_detail.ts:2:    BoxMesh,
+scripts/environment_detail.ts:8:    CylinderMesh,
+scripts/environment_detail.ts:19:    SurfaceTool,
+scripts/environment_detail.ts:73:        const tool = new SurfaceTool();
+scripts/environment_detail.ts:88:        const mesh = new CylinderMesh();
+scripts/environment_detail.ts:95:    const mesh = new BoxMesh();
+scripts/environment_detail.ts:116:    const tool = new SurfaceTool();
+scripts/environment_detail.ts:163:    const tool = new SurfaceTool();
+scripts/environment_detail.ts:213:    const tool = new SurfaceTool();
+scripts/environment_modules/module_instancer.ts:16:    SurfaceTool,
+scripts/environment_modules/module_instancer.ts:109:                const tool = new SurfaceTool();
+scripts/environment_modules/module_meshes.ts:18:    SurfaceTool,
+scripts/environment_modules/module_meshes.ts:67:        const tool = new SurfaceTool();
+scripts/fixtures/waterfront_material_validation.ts:1:import { ArrayMesh, Color, FileAccess, Mesh, MeshInstance3D, Node3D, StandardMaterial3D, SurfaceTool, Vector3 } from "godot";
+scripts/fixtures/waterfront_material_validation.ts:11:            const tool = new SurfaceTool();
+scripts/game_ui.ts:19:    SphereMesh,
+scripts/game_ui.ts:490:    const mesh = new SphereMesh();
+scripts/game_world.ts:14:    CylinderMesh,
+scripts/game_world.ts:19:    BoxMesh,
+scripts/game_world.ts:40:    SphereMesh,
+scripts/game_world.ts:925:            const box = new BoxMesh();
+scripts/game_world.ts:1155:        const sphere = new SphereMesh();
+scripts/game_world.ts:2336:            const box = new BoxMesh();
+scripts/game_world.ts:2363:            const mesh = new BoxMesh();
+scripts/game_world.ts:2474:        const box = new BoxMesh();
+scripts/game_world.ts:2528:        const box = new BoxMesh();
+scripts/mixamo_walk_demo.ts:5:    BoxMesh,
+scripts/mixamo_walk_demo.ts:118:            const box = new BoxMesh();
+scripts/mixamo_walk_demo.ts:186:                const box = new BoxMesh();
+scripts/shield_asset_review.ts:4:    BoxMesh,
+scripts/shield_asset_review.ts:37:                const mesh = new BoxMesh();
+scripts/study_lightmaps.ts:7:    BoxMesh,
+scripts/study_lightmaps.ts:110:                (node.mesh instanceof ArrayMesh || node.mesh instanceof BoxMesh) &&
+tools/maps/modules/build-garden-yard-showcase.mjs:45:[sub_resource type="BoxMesh" id="Floor"]
+tools/maps/modules/build-garden-yard-showcase.mjs:51:[sub_resource type="BoxMesh" id="Marker"]
+tools/maps/modules/build-showcase.mjs:102:[sub_resource type="BoxMesh" id="Floor"]
+tools/maps/modules/build-showcase.mjs:110:[sub_resource type="BoxMesh" id="Marker"]
+tools/maps/study/README.md:77:light to dynamic meshes. Opaque static ArrayMesh/BoxMesh geometry gets derived
