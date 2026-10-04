@@ -1,0 +1,1493 @@
+{
+  "schemaVersion": 1,
+  "batch": "hunyuan-batch-02",
+  "date": "2026-10-04",
+  "task": "CONCEPT stage only for #930",
+  "game": "BattleDuty-aimbot",
+  "gameRepository": "KamranAsif/Godmode.exe-roguelite",
+  "sourceCommit": "333ab8333a60b319e8a873fd568fd392313164c2",
+  "worktree": "C:/work/godmode-roguelite-worktrees/hunyuan-batch-02",
+  "branch": "concept/hunyuan-batch-02-20261004",
+  "measurementMethod": "World metres, local X width / Y height / Z depth. Exact bounds from current compiled moduleRegistry().get(id).build(0) surfaces, including active withStreetFurniture overrides; manual component extents for detached lamp/signal heads and embedded landing fittings. Placement footprints are recorded separately because some exceed rendered geometry. Concept proportions are visual design targets, not dimensionally certified meshes.",
+  "audit": "https://github.com/KamranAsif/godmode-evidence/tree/main/2026-10-04/primitive-audit",
+  "captureMethod": "Fresh native GodotJS D3D12 captures via godot-cli on this source commit. Owned game run --fixture roguelite --offscreen --inspect --allow-actions; debug_console freeFly/flyTo/lookAt and photo_mode; captureManagedScreenshot. Engine stopped after capture.",
+  "renderWindow": {
+    "mode": 0,
+    "position": [
+      -10000,
+      -10000
+    ],
+    "size": [
+      1280,
+      720
+    ]
+  },
+  "session": "s-mutwj6xf-23a86ad8f0ba",
+  "instance": "batch02-concepts",
+  "style": "Original faceted low-poly triangular geometry, flat-shaded normals, one flat albedo colour per material, morning-lit, one isolated object in 3/4 view on a light plain background; no text, noise, grain, weathering, painted seams or smooth product shading.",
+  "styleAuthority": [
+    "ART_STYLE.md world-surface rule 2026-10-02",
+    "scripts/environment_modules/module_contract.ts MATERIAL_SLOTS",
+    "Kamran chat instructions for this batch"
+  ],
+  "generationTool": "built-in image_gen; one call per object/variant",
+  "future3DPreference": [
+    "Tencent Hunyuan free quota first",
+    "Meshy overflow"
+  ],
+  "approvalGate": "Kamran must approve each exact concept image before any submission to either 3D provider. All new concepts here are pending approval.",
+  "modelsGenerated": 0,
+  "gameSourceChanges": false,
+  "conceptImageCount": 14,
+  "currentCaptureCount": 15,
+  "items": [
+    {
+      "number": 1,
+      "id": "newspaper-vending-box",
+      "name": "Newspaper vending box",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/environment_modules/entry_street_details_modules.generated.ts:123",
+      "measurements": [
+        {
+          "sourceId": "newspaper-box-muted-red",
+          "sizeMetresXYZ": [
+            0.58,
+            1.05,
+            0.5640000000000001
+          ],
+          "localBounds": {
+            "min": [
+              -0.29,
+              0,
+              -0.25
+            ],
+            "max": [
+              0.29,
+              1.05,
+              0.314
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.58,
+            "height": 1.05,
+            "depth": 0.314,
+            "inset": 0.25,
+            "minY": 0
+          },
+          "note": null
+        },
+        {
+          "sourceId": "newspaper-box-slate",
+          "sizeMetresXYZ": [
+            0.58,
+            1.05,
+            0.5640000000000001
+          ],
+          "localBounds": {
+            "min": [
+              -0.29,
+              0,
+              -0.25
+            ],
+            "max": [
+              0.29,
+              1.05,
+              0.314
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.58,
+            "height": 1.05,
+            "depth": 0.314,
+            "inset": 0.25,
+            "minY": 0
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "newspaper-vending-box-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "4140b2e1bbee4f62a49086435c654dc3e873838b829b2ea479d7c0df54b899ba",
+        "bytes": 962768
+      },
+      "capture": {
+        "id": "newspaper-vending-box",
+        "sourceAuditId": "newspaper-box-muted-red",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -553.3134801678092,
+            -15.129999999999999,
+            -301.0721868759954
+          ],
+          "lookAt": {
+            "yaw": 1.8246782845445786,
+            "pitch": -0.502048635398502
+          }
+        },
+        "sourcePlacement": {
+          "module": "newspaper-box-muted-red",
+          "variant": 0,
+          "position": [
+            -554.717,
+            -16.43,
+            -300.708
+          ],
+          "yaw": 1.5246782845445785
+        },
+        "file": "newspaper-vending-box-current.png",
+        "capturedAt": "2026-10-04T14:21:36.088Z"
+      },
+      "concepts": [
+        {
+          "file": "newspaper-vending-box-concept.png",
+          "pixelSize": [
+            1123,
+            1401
+          ],
+          "sha256": "046d32cc917e140fe3d0377838d9491c5d287143965c7ba46ed16718cc653ad3",
+          "bytes": 1299959,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: a small newspaper vending box, 0.58 m wide, 1.05 m tall, 0.56 m deep. Upright squat rectangular waist-high street machine on a short dark charcoal integral foot, shallow sloped faceted hood, front hinged display door, dark blue-grey opaque glass inset with a small stack of blank ivory papers visible at the bottom, integrated short vertical graphite door handle on the right, small recessed horizontal coin slot above. Body warm muted terracotta #9c7563; dark slate #475666 metal fittings, charcoal #303b47 foot. Large body and hood planes must have visible flat-shaded triangular facets, not smooth boxes. Preserve simple silhouette, no signage. This is the terracotta colourway of ONE model; slate colourway will use identical geometry.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        },
+        {
+          "file": "newspaper-vending-box-slate-concept.png",
+          "pixelSize": [
+            1122,
+            1402
+          ],
+          "sha256": "00bae1f39ce3b23052bd58fa2719d542e4c440742f512091c0b1a70c220a1c35",
+          "bytes": 1252906,
+          "prompt": "Use case: precise-object-edit. Recolour this exact faceted newspaper vending box into its SECOND colourway. Change ONLY the terracotta-painted body, hood and door to solid slate-grey #4d5259. Preserve exact geometry, proportions, silhouette, camera angle, framing, lighting, triangular hard-shaded facets, foot, hinges, handle, coin slot, glass and blank newspaper stack. Same one model, no design changes. Keep one flat albedo colour per material, no texture, grain, wear, logos or text. Preserve the plain light ivory background and morning lighting. All shading variation must come from orientation of actual large triangular flat-shaded faces. ONE isolated object only. Suitable single image-to-3D reference for Tencent Hunyuan or Meshy.",
+          "generator": "built-in image_gen edit",
+          "approval": "pending",
+          "referenceImage": "newspaper-vending-box-concept.png",
+          "purpose": "Second colourway; use the same model, not a second geometry generation."
+        }
+      ],
+      "additionalCurrent": {
+        "file": "newspaper-vending-box-slate-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "f0c6923af90e5b2fad83fd042ec910145e9c0e7a530f94a768c80c52751da3da",
+        "bytes": 838448,
+        "capture": {
+          "id": "newspaper-vending-box-slate",
+          "sourceAuditId": "newspaper-box-slate",
+          "pose": {
+            "freeFly": true,
+            "flyTo": [
+              -593.475546489534,
+              -16,
+              -307.8618625505465
+            ],
+            "lookAt": {
+              "yaw": -2.3422060286352218,
+              "pitch": -0.502048635398501
+            }
+          },
+          "sourcePlacement": {
+            "module": "newspaper-box-slate",
+            "variant": 0,
+            "position": [
+              -592.436,
+              -17.3,
+              -306.851
+            ],
+            "yaw": -2.6422060286352216
+          },
+          "file": "newspaper-vending-box-slate-current.png",
+          "capturedAt": "2026-10-04T14:21:41.095Z"
+        }
+      },
+      "productionNote": "One model with terracotta and slate material variants. Primary terracotta image supplies geometry; slate is a recolour reference."
+    },
+    {
+      "number": 2,
+      "id": "utility-cabinet",
+      "name": "Utility cabinet",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "tools/maps/modules/street.mjs:92",
+      "measurements": [
+        {
+          "sourceId": "utility-box",
+          "sizeMetresXYZ": [
+            0.85,
+            1.46,
+            0.6
+          ],
+          "localBounds": {
+            "min": [
+              -0.425,
+              0,
+              -0.3
+            ],
+            "max": [
+              0.425,
+              1.46,
+              0.3
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.85,
+            "height": 1.46,
+            "depth": 0.3,
+            "inset": 0.3
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "utility-cabinet-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "dd2bbc1356da3923a9f6d9d4898711f61d2e8b87c60e7c4068b3dc1ffd63111d",
+        "bytes": 868988
+      },
+      "capture": {
+        "id": "utility-cabinet",
+        "sourceAuditId": "utility-box",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -560.1106828597748,
+            -15.75,
+            -354.05633496855734
+          ],
+          "lookAt": {
+            "yaw": 1.2663458307744797,
+            "pitch": -0.39186898642063017
+          }
+        },
+        "sourcePlacement": {
+          "module": "utility-box",
+          "variant": 0,
+          "position": [
+            -561.494,
+            -17.05,
+            -354.491
+          ],
+          "yaw": 0.9663458307744798
+        },
+        "file": "utility-cabinet-current.png",
+        "capturedAt": "2026-10-04T14:21:44.945Z"
+      },
+      "concepts": [
+        {
+          "file": "utility-cabinet-concept.png",
+          "pixelSize": [
+            1145,
+            1374
+          ],
+          "sha256": "3ade0aa5901f001d745f84162d1aac277ee999b62b5c5ca40bb3e18d69405567",
+          "bytes": 1154622,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: a sidewalk utility cabinet, 0.85 m wide, 1.46 m high, 0.60 m deep including its low concrete plinth. Slate-blue #475666 upright metal body, charcoal #303b47 fittings, pale cool grey #b8c1c7 plinth. Angular chamfered corners and subtly sloping rain cap, one closed front access door with two chunky attached hinges and a short recessed latch, four broad actual cut-in vent openings near top, no outlined panel grids. Broad front and side surfaces with conspicuous large triangular flat-shaded facets. Simple original grounded municipal equipment.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "id": "yard-ac-condenser",
+      "name": "Yard AC condenser",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/environment_modules/garden_yard_modules.generated.ts:79",
+      "measurements": [
+        {
+          "sourceId": "ac-medium-yard",
+          "sizeMetresXYZ": [
+            1.315,
+            1.34,
+            1.205
+          ],
+          "localBounds": {
+            "min": [
+              -0.665,
+              0,
+              -0.57
+            ],
+            "max": [
+              0.65,
+              1.34,
+              0.635
+            ]
+          },
+          "placementFootprint": {
+            "width": 1.35,
+            "height": 1.412,
+            "depth": 0.6900000000000001,
+            "inset": 0.625
+          },
+          "note": null
+        },
+        {
+          "sourceId": "ac-small-yard",
+          "sizeMetresXYZ": [
+            0.8150000000000001,
+            1,
+            0.825
+          ],
+          "localBounds": {
+            "min": [
+              -0.41500000000000004,
+              0,
+              -0.38
+            ],
+            "max": [
+              0.4,
+              1,
+              0.445
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.85,
+            "height": 1.062,
+            "depth": 0.49,
+            "inset": 0.425
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "yard-ac-condenser-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "8b4f0255ae53208072a7f344de5ce8d680cb3307930d14252af995b40dfdec39",
+        "bytes": 840105
+      },
+      "capture": {
+        "id": "yard-ac-condenser",
+        "sourceAuditId": "ac-medium-yard",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -549.2787457165454,
+            -14.286999999999999,
+            -269.53314270664947
+          ],
+          "lookAt": {
+            "yaw": -0.09929807813168734,
+            "pitch": -0.4053644609897449
+          }
+        },
+        "sourcePlacement": {
+          "module": "ac-medium-yard",
+          "variant": 0,
+          "position": [
+            -549.135,
+            -15.587,
+            -270.976
+          ],
+          "yaw": -0.39929807813168733
+        },
+        "file": "yard-ac-condenser-current.png",
+        "capturedAt": "2026-10-04T14:21:47.332Z"
+      },
+      "concepts": [
+        {
+          "file": "yard-ac-condenser-concept.png",
+          "pixelSize": [
+            1312,
+            1199
+          ],
+          "sha256": "ad5a328723eba680d3fe742ec4f82017377e35f30ad348a615e777d3273b49a5",
+          "bytes": 1590433,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: one compact outdoor yard air-conditioning condenser, 1.315 m wide, 1.34 m high, 1.205 m deep. Warm pale-grey #a6a8a6 faceted cabinet on two short charcoal #262b30 skids. A single FRONT-facing axial fan fills most of the front, chunky twelve-sided polygon ring, five angular fan blades and sparse thick radial guard spokes; deep graphite interior. Several wide geometric louvres on right side, small attached disconnect block near lower right. Top is closed, polygonal corner chamfers. Make front, top and sides unmistakably coarse triangulated flat-shaded geometry rather than smooth product photography. Clean simple mechanics, no fine grille mesh.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ],
+      "productionNote": "One medium-family concept; retain small-family placements using a fitted size variant."
+    },
+    {
+      "number": 4,
+      "id": "fire-hydrant",
+      "name": "Fire hydrant",
+      "status": "reuse-approved-model-concept-skipped",
+      "geometrySource": "scripts/environment_modules/entry_street_details_modules.generated.ts:105",
+      "measurements": [
+        {
+          "sourceId": "hydrant",
+          "sizeMetresXYZ": [
+            0.6,
+            0.92,
+            0.47000000000000003
+          ],
+          "localBounds": {
+            "min": [
+              -0.3,
+              0,
+              -0.2
+            ],
+            "max": [
+              0.3,
+              0.92,
+              0.27
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.6000000000000001,
+            "height": 0.92,
+            "depth": 0.27,
+            "inset": 0.2
+          },
+          "note": null
+        },
+        {
+          "sourceId": "hydrant-cast-red",
+          "sizeMetresXYZ": [
+            0.76,
+            1.095,
+            0.5292324335849338
+          ],
+          "localBounds": {
+            "min": [
+              -0.38,
+              0,
+              -0.2092324335849338
+            ],
+            "max": [
+              0.38,
+              1.095,
+              0.32
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.76,
+            "height": 1.095,
+            "depth": 0.32,
+            "inset": 0.2092324335849338,
+            "minY": 0
+          },
+          "note": null
+        },
+        {
+          "sourceId": "hydrant-iron-tall",
+          "sizeMetresXYZ": [
+            0.76,
+            1.095,
+            0.5292324335849338
+          ],
+          "localBounds": {
+            "min": [
+              -0.38,
+              0,
+              -0.2092324335849338
+            ],
+            "max": [
+              0.38,
+              1.095,
+              0.32
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.76,
+            "height": 1.095,
+            "depth": 0.32,
+            "inset": 0.2092324335849338,
+            "minY": 0
+          },
+          "note": null
+        },
+        {
+          "sourceId": "hydrant-stone-short",
+          "sizeMetresXYZ": [
+            0.76,
+            0.8949999999999999,
+            0.5292324335849338
+          ],
+          "localBounds": {
+            "min": [
+              -0.38,
+              0,
+              -0.2092324335849338
+            ],
+            "max": [
+              0.38,
+              0.8949999999999999,
+              0.32
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.76,
+            "height": 0.8949999999999999,
+            "depth": 0.32,
+            "inset": 0.2092324335849338,
+            "minY": 0
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "fire-hydrant-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "9e118cad0d501c34cc99354d162cc533cb5b057ece76bbb682eb7cfb575a7dcc",
+        "bytes": 1008009
+      },
+      "capture": {
+        "id": "fire-hydrant",
+        "sourceAuditId": "hydrant-iron-tall",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -553.5356418704287,
+            -15.919999999999998,
+            -370.98531592299196
+          ],
+          "lookAt": {
+            "yaw": -0.43545389266755935,
+            "pitch": -0.49052987532303777
+          }
+        },
+        "sourcePlacement": {
+          "module": "hydrant-iron-tall",
+          "variant": 0,
+          "position": [
+            -552.924,
+            -17.22,
+            -372.3
+          ],
+          "yaw": -0.7354538926675593
+        },
+        "file": "fire-hydrant-current.png",
+        "capturedAt": "2026-10-04T14:21:50.629Z"
+      },
+      "concepts": [],
+      "approvedModel": {
+        "file": "assets/props/street/hydrant.glb.bin",
+        "sizeMetresXYZ": [
+          0.5,
+          0.68,
+          0.38
+        ],
+        "triangles": 16000,
+        "sha256": "52944a2d46b7969b73d6432c8375a896bb29e6cdd9324f6d52b94d152e9e4639",
+        "approvalSource": "assets/props/street/provenance.json: All twelve Tencent v2 models approved LGTM in chat",
+        "dimensionsSource": "dimensionsBlenderXYZ [0.50,0.38,0.68], converted from Blender Z-up to Godot Y-up",
+        "existingLoader": "scripts/dumbo_survival_arena.ts:96 streetPropScene; GLTFDocument.append_from_buffer, foot at local origin, applyQuietStreetPropMaterials"
+      },
+      "reuseDecision": "Approved capped hydrant with outlets can replace all four procedural visual families. No new concept or 3D generation is needed. Later integration must preserve existing placement/collision and fit the visual dimensions per family.",
+      "fitScalesXYZ": [
+        {
+          "family": "hydrant",
+          "scale": [
+            1.2,
+            1.352941,
+            1.236842
+          ]
+        },
+        {
+          "family": "hydrant-cast-red",
+          "scale": [
+            1.52,
+            1.610294,
+            1.392717
+          ]
+        },
+        {
+          "family": "hydrant-iron-tall",
+          "scale": [
+            1.52,
+            1.610294,
+            1.392717
+          ]
+        },
+        {
+          "family": "hydrant-stone-short",
+          "scale": [
+            1.52,
+            1.316176,
+            1.392717
+          ]
+        }
+      ],
+      "integrationPerformed": false
+    },
+    {
+      "number": 5,
+      "id": "wheelie-bin",
+      "name": "Wheelie bin",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/environment_modules/street_furniture.ts:159",
+      "measurements": [
+        {
+          "sourceId": "street-bin-yard",
+          "sizeMetresXYZ": [
+            0.62,
+            0.875,
+            0.605
+          ],
+          "localBounds": {
+            "min": [
+              -0.31,
+              0,
+              -0.305
+            ],
+            "max": [
+              0.31,
+              0.875,
+              0.3
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.68,
+            "height": 0.888,
+            "depth": 0.32335921554035224,
+            "inset": 0.32335921554035224
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "wheelie-bin-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "b107b120aa16459104661173ad98fde91a2447dd85aad142e824babb9fd055ff",
+        "bytes": 934439
+      },
+      "capture": {
+        "id": "wheelie-bin",
+        "sourceAuditId": "street-bin-yard",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -542.2261822069465,
+            -14.216,
+            -278.2988501108574
+          ],
+          "lookAt": {
+            "yaw": 3.0422446213234373,
+            "pitch": -0.5423240128839174
+          }
+        },
+        "sourcePlacement": {
+          "module": "street-bin-yard",
+          "variant": 0,
+          "position": [
+            -542.37,
+            -15.516,
+            -276.856
+          ],
+          "yaw": 2.7422446213234375
+        },
+        "file": "wheelie-bin-current.png",
+        "capturedAt": "2026-10-04T14:21:54.568Z"
+      },
+      "concepts": [
+        {
+          "file": "wheelie-bin-concept.png",
+          "pixelSize": [
+            1145,
+            1374
+          ],
+          "sha256": "b48ebffd368d4713956c40b6531c3dec35ff298e650b0cd2f3ff8d014b905917",
+          "bytes": 1209168,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: one wheeled household wheelie refuse bin, 0.62 m wide, 0.875 m tall, 0.605 m deep. Closed thick hinged lid, slightly tapered single body, integrated rear pushing handle, two visible low-sided wheels on rear axle with chunky black tyres and charcoal hubs, no loose rubbish. Body dark charcoal #262b30, lid slate-grey #4d5259, wheels warm near-black #211f1b. Use wide flat-shaded triangular body planes, angular polygon bevels and octagonal wheels. Slight 3/4 angle that reveals both front body and one rear wheel, all parts connected. No surface ribs or decorative triangle outlines.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "id": "simple-park-bench",
+      "name": "Simple park bench",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/street_dressing_geometry.ts:19",
+      "measurements": [
+        {
+          "sourceId": "simple-park-bench",
+          "sizeMetresXYZ": [
+            2.1,
+            0.975,
+            0.6
+          ],
+          "localBounds": {
+            "min": [
+              -1.05,
+              -0.035,
+              -0.3
+            ],
+            "max": [
+              1.05,
+              0.94,
+              0.3
+            ]
+          },
+          "placementFootprint": null,
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "simple-park-bench-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "bcae3a9ab46ba9c0287dd76c0fe6cae39d27095b0dab53c7199e969deb1772a5",
+        "bytes": 1118710
+      },
+      "capture": {
+        "id": "simple-park-bench",
+        "sourceAuditId": "street-dressing-bench",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -799.3339592545335,
+            -15.572000122070312,
+            -259.1978948767855
+          ],
+          "lookAt": {
+            "yaw": -1.9423109240162546,
+            "pitch": -0.4562605585303223
+          }
+        },
+        "sourcePlacement": null,
+        "file": "simple-park-bench-current.png",
+        "capturedAt": "2026-10-04T14:21:59.054Z"
+      },
+      "concepts": [
+        {
+          "file": "simple-park-bench-concept.png",
+          "pixelSize": [
+            1536,
+            1024
+          ],
+          "sha256": "25e46764c1c79a1857d5fdfb6575155a1286d3e98ffe8e0fc289dc9bce31ac6d",
+          "bytes": 1547853,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: one simple park bench, 2.10 m long, 0.94 m high above ground, 0.60 m deep; seat at 0.46 m. Four thick separated wooden seat slats and three back slats, each solid warm brown #5c4029, two charcoal #262b30 integral side leg frames and simple broad armrests. Small practical polygonal edge bevels; gently inclined back. EVERY wooden slat and steel member has large visible triangular flat-shaded planes, no wood grain, bolts texture or damage. Preserve readable space beneath seat and gaps between slats. Complete freestanding bench, no ground pad. Clearly faceted triangular style, not smooth furniture.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ],
+      "measurementNote": "Neutral level ground. Total visual bounds include 0.035 m buried feet; height above paving is 0.94 m. Ground fitting varies by placement."
+    },
+    {
+      "number": 7,
+      "id": "street-lamp-head",
+      "name": "Street-lamp head",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/street_dressing_geometry.ts:36",
+      "measurements": [
+        {
+          "sourceId": "street-lamp-head",
+          "sizeMetresXYZ": [
+            0.44,
+            0.28,
+            0.49
+          ],
+          "localBounds": {
+            "min": [
+              -0.22,
+              5.12,
+              0.54
+            ],
+            "max": [
+              0.22,
+              5.4,
+              1.03
+            ]
+          },
+          "placementFootprint": null,
+          "note": "Head and underside lens only, excludes pole/arm"
+        }
+      ],
+      "current": {
+        "file": "street-lamp-head-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "e6873cac76d82f7455b158f7035d770de15a9db6698f0fa69fd9add4f6fa1b95",
+        "bytes": 1009275
+      },
+      "capture": {
+        "id": "street-lamp-head",
+        "sourceAuditId": "street-dressing-lamp",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -791.6063065646649,
+            -11.842000122070312,
+            -267.6354017609994
+          ],
+          "lookAt": {
+            "yaw": -1.7423109240162304,
+            "pitch": -0.10791248881668229
+          }
+        },
+        "sourcePlacement": null,
+        "file": "street-lamp-head-current.png",
+        "capturedAt": "2026-10-04T14:25:18.957Z"
+      },
+      "concepts": [
+        {
+          "file": "street-lamp-head-concept.png",
+          "pixelSize": [
+            1536,
+            1024
+          ],
+          "sha256": "f8b5facc0f501686e14325519a005fcd61bb05fdaffd74aed8728f9a69f7746c",
+          "bytes": 1653759,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: ONE detached street-lamp head ONLY, not the pole or street arm. Compact rectangular lamp head 0.44 m wide, 0.28 m high, 0.49 m long, original angular tapered graphite #262b30 cast housing with broad asymmetric triangular facets and chamfered polygonal corners. Pale warm ivory #c2baab thick unlit diffuser underneath, shallow rear mounting socket integral to the housing. Three-quarter view slightly from below so underside lens and faceted top/side silhouette are both readable. No glowing lamp, cable, floating extra parts or pole. Exaggerate coarse hard-normal triangular surface shading while preserving credible street light function.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "id": "traffic-signal-head",
+      "name": "Traffic signal head",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/environment_modules/entry_street_details_modules.generated.ts:64",
+      "measurements": [
+        {
+          "sourceId": "traffic-signal-head",
+          "sizeMetresXYZ": [
+            0.42,
+            1.06,
+            0.35
+          ],
+          "localBounds": {
+            "min": [
+              -0.21,
+              -0.53,
+              -0.16
+            ],
+            "max": [
+              0.21,
+              0.53,
+              0.19
+            ]
+          },
+          "placementFootprint": null,
+          "note": "Housing, lenses and visors only"
+        }
+      ],
+      "current": {
+        "file": "traffic-signal-head-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "ee04b7673240c01bf52cef987ad36e48d2bc1512d0bb7a6397b2b621e19e6e3d",
+        "bytes": 993790
+      },
+      "capture": {
+        "id": "traffic-signal-head",
+        "sourceAuditId": "traffic-light-corner-pole",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -553.2817208813162,
+            -13.199999999999998,
+            -314.70511731992843
+          ],
+          "lookAt": {
+            "yaw": -0.5830692794169113,
+            "pitch": -0.119428926018341
+          }
+        },
+        "sourcePlacement": {
+          "module": "traffic-light-corner-pole",
+          "variant": 0,
+          "position": [
+            -552.353,
+            -16.4,
+            -315.892
+          ],
+          "yaw": -1.0330692794168996
+        },
+        "file": "traffic-signal-head-current.png",
+        "capturedAt": "2026-10-04T14:22:11.830Z"
+      },
+      "concepts": [
+        {
+          "file": "traffic-signal-head-concept.png",
+          "pixelSize": [
+            1024,
+            1536
+          ],
+          "sha256": "efeb47464524f8f46d79e9e895db55746633ddb7af5f891b49ba054adb4165a2",
+          "bytes": 1540646,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: ONE detached vertical traffic-signal head ONLY, 0.42 m wide, 1.06 m high and 0.35 m deep including sun visors. Three stacked polygonal circular lenses, top muted brick-red #9c7563, middle brown amber #8a6b40, bottom desaturated green #3b473b, all unlit matte, each recessed in its own broad angular protective visor. Deep charcoal #262b30 single tall housing with broad slanted triangular planes and hard polygonal bevels; back integral shallow mounting bracket. No pole, mast arm, wires, sign or extra objects. Clearly show front lenses and right side depth in a three-quarter view, complete bounding silhouette. Lamps are flat colours, never emit glow.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "id": "landing-service-cabinet",
+      "name": "Landing service cabinet",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/environment_modules/waterfront_pier.ts:234",
+      "measurements": [
+        {
+          "sourceId": "landing-service-cabinet",
+          "sizeMetresXYZ": [
+            1.1,
+            1.4,
+            1.05
+          ],
+          "localBounds": {
+            "min": null,
+            "max": null
+          },
+          "placementFootprint": null,
+          "note": "Local landing u/Y/v, includes front inset fitting"
+        }
+      ],
+      "current": {
+        "file": "landing-service-cabinet-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "6f634ad541844cd670794338751d693b41b37dac7dc4ca21c86b8f410bc50023",
+        "bytes": 1013186
+      },
+      "capture": {
+        "id": "landing-service-cabinet",
+        "sourceAuditId": "landing-service-cabinet",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -584.1822999999999,
+            -13.072000000000001,
+            -434.13190000000003
+          ],
+          "lookAt": {
+            "yaw": 3.0650639341603663,
+            "pitch": -0.4281388548322896
+          }
+        },
+        "sourcePlacement": null,
+        "file": "landing-service-cabinet-current.png",
+        "capturedAt": "2026-10-04T14:22:18.019Z"
+      },
+      "concepts": [
+        {
+          "file": "landing-service-cabinet-concept.png",
+          "pixelSize": [
+            1145,
+            1374
+          ],
+          "sha256": "5c5028243dd7320535e34b614ff2e244dab235ec9a635da23e9dc091185857bb",
+          "bytes": 1371506,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: one compact dock landing service cabinet, 1.10 m wide, 1.40 m tall, 1.05 m deep, a squat freestanding marine electrical equipment cabinet. Warm slate-grey #4d5259 faceted metal body, angular sloped rain cap, charcoal #262b30 hinges and latch; one closed front access door with small pale ivory #c2baab square inset instrument cover, no readable instrumentation, simple thick feet integral to body. Broad irregular triangular hard-shaded front and side planes, flat colours only. Original practical solid cabinet with deeply polygonal corners, not smooth industrial photo. No dock, wires, pole or surrounding objects.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "id": "roof-hvac-basic-unit",
+      "name": "Roof HVAC basic unit",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "tools/maps/modules/roof.mjs:4",
+      "measurements": [
+        {
+          "sourceId": "ac-large",
+          "sizeMetresXYZ": [
+            2.2,
+            1.712,
+            1.665
+          ],
+          "localBounds": {
+            "min": [
+              -1.1,
+              0,
+              -0.8
+            ],
+            "max": [
+              1.1,
+              1.712,
+              0.865
+            ]
+          },
+          "placementFootprint": {
+            "width": 2.2,
+            "height": 1.712,
+            "depth": 0.8650000000000001,
+            "inset": 0.8
+          },
+          "note": null
+        },
+        {
+          "sourceId": "ac-medium",
+          "sizeMetresXYZ": [
+            1.35,
+            1.412,
+            1.315
+          ],
+          "localBounds": {
+            "min": [
+              -0.675,
+              0,
+              -0.625
+            ],
+            "max": [
+              0.675,
+              1.412,
+              0.69
+            ]
+          },
+          "placementFootprint": {
+            "width": 1.35,
+            "height": 1.412,
+            "depth": 0.6900000000000001,
+            "inset": 0.625
+          },
+          "note": null
+        },
+        {
+          "sourceId": "ac-small",
+          "sizeMetresXYZ": [
+            0.85,
+            1.062,
+            0.915
+          ],
+          "localBounds": {
+            "min": [
+              -0.425,
+              0,
+              -0.425
+            ],
+            "max": [
+              0.425,
+              1.062,
+              0.49
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.85,
+            "height": 1.062,
+            "depth": 0.49,
+            "inset": 0.425
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "roof-hvac-basic-unit-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "129cb8609a5d3a665a4716c836ae2898f32591f0ac698b5f987c0a5c2389fdc3",
+        "bytes": 514895
+      },
+      "capture": {
+        "id": "roof-hvac-basic-unit",
+        "sourceAuditId": "ac-large",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -515.8440073188884,
+            0.5299999999999998,
+            -339.60727298385746
+          ],
+          "lookAt": {
+            "yaw": 1.9207963267949049,
+            "pitch": -0.591599710335113
+          }
+        },
+        "sourcePlacement": {
+          "module": "ac-large",
+          "variant": 0,
+          "position": [
+            -518.85,
+            -2.47,
+            -338.51
+          ],
+          "yaw": 1.5707963267948966
+        },
+        "file": "roof-hvac-basic-unit-current.png",
+        "capturedAt": "2026-10-04T14:25:15.305Z"
+      },
+      "concepts": [
+        {
+          "file": "roof-hvac-basic-unit-concept.png",
+          "pixelSize": [
+            1402,
+            1122
+          ],
+          "sha256": "cb7ea23c612f71d0f16e18b46ec2553fd5bc812952cab3e868d7465f8a11c331",
+          "bytes": 1452359,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: one basic packaged rooftop HVAC unit, 2.20 m wide, 1.712 m high and 1.665 m deep including feet, fan guard and louvres. Low wide warm light-grey #a6a8a6 mechanical cabinet on two charcoal #262b30 skid rails, two TOP-facing fans side by side: visibly twelve-sided rims, chunky angular blades and sparse stout radial guards, graphite fan wells. Front lower intake with five broad geometric louvres and small attached disconnect box. Broad visible triangular polygonal planes across roof, front and side, hard normals, angular corner bevels. Solid plausible construction and flat colours, no photoreal metallic texture or tiny grille mesh. No external ductwork or roof platform.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ],
+      "productionNote": "Concept depicts the large two-fan basic unit. Measurements also cover medium/small one-fan basic units; detailed roof-ac-*-grille family is outside this concept."
+    },
+    {
+      "number": 11,
+      "id": "roof-water-tank",
+      "name": "Roof water tank",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "tools/maps/modules/roof.mjs",
+      "measurements": [
+        {
+          "sourceId": "water-tank",
+          "sizeMetresXYZ": [
+            2.38,
+            4.15,
+            2.3875
+          ],
+          "localBounds": {
+            "min": [
+              -1.19,
+              0,
+              -1.19
+            ],
+            "max": [
+              1.19,
+              4.15,
+              1.1975
+            ]
+          },
+          "placementFootprint": {
+            "width": 2.38,
+            "height": 4.15,
+            "depth": 1.1975,
+            "inset": 1.19
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "roof-water-tank-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "9e5588a14956b70d222a1fa5a38d59536873400e506b1f591dc8e3ced2448756",
+        "bytes": 424032
+      },
+      "capture": {
+        "id": "roof-water-tank",
+        "sourceAuditId": "water-tank",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -589.8052643134441,
+            29.939999999999998,
+            -224.89669633316277
+          ],
+          "lookAt": {
+            "yaw": 4.671871533043954,
+            "pitch": 0.08653037361711421
+          }
+        },
+        "sourcePlacement": {
+          "module": "water-tank",
+          "variant": 0,
+          "position": [
+            -585.866,
+            28.29,
+            -224.737
+          ],
+          "yaw": 4.371871533043954
+        },
+        "file": "roof-water-tank-current.png",
+        "capturedAt": "2026-10-04T14:22:24.514Z"
+      },
+      "concepts": [
+        {
+          "file": "roof-water-tank-concept.png",
+          "pixelSize": [
+            1145,
+            1374
+          ],
+          "sha256": "930e2b1ee8def02f31d895efee06a8dfdd35f5466bd2c4e4d446d0baa844f225",
+          "bytes": 1120559,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: ONE rooftop water tank assembly, 2.38 m diameter footprint, 4.15 m total height including its raised support. Traditional original cylindrical timber water reservoir on four dark charcoal #262b30 braced legs, tank bottom at 1.4 m, squat broad brown #5c4029 barrel with a shallow twelve-sided polygonal conical cap. Two thick dark steel bands physically wrap the tank, one small attached ladder, no surrounding roof. Timber body consists of large hard-shaded triangular geometric planes, polygonal cylinder with 10 to 12 sides, faceted conical cap. One flat brown material for wood: NO stave lines, plank seams, wood grain or weathering. Sparse chunky X braces, visible openings under tank. Entire cap, legs and ladder in frame, clean three-quarter view. Strong facets, never smooth curved shading.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "id": "roof-vent",
+      "name": "Roof vent",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/environment_modules/roof_modules.generated.ts",
+      "measurements": [
+        {
+          "sourceId": "roof-vent",
+          "sizeMetresXYZ": [
+            0.68,
+            1.1,
+            0.68
+          ],
+          "localBounds": {
+            "min": [
+              -0.34,
+              0,
+              -0.34
+            ],
+            "max": [
+              0.34,
+              1.1,
+              0.34
+            ]
+          },
+          "placementFootprint": {
+            "width": 0.68,
+            "height": 1.1,
+            "depth": 0.34,
+            "inset": 0.34
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "roof-vent-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "82e20d1ab0ff4e97b47adf482977ed4173a4589433df44e85528953434ab5395",
+        "bytes": 499128
+      },
+      "capture": {
+        "id": "roof-vent",
+        "sourceAuditId": "roof-vent",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -578.5015153311105,
+            -11.58,
+            -292.97929091080084
+          ],
+          "lookAt": {
+            "yaw": -1.707282383180562,
+            "pitch": -0.48924114790449874
+          }
+        },
+        "sourcePlacement": {
+          "module": "roof-vent",
+          "variant": 0,
+          "position": [
+            -577.065,
+            -12.88,
+            -292.782
+          ],
+          "yaw": -2.007282383180562
+        },
+        "file": "roof-vent-current.png",
+        "capturedAt": "2026-10-04T14:22:27.234Z"
+      },
+      "concepts": [
+        {
+          "file": "roof-vent-concept.png",
+          "pixelSize": [
+            1024,
+            1536
+          ],
+          "sha256": "2ec836e56ca320007c3e4f4a399a3f7e6f7a244ccf949e81817b5138af05cdbe",
+          "bytes": 1316124,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: one rooftop mushroom exhaust vent, 0.68 m maximum cap width and depth, 1.10 m total height. Slim vertical octagonal light-grey #a6a8a6 metal pipe rising from a square low pale concrete #a8a499 flashing foot, wide shallow polygonal rain cap with twelve-sided rim, open dark charcoal #262b30 vent gap below the cap supported by three short chunky struts. Broad triangular facets in cap, neck and base, crisp discontinuous face shading, no smooth cylinder. Entire connected vent assembly fully visible, original simple grounded construction, no roof, duct run, steam or surrounding props.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "id": "landing-rubber-fender",
+      "name": "Landing rubber fender",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/environment_modules/waterfront_pier.ts:195",
+      "measurements": [
+        {
+          "sourceId": "landingFacets single fender",
+          "sizeMetresXYZ": [
+            0.34,
+            3.62,
+            0.34
+          ],
+          "note": "Rubber body radius 0.17 m; y from waterY+0.6 (-19.242) to floorY-0.9 (-15.622). Ten-sided cylinder. Existing placements are paired at three stations (six bodies).",
+          "waterY": -19.842,
+          "floorY": -14.722,
+          "suspensionEndpointY": [
+            -14.822,
+            -15.922
+          ],
+          "suspensionRadius": 0.022,
+          "suspensionLocalV": [
+            0.25,
+            0.55
+          ],
+          "bodyTopToUpperSuspensionEndpointMetres": 0.8,
+          "overallNominalHeightWithSuspensionMetres": 4.42,
+          "noteOnOverall": "Endpoint extents exclude strap beam thickness. Concept shows one suspended body; reuse twice per paired placement."
+        }
+      ],
+      "current": {
+        "file": "landing-rubber-fender-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "7aee093bb19f9e7e50ecc41128cea78c2a0db2d6cfbbd64807ec8762cae4cd6f",
+        "bytes": 721917
+      },
+      "capture": {
+        "id": "landing-rubber-fender",
+        "sourceAuditId": "landing-rubber-fenders",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -586.2952,
+            -15.322000000000001,
+            -440.51259999999996
+          ],
+          "lookAt": {
+            "yaw": 2.7192604327380883,
+            "pitch": -0.42177361071802966
+          }
+        },
+        "sourcePlacement": null,
+        "file": "landing-rubber-fender-current.png",
+        "capturedAt": "2026-10-04T14:25:10.749Z"
+      },
+      "concepts": [
+        {
+          "file": "landing-rubber-fender-concept.png",
+          "pixelSize": [
+            1024,
+            1536
+          ],
+          "sha256": "6e5f08a80f7f72b3fb148b7389da4b9d755e082111c147a966ab1097d69578e4",
+          "bytes": 1247614,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: ONE long hanging marine rubber dock fender, 0.34 m maximum diameter and 3.62 m rubber-body length, vertical with two attached short flat suspension straps extending 0.80 m above the top. Solid elongated ten-sided polygonal cylinder of dark charcoal rubber #262b30, slightly tapered polygon ends and simple thick end collars. Clearly angled triangular flat-shaded planes along the body, hard edges and matte solid uniform albedo. Straps dark slate steel #4d5259, integral practical mounting eyes, no dangling fine chain. Depict one fender only, not the paired installation, all connected parts visible from top straps to bottom tip. No dock, water, gantry, tire or display stand. Bright morning light must reveal the facets on the dark rubber.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "id": "garden-shed",
+      "name": "Garden shed",
+      "status": "concept-awaiting-Kamran-approval",
+      "geometrySource": "scripts/environment_modules/yard_shed_lamp_modules.generated.ts:19",
+      "measurements": [
+        {
+          "sourceId": "yard-shed-board-gable",
+          "sizeMetresXYZ": [
+            2.2,
+            2.4,
+            1.9
+          ],
+          "localBounds": {
+            "min": [
+              -1.1,
+              0,
+              -0.95
+            ],
+            "max": [
+              1.1,
+              2.4,
+              0.95
+            ]
+          },
+          "placementFootprint": {
+            "width": 2.2,
+            "height": 2.4,
+            "depth": 0.95,
+            "inset": 0.95
+          },
+          "note": null
+        }
+      ],
+      "current": {
+        "file": "garden-shed-current.png",
+        "pixelSize": [
+          1280,
+          720
+        ],
+        "sha256": "92ef2d08ed400c12de0b8fc14d67fcc2c1b64326fd1ba2fc6d67ee70b1c2a6e1",
+        "bytes": 948250
+      },
+      "capture": {
+        "id": "garden-shed",
+        "sourceAuditId": "yard-shed-board-gable",
+        "pose": {
+          "freeFly": true,
+          "flyTo": [
+            -471.07683318199804,
+            -12.027000000000001,
+            -305.49418860860203
+          ],
+          "lookAt": {
+            "yaw": -1.8582873877491575,
+            "pitch": -0.2914567944778678
+          }
+        },
+        "sourcePlacement": {
+          "module": "yard-shed-board-gable",
+          "variant": 0,
+          "position": [
+            -467.241,
+            -14.327,
+            -304.36
+          ],
+          "yaw": -2.208287387749151
+        },
+        "file": "garden-shed-current.png",
+        "capturedAt": "2026-10-04T14:25:13.143Z"
+      },
+      "concepts": [
+        {
+          "file": "garden-shed-concept.png",
+          "pixelSize": [
+            1254,
+            1254
+          ],
+          "sha256": "813f619834b24a745ff819e11564baa8df01d59505c43cc8889892a62d535fe5",
+          "bytes": 1072019,
+          "prompt": "Use case: stylized-concept. Original BattleDuty-aimbot environment prop concept and image-to-3D reference for Tencent Hunyuan or Meshy. ONE complete isolated object, centered, clean front-right three-quarter view, all extremities visible, plain light ivory background with only a faint contact shadow. Bright morning sun from upper left, cool sky fill. SIGNATURE FACETED LOW-POLY TRIANGULAR GEOMETRY: broad visibly angled triangular planes across the actual surfaces, flat-shaded hard normals and polygonal silhouette, clearly stepped lighting between facets. Each material has ONE uniform flat albedo colour; facet tonal differences come ONLY from plane orientation and lighting. No smooth shading, no gradients painted on the object, no noise, weathering, grain, texture, drawn seams, outlines, wireframes, labels, text, branding, logos, humans, surrounding scenery or display platform. Grounded believable construction with purposeful low-sided bevels, polygonal rounded parts and sparse chunky functional fittings. Do not turn surface triangulation into decorative embossed triangles. No glossy photorealism. Show depth and all attached parts clearly for single-image 3D reconstruction. Subject: ONE small garden storage shed, 2.20 m wide, 2.40 m high and 1.90 m deep including overhanging eaves. Compact original gabled shed of solid warm brown timber #5c4029 with warm slate-grey #807a73 simple pitched roof, narrow pale ivory #c2baab door surround and corner trim, charcoal #262b30 practical two hinges and short latch. One closed front door and one small dark blue-grey #29384d right-side window. No planks drawn on surface, NO board lines, grain, roof tiles, shingle seams, wear or stains. Large conspicuous triangular flat-shaded planes in walls, door and roof slopes; angular low-poly silhouette and purposefully faceted roof ridge. Tiny integral low foundation only, no garden, fence, plants, tools or scenery. Complete shed fully in frame in a clean front-right three-quarter view.",
+          "generator": "built-in image_gen",
+          "approval": "pending",
+          "referenceImage": null
+        }
+      ]
+    }
+  ]
+}
