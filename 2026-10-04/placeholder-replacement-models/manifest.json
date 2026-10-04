@@ -1,0 +1,71 @@
+{
+  "stage": "raw model review",
+  "conceptApprovalDate": "2026-10-04",
+  "quote": "The concepts looks fine",
+  "provider": "Tencent Hunyuan 3D V3.1",
+  "polygonSelection": "500k",
+  "generationsUsed": 2,
+  "variants": 0,
+  "rawRepository": "KamranAsif/Godmode.exe-art-source",
+  "rawBranch": "assets/placeholder-models-20261004",
+  "models": [
+    {
+      "asset": "ammo",
+      "creationId": "000b3806-09d4-42c3-a7f4-8f050a2029f8",
+      "taskId": "r_8cfb61afc03411f181abe2b54b129978",
+      "rawModelSha256": "f98026db1de6c024b9a50ad3a461cfe1dd751a0acaa4a4d6e43cd3681a20d28b",
+      "rawPath": "art-source://3d-source/hunyuan/placeholder-ammo-crate-20261004/model.glb",
+      "triangles": 500000,
+      "embeddedImages": 3,
+      "rawBoundsSizeXYZ": [
+        0.9934560358524323,
+        0.492100131046264,
+        0.634480104688119
+      ],
+      "targetEnvelopeMetersXYZ": [
+        0.5,
+        0.3,
+        0.32
+      ],
+      "modelApproval": "pending",
+      "generationsUsed": 1,
+      "reviewRenders": [
+        "ammo-crate-01.png",
+        "ammo-crate-02.png",
+        "ammo-crate-03.png",
+        "ammo-crate-04.png"
+      ],
+      "laterProcessing": "Planar reduction and flat-colour material preparation after model approval."
+    },
+    {
+      "asset": "tablet",
+      "creationId": "f0b0797c-3a09-495b-b8f3-63bb2c8fa299",
+      "taskId": "r_3d70371dc03511f18af6166e9d240373",
+      "rawModelSha256": "ae97c7b35c20a86c90e80c8a614a47f524eae3a0d157933ef0d9625f3c3efd7b",
+      "rawPath": "art-source://3d-source/hunyuan/placeholder-killstreak-tablet-20261004/model.glb",
+      "triangles": 500000,
+      "embeddedImages": 3,
+      "rawBoundsSizeXYZ": [
+        1.0763309597969055,
+        0.6040930886612297,
+        0.44318098175290976
+      ],
+      "targetEnvelopeMetersXYZ": [
+        0.25,
+        0.17,
+        null
+      ],
+      "modelApproval": "pending",
+      "generationsUsed": 1,
+      "reviewRenders": [
+        "killstreak-tablet-01.png",
+        "killstreak-tablet-02.png",
+        "killstreak-tablet-03.png",
+        "killstreak-tablet-04.png"
+      ],
+      "laterProcessing": "Retain detail and textures; prepare first-person scale, screen surface and arms integration only after model approval."
+    }
+  ],
+  "icons": "icons/provenance.json",
+  "integration": "None. Models await Kamran approval; icon masks are prepared but not wired."
+}
