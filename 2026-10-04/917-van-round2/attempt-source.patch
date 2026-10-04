@@ -1,0 +1,170 @@
+diff --git a/tools/assets/build-vehicle-models.py b/tools/assets/build-vehicle-models.py
+index ddc7335ca..cbfb9cb71 100644
+--- a/tools/assets/build-vehicle-models.py
++++ b/tools/assets/build-vehicle-models.py
+@@ -1,6 +1,6 @@
+ """Prepare approved Tencent vehicles with their authored PBR atlases and smooth normals.
+ 
+-Run python tools/assets/build-vehicle-models.py [--check]. Requires NumPy, Pillow and pnpm.
++Run python tools/assets/build-vehicle-models.py [--check]. Requires NumPy, SciPy, Pillow and pnpm.
+ Source archives are immutable and checked against the street provenance receipt.
+ Runtime bounds and tyre floor stay identical to the approved road-contact fit.
+ """
+@@ -15,6 +15,7 @@ import tempfile
+ from pathlib import Path
+ import numpy as np
+ from PIL import Image
++from scipy.spatial import cKDTree
+ 
+ ROOT = Path(__file__).resolve().parents[2]
+ OUTPUT = ROOT / "scripts/environment_modules/vehicle_models.generated.ts"
+@@ -50,10 +51,11 @@ def glb_bytes(gltf, binary):
+ 
+ 
+ def fair_body_panels(positions, normals, uv, indices, gltf, binary):
+-    """Weld UV seams for 25 mm bounded normal-direction fairing of blue body paint.
++    """Fair noisy painted skin over a physical radius, sharing UV seam displacement.
+ 
+     Tyres, trim, glass, lamps and extrema remain fixed. Atlas bytes/UVs stay
+-    unchanged; body normals are area-weighted with a 45-degree crease guard.
++    unchanged. Spatial samples avoid the source's highly uneven triangle density;
++    a 35-degree normal guard separates neighbouring panels and raised trim.
+     """
+     primitive = gltf["meshes"][0]["primitives"][0]
+     material = gltf["materials"][primitive.get("material", 0)]
+@@ -79,30 +81,60 @@ def fair_body_panels(positions, normals, uv, indices, gltf, binary):
+     painted = np.bincount(weld, weights=paint, minlength=count) / repeats > 0.9
+     painted &= start[:, 1] > 0.55
+     painted[weld[np.concatenate([np.argmin(positions, axis=0), np.argmax(positions, axis=0)])]] = False
+-    faces = weld[indices.reshape(-1, 3)]
+-    edges = np.unique(np.sort(np.concatenate([faces[:, [0, 1]], faces[:, [1, 2]], faces[:, [2, 0]]]), axis=1), axis=0)
+-    edges = np.concatenate([edges, edges[:, ::-1]])
+-    src, dst = edges.T
+-    degree = np.bincount(src, minlength=count)
+-    for _ in range(6):
+-        sums = np.zeros_like(smooth)
+-        np.add.at(sums, src, smooth[dst])
+-        delta = sums / np.maximum(degree[:, None], 1) - smooth
+-        movement = np.sum(delta * direction, axis=1)[:, None] * direction * 0.5
+-        smooth[painted] += movement[painted]
++    selected = np.flatnonzero(painted)
++    # One sample per 25 mm cell: a dense triangulation must not overwhelm a
++    # sparse neighbour or make six edge steps cover only a few millimetres.
++    _, cells = np.unique(np.concatenate([np.floor(start[selected] / 0.025), np.round(direction[selected] / 0.5)], axis=1), axis=0, return_inverse=True)
++    cell_count = cells.max() + 1 if len(cells) else 0
++    repeats_cells = np.bincount(cells, minlength=cell_count)
++    def samples(values):
++        sums = np.zeros((cell_count, 3))
++        np.add.at(sums, cells, values[selected])
++        return sums / np.maximum(repeats_cells[:, None], 1)
++    if not len(selected):
++        return positions.copy(), normals.copy()
++    centres = samples(start)
++    sample_normals = samples(direction)
++    sample_normals /= np.maximum(np.linalg.norm(sample_normals, axis=1)[:, None], 1e-12)
++    distance, neighbours = cKDTree(centres).query(start[selected], k=min(192, cell_count), distance_upper_bound=0.18)
++    distance = distance[:, None] if distance.ndim == 1 else distance
++    neighbours = neighbours[:, None] if neighbours.ndim == 1 else neighbours
++    valid = neighbours < cell_count
++    neighbours = np.minimum(neighbours, cell_count - 1)
++    same_panel = np.sum(sample_normals[neighbours] * direction[selected, None], axis=2) > np.cos(np.deg2rad(35))
++    weight = np.exp(-np.square(distance / 0.09)) * valid * same_panel
++    supported = weight.sum(axis=1) > 1e-12
++    divisor = np.maximum(weight.sum(axis=1)[:, None], 1e-12)
++    for _ in range(4):
++        local = samples(smooth)[neighbours]
++        mean = np.sum(local * weight[:, :, None], axis=1) / divisor
++        mean[~supported] = smooth[selected][~supported]
++        delta = mean - smooth[selected]
++        movement = np.sum(delta * direction[selected], axis=1)[:, None] * direction[selected] * 0.65
++        smooth[selected] += movement
+         offset = smooth - start
+-        smooth = start + offset * np.minimum(1, 0.025 / np.maximum(np.linalg.norm(offset, axis=1)[:, None], 1e-12))
++        smooth = start + offset * np.minimum(1, 0.06 / np.maximum(np.linalg.norm(offset, axis=1)[:, None], 1e-12))
+     # Apply only the welded displacement, never the averaged source coordinates:
+     # tiny seam differences must not drift extrema on a second regeneration.
+     result = np.clip(positions + (smooth - start)[weld], positions.min(axis=0), positions.max(axis=0)).astype(np.float32)
+     triangles = result[indices.reshape(-1, 3)]
+     area = np.cross(triangles[:, 1] - triangles[:, 0], triangles[:, 2] - triangles[:, 0])
+     sums = np.zeros_like(smooth)
++    faces = weld[indices.reshape(-1, 3)]
+     for corner in range(3):
+         np.add.at(sums, faces[:, corner], area)
+     sums /= np.maximum(np.linalg.norm(sums, axis=1)[:, None], 1e-12)
+-    update = painted[weld] & (np.sum(sums[weld] * normals, axis=1) > 0.707)
+-    normals[update] = sums[weld][update]
++    # Recompute every selected normal. Keeping authored normals at the noisiest
++    # vertices (the previous 45-degree update veto) retained visible creases.
++    # Radius-average the new normals within the same panel, including UV seams.
++    panel_normals = samples(sums)
++    normal_mean = np.sum(panel_normals[neighbours] * weight[:, :, None], axis=1) / divisor
++    missing = np.linalg.norm(normal_mean, axis=1) < 1e-12
++    normal_mean[missing] = direction[selected][missing]
++    normal_mean /= np.maximum(np.linalg.norm(normal_mean, axis=1)[:, None], 1e-12)
++    sums[selected] = normal_mean
++    normals = normals.copy()
++    normals[painted[weld]] = sums[weld][painted[weld]]
+     print("faired body vertices", int(painted.sum()), "maximum displacement", float(np.linalg.norm(result - positions, axis=1).max()))
+     return result, normals
+ 
+@@ -194,7 +226,7 @@ def main():
+         row.update(generator="tools/assets/build-vehicle-models.py", sha256=hashlib.sha256(data).hexdigest(),
+                    triangles=triangles, textureLimit=4096, baseColorMultiplier=1, normalStrength=0.35, roughness="source PBR atlas", sourceModified=False)
+         if model == "van":
+-            row["panelFairing"] = {"iterations": 6, "maxDisplacementMeters": 0.025, "selection": "atlas blue paint above tyres; extrema protected", "normals": "welded area weighted, 45 degree crease guard", "textures": "embedded source bytes unchanged"}
++            row["panelFairing"] = {"iterations": 4, "radiusMeters": 0.18, "sampleSpacingMeters": 0.025, "maxDisplacementMeters": 0.06, "selection": "atlas blue paint above tyres; extrema protected", "normals": "recomputed welded area weighted, spatial average within 35 degree panel guard", "textures": "embedded source bytes unchanged"}
+         models[model] = {"bounds": np.round(bounds, 3).tolist(), "path": "res://assets/props/street/" + row["asset"], "triangles": triangles}
+         print(model, triangles, "triangles", "bounds", bounds)
+     text = "// Generated by tools/assets/build-vehicle-models.py; approved textured meshes, metres, +X forward, tyres on Y=0.\n"
+diff --git a/tools/assets/test-vehicle-panels.py b/tools/assets/test-vehicle-panels.py
+index 0dd82b23e..3cf27f534 100644
+--- a/tools/assets/test-vehicle-panels.py
++++ b/tools/assets/test-vehicle-panels.py
+@@ -13,7 +13,7 @@ spec.loader.exec_module(builder)
+ 
+ class BodyPanelTests(unittest.TestCase):
+     def fixture(self, blue=True):
+-        positions = np.array([[x * 0.25, 0.7 + y * 0.25, ((x + y) % 2) * 0.018] for y in range(7) for x in range(7)], dtype=np.float32)
++        positions = np.array([[x * 0.025, 0.7 + y * 0.025, ((x + y) % 2) * 0.018] for y in range(7) for x in range(7)], dtype=np.float32)
+         normals = np.tile([0., 0., 1.], (len(positions), 1)).astype(np.float32)
+         uv = np.full((len(positions), 2), 0.5, dtype=np.float32)
+         faces = []
+@@ -37,7 +37,7 @@ class BodyPanelTests(unittest.TestCase):
+         result, normals = builder.fair_body_panels(*args)
+         move = np.linalg.norm(result - before, axis=1)
+         self.assertGreater(np.count_nonzero(move > 1e-6), 10)
+-        self.assertLessEqual(float(move.max()), 0.025001)
++        self.assertLessEqual(float(move.max()), 0.060001)
+         np.testing.assert_array_equal(result.min(axis=0), before.min(axis=0))
+         np.testing.assert_array_equal(result.max(axis=0), before.max(axis=0))
+         np.testing.assert_array_equal(uv, uv_before)
+@@ -54,6 +54,29 @@ class BodyPanelTests(unittest.TestCase):
+             result, _ = builder.fair_body_panels(*args)
+             np.testing.assert_array_equal(result, before)
+ 
++    def test_uv_seam_duplicates_share_positions_and_recomputed_normals(self):
++        args = list(self.fixture())
++        size = len(args[0])
++        for i in range(3):
++            args[i] = np.concatenate([args[i], args[i]])
++        # The seam has independent indices, UVs and deliberately bad authored normals.
++        args[2][size:] = 0.6
++        args[1][size:] = [0.2, 0, np.sqrt(0.96)]
++        args[3] = np.concatenate([args[3], args[3] + size])
++        result, normals = builder.fair_body_panels(*args)
++        np.testing.assert_array_equal(result[:size], result[size:])
++        changed = np.linalg.norm(result[:size] - args[0][:size], axis=1) > 1e-6
++        np.testing.assert_allclose(normals[:size][changed], normals[size:][changed], atol=1e-6)
++
++    def test_recomputed_normals_remove_noise_inside_a_panel(self):
++        args = list(self.fixture())
++        # Authored normals alternate visibly despite belonging to one painted panel.
++        args[1][::2] = [0.3, 0, np.sqrt(0.91)]
++        args[1][1::2] = [-0.3, 0, np.sqrt(0.91)]
++        _, normals = builder.fair_body_panels(*args)
++        middle = np.array([y * 7 + x for y in range(2, 5) for x in range(2, 5)])
++        self.assertLess(float(np.ptp(normals[middle, 0])), 0.05)
++
+ 
+ if __name__ == "__main__":
+     unittest.main()
