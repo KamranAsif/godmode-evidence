@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-04",
+  "batch": "hunyuan-batch-01",
+  "game": "BattleDuty-aimbot",
+  "stage": "concept-only",
+  "sourceRepository": "KamranAsif/Godmode.exe-roguelite",
+  "sourceCommit": "bc5e7aa32",
+  "generator": "built-in image_gen",
+  "approvalStatus": "awaiting Kamran's approval of each exact image",
+  "threeDGenerationPerformed": false,
+  "dimensionsConvention": "Asset-local X x Y x Z in metres, Godot/glTF Y up. Current sizes are null when no current object exists; proposed dimensions are unapproved defaults.",
+  "items": [
+    {
+      "id": "parachute",
+      "whatItReplaces": "Nothing: new lane D streamer-return parachute canopy, lines and harness",
+      "currentSize": null,
+      "proposedSize": {
+        "x": 6,
+        "y": 5,
+        "z": 2.8,
+        "units": "m",
+        "axes": "X span; Y entire canopy-to-harness height; Z chord"
+      },
+      "conceptFile": "parachute-concept.png",
+      "currentFile": null,
+      "prompt": "Use case: stylized-concept. Asset type: original BattleDuty-aimbot game asset concept, for later Hunyuan image-to-3D after human approval. One complete isolated object, clean elevated three-quarter view, plain light warm-gray background, generous margin, no cropping. Faceted art-directed game realism, broad deliberate angular planes and clean readable silhouette, matte material colours, restrained warm morning sunlight and cool sky fill. Facets are geometry shading, never drawn triangle outlines. Broad quiet surfaces, no texture noise, grime, weathering, drawn panel outlines or decorative seam networks. No text, branding, labels, watermark, people, ground scenery, combat effects, collage or extra objects. Original fictional design; do not reproduce Call of Duty or Battlefield assets. Subject: one fully inflated rectangular ram-air parachute canopy with its attached suspension lines, risers and empty harness, no person. Proposed total envelope X width 6.0 m, Y height from canopy top to harness bottom 5.0 m, Z canopy chord 2.8 m; no existing mesh or measured envelope exists. Broad inflated low-poly fabric cells form an gently arched slate-blue canopy with a graphite underside; visible cell openings along the leading edge are real geometry, no painted seam lines. Clearly separated substantial pale-gray suspension cords attach along the canopy underside and converge coherently into two graphite risers and a single empty leg-loop harness below. Entire canopy, every line and harness visible, not tangled, no deployment bag, no dangling human. The canopy and harness are one connected asset; clean sparse line structure readable for 3D reconstruction.",
+      "currentReference": {
+        "type": "absent",
+        "reason": "No current parachute mesh or render found in latest origin/main. No current image invented.",
+        "sources": []
+      },
+      "visualReview": "Single inflated faceted canopy with connected lines, two risers and empty harness; complete silhouette and no person/text.",
+      "generationInputImages": [],
+      "conceptApproval": null,
+      "conceptSha256": "4ffc0151e60386ee85c2f95e2d208343688d51dc1ff6aa5177568cf1a7ce75ca",
+      "conceptPixels": [
+        1374,
+        1145
+      ]
+    },
+    {
+      "id": "parked-van",
+      "whatItReplaces": "assets/props/street/van.glb.bin (source panels creased, issue #917)",
+      "currentSize": {
+        "x": 5.14938497543335,
+        "y": 2.0991019056818914,
+        "z": 2.0019155740737915,
+        "units": "m"
+      },
+      "proposedSize": null,
+      "conceptFile": "parked-van-concept.png",
+      "currentFile": "parked-van-current.png",
+      "prompt": "Use case: stylized-concept. Asset type: original BattleDuty-aimbot game asset concept, for later Hunyuan image-to-3D after human approval. One complete isolated object, clean elevated three-quarter view, plain light warm-gray background, generous margin, no cropping. Faceted art-directed game realism, broad deliberate angular planes and clean readable silhouette, matte material colours, restrained warm morning sunlight and cool sky fill. Facets are geometry shading, never drawn triangle outlines. Broad quiet surfaces, no texture noise, grime, weathering, drawn panel outlines or decorative seam networks. No text, branding, labels, watermark, people, ground scenery, combat effects, collage or extra objects. Original fictional design; do not reproduce Call of Duty or Battlefield assets. Input image 1 is the located current source-model preview, geometry/proportion/colour reference only, ignore its black background and undesirable creased panel surfaces. Subject: one ordinary unbranded urban cargo van, long rectangular cargo compartment, short sloping front hood and cab, four normal rubber wheels, clear roof, dark cab and rear glass, sliding cargo side door and closed rear doors. Preserve current asset-local X length 5.149 m, Y height 2.099 m, Z width 2.002 m, forward along X. Muted slate-blue painted steel body, graphite bumpers and lower trim, dark gray wheel hubs, dark glass and small restrained functional amber lights. Broad cargo side and roof panels must be continuous, straight, smooth planar surfaces with no dents, no crease ridges, no random triangulated crumpling or hammered metal. Confine deliberate faceted shaping to coherent hood, wheel arches, bumper and silhouette transitions. Keep subtle clean material response and softly rounded wheel shapes, consistent with the approved parked-vehicle finish; no heavy texture or scratches. Preserve sensible cab/door openings without decorative painted linework. Front and long side visible.",
+      "currentReference": {
+        "type": "located source-model preview, not an in-game screenshot",
+        "source": "art-source://3d-source/hunyuan/asset-migration-batch-01-v2-20260930/07-van/preview.png",
+        "runtime": "assets/props/street/van.glb.bin",
+        "sourceSha256": "6990afb57bd9806c229453ac1bbd59477b15033553a845317a8a249743b3a911",
+        "runtimeSha256": "c77b414d4dd9efc29a50aac3fd8eea92597627df6bebb2024e76293ecd913488",
+        "measurement": "Actual GLB POSITION accessor min/max. Only mesh node has identity transform. Runtime module turns +X forward to +Z for parked placement with yaw -PI/2 and unit scale; the rotated local envelope is 2.002 x 2.099 x 5.149 m. Street placement retains +X forward. No scaled world AABB used."
+      },
+      "visualReview": "Original blue cargo silhouette and footprint retained. Cargo wall/roof panels read straight and uncreased; angular shaping restricted mostly to hood, cab and wheel arches.",
+      "generationInputImages": [
+        "parked-van-current.png"
+      ],
+      "conceptApproval": null,
+      "conceptSha256": "668aeb27005ac88233809d3ef6ed6f77b58344d270a7cf96e9146f414435d7b6",
+      "conceptPixels": [
+        1254,
+        1254
+      ],
+      "currentSha256": "8a874a80605f3024243c55dc49008ad878873c59881754e48673f39e43058735",
+      "currentPixels": [
+        512,
+        512
+      ]
+    },
+    {
+      "id": "ac130",
+      "whatItReplaces": "No existing aircraft body: AC-130 gameplay role currently draws an orbiting thermal camera, HUD, audio and tracers",
+      "currentSize": null,
+      "proposedSize": {
+        "x": 32,
+        "y": 10,
+        "z": 30,
+        "units": "m",
+        "axes": "X wingspan; Y height; Z fuselage length"
+      },
+      "conceptFile": "ac130-concept.png",
+      "currentFile": null,
+      "prompt": "Use case: stylized-concept. Asset type: original BattleDuty-aimbot game asset concept, for later Hunyuan image-to-3D after human approval. One complete isolated object, clean elevated three-quarter view, plain light warm-gray background, generous margin, no cropping. Faceted art-directed game realism, broad deliberate angular planes and clean readable silhouette, matte material colours, restrained warm morning sunlight and cool sky fill. Facets are geometry shading, never drawn triangle outlines. Broad quiet surfaces, no texture noise, grime, weathering, drawn panel outlines or decorative seam networks. No text, branding, labels, watermark, people, ground scenery, combat effects, collage or extra objects. Original fictional design; do not reproduce Call of Duty or Battlefield assets. Subject: one original fictional four-engine tactical turboprop gunship serving the AC-130 gameplay role, not an exact real manufacturer's aircraft. Proposed envelope X wingspan 32 m, Y height 10 m, Z fuselage length 30 m; no existing aircraft body or measured envelope exists. Robust angular high-wing transport fuselage, raised single tail fin, short blunt nose with dark cockpit windows, four clearly separated engine nacelles with stationary dark propeller blades, broad straight wings, landing gear retracted, closed underside. Show the left side with three distinctly sized short side-facing gun barrels grouped around mid-fuselage, communicating the existing 105/40/25 mm gameplay modes without cutaway or diagram. Purposeful original silhouette and polygon planes, matte cool slate-gray body, charcoal nacelles and barrels, no camouflage, insignia, text, decorative lights or missiles. Every wingtip, tail and propeller fits fully in frame, view slightly above front-left so fuselage and guns are legible.",
+      "currentReference": {
+        "type": "absent",
+        "reason": "No AC-130/gunship model found among tracked assets or local art-source archive. No current aircraft image invented.",
+        "sources": [
+          "scripts/client/killstreak_view.ts:633 (flyGunship camera/audio/tracers)",
+          "scripts/client/streak_fx.ts:561 and :611 (jet/bomber body rendering only)",
+          "packages/game-rules/src/killstreaks.ts:425 (orbit radius 75 m, altitude 95 m, lap 70 s; three gun modes)"
+        ]
+      },
+      "visualReview": "Four visible propeller nacelles, high wing, single tail and three left-side gun barrels; full isolated silhouette and morning rim light.",
+      "generationInputImages": [],
+      "conceptApproval": null,
+      "conceptSha256": "9ea7bd45d56ef9208b67f8ecb77ea54ed97d749591ee6f2854bac8bb67e8b794",
+      "conceptPixels": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "id": "insertion-helicopter",
+      "reason": "Reuse approved transport helicopter for rappel insertion; no new concept needed.",
+      "asset": "assets/aircraft/production/transport.glb",
+      "provenance": "assets/aircraft/production/provenance.json"
+    },
+    {
+      "id": "swat-insertion-van",
+      "reason": "Existing approved sentry is the SWAT van with roof turret. Reuse its vehicle design; return-specific door/turret handling is future integration work.",
+      "asset": "assets/enemies/production/sentry.glb",
+      "provenance": "assets/enemies/production/provenance.json"
+    },
+    {
+      "id": "stealth-bomber",
+      "reason": "Approved production model exists and is instantiated by StreakFx.buildPlane.",
+      "asset": "assets/ordnance/production/stealth-bomber.glb.bin",
+      "provenance": "assets/ordnance/production/provenance.json"
+    },
+    {
+      "id": "airstrike-jet",
+      "reason": "Approved production model exists and is instantiated by StreakFx.buildPlane.",
+      "asset": "assets/ordnance/production/airstrike-jet.glb.bin",
+      "provenance": "assets/ordnance/production/provenance.json"
+    },
+    {
+      "id": "predator-missile",
+      "reason": "Reuse approved rocket body as instructed; no separate concept. The current predator ride itself is a guided camera view, so body mounting is future integration work.",
+      "asset": "assets/ordnance/production/rocket.glb.bin",
+      "provenance": "assets/ordnance/production/provenance.json"
+    },
+    {
+      "id": "rc-xd",
+      "reason": "Approved remote bomb-car model already exists.",
+      "asset": "assets/enemies/production/rccar.glb",
+      "provenance": "assets/enemies/production/provenance.json"
+    }
+  ],
+  "additionalExistingModels": [
+    {
+      "id": "attack-dog",
+      "asset": "assets/characters/production/attack-dog",
+      "reason": "Existing approved asset; outside final requested scope."
+    },
+    {
+      "id": "drone",
+      "asset": "assets/enemies/production/drone.glb",
+      "reason": "Existing production asset; outside final requested scope."
+    },
+    {
+      "id": "kamikaze",
+      "asset": "assets/enemies/production/kamikaze.glb",
+      "reason": "Existing production asset; outside final requested scope."
+    },
+    {
+      "id": "uav",
+      "asset": "assets/aircraft/production/uav.glb.bin",
+      "reason": "Existing production asset; outside final requested scope."
+    },
+    {
+      "id": "support-transport",
+      "asset": "assets/support/production/transport.glb.bin",
+      "reason": "Existing approved support model; another transport reuse candidate."
+    }
+  ]
+}
