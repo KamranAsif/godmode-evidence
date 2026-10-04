@@ -8,9 +8,12 @@ Rendered run: PASS, all three returns fired during transit; landing and cleanup 
 GODMODE_FRAME_ERROR: 0
 All captures: 1920x1080, windowed and off-screen
 Transport: approved friendly transport reused
-Rope: thin tan procedural rope attached to the native Mixamo LeftHand grip socket, fingers closed
+Rope: thin brown procedural rope runs from inside the native Mixamo closed LeftHand grip socket to the transport
 Rappel: primary gun, ordinary ammo/aim/recoil paths
-Van: semantic street van with per-car dark SWAT paint, road footprint and rear-door street exit
+Van: authored semantic street van with per-car dark SWAT paint, road footprint and rear street step; no primitive vehicle parts or armour shell
 Canopy: primitive placeholder pending approval from the separate concept lane
 Merged Lane A hooks: extract at entry black, schedule chosen return at exit black, defer offers and drones through landing
-Actual Attack Helicopter ride: extraction, Lane A callback, rappel, touchdown and complete cleanup PASS on 7be9978f6
+Source commit: 8bf6298f69d94b8757d000a1adf40d19ea4c1b30
+Base main: ff11800053852e4ff8f7e869006ee6a3c5a818be (includes #940 and #941)
+Primary aiming and live ammo consumption during rappel: PASS
+Landing cleanup and window position/size: PASS
