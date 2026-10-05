@@ -1,0 +1,130 @@
+{
+  "approach": "native Mixamo mocap; scale-first fit; baked left support correction only; right hand and other mocap untouched",
+  "fps": 30,
+  "viewmodelFov": 50,
+  "sleeveRadiusScale": 0.7,
+  "handScale": 1.0,
+  "weaponScale": 1.1,
+  "supportCorrection": {
+    "method": "offline two-bone left arm only; native idle finger shape",
+    "releaseReloadPhase": [
+      0.16,
+      0.88
+    ],
+    "idleResidualOffsetMeters": [
+      0.012,
+      -0.005,
+      0
+    ]
+  },
+  "clips": {
+    "Idle": {
+      "sourceFile": "pistol-idle-aim.fbx",
+      "frames": 41,
+      "sha256": "41e9328abf2535c065ad24fa6e6645ef37a3d1976f0147509dd203ae5c79e572"
+    },
+    "ADS": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 31,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594"
+    },
+    "Fire": {
+      "sourceFile": "pistol-shoot.fbx",
+      "frames": 36,
+      "sha256": "cd5230b610e97626f195fd4182e39eced899741eff8da244ce0fce3c5e13e6f4"
+    },
+    "FireADS": {
+      "sourceFile": "pistol-shoot.fbx",
+      "frames": 36,
+      "sha256": "cd5230b610e97626f195fd4182e39eced899741eff8da244ce0fce3c5e13e6f4"
+    },
+    "SprintIn": {
+      "sourceFile": "pistol-run-aim.fbx",
+      "frames": 7,
+      "sha256": "a556fd295f59d627b3d87925466e5f03264dd81b5fe00a8dbc8b55e34ea5494f"
+    },
+    "Sprint": {
+      "sourceFile": "pistol-run-aim.fbx",
+      "frames": 23,
+      "sha256": "a556fd295f59d627b3d87925466e5f03264dd81b5fe00a8dbc8b55e34ea5494f"
+    },
+    "SwapIn": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 113,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594"
+    },
+    "SwapOut": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 113,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594"
+    },
+    "Reload": {
+      "sourceFile": "pistol-reload.fbx",
+      "frames": 150,
+      "sha256": "3b31fbca26c3d78919c1d83fc38a9a1ab89257a6473a4330fa9f1142974ad841"
+    }
+  },
+  "jointValidationMaxErrorMeters": {
+    "pistol-aim-holster": 1.5371536538355546e-06,
+    "pistol-idle-aim": 1.5371536538355546e-06,
+    "pistol-idle-alert": 1.5371536538355546e-06,
+    "pistol-reload": 1.5371536538355546e-06,
+    "pistol-run-aim": 1.5371536538355546e-06,
+    "pistol-run-carry": 1.5371536538355546e-06,
+    "pistol-shoot": 1.5371536538355546e-06
+  },
+  "savedRigSha256": "53af3356ac97b897f3a618cd8dff065dd62e6c0620d03bda73e44843b6ac69d4",
+  "gripBone": "mixamorig:RightHand",
+  "gripLocal": [
+    [
+      -0.2539304792881012,
+      -0.36065611243247986,
+      1.0076935291290283,
+      0.09784653782844543
+    ],
+    [
+      0.07801428437232971,
+      1.0266739130020142,
+      0.3871082365512848,
+      0.11979664862155914
+    ],
+    [
+      -1.0674419403076172,
+      0.1608300507068634,
+      -0.21142494678497314,
+      0.0074155256152153015
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "eyeRest": [
+    [
+      -0.9999999403953552,
+      0.0,
+      -8.742277657347586e-08,
+      0.0
+    ],
+    [
+      -8.742277657347586e-08,
+      3.4228538225988814e-08,
+      0.9999999403953552,
+      -0.10000000149011612
+    ],
+    [
+      0.0,
+      0.9999999403953552,
+      3.4228538225988814e-08,
+      1.6349999904632568
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}
