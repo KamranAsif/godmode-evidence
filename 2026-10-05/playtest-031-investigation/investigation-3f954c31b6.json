@@ -1,0 +1,91 @@
+{
+  "build": {
+    "tag": "v0.31",
+    "commit": "37ca73cf951ab0b7b95f0a4f0284298938afc8d0",
+    "zipSha256": "eb0989240abf5d292eb20047e5416a0e3b721457f159e93429414804b1298331",
+    "driver": "D3D12 Forward+",
+    "gpu": "AMD Radeon RX 9070 XT"
+  },
+  "damage": {
+    "originalExactFrameHealth": "Not preserved in the available smoke artifacts; no event/health snapshot for 09:48:46.160 UTC.",
+    "trigger": "CombatFeel.tookAHit calls LatticeView.hit only when an alive player loses health + armour. The full-screen lattice, clear center, unaffected gun and red damage/blood pass match the supplied capture.",
+    "freshRun": "Untouched release started at main menu, invincible on queued before GO LIVE. GODMODE_DEBUG_COMMAND=invincible:ok; repeated STATE lines alive=true hp=100 throughout the clean captures."
+  },
+  "rendering": {
+    "observedVisibleDefect": false,
+    "cleanCaptureDimensions": [
+      2560,
+      1442
+    ],
+    "upstreamIssue": "https://github.com/godotengine/godot/issues/123910",
+    "confirmedControl": "An isolated diagnostic copy of the embedded JavaScript sets the existing LightmapGI.light_data to null; all three error types disappear. This diagnostic executable is not a release and will not ship.",
+    "diagnosis": "Matches Forward+ lightmap pipeline precompilation before a baked receiver is visible. Shader files/includes are present in the original pack. Disabling threaded preloading or just its subthreads does not eliminate the errors.",
+    "materialIdentityLimit": "21 occurrences are failed pipeline creation attempts, not evidence of 21 distinct failing materials. Native errors contain no resource/RID identity. Logged the complete arena material/shader inventory and visibility controls; did not establish a one-to-one mapping of attempts to material names.",
+    "releaseDecision": "No visible defect demonstrated; removing LightmapGI would alter baked lighting, and a proper renderer fix needs an engine change. No source changes, PR or v0.31.1 release."
+  },
+  "counts": {
+    "original-world": {
+      "missingVertex": 21,
+      "nullPipeline": 21,
+      "invalidTask": 0
+    },
+    "original-verbose": {
+      "missingVertex": 21,
+      "nullPipeline": 21,
+      "invalidTask": 21
+    },
+    "serial-world": {
+      "missingVertex": 21,
+      "nullPipeline": 21,
+      "invalidTask": 18
+    },
+    "nopreload-world": {
+      "missingVertex": 21,
+      "nullPipeline": 21,
+      "invalidTask": 0
+    },
+    "diagnostic-none": {
+      "missingVertex": 14,
+      "nullPipeline": 14,
+      "invalidTask": 14
+    },
+    "diagnostic-faceted": {
+      "missingVertex": 14,
+      "nullPipeline": 14,
+      "invalidTask": 14
+    },
+    "diagnostic-standard": {
+      "missingVertex": 15,
+      "nullPipeline": 15,
+      "invalidTask": 15
+    },
+    "diagnostic-no-lightmap": {
+      "missingVertex": 0,
+      "nullPipeline": 0,
+      "invalidTask": 0
+    }
+  },
+  "captures": [
+    {
+      "source": "artifacts\\playtest-031\\screenshots\\clean-street.png",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/playtest-031-investigation/clean-street-0cb797f5e8.png",
+      "path": "2026-10-05/playtest-031-investigation/clean-street-0cb797f5e8.png",
+      "reused": false,
+      "inline": true
+    },
+    {
+      "source": "artifacts\\playtest-031\\screenshots\\clean-north.png",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/playtest-031-investigation/clean-north-56196c06d0.png",
+      "path": "2026-10-05/playtest-031-investigation/clean-north-56196c06d0.png",
+      "reused": false,
+      "inline": true
+    },
+    {
+      "source": "artifacts\\playtest-031\\screenshots\\clean-east.png",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/playtest-031-investigation/clean-east-42f7af4543.png",
+      "path": "2026-10-05/playtest-031-investigation/clean-east-42f7af4543.png",
+      "reused": false,
+      "inline": true
+    }
+  ]
+}
