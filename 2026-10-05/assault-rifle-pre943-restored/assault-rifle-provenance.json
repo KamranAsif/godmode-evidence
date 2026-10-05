@@ -1,0 +1,343 @@
+{
+  "approach": "native Mixamo mocap; fixed right-hand prop; baked left support and native idle index shape; no runtime IK",
+  "fps": 30,
+  "viewmodelFov": 50,
+  "sleeveRadiusScale": 0.7,
+  "handScale": 1.0,
+  "weaponScale": 1.1,
+  "supportCorrection": {
+    "method": "offline two-bone left arm only; native idle finger shape",
+    "releaseReloadPhase": [
+      0.16,
+      0.88
+    ],
+    "idleResidualOffsetMeters": [
+      0,
+      0,
+      0
+    ],
+    "palmContactLiftMeters": 0.0084
+  },
+  "clips": {
+    "Idle": {
+      "sourceFile": "rifle-aim.fbx",
+      "frames": 64,
+      "sha256": "bbeb63096d54ec077edb03afc051953f3d186862034b46a20857451b33253f21",
+      "mixamoName": "Pro Rifle Pack / idle aiming",
+      "reverse": false,
+      "trim": null,
+      "sourceFramesZeroBased": [
+        0,
+        63
+      ],
+      "reversed": false
+    },
+    "ADS": {
+      "sourceFile": "rifle-aim-down.fbx",
+      "frames": 46,
+      "sha256": "4eccda9ef2685439c27052dc54fe88ee3fc046cdf2d3b689c079991ec2f8f878",
+      "mixamoName": "Rifle Aim To Down (Rifle Aiming To Down)",
+      "reverse": true,
+      "trim": null,
+      "sourceFramesZeroBased": [
+        0,
+        45
+      ],
+      "reversed": true
+    },
+    "Fire": {
+      "sourceFile": "rifle-fire.fbx",
+      "frames": 36,
+      "sha256": "4b25dfd19a236dfce1fa2ecffa3c423ae47372711903c6ed4bf51690f01a2080",
+      "mixamoName": "Shooter Pack / firing rifle",
+      "reverse": false,
+      "trim": null,
+      "sourceFramesZeroBased": [
+        0,
+        35
+      ],
+      "reversed": false
+    },
+    "FireADS": {
+      "sourceFile": "rifle-fire.fbx",
+      "frames": 36,
+      "sha256": "4b25dfd19a236dfce1fa2ecffa3c423ae47372711903c6ed4bf51690f01a2080",
+      "mixamoName": "Shooter Pack / firing rifle",
+      "reverse": false,
+      "trim": null,
+      "sourceFramesZeroBased": [
+        0,
+        35
+      ],
+      "reversed": false
+    },
+    "SprintIn": {
+      "sourceFile": "rifle-sprint.fbx",
+      "frames": 7,
+      "sha256": "0dc0848243978a8005fd81c66757f1b6b3d1b437dfc1bd8fd31e3e355be24046",
+      "mixamoName": "Pro Rifle Pack / sprint forward",
+      "reverse": false,
+      "trim": [
+        0,
+        6
+      ],
+      "sourceFramesZeroBased": [
+        0,
+        6
+      ],
+      "reversed": false
+    },
+    "Sprint": {
+      "sourceFile": "rifle-sprint.fbx",
+      "frames": 16,
+      "sha256": "0dc0848243978a8005fd81c66757f1b6b3d1b437dfc1bd8fd31e3e355be24046",
+      "mixamoName": "Pro Rifle Pack / sprint forward",
+      "reverse": false,
+      "trim": null,
+      "sourceFramesZeroBased": [
+        0,
+        15
+      ],
+      "reversed": false
+    },
+    "SwapIn": {
+      "sourceFile": "rifle-put-away.fbx",
+      "frames": 70,
+      "sha256": "0d66c0b71ef4d29477504e208e28e79e92921bd9510c2905d2515177fd5c380f",
+      "mixamoName": "Rifle Put Away (Putting Rifle Away)",
+      "reverse": true,
+      "trim": null,
+      "sourceFramesZeroBased": [
+        0,
+        69
+      ],
+      "reversed": true
+    },
+    "SwapOut": {
+      "sourceFile": "rifle-put-away.fbx",
+      "frames": 70,
+      "sha256": "0d66c0b71ef4d29477504e208e28e79e92921bd9510c2905d2515177fd5c380f",
+      "mixamoName": "Rifle Put Away (Putting Rifle Away)",
+      "reverse": false,
+      "trim": null,
+      "sourceFramesZeroBased": [
+        0,
+        69
+      ],
+      "reversed": false
+    },
+    "Reload": {
+      "sourceFile": "rifle-reload.fbx",
+      "frames": 100,
+      "sha256": "621b8eb27eff1b9238ce45f341c01e1b8a50e64bb97e3c707228b035edb6a6d3",
+      "mixamoName": "Reloading (Reloading Rifle While Standing)",
+      "reverse": false,
+      "trim": null,
+      "sourceFramesZeroBased": [
+        0,
+        99
+      ],
+      "reversed": false
+    }
+  },
+  "jointValidationMaxErrorMeters": {
+    "rifle-aim-down": 1.5371536538355546e-06,
+    "rifle-aim": 1.5371536538355546e-06,
+    "rifle-fire": 1.5371536538355546e-06,
+    "rifle-idle-two-hand": 1.5371536538355546e-06,
+    "rifle-idle": 1.5371536538355546e-06,
+    "rifle-put-away": 1.5371536538355546e-06,
+    "rifle-reload": 1.5371536538355546e-06,
+    "rifle-run-aim": 1.5371536538355546e-06,
+    "rifle-sprint": 1.5371536538355546e-06
+  },
+  "savedRigSha256": "53af3356ac97b897f3a618cd8dff065dd62e6c0620d03bda73e44843b6ac69d4",
+  "gripBone": "mixamorig:RightHand",
+  "gripLocal": [
+    [
+      -0.1648624837398529,
+      -0.4157029390335083,
+      1.004993200302124,
+      0.11924836039543152
+    ],
+    [
+      -0.3055655360221863,
+      0.9932347536087036,
+      0.3607132136821747,
+      0.12994225323200226
+    ],
+    [
+      -1.0437675714492798,
+      -0.22511185705661774,
+      -0.264337956905365,
+      -8.024834096431732e-05
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "eyeRest": [
+    [
+      -0.9999999403953552,
+      0.0,
+      -8.742277657347586e-08,
+      0.0
+    ],
+    [
+      -8.742277657347586e-08,
+      3.4228538225988814e-08,
+      0.9999999403953552,
+      -0.10000000149011612
+    ],
+    [
+      0.0,
+      0.9999999403953552,
+      3.4228538225988814e-08,
+      1.6349999904632568
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "downloads": {
+    "format": "FBX Binary",
+    "skin": "Without Skin",
+    "fps": 30,
+    "keyframeReduction": "none",
+    "rig": "ASSAULT-HD-WALK",
+    "inPlaceWhereOffered": true
+  },
+  "rifleProp": {
+    "sourceRevision": "e0f748c3f^",
+    "sourcePath": "assets/weapons/generated/assault-rifle.glb",
+    "sourceSha256": "467651c1b67308010d7b895575e903b6c4f74907249d21feae8be2414befd9fe",
+    "sourceMetadata": {
+      "sourceSha256": "7a2ac6ef4c1fd1537b5cb32cff873b6890df918408850aa64f08592bb497fd6e",
+      "outputSha256": "467651c1b67308010d7b895575e903b6c4f74907249d21feae8be2414befd9fe",
+      "sourceTriangles": 3007687,
+      "preservedSightTriangles": 7536,
+      "worldTriangles": 67539,
+      "firstPersonTriangles": 54890,
+      "lengthMeters": 0.9,
+      "outputBytes": 4077632,
+      "textures": {
+        "assault-rifle-texture-0.png": "0758225e58219954d542f6e035721fa0ae08009e59d1b9540b036b2c8746e5a6",
+        "assault-rifle-texture-1.png": "ad6d0d04c94f47fdb878b3adec4b438ef3a117d51b7132d0f694c2bef1503e8c",
+        "assault-rifle-texture-2.png": "6813519abfa084ebd6fc9de63d40119ed668e73e9d65146b2f6846124886e8d0",
+        "assault-rifle-texture-3.png": "b32a21271c7bf7303f13a35446e78142bf2eb13268103f5eaaf5b27a2afaf8b0"
+      },
+      "sockets": {
+        "RearSightSocket": [
+          0.0,
+          0.07085559966305406,
+          -0.038477875313711475
+        ],
+        "FrontSightSocket": [
+          0.0,
+          0.07085559966305406,
+          -0.4912967738226331
+        ],
+        "MuzzleSocket": [
+          0.0,
+          0.0,
+          -0.6367096696441663
+        ],
+        "ButtSocket": [
+          0.0,
+          -0.007038635728117951,
+          0.26329033035583377
+        ],
+        "RightGripSocket": [
+          0.015954240983734026,
+          -0.10323332401239663,
+          0.0
+        ],
+        "RightGripCloseSocket": [
+          -0.015954240983734026,
+          -0.10323332401239663,
+          0.0
+        ],
+        "LeftGripSocket": [
+          0.0,
+          -0.04223181436870771,
+          -0.34723936258715227
+        ],
+        "LeftGripCloseSocket": [
+          0.0,
+          0.02909302767622086,
+          -0.34723936258715227
+        ],
+        "WorldLeftGripSocket": [
+          0.0,
+          -0.04223181436870771,
+          -0.22992876711851976
+        ],
+        "TriggerSocket": [
+          0.0,
+          -0.08680984064678807,
+          -0.06804014537180687
+        ]
+      }
+    },
+    "sourceTextures": {
+      "assault-rifle-texture-0.png": "0758225e58219954d542f6e035721fa0ae08009e59d1b9540b036b2c8746e5a6",
+      "assault-rifle-texture-1.png": "ad6d0d04c94f47fdb878b3adec4b438ef3a117d51b7132d0f694c2bef1503e8c",
+      "assault-rifle-texture-2.png": "6813519abfa084ebd6fc9de63d40119ed668e73e9d65146b2f6846124886e8d0",
+      "assault-rifle-texture-3.png": "b32a21271c7bf7303f13a35446e78142bf2eb13268103f5eaaf5b27a2afaf8b0"
+    },
+    "magazine": {
+      "method": "cut original magazine out in Blender; fill rifle well and magazine top; no insert geometry or new generation",
+      "cutPlaneBlenderPoint": [
+        0.0,
+        0.0,
+        -0.10999999940395355
+      ],
+      "cutPlaneBlenderNormal": [
+        0.0,
+        -0.20000000298023224,
+        1.0
+      ],
+      "cutRegionBlenderY": [
+        0.103,
+        0.226
+      ],
+      "capFaces": {
+        "MachineGunModel": 1,
+        "FirstPersonMachineGunMesh": 1,
+        "Magazine": 1
+      },
+      "graspOriginBlenderMeters": [
+        -0.0007452439749613404,
+        0.15451043844223022,
+        -0.13094663619995117
+      ],
+      "vertices": 3531
+    },
+    "outputSha256": "9d50ebdfaba41d4fd46d952604053f744904a1673a86aeed9df503418702b4c6"
+  },
+  "indexCorrection": {
+    "method": "native idle index shape fixed to right hand during held clips and released during reload; no additional finger bend; other fingers unchanged"
+  },
+  "referenceGunEulerDegrees": [
+    0,
+    0,
+    0
+  ],
+  "rifleScale": 1.1,
+  "rifleScaleArgument": "--rifle-scale",
+  "rifleSeatOffsetInReferenceEyeMeters": [
+    -0.01,
+    -0.018,
+    0.005
+  ],
+  "rifleSeatArgument": "--rifle-seat X Y Z",
+  "source": "art-source://derived/assault-hd-viewmodel-inputs-20261005/character-assault-hd.glb",
+  "sourceSha256": "24c70a06e093c8b4f2f7eb605664ec97ddf92b73796bfce2a8c6de858fffdd55",
+  "outputSha256": "1778f9d771953ccc8b1a62fe50196350d85fa6e3bee8f9f68e05f389dffde24d"
+}
