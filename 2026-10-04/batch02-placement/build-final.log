@@ -1,0 +1,18 @@
+
+> godmode-exe@ build D:\work\godmode-roguelite-worktrees\place-batch02-meshy-v2
+> pnpm build:scripts && node tools/maps/prebuilt/build.mjs --ensure
+
+
+> godmode-exe@ build:scripts D:\work\godmode-roguelite-worktrees\place-batch02-meshy-v2
+> node tools/build/write-build-info.mjs && pnpm --filter @godmode/game-rules build && pnpm --filter @godmode/godot-cli build && tsc -p tsconfig.json
+
+
+> @godmode/game-rules@0.1.0 build D:\work\godmode-roguelite-worktrees\place-batch02-meshy-v2\packages\game-rules
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+
+> @godmode/godot-cli@0.1.0 build D:\work\godmode-roguelite-worktrees\place-batch02-meshy-v2\tools\godot-cli
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+[prebuilt-arena] Generating the survival arena (inputs: assets/props/street/batch02/newspaper-vending-box-muted-red.glb.bin changed, and 5 more); this takes a few minutes.
+{"ok":true,"verify":false,"output":"assets/maps/dumbo/prebuilt","client":{"nodes":24755,"fingerprint":"3978924296","buildMs":79141,"loadMs":10227,"expandedSoups":5,"importedTextures":26,"expansion":{"position":0.00006103515625,"normal":0.00022396445274353027},"matches":true,"differences":[]},"server":{"nodes":4171,"fingerprint":"1276010704","buildMs":4956,"loadMs":200,"expandedSoups":0,"importedTextures":0,"expansion":{"position":0,"normal":0},"matches":true,"differences":[]}}
