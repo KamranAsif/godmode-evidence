@@ -1,0 +1,543 @@
+{
+  "approach": "native Mixamo mocap; baked left support, right index extension and shared forearm/wrist roll; no runtime IK",
+  "fps": 30,
+  "viewmodelFov": 50,
+  "sleeveRadiusScale": 0.7,
+  "handScale": 1.0,
+  "supportCorrection": {
+    "method": "offline two-bone left arm only; native idle finger shape",
+    "releaseReloadPhase": [
+      0.16,
+      0.88
+    ],
+    "idleResidualOffsetMeters": [
+      0.012,
+      -0.005,
+      0
+    ]
+  },
+  "clips": {
+    "Idle": {
+      "sourceFile": "pistol-idle-aim.fbx",
+      "frames": 41,
+      "sha256": "41e9328abf2535c065ad24fa6e6645ef37a3d1976f0147509dd203ae5c79e572",
+      "mixamoName": "Pistol Idle",
+      "description": "Idle With Aimed Pistol",
+      "sourceFramesZeroBased": [
+        0,
+        40
+      ],
+      "reversed": false
+    },
+    "ADS": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 31,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594",
+      "mixamoName": "Pistol Aim",
+      "description": "Pistol Aim To Holster Idle",
+      "sourceFramesZeroBased": [
+        0,
+        30
+      ],
+      "reversed": true
+    },
+    "Fire": {
+      "sourceFile": "pistol-shoot.fbx",
+      "frames": 36,
+      "sha256": "cd5230b610e97626f195fd4182e39eced899741eff8da244ce0fce3c5e13e6f4",
+      "mixamoName": "Shooting",
+      "description": "Firing A Gun",
+      "sourceFramesZeroBased": [
+        0,
+        35
+      ],
+      "reversed": false
+    },
+    "FireADS": {
+      "sourceFile": "pistol-shoot.fbx",
+      "frames": 36,
+      "sha256": "cd5230b610e97626f195fd4182e39eced899741eff8da244ce0fce3c5e13e6f4",
+      "mixamoName": "Shooting",
+      "description": "Firing A Gun",
+      "sourceFramesZeroBased": [
+        0,
+        35
+      ],
+      "reversed": false
+    },
+    "SprintIn": {
+      "sourceFile": "pistol-run-aim.fbx",
+      "frames": 7,
+      "sha256": "a556fd295f59d627b3d87925466e5f03264dd81b5fe00a8dbc8b55e34ea5494f",
+      "mixamoName": "Pistol Run",
+      "description": "Running With Aimed Pistol",
+      "sourceFramesZeroBased": [
+        0,
+        6
+      ],
+      "reversed": false
+    },
+    "Sprint": {
+      "sourceFile": "pistol-run-aim.fbx",
+      "frames": 23,
+      "sha256": "a556fd295f59d627b3d87925466e5f03264dd81b5fe00a8dbc8b55e34ea5494f",
+      "mixamoName": "Pistol Run",
+      "description": "Running With Aimed Pistol",
+      "sourceFramesZeroBased": [
+        0,
+        22
+      ],
+      "reversed": false
+    },
+    "SwapIn": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 113,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594",
+      "mixamoName": "Pistol Aim",
+      "description": "Pistol Aim To Holster Idle",
+      "sourceFramesZeroBased": [
+        0,
+        112
+      ],
+      "reversed": true
+    },
+    "SwapOut": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 113,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594",
+      "mixamoName": "Pistol Aim",
+      "description": "Pistol Aim To Holster Idle",
+      "sourceFramesZeroBased": [
+        0,
+        112
+      ],
+      "reversed": false
+    },
+    "Reload": {
+      "sourceFile": "pistol-reload.fbx",
+      "frames": 150,
+      "sha256": "3b31fbca26c3d78919c1d83fc38a9a1ab89257a6473a4330fa9f1142974ad841",
+      "mixamoName": "Reloading",
+      "description": "Gun Reload While Walking",
+      "sourceFramesZeroBased": [
+        0,
+        149
+      ],
+      "reversed": false
+    }
+  },
+  "jointValidationMaxErrorMeters": {
+    "pistol-aim-holster": 1.5371536538355546e-06,
+    "pistol-idle-aim": 1.5371536538355546e-06,
+    "pistol-idle-alert": 1.5371536538355546e-06,
+    "pistol-reload": 1.5371536538355546e-06,
+    "pistol-run-aim": 1.5371536538355546e-06,
+    "pistol-run-carry": 1.5371536538355546e-06,
+    "pistol-shoot": 1.5371536538355546e-06
+  },
+  "savedRigSha256": "53af3356ac97b897f3a618cd8dff065dd62e6c0620d03bda73e44843b6ac69d4",
+  "gripBone": "mixamorig:RightHand",
+  "gripLocal": [
+    [
+      -0.300099641084671,
+      -0.42622995376586914,
+      1.1909104585647583,
+      0.10532443225383759
+    ],
+    [
+      0.0921986922621727,
+      1.2133418321609497,
+      0.45749151706695557,
+      0.08039280027151108
+    ],
+    [
+      -1.2615221738815308,
+      0.19007188081741333,
+      -0.2498658299446106,
+      0.01582147739827633
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "eyeRest": [
+    [
+      -0.9999999403953552,
+      0.0,
+      -8.742277657347586e-08,
+      0.0
+    ],
+    [
+      -8.742277657347586e-08,
+      3.4228538225988814e-08,
+      0.9999999403953552,
+      -0.10000000149011612
+    ],
+    [
+      0.0,
+      0.9999999403953552,
+      3.4228538225988814e-08,
+      1.6349999904632568
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "downloads": {
+    "pistol-idle-alert": {
+      "mixamoName": "Pistol Idle",
+      "description": "Ready Alert Two Hand Pistol Grip",
+      "sha256": "672c04fb8e88a5db6adcb99afadc63fc8a6cd9d698d22c0f3ed89fe1c4e9fb5f",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-idle-aim": {
+      "mixamoName": "Pistol Idle",
+      "description": "Idle With Aimed Pistol",
+      "sha256": "41e9328abf2535c065ad24fa6e6645ef37a3d1976f0147509dd203ae5c79e572",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-run-aim": {
+      "mixamoName": "Pistol Run",
+      "description": "Running With Aimed Pistol",
+      "sha256": "a556fd295f59d627b3d87925466e5f03264dd81b5fe00a8dbc8b55e34ea5494f",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-run-carry": {
+      "mixamoName": "Pistol Run",
+      "description": "Running With A Pistol",
+      "sha256": "97486bf6e5aca97d8f78aa88fea678b2df420fe3f60b74794016ab28526b17bf",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-aim-holster": {
+      "mixamoName": "Pistol Aim",
+      "description": "Pistol Aim To Holster Idle",
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-shoot": {
+      "mixamoName": "Shooting",
+      "description": "Firing A Gun",
+      "sha256": "cd5230b610e97626f195fd4182e39eced899741eff8da244ce0fce3c5e13e6f4",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-reload": {
+      "mixamoName": "Reloading",
+      "description": "Gun Reload While Walking",
+      "sha256": "3b31fbca26c3d78919c1d83fc38a9a1ab89257a6473a4330fa9f1142974ad841",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Walk Speed": 0,
+        "Gun Type": 0,
+        "Overdrive": 50,
+        "Character Arm-Space": 50
+      }
+    }
+  },
+  "pistolScale": 1.3,
+  "pistolScaleArgument": "--pistol-scale",
+  "pistolSeatOffsetInReferenceEyeMeters": [
+    -0.009999999776482582,
+    -0.03799999877810478,
+    -0.04050000011920929
+  ],
+  "pistolSeatArgument": "--pistol-seat X Y Z",
+  "pistolProp": {
+    "sourceRevision": "e0f748c3f^",
+    "sourcePath": "assets/weapons/generated/pistol.glb",
+    "sourceSha256": "f811c99986506593e21a7ee564c637fd9acaa5dba2323507b16e2ba896f97904",
+    "sourceMetadata": {
+      "weapon": "pistol",
+      "sourceSha256": "09b72399959b54cf43a90f0750b4e74c7bc41cd9ee2ae055d81036bb1d5e7624",
+      "sourceTaskId": "01a0a051-b43f-701d-89e0-6ec4608eb6b9",
+      "configSha256": "c1d0b53a74f4f2609e7ad65d655eaa955a769dbb5a6033b256e8be8ffe516425",
+      "outputSha256": "f811c99986506593e21a7ee564c637fd9acaa5dba2323507b16e2ba896f97904",
+      "sourceTriangles": 3046314,
+      "preservedSightTriangles": 72074,
+      "worldTriangles": 131557,
+      "firstPersonTriangles": 131557,
+      "firstPersonCutoffZ": 0.28618,
+      "sourceLength": 2.0,
+      "lengthMeters": 0.26,
+      "scale": 0.13,
+      "outputBytes": 7250420,
+      "textures": {
+        "pistol-texture-0.png": "96f408157d644ff6036876f956d7bd012d8971bc3455057044770478c4ffc72a",
+        "pistol-texture-1.png": "c470b68eebd063555e7c024e605217573bec2161c4b5ea3c7ab2cd39de457004",
+        "pistol-texture-2.png": "0a12ece2549c7c96a85fd903b407c9f367422a8140868d8abf4ec88238c52a7e",
+        "pistol-texture-3.png": "666d403a4b1496510ee202ff7e3920f79418c42bc55eec53146c4f30a7a123c7"
+      },
+      "sockets": {
+        "RearSightSocket": [
+          0.0,
+          0.019020561660308837,
+          -0.0018200000000000017
+        ],
+        "FrontSightSocket": [
+          0.0,
+          0.019020561660308837,
+          -0.1963
+        ],
+        "MuzzleSocket": [
+          0.0,
+          0.0,
+          -0.2145
+        ],
+        "ButtSocket": [
+          0.0,
+          0.0,
+          0.0455
+        ],
+        "RightGripSocket": [
+          0.013389999999999999,
+          -0.07683923000000001,
+          0.0
+        ],
+        "RightGripCloseSocket": [
+          -0.013389999999999999,
+          -0.07683923000000001,
+          0.0
+        ],
+        "LeftGripSocket": [
+          -0.0195,
+          -0.07943923000000001,
+          -0.019500000000000003
+        ],
+        "LeftGripCloseSocket": [
+          0.013389999999999999,
+          -0.07423923,
+          -0.019500000000000003
+        ],
+        "WorldLeftGripSocket": [
+          -0.0195,
+          -0.07943923000000001,
+          -0.019500000000000003
+        ],
+        "TriggerSocket": [
+          0.0,
+          -0.046939230000000005,
+          -0.0663
+        ],
+        "SlideRearSocket": [
+          0.0,
+          0.0,
+          0.01651
+        ]
+      },
+      "rayChecks": [
+        {
+          "name": "notch-gap-y-0.0175-z0.602",
+          "mesh": "PistolModel",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "notch-gap-y-0.0175-z0.602",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "notch-gap-y-0.0175-z0.604",
+          "mesh": "PistolModel",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "notch-gap-y-0.0175-z0.604",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "notch-gap-y0.0175-z0.602",
+          "mesh": "PistolModel",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "notch-gap-y0.0175-z0.602",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "notch-gap-y0.0175-z0.604",
+          "mesh": "PistolModel",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "notch-gap-y0.0175-z0.604",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "clear-above-flat-top",
+          "mesh": "PistolModel",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "clear-above-flat-top",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": false,
+          "expectedHit": false
+        },
+        {
+          "name": "front-post-at-center",
+          "mesh": "PistolModel",
+          "hit": true,
+          "expectedHit": true
+        },
+        {
+          "name": "front-post-at-center",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": true,
+          "expectedHit": true
+        },
+        {
+          "name": "left-rear-shoulder",
+          "mesh": "PistolModel",
+          "hit": true,
+          "expectedHit": true
+        },
+        {
+          "name": "left-rear-shoulder",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": true,
+          "expectedHit": true
+        },
+        {
+          "name": "right-rear-shoulder",
+          "mesh": "PistolModel",
+          "hit": true,
+          "expectedHit": true
+        },
+        {
+          "name": "right-rear-shoulder",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": true,
+          "expectedHit": true
+        },
+        {
+          "name": "front-socket-on-flat-crown",
+          "mesh": "PistolModel",
+          "hit": true,
+          "expectedHit": true
+        },
+        {
+          "name": "front-socket-on-flat-crown",
+          "mesh": "FirstPersonPistolMesh",
+          "hit": true,
+          "expectedHit": true
+        }
+      ]
+    },
+    "sourceTextures": {
+      "pistol-texture-0.png": "96f408157d644ff6036876f956d7bd012d8971bc3455057044770478c4ffc72a",
+      "pistol-texture-1.png": "c470b68eebd063555e7c024e605217573bec2161c4b5ea3c7ab2cd39de457004",
+      "pistol-texture-2.png": "0a12ece2549c7c96a85fd903b407c9f367422a8140868d8abf4ec88238c52a7e",
+      "pistol-texture-3.png": "666d403a4b1496510ee202ff7e3920f79418c42bc55eec53146c4f30a7a123c7"
+    },
+    "magazine": {
+      "method": "split original fused baseplate in Blender; add closed insert stem hidden inside grip when seated",
+      "splitPlaneBlenderZ": -0.1327,
+      "insertHeightMeters": 0.078,
+      "insertWidthMeters": 0.017,
+      "insertDepthMeters": 0.035
+    },
+    "outputSha256": "1bad51a9a55af5c080f4a93ca2c135ade8ba8bfe8e1f135484dc89c63057f34e"
+  },
+  "referenceGunEulerDegrees": [
+    0,
+    0,
+    0
+  ],
+  "indexCorrection": {
+    "method": "corrected native idle index shape fixed to right hand during held clips; blended with support/reload release",
+    "rotationsDegrees": [
+      [
+        1,
+        -10,
+        "X"
+      ],
+      [
+        1,
+        15,
+        "Z"
+      ],
+      [
+        2,
+        -10,
+        "X"
+      ],
+      [
+        3,
+        -15,
+        "X"
+      ]
+    ]
+  },
+  "wristRollCorrection": {
+    "method": "baked forearm-axis roll split; palms and fingertips remain fixed",
+    "forearmShare": 0.5,
+    "handShare": 0.5,
+    "clips": "all"
+  },
+  "source": "art-source://derived/assault-hd-viewmodel-inputs-20261005/character-assault-hd.glb",
+  "sourceSha256": "24c70a06e093c8b4f2f7eb605664ec97ddf92b73796bfce2a8c6de858fffdd55",
+  "outputSha256": "e46957bc5a20403494dc7a970a5463fe259405543100c9dac50ec624a37ab8d4"
+}
