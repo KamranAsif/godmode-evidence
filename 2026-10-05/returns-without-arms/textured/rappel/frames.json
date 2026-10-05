@@ -1,0 +1,5917 @@
+{
+  "sourceCommit": "1f1836e19098651c5158bf11d27f96b1537efc0a",
+  "completeSet": false,
+  "samplesPerCamera": 5,
+  "fps": 60,
+  "sampleIntervalMs": 16.666666666666668,
+  "durationMs": 2850,
+  "frames": [
+    {
+      "camera": "firstPerson",
+      "frame": 0,
+      "elapsedMs": 0.0,
+      "path": "firstPerson/000.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 14,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": false
+      }
+    },
+    {
+      "camera": "firstPerson",
+      "frame": 60,
+      "elapsedMs": 1000.0,
+      "path": "firstPerson/060.png",
+      "triggerReceipt": {
+        "ok": true,
+        "result": {
+          "accepted": true,
+          "durationMs": null,
+          "form": "tap",
+          "holdId": 4,
+          "restoresHoldId": null,
+          "sequence": 892,
+          "tapFrames": 1
+        },
+        "store": {
+          "aiBudget": {
+            "assistanceMs": 0.0697666666666667,
+            "decisionsMs": 0.477806666666667,
+            "maxMs": 2.909,
+            "meanMs": 0.548656666666667,
+            "meanRays": 0,
+            "p95Ms": 0.792,
+            "ticks": 300
+          },
+          "audio": {
+            "activeFootstepPlayers": 0,
+            "activeLocalPlayers": 0,
+            "activeWorldPlayers": 0,
+            "buses": [
+              "GameplaySfx",
+              "GameplayUI",
+              "GameplayAmbience",
+              "Music"
+            ],
+            "cheatLoops": {
+              "cheat-drone-hover": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "cheat-drone-swarm-hover": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "cheat-turret-idle": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "enemy-heli-rotor": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ]
+            },
+            "cheatTakes": {},
+            "cheatVoices": [],
+            "cueLog": [
+              {
+                "atMs": 14427,
+                "id": "match-start",
+                "spatial": false
+              },
+              {
+                "atMs": 14672,
+                "id": "landing",
+                "spatial": false
+              },
+              {
+                "atMs": 16581,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 17828,
+                "id": "armor-gain",
+                "spatial": false
+              },
+              {
+                "atMs": 35219,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 40462,
+                "id": "ui-open",
+                "spatial": false
+              },
+              {
+                "atMs": 48570,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 65432,
+                "id": "machine-fire",
+                "spatial": false
+              },
+              {
+                "atMs": 65434,
+                "id": "impact-concrete",
+                "spatial": true
+              },
+              {
+                "atMs": 74751,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 83783,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 84242,
+                "id": "casing",
+                "spatial": true
+              },
+              {
+                "atMs": 84476,
+                "id": "combat-rifle-windup",
+                "spatial": true
+              },
+              {
+                "atMs": 84868,
+                "id": "picket-chirp",
+                "spatial": true
+              }
+            ],
+            "enemyLoops": {
+              "mend": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "motor": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "rotor": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "shimmer": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "sweep": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ]
+            },
+            "enemyTells": [
+              {
+                "held": false,
+                "owner": "soldier-e3",
+                "playing": false
+              }
+            ],
+            "healthDistress": {
+              "breathingPlaying": false,
+              "breathingVolumeDb": 0,
+              "heartbeatPlaying": false,
+              "heartbeatRate": 1,
+              "heartbeatVolumeDb": 0
+            },
+            "lastPlayed": {
+              "cue": "picket-chirp",
+              "spatial": true
+            },
+            "lastSpatialByCue": {
+              "armor-gain": false,
+              "casing": true,
+              "combat-rifle-windup": true,
+              "impact-concrete": true,
+              "landing": false,
+              "machine-fire": false,
+              "match-start": false,
+              "picket-chirp": true,
+              "ui-open": false
+            },
+            "missingReviewedResources": [],
+            "playedCounts": {
+              "armor-gain": 1,
+              "casing": 1,
+              "combat-rifle-windup": 1,
+              "impact-concrete": 1,
+              "landing": 1,
+              "machine-fire": 1,
+              "match-start": 1,
+              "picket-chirp": 6,
+              "soldier-step": 2,
+              "ui-open": 1
+            },
+            "recentFootsteps": [
+              {
+                "pitch": 0.982,
+                "take": "soldier-step-03.ogg",
+                "volumeDb": 5.9
+              },
+              {
+                "pitch": 0.913,
+                "take": "soldier-step-02.ogg",
+                "volumeDb": 5.8
+              }
+            ],
+            "recentPlayed": [
+              {
+                "id": "picket_chirp",
+                "spatial": true
+              },
+              {
+                "id": "combat_rifle_windup",
+                "spatial": true
+              },
+              {
+                "id": "casing",
+                "spatial": true
+              },
+              {
+                "id": "picket_chirp",
+                "spatial": true
+              },
+              {
+                "id": "picket_chirp",
+                "spatial": true
+              }
+            ],
+            "scheduledCount": 0,
+            "score": {
+              "boss": {
+                "gain": 0,
+                "loaded": true,
+                "outputGain": 0,
+                "playing": false,
+                "target": 0
+              },
+              "combat": {
+                "gain": 0.2239,
+                "loaded": true,
+                "outputGain": 0.2239,
+                "playing": true,
+                "target": 0.2239
+              },
+              "explore": {
+                "gain": 0,
+                "loaded": true,
+                "outputGain": 0,
+                "playing": false,
+                "target": 0
+              },
+              "traffic": {
+                "gain": 0.0357,
+                "loaded": true,
+                "outputGain": 0.0357,
+                "playing": true,
+                "target": 0.0357
+              },
+              "water": {
+                "gain": 0.0112,
+                "loaded": true,
+                "outputGain": 0.0112,
+                "playing": true,
+                "target": 0.0112
+              },
+              "wind": {
+                "gain": 0.0085,
+                "loaded": true,
+                "outputGain": 0.0085,
+                "playing": true,
+                "target": 0.0085
+              }
+            },
+            "volumePercent": 100
+          },
+          "combatVfxPrewarmed": true,
+          "consoleLines": [
+            "timeScale done",
+            "invincible done",
+            "timeScale done",
+            "teleport done",
+            "refill done",
+            "insertion done",
+            "timeScale done",
+            "timeScale done",
+            "invincible done",
+            "timeScale done",
+            "teleport done",
+            "refill done",
+            "insertion done"
+          ],
+          "consoleOpen": false,
+          "controlsCanSave": true,
+          "controlsCapture": null,
+          "controlsMenuOpen": false,
+          "controlsStatus": "",
+          "controlsWarning": "",
+          "debugFreeFly": null,
+          "desktopTrainer": {
+            "closed": false,
+            "contentScale": 0.928125023841858,
+            "maximized": false,
+            "minimized": false,
+            "open": false,
+            "rect": {
+              "height": 584.569606801275,
+              "width": 908.990435706695,
+              "x": 185.504782146652,
+              "y": 52.7948990435707
+            },
+            "tab": "CHEATS",
+            "visible": false
+          },
+          "firstRunHints": {
+            "current": null,
+            "seen": [
+              "aimbot"
+            ]
+          },
+          "input": {
+            "cursorCaptureRequested": true,
+            "cursorCaptured": true,
+            "injected": {
+              "active": true,
+              "expiresInMs": null,
+              "form": "tap",
+              "holdId": 4,
+              "lastCompletedTapFrames": 1,
+              "lastCompletedTapHoldId": 3,
+              "lastCompletedTapSequence": 549,
+              "lastSampledSequence": 549,
+              "restoresHoldId": null,
+              "sampledHoldId": 3,
+              "samples": 1,
+              "sequence": 892,
+              "tapFramesRemaining": 1
+            },
+            "mouseMode": 2
+          },
+          "lattice": {
+            "live": 0,
+            "merged": 0,
+            "opened": 2,
+            "slots": [],
+            "view": {
+              "enemyMarks": [],
+              "hits": 0,
+              "impactFrames": 44,
+              "showing": false
+            }
+          },
+          "localPeerId": 2,
+          "localServerTick": {
+            "maxMs": 101.036718946645,
+            "meanMs": 1.40856132140984
+          },
+          "mainMenuOpen": false,
+          "mainMenuStatus": "",
+          "matchLoadingOpen": false,
+          "matchLoadingProgress": 1,
+          "matchLoadingStatus": "STARTING RUN...",
+          "metaMenu": {
+            "dollars": 0,
+            "message": "",
+            "open": false,
+            "shelf": [],
+            "tab": "upgrades",
+            "tabOpen": false,
+            "unlocked": [],
+            "upgrades": {}
+          },
+          "mode": "client",
+          "navStats": {
+            "failed": 723,
+            "outOfBounds": 0,
+            "queries": 18,
+            "queryMs": 31.185,
+            "queryPeakMs": 3.153,
+            "routeMs": 17.741,
+            "routePeakMs": 3.952,
+            "routes": 735,
+            "syncQueries": 6
+          },
+          "navigation": {
+            "areas": 1125,
+            "polygons": 15596,
+            "ready": true,
+            "source": "dumbo-survival"
+          },
+          "pauseOpen": false,
+          "pauseRespawnAvailable": false,
+          "pauseRespawnNote": "",
+          "presentation": {
+            "aim": {
+              "aimPitchRadians": 0,
+              "aimYawRadians": 0.686757507156145,
+              "pitchRadians": 0,
+              "viewKickRadians": 0,
+              "viewKickYawRadians": 0,
+              "yawRadians": 0.686757507156145
+            },
+            "aiming": {
+              "blend": 0,
+              "crosshairVisible": true,
+              "foregroundBlurBlend": 0,
+              "requested": false
+            },
+            "artDirection": "white-red-cyan-faceted",
+            "body": {
+              "alive": true,
+              "armor": 100,
+              "health": 100,
+              "runArmor": 0
+            },
+            "cameraFov": 80,
+            "cameraMode": "first-person",
+            "characterAnimationSource": "Mixamo",
+            "combatVfx": {
+              "activeBulletHoles": 1,
+              "activeDebris": 0,
+              "activeDust": 0,
+              "activeShells": 1,
+              "impactSpawnCount": 1,
+              "lastImpact": {
+                "normal": [
+                  -0.7435422539711,
+                  0,
+                  -0.668689012527466
+                ],
+                "position": [
+                  -560.211120605469,
+                  -15.806752204895,
+                  -370.931091308594
+                ],
+                "surface": "concrete",
+                "weapon": "machineGun"
+              },
+              "recentImpacts": [
+                {
+                  "normal": [
+                    -0.7435422539711,
+                    0,
+                    -0.668689012527466
+                  ],
+                  "position": [
+                    -560.211120605469,
+                    -15.806752204895,
+                    -370.931091308594
+                  ],
+                  "surface": "concrete",
+                  "weapon": "machineGun"
+                }
+              ],
+              "shellSpawnCount": 1
+            },
+            "debugThirdPerson": false,
+            "defenses": [
+              {
+                "armorVisible": false,
+                "playerId": 2
+              }
+            ],
+            "firstPersonFiringResidual": 3.053247564821e-05,
+            "firstPersonReload": {
+              "active": false,
+              "blend": 0,
+              "choreographed": false,
+              "phase": 0,
+              "pinned": false,
+              "pose": {
+                "supportHandEulerRadians": [
+                  0,
+                  0,
+                  0
+                ],
+                "supportHandOffset": [
+                  0,
+                  0,
+                  0
+                ],
+                "weaponEulerRadians": [
+                  0,
+                  0,
+                  0
+                ],
+                "weaponOffset": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "weapon": "machineGun"
+            },
+            "firstPersonRigBoneCount": 41,
+            "healthDistress": {
+              "breathing": 0,
+              "heartbeat": 0,
+              "heartbeatRate": 1,
+              "intensity": 0,
+              "overlayVisible": false,
+              "targetIntensity": 0
+            },
+            "hud": {
+              "ammo": "30 / 00",
+              "armor": "100",
+              "category": "",
+              "grenades": "G:0",
+              "health": "100 +100A",
+              "interactionPrompt": "",
+              "kills": "0/1000000",
+              "layoutMode": "wide",
+              "safeMargin": 24,
+              "status": "",
+              "viewportSize": [
+                1280,
+                720
+              ],
+              "weapon": "ASSAULT RIFLE"
+            },
+            "knife": {
+              "category": null,
+              "clip": "KnifeSlash",
+              "elapsedMs": 600,
+              "lastPress": null,
+              "loaded": false,
+              "playing": false,
+              "slashes": 0
+            },
+            "localBodyVisible": false,
+            "playerVisibility": [
+              {
+                "playerId": 2,
+                "renderedVisible": false
+              }
+            ],
+            "prediction": {
+              "active": false,
+              "correctionMetres": 0,
+              "corrections": 1,
+              "framesHeld": 382,
+              "framesMoved": 12,
+              "historyDepth": 0,
+              "lastInputSequence": 887,
+              "renderedPosition": [
+                -566.0625,
+                -10.0712890625,
+                -380.328125
+              ],
+              "serverPosition": [
+                -566.0625,
+                -10.0712890625,
+                -380.328125
+              ],
+              "snaps": 0,
+              "snapshotsApplied": 70,
+              "submittedSequence": 892
+            },
+            "reticle": {
+              "arms": {
+                "bottom": [
+                  -1.5,
+                  12.016016960144
+                ],
+                "left": [
+                  -20.0160160064697,
+                  -1.5
+                ],
+                "right": [
+                  12.016016960144,
+                  -1.5
+                ],
+                "top": [
+                  -1.5,
+                  -20.0160160064697
+                ]
+              },
+              "authoritativeSpreadRadians": 0.028,
+              "gapPx": 12.0160165631508,
+              "visible": true
+            },
+            "rigPose": null,
+            "stancePlacement": {
+              "anchor": [
+                -0.194,
+                1.267,
+                0.028
+              ],
+              "bakedHands": false,
+              "bones": null,
+              "borePitchRadians": 0,
+              "butt": [
+                -0.194,
+                1.267,
+                0.028
+              ],
+              "buttToShoulder": 7.45058059692383e-09,
+              "palmResidualMeters": null
+            },
+            "supportHandContact": {
+              "bakedHands": false,
+              "firingCurl": null,
+              "firingResidual": 4.57605509041059e-08,
+              "leftArm": {
+                "clip": "MachineGunFirstPersonIdle",
+                "elbow": [
+                  0.0647333562374115,
+                  -0.371947526931763,
+                  -0.487926721572876
+                ],
+                "hand": [
+                  0.120459094643593,
+                  -0.134211897850037,
+                  -0.571992695331573
+                ],
+                "shoulder": [
+                  -0.115121260285378,
+                  -0.314667940139771,
+                  -0.515230774879456
+                ]
+              },
+              "residual": 2.10734238947907e-08,
+              "socket": "WorldLeftGripSocket",
+              "supportCurl": null
+            },
+            "systemAdmins": [
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 37,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": -2.84687505000485,
+                "gaitPlaybackRate": 0.212545365095139,
+                "gaitSecondary": "MachineGunWalk",
+                "gaitSpeed": 0,
+                "gaitVelocityX": -0.214080641844729,
+                "gaitVelocityZ": -0.106358535441174,
+                "id": "soldier-e1",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 24,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": -0.957453363121743,
+                "gaitPlaybackRate": 0.15916208922863,
+                "gaitSecondary": "MachineGunStrafeRight",
+                "gaitSpeed": 0,
+                "gaitVelocityX": -0.203172074110261,
+                "gaitVelocityZ": 0.124084958012342,
+                "id": "soldier-e2",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 16,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.571198609002122,
+                "gaitPlaybackRate": 0.150000005960464,
+                "gaitSecondary": "MachineGunWalk",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e3",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 12,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.192113956774082,
+                "gaitPlaybackRate": 0.179553404450417,
+                "gaitSecondary": "MachineGunStrafeLeft",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0.0981771096385521,
+                "gaitVelocityZ": 0.215444212814195,
+                "id": "soldier-e4",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 2,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 2.5246243936228,
+                "gaitPlaybackRate": 0,
+                "gaitSecondary": "none",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e5",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 8,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.787956725016816,
+                "gaitPlaybackRate": 0.203906655311584,
+                "gaitSecondary": "MachineGunWalk",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0.229079922487593,
+                "gaitVelocityZ": -0.0586335515878213,
+                "id": "soldier-e6",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              }
+            ],
+            "viewmodelPass": {
+              "limbScale": {
+                "forearmMetres": 0.2582
+              },
+              "meshDepths": [
+                {
+                  "layers": 524288,
+                  "name": "MachineGunModel",
+                  "nearest": 0.0905
+                },
+                {
+                  "layers": 0,
+                  "name": "FirstPersonMachineGunMesh",
+                  "nearest": 0.314
+                },
+                {
+                  "layers": 524288,
+                  "name": "Magazine",
+                  "nearest": 0.4531
+                }
+              ],
+              "sightScreen": {
+                "ButtSocket": [
+                  1.8165,
+                  1.6149
+                ],
+                "FrontSightSocket": [
+                  0.5966,
+                  0.5011
+                ],
+                "MuzzleSocket": [
+                  0.5699,
+                  0.5829
+                ],
+                "RearSightSocket": [
+                  0.7871,
+                  0.5721
+                ],
+                "RightGripSocket": [
+                  0.8175,
+                  1.0715
+                ]
+              },
+              "subViewportSize": [
+                1280,
+                720
+              ],
+              "viewmodelCullMask": 524288,
+              "viewmodelFov": 50,
+              "visibleRect": [
+                1280,
+                720
+              ],
+              "weaponAxes": {
+                "bore": [
+                  -0.105,
+                  0.018,
+                  -0.994
+                ],
+                "x": [
+                  0.992,
+                  -0.075,
+                  -0.106
+                ],
+                "y": [
+                  0.077,
+                  0.997,
+                  0.01
+                ]
+              },
+              "weaponMaterial": "StandardMaterial3D albedoTexture=true override=none visible=true",
+              "weaponMeshLayers": 0,
+              "windowSize": [
+                1920,
+                1080
+              ],
+              "worldCullMask": 524287,
+              "worldFov": 80
+            },
+            "weaponCalibration": {
+              "enabled": false
+            },
+            "weaponRecoil": 0,
+            "weaponSwitch": {
+              "active": false,
+              "endsAtMs": 22207,
+              "progress": 1,
+              "verticalOffset": 0
+            },
+            "worldShot": {
+              "count": 1,
+              "muzzleFlashVisible": false,
+              "recoil": 0,
+              "steadyAim": false,
+              "weapon": "machineGun",
+              "weaponSwitchOffset": 0,
+              "weaponSwitchProgress": 1
+            },
+            "worldShots": {
+              "2": {
+                "count": 1,
+                "muzzleFlashVisible": false,
+                "recoil": 0,
+                "steadyAim": false,
+                "weapon": "machineGun",
+                "weaponSwitchOffset": 0,
+                "weaponSwitchProgress": 1
+              }
+            }
+          },
+          "roguelite": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0,
+              "killSnaps": 0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0,
+              "target": null,
+              "turning": false
+            },
+            "cheatEngine": {
+              "aimbot": "",
+              "armed": false,
+              "banishArmed": false,
+              "cards": [],
+              "maximized": false,
+              "mode": null,
+              "offers": [],
+              "open": false,
+              "openForMs": 0,
+              "rows": [],
+              "selected": 0,
+              "sent": false
+            },
+            "cheatScene": {
+              "blasts": 0,
+              "drones": 0,
+              "mines": 0,
+              "mortars": 0,
+              "thrown": 0
+            },
+            "cloakers": [],
+            "enemies": [
+              {
+                "health": 150,
+                "id": "soldier-e1",
+                "position": [
+                  -534.658203125,
+                  -14.71484375,
+                  -276.8740234375
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e2",
+                "position": [
+                  -409.822265625,
+                  -16.2421875,
+                  -490.306640625
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e3",
+                "position": [
+                  -575.8515625,
+                  -16.3779296875,
+                  -392.2666015625
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e4",
+                "position": [
+                  -577.9365234375,
+                  -16.421875,
+                  -441.373046875
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e5",
+                "position": [
+                  -738.3896484375,
+                  -15.998046875,
+                  -137.388671875
+                ]
+              },
+              {
+                "health": 152,
+                "id": "soldier-e6",
+                "position": [
+                  -578.3076171875,
+                  -16.3583984375,
+                  -392.5107421875
+                ]
+              }
+            ],
+            "gameHud": {
+              "banner": {
+                "text": "",
+                "visible": false
+              },
+              "killFeedKills": 0,
+              "killFeedRows": 0,
+              "scoreboardOpen": false,
+              "standings": [],
+              "streakPills": {
+                "1": {
+                  "id": "predatorMissile",
+                  "mark": "",
+                  "state": "idle"
+                },
+                "2": {
+                  "id": "precisionAirstrike",
+                  "mark": "",
+                  "state": "idle"
+                }
+              }
+            },
+            "hitIndicator": {
+              "bearing": null,
+              "showing": 0
+            },
+            "insertion": {
+              "armsHidden": true,
+              "auditSampleFrames": 5,
+              "canopyVisible": false,
+              "kind": "rappel",
+              "phase": "returning",
+              "ropeVisible": false
+            },
+            "lastMultiKill": null,
+            "lastShakeRadians": 0,
+            "localReload": null,
+            "lootOverlay": {
+              "banner": "",
+              "blur": 0,
+              "muffled": false,
+              "taskbar": false
+            },
+            "medicAura": {
+              "held": [],
+              "overhealed": [],
+              "rising": 0,
+              "shed": 0
+            },
+            "minimap": {
+              "hidden": false,
+              "markers": 1,
+              "visible": true
+            },
+            "run": {
+              "combatUntilMs": 22643.75,
+              "insertion": {
+                "kind": "rappel",
+                "landedAtMs": 24707.25,
+                "landing": [
+                  -566.062723795573,
+                  -16.4691711425781,
+                  -380.327748616536
+                ],
+                "serial": 2,
+                "startedAtMs": 22207.25,
+                "yaw": 0.686757507156145
+              },
+              "insertionAway": false,
+              "interactables": [],
+              "seed": 1765934887,
+              "startedAtMs": 14241,
+              "survival": {
+                "bestKps": 0,
+                "bonusHealth": 0,
+                "bonusHealthMax": 0,
+                "boss": null,
+                "bosses": [],
+                "build": {
+                  "banishes": 0,
+                  "claymores": [],
+                  "drones": 0,
+                  "evolved": [],
+                  "evolvedIds": [],
+                  "mortars": [],
+                  "perkSlots": 3,
+                  "ready": [],
+                  "rerolls": 0,
+                  "slowed": [],
+                  "specialIds": [],
+                  "specials": [],
+                  "stats": [],
+                  "stunned": [],
+                  "thrown": [],
+                  "turrets": [],
+                  "weaponSlots": 3,
+                  "weapons": []
+                },
+                "dead": false,
+                "diedTo": "",
+                "drops": [],
+                "elapsedMs": 8183.05,
+                "elites": [],
+                "enemies": 6,
+                "events": {
+                  "commanded": [],
+                  "heli": null,
+                  "uavUntilMs": 0
+                },
+                "godmodeUntilMs": 0,
+                "kills": 0,
+                "kps": 0,
+                "lock": null,
+                "mapHack": false,
+                "mapHackMeters": 45,
+                "message": "",
+                "meta": {
+                  "ammoBoxes": [],
+                  "autoAmmo": false,
+                  "boxBanishes": 0,
+                  "boxRerolls": 0,
+                  "enemyRadar": false,
+                  "extraLives": 0,
+                  "lagSwitch": false,
+                  "report": null
+                },
+                "minute": "RIFLEMEN",
+                "offer": null,
+                "secondLife": false,
+                "shield": 0,
+                "shieldMax": 0,
+                "snapLock": false,
+                "spin": null,
+                "streaks": {
+                  "activation": null,
+                  "adrenalineUntilMs": 0,
+                  "blasts": [],
+                  "burning": [],
+                  "chainEndsAtMs": 0,
+                  "chainWindowMs": 4000,
+                  "counter": 0,
+                  "dogs": [],
+                  "dogsUntilMs": 0,
+                  "empAtMs": 0,
+                  "exitAtMs": 0,
+                  "fires": [],
+                  "flights": [],
+                  "held": [],
+                  "juggernautUntilMs": 0,
+                  "ladder": [
+                    {
+                      "id": "predatorMissile",
+                      "key": 1,
+                      "kills": 3,
+                      "name": "Predator Missile"
+                    },
+                    {
+                      "id": "precisionAirstrike",
+                      "key": 2,
+                      "kills": 5,
+                      "name": "Precision Airstrike"
+                    }
+                  ],
+                  "maxHeldEach": 1,
+                  "next": {
+                    "id": "predatorMissile",
+                    "key": 1,
+                    "kills": 3,
+                    "name": "Predator Missile"
+                  },
+                  "nowMs": 22424.1,
+                  "nuke": null,
+                  "out": false,
+                  "returning": null,
+                  "ride": null,
+                  "strikes": []
+                },
+                "streamKills": [],
+                "supply": {
+                  "drops": [],
+                  "nextCrateInMs": 40356.95,
+                  "owned": []
+                }
+              }
+            },
+            "startingWeapon": "machineGun",
+            "streakView": {
+              "gun": null,
+              "polarity": "whiteHot",
+              "ride": null,
+              "tablet": false
+            },
+            "stream": {
+              "challenge": {
+                "id": "hipfire5",
+                "progress": 0
+              },
+              "challengesDone": 0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "someone clip the last 30 seconds",
+                    "user": "MrBackseat"
+                  },
+                  {
+                    "text": "volume up chat",
+                    "user": "OkayishGamer"
+                  },
+                  {
+                    "text": "is that a new skin",
+                    "user": "pancakeprone"
+                  },
+                  {
+                    "text": "certified gamer moment",
+                    "user": "Juno"
+                  },
+                  {
+                    "text": "chat is it buffering for anyone else",
+                    "user": "hydrate_bot"
+                  },
+                  {
+                    "text": "streamer drink water",
+                    "user": "FrostyNugget"
+                  },
+                  {
+                    "text": "I'm only here for the chat",
+                    "user": "lowkeylurker"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0,
+              "hype": 0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 0,
+                "endCard": false,
+                "opener": false,
+                "overlay": {
+                  "caption": "",
+                  "challenge": {
+                    "pay": 15,
+                    "progress": 0,
+                    "result": null,
+                    "secondsLeft": 7.738,
+                    "text": "5 hipfire kills",
+                    "user": "cheatsnob"
+                  },
+                  "hype": 0,
+                  "tips": 0,
+                  "viewers": 11,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18,
+              "request": null,
+              "streams": 0,
+              "style": null,
+              "styleBonus": 1,
+              "tipBot": "",
+              "tipBotQueued": 0,
+              "tipCount": 0,
+              "tips": 0,
+              "viewers": 11
+            },
+            "survivalPlayer": {
+              "armor": 100,
+              "at": [
+                -566.0625,
+                -10.0712890625,
+                -380.328125
+              ],
+              "health": 100,
+              "loaded": 30,
+              "reserve": 0
+            },
+            "weapon": "machineGun",
+            "weaponRefill": ""
+          },
+          "routeWork": {
+            "cancelled": 0,
+            "completed": 12,
+            "deferred": 0,
+            "discarded": 0,
+            "exhaustedRoutes": 0,
+            "expired": 0,
+            "latencyPeakMs": 139,
+            "nativeCompleted": 12,
+            "nativePeakMs": 2.233,
+            "peakFrameMs": 0.282999999999447,
+            "peakStepMs": 0.259000000001834,
+            "pending": 0,
+            "pollPeakMs": 0.027,
+            "queriesPerFramePeak": 1,
+            "steps": 24,
+            "submitPeakMs": 0.055,
+            "submitted": 12
+          },
+          "runSummary": {
+            "ammoBoxes": 0,
+            "open": false,
+            "shown": null
+          },
+          "schemaVersion": 1,
+          "selectedCategory": "assault",
+          "settings": {
+            "audioPercent": 100,
+            "fullscreen": true,
+            "keyBindings": {
+              "aim": [
+                "mouse:2",
+                null
+              ],
+              "crouch": [
+                "key:67",
+                "key:4194326"
+              ],
+              "dash": [
+                "key:4194328",
+                null
+              ],
+              "dropCheat": [
+                "key:71",
+                null
+              ],
+              "fire": [
+                "mouse:1",
+                null
+              ],
+              "interact": [
+                "key:70",
+                null
+              ],
+              "jump": [
+                "key:32",
+                null
+              ],
+              "knife": [
+                "key:86",
+                null
+              ],
+              "moveBackward": [
+                "key:83",
+                null
+              ],
+              "moveForward": [
+                "key:87",
+                null
+              ],
+              "moveLeft": [
+                "key:65",
+                null
+              ],
+              "moveRight": [
+                "key:68",
+                null
+              ],
+              "reload": [
+                "key:82",
+                null
+              ],
+              "scoreboard": [
+                "key:4194306",
+                null
+              ],
+              "sprint": [
+                "key:4194325",
+                null
+              ],
+              "swapWeapon": [
+                "key:81",
+                null
+              ],
+              "toggleHelp": [
+                "key:4194332",
+                null
+              ],
+              "toggleMap": [
+                "key:77",
+                null
+              ]
+            },
+            "resolutionHeight": 720,
+            "resolutionWidth": 1280,
+            "screenShakePercent": 100,
+            "sendCrashReports": true,
+            "showFpsCounter": false
+          },
+          "settingsMenuOpen": false,
+          "settingsStatus": "",
+          "simulationHz": 60,
+          "slowestNavQuery": {
+            "from": [
+              -526.64208984375,
+              -14.4833332061768,
+              -272.954376220703
+            ],
+            "ms": 3.153,
+            "to": [
+              -531.197082519531,
+              -16.4942760467529,
+              -366.592834472656
+            ]
+          },
+          "snapshot": {
+            "aiFrozen": false,
+            "corpses": [],
+            "endsAtMs": 86414005,
+            "killLimit": 1000000,
+            "matchDurationMs": 86400000,
+            "maxPlayers": 1,
+            "modeId": "roguelite",
+            "players": [
+              {
+                "accuracySpreadRadians": 0.028,
+                "aiming": false,
+                "alive": true,
+                "armor": 100,
+                "category": "assault",
+                "crouching": false,
+                "dashDirectionX": 0,
+                "dashDirectionZ": 0,
+                "dashEndsAtMs": 0,
+                "dashReadyAtMs": 0,
+                "deaths": 0,
+                "fireRateMultiplier": 1,
+                "firedRevealPosition": [
+                  -565.115234375,
+                  -16.4833984375,
+                  -375.560546875
+                ],
+                "firedRevealUntilMs": 21644,
+                "grenades": 0,
+                "grounded": true,
+                "health": 100,
+                "id": 2,
+                "infiniteAmmo": false,
+                "invincible": true,
+                "kills": 0,
+                "lastInputSequence": 887,
+                "loadedAmmo": 30,
+                "mantle": null,
+                "movementMultiplier": 1,
+                "name": "GoldenHammer",
+                "pitch": 0,
+                "position": [
+                  -566.0625,
+                  -10.0712890625,
+                  -380.328125
+                ],
+                "reloadScale": 1,
+                "reloading": false,
+                "reserveAmmo": 0,
+                "respawnAtMs": null,
+                "role": "cheater",
+                "runArmor": 0,
+                "sprintRaiseEndsAtMs": 22207,
+                "sprinting": false,
+                "startingWeapon": "machineGun",
+                "team": "",
+                "verticalVelocity": 0,
+                "weapon": "machineGun",
+                "weaponReadyAtMs": 22207,
+                "weaponSwitchEndsAtMs": 22207,
+                "yaw": 0.686768935762224
+              }
+            ],
+            "serverTimeMs": 22422,
+            "systemAdmins": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 150,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 150,
+                "position": [
+                  -534.658203125,
+                  -14.71484375,
+                  -276.8740234375
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -409.822265625,
+                  -16.2421875,
+                  -490.306640625
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "windup",
+                "attackPhaseStartedAtMs": 21634,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -575.8515625,
+                  -16.3779296875,
+                  -392.2666015625
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -577.9365234375,
+                  -16.421875,
+                  -441.373046875
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -738.3896484375,
+                  -15.998046875,
+                  -137.388671875
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 152,
+                "id": "soldier-e6",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 152,
+                "position": [
+                  -578.3076171875,
+                  -16.3583984375,
+                  -392.5107421875
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              }
+            ]
+          },
+          "snapshotLastFullPacket": {
+            "bytes": 101,
+            "delta": false,
+            "sequence": 0,
+            "serverTimeMs": 14423
+          },
+          "snapshotPacket": {
+            "bytes": 84,
+            "delta": true,
+            "sequence": 79
+          },
+          "soldierPools": "SoldierMuzzleFlash built=6 reused=0 released=0 discarded=0 idle=0 \u00b7 SoldierTracer built=6 reused=0 released=0 discarded=0 idle=0 \u00b7 MarksmanLaser built=0 reused=0 released=0 discarded=0 idle=0 \u00b7 SniperGlint built=0 reused=0 released=0 discarded=0 idle=0",
+          "soldierStats": {
+            "aims": 1,
+            "damage": 0,
+            "hits": 0,
+            "maxTokensHeld": 1,
+            "pickMs": 6.498,
+            "pickRayMs": 2.455,
+            "pickRays": 507,
+            "pickRouteMaxMs": 0.094,
+            "pickRouteMs": 0.562,
+            "pickRouteSlow": 0,
+            "pickRoutes": 47,
+            "pickSnapMs": 1.43099999999999,
+            "pickSnaps": 486,
+            "pickStraightMs": 0.167,
+            "pickStraights": 8,
+            "rounds": 0,
+            "sightMs": 5.96,
+            "spacingAwake": 6,
+            "spacingLowestMeters": 2.76062650340335,
+            "spacingMeanNearestMeters": 151.861495286189,
+            "spacingMinNearestMeters": 98.6829215995707,
+            "spacingNowMeanMeters": 99.9977222039347,
+            "spacingNowMinMeters": 2.76062650340335,
+            "spacingSamples": 10,
+            "spotPicks": 8,
+            "spotPicksDeferred": 0,
+            "spotsUnreachable": 2,
+            "steerMs": 160.389000000001,
+            "updateMs": 310.545,
+            "volleys": 0
+          },
+          "stepClimbStats": {
+            "attempted": 0,
+            "climbed": 0,
+            "collisions": 0,
+            "moves": 3125,
+            "skippedMoving": 0,
+            "skippedNoHeadroom": 0,
+            "skippedNotPressed": 3125,
+            "skippedRemembered": 0,
+            "skippedSpentMotion": 0,
+            "wasted": 0
+          },
+          "waterfront": null,
+          "window": {
+            "mode": 0,
+            "position": [
+              -10000,
+              -10000
+            ],
+            "primaryScreen": 0,
+            "screen": 0,
+            "screenPosition": [
+              0,
+              0
+            ],
+            "screenSize": [
+              2560,
+              1440
+            ],
+            "size": [
+              1920,
+              1080
+            ],
+            "usableRect": [
+              0,
+              0,
+              2560,
+              1400
+            ]
+          }
+        }
+      },
+      "players": [
+        {
+          "accuracySpreadRadians": 0.028,
+          "aiming": false,
+          "alive": true,
+          "armor": 100,
+          "category": "assault",
+          "crouching": false,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "deaths": 0,
+          "fireRateMultiplier": 1,
+          "firedRevealPosition": [
+            -565.115234375,
+            -16.4833984375,
+            -375.560546875
+          ],
+          "firedRevealUntilMs": 21644,
+          "grenades": 0,
+          "grounded": true,
+          "health": 100,
+          "id": 2,
+          "infiniteAmmo": false,
+          "invincible": true,
+          "kills": 0,
+          "lastInputSequence": 887,
+          "loadedAmmo": 30,
+          "mantle": null,
+          "movementMultiplier": 1,
+          "name": "GoldenHammer",
+          "pitch": 0,
+          "position": [
+            -566.0625,
+            -10.0712890625,
+            -380.328125
+          ],
+          "reloadScale": 1,
+          "reloading": false,
+          "reserveAmmo": 0,
+          "respawnAtMs": null,
+          "role": "cheater",
+          "runArmor": 0,
+          "sprintRaiseEndsAtMs": 22207,
+          "sprinting": false,
+          "startingWeapon": "machineGun",
+          "team": "",
+          "verticalVelocity": 0,
+          "weapon": "machineGun",
+          "weaponReadyAtMs": 22207,
+          "weaponSwitchEndsAtMs": 22207,
+          "yaw": 0.686768935762224
+        }
+      ],
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 18,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": false
+      }
+    },
+    {
+      "camera": "firstPerson",
+      "frame": 111,
+      "elapsedMs": 1850.0,
+      "path": "firstPerson/111.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 10,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": false
+      }
+    },
+    {
+      "camera": "firstPerson",
+      "frame": 150,
+      "elapsedMs": 2500.0,
+      "path": "firstPerson/150.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 10,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "landed",
+        "ropeVisible": false
+      }
+    },
+    {
+      "camera": "firstPerson",
+      "frame": 171,
+      "elapsedMs": 2850.0,
+      "path": "firstPerson/171.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": false,
+        "auditSampleFrames": 10,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "landed",
+        "ropeVisible": false
+      }
+    },
+    {
+      "camera": "side",
+      "frame": 0,
+      "elapsedMs": 0.0,
+      "path": "side/000.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 10,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "side",
+      "frame": 60,
+      "elapsedMs": 1000.0,
+      "path": "side/060.png",
+      "triggerReceipt": {
+        "ok": true,
+        "result": {
+          "accepted": true,
+          "durationMs": null,
+          "form": "tap",
+          "holdId": 5,
+          "restoresHoldId": null,
+          "sequence": 1068,
+          "tapFrames": 1
+        },
+        "store": {
+          "aiBudget": {
+            "assistanceMs": 0.0525466666666667,
+            "decisionsMs": 0.533466666666667,
+            "maxMs": 153.31,
+            "meanMs": 2.01814333333333,
+            "meanRays": 0,
+            "p95Ms": 0.851,
+            "ticks": 300
+          },
+          "audio": {
+            "activeFootstepPlayers": 0,
+            "activeLocalPlayers": 0,
+            "activeWorldPlayers": 0,
+            "buses": [
+              "GameplaySfx",
+              "GameplayUI",
+              "GameplayAmbience",
+              "Music"
+            ],
+            "cheatLoops": {
+              "cheat-drone-hover": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "cheat-drone-swarm-hover": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "cheat-turret-idle": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "enemy-heli-rotor": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ]
+            },
+            "cheatTakes": {},
+            "cheatVoices": [],
+            "cueLog": [
+              {
+                "atMs": 14427,
+                "id": "match-start",
+                "spatial": false
+              },
+              {
+                "atMs": 14672,
+                "id": "landing",
+                "spatial": false
+              },
+              {
+                "atMs": 16581,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 17828,
+                "id": "armor-gain",
+                "spatial": false
+              },
+              {
+                "atMs": 35219,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 40462,
+                "id": "ui-open",
+                "spatial": false
+              },
+              {
+                "atMs": 48570,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 65432,
+                "id": "machine-fire",
+                "spatial": false
+              },
+              {
+                "atMs": 65434,
+                "id": "impact-concrete",
+                "spatial": true
+              },
+              {
+                "atMs": 74751,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 83783,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 84242,
+                "id": "casing",
+                "spatial": true
+              },
+              {
+                "atMs": 84476,
+                "id": "combat-rifle-windup",
+                "spatial": true
+              },
+              {
+                "atMs": 84868,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 89735,
+                "id": "machine-fire",
+                "spatial": false
+              },
+              {
+                "atMs": 89737,
+                "id": "impact-concrete",
+                "spatial": true
+              },
+              {
+                "atMs": 105202,
+                "id": "combat-enemy-rifle",
+                "spatial": true
+              }
+            ],
+            "enemyLoops": {
+              "mend": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "motor": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "rotor": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "shimmer": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "sweep": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ]
+            },
+            "enemyTells": [],
+            "healthDistress": {
+              "breathingPlaying": false,
+              "breathingVolumeDb": 0,
+              "heartbeatPlaying": false,
+              "heartbeatRate": 1,
+              "heartbeatVolumeDb": 0
+            },
+            "lastPlayed": {
+              "cue": "combat-enemy-rifle",
+              "spatial": true
+            },
+            "lastSpatialByCue": {
+              "armor-gain": false,
+              "casing": true,
+              "combat-enemy-rifle": true,
+              "combat-rifle-windup": true,
+              "impact-concrete": true,
+              "landing": false,
+              "machine-fire": false,
+              "match-start": false,
+              "picket-chirp": true,
+              "ui-open": false
+            },
+            "missingReviewedResources": [],
+            "playedCounts": {
+              "armor-gain": 1,
+              "casing": 1,
+              "combat-enemy-rifle": 1,
+              "combat-rifle-windup": 1,
+              "impact-concrete": 2,
+              "landing": 1,
+              "machine-fire": 2,
+              "match-start": 1,
+              "picket-chirp": 6,
+              "soldier-step": 2,
+              "ui-open": 1
+            },
+            "recentFootsteps": [
+              {
+                "pitch": 0.982,
+                "take": "soldier-step-03.ogg",
+                "volumeDb": 5.9
+              },
+              {
+                "pitch": 0.913,
+                "take": "soldier-step-02.ogg",
+                "volumeDb": 5.8
+              }
+            ],
+            "recentPlayed": [
+              {
+                "id": "combat_enemy_rifle",
+                "spatial": true
+              },
+              {
+                "id": "bullet_impact_concrete",
+                "spatial": true
+              },
+              {
+                "id": "machine_fire",
+                "spatial": false
+              },
+              {
+                "id": "picket_chirp",
+                "spatial": true
+              },
+              {
+                "id": "combat_rifle_windup",
+                "spatial": true
+              }
+            ],
+            "scheduledCount": 0,
+            "score": {
+              "boss": {
+                "gain": 0,
+                "loaded": true,
+                "outputGain": 0,
+                "playing": false,
+                "target": 0
+              },
+              "combat": {
+                "gain": 0.2239,
+                "loaded": true,
+                "outputGain": 0.2239,
+                "playing": true,
+                "target": 0.2239
+              },
+              "explore": {
+                "gain": 0,
+                "loaded": true,
+                "outputGain": 0,
+                "playing": false,
+                "target": 0
+              },
+              "traffic": {
+                "gain": 0.0357,
+                "loaded": true,
+                "outputGain": 0.0357,
+                "playing": true,
+                "target": 0.0357
+              },
+              "water": {
+                "gain": 0.0112,
+                "loaded": true,
+                "outputGain": 0.0112,
+                "playing": true,
+                "target": 0.0112
+              },
+              "wind": {
+                "gain": 0.0085,
+                "loaded": true,
+                "outputGain": 0.0085,
+                "playing": true,
+                "target": 0.0085
+              }
+            },
+            "volumePercent": 100
+          },
+          "combatVfxPrewarmed": true,
+          "consoleLines": [
+            "timeScale done",
+            "invincible done",
+            "timeScale done",
+            "teleport done",
+            "refill done",
+            "insertion done",
+            "timeScale done",
+            "timeScale done",
+            "invincible done",
+            "timeScale done",
+            "teleport done",
+            "refill done",
+            "insertion done"
+          ],
+          "consoleOpen": false,
+          "controlsCanSave": true,
+          "controlsCapture": null,
+          "controlsMenuOpen": false,
+          "controlsStatus": "",
+          "controlsWarning": "",
+          "debugFreeFly": null,
+          "desktopTrainer": {
+            "closed": false,
+            "contentScale": 0.928125023841858,
+            "maximized": false,
+            "minimized": false,
+            "open": false,
+            "rect": {
+              "height": 584.569606801275,
+              "width": 908.990435706695,
+              "x": 185.504782146652,
+              "y": 52.7948990435707
+            },
+            "tab": "CHEATS",
+            "visible": false
+          },
+          "firstRunHints": {
+            "current": null,
+            "seen": [
+              "aimbot"
+            ]
+          },
+          "input": {
+            "cursorCaptureRequested": true,
+            "cursorCaptured": true,
+            "injected": {
+              "active": true,
+              "expiresInMs": null,
+              "form": "tap",
+              "holdId": 5,
+              "lastCompletedTapFrames": 1,
+              "lastCompletedTapHoldId": 4,
+              "lastCompletedTapSequence": 893,
+              "lastSampledSequence": 893,
+              "restoresHoldId": null,
+              "sampledHoldId": 4,
+              "samples": 1,
+              "sequence": 1068,
+              "tapFramesRemaining": 1
+            },
+            "mouseMode": 2
+          },
+          "lattice": {
+            "live": 0,
+            "merged": 0,
+            "opened": 3,
+            "slots": [],
+            "view": {
+              "enemyMarks": [],
+              "hits": 0,
+              "impactFrames": 80,
+              "showing": false
+            }
+          },
+          "localPeerId": 2,
+          "localServerTick": {
+            "maxMs": 139.756409686728,
+            "meanMs": 3.58754666882062
+          },
+          "mainMenuOpen": false,
+          "mainMenuStatus": "",
+          "matchLoadingOpen": false,
+          "matchLoadingProgress": 1,
+          "matchLoadingStatus": "STARTING RUN...",
+          "metaMenu": {
+            "dollars": 0,
+            "message": "",
+            "open": false,
+            "shelf": [],
+            "tab": "upgrades",
+            "tabOpen": false,
+            "unlocked": [],
+            "upgrades": {}
+          },
+          "mode": "client",
+          "navStats": {
+            "failed": 3088,
+            "outOfBounds": 0,
+            "queries": 18,
+            "queryMs": 31.185,
+            "queryPeakMs": 3.153,
+            "routeMs": 37.3440000000007,
+            "routePeakMs": 3.952,
+            "routes": 3100,
+            "syncQueries": 6
+          },
+          "navigation": {
+            "areas": 1125,
+            "polygons": 15596,
+            "ready": true,
+            "source": "dumbo-survival"
+          },
+          "pauseOpen": false,
+          "pauseRespawnAvailable": false,
+          "pauseRespawnNote": "",
+          "presentation": {
+            "aim": {
+              "aimPitchRadians": 0.00607192713740862,
+              "aimYawRadians": 0.691931047537555,
+              "pitchRadians": 0,
+              "viewKickRadians": 0.00607192713740862,
+              "viewKickYawRadians": 0.00517354038140979,
+              "yawRadians": 0.686757507156145
+            },
+            "aiming": {
+              "blend": 0,
+              "crosshairVisible": false,
+              "foregroundBlurBlend": 0,
+              "requested": false
+            },
+            "artDirection": "white-red-cyan-faceted",
+            "body": {
+              "alive": true,
+              "armor": 100,
+              "health": 100,
+              "runArmor": 0
+            },
+            "cameraFov": 42,
+            "cameraMode": "third-person-debug",
+            "characterAnimationSource": "Mixamo",
+            "combatVfx": {
+              "activeBulletHoles": 2,
+              "activeDebris": 3,
+              "activeDust": 2,
+              "activeShells": 2,
+              "impactSpawnCount": 2,
+              "lastImpact": {
+                "normal": [
+                  0.880393803119659,
+                  0,
+                  0.474243402481079
+                ],
+                "position": [
+                  -601.365417480469,
+                  -8.45374870300293,
+                  -421.965087890625
+                ],
+                "surface": "concrete",
+                "weapon": "machineGun"
+              },
+              "recentImpacts": [
+                {
+                  "normal": [
+                    -0.7435422539711,
+                    0,
+                    -0.668689012527466
+                  ],
+                  "position": [
+                    -560.211120605469,
+                    -15.806752204895,
+                    -370.931091308594
+                  ],
+                  "surface": "concrete",
+                  "weapon": "machineGun"
+                },
+                {
+                  "normal": [
+                    0.880393803119659,
+                    0,
+                    0.474243402481079
+                  ],
+                  "position": [
+                    -601.365417480469,
+                    -8.45374870300293,
+                    -421.965087890625
+                  ],
+                  "surface": "concrete",
+                  "weapon": "machineGun"
+                }
+              ],
+              "shellSpawnCount": 2
+            },
+            "debugThirdPerson": true,
+            "defenses": [
+              {
+                "armorVisible": false,
+                "playerId": 2
+              }
+            ],
+            "firstPersonFiringResidual": 0.0085788732394576,
+            "firstPersonReload": {
+              "active": false,
+              "blend": 0,
+              "choreographed": false,
+              "phase": 0,
+              "pinned": false,
+              "pose": {
+                "supportHandEulerRadians": [
+                  0,
+                  0,
+                  0
+                ],
+                "supportHandOffset": [
+                  0,
+                  0,
+                  0
+                ],
+                "weaponEulerRadians": [
+                  0,
+                  0,
+                  0
+                ],
+                "weaponOffset": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "weapon": "machineGun"
+            },
+            "firstPersonRigBoneCount": 41,
+            "healthDistress": {
+              "breathing": 0,
+              "heartbeat": 0,
+              "heartbeatRate": 1,
+              "intensity": 0,
+              "overlayVisible": false,
+              "targetIntensity": 0
+            },
+            "hud": {
+              "ammo": "29 / 00",
+              "armor": "100",
+              "category": "",
+              "grenades": "G:0",
+              "health": "100 +100A",
+              "interactionPrompt": "",
+              "kills": "0/1000000",
+              "layoutMode": "wide",
+              "safeMargin": 24,
+              "status": "",
+              "viewportSize": [
+                1280,
+                720
+              ],
+              "weapon": "ASSAULT RIFLE"
+            },
+            "knife": {
+              "category": null,
+              "clip": "KnifeSlash",
+              "elapsedMs": 600,
+              "lastPress": null,
+              "loaded": false,
+              "playing": false,
+              "slashes": 0
+            },
+            "localBodyVisible": true,
+            "playerVisibility": [
+              {
+                "playerId": 2,
+                "renderedVisible": true
+              }
+            ],
+            "prediction": {
+              "active": false,
+              "correctionMetres": 0,
+              "corrections": 1,
+              "framesHeld": 382,
+              "framesMoved": 12,
+              "historyDepth": 0,
+              "lastInputSequence": 1067,
+              "renderedPosition": [
+                -566.0625,
+                -12.90234375,
+                -380.328125
+              ],
+              "serverPosition": [
+                -566.0625,
+                -12.90234375,
+                -380.328125
+              ],
+              "snaps": 0,
+              "snapshotsApplied": 70,
+              "submittedSequence": 1068
+            },
+            "reticle": {
+              "arms": {
+                "bottom": [
+                  -1.5,
+                  34.1427803039551
+                ],
+                "left": [
+                  -42.1427803039551,
+                  -1.5
+                ],
+                "right": [
+                  34.1427803039551,
+                  -1.5
+                ],
+                "top": [
+                  -1.5,
+                  -42.1427803039551
+                ]
+              },
+              "authoritativeSpreadRadians": 0.0344900000000001,
+              "gapPx": 34.1427811026882,
+              "visible": false
+            },
+            "rigPose": null,
+            "stancePlacement": {
+              "anchor": [
+                -0.193,
+                1.274,
+                0.019
+              ],
+              "bakedHands": false,
+              "bones": null,
+              "borePitchRadians": 0.0515954464463987,
+              "butt": [
+                -0.193,
+                1.274,
+                0.019
+              ],
+              "buttToShoulder": 5.58793544769287e-09,
+              "palmResidualMeters": null
+            },
+            "supportHandContact": {
+              "bakedHands": false,
+              "firingCurl": null,
+              "firingResidual": 1.66600049311683e-08,
+              "leftArm": {
+                "clip": "MachineGunFirstPersonIdle",
+                "elbow": [
+                  0.0566667765378952,
+                  -0.356979012489319,
+                  -0.442647278308868
+                ],
+                "hand": [
+                  0.120407924056053,
+                  -0.127931237220764,
+                  -0.543468356132507
+                ],
+                "shoulder": [
+                  -0.11440534889698,
+                  -0.315542578697205,
+                  -0.516074120998383
+                ]
+              },
+              "residual": 6.14390600617298e-08,
+              "socket": "WorldLeftGripSocket",
+              "supportCurl": null
+            },
+            "systemAdmins": [
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 41,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": -2.84919337847254,
+                "gaitPlaybackRate": 0.150000005960464,
+                "gaitSecondary": "MachineGunWalk",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e1",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 28,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": -0.957399615911338,
+                "gaitPlaybackRate": 0.150000005960464,
+                "gaitSecondary": "MachineGunStrafeRight",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e2",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "machinegunshoot",
+                "animationAvailable": true,
+                "animationPlays": 17,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 23411,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.68679319351869,
+                "gaitPlaybackRate": 0.150000005960464,
+                "gaitSecondary": "MachineGunWalk",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e3",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 16,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.190865978079711,
+                "gaitPlaybackRate": 0.150000005960464,
+                "gaitSecondary": "MachineGunStrafeLeft",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e4",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 2,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 2.5246243936228,
+                "gaitPlaybackRate": 0,
+                "gaitSecondary": "none",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e5",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 12,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.770900572504891,
+                "gaitPlaybackRate": 0.150000005960464,
+                "gaitSecondary": "MachineGunWalk",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e6",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              }
+            ],
+            "viewmodelPass": {
+              "limbScale": {
+                "forearmMetres": 0.2582
+              },
+              "meshDepths": [],
+              "sightScreen": {
+                "ButtSocket": [
+                  2.5286,
+                  2.0238
+                ],
+                "FrontSightSocket": [
+                  0.6202,
+                  0.5006
+                ],
+                "MuzzleSocket": [
+                  0.5866,
+                  0.6047
+                ],
+                "RearSightSocket": [
+                  0.8677,
+                  0.5673
+                ],
+                "RightGripSocket": [
+                  0.9101,
+                  1.21
+                ]
+              },
+              "subViewportSize": [
+                1280,
+                720
+              ],
+              "viewmodelCullMask": 524288,
+              "viewmodelFov": 42,
+              "visibleRect": [
+                1280,
+                720
+              ],
+              "weaponAxes": {
+                "bore": [
+                  -0.105,
+                  0.004,
+                  -0.994
+                ],
+                "x": [
+                  0.991,
+                  -0.08,
+                  -0.105
+                ],
+                "y": [
+                  0.08,
+                  0.997,
+                  -0.005
+                ]
+              },
+              "weaponMaterial": "StandardMaterial3D albedoTexture=true override=none visible=false",
+              "weaponMeshLayers": 0,
+              "windowSize": [
+                1920,
+                1080
+              ],
+              "worldCullMask": 524287,
+              "worldFov": 42
+            },
+            "weaponCalibration": {
+              "enabled": false
+            },
+            "weaponRecoil": 0.543061839814817,
+            "weaponSwitch": {
+              "active": false,
+              "endsAtMs": 22207,
+              "progress": 1,
+              "verticalOffset": 0
+            },
+            "worldShot": {
+              "count": 2,
+              "muzzleFlashVisible": false,
+              "recoil": 0.543061839814817,
+              "steadyAim": false,
+              "weapon": "machineGun",
+              "weaponSwitchOffset": 0,
+              "weaponSwitchProgress": 1
+            },
+            "worldShots": {
+              "2": {
+                "count": 2,
+                "muzzleFlashVisible": false,
+                "recoil": 0.543061839814817,
+                "steadyAim": false,
+                "weapon": "machineGun",
+                "weaponSwitchOffset": 0,
+                "weaponSwitchProgress": 1
+              }
+            }
+          },
+          "roguelite": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0,
+              "killSnaps": 0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0,
+              "target": null,
+              "turning": false
+            },
+            "cheatEngine": {
+              "aimbot": "",
+              "armed": false,
+              "banishArmed": false,
+              "cards": [],
+              "maximized": false,
+              "mode": null,
+              "offers": [],
+              "open": false,
+              "openForMs": 0,
+              "rows": [],
+              "selected": 0,
+              "sent": false
+            },
+            "cheatScene": {
+              "blasts": 0,
+              "drones": 0,
+              "mines": 0,
+              "mortars": 0,
+              "thrown": 0
+            },
+            "cloakers": [],
+            "enemies": [
+              {
+                "health": 150,
+                "id": "soldier-e1",
+                "position": [
+                  -535.1201171875,
+                  -14.7275390625,
+                  -277.1025390625
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e2",
+                "position": [
+                  -410.248046875,
+                  -16.2470703125,
+                  -490.0263671875
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e3",
+                "position": [
+                  -575.8515625,
+                  -16.3779296875,
+                  -392.2666015625
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e4",
+                "position": [
+                  -577.728515625,
+                  -16.423828125,
+                  -440.9091796875
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e5",
+                "position": [
+                  -738.3896484375,
+                  -15.998046875,
+                  -137.388671875
+                ]
+              },
+              {
+                "health": 152,
+                "id": "soldier-e6",
+                "position": [
+                  -577.8125,
+                  -16.3603515625,
+                  -392.634765625
+                ]
+              }
+            ],
+            "gameHud": {
+              "banner": {
+                "text": "",
+                "visible": false
+              },
+              "killFeedKills": 0,
+              "killFeedRows": 0,
+              "scoreboardOpen": false,
+              "standings": [],
+              "streakPills": {
+                "1": {
+                  "id": "predatorMissile",
+                  "mark": "",
+                  "state": "idle"
+                },
+                "2": {
+                  "id": "precisionAirstrike",
+                  "mark": "",
+                  "state": "idle"
+                }
+              }
+            },
+            "hitIndicator": {
+              "bearing": null,
+              "showing": 0
+            },
+            "insertion": {
+              "armsHidden": true,
+              "auditSampleFrames": 4,
+              "canopyVisible": false,
+              "kind": "rappel",
+              "phase": "returning",
+              "ropeVisible": true
+            },
+            "lastMultiKill": null,
+            "lastShakeRadians": 0,
+            "localReload": null,
+            "lootOverlay": {
+              "banner": "",
+              "blur": 0,
+              "muffled": false,
+              "taskbar": false
+            },
+            "medicAura": {
+              "held": [],
+              "overhealed": [],
+              "rising": 0,
+              "shed": 0
+            },
+            "minimap": {
+              "hidden": false,
+              "markers": 1,
+              "visible": true
+            },
+            "run": {
+              "combatUntilMs": 26411.2,
+              "insertion": {
+                "kind": "rappel",
+                "landedAtMs": 24707.25,
+                "landing": [
+                  -566.062723795573,
+                  -16.4691711425781,
+                  -380.327748616536
+                ],
+                "serial": 2,
+                "startedAtMs": 22207.25,
+                "yaw": 0.686757507156145
+              },
+              "insertionAway": false,
+              "interactables": [],
+              "seed": 1765934887,
+              "startedAtMs": 14241,
+              "survival": {
+                "bestKps": 0,
+                "bonusHealth": 0,
+                "bonusHealthMax": 0,
+                "boss": null,
+                "bosses": [],
+                "build": {
+                  "banishes": 0,
+                  "claymores": [],
+                  "drones": 0,
+                  "evolved": [],
+                  "evolvedIds": [],
+                  "mortars": [],
+                  "perkSlots": 3,
+                  "ready": [],
+                  "rerolls": 0,
+                  "slowed": [],
+                  "specialIds": [],
+                  "specials": [],
+                  "stats": [],
+                  "stunned": [],
+                  "thrown": [],
+                  "turrets": [],
+                  "weaponSlots": 3,
+                  "weapons": []
+                },
+                "dead": false,
+                "diedTo": "",
+                "drops": [],
+                "elapsedMs": 9188.75,
+                "elites": [],
+                "enemies": 6,
+                "events": {
+                  "commanded": [],
+                  "heli": null,
+                  "uavUntilMs": 0
+                },
+                "godmodeUntilMs": 0,
+                "kills": 0,
+                "kps": 0,
+                "lock": null,
+                "mapHack": false,
+                "mapHackMeters": 45,
+                "message": "",
+                "meta": {
+                  "ammoBoxes": [],
+                  "autoAmmo": false,
+                  "boxBanishes": 0,
+                  "boxRerolls": 0,
+                  "enemyRadar": false,
+                  "extraLives": 0,
+                  "lagSwitch": false,
+                  "report": null
+                },
+                "minute": "RIFLEMEN",
+                "offer": null,
+                "secondLife": false,
+                "shield": 0,
+                "shieldMax": 0,
+                "snapLock": false,
+                "spin": null,
+                "streaks": {
+                  "activation": null,
+                  "adrenalineUntilMs": 0,
+                  "blasts": [],
+                  "burning": [],
+                  "chainEndsAtMs": 0,
+                  "chainWindowMs": 4000,
+                  "counter": 0,
+                  "dogs": [],
+                  "dogsUntilMs": 0,
+                  "empAtMs": 0,
+                  "exitAtMs": 0,
+                  "fires": [],
+                  "flights": [],
+                  "held": [],
+                  "juggernautUntilMs": 0,
+                  "ladder": [
+                    {
+                      "id": "predatorMissile",
+                      "key": 1,
+                      "kills": 3,
+                      "name": "Predator Missile"
+                    },
+                    {
+                      "id": "precisionAirstrike",
+                      "key": 2,
+                      "kills": 5,
+                      "name": "Precision Airstrike"
+                    }
+                  ],
+                  "maxHeldEach": 1,
+                  "next": {
+                    "id": "predatorMissile",
+                    "key": 1,
+                    "kills": 3,
+                    "name": "Predator Missile"
+                  },
+                  "nowMs": 23429.8,
+                  "nuke": null,
+                  "out": false,
+                  "returning": null,
+                  "ride": null,
+                  "strikes": []
+                },
+                "streamKills": [],
+                "supply": {
+                  "drops": [],
+                  "nextCrateInMs": 39351.25,
+                  "owned": []
+                }
+              }
+            },
+            "startingWeapon": "machineGun",
+            "streakView": {
+              "gun": null,
+              "polarity": "whiteHot",
+              "ride": null,
+              "tablet": false
+            },
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "streamer drink water",
+                    "user": "FrostyNugget"
+                  },
+                  {
+                    "text": "I'm only here for the chat",
+                    "user": "lowkeylurker"
+                  },
+                  {
+                    "text": "imagine needing a lock-on",
+                    "user": "cheatsnob"
+                  },
+                  {
+                    "text": "do something!!",
+                    "user": "KettleCorn"
+                  },
+                  {
+                    "text": "L + ratio",
+                    "user": "MrBackseat"
+                  },
+                  {
+                    "text": "first time here, is it always like this",
+                    "user": "the_real_dave"
+                  },
+                  {
+                    "text": "is he wearing headphones",
+                    "user": "Juno"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0,
+              "hype": 0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 0,
+                "endCard": false,
+                "opener": false,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0,
+                  "tips": 1,
+                  "viewers": 11,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18,
+              "request": null,
+              "streams": 0,
+              "style": null,
+              "styleBonus": 1,
+              "tipBot": "",
+              "tipBotQueued": 0,
+              "tipCount": 1,
+              "tips": 1,
+              "viewers": 11
+            },
+            "survivalPlayer": {
+              "armor": 100,
+              "at": [
+                -566.0625,
+                -12.90234375,
+                -380.328125
+              ],
+              "health": 100,
+              "loaded": 29,
+              "reserve": 0
+            },
+            "weapon": "machineGun",
+            "weaponRefill": ""
+          },
+          "routeWork": {
+            "cancelled": 0,
+            "completed": 12,
+            "deferred": 0,
+            "discarded": 0,
+            "exhaustedRoutes": 0,
+            "expired": 0,
+            "latencyPeakMs": 139,
+            "nativeCompleted": 12,
+            "nativePeakMs": 2.233,
+            "peakFrameMs": 0.282999999999447,
+            "peakStepMs": 0.259000000001834,
+            "pending": 0,
+            "pollPeakMs": 0.027,
+            "queriesPerFramePeak": 1,
+            "steps": 24,
+            "submitPeakMs": 0.055,
+            "submitted": 12
+          },
+          "runSummary": {
+            "ammoBoxes": 0,
+            "open": false,
+            "shown": null
+          },
+          "schemaVersion": 1,
+          "selectedCategory": "assault",
+          "settings": {
+            "audioPercent": 100,
+            "fullscreen": true,
+            "keyBindings": {
+              "aim": [
+                "mouse:2",
+                null
+              ],
+              "crouch": [
+                "key:67",
+                "key:4194326"
+              ],
+              "dash": [
+                "key:4194328",
+                null
+              ],
+              "dropCheat": [
+                "key:71",
+                null
+              ],
+              "fire": [
+                "mouse:1",
+                null
+              ],
+              "interact": [
+                "key:70",
+                null
+              ],
+              "jump": [
+                "key:32",
+                null
+              ],
+              "knife": [
+                "key:86",
+                null
+              ],
+              "moveBackward": [
+                "key:83",
+                null
+              ],
+              "moveForward": [
+                "key:87",
+                null
+              ],
+              "moveLeft": [
+                "key:65",
+                null
+              ],
+              "moveRight": [
+                "key:68",
+                null
+              ],
+              "reload": [
+                "key:82",
+                null
+              ],
+              "scoreboard": [
+                "key:4194306",
+                null
+              ],
+              "sprint": [
+                "key:4194325",
+                null
+              ],
+              "swapWeapon": [
+                "key:81",
+                null
+              ],
+              "toggleHelp": [
+                "key:4194332",
+                null
+              ],
+              "toggleMap": [
+                "key:77",
+                null
+              ]
+            },
+            "resolutionHeight": 720,
+            "resolutionWidth": 1280,
+            "screenShakePercent": 100,
+            "sendCrashReports": true,
+            "showFpsCounter": false
+          },
+          "settingsMenuOpen": false,
+          "settingsStatus": "",
+          "simulationHz": 60,
+          "slowestNavQuery": {
+            "from": [
+              -526.64208984375,
+              -14.4833332061768,
+              -272.954376220703
+            ],
+            "ms": 3.153,
+            "to": [
+              -531.197082519531,
+              -16.4942760467529,
+              -366.592834472656
+            ]
+          },
+          "snapshot": {
+            "aiFrozen": false,
+            "corpses": [],
+            "endsAtMs": 86414005,
+            "killLimit": 1000000,
+            "matchDurationMs": 86400000,
+            "maxPlayers": 1,
+            "modeId": "roguelite",
+            "players": [
+              {
+                "accuracySpreadRadians": 0.0344900000000001,
+                "aiming": false,
+                "alive": true,
+                "armor": 100,
+                "category": "assault",
+                "crouching": false,
+                "dashDirectionX": 0,
+                "dashDirectionZ": 0,
+                "dashEndsAtMs": 0,
+                "dashReadyAtMs": 0,
+                "deaths": 0,
+                "fireRateMultiplier": 1,
+                "firedRevealPosition": [
+                  -566.0625,
+                  -10.0859375,
+                  -380.328125
+                ],
+                "firedRevealUntilMs": 24427,
+                "grenades": 0,
+                "grounded": true,
+                "health": 100,
+                "id": 2,
+                "infiniteAmmo": false,
+                "invincible": true,
+                "kills": 0,
+                "lastInputSequence": 1067,
+                "loadedAmmo": 29,
+                "mantle": null,
+                "movementMultiplier": 1,
+                "name": "GoldenHammer",
+                "pitch": 0.0061,
+                "position": [
+                  -566.0625,
+                  -12.90234375,
+                  -380.328125
+                ],
+                "reloadScale": 1,
+                "reloading": false,
+                "reserveAmmo": 0,
+                "respawnAtMs": null,
+                "role": "cheater",
+                "runArmor": 0,
+                "sprintRaiseEndsAtMs": 22207,
+                "sprinting": false,
+                "startingWeapon": "machineGun",
+                "team": "",
+                "verticalVelocity": 0,
+                "weapon": "machineGun",
+                "weaponReadyAtMs": 22207,
+                "weaponSwitchEndsAtMs": 22207,
+                "yaw": 0.691946308724832
+              }
+            ],
+            "serverTimeMs": 23433,
+            "systemAdmins": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 150,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 150,
+                "position": [
+                  -535.1201171875,
+                  -14.7275390625,
+                  -277.1025390625
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -410.248046875,
+                  -16.2470703125,
+                  -490.0263671875
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 22999,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 23411,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -575.8515625,
+                  -16.3779296875,
+                  -392.2666015625
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -577.728515625,
+                  -16.423828125,
+                  -440.9091796875
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -738.3896484375,
+                  -15.998046875,
+                  -137.388671875
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 152,
+                "id": "soldier-e6",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 152,
+                "position": [
+                  -577.8125,
+                  -16.3603515625,
+                  -392.634765625
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              }
+            ]
+          },
+          "snapshotLastFullPacket": {
+            "bytes": 101,
+            "delta": false,
+            "sequence": 0,
+            "serverTimeMs": 14423
+          },
+          "snapshotPacket": {
+            "bytes": 87,
+            "delta": true,
+            "sequence": 82
+          },
+          "soldierPools": "SoldierMuzzleFlash built=6 reused=0 released=0 discarded=0 idle=0 \u00b7 SoldierTracer built=6 reused=0 released=0 discarded=0 idle=0 \u00b7 MarksmanLaser built=0 reused=0 released=0 discarded=0 idle=0 \u00b7 SniperGlint built=0 reused=0 released=0 discarded=0 idle=0",
+          "soldierStats": {
+            "aims": 1,
+            "damage": 2,
+            "hits": 1,
+            "maxTokensHeld": 1,
+            "pickMs": 6.498,
+            "pickRayMs": 2.455,
+            "pickRays": 507,
+            "pickRouteMaxMs": 0.094,
+            "pickRouteMs": 0.562,
+            "pickRouteSlow": 0,
+            "pickRoutes": 47,
+            "pickSnapMs": 1.43099999999999,
+            "pickSnaps": 486,
+            "pickStraightMs": 0.167,
+            "pickStraights": 8,
+            "rounds": 3,
+            "sightMs": 11.843,
+            "spacingAwake": 6,
+            "spacingLowestMeters": 2.04749894028191,
+            "spacingMeanNearestMeters": 143.128730336526,
+            "spacingMinNearestMeters": 82.6025483969927,
+            "spacingNowMeanMeters": 99.3180580610516,
+            "spacingNowMinMeters": 2.04749894028191,
+            "spacingSamples": 12,
+            "spotPicks": 8,
+            "spotPicksDeferred": 0,
+            "spotsUnreachable": 2,
+            "steerMs": 194.929000000001,
+            "updateMs": 403.018999999998,
+            "volleys": 1
+          },
+          "stepClimbStats": {
+            "attempted": 0,
+            "climbed": 0,
+            "collisions": 0,
+            "moves": 3829,
+            "skippedMoving": 0,
+            "skippedNoHeadroom": 0,
+            "skippedNotPressed": 3829,
+            "skippedRemembered": 0,
+            "skippedSpentMotion": 0,
+            "wasted": 0
+          },
+          "waterfront": null,
+          "window": {
+            "mode": 0,
+            "position": [
+              -10000,
+              -10000
+            ],
+            "primaryScreen": 0,
+            "screen": 0,
+            "screenPosition": [
+              0,
+              0
+            ],
+            "screenSize": [
+              2560,
+              1440
+            ],
+            "size": [
+              1920,
+              1080
+            ],
+            "usableRect": [
+              0,
+              0,
+              2560,
+              1400
+            ]
+          }
+        }
+      },
+      "players": [
+        {
+          "accuracySpreadRadians": 0.0344900000000001,
+          "aiming": false,
+          "alive": true,
+          "armor": 100,
+          "category": "assault",
+          "crouching": false,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "deaths": 0,
+          "fireRateMultiplier": 1,
+          "firedRevealPosition": [
+            -566.0625,
+            -10.0859375,
+            -380.328125
+          ],
+          "firedRevealUntilMs": 24427,
+          "grenades": 0,
+          "grounded": true,
+          "health": 100,
+          "id": 2,
+          "infiniteAmmo": false,
+          "invincible": true,
+          "kills": 0,
+          "lastInputSequence": 1067,
+          "loadedAmmo": 29,
+          "mantle": null,
+          "movementMultiplier": 1,
+          "name": "GoldenHammer",
+          "pitch": 0.0061,
+          "position": [
+            -566.0625,
+            -12.90234375,
+            -380.328125
+          ],
+          "reloadScale": 1,
+          "reloading": false,
+          "reserveAmmo": 0,
+          "respawnAtMs": null,
+          "role": "cheater",
+          "runArmor": 0,
+          "sprintRaiseEndsAtMs": 22207,
+          "sprinting": false,
+          "startingWeapon": "machineGun",
+          "team": "",
+          "verticalVelocity": 0,
+          "weapon": "machineGun",
+          "weaponReadyAtMs": 22207,
+          "weaponSwitchEndsAtMs": 22207,
+          "yaw": 0.691946308724832
+        }
+      ],
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 12,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "side",
+      "frame": 111,
+      "elapsedMs": 1850.0,
+      "path": "side/111.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 8,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "side",
+      "frame": 150,
+      "elapsedMs": 2500.0,
+      "path": "side/150.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 8,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "landed",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "side",
+      "frame": 171,
+      "elapsedMs": 2850.0,
+      "path": "side/171.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": false,
+        "auditSampleFrames": 8,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "landed",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "overview",
+      "frame": 0,
+      "elapsedMs": 0.0,
+      "path": "overview/000.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 8,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "overview",
+      "frame": 60,
+      "elapsedMs": 1000.0,
+      "path": "overview/060.png",
+      "triggerReceipt": {
+        "ok": true,
+        "result": {
+          "accepted": true,
+          "durationMs": null,
+          "form": "tap",
+          "holdId": 6,
+          "restoresHoldId": null,
+          "sequence": 1263,
+          "tapFrames": 1
+        },
+        "store": {
+          "aiBudget": {
+            "assistanceMs": 0.0851566666666667,
+            "decisionsMs": 0.552933333333333,
+            "maxMs": 153.31,
+            "meanMs": 1.69542,
+            "meanRays": 0,
+            "p95Ms": 0.874,
+            "ticks": 300
+          },
+          "audio": {
+            "activeFootstepPlayers": 0,
+            "activeLocalPlayers": 0,
+            "activeWorldPlayers": 0,
+            "buses": [
+              "GameplaySfx",
+              "GameplayUI",
+              "GameplayAmbience",
+              "Music"
+            ],
+            "cheatLoops": {
+              "cheat-drone-hover": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "cheat-drone-swarm-hover": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "cheat-turret-idle": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "enemy-heli-rotor": [
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ]
+            },
+            "cheatTakes": {},
+            "cheatVoices": [],
+            "cueLog": [
+              {
+                "atMs": 14427,
+                "id": "match-start",
+                "spatial": false
+              },
+              {
+                "atMs": 14672,
+                "id": "landing",
+                "spatial": false
+              },
+              {
+                "atMs": 16581,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 17828,
+                "id": "armor-gain",
+                "spatial": false
+              },
+              {
+                "atMs": 35219,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 40462,
+                "id": "ui-open",
+                "spatial": false
+              },
+              {
+                "atMs": 48570,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 65432,
+                "id": "machine-fire",
+                "spatial": false
+              },
+              {
+                "atMs": 65434,
+                "id": "impact-concrete",
+                "spatial": true
+              },
+              {
+                "atMs": 74751,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 83783,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 84242,
+                "id": "casing",
+                "spatial": true
+              },
+              {
+                "atMs": 84476,
+                "id": "combat-rifle-windup",
+                "spatial": true
+              },
+              {
+                "atMs": 84868,
+                "id": "picket-chirp",
+                "spatial": true
+              },
+              {
+                "atMs": 89735,
+                "id": "machine-fire",
+                "spatial": false
+              },
+              {
+                "atMs": 89737,
+                "id": "impact-concrete",
+                "spatial": true
+              },
+              {
+                "atMs": 105202,
+                "id": "combat-enemy-rifle",
+                "spatial": true
+              },
+              {
+                "atMs": 109858,
+                "id": "combat-enemy-rifle",
+                "spatial": true
+              },
+              {
+                "atMs": 109896,
+                "id": "machine-fire",
+                "spatial": false
+              },
+              {
+                "atMs": 109899,
+                "id": "impact-concrete",
+                "spatial": true
+              },
+              {
+                "atMs": 117995,
+                "id": "combat-enemy-rifle",
+                "spatial": true
+              },
+              {
+                "atMs": 117997,
+                "id": "combat-rifle-windup",
+                "spatial": true
+              }
+            ],
+            "enemyLoops": {
+              "mend": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "motor": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "rotor": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "shimmer": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ],
+              "sweep": [
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                },
+                {
+                  "cutoffHz": 5000,
+                  "held": false,
+                  "pitch": 1,
+                  "playing": false,
+                  "volumeDb": 0
+                }
+              ]
+            },
+            "enemyTells": [
+              {
+                "held": false,
+                "owner": "soldier-e6",
+                "playing": false
+              }
+            ],
+            "healthDistress": {
+              "breathingPlaying": false,
+              "breathingVolumeDb": 0,
+              "heartbeatPlaying": false,
+              "heartbeatRate": 1,
+              "heartbeatVolumeDb": 0
+            },
+            "lastPlayed": {
+              "cue": "combat-rifle-windup",
+              "spatial": true
+            },
+            "lastSpatialByCue": {
+              "armor-gain": false,
+              "casing": true,
+              "combat-enemy-rifle": true,
+              "combat-rifle-windup": true,
+              "impact-concrete": true,
+              "landing": false,
+              "machine-fire": false,
+              "match-start": false,
+              "picket-chirp": true,
+              "ui-open": false
+            },
+            "missingReviewedResources": [],
+            "playedCounts": {
+              "armor-gain": 1,
+              "casing": 1,
+              "combat-enemy-rifle": 3,
+              "combat-rifle-windup": 2,
+              "impact-concrete": 3,
+              "landing": 1,
+              "machine-fire": 3,
+              "match-start": 1,
+              "picket-chirp": 6,
+              "soldier-step": 2,
+              "ui-open": 1
+            },
+            "recentFootsteps": [
+              {
+                "pitch": 0.982,
+                "take": "soldier-step-03.ogg",
+                "volumeDb": 5.9
+              },
+              {
+                "pitch": 0.913,
+                "take": "soldier-step-02.ogg",
+                "volumeDb": 5.8
+              }
+            ],
+            "recentPlayed": [
+              {
+                "id": "combat_rifle_windup",
+                "spatial": true
+              },
+              {
+                "id": "combat_enemy_rifle",
+                "spatial": true
+              },
+              {
+                "id": "bullet_impact_concrete",
+                "spatial": true
+              },
+              {
+                "id": "machine_fire",
+                "spatial": false
+              },
+              {
+                "id": "combat_enemy_rifle",
+                "spatial": true
+              }
+            ],
+            "scheduledCount": 0,
+            "score": {
+              "boss": {
+                "gain": 0,
+                "loaded": true,
+                "outputGain": 0,
+                "playing": false,
+                "target": 0
+              },
+              "combat": {
+                "gain": 0.2239,
+                "loaded": true,
+                "outputGain": 0.2239,
+                "playing": true,
+                "target": 0.2239
+              },
+              "explore": {
+                "gain": 0,
+                "loaded": true,
+                "outputGain": 0,
+                "playing": false,
+                "target": 0
+              },
+              "traffic": {
+                "gain": 0.0357,
+                "loaded": true,
+                "outputGain": 0.0357,
+                "playing": true,
+                "target": 0.0357
+              },
+              "water": {
+                "gain": 0.0112,
+                "loaded": true,
+                "outputGain": 0.0112,
+                "playing": true,
+                "target": 0.0112
+              },
+              "wind": {
+                "gain": 0.0085,
+                "loaded": true,
+                "outputGain": 0.0085,
+                "playing": true,
+                "target": 0.0085
+              }
+            },
+            "volumePercent": 100
+          },
+          "combatVfxPrewarmed": true,
+          "consoleLines": [
+            "timeScale done",
+            "invincible done",
+            "timeScale done",
+            "teleport done",
+            "refill done",
+            "insertion done",
+            "timeScale done",
+            "timeScale done",
+            "invincible done",
+            "timeScale done",
+            "teleport done",
+            "refill done",
+            "insertion done"
+          ],
+          "consoleOpen": false,
+          "controlsCanSave": true,
+          "controlsCapture": null,
+          "controlsMenuOpen": false,
+          "controlsStatus": "",
+          "controlsWarning": "",
+          "debugFreeFly": null,
+          "desktopTrainer": {
+            "closed": false,
+            "contentScale": 0.928125023841858,
+            "maximized": false,
+            "minimized": false,
+            "open": false,
+            "rect": {
+              "height": 584.569606801275,
+              "width": 908.990435706695,
+              "x": 185.504782146652,
+              "y": 52.7948990435707
+            },
+            "tab": "CHEATS",
+            "visible": false
+          },
+          "firstRunHints": {
+            "current": null,
+            "seen": [
+              "aimbot"
+            ]
+          },
+          "input": {
+            "cursorCaptureRequested": true,
+            "cursorCaptured": true,
+            "injected": {
+              "active": true,
+              "expiresInMs": null,
+              "form": "tap",
+              "holdId": 6,
+              "lastCompletedTapFrames": 1,
+              "lastCompletedTapHoldId": 5,
+              "lastCompletedTapSequence": 1069,
+              "lastSampledSequence": 1069,
+              "restoresHoldId": null,
+              "sampledHoldId": 5,
+              "samples": 1,
+              "sequence": 1263,
+              "tapFramesRemaining": 1
+            },
+            "mouseMode": 2
+          },
+          "lattice": {
+            "live": 0,
+            "merged": 0,
+            "opened": 4,
+            "slots": [],
+            "view": {
+              "enemyMarks": [],
+              "hits": 0,
+              "impactFrames": 80,
+              "showing": false
+            }
+          },
+          "localPeerId": 2,
+          "localServerTick": {
+            "maxMs": 52.5862837627259,
+            "meanMs": 0.770728588245777
+          },
+          "mainMenuOpen": false,
+          "mainMenuStatus": "",
+          "matchLoadingOpen": false,
+          "matchLoadingProgress": 1,
+          "matchLoadingStatus": "STARTING RUN...",
+          "metaMenu": {
+            "dollars": 0,
+            "message": "",
+            "open": false,
+            "shelf": [],
+            "tab": "upgrades",
+            "tabOpen": false,
+            "unlocked": [],
+            "upgrades": {}
+          },
+          "mode": "client",
+          "navStats": {
+            "failed": 3091,
+            "outOfBounds": 0,
+            "queries": 23,
+            "queryMs": 41.159,
+            "queryPeakMs": 3.153,
+            "routeMs": 40.9400000000007,
+            "routePeakMs": 3.952,
+            "routes": 3105,
+            "syncQueries": 8
+          },
+          "navigation": {
+            "areas": 1125,
+            "polygons": 15596,
+            "ready": true,
+            "source": "dumbo-survival"
+          },
+          "pauseOpen": false,
+          "pauseRespawnAvailable": false,
+          "pauseRespawnNote": "",
+          "presentation": {
+            "aim": {
+              "aimPitchRadians": 0.00921985202925104,
+              "aimYawRadians": 0.693516776421456,
+              "pitchRadians": 0,
+              "viewKickRadians": 0.00921985202925104,
+              "viewKickYawRadians": 0.00675926926531085,
+              "yawRadians": 0.686757507156145
+            },
+            "aiming": {
+              "blend": 0,
+              "crosshairVisible": false,
+              "foregroundBlurBlend": 0,
+              "requested": false
+            },
+            "artDirection": "white-red-cyan-faceted",
+            "body": {
+              "alive": true,
+              "armor": 100,
+              "health": 100,
+              "runArmor": 0
+            },
+            "cameraFov": 60,
+            "cameraMode": "third-person-debug",
+            "characterAnimationSource": "Mixamo",
+            "combatVfx": {
+              "activeBulletHoles": 3,
+              "activeDebris": 6,
+              "activeDust": 4,
+              "activeShells": 3,
+              "impactSpawnCount": 3,
+              "lastImpact": {
+                "normal": [
+                  0.886025488376617,
+                  0,
+                  0.463636577129364
+                ],
+                "position": [
+                  -592.339721679688,
+                  -11.7403001785278,
+                  -410.037658691406
+                ],
+                "surface": "concrete",
+                "weapon": "machineGun"
+              },
+              "recentImpacts": [
+                {
+                  "normal": [
+                    -0.7435422539711,
+                    0,
+                    -0.668689012527466
+                  ],
+                  "position": [
+                    -560.211120605469,
+                    -15.806752204895,
+                    -370.931091308594
+                  ],
+                  "surface": "concrete",
+                  "weapon": "machineGun"
+                },
+                {
+                  "normal": [
+                    0.880393803119659,
+                    0,
+                    0.474243402481079
+                  ],
+                  "position": [
+                    -601.365417480469,
+                    -8.45374870300293,
+                    -421.965087890625
+                  ],
+                  "surface": "concrete",
+                  "weapon": "machineGun"
+                },
+                {
+                  "normal": [
+                    0.886025488376617,
+                    0,
+                    0.463636577129364
+                  ],
+                  "position": [
+                    -592.339721679688,
+                    -11.7403001785278,
+                    -410.037658691406
+                  ],
+                  "surface": "concrete",
+                  "weapon": "machineGun"
+                }
+              ],
+              "shellSpawnCount": 3
+            },
+            "debugThirdPerson": true,
+            "defenses": [
+              {
+                "armorVisible": false,
+                "playerId": 2
+              }
+            ],
+            "firstPersonFiringResidual": 0.00949706602841615,
+            "firstPersonReload": {
+              "active": false,
+              "blend": 0,
+              "choreographed": false,
+              "phase": 0,
+              "pinned": false,
+              "pose": {
+                "supportHandEulerRadians": [
+                  0,
+                  0,
+                  0
+                ],
+                "supportHandOffset": [
+                  0,
+                  0,
+                  0
+                ],
+                "weaponEulerRadians": [
+                  0,
+                  0,
+                  0
+                ],
+                "weaponOffset": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "weapon": "machineGun"
+            },
+            "firstPersonRigBoneCount": 41,
+            "healthDistress": {
+              "breathing": 0,
+              "heartbeat": 0,
+              "heartbeatRate": 1,
+              "intensity": 0,
+              "overlayVisible": false,
+              "targetIntensity": 0
+            },
+            "hud": {
+              "ammo": "28 / 00",
+              "armor": "100",
+              "category": "",
+              "grenades": "G:0",
+              "health": "100 +100A",
+              "interactionPrompt": "",
+              "kills": "0/1000000",
+              "layoutMode": "wide",
+              "safeMargin": 24,
+              "status": "",
+              "viewportSize": [
+                1280,
+                720
+              ],
+              "weapon": "ASSAULT RIFLE"
+            },
+            "knife": {
+              "category": null,
+              "clip": "KnifeSlash",
+              "elapsedMs": 600,
+              "lastPress": null,
+              "loaded": false,
+              "playing": false,
+              "slashes": 0
+            },
+            "localBodyVisible": true,
+            "playerVisibility": [
+              {
+                "playerId": 2,
+                "renderedVisible": true
+              }
+            ],
+            "prediction": {
+              "active": false,
+              "correctionMetres": 0,
+              "corrections": 1,
+              "framesHeld": 382,
+              "framesMoved": 12,
+              "historyDepth": 0,
+              "lastInputSequence": 1247,
+              "renderedPosition": [
+                -566.0625,
+                -15.7744140625,
+                -380.328125
+              ],
+              "serverPosition": [
+                -566.0625,
+                -15.7744140625,
+                -380.328125
+              ],
+              "snaps": 0,
+              "snapshotsApplied": 70,
+              "submittedSequence": 1263
+            },
+            "reticle": {
+              "arms": {
+                "bottom": [
+                  -1.5,
+                  25.4482421875
+                ],
+                "left": [
+                  -33.4482421875,
+                  -1.5
+                ],
+                "right": [
+                  25.4482421875,
+                  -1.5
+                ],
+                "top": [
+                  -1.5,
+                  -33.4482421875
+                ]
+              },
+              "authoritativeSpreadRadians": 0.0407900000000002,
+              "gapPx": 25.4482422440207,
+              "visible": false
+            },
+            "rigPose": null,
+            "stancePlacement": {
+              "anchor": [
+                -0.193,
+                1.273,
+                0.02
+              ],
+              "bakedHands": false,
+              "bones": null,
+              "borePitchRadians": 0.0512476182676858,
+              "butt": [
+                -0.193,
+                1.273,
+                0.02
+              ],
+              "buttToShoulder": 7.45058059692383e-09,
+              "palmResidualMeters": null
+            },
+            "supportHandContact": {
+              "bakedHands": false,
+              "firingCurl": null,
+              "firingResidual": 1.66600049311683e-08,
+              "leftArm": {
+                "clip": "MachineGunFirstPersonIdle",
+                "elbow": [
+                  0.0566667765378952,
+                  -0.356979012489319,
+                  -0.442647278308868
+                ],
+                "hand": [
+                  0.120407924056053,
+                  -0.127931237220764,
+                  -0.543468356132507
+                ],
+                "shoulder": [
+                  -0.11440534889698,
+                  -0.315542578697205,
+                  -0.516074120998383
+                ]
+              },
+              "residual": 6.14390600617298e-08,
+              "socket": "WorldLeftGripSocket",
+              "supportCurl": null
+            },
+            "systemAdmins": [
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 49,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": -2.85386038424628,
+                "gaitPlaybackRate": 0.21443684399128,
+                "gaitSecondary": "MachineGunWalk",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e1",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 36,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": -0.957283141116042,
+                "gaitPlaybackRate": 0.15476892888546,
+                "gaitSecondary": "MachineGunStrafeRight",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e2",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 24,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 23827,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.699321026632861,
+                "gaitPlaybackRate": 0.150473222136497,
+                "gaitSecondary": "MachineGunStrafeRight",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e3",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 24,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.188317048441087,
+                "gaitPlaybackRate": 0.180601358413696,
+                "gaitSecondary": "MachineGunStrafeLeft",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e4",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 2,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 2.5246243936228,
+                "gaitPlaybackRate": 0,
+                "gaitSecondary": "none",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e5",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 14,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0.762263540261872,
+                "gaitPlaybackRate": 0.194092780351639,
+                "gaitSecondary": "MachineGunWalk",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e6",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 2,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0,
+                "gaitPlaybackRate": 0,
+                "gaitSecondary": "none",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e7",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              },
+              {
+                "animation": "rifleaimidle",
+                "animationAvailable": true,
+                "animationPlays": 2,
+                "assetProvenance": "unavailable",
+                "bodyShotAtMs": 0,
+                "gaitBlendWeight": 0,
+                "gaitFacingYaw": 0,
+                "gaitPlaybackRate": 0,
+                "gaitSecondary": "none",
+                "gaitSpeed": 0,
+                "gaitVelocityX": 0,
+                "gaitVelocityZ": 0,
+                "id": "soldier-e8",
+                "level": "soldier",
+                "nativeDeath": false,
+                "nativeStunned": false,
+                "pullVisible": false,
+                "radioActive": false,
+                "radioAtMs": 0,
+                "releaseSafe": false,
+                "rigBoneCount": 41,
+                "slamAtMs": 0,
+                "swordDashPlayed": false,
+                "upperBodyAnimation": "none",
+                "upperBodyProgress": 0,
+                "upperBodyTracks": 0
+              }
+            ],
+            "viewmodelPass": {
+              "limbScale": {
+                "forearmMetres": 0.2583
+              },
+              "meshDepths": [],
+              "sightScreen": {
+                "ButtSocket": [
+                  1.8342,
+                  1.511
+                ],
+                "FrontSightSocket": [
+                  0.5787,
+                  0.5005
+                ],
+                "MuzzleSocket": [
+                  0.5568,
+                  0.5695
+                ],
+                "RearSightSocket": [
+                  0.7423,
+                  0.5455
+                ],
+                "RightGripSocket": [
+                  0.772,
+                  0.9717
+                ]
+              },
+              "subViewportSize": [
+                1280,
+                720
+              ],
+              "viewmodelCullMask": 524288,
+              "viewmodelFov": 60,
+              "visibleRect": [
+                1280,
+                720
+              ],
+              "weaponAxes": {
+                "bore": [
+                  -0.107,
+                  0.004,
+                  -0.994
+                ],
+                "x": [
+                  0.992,
+                  -0.071,
+                  -0.107
+                ],
+                "y": [
+                  0.071,
+                  0.997,
+                  -0.003
+                ]
+              },
+              "weaponMaterial": "StandardMaterial3D albedoTexture=true override=none visible=false",
+              "weaponMeshLayers": 0,
+              "windowSize": [
+                1920,
+                1080
+              ],
+              "worldCullMask": 524287,
+              "worldFov": 60
+            },
+            "weaponCalibration": {
+              "enabled": false
+            },
+            "weaponRecoil": 0.532018249074076,
+            "weaponSwitch": {
+              "active": false,
+              "endsAtMs": 22207,
+              "progress": 1,
+              "verticalOffset": 0
+            },
+            "worldShot": {
+              "count": 3,
+              "muzzleFlashVisible": false,
+              "recoil": 0.492357137962964,
+              "steadyAim": false,
+              "weapon": "machineGun",
+              "weaponSwitchOffset": 0,
+              "weaponSwitchProgress": 1
+            },
+            "worldShots": {
+              "2": {
+                "count": 3,
+                "muzzleFlashVisible": false,
+                "recoil": 0.492357137962964,
+                "steadyAim": false,
+                "weapon": "machineGun",
+                "weaponSwitchOffset": 0,
+                "weaponSwitchProgress": 1
+              }
+            }
+          },
+          "roguelite": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0,
+              "killSnaps": 0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0,
+              "target": null,
+              "turning": false
+            },
+            "cheatEngine": {
+              "aimbot": "",
+              "armed": false,
+              "banishArmed": false,
+              "cards": [],
+              "maximized": false,
+              "mode": null,
+              "offers": [],
+              "open": false,
+              "openForMs": 0,
+              "rows": [],
+              "selected": 0,
+              "sent": false
+            },
+            "cheatScene": {
+              "blasts": 0,
+              "drones": 0,
+              "mines": 0,
+              "mortars": 0,
+              "thrown": 0
+            },
+            "cloakers": [],
+            "enemies": [
+              {
+                "health": 150,
+                "id": "soldier-e1",
+                "position": [
+                  -535.5810546875,
+                  -14.7412109375,
+                  -277.3310546875
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e2",
+                "position": [
+                  -410.6748046875,
+                  -16.2529296875,
+                  -489.74609375
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e3",
+                "position": [
+                  -576.1083984375,
+                  -16.3857421875,
+                  -392.271484375
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e4",
+                "position": [
+                  -577.51953125,
+                  -16.42578125,
+                  -440.4462890625
+                ]
+              },
+              {
+                "health": 151,
+                "id": "soldier-e5",
+                "position": [
+                  -738.3896484375,
+                  -15.998046875,
+                  -137.388671875
+                ]
+              },
+              {
+                "health": 152,
+                "id": "soldier-e6",
+                "position": [
+                  -577.7822265625,
+                  -16.361328125,
+                  -392.642578125
+                ]
+              },
+              {
+                "health": 152,
+                "id": "soldier-e7",
+                "position": [
+                  -244.787109375,
+                  -16.9423828125,
+                  -377.1396484375
+                ]
+              },
+              {
+                "health": 152,
+                "id": "soldier-e8",
+                "position": [
+                  -526.80078125,
+                  -16.4677734375,
+                  -480.609375
+                ]
+              }
+            ],
+            "gameHud": {
+              "banner": {
+                "text": "",
+                "visible": false
+              },
+              "killFeedKills": 0,
+              "killFeedRows": 0,
+              "scoreboardOpen": false,
+              "standings": [],
+              "streakPills": {
+                "1": {
+                  "id": "predatorMissile",
+                  "mark": "",
+                  "state": "idle"
+                },
+                "2": {
+                  "id": "precisionAirstrike",
+                  "mark": "",
+                  "state": "idle"
+                }
+              }
+            },
+            "hitIndicator": {
+              "bearing": null,
+              "showing": 0
+            },
+            "insertion": {
+              "armsHidden": true,
+              "auditSampleFrames": 3,
+              "canopyVisible": false,
+              "kind": "rappel",
+              "phase": "returning",
+              "ropeVisible": true
+            },
+            "lastMultiKill": null,
+            "lastShakeRadians": 0,
+            "localReload": null,
+            "lootOverlay": {
+              "banner": "",
+              "blur": 0,
+              "muffled": false,
+              "taskbar": false
+            },
+            "medicAura": {
+              "held": [],
+              "overhealed": [],
+              "rising": 0,
+              "shed": 0
+            },
+            "minimap": {
+              "hidden": false,
+              "markers": 2,
+              "visible": true
+            },
+            "run": {
+              "combatUntilMs": 26826.8,
+              "insertion": {
+                "kind": "rappel",
+                "landedAtMs": 24707.25,
+                "landing": [
+                  -566.062723795573,
+                  -16.4691711425781,
+                  -380.327748616536
+                ],
+                "serial": 2,
+                "startedAtMs": 22207.25,
+                "yaw": 0.686757507156145
+              },
+              "insertionAway": false,
+              "interactables": [],
+              "seed": 1765934887,
+              "startedAtMs": 14241,
+              "survival": {
+                "bestKps": 0,
+                "bonusHealth": 0,
+                "bonusHealthMax": 0,
+                "boss": null,
+                "bosses": [],
+                "build": {
+                  "banishes": 0,
+                  "claymores": [],
+                  "drones": 0,
+                  "evolved": [],
+                  "evolvedIds": [],
+                  "mortars": [],
+                  "perkSlots": 3,
+                  "ready": [],
+                  "rerolls": 0,
+                  "slowed": [],
+                  "specialIds": [],
+                  "specials": [],
+                  "stats": [],
+                  "stunned": [],
+                  "thrown": [],
+                  "turrets": [],
+                  "weaponSlots": 3,
+                  "weapons": []
+                },
+                "dead": false,
+                "diedTo": "",
+                "drops": [],
+                "elapsedMs": 10231.1,
+                "elites": [],
+                "enemies": 8,
+                "events": {
+                  "commanded": [],
+                  "heli": null,
+                  "uavUntilMs": 0
+                },
+                "godmodeUntilMs": 0,
+                "kills": 0,
+                "kps": 0,
+                "lock": "soldier-e6",
+                "mapHack": false,
+                "mapHackMeters": 45,
+                "message": "",
+                "meta": {
+                  "ammoBoxes": [],
+                  "autoAmmo": false,
+                  "boxBanishes": 0,
+                  "boxRerolls": 0,
+                  "enemyRadar": false,
+                  "extraLives": 0,
+                  "lagSwitch": false,
+                  "report": null
+                },
+                "minute": "RIFLEMEN",
+                "offer": null,
+                "secondLife": false,
+                "shield": 0,
+                "shieldMax": 0,
+                "snapLock": false,
+                "spin": null,
+                "streaks": {
+                  "activation": null,
+                  "adrenalineUntilMs": 0,
+                  "blasts": [],
+                  "burning": [],
+                  "chainEndsAtMs": 0,
+                  "chainWindowMs": 4000,
+                  "counter": 0,
+                  "dogs": [],
+                  "dogsUntilMs": 0,
+                  "empAtMs": 0,
+                  "exitAtMs": 0,
+                  "fires": [],
+                  "flights": [],
+                  "held": [],
+                  "juggernautUntilMs": 0,
+                  "ladder": [
+                    {
+                      "id": "predatorMissile",
+                      "key": 1,
+                      "kills": 3,
+                      "name": "Predator Missile"
+                    },
+                    {
+                      "id": "precisionAirstrike",
+                      "key": 2,
+                      "kills": 5,
+                      "name": "Precision Airstrike"
+                    }
+                  ],
+                  "maxHeldEach": 1,
+                  "next": {
+                    "id": "predatorMissile",
+                    "key": 1,
+                    "kills": 3,
+                    "name": "Predator Missile"
+                  },
+                  "nowMs": 24472.15,
+                  "nuke": null,
+                  "out": false,
+                  "returning": null,
+                  "ride": null,
+                  "strikes": []
+                },
+                "streamKills": [],
+                "supply": {
+                  "drops": [],
+                  "nextCrateInMs": 38308.9,
+                  "owned": []
+                }
+              }
+            },
+            "startingWeapon": "machineGun",
+            "streakView": {
+              "gun": null,
+              "polarity": "whiteHot",
+              "ride": null,
+              "tablet": false
+            },
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "first time here, is it always like this",
+                    "user": "the_real_dave"
+                  },
+                  {
+                    "text": "is he wearing headphones",
+                    "user": "Juno"
+                  },
+                  {
+                    "text": "nice settings, did a dog pick them",
+                    "user": "cheatsnob"
+                  },
+                  {
+                    "text": "chat what rank is he",
+                    "user": "quietkeyboard"
+                  },
+                  {
+                    "text": "do a flip",
+                    "user": "lowkeylurker"
+                  },
+                  {
+                    "text": "is the stream frozen",
+                    "user": "spud_sniper"
+                  },
+                  {
+                    "text": "certified gamer moment",
+                    "user": "pixelpudding"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0,
+              "hype": 0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 0,
+                "endCard": false,
+                "opener": false,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0,
+                  "tips": 1,
+                  "viewers": 11,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18,
+              "request": null,
+              "streams": 0,
+              "style": null,
+              "styleBonus": 1,
+              "tipBot": "",
+              "tipBotQueued": 0,
+              "tipCount": 1,
+              "tips": 1,
+              "viewers": 11
+            },
+            "survivalPlayer": {
+              "armor": 100,
+              "at": [
+                -566.0625,
+                -15.7744140625,
+                -380.328125
+              ],
+              "health": 100,
+              "loaded": 28,
+              "reserve": 0
+            },
+            "weapon": "machineGun",
+            "weaponRefill": ""
+          },
+          "routeWork": {
+            "cancelled": 0,
+            "completed": 15,
+            "deferred": 0,
+            "discarded": 0,
+            "exhaustedRoutes": 0,
+            "expired": 0,
+            "latencyPeakMs": 139,
+            "nativeCompleted": 15,
+            "nativePeakMs": 2.372,
+            "peakFrameMs": 0.282999999999447,
+            "peakStepMs": 0.259000000001834,
+            "pending": 0,
+            "pollPeakMs": 0.027,
+            "queriesPerFramePeak": 1,
+            "steps": 30,
+            "submitPeakMs": 0.055,
+            "submitted": 15
+          },
+          "runSummary": {
+            "ammoBoxes": 0,
+            "open": false,
+            "shown": null
+          },
+          "schemaVersion": 1,
+          "selectedCategory": "assault",
+          "settings": {
+            "audioPercent": 100,
+            "fullscreen": true,
+            "keyBindings": {
+              "aim": [
+                "mouse:2",
+                null
+              ],
+              "crouch": [
+                "key:67",
+                "key:4194326"
+              ],
+              "dash": [
+                "key:4194328",
+                null
+              ],
+              "dropCheat": [
+                "key:71",
+                null
+              ],
+              "fire": [
+                "mouse:1",
+                null
+              ],
+              "interact": [
+                "key:70",
+                null
+              ],
+              "jump": [
+                "key:32",
+                null
+              ],
+              "knife": [
+                "key:86",
+                null
+              ],
+              "moveBackward": [
+                "key:83",
+                null
+              ],
+              "moveForward": [
+                "key:87",
+                null
+              ],
+              "moveLeft": [
+                "key:65",
+                null
+              ],
+              "moveRight": [
+                "key:68",
+                null
+              ],
+              "reload": [
+                "key:82",
+                null
+              ],
+              "scoreboard": [
+                "key:4194306",
+                null
+              ],
+              "sprint": [
+                "key:4194325",
+                null
+              ],
+              "swapWeapon": [
+                "key:81",
+                null
+              ],
+              "toggleHelp": [
+                "key:4194332",
+                null
+              ],
+              "toggleMap": [
+                "key:77",
+                null
+              ]
+            },
+            "resolutionHeight": 720,
+            "resolutionWidth": 1280,
+            "screenShakePercent": 100,
+            "sendCrashReports": true,
+            "showFpsCounter": false
+          },
+          "settingsMenuOpen": false,
+          "settingsStatus": "",
+          "simulationHz": 60,
+          "slowestNavQuery": {
+            "from": [
+              -526.64208984375,
+              -14.4833332061768,
+              -272.954376220703
+            ],
+            "ms": 3.153,
+            "to": [
+              -531.197082519531,
+              -16.4942760467529,
+              -366.592834472656
+            ]
+          },
+          "snapshot": {
+            "aiFrozen": false,
+            "corpses": [],
+            "endsAtMs": 86414005,
+            "killLimit": 1000000,
+            "matchDurationMs": 86400000,
+            "maxPlayers": 1,
+            "modeId": "roguelite",
+            "players": [
+              {
+                "accuracySpreadRadians": 0.0407900000000002,
+                "aiming": false,
+                "alive": true,
+                "armor": 100,
+                "category": "assault",
+                "crouching": false,
+                "dashDirectionX": 0,
+                "dashDirectionZ": 0,
+                "dashEndsAtMs": 0,
+                "dashReadyAtMs": 0,
+                "deaths": 0,
+                "fireRateMultiplier": 1,
+                "firedRevealPosition": [
+                  -566.0625,
+                  -12.908203125,
+                  -380.328125
+                ],
+                "firedRevealUntilMs": 25435,
+                "grenades": 0,
+                "grounded": true,
+                "health": 100,
+                "id": 2,
+                "infiniteAmmo": false,
+                "invincible": true,
+                "kills": 0,
+                "lastInputSequence": 1247,
+                "loadedAmmo": 28,
+                "mantle": null,
+                "movementMultiplier": 1,
+                "name": "GoldenHammer",
+                "pitch": 0.01,
+                "position": [
+                  -566.0625,
+                  -15.7744140625,
+                  -380.328125
+                ],
+                "reloadScale": 1,
+                "reloading": false,
+                "reserveAmmo": 0,
+                "respawnAtMs": null,
+                "role": "cheater",
+                "runArmor": 0,
+                "sprintRaiseEndsAtMs": 22207,
+                "sprinting": false,
+                "startingWeapon": "machineGun",
+                "team": "",
+                "verticalVelocity": 0,
+                "weapon": "machineGun",
+                "weaponReadyAtMs": 22207,
+                "weaponSwitchEndsAtMs": 22207,
+                "yaw": 0.694055608820709
+              }
+            ],
+            "serverTimeMs": 24459,
+            "systemAdmins": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 150,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 150,
+                "position": [
+                  -535.5810546875,
+                  -14.7412109375,
+                  -277.3310546875
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -410.6748046875,
+                  -16.2529296875,
+                  -489.74609375
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 22999,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 23827,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -576.1083984375,
+                  -16.3857421875,
+                  -392.271484375
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -577.51953125,
+                  -16.42578125,
+                  -440.4462890625
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 151,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 151,
+                "position": [
+                  -738.3896484375,
+                  -15.998046875,
+                  -137.388671875
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "windup",
+                "attackPhaseStartedAtMs": 23623,
+                "flinchUntilMs": 0,
+                "health": 152,
+                "id": "soldier-e6",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 152,
+                "position": [
+                  -577.7822265625,
+                  -16.361328125,
+                  -392.642578125
+                ],
+                "shieldHealth": 0,
+                "targetId": 2,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 152,
+                "id": "soldier-e7",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 152,
+                "position": [
+                  -244.787109375,
+                  -16.9423828125,
+                  -377.1396484375
+                ],
+                "shieldHealth": 0,
+                "targetId": null,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0,
+                "flinchUntilMs": 0,
+                "health": 152,
+                "id": "soldier-e8",
+                "laggedUntilMs": 0,
+                "lastAttackAtMs": 0,
+                "lastShotHit": false,
+                "leakUntilMs": 0,
+                "level": "soldier",
+                "markedUntilMs": 0,
+                "maxHealth": 152,
+                "position": [
+                  -526.80078125,
+                  -16.4677734375,
+                  -480.609375
+                ],
+                "shieldHealth": 0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ]
+          },
+          "snapshotLastFullPacket": {
+            "bytes": 101,
+            "delta": false,
+            "sequence": 0,
+            "serverTimeMs": 14423
+          },
+          "snapshotPacket": {
+            "bytes": 88,
+            "delta": true,
+            "sequence": 85
+          },
+          "soldierPools": "SoldierMuzzleFlash built=8 reused=0 released=0 discarded=0 idle=0 \u00b7 SoldierTracer built=8 reused=0 released=0 discarded=0 idle=0 \u00b7 MarksmanLaser built=0 reused=0 released=0 discarded=0 idle=0 \u00b7 SniperGlint built=0 reused=0 released=0 discarded=0 idle=0",
+          "soldierStats": {
+            "aims": 2,
+            "damage": 2,
+            "hits": 1,
+            "maxTokensHeld": 2,
+            "pickMs": 7.816,
+            "pickRayMs": 3.034,
+            "pickRays": 640,
+            "pickRouteMaxMs": 0.094,
+            "pickRouteMs": 0.632,
+            "pickRouteSlow": 0,
+            "pickRoutes": 57,
+            "pickSnapMs": 1.73199999999998,
+            "pickSnaps": 657,
+            "pickStraightMs": 0.184,
+            "pickStraights": 9,
+            "rounds": 5,
+            "sightMs": 18.6559999999999,
+            "spacingAwake": 8,
+            "spacingLowestMeters": 1.91940771942826,
+            "spacingMeanNearestMeters": 139.831924670845,
+            "spacingMinNearestMeters": 76.396152960257,
+            "spacingNowMeanMeters": 100.270256682671,
+            "spacingNowMinMeters": 1.91940771942826,
+            "spacingSamples": 13,
+            "spotPicks": 10,
+            "spotPicksDeferred": 0,
+            "spotsUnreachable": 3,
+            "steerMs": 233.798000000001,
+            "updateMs": 502.706999999997,
+            "volleys": 1
+          },
+          "stepClimbStats": {
+            "attempted": 0,
+            "climbed": 0,
+            "collisions": 0,
+            "moves": 4577,
+            "skippedMoving": 0,
+            "skippedNoHeadroom": 0,
+            "skippedNotPressed": 4577,
+            "skippedRemembered": 0,
+            "skippedSpentMotion": 0,
+            "wasted": 0
+          },
+          "waterfront": null,
+          "window": {
+            "mode": 0,
+            "position": [
+              -10000,
+              -10000
+            ],
+            "primaryScreen": 0,
+            "screen": 0,
+            "screenPosition": [
+              0,
+              0
+            ],
+            "screenSize": [
+              2560,
+              1440
+            ],
+            "size": [
+              1920,
+              1080
+            ],
+            "usableRect": [
+              0,
+              0,
+              2560,
+              1400
+            ]
+          }
+        }
+      },
+      "players": [
+        {
+          "accuracySpreadRadians": 0.0407900000000002,
+          "aiming": false,
+          "alive": true,
+          "armor": 100,
+          "category": "assault",
+          "crouching": false,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "deaths": 0,
+          "fireRateMultiplier": 1,
+          "firedRevealPosition": [
+            -566.0625,
+            -12.908203125,
+            -380.328125
+          ],
+          "firedRevealUntilMs": 25435,
+          "grenades": 0,
+          "grounded": true,
+          "health": 100,
+          "id": 2,
+          "infiniteAmmo": false,
+          "invincible": true,
+          "kills": 0,
+          "lastInputSequence": 1247,
+          "loadedAmmo": 28,
+          "mantle": null,
+          "movementMultiplier": 1,
+          "name": "GoldenHammer",
+          "pitch": 0.01,
+          "position": [
+            -566.0625,
+            -15.7744140625,
+            -380.328125
+          ],
+          "reloadScale": 1,
+          "reloading": false,
+          "reserveAmmo": 0,
+          "respawnAtMs": null,
+          "role": "cheater",
+          "runArmor": 0,
+          "sprintRaiseEndsAtMs": 22207,
+          "sprinting": false,
+          "startingWeapon": "machineGun",
+          "team": "",
+          "verticalVelocity": 0,
+          "weapon": "machineGun",
+          "weaponReadyAtMs": 22207,
+          "weaponSwitchEndsAtMs": 22207,
+          "yaw": 0.694055608820709
+        }
+      ],
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 9,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "overview",
+      "frame": 111,
+      "elapsedMs": 1850.0,
+      "path": "overview/111.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 6,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "returning",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "overview",
+      "frame": 150,
+      "elapsedMs": 2500.0,
+      "path": "overview/150.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": true,
+        "auditSampleFrames": 9,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "landed",
+        "ropeVisible": true
+      }
+    },
+    {
+      "camera": "overview",
+      "frame": 171,
+      "elapsedMs": 2850.0,
+      "path": "overview/171.png",
+      "triggerReceipt": null,
+      "players": null,
+      "contact": {
+        "armsHidden": false,
+        "auditSampleFrames": 8,
+        "canopyVisible": false,
+        "kind": "rappel",
+        "phase": "landed",
+        "ropeVisible": true
+      }
+    }
+  ],
+  "sideCutaway": "Near cargo wall/roof removed in clay only; source geometry stays intact."
+}
