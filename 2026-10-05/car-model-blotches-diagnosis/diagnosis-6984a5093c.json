@@ -1,0 +1,522 @@
+{
+  "task": "Investigate parked-car jagged blue/red patches; no fix, no PR",
+  "baseCommit": "2d6e0465e",
+  "finding": "The sedan texture-to-flat-vertex-colour conversion creates the jagged glass, grille and lamp boundaries. These are opaque material-colour regions on the car surface, not torn baked shadows.",
+  "controls": {
+    "originalSource": "Original Meshy sedan own-texture emission renders have clean window, grille and lamp contours, four angles.",
+    "derivedUnlit": "Derived runtime sedan with native vertex RGB and alpha-controlled white repaint reproduces the triangular teeth in Blender, four angles, no lights or Godot lightmap.",
+    "plainUnlit": "Replacing only the same mesh appearance with a constant opaque white emission removes the marks, four angles.",
+    "gamePlain": "Named temporary car_model_material control swaps the shared vehicle material for a plain lit material. Same camera, car meshes, shadows and 0.31 lightmap. Glass/grille/lamp teeth disappear; native shader restoration reproduces identical PNG bytes.",
+    "lightingToggles": "Not performed, following user instruction to do them only if the standalone model is clean."
+  },
+  "causeDetails": [
+    "tools/assets/build-faceted-models.py finish_meshy samples and clusters the source albedo, split_by_colour assigns one colour per triangle/subtriangle and stops at depth=2 for sedan. Geometry triangles span texture material boundaries, so the derived colour contours follow triangle edges.",
+    "The final COLOR_0 alpha is 1 only on the blue body cluster and 0 on glass/trim/red lamps. vehicle_paint.gdshader correctly replaces alpha=1 with per-car paint, retaining the ragged alpha=0 colours.",
+    "Both runtime vehicles have zero textures/images and no TEXCOORD_0, so runtime atlas bleeding, broken texture UVs and wrong texture assignment cannot produce these marks.",
+    "The sedan has 6745 triangles, zero degenerate triangles, zero reversed normals, and identical RGBA at all three corners of every triangle. Its source hash and derived hash match committed provenance.",
+    "The red patch is a jagged taillamp region; the dark blue shapes correspond to glass/grille/trim, which the game lights tint cool.",
+    "The current van is the approved Hunyuan reduction, not Meshy. It was also rendered with its own source maps and native/white/plain runtime colours from four angles."
+  ],
+  "smallestProposedFix": "Keep the current sedan silhouette and placement. Correct only its generated colour/paint-mask boundaries at glass, grille and lamps: split triangles along clean material-region contours and assign COLOR_0 RGB/alpha consistently on each side; regenerate sedan.glb.bin and its provenance/derived metadata. This retains flat colours instead of hiding the issue by whitening every surface. Increasing subdivision depth may reduce jaggedness but does not guarantee clean boundaries. No change implemented.",
+  "limitations": [
+    "Supplied montage does not record original camera transform. Captures reproduce the marks and street framing with documented free-camera positions, rather than claiming pixel-identical original viewpoint.",
+    "Van audit found 318 normals opposing geometric triangle winding, a separate reduction issue; the implicated sedan has none. No geometry repair performed.",
+    "Cold-cache launch logged D3D12 pipeline creation warnings and live-arena fallback while warming. The rendered captures completed, and StudyLightmap reported static:1380, probeOnly:423, environmentOnly:1113.",
+    "Plain material is a diagnostic control removing all vehicle colour detail, not the proposed production appearance."
+  ],
+  "engine": "GodotJS 4.6.1, D3D12 Forward+, AMD Radeon RX 9070 XT",
+  "capturePixels": [
+    1920,
+    1080
+  ],
+  "gameSession": "s-muvgbkce-ac81bb603f59; car-blotches-diag; stopped via session end. Peer assault-fix-1 remained running.",
+  "streetCamera": {
+    "position": [
+      -339.6,
+      -15.3,
+      -369.9
+    ],
+    "yaw": -1.5,
+    "pitch": -0.04
+  },
+  "secondaryCamera": {
+    "position": [
+      -408,
+      -10.7,
+      -247
+    ],
+    "yaw": -0.85,
+    "pitch": -0.1
+  },
+  "commands": [
+    "pnpm install; pnpm build (scripts passed, optional prebuilt generation failed before resource import; game builds arena live)",
+    "GODMODE_PREBUILT_GENERATING=1 godot-cli project import --project . (passed)",
+    "pnpm exec tsc -p tsconfig.json (temporary diagnostic control passed compilation)",
+    "Blender 5.2.1 --background --factory-startup --threads 4 --python-exit-code 1 --python artifacts/car-diagnosis/render-models.py",
+    "godot-cli game run --project . --instance car-blotches-diag --session s-muvgbkce-ac81bb603f59 --fixture roguelite --offscreen --offscreen-size 1920x1080 --inspect --allow-actions",
+    "godot-cli runtime action debug_console/photo_mode/car_model_material; godot-cli game capture, via drive.mjs",
+    "godot-cli session end --session s-muvgbkce-ac81bb603f59 (stopped owned game only)"
+  ],
+  "images": {
+    "sedan-runtime-native-colour-front-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-native-colour-front-left-54ef2c1bd5.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "54ef2c1bd54588bc57caa59992a83f02359a204a54ca896232aa84ebbce13543"
+    },
+    "sedan-runtime-native-colour-front-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-native-colour-front-right-d78f2e7235.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "d78f2e72351e7a99830ef7c5f0417bbe7b86a16eb5cf2ddbb7705bf242dd141e"
+    },
+    "sedan-runtime-native-colour-rear-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-native-colour-rear-left-f1e455ce94.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "f1e455ce94a5b1206ff8a2097e3e3669d2316d867eb7ba67fb393b1ff9c5d048"
+    },
+    "sedan-runtime-native-colour-rear-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-native-colour-rear-right-b4e2de6cd9.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b4e2de6cd9dc4549ec35478458c22903504d9e40d9fa1df9c57fd34f932214ac"
+    },
+    "sedan-runtime-plain-white-front-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-plain-white-front-left-4067d005ca.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4067d005ca977e0d409fd1561d8d7ce3d86991cb80a3ff0496f485afae1ea5e6"
+    },
+    "sedan-runtime-plain-white-front-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-plain-white-front-right-45b0ab9779.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "45b0ab97792e05e1f2f76b40f0f7493e1a193d2ecd1677a81629a4dfb36df317"
+    },
+    "sedan-runtime-plain-white-rear-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-plain-white-rear-left-5d2057fa06.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "5d2057fa06fb4a3f890cd741dc7b23994c55f5f206c2f5d3a7190ba2a0f03324"
+    },
+    "sedan-runtime-plain-white-rear-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-plain-white-rear-right-9e97420638.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "9e97420638caa0e9c9c5b34bb7022405c0e36e64ed85da753c6304409f603ae4"
+    },
+    "sedan-runtime-white-paint-front-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-white-paint-front-left-0b004c16e3.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "0b004c16e3f9699f370a38f2d925e393ca3840bd1f70674d57c5d5743a956fdc"
+    },
+    "sedan-runtime-white-paint-front-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-white-paint-front-right-5c64c5b702.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "5c64c5b702b45f92e04ee6760ef88f0f42c7959fde9b4f3da10ba15217f92ff4"
+    },
+    "sedan-runtime-white-paint-rear-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-white-paint-rear-left-85fc17e0e9.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "85fc17e0e9bc296c7f35c1ccb8b516aeebfc9bd7e5d7d18149f7d52a9d484030"
+    },
+    "sedan-runtime-white-paint-rear-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-runtime-white-paint-rear-right-58d3ee309b.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "58d3ee309b235d31d64d77130ed659638e33a6aa311c94e17eb5e5fc4d813677"
+    },
+    "van-runtime-native-colour-front-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-native-colour-front-left-ed987725f8.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "ed987725f89b76130d393618d8e9041134b89560c8fbceb5e24fbb8df7bddc3d"
+    },
+    "van-runtime-native-colour-front-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-native-colour-front-right-3881ac1e03.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "3881ac1e03f91915a0d7ba9be0686f52806f8e61f35f3ca82032972fe7602ffc"
+    },
+    "van-runtime-native-colour-rear-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-native-colour-rear-left-4ef0845d2e.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4ef0845d2ea3f34c2972fbac7ecd6934f625ede7659e85015e04b7cafc04a94a"
+    },
+    "van-runtime-native-colour-rear-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-native-colour-rear-right-734b60e64b.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "734b60e64b6031729c5c63e093fe9175a7520c1fa1ab3803b9143135ad6a1698"
+    },
+    "van-runtime-plain-white-front-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-plain-white-front-left-a92e787207.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "a92e787207abb7640ff05e4b2e9f8ab265d6ac4878ee8c915da21e0a82e52be5"
+    },
+    "van-runtime-plain-white-front-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-plain-white-front-right-b0e568a65e.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b0e568a65ea5ead905eaf35b7ffa048240c2e97ddbf0284d4733b031272cb7de"
+    },
+    "van-runtime-plain-white-rear-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-plain-white-rear-left-5f51db2826.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "5f51db2826603d6c3bb9730b16528f5b3522d199183c178a7af91f0847b02131"
+    },
+    "van-runtime-plain-white-rear-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-plain-white-rear-right-882e6cf70c.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "882e6cf70c57c0d2feafa684418f369ebdb94da37406a179eb1d0e89e4006e41"
+    },
+    "van-runtime-white-paint-front-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-white-paint-front-left-ababea6e64.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "ababea6e6471c607194f23f6c756e11deca0a19db957934272e2b0f1c6f8f38a"
+    },
+    "van-runtime-white-paint-front-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-white-paint-front-right-eeecae189f.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "eeecae189f1b4d4dfafc245209023d2bdf55826afe9841549d3aa189f4d3d613"
+    },
+    "van-runtime-white-paint-rear-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-white-paint-rear-left-d9659f5211.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "d9659f52119e598785c433564155fde797a25e7f6235970127b03782e4acd590"
+    },
+    "van-runtime-white-paint-rear-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-runtime-white-paint-rear-right-5388cb3fb3.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "5388cb3fb39420725311e2a59768409110fec4e220c5245df71edd79df6ac37b"
+    },
+    "sedan-meshy-source-own-texture-unlit-front-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-meshy-source-own-texture-unlit-front-left-835aa69f85.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "835aa69f85f8fea9d5f4af3f38dd597965def2cf15bc78343805e4070c6afdba"
+    },
+    "sedan-meshy-source-own-texture-unlit-front-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-meshy-source-own-texture-unlit-front-right-7a973e0090.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "7a973e0090537910b6a8698cd4ee42e2afc5a2b2a1625ad3adfefb5cb4661578"
+    },
+    "sedan-meshy-source-own-texture-unlit-rear-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-meshy-source-own-texture-unlit-rear-left-4776c1b6c7.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4776c1b6c776507829fddbe42bf22699cf083d726e43737c9e3a8957a5192b4b"
+    },
+    "sedan-meshy-source-own-texture-unlit-rear-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/sedan-meshy-source-own-texture-unlit-rear-right-b583cc4c66.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "b583cc4c66269c5e2420620ba7c4a1dd2509e8944792150500467765334d10b1"
+    },
+    "van-hunyuan-source-own-texture-unlit-front-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-hunyuan-source-own-texture-unlit-front-left-54764fb6f8.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "54764fb6f8aae9d83b14844779d543750e0f6d5139cd6c4c47cd88560b424b20"
+    },
+    "van-hunyuan-source-own-texture-unlit-front-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-hunyuan-source-own-texture-unlit-front-right-1d131e263e.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "1d131e263ea15ff2545fda203837aeefc7f56bd9e74c8ae55fd59bbd472f79f0"
+    },
+    "van-hunyuan-source-own-texture-unlit-rear-left.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-hunyuan-source-own-texture-unlit-rear-left-4d3c5f75dd.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4d3c5f75dd1b014dad2c88b2e61a9ccff17c0233aa68ea403f58d0415ddf43fe"
+    },
+    "van-hunyuan-source-own-texture-unlit-rear-right.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/van-hunyuan-source-own-texture-unlit-rear-right-cded4eed60.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "cded4eed60c1a173485d1daa9a0e6f5111b04d975fae054cf024c73efaf9513e"
+    },
+    "game-washington-before.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/game-washington-before-4107b66a0e.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "4107b66a0e9ac40c28322b76c377d791aecb0457430ebaa82bf86cfbcf9764b3"
+    },
+    "game-washington-plain.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/game-washington-plain-741e2a2c43.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "741e2a2c43ad54034e743bf429e951abb92738688766a37b4bb94cc6096057d2"
+    },
+    "game-water-street-final-native.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/game-water-street-final-native-2188a8b8a8.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "2188a8b8a88c812decc3c8f66a6a814e2198b7c0f58efe6fd24e8741ed6a08b9"
+    },
+    "game-water-street-matched-before.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/game-water-street-matched-before-79c95606ea.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "79c95606ea03a9140d9c446be0f29a173aa013925bc699093bbff2ae88bd5770"
+    },
+    "game-water-street-matched-plain.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/game-water-street-matched-plain-97d1b6d3ba.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "97d1b6d3ba60efe606ac61a367e6ead1a9809569a071f5d42c8a53ea9486704a"
+    },
+    "game-water-street-matched-restored.png": {
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-05/car-model-blotches-diagnosis/game-water-street-matched-restored-79c95606ea.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "79c95606ea03a9140d9c446be0f29a173aa013925bc699093bbff2ae88bd5770"
+    }
+  },
+  "sourceAudit": {
+    "sedan-runtime": {
+      "sha256": "c35bd92048c74b6302d5934d2d7e556c9137662331cbc1c35fd24be4433cc303",
+      "textures": 0,
+      "images": 0,
+      "materials": [
+        {
+          "name": "faceted",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallicFactor": 0,
+            "roughnessFactor": 0.9
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "POSITION": 0,
+          "NORMAL": 1,
+          "COLOR_0": 2
+        }
+      ],
+      "triangles": 6745,
+      "inconsistentTriangleColors": 0,
+      "facetNormalDotBelow099": 0,
+      "reversedNormals": 0,
+      "minimumNormalDot": 0.9999999578987308,
+      "degenerateTriangles": 0,
+      "trianglesByRGBA": {
+        "0.063936,0.094059,0.144129,1.0": 2223,
+        "0.017225,0.018965,0.023656,0.0": 2904,
+        "0.203318,0.206858,0.221594,0.0": 1517,
+        "0.637791,0.012282,0.013,0.0": 101
+      }
+    },
+    "van-runtime": {
+      "sha256": "ee4db61527b2b93fcf3b40ca5895aa88c236d014d396697f3cfcfd35b10d2d7b",
+      "textures": 0,
+      "images": 0,
+      "materials": [
+        {
+          "name": "faceted",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallicFactor": 0,
+            "roughnessFactor": 0.9
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "POSITION": 0,
+          "NORMAL": 1,
+          "COLOR_0": 2
+        }
+      ],
+      "triangles": 9527,
+      "inconsistentTriangleColors": 0,
+      "facetNormalDotBelow099": 3822,
+      "reversedNormals": 318,
+      "minimumNormalDot": -0.9999972526059825,
+      "degenerateTriangles": 0,
+      "trianglesByRGBA": {
+        "0.104616,0.103429,0.103429,0.0": 1575,
+        "0.042311,0.043735,0.048939,0.0": 5010,
+        "0.097587,0.157444,0.309469,1.0": 2040,
+        "0.931235,0.027873,0.006995,0.0": 179,
+        "0.969343,0.311958,0.000607,0.0": 148,
+        "1.0,1.0,1.0,0.0": 31,
+        "0.033105,0.033105,0.036306,0.0": 272,
+        "0.024515,0.024515,0.027212,0.0": 80,
+        "0.147319,0.154872,0.170645,0.0": 160,
+        "0.054972,0.054972,0.063724,0.0": 32
+      }
+    },
+    "sedan-meshy-source": {
+      "sha256": "5daf3acf6255e706f98e63d8b2cab4329c30b8759cb996ac292f00ef9dbf54ee",
+      "textures": 1,
+      "images": 1,
+      "materials": [
+        {
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ],
+            "metallicFactor": 0.0,
+            "roughnessFactor": 0.8,
+            "baseColorTexture": {
+              "index": 0,
+              "texCoord": 0
+            }
+          },
+          "alphaMode": "OPAQUE",
+          "doubleSided": true
+        }
+      ],
+      "attributes": [
+        {
+          "POSITION": 0,
+          "NORMAL": 2,
+          "TEXCOORD_0": 1
+        }
+      ]
+    },
+    "van-hunyuan-source": {
+      "sha256": "b6724e48003bd50065ec1d0f0831f089cd946c88cedae1826e81b3e9db985d00",
+      "textures": 3,
+      "images": 3,
+      "materials": [
+        {
+          "doubleSided": true,
+          "extensions": {
+            "KHR_materials_specular": {
+              "specularColorFactor": [
+                2.0,
+                2.0,
+                2.0
+              ]
+            }
+          },
+          "name": "Material.001",
+          "normalTexture": {
+            "index": 0
+          },
+          "pbrMetallicRoughness": {
+            "baseColorTexture": {
+              "index": 1
+            },
+            "metallicRoughnessTexture": {
+              "index": 2
+            }
+          }
+        }
+      ],
+      "attributes": [
+        {
+          "POSITION": 0,
+          "NORMAL": 1,
+          "TEXCOORD_0": 2
+        }
+      ]
+    }
+  }
+}
