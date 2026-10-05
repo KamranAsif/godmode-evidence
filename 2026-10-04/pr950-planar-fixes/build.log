@@ -1,0 +1,29 @@
+
+> godmode-exe@ build D:\work\godmode-roguelite-worktrees\pr950-fixes
+> pnpm build:scripts && node tools/maps/prebuilt/build.mjs --ensure
+
+
+> godmode-exe@ build:scripts D:\work\godmode-roguelite-worktrees\pr950-fixes
+> node tools/build/write-build-info.mjs && pnpm --filter @godmode/game-rules build && pnpm --filter @godmode/godot-cli build && tsc -p tsconfig.json
+
+
+> @godmode/game-rules@0.1.0 build D:\work\godmode-roguelite-worktrees\pr950-fixes\packages\game-rules
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+
+> @godmode/godot-cli@0.1.0 build D:\work\godmode-roguelite-worktrees\pr950-fixes\tools\godot-cli
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+[prebuilt-arena] Generating the survival arena (assets/maps/dumbo/prebuilt/receipt.json is missing); this takes a few minutes.
+node.exe : [prebuilt-arena] GENERATION FAILED; the game will build the arena live at run start (slow): Prebuilt arena 
+export failed: {
+At C:\Program Files\nodejs\pnpm.ps1:16 char:5
++     & "$basedir/node$exe"  "$basedir/node_modules/corepack/dist/pnpm. ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([prebuilt-arena...xport failed: {:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  "mode": "write",
+  "error": "TypeError: Cannot read properties of null (reading 'instantiate')",
+  "ok": false
+}

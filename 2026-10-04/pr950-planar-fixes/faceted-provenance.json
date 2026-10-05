@@ -1,0 +1,792 @@
+{
+  "schemaVersion": 1,
+  "generator": "tools/assets/build-faceted-models.py",
+  "axes": "glTF Y-up, metres; vehicles +X forward, aircraft and parachute nose +Z",
+  "assets": [
+    {
+      "asset": "ac130",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-ac130/model.glb",
+      "sourceSha256": "f66e5843684f763dc1c945caa98ea43f19d408b94697e039030323c5e2a846b8",
+      "meshyTask": "01a1086d-9866-778e-83d5-c7199b5e40c7",
+      "sourceTriangles": 7762,
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 4239,
+        "verticesAfter": 4239
+      },
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/ac130.glb",
+      "runtimePath": "assets/aircraft/production/ac130.glb.bin",
+      "sha256": "87d5fe693fc59e2a2174cd1fb90b91c7db491df915f48eb3893fee6363b72654",
+      "triangles": 7762,
+      "openEdges": 534,
+      "bounds": [
+        [
+          -16.0,
+          0.0,
+          -14.561
+        ],
+        [
+          16.0,
+          9.666,
+          14.561
+        ]
+      ],
+      "palette": [
+        "#5a5b5d",
+        "#3b3c3e",
+        "#232425"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "garden-shed",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-garden-shed/model.glb",
+      "sourceSha256": "b1d0350ab715f3dc05e2f32a881b96a0c3f9674a5df4ddce3a4abe1917e4e8ef",
+      "meshyTask": "01a1086f-2a62-70e7-b797-ecc35a615f35",
+      "sourceTriangles": 4285,
+      "placementBoxFill": [
+        0.921,
+        1.0,
+        0.887
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2210,
+        "verticesAfter": 2210
+      },
+      "colourFaces": 2101,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/garden-shed.glb",
+      "runtimePath": null,
+      "sha256": "353e87e0d54ffde26a989d78934c2cc08fd45184cf93c4a56e826c5c45ab8883",
+      "triangles": 4285,
+      "openEdges": 5,
+      "bounds": [
+        [
+          -1.014,
+          0.0,
+          -0.95
+        ],
+        [
+          1.014,
+          2.128,
+          0.95
+        ]
+      ],
+      "palette": [
+        "#67472c",
+        "#2b3f52",
+        "#c3b3a8",
+        "#696764"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "landing-rubber-fender",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-landing-rubber-fender/model.glb",
+      "sourceSha256": "98dee757700127e56a464cdf8e59a6878ca80703b36496994972ff4a279848fc",
+      "meshyTask": "01a1086f-2a51-73fc-9056-95a7bc4dfd30",
+      "sourceTriangles": 4448,
+      "placementBoxFill": [
+        1.0,
+        0.992,
+        0.941
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2221,
+        "verticesAfter": 2219
+      },
+      "colourFaces": 2550,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/landing-rubber-fender.glb",
+      "runtimePath": null,
+      "sha256": "667197628cacb026b7f9405194cb7f3ae6381f0e4a00021bccf23ae634ab0b91",
+      "triangles": 4444,
+      "openEdges": 0,
+      "bounds": [
+        [
+          -0.17,
+          0.0,
+          -0.169
+        ],
+        [
+          0.17,
+          3.407,
+          0.169
+        ]
+      ],
+      "palette": [
+        "#596163",
+        "#383839"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "landing-service-cabinet",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-landing-service-cabinet/model.glb",
+      "sourceSha256": "434318f78fa02ea49494bb88da90ce088e11e418be4f96b129fb4628fd426f5b",
+      "meshyTask": "01a1086d-988f-759b-93bf-6426ddebd59f",
+      "sourceTriangles": 3940,
+      "placementBoxFill": [
+        1.0,
+        0.694,
+        0.971
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2059,
+        "verticesAfter": 2058
+      },
+      "colourFaces": 2720,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/landing-service-cabinet.glb",
+      "runtimePath": null,
+      "sha256": "68b18cb25df920b157d9f4dfe3343d67ad66070c4653e7e6793ea6c243f8016d",
+      "triangles": 3940,
+      "openEdges": 122,
+      "bounds": [
+        [
+          -0.55,
+          0.0,
+          -0.364
+        ],
+        [
+          0.55,
+          1.359,
+          0.364
+        ]
+      ],
+      "palette": [
+        "#d7d3ca",
+        "#232424",
+        "#585b63"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "newspaper-vending-box",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-newspaper-vending-box/model.glb",
+      "sourceSha256": "cfaa58a81543ca3a845cb60dbc9ca0a8cdc9ee53e305f5fcfd52bd12c5148575",
+      "meshyTask": "01a1086d-986d-7028-9e93-b2275e0a36a1",
+      "sourceTriangles": 1828,
+      "placementBoxFill": [
+        0.942,
+        0.963,
+        1.0
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 948,
+        "verticesAfter": 942
+      },
+      "colourFaces": 1016,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/newspaper-vending-box.glb",
+      "runtimePath": null,
+      "sha256": "274d11b635c5e8535a43efeab59831a6dca83febdfd596a4e8a0c036051a61ae",
+      "triangles": 1824,
+      "openEdges": 0,
+      "bounds": [
+        [
+          -0.273,
+          0.0,
+          -0.272
+        ],
+        [
+          0.273,
+          1.05,
+          0.272
+        ]
+      ],
+      "palette": [
+        "#4f5f6d",
+        "#a67a66",
+        "#d0ccc9",
+        "#9e9e9f",
+        "#313843"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "parachute",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-parachute/model.glb",
+      "sourceSha256": "7721b6971bc8ef2d698e11ae0433072cefeaebf39e249e88905932e304fe27b0",
+      "meshyTask": "01a1086d-9828-7265-88b6-d48e1ccd1750",
+      "sourceTriangles": 6265,
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 3227,
+        "verticesAfter": 3227
+      },
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/parachute.glb",
+      "runtimePath": "assets/props/parachute/parachute.glb.bin",
+      "sha256": "66cf412ed8fe12bd1fe334c44b0d3938eb6c785dccc8982f6efd4a32b157c625",
+      "triangles": 6265,
+      "openEdges": 59,
+      "bounds": [
+        [
+          -3.145,
+          0.0,
+          -1.44
+        ],
+        [
+          3.145,
+          5.0,
+          1.44
+        ]
+      ],
+      "palette": [
+        "#c2c3c5",
+        "#5f6874"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "roof-hvac-basic-unit",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-roof-hvac-basic-unit/model.glb",
+      "sourceSha256": "f221938bb12ac6bd626120e45e412d9e5b851c92dd787ea7ef2c0fb0d9d132da",
+      "meshyTask": "01a1086f-28f6-7546-8fc5-40068139a9d8",
+      "sourceTriangles": 4099,
+      "placementBoxFill": [
+        0.943,
+        1.0,
+        0.81
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2256,
+        "verticesAfter": 2256
+      },
+      "colourFaces": 3123,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/roof-hvac-basic-unit.glb",
+      "runtimePath": null,
+      "sha256": "59ef43c5280196f2975f10c9e1577f1fe64eb5110ea194db19583de87fe4d635",
+      "triangles": 4099,
+      "openEdges": 13,
+      "bounds": [
+        [
+          -1.037,
+          0.0,
+          -0.832
+        ],
+        [
+          1.037,
+          1.386,
+          0.832
+        ]
+      ],
+      "palette": [
+        "#898a8a",
+        "#2e3031"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "roof-vent",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-roof-vent/model.glb",
+      "sourceSha256": "539b21ba124f40e6f2469da5308cca86bc3cfda4ace144fd5212716f62d5bd56",
+      "meshyTask": "01a1086f-29ec-70a5-9993-e6a3d8e0c4aa",
+      "sourceTriangles": 4264,
+      "placementBoxFill": [
+        1.0,
+        0.994,
+        0.984
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2156,
+        "verticesAfter": 2144
+      },
+      "colourFaces": 1676,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/roof-vent.glb",
+      "runtimePath": null,
+      "sha256": "0a0209bea7553ed4517db7ecfb05cdc2d06c16cfad8628e7be8d607b2977607c",
+      "triangles": 4248,
+      "openEdges": 0,
+      "bounds": [
+        [
+          -0.34,
+          0.0,
+          -0.338
+        ],
+        [
+          0.34,
+          1.083,
+          0.338
+        ]
+      ],
+      "palette": [
+        "#adadad",
+        "#272827",
+        "#818180"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "roof-water-tank",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-roof-water-tank/model.glb",
+      "sourceSha256": "9ab4006058db58e371b540986a07a2750b8e971e4e4617d4be0a23767392d5b8",
+      "meshyTask": "01a1086f-293e-76a5-bb35-9780d83c3cb2",
+      "sourceTriangles": 3947,
+      "placementBoxFill": [
+        0.958,
+        0.951,
+        1.0
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2196,
+        "verticesAfter": 2196
+      },
+      "colourFaces": 2686,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/roof-water-tank.glb",
+      "runtimePath": null,
+      "sha256": "87f2cce0ec1097b1c7b7ae58ca4a90c2e750300ab832ee08e9aa37d10b175035",
+      "triangles": 3947,
+      "openEdges": 215,
+      "bounds": [
+        [
+          -1.14,
+          0.0,
+          -1.136
+        ],
+        [
+          1.14,
+          4.15,
+          1.136
+        ]
+      ],
+      "palette": [
+        "#77593f",
+        "#333437"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "sedan",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-sedan/model.glb",
+      "sourceSha256": "5daf3acf6255e706f98e63d8b2cab4329c30b8759cb996ac292f00ef9dbf54ee",
+      "meshyTask": "01a1086d-5009-760c-b436-988bcd33a8d1",
+      "sourceTriangles": 6586,
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 3340,
+        "verticesAfter": 3340
+      },
+      "bodyPaint": {
+        "cluster": "#49576a",
+        "areaShare": 0.717
+      },
+      "colourSplitTriangles": 159,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/sedan.glb",
+      "runtimePath": "assets/props/street/sedan.glb.bin",
+      "sha256": "c35bd92048c74b6302d5934d2d7e556c9137662331cbc1c35fd24be4433cc303",
+      "triangles": 6745,
+      "openEdges": 48,
+      "bounds": [
+        [
+          -2.49,
+          -0.001,
+          -0.95
+        ],
+        [
+          2.49,
+          1.669,
+          0.95
+        ]
+      ],
+      "palette": [
+        "#49576a",
+        "#282a2e",
+        "#7c7d81",
+        "#d02323"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "simple-park-bench",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-simple-park-bench/model.glb",
+      "sourceSha256": "75e14c826d1fd35b2ae144e8bf416ff2e5269d8994a33ed98f15f6ae9ee058b4",
+      "meshyTask": "01a1086d-9892-7575-a6cc-7d02f9b5e037",
+      "sourceTriangles": 4304,
+      "placementBoxFill": [
+        0.601,
+        1.0,
+        0.64
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2178,
+        "verticesAfter": 2171
+      },
+      "colourFaces": 2102,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/simple-park-bench.glb",
+      "runtimePath": null,
+      "sha256": "a90382b1a221b16cfa339432b17fb6634daa40ce3c41a4b8ce91726dacabc1d6",
+      "triangles": 4292,
+      "openEdges": 4,
+      "bounds": [
+        [
+          -0.631,
+          0.0,
+          -0.3
+        ],
+        [
+          0.631,
+          0.624,
+          0.3
+        ]
+      ],
+      "palette": [
+        "#825c40",
+        "#3f4245",
+        "#5a4c44"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "street-lamp-head",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-street-lamp-head/model.glb",
+      "sourceSha256": "fd97439a1b3b5af2d10aaa91dbfe46f6e6cde818a8412805f072f3db0843d769",
+      "meshyTask": "01a1086d-982a-76d8-ad26-351e70d19355",
+      "sourceTriangles": 4271,
+      "placementBoxFill": [
+        1.0,
+        0.474,
+        0.522
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2159,
+        "verticesAfter": 1997
+      },
+      "colourFaces": 1979,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/street-lamp-head.glb",
+      "runtimePath": null,
+      "sha256": "b4301743b6b78206900ebc3e0310e4be3db385a1308d3359408aa1e849261136",
+      "triangles": 4060,
+      "openEdges": 78,
+      "bounds": [
+        [
+          -0.22,
+          0.0,
+          -0.116
+        ],
+        [
+          0.22,
+          0.146,
+          0.116
+        ]
+      ],
+      "palette": [
+        "#3f4045",
+        "#f0e8e0",
+        "#7b7977",
+        "#b2aea8"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "traffic-signal-head",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-traffic-signal-head/model.glb",
+      "sourceSha256": "6c97c5570615a91558049deb793626ce668047cdae9537ba5da6b1ffef2f3db0",
+      "meshyTask": "01a1086d-9839-735b-926e-235b44df4c81",
+      "sourceTriangles": 3919,
+      "placementBoxFill": [
+        0.497,
+        1.0,
+        0.524
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2091,
+        "verticesAfter": 2087
+      },
+      "colourFaces": 2335,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/traffic-signal-head.glb",
+      "runtimePath": null,
+      "sha256": "2dea55b32b727d05b9395c7139c925532afdd35731cddfd823836f96f87cfe6e",
+      "triangles": 3911,
+      "openEdges": 227,
+      "bounds": [
+        [
+          -0.104,
+          0.0,
+          -0.175
+        ],
+        [
+          0.104,
+          0.555,
+          0.175
+        ]
+      ],
+      "palette": [
+        "#8d6f4f",
+        "#393a3a"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "utility-cabinet",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-utility-cabinet/model.glb",
+      "sourceSha256": "b99e3b92662fdda083d71880ce5b9180f8fe0b981c08f4eb09ea51d5d097ca4b",
+      "meshyTask": "01a1086d-98d3-74ed-b93c-9cc8d0caae5a",
+      "sourceTriangles": 4165,
+      "placementBoxFill": [
+        1.0,
+        0.933,
+        0.998
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2111,
+        "verticesAfter": 2101
+      },
+      "colourFaces": 2700,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/utility-cabinet.glb",
+      "runtimePath": null,
+      "sha256": "20f6215c57d8c24f3ea0ea114b7c23146ddaa275e85a70cc9756eec606f54a64",
+      "triangles": 4155,
+      "openEdges": 5,
+      "bounds": [
+        [
+          -0.425,
+          0.0,
+          -0.28
+        ],
+        [
+          0.425,
+          1.457,
+          0.28
+        ]
+      ],
+      "palette": [
+        "#babbbf",
+        "#526071"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "van",
+      "source": "art-source://3d-source/hunyuan/batch01-van-20261004/model.glb",
+      "sourceSha256": "b6724e48003bd50065ec1d0f0831f089cd946c88cedae1826e81b3e9db985d00",
+      "wheels": {
+        "count": 4,
+        "segments": 10,
+        "strippedDissolvedFaces": 33717,
+        "radius": 0.395,
+        "track": 0.816,
+        "width": 0.239
+      },
+      "bodyPaint": {
+        "cluster": "#596e96",
+        "areaShare": 0.512
+      },
+      "derivedArchive": "art-source://3d-source/derived/dissolve-20261004/van.glb",
+      "runtimePath": "assets/props/street/van.glb.bin",
+      "sha256": "ee4db61527b2b93fcf3b40ca5895aa88c236d014d396697f3cfcfd35b10d2d7b",
+      "rawTriangles": 500008,
+      "dissolvedFaces": 34808,
+      "facets": 1723,
+      "facetTriangles": 8983,
+      "openEdges": 748,
+      "triangles": 9527,
+      "dissolveAngle": 10.0,
+      "tolerance": 0.02,
+      "fringeArea": 0.001993,
+      "cornerAngle": 28.0,
+      "bounds": [
+        [
+          -2.575,
+          0.0,
+          -1.001
+        ],
+        [
+          2.574,
+          2.099,
+          1.001
+        ]
+      ],
+      "palette": [
+        "#3d3d41",
+        "#596e96",
+        "#f7321b",
+        "#ffffff",
+        "#5b5b5b",
+        "#fb9609"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "wheelie-bin",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-wheelie-bin/model.glb",
+      "sourceSha256": "69ee10fd91cc573627f78772fc14457c77535b9bd34802f6d2d3f6e993ceeae1",
+      "meshyTask": "01a1086d-988c-7655-8e39-d0bfb06e00e1",
+      "sourceTriangles": 4098,
+      "placementBoxFill": [
+        0.878,
+        0.966,
+        1.0
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2228,
+        "verticesAfter": 2225
+      },
+      "colourFaces": 2191,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/wheelie-bin.glb",
+      "runtimePath": null,
+      "sha256": "38927d2c0e4d4425d6a022c577633415f3a478d8a31e7434a69f0d7e52d108aa",
+      "triangles": 4098,
+      "openEdges": 322,
+      "bounds": [
+        [
+          -0.272,
+          0.0,
+          -0.292
+        ],
+        [
+          0.272,
+          0.875,
+          0.292
+        ]
+      ],
+      "palette": [
+        "#52555b",
+        "#35383f"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    },
+    {
+      "asset": "yard-ac-condenser",
+      "source": "art-source://3d-source/meshy/burn-20261004/lowpoly-yard-ac-condenser/model.glb",
+      "sourceSha256": "a122b6b935fde37f30c62332af04c18bc29f58c06a68ef6e376928326d0e5614",
+      "meshyTask": "01a1086d-98d4-756d-9761-2607adb3c9ae",
+      "sourceTriangles": 3997,
+      "placementBoxFill": [
+        1.0,
+        0.713,
+        0.964
+      ],
+      "seamWeld": {
+        "distance": 0.001,
+        "verticesBefore": 2142,
+        "verticesAfter": 2141
+      },
+      "colourFaces": 2119,
+      "colourFaceAngle": 5.0,
+      "colourAssignment": "dominant-planar-face",
+      "colourSplitTriangles": 0,
+      "derivedArchive": "art-source://3d-source/derived/meshy-flat-20261004/yard-ac-condenser.glb",
+      "runtimePath": null,
+      "sha256": "7032c40eeb1ac0eb4cf899a0dd968a778653e96b2e1337fa73b8cf9b22ef45d5",
+      "triangles": 3997,
+      "openEdges": 106,
+      "bounds": [
+        [
+          -0.658,
+          0.0,
+          -0.429
+        ],
+        [
+          0.658,
+          1.291,
+          0.429
+        ]
+      ],
+      "palette": [
+        "#9d9d9c",
+        "#515254",
+        "#7b7b7b",
+        "#28292d"
+      ],
+      "textures": 0,
+      "flatShaded": true,
+      "materialsFlattened": true,
+      "sourceModified": false
+    }
+  ]
+}
