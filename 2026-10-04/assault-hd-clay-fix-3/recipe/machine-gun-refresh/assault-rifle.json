@@ -1,0 +1,134 @@
+{
+  "weapon": "assault-rifle",
+  "configSha256": "67878e543626c85c2ceabd95555369dc4d61ad1f53e9f1ef08feae1021319ba1",
+  "referenceSha256": "467651c1b67308010d7b895575e903b6c4f74907249d21feae8be2414befd9fe",
+  "bodySourceSha256": "52a67cd2a7fcbba853a393b24fe92ce88f0a6f33ecc2698724af74e59ca4064e",
+  "bodyTaskId": "01a10810-8008-7176-aadd-9ca0bb6bed57",
+  "magazineSourceSha256": "66006e53129680abc447dacd0e6bd0c856b2614115753198522ff6d687ea3d20",
+  "magazineTaskId": "01a10810-7ff2-76a5-8b3b-87d0b3bc9d3e",
+  "outputSha256": "8f4894e4c0812eb6f6705f2e1de0d4b67969dc9f088702f179a86761ad52c96a",
+  "referenceLengthMeters": 0.8995585668644297,
+  "bodyLengthMeters": 0.8999544785254481,
+  "bodyFitErrorMeters": 0.0027101409372269833,
+  "sourceBodyTriangles": 476820,
+  "worldTriangles": 67927,
+  "firstPersonTriangles": 58622,
+  "firstPersonCutoffZ": 0.03952212468628852,
+  "sourceMagazineTriangles": 817068,
+  "magazineTriangles": 19999,
+  "magazine": {
+    "kind": "magazine",
+    "widthMeters": 0.04751986020972783,
+    "residualPoints": 2470,
+    "fitErrorMeters": 0.003142646082117814
+  },
+  "outputBytes": 4513420,
+  "textures": {
+    "assault-rifle-texture-0.png": "f281171e7eafa4c1832fe8c86d5a3ff5ef642fcb3b126200dede9809b1b923cb",
+    "assault-rifle-texture-1.png": "5eca2278dbc713d79ba9122ca78e468089a3d7a00505c070b756cb2e9444a033",
+    "assault-rifle-texture-2.png": "a7da549b99f113f2c9eed0b11c7becb8c43deea00c3d06d44a39bab0f5b78cb3",
+    "assault-rifle-texture-3.png": "0ab187a46f4d46a8760d6c1a66fc5cfc21b9fa0b860242a22809d72efb979d2c",
+    "assault-rifle-texture-4.png": "e30b38e0f4d24ee6da145f26cd2bbd9ee9b277f3e79d77c51169a423be469361",
+    "assault-rifle-texture-5.png": "9aedaa7f148f42c48bb5e0f242f40c06ec811ea3aaf89e840761fdf52cd92e66"
+  },
+  "sockets": {
+    "ButtSocket": [
+      0,
+      -0.007038635667413473,
+      0.26329031586647034
+    ],
+    "FrontSightSocket": [
+      0.001,
+      0.078421,
+      -0.4976
+    ],
+    "LeftGripCloseSocket": [
+      0,
+      0.029093027114868164,
+      -0.3472393751144409
+    ],
+    "LeftGripSocket": [
+      0,
+      -0.042231813073158264,
+      -0.3472393751144409
+    ],
+    "MuzzleSocket": [
+      0,
+      0,
+      -0.6367096900939941
+    ],
+    "RearSightSocket": [
+      0.0008,
+      0.061501,
+      -0.029892
+    ],
+    "RightGripCloseSocket": [
+      -0.015954241156578064,
+      -0.10323332250118256,
+      0
+    ],
+    "RightGripSocket": [
+      0.015954241156578064,
+      -0.10323332250118256,
+      0
+    ],
+    "TriggerSocket": [
+      0,
+      -0.08680984377861023,
+      -0.0680401474237442
+    ],
+    "WorldLeftGripSocket": [
+      0,
+      -0.042231813073158264,
+      -0.22992876172065735
+    ]
+  },
+  "magazineSocket": {
+    "position": [
+      0.0041173710487782955,
+      -0.07222988456487656,
+      -0.11349176615476608
+    ]
+  },
+  "socketDriftMeters": 0,
+  "referenceMeanMetallic": 0.2446998506784439,
+  "metallicFactors": {
+    "Material_0": {
+      "sourceMean": 0.7648,
+      "factor": 0.3199
+    },
+    "Material_0.001": {
+      "sourceMean": 0.932,
+      "factor": 0.2625
+    }
+  },
+  "rayChecks": [],
+  "rayCheckChanges": [],
+  "sightMeasurement": {
+    "tool": "tools/assets/place-weapon-sights.mjs",
+    "weapon": "assault-rifle",
+    "kind": "aperture",
+    "rear": {
+      "socket": [
+        0.0008,
+        0.061501,
+        -0.029892
+      ],
+      "holeArea": 0.000028020000000000003
+    },
+    "front": [
+      0.001,
+      0.078421,
+      -0.4976
+    ]
+  },
+  "rearPeepCorrection": {
+    "tool": "tools/assets/open-machine-gun-peep.py",
+    "centre": [
+      0.0008,
+      0.0615,
+      -0.034
+    ],
+    "diameterMeters": 0.006
+  }
+}

@@ -1,0 +1,507 @@
+{
+    "assault-hd": {
+        "model": "assault-hd",
+        "rigging": "Mixamo online auto-rigger",
+        "requestedSkeleton": "Standard Skeleton (65)",
+        "animation": "Unarmed Walk Forward, In Place, 30 FPS, With Skin, no keyframe reduction",
+        "sourceMeshSha256": "b56119defa109066183f48a3eb258b0ea365e99d93bcd966d0dda5120e0e0502",
+        "mixamoDownloadSha256": "53af3356ac97b897f3a618cd8dff065dd62e6c0620d03bda73e44843b6ac69d4",
+        "sourceTriangles": 335084,
+        "outputTriangles": 338956,
+        "materials": "Original source GLB PBR materials on preserved UVs",
+        "sourceMaterialCount": 1,
+        "materialRestoration": {
+            "method": "Preserved triangle UVs; explicit verified slot overrides only for ambiguity",
+            "sourceSlotNames": ["Material_0.001"],
+            "explicitMap": null
+        },
+        "vertices": 181480,
+        "maxInfluences": 7,
+        "unweightedVertices": 0,
+        "unmappedJoints": [],
+        "bones": 65,
+        "frames": 42,
+        "fps": 30.0,
+        "fullFingersRequired": true,
+        "output": "character-assault-hd.glb",
+        "clips": {
+            "MantleGrab": {
+                "file": "mantle-grab.fbx",
+                "sha256": "fe2936e9bd6fac6b5af64f7ddc203c56c2c206e7c8e631998f9d79c41cb679e0",
+                "frames": 39,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.12419525687936792,
+                "sourceFrameRange": [1, 39],
+                "reverse": false,
+                "inPlace": false
+            },
+            "MantleClimb": {
+                "file": "mantle-climb.fbx",
+                "sha256": "c11f844999753cc6e7d0a604d844b8aefd4f3dd2f18fe9d5988b9a562441363b",
+                "frames": 35,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.5607917356451341,
+                "sourceFrameRange": [1, 35],
+                "reverse": false,
+                "inPlace": false
+            },
+            "DeathFront": {
+                "file": "rifle/death from the front.fbx",
+                "sha256": "40ecc91cac0eb45593572463a896bbc86edf1183d74abbc9fec155406779ba35",
+                "frames": 104,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.9582946963577456,
+                "sourceFrameRange": [1, 104],
+                "reverse": false,
+                "inPlace": false
+            },
+            "DeathBack": {
+                "file": "rifle/death from the back.fbx",
+                "sha256": "0538262a62ab9bf49fa35cb2948e105e47757a0fb01fc4c92daacf392ae808b0",
+                "frames": 90,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.021719080542164,
+                "sourceFrameRange": [1, 90],
+                "reverse": false,
+                "inPlace": false
+            },
+            "DeathRight": {
+                "file": "rifle/death from right.fbx",
+                "sha256": "3636344dcee74a182f26cc5bfd117c8bbc33c874aacff1ebc3c48bfc1c73c094",
+                "frames": 100,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.7750847799655969,
+                "sourceFrameRange": [1, 100],
+                "reverse": false,
+                "inPlace": false
+            },
+            "DeathFrontHeadshot": {
+                "file": "rifle/death from front headshot.fbx",
+                "sha256": "83ed2f5ebfc463499fcb4dd20849d2434b8d08de4b76e20f8eb397fee40893fa",
+                "frames": 86,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.3562473317459651,
+                "sourceFrameRange": [1, 86],
+                "reverse": false,
+                "inPlace": false
+            },
+            "DeathBackHeadshot": {
+                "file": "rifle/death from back headshot.fbx",
+                "sha256": "0cf3358ae61362bdc87d6655e98a9326dddec0c9fbf0534a4b2007748170f0b7",
+                "frames": 112,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.8627132066189485,
+                "sourceFrameRange": [1, 112],
+                "reverse": false,
+                "inPlace": false
+            },
+            "DeathCrouching": {
+                "file": "rifle/death crouching headshot front.fbx",
+                "sha256": "4e1067a804ac93961b322308e25c4da3dab857da4c88ec434cdac54d2b2e4fa6",
+                "frames": 58,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.8497108458455227,
+                "sourceFrameRange": [1, 58],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleIdle": {
+                "file": "rifle/idle.fbx",
+                "sha256": "69f939ed51e4cec3cfd25e35958449ada43aea6b29c9fa427482a1aafcb9ad71",
+                "frames": 64,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 4.643147434530592e-8,
+                "sourceFrameRange": [1, 64],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleWalk": {
+                "file": "rifle/run forward.fbx",
+                "sha256": "30ed7d863acfe60ecafab743d1807b1b552e901cd37c19347ec1b3c01c9c6736",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.078771591186527,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleRun": {
+                "file": "rifle/run forward.fbx",
+                "sha256": "30ed7d863acfe60ecafab743d1807b1b552e901cd37c19347ec1b3c01c9c6736",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.078771591186527,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleSprint": {
+                "file": "rifle/sprint forward.fbx",
+                "sha256": "0dc0848243978a8005fd81c66757f1b6b3d1b437dfc1bd8fd31e3e355be24046",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 3.1181588172912598,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleStrafeLeft": {
+                "file": "rifle/run left.fbx",
+                "sha256": "4fe378494cd99e28a33dd9a8ac307a117eb769ea81a19a222dfde199ccebcb30",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.0787718296051203,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleStrafeRight": {
+                "file": "rifle/run right.fbx",
+                "sha256": "f382d5c4a60d92678dace888a67f59003ae2a3671f1eb4431cd437059a37c3ab",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.078776836403374,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleCrouchIdle": {
+                "file": "rifle/idle crouching.fbx",
+                "sha256": "faa7376e26fc9e0a37ba47ca7c4ef16713d2b91a23981f50e2897c88377b5de1",
+                "frames": 64,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 7.50989240756906e-7,
+                "sourceFrameRange": [1, 64],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleCrouchWalk": {
+                "file": "rifle/walk crouching forward.fbx",
+                "sha256": "649aa66e7d8884a1a41581be6b1edad4b1413aad1254a1c5c93f4a964863bf83",
+                "frames": 31,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.7649940252304077,
+                "sourceFrameRange": [1, 31],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleCrouchStrafeLeft": {
+                "file": "rifle/walk crouching left.fbx",
+                "sha256": "685ccfab3ca18bbba80ff284056a484b1f0a04815b97b1168d9d002d0cde867d",
+                "frames": 31,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.7649943828582766,
+                "sourceFrameRange": [1, 31],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleCrouchStrafeRight": {
+                "file": "rifle/walk crouching right.fbx",
+                "sha256": "a6999d0c6d1bcc7256ab0d5300682850cdd407f83bce28789dc75061c695c8fd",
+                "frames": 31,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.7649945020679874,
+                "sourceFrameRange": [1, 31],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleJumpStart": {
+                "file": "rifle/jump up.fbx",
+                "sha256": "167110cb883c87a19d416a217345d5fa45b0ca01103db21f8de68a979d5870ab",
+                "frames": 17,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.0011098073010425214,
+                "sourceFrameRange": [1, 17],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleJumpLoop": {
+                "file": "rifle/jump loop.fbx",
+                "sha256": "08d12463895e2acb6705ad78905e102a30516ec4e8310af39461d83fa06acf1b",
+                "frames": 31,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.1419518996643465e-6,
+                "sourceFrameRange": [1, 31],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleJumpLand": {
+                "file": "rifle/jump down.fbx",
+                "sha256": "9d1df156910b5dab49415058a16d12629783b0339c792ad362b796a7bb1604ea",
+                "frames": 21,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.0011102311705235635,
+                "sourceFrameRange": [1, 21],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleShoot": {
+                "file": "shooter/firing rifle.fbx",
+                "sha256": "4b25dfd19a236dfce1fa2ecffa3c423ae47372711903c6ed4bf51690f01a2080",
+                "frames": 36,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 5.2638669576481894e-6,
+                "sourceFrameRange": [1, 36],
+                "reverse": false,
+                "inPlace": false
+            },
+            "PistolIdle": {
+                "file": "pistol/pistol idle.fbx",
+                "sha256": "b72c57c44cbbfc32a23d02650b70768fc0fc3a316337b6505851f19e60d91419",
+                "frames": 41,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.9266296122440568e-8,
+                "sourceFrameRange": [1, 41],
+                "reverse": false,
+                "inPlace": false
+            },
+            "PistolWalk": {
+                "file": "pistol/pistol run.fbx",
+                "sha256": "fdb277d72172b379a1054420b062d68f108424367ec8b79b72e1ee484e0fe37e",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.1390883922577757,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "PistolRun": {
+                "file": "pistol/pistol run.fbx",
+                "sha256": "fdb277d72172b379a1054420b062d68f108424367ec8b79b72e1ee484e0fe37e",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.1390883922577757,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "PistolStrafeLeft": {
+                "file": "pistol/pistol strafe.fbx",
+                "sha256": "696c9915ea3fe6f03ae89ebcbdeafd5fddbda045231b2643e11e864977431953",
+                "frames": 18,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.0992168188095093,
+                "sourceFrameRange": [1, 18],
+                "reverse": false,
+                "inPlace": true
+            },
+            "PistolStrafeRight": {
+                "file": "pistol/pistol strafe (2).fbx",
+                "sha256": "752bfbdabec55cb3b286641810a523cc2406a58c5788ade299a08cb34c8d84ea",
+                "frames": 19,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.306814193725586,
+                "sourceFrameRange": [1, 19],
+                "reverse": false,
+                "inPlace": true
+            },
+            "PistolJump": {
+                "file": "pistol/pistol jump.fbx",
+                "sha256": "e0f461cef1945d40e9399bba9f5b3b11010c7f6a6eb1e352ca8a0e96ed2b3386",
+                "frames": 61,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.6567445620819844e-8,
+                "sourceFrameRange": [1, 61],
+                "reverse": false,
+                "inPlace": false
+            },
+            "PistolKneelIdle": {
+                "file": "pistol/pistol kneeling idle.fbx",
+                "sha256": "2cc9b8bca7ccebf64c20b3979083891b69335b2d34ddc86c2c7db13cd7ab3848",
+                "frames": 115,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.2050125403958062e-8,
+                "sourceFrameRange": [1, 115],
+                "reverse": false,
+                "inPlace": false
+            },
+            "Idle": {
+                "file": "base-idle.fbx",
+                "sha256": "860492392a0a6c1477329608b0c9ee3356002c561b6bf6d165c774fcb303dacd",
+                "frames": 58,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.3661278494153677e-7,
+                "sourceFrameRange": [1, 58],
+                "reverse": false,
+                "inPlace": false
+            },
+            "Run": {
+                "file": "base-run.fbx",
+                "sha256": "4f0723bd79b209e721546451e57bb24a5604453d164a677e442acf7b0d86faf7",
+                "frames": 25,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.8780028820037842,
+                "sourceFrameRange": [1, 25],
+                "reverse": false,
+                "inPlace": true
+            },
+            "Jump": {
+                "file": "base-jump.fbx",
+                "sha256": "2175c677ba9e2ed2784060fa29779601873fa1d98f976b207242090576af07b6",
+                "frames": 71,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.0,
+                "sourceFrameRange": [1, 71],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleReload": {
+                "file": "rifle-reload.fbx",
+                "sha256": "621b8eb27eff1b9238ce45f341c01e1b8a50e64bb97e3c707228b035edb6a6d3",
+                "frames": 100,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.763214852828801e-6,
+                "sourceFrameRange": [1, 100],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleCrouchReload": {
+                "file": "crouch-reload.fbx",
+                "sha256": "54505c046b26131e54a294e8dcd954ca2ac0247dada590e12495e0cc18efe0d3",
+                "frames": 207,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 3.0549651881413025e-8,
+                "sourceFrameRange": [1, 207],
+                "reverse": false,
+                "inPlace": false
+            },
+            "PistolShoot": {
+                "file": "pistol-shoot.fbx",
+                "sha256": "6c9e0d619c167a9a2540815c9c45616c6cf4713999d0089b6b09484693bdaf2e",
+                "frames": 36,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 0.0,
+                "sourceFrameRange": [1, 36],
+                "reverse": false,
+                "inPlace": false
+            },
+            "RifleAimIdle": {
+                "file": "rifle/idle aiming.fbx",
+                "sha256": "bbeb63096d54ec077edb03afc051953f3d186862034b46a20857451b33253f21",
+                "frames": 64,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.6602963661781575e-8,
+                "sourceFrameRange": [1, 64],
+                "reverse": false,
+                "inPlace": false
+            },
+            "PistolReload": {
+                "file": "pistol-reload.fbx",
+                "sha256": "dc7699b5492be8b24519f8b914592a56a5cdc496f09ff40f730dec8050f81c4f",
+                "frames": 150,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.6159359520066085e-7,
+                "sourceFrameRange": [1, 150],
+                "reverse": false,
+                "inPlace": false,
+                "parameters": {
+                    "animation": "Reloading (Gun Reload While Walking)",
+                    "Walk Speed": 0,
+                    "Gun Type": 0,
+                    "Overdrive": 50,
+                    "Character Arm-Space": 50,
+                    "In Place": true
+                }
+            },
+            "RifleWalkBackward": {
+                "file": "rifle/run backward.fbx",
+                "sha256": "f3a72bd45254dda5def48962a608e78d8343384d77fe9ac0ec0c0dfeed90e13b",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 2.078764438629159,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleSprintBackward": {
+                "file": "rifle/sprint backward.fbx",
+                "sha256": "1faa8860643ab9f4b7892c39473e4154d902c40756b4d8caf4e2bedced4a6b34",
+                "frames": 16,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 3.1181569099427016,
+                "sourceFrameRange": [1, 16],
+                "reverse": false,
+                "inPlace": true
+            },
+            "RifleCrouchWalkBackward": {
+                "file": "rifle/walk crouching backward.fbx",
+                "sha256": "52fe0232089b6116395580ca7dbacab0e813147c5fe99eb39ba4034508740fed",
+                "frames": 31,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.7649947404863175,
+                "sourceFrameRange": [1, 31],
+                "reverse": false,
+                "inPlace": true
+            },
+            "PistolWalkBackward": {
+                "file": "pistol/pistol run backward.fbx",
+                "sha256": "5b72cda3eedb3e2657f48ebbb3b513cf7adf497a09b81772012ac185ff3a7526",
+                "frames": 17,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 1.5856083631515505,
+                "sourceFrameRange": [1, 17],
+                "reverse": false,
+                "inPlace": true
+            },
+            "KnifeSlash": {
+                "file": "knife-slash.fbx",
+                "sha256": "a70f5fe123a617f31c6dd8997ad4815b26d09277fa4f4f3d321a07354b49aa31",
+                "frames": 31,
+                "maxBoneLengthErrorMeters": 7.083442156163855e-7,
+                "horizontalTravelMeters": 3.795514430362037e-8,
+                "sourceFrameRange": [1, 31],
+                "reverse": false,
+                "inPlace": true
+            }
+        },
+        "textureMaxSize": 4096,
+        "wristRepair": {
+            "method": "Closed skinned inner joint overlaps fitted to native mesh cross sections; source vertices, weights, UVs, textures and animation tracks unchanged",
+            "inputSha256": "24c70a06e093c8b4f2f7eb605664ec97ddf92b73796bfce2a8c6de858fffdd55",
+            "addedVertices": 1944,
+            "addedTriangles": 3872,
+            "wrists": [
+                {
+                    "side": "Left",
+                    "majorRadius": 0.0392695502191782,
+                    "minorRadius": 0.031635000482201574,
+                    "sampleVertices": 1197,
+                    "rings": 9,
+                    "radialSegments": 32
+                },
+                {
+                    "side": "Right",
+                    "majorRadius": 0.041366422101855274,
+                    "minorRadius": 0.03392832472920418,
+                    "sampleVertices": 1560,
+                    "rings": 9,
+                    "radialSegments": 32
+                }
+            ],
+            "elbows": [
+                {
+                    "side": "Left",
+                    "radius": 0.05464887525886297,
+                    "sampleVertices": 1344,
+                    "rings": 17,
+                    "radialSegments": 40,
+                    "overlapMeters": 0.09
+                },
+                {
+                    "side": "Right",
+                    "radius": 0.057234030961990354,
+                    "sampleVertices": 1245,
+                    "rings": 17,
+                    "radialSegments": 40,
+                    "overlapMeters": 0.09
+                }
+            ],
+            "pristineCompiledBody": "art-source://derived/assault-hd-20261004/wrist-repair/pristine-compiled-body.glb",
+            "outputs": {
+                "character-assault-hd.glb": "5ac1bcb37f0f93cb29bde3e7d645537a83a849c42846c7899325ddd154fe280e",
+                "character-assault-hd-arms.glb": "6a6110bc591511400b97b663d9b70ee9add5fea95b6c002695b4c2b310e43bfa",
+                "character-assault-hd-knife-arms.glb": "bf7898feeaf535cc0c6bdb70d8ca8bc66449a40ed8c32c15f0ee624247a08679"
+            }
+        }
+    }
+}

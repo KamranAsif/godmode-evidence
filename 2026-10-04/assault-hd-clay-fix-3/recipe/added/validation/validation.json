@@ -1,0 +1,36 @@
+{
+  "sourceCommit": "999123ca3fbdb246ae16336a601223f70e1a7d2c",
+  "format": "PASS",
+  "build": "PASS",
+  "lint": "PASS (0 errors, 6 warnings)",
+  "pureTests": "12/12 PASS; arm production files byte-identical after rebase",
+  "projectImport": "PASS",
+  "miniImport": "PASS",
+  "fullGameSmoke": {
+    "rigBones": 65,
+    "source": "Mixamo",
+    "acceptedReloadPhases": [
+      0,
+      0.14,
+      0.34,
+      0.46,
+      0.8,
+      0.84,
+      1
+    ],
+    "weapon": "machineGun",
+    "gameplayScriptErrors": 0,
+    "limitation": "runtime inspect emitted Camera3D::unproject_position p.d == 0 errors in inspection_bridge.gd _append_nodes; no claim of a warning-free inspection",
+    "instanceStopped": true
+  },
+  "clientArena": {
+    "nodes": 24693,
+    "fingerprint": "1619051585",
+    "matches": true
+  },
+  "serverArena": {
+    "nodes": 4171,
+    "fingerprint": "1276010704",
+    "matches": true
+  }
+}
