@@ -1,0 +1,298 @@
+{
+  "approach": "native Mixamo mocap; scale-first fit; baked left support correction only; right hand and other mocap untouched",
+  "fps": 30,
+  "viewmodelFov": 50,
+  "sleeveRadiusScale": 0.7,
+  "handScale": 1.0,
+  "supportCorrection": {
+    "method": "offline two-bone left arm only; native idle finger shape",
+    "releaseReloadPhase": [
+      0.16,
+      0.88
+    ],
+    "idleResidualOffsetMeters": [
+      0.012,
+      -0.005,
+      0
+    ]
+  },
+  "clips": {
+    "Idle": {
+      "sourceFile": "pistol-idle-aim.fbx",
+      "frames": 41,
+      "sha256": "41e9328abf2535c065ad24fa6e6645ef37a3d1976f0147509dd203ae5c79e572",
+      "mixamoName": "Pistol Idle",
+      "description": "Idle With Aimed Pistol",
+      "sourceFramesZeroBased": [
+        0,
+        40
+      ],
+      "reversed": false
+    },
+    "ADS": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 31,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594",
+      "mixamoName": "Pistol Aim",
+      "description": "Pistol Aim To Holster Idle",
+      "sourceFramesZeroBased": [
+        0,
+        30
+      ],
+      "reversed": true
+    },
+    "Fire": {
+      "sourceFile": "pistol-shoot.fbx",
+      "frames": 36,
+      "sha256": "cd5230b610e97626f195fd4182e39eced899741eff8da244ce0fce3c5e13e6f4",
+      "mixamoName": "Shooting",
+      "description": "Firing A Gun",
+      "sourceFramesZeroBased": [
+        0,
+        35
+      ],
+      "reversed": false
+    },
+    "FireADS": {
+      "sourceFile": "pistol-shoot.fbx",
+      "frames": 36,
+      "sha256": "cd5230b610e97626f195fd4182e39eced899741eff8da244ce0fce3c5e13e6f4",
+      "mixamoName": "Shooting",
+      "description": "Firing A Gun",
+      "sourceFramesZeroBased": [
+        0,
+        35
+      ],
+      "reversed": false
+    },
+    "SprintIn": {
+      "sourceFile": "pistol-run-aim.fbx",
+      "frames": 7,
+      "sha256": "a556fd295f59d627b3d87925466e5f03264dd81b5fe00a8dbc8b55e34ea5494f",
+      "mixamoName": "Pistol Run",
+      "description": "Running With Aimed Pistol",
+      "sourceFramesZeroBased": [
+        0,
+        6
+      ],
+      "reversed": false
+    },
+    "Sprint": {
+      "sourceFile": "pistol-run-aim.fbx",
+      "frames": 23,
+      "sha256": "a556fd295f59d627b3d87925466e5f03264dd81b5fe00a8dbc8b55e34ea5494f",
+      "mixamoName": "Pistol Run",
+      "description": "Running With Aimed Pistol",
+      "sourceFramesZeroBased": [
+        0,
+        22
+      ],
+      "reversed": false
+    },
+    "SwapIn": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 113,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594",
+      "mixamoName": "Pistol Aim",
+      "description": "Pistol Aim To Holster Idle",
+      "sourceFramesZeroBased": [
+        0,
+        112
+      ],
+      "reversed": true
+    },
+    "SwapOut": {
+      "sourceFile": "pistol-aim-holster.fbx",
+      "frames": 113,
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594",
+      "mixamoName": "Pistol Aim",
+      "description": "Pistol Aim To Holster Idle",
+      "sourceFramesZeroBased": [
+        0,
+        112
+      ],
+      "reversed": false
+    },
+    "Reload": {
+      "sourceFile": "pistol-reload.fbx",
+      "frames": 150,
+      "sha256": "3b31fbca26c3d78919c1d83fc38a9a1ab89257a6473a4330fa9f1142974ad841",
+      "mixamoName": "Reloading",
+      "description": "Gun Reload While Walking",
+      "sourceFramesZeroBased": [
+        0,
+        149
+      ],
+      "reversed": false
+    }
+  },
+  "jointValidationMaxErrorMeters": {
+    "pistol-aim-holster": 1.5371536538355546e-06,
+    "pistol-idle-aim": 1.5371536538355546e-06,
+    "pistol-idle-alert": 1.5371536538355546e-06,
+    "pistol-reload": 1.5371536538355546e-06,
+    "pistol-run-aim": 1.5371536538355546e-06,
+    "pistol-run-carry": 1.5371536538355546e-06,
+    "pistol-shoot": 1.5371536538355546e-06
+  },
+  "savedRigSha256": "53af3356ac97b897f3a618cd8dff065dd62e6c0620d03bda73e44843b6ac69d4",
+  "gripBone": "mixamorig:RightHand",
+  "gripLocal": [
+    [
+      -0.300099641084671,
+      -0.42622995376586914,
+      1.1909104585647583,
+      0.11292321979999542
+    ],
+    [
+      0.0921986922621727,
+      1.2133418321609497,
+      0.45749151706695557,
+      0.07060034573078156
+    ],
+    [
+      -1.2615221738815308,
+      0.19007188081741333,
+      -0.2498658299446106,
+      0.013298144564032555
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "eyeRest": [
+    [
+      -0.9999999403953552,
+      0.0,
+      -8.742277657347586e-08,
+      0.0
+    ],
+    [
+      -8.742277657347586e-08,
+      3.4228538225988814e-08,
+      0.9999999403953552,
+      -0.10000000149011612
+    ],
+    [
+      0.0,
+      0.9999999403953552,
+      3.4228538225988814e-08,
+      1.6349999904632568
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "downloads": {
+    "pistol-idle-alert": {
+      "mixamoName": "Pistol Idle",
+      "description": "Ready Alert Two Hand Pistol Grip",
+      "sha256": "672c04fb8e88a5db6adcb99afadc63fc8a6cd9d698d22c0f3ed89fe1c4e9fb5f",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-idle-aim": {
+      "mixamoName": "Pistol Idle",
+      "description": "Idle With Aimed Pistol",
+      "sha256": "41e9328abf2535c065ad24fa6e6645ef37a3d1976f0147509dd203ae5c79e572",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-run-aim": {
+      "mixamoName": "Pistol Run",
+      "description": "Running With Aimed Pistol",
+      "sha256": "a556fd295f59d627b3d87925466e5f03264dd81b5fe00a8dbc8b55e34ea5494f",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-run-carry": {
+      "mixamoName": "Pistol Run",
+      "description": "Running With A Pistol",
+      "sha256": "97486bf6e5aca97d8f78aa88fea678b2df420fe3f60b74794016ab28526b17bf",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-aim-holster": {
+      "mixamoName": "Pistol Aim",
+      "description": "Pistol Aim To Holster Idle",
+      "sha256": "ddb04da3400cfc6fcc644661777a54e1bea6af6019013f6eea5a72feb7358594",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-shoot": {
+      "mixamoName": "Shooting",
+      "description": "Firing A Gun",
+      "sha256": "cd5230b610e97626f195fd4182e39eced899741eff8da244ce0fce3c5e13e6f4",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Character Arm-Space": 50
+      }
+    },
+    "pistol-reload": {
+      "mixamoName": "Reloading",
+      "description": "Gun Reload While Walking",
+      "sha256": "3b31fbca26c3d78919c1d83fc38a9a1ab89257a6473a4330fa9f1142974ad841",
+      "format": "FBX Binary",
+      "skin": "Without Skin",
+      "fps": 30,
+      "keyframeReduction": "none",
+      "inPlace": "checked wherever UI offered it",
+      "parameters": {
+        "Walk Speed": 0,
+        "Gun Type": 0,
+        "Overdrive": 50,
+        "Character Arm-Space": 50
+      }
+    }
+  },
+  "pistolScale": 1.3,
+  "pistolScaleArgument": "--pistol-scale",
+  "pistolSeatOffsetInReferenceEyeMeters": [
+    -0.009999999776482582,
+    -0.05000000074505806,
+    -0.0364999994635582
+  ],
+  "source": "art-source://derived/assault-hd-viewmodel-inputs-20261005/character-assault-hd.glb",
+  "sourceSha256": "24c70a06e093c8b4f2f7eb605664ec97ddf92b73796bfce2a8c6de858fffdd55",
+  "outputSha256": "0e6eabadb30bbc49036c36ef522b8931de9a57ac7e9d840ebc776ba86119d3e7"
+}
