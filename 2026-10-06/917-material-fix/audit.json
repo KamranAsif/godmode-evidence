@@ -1,0 +1,416 @@
+{
+  "commit": "267e1d0dfb4b94f39b3c323bae4cf1f4061fb2e5",
+  "base": "9c25255d659fb484f1f181c6bbede17650f9887b",
+  "size": [
+    1920,
+    1080
+  ],
+  "rule": "Shared shader factory; no camera-specific settings or authored model changes.",
+  "changes": {
+    "lawnFacetStrength": [
+      0.85,
+      0.25
+    ],
+    "lawnDesignedFacetContrast": [
+      2.3,
+      0.65
+    ],
+    "floatUniforms": "Explicit FLOAT Variants retain whole-number overrides when ShaderMaterial enumerates/saves its properties.",
+    "grassNormalization": "The approved linear RGB mean must be a Vector4 Variant for an unhinted vec4 uniform; Color is reset during serialization."
+  },
+  "crop": {
+    "scope": {
+      "crop": "-760,-250,30",
+      "note": "Audit evidence only; never commit or publish as the game atlas."
+    },
+    "bake": {
+      "atlasTextures": [
+        {
+          "height": 4096,
+          "layers": 8,
+          "width": 4096
+        }
+      ],
+      "degenerateTrianglesRemoved": 65,
+      "denoiserRange": 10,
+      "engine": "4.6.1-stable (official)",
+      "heroMeshes": 1,
+      "heroRequestedTexels": 1359556,
+      "heroTexelSizeMeters": 0.5,
+      "lightmappedMeshes": 58,
+      "lods": 170,
+      "maxTextureSize": 8192,
+      "placedTriangles": 1113126,
+      "probeCount": 9283,
+      "requestedTexels": 22124240,
+      "texelSizeMeters": 1,
+      "uniqueMeshes": 56
+    },
+    "comparison": "Same fresh cropped lightmap and latest geometry for both controlled lawn captures. The before keeps the original 0.85/2.3 facet amplification with corrected Variant types; the after uses 0.25/0.65. Facet multipliers do not enter the bake proxy; geometry, substrate and vertex colours are unchanged.",
+    "poses": [
+      {
+        "id": "e05-street",
+        "area": "05",
+        "kind": "street",
+        "label": "Pier 1 waterfront",
+        "groundPosition": [
+          -760,
+          -13.228625774383545,
+          -250
+        ],
+        "groundSource": {
+          "chunk": "-6_-2",
+          "mesh": "Ground_terrain_chunk_-6_-2",
+          "triangle": 132
+        },
+        "position": [
+          -760,
+          -11.528625774383546,
+          -250
+        ],
+        "yaw": 0.7,
+        "pitch": 0,
+        "fov": 75
+      },
+      {
+        "id": "e05-front",
+        "area": "05",
+        "kind": "front",
+        "label": "Pier 1 waterfront",
+        "groundPosition": [
+          -760,
+          -13.228625774383545,
+          -250
+        ],
+        "groundSource": {
+          "chunk": "-6_-2",
+          "mesh": "Ground_terrain_chunk_-6_-2",
+          "triangle": 132
+        },
+        "position": [
+          -760,
+          -11.528625774383546,
+          -250
+        ],
+        "yaw": 3.8415926535897933,
+        "pitch": 0,
+        "fov": 75
+      },
+      {
+        "id": "pier-path",
+        "label": "Pier 1 hill / path",
+        "position": [
+          -790,
+          -12.118915367126466,
+          -220
+        ],
+        "groundPosition": [
+          -790,
+          -13.818915367126465,
+          -220
+        ],
+        "groundSource": {
+          "y": -13.818915367126465,
+          "mesh": "Ground_terrain_chunk_-7_-2",
+          "triangle": 440
+        },
+        "yaw": 0.8,
+        "pitch": -0.1,
+        "fov": 75
+      }
+    ]
+  },
+  "verdicts": {
+    "lawn": "Pass: faint broad facets remain under dense grass grain/mowing stripes; no seams or tile grid.",
+    "shops": "Pass: saved shop/home materials retain interior_strength=1; existing four parallax layouts now visible in the saved arena.",
+    "surfaces": "Pass: approved texture scales/strengths and zero facet overrides survive saving; shade roads remain charcoal and roofs warm grey.",
+    "scope": "Models and converter belong to lanes 126/127. Their merged changes in the after base are not authored by this PR.",
+    "lighting": "Full before captures use task-start main 1a7b3eee7 and its release GI. Full after captures use base 9c25255d6; that base already falls back unbaked after 31 geometry changes. Shading acceptance uses only the matched fresh crop. No full bake run; release atlas restored afterward."
+  },
+  "pairs": [
+    {
+      "id": "e05-front",
+      "view": {
+        "id": "e05-front",
+        "area": "05",
+        "kind": "front",
+        "label": "Pier 1 waterfront",
+        "groundPosition": [
+          -760,
+          -13.228625774383545,
+          -250
+        ],
+        "groundSource": {
+          "chunk": "-6_-2",
+          "mesh": "Ground_terrain_chunk_-6_-2",
+          "triangle": 132
+        },
+        "position": [
+          -760,
+          -11.528625774383546,
+          -250
+        ],
+        "yaw": 3.8415926535897933,
+        "pitch": 0,
+        "fov": 75
+      },
+      "beforeSha256": "9f4e33e0dedd38b8822aaecb4e634249e2721b1655ee0bfccdde1a3c3190d39c",
+      "afterSha256": "76608063d49a02fb7cab785970d639adae8c33a19e2cfe902329b421d68d91af"
+    },
+    {
+      "id": "e05-street",
+      "view": {
+        "id": "e05-street",
+        "area": "05",
+        "kind": "street",
+        "label": "Pier 1 waterfront",
+        "groundPosition": [
+          -760,
+          -13.228625774383545,
+          -250
+        ],
+        "groundSource": {
+          "chunk": "-6_-2",
+          "mesh": "Ground_terrain_chunk_-6_-2",
+          "triangle": 132
+        },
+        "position": [
+          -760,
+          -11.528625774383546,
+          -250
+        ],
+        "yaw": 0.7,
+        "pitch": 0,
+        "fov": 75
+      },
+      "beforeSha256": "c1287d4b56657b2c7cce784dd3cd43b91041bf5f4e48d51a94525267439c1b38",
+      "afterSha256": "9e1be204aeb30818ae1be8c3ccd537218af9cd61216df1b54264cdb129f5f9bb"
+    },
+    {
+      "id": "pier-path",
+      "view": {
+        "id": "pier-path",
+        "label": "Pier 1 hill / path",
+        "position": [
+          -790,
+          -12.118915367126466,
+          -220
+        ],
+        "groundPosition": [
+          -790,
+          -13.818915367126465,
+          -220
+        ],
+        "groundSource": {
+          "y": -13.818915367126465,
+          "mesh": "Ground_terrain_chunk_-7_-2",
+          "triangle": 440
+        },
+        "yaw": 0.8,
+        "pitch": -0.1,
+        "fov": 75
+      },
+      "beforeSha256": "21494f308b3dd9a10d7963d1e65979740a9dc641f53e876a0a6927b24c88e9bb",
+      "afterSha256": "e9321b2aae29467e17ef8cd286300aeb864f5755072942b6c2a188bfb5392888"
+    },
+    {
+      "id": "park-east",
+      "view": {
+        "id": "park-east",
+        "label": "East park / bridge foot",
+        "position": [
+          -402,
+          -15.43599967956543,
+          -392
+        ],
+        "groundPosition": [
+          -402,
+          -17.13599967956543,
+          -392
+        ],
+        "groundSource": {
+          "y": -17.13599967956543,
+          "mesh": "sidewalks_sidewalk_chunk_-4_-4",
+          "triangle": 1647
+        },
+        "yaw": 1.1,
+        "pitch": -0.1,
+        "fov": 75
+      },
+      "beforeSha256": "7ad6add26ef5e5d9e6b0e3b6db0b6593e49113cb0288bd50b24c3e8091bc4e0f",
+      "afterSha256": "5cc117cf822b46bbd477bc251c7a2c72371f6cdb2d0896f0f9a7155ef8b234dd"
+    },
+    {
+      "id": "park-west",
+      "view": {
+        "id": "park-west",
+        "label": "Empire park towards river",
+        "position": [
+          -460,
+          -15.513500499725343,
+          -455
+        ],
+        "groundPosition": [
+          -460,
+          -17.213500499725342,
+          -455
+        ],
+        "groundSource": {
+          "y": -17.213500499725342,
+          "mesh": "Ground_terrain_chunk_-4_-4",
+          "triangle": 1776
+        },
+        "yaw": 1.9,
+        "pitch": -0.1,
+        "fov": 75
+      },
+      "beforeSha256": "75e31988349137e0dd62b22c1eb0164c297efe12950982eac85486d520c8c935",
+      "afterSha256": "824ba102af115792a5ab7e6703c885a82da083a2a21ba63b4ec45de1e7e50712"
+    },
+    {
+      "id": "gate05",
+      "view": {
+        "id": "gate05",
+        "label": "Main-side south exit",
+        "position": [
+          -411.66982256346705,
+          -13.040309477401971,
+          -314.7230820880374
+        ],
+        "groundPosition": [
+          -411.66982256346705,
+          -14.74030947740197,
+          -314.7230820880374
+        ],
+        "groundSource": {
+          "y": -14.74030947740197,
+          "mesh": "sidewalks_sidewalk_chunk_-4_-3",
+          "triangle": 911
+        },
+        "yaw": 1.6891494903008917,
+        "pitch": -0.08,
+        "fov": 75
+      },
+      "beforeSha256": "25d052866b0efb3a8ccc89c882be7a892ee38cd2b443965830a52b3880289107",
+      "afterSha256": "f2a215c4fd7d0cebbaba989b375550cf94492d63579a892b29f4620a8da36aff"
+    },
+    {
+      "id": "gate08",
+      "view": {
+        "id": "gate08",
+        "label": "Service south gap",
+        "position": [
+          -280.2617664565799,
+          -14.66485415407762,
+          -316.76789440215896
+        ],
+        "groundPosition": [
+          -280.2617664565799,
+          -16.36485415407762,
+          -316.76789440215896
+        ],
+        "groundSource": {
+          "y": -16.36485415407762,
+          "mesh": "Ground_terrain_chunk_-3_-3",
+          "triangle": 2148
+        },
+        "yaw": -2.3141890427930454,
+        "pitch": -0.08,
+        "fov": 75
+      },
+      "beforeSha256": "9d3660e5acb9accfd1d29b15d732e3c50fc00324e270861738cd350afa9b60bc",
+      "afterSha256": "7fc80e61f0b05abe1a544db89d9beb015b05c04736126a8163bee5bd23338718"
+    },
+    {
+      "id": "e04-front",
+      "view": {
+        "id": "e04-front",
+        "area": "04",
+        "kind": "front",
+        "label": "Old Fulton inland spur",
+        "groundPosition": [
+          -566,
+          -15.484000205993652,
+          -254
+        ],
+        "groundSource": {
+          "chunk": "-5_-2",
+          "mesh": "roads_street_chunk_-5_-2",
+          "triangle": 22
+        },
+        "position": [
+          -566,
+          -13.784000205993653,
+          -254
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "fov": 75
+      },
+      "beforeSha256": "73768877cd1fddb07592565375edc772600ba4d5b8012fe2a1280ab1bb74ba5a",
+      "afterSha256": "001b69527303bfb2eb590e10baf2824db2e26b97a0ed0369a935fd097a299188"
+    },
+    {
+      "id": "c01",
+      "view": {
+        "id": "c01",
+        "label": "Water / Washington waterfront blocks",
+        "target": [
+          -402,
+          -17.13599967956543,
+          -392
+        ],
+        "position": [
+          -427,
+          47.86400032043457,
+          -342
+        ],
+        "yaw": -0.4636476090008061,
+        "pitch": -0.860510290074884,
+        "fov": 75
+      },
+      "beforeSha256": "44063070e2c748ba0cee1aa92cf73747fa98eee9d3a059a0c64e4d67ec32503c",
+      "afterSha256": "3782be2462b61383e46cfbdfe340dcd99d2c86cc402e0a772ec5899a2defede0"
+    },
+    {
+      "id": "c06",
+      "view": {
+        "id": "c06",
+        "label": "Pier 1 edge toward Lower Manhattan",
+        "target": [
+          -1200,
+          -20,
+          -630
+        ],
+        "position": [
+          -794.4651340080532,
+          -15.521999999999998,
+          -266.5485437797311
+        ],
+        "yaw": 0.8406828258921301,
+        "pitch": -0.13,
+        "fov": 75,
+        "framingAdjustment": "Standing on the generated promenade; approved concept aim preserved.",
+        "kind": "waterfront-concept",
+        "sourceCommit": "d4a91a4c2378a9b44a244dd410276888ecaaee9d",
+        "input": {
+          "sha256": "385c6116f88f32778551ed32f8b86a9d06c81148bf002b525d81156bd2e58816",
+          "size": [
+            1920,
+            1080
+          ],
+          "path": "docs/art/environment-concepts/waterfront/input-06.png"
+        },
+        "eyeHeightBasis": "1.7 m above generated promenade floor",
+        "groundPosition": [
+          -794.4651340080532,
+          -17.221999999999998,
+          -266.5485437797311
+        ],
+        "groundSource": "assets/maps/sands_pearl/manifest.json; generated promenade floorY"
+      },
+      "beforeSha256": "9b6734976254338e482fcf0ab63e3f0532dba20e25b9a326e93da027fc628977",
+      "afterSha256": "063e000838f517c7d25c0310a3f7bd793b120dd64c8ca89b756c38c2285b03b8"
+    }
+  ]
+}
