@@ -1,0 +1,202 @@
+{
+    "sourceCommit":  "1a7b3eee7b76b7a9cc6c2d6cc3cf92cc238f69d5",
+    "size":  [
+                 1920,
+                 1080
+             ],
+    "lighting":  "Current release atlas, not an audit bake. Cropped matched shading evidence will be separate.",
+    "notes":  [
+                  "Historical old02/old05 camera poses look beyond the current arena/context margin and are not arena holes.",
+                  "The resumed batch moves the camera before pausing; repeated-frame output was rejected and recaptured. All 61 final PNG hashes are distinct.",
+                  "Camera position, aim and FOV were validated through runtime inspect; PNG dimensions are native 1920x1080."
+              ],
+    "items":  [
+                  {
+                      "item":  "Area 04 roads near navy in shade",
+                      "status":  "fixed",
+                      "prs":  [
+                                  924
+                              ],
+                      "views":  [
+                                    "e04-front",
+                                    "e04-street",
+                                    "gate12"
+                                ],
+                      "finding":  "Deep shade is charcoal/cool grey with aggregate grain; sunlight stays warm grey."
+                  },
+                  {
+                      "item":  "Rooftops flat navy or purple",
+                      "status":  "fixed",
+                      "prs":  [
+                                  924,
+                                  941
+                              ],
+                      "views":  [
+                                    "c01",
+                                    "c02",
+                                    "c04"
+                                ],
+                      "finding":  "Warm grey roof membranes, subdued micrograin and coherent shadow planes."
+                  },
+                  {
+                      "item":  "Streets and vehicles merge in shade",
+                      "status":  "fixed",
+                      "prs":  [
+                                  924
+                              ],
+                      "views":  [
+                                    "e04-front",
+                                    "gate12"
+                                ],
+                      "finding":  "Body colours and road separate; current faceted vehicle source detail belongs to lane126."
+                  },
+                  {
+                      "item":  "Lime and repetitive trees",
+                      "status":  "fixed",
+                      "prs":  [
+                                  921
+                              ],
+                      "views":  [
+                                    "e01-front",
+                                    "e02-front",
+                                    "e03-street",
+                                    "e05-front"
+                                ],
+                      "finding":  "Muted varied greens, dense overlapping crown clumps and six silhouettes."
+                  },
+                  {
+                      "item":  "Bead-like shrub rows",
+                      "status":  "fixed",
+                      "prs":  [
+                                  921
+                              ],
+                      "views":  [
+                                    "gate04",
+                                    "e01-front"
+                                ],
+                      "finding":  "Overlapping domed foliage forms irregular broad planted masses instead of separate bead crowns."
+                  },
+                  {
+                      "item":  "Coarse bridge courses",
+                      "status":  "fixed",
+                      "prs":  [
+                                  925,
+                                  937
+                              ],
+                      "views":  [
+                                    "underbridge",
+                                    "shore-01",
+                                    "e02-front"
+                                ],
+                      "finding":  "Fine filtered courses, modeled relief and restrained grain retain broad stone facets."
+                  },
+                  {
+                      "item":  "Angular white water flecks",
+                      "status":  "fixed",
+                      "prs":  [
+                                  925
+                              ],
+                      "views":  [
+                                    "c06",
+                                    "c07",
+                                    "shore-03"
+                                ],
+                      "finding":  "Highlights are soft continuous patches rather than isolated flat white triangles; faceted wave relief remains."
+                  },
+                  {
+                      "item":  "Plain pier timber",
+                      "status":  "fixed",
+                      "prs":  [
+                                  925
+                              ],
+                      "views":  [
+                                    "c06",
+                                    "c07",
+                                    "gate14"
+                                ],
+                      "finding":  "Longitudinal timber grain, varied brown boards and weathering visible at player height."
+                  },
+                  {
+                      "item":  "Oversized skyline grids",
+                      "status":  "fixed",
+                      "prs":  [
+                                  926
+                              ],
+                      "views":  [
+                                    "c06",
+                                    "c07",
+                                    "shore-03"
+                                ],
+                      "finding":  "Finer window bay rhythm and varied facade families. Coarse silhouettes remain intentionally distant."
+                  },
+                  {
+                      "item":  "Generic shop interiors",
+                      "status":  "unproven",
+                      "prs":  [
+                                  926
+                              ],
+                      "views":  [
+                                    "gate05",
+                                    "gate08",
+                                    "e01-street"
+                                ],
+                      "finding":  "Four layout types exist in shader, but these current-main views show dark reflective panes; investigate visibility before ticking."
+                  },
+                  {
+                      "item":  "Jagged van body panels",
+                      "status":  "delegated",
+                      "prs":  [
+
+                              ],
+                      "views":  [
+                                    "van-new-front",
+                                    "van-new-rear"
+                                ],
+                      "finding":  "Inherited model defects remain. User assigned vehicle/prop model and converter work to lane126; no model edits here."
+                  },
+                  {
+                      "item":  "Park path gaps, floating closures, simplified waterfront",
+                      "status":  "partial",
+                      "prs":  [
+                                  909,
+                                  927
+                              ],
+                      "views":  [
+                                    "e02-street",
+                                    "park-west",
+                                    "gate15",
+                                    "gate16",
+                                    "c03",
+                                    "c07"
+                                ],
+                      "finding":  "Paving is continuous and closures have grounded supports. Broad pier slabs, sparse landing hardware and fine repeated riprap remain simpler than concepts; no blanket closure."
+                  },
+                  {
+                      "item":  "Dominant uniform paint and weak asphalt",
+                      "status":  "fixed",
+                      "prs":  [
+                                  927
+                              ],
+                      "views":  [
+                                    "e04-street",
+                                    "gate10",
+                                    "c03"
+                                ],
+                      "finding":  "Worn muted white/yellow markings and stochastic aggregate visible in sun and shade without a tile grid."
+                  },
+                  {
+                      "item":  "Lawn facet patchwork dominates (chain30/31 audit)",
+                      "status":  "open",
+                      "prs":  [
+
+                              ],
+                      "views":  [
+                                    "e02-front",
+                                    "e03-street",
+                                    "e05-front",
+                                    "park-west"
+                                ],
+                      "finding":  "Amplified 1m and 2.4m facet contrast obscures the approved dense grass and mowing treatment; fix in shared lawn material."
+                  }
+              ]
+}
