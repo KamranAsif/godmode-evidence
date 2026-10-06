@@ -1,0 +1,311 @@
+{
+  "baselineCommit": "7fbdbedbf",
+  "intermediateBase": "1a7b3eee7",
+  "contendedBase": "a3e0715c9",
+  "beforeFloatFixBase": "9c25255d6",
+  "finalBase": "170f30319",
+  "finalCommit": "e6a980204e101cebf104f8a58ed42ab4cbcafcc3",
+  "baseline": {
+    "cold": {
+      "seconds": [
+        null,
+        null,
+        null
+      ],
+      "medianSeconds": null
+    },
+    "warm": {
+      "seconds": [
+        null,
+        null,
+        null
+      ],
+      "medianSeconds": null
+    }
+  },
+  "intermediate": {
+    "cold": {
+      "seconds": [
+        22.336,
+        21.833,
+        21.985
+      ],
+      "medianSeconds": 21.985
+    },
+    "warm": {
+      "seconds": [
+        11.18,
+        11.388,
+        12.015
+      ],
+      "medianSeconds": 11.388
+    }
+  },
+  "contended": {
+    "cold": {
+      "seconds": [
+        60.059,
+        43.446,
+        38.418
+      ],
+      "medianSeconds": 43.446
+    },
+    "warm": {
+      "seconds": [
+        57.558,
+        23.062,
+        11.611
+      ],
+      "medianSeconds": 23.062
+    }
+  },
+  "beforeFloatFix": {
+    "cold": {
+      "seconds": [
+        20.986,
+        20.758,
+        20.577
+      ],
+      "medianSeconds": 20.758
+    },
+    "warm": {
+      "seconds": [
+        11.023,
+        11.021,
+        11.008
+      ],
+      "medianSeconds": 11.021
+    }
+  },
+  "after": {
+    "cold": {
+      "seconds": [
+        20.847,
+        20.506,
+        20.425
+      ],
+      "medianSeconds": 20.506
+    },
+    "warm": {
+      "seconds": [
+        11.008,
+        11.023,
+        11.001
+      ],
+      "medianSeconds": 11.008
+    }
+  },
+  "coldDefinition": "Fresh Godot game/user/shader cache per pair; OS file cache and driver shader cache retained.",
+  "measurement": "Native release executable; Godot millisecond clock to completed rendered gameplay frame after loading panel and primary viewmodel readiness.",
+  "prebuilt": {
+    "mode": "write",
+    "client": {
+      "nodes": 24829,
+      "fingerprint": "1698970855",
+      "buildMs": 73080,
+      "loadMs": 15680,
+      "expandedSoups": 5,
+      "importedTextures": 26,
+      "expansion": {
+        "position": 0.00006103515625,
+        "normal": 0.00022396445274353027
+      },
+      "matches": true,
+      "differences": []
+    },
+    "server": {
+      "nodes": 4171,
+      "fingerprint": "1276010704",
+      "buildMs": 10962,
+      "loadMs": 195,
+      "expandedSoups": 0,
+      "importedTextures": 0,
+      "expansion": {
+        "position": 0,
+        "normal": 0
+      },
+      "matches": true,
+      "differences": []
+    },
+    "removedFiles": 75,
+    "ok": true
+  },
+  "afterReady": {
+    "cold": {
+      "seconds": [
+        19.421,
+        19.086,
+        19.032
+      ],
+      "medianSeconds": 19.086
+    },
+    "warm": {
+      "seconds": [
+        9.747,
+        9.761,
+        9.739
+      ],
+      "medianSeconds": 9.747
+    }
+  },
+  "nativePipelineDiagnostics": [
+    {
+      "name": "fixed-latest-1-cold",
+      "count": 21
+    },
+    {
+      "name": "fixed-latest-1-warm",
+      "count": 21
+    },
+    {
+      "name": "fixed-latest-2-cold",
+      "count": 21
+    },
+    {
+      "name": "fixed-latest-2-warm",
+      "count": 21
+    },
+    {
+      "name": "fixed-latest-3-cold",
+      "count": 21
+    },
+    {
+      "name": "fixed-latest-3-warm",
+      "count": 21
+    }
+  ],
+  "finalRuns": [
+    {
+      "name": "fixed-latest-1-cold",
+      "temperature": "cold",
+      "pair": 1,
+      "gameplayMs": 20847,
+      "readyMs": 19421,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 27377,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 20735315968,
+      "freeMemoryBytesAfter": 18574860288,
+      "phases": [
+        "2026-10-06T05:34:12.076Z t=7816 INFO [JS] GODMODE_ARENA_PRELOAD=client:6403",
+        "2026-10-06T05:34:12.109Z t=7849 INFO [JS] GODMODE_ARENA_PRELOAD=server:28",
+        "2026-10-06T05:34:12.427Z t=8166 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:246:rehook:71:foliageMaterials:2",
+        "2026-10-06T05:34:23.261Z t=19001 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:149:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:34:23.681Z t=19421 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=19421",
+        "2026-10-06T05:34:25.054Z t=20794 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:639",
+        "2026-10-06T05:34:25.107Z t=20847 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=20847"
+      ]
+    },
+    {
+      "name": "fixed-latest-1-warm",
+      "temperature": "warm",
+      "pair": 1,
+      "gameplayMs": 11008,
+      "readyMs": 9747,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 11335,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 20631076864,
+      "freeMemoryBytesAfter": 18921758720,
+      "phases": [
+        "2026-10-06T05:34:35.304Z t=5477 INFO [JS] GODMODE_ARENA_PRELOAD=client:4956",
+        "2026-10-06T05:34:35.338Z t=5510 INFO [JS] GODMODE_ARENA_PRELOAD=server:28",
+        "2026-10-06T05:34:35.603Z t=5775 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:192:rehook:72:foliageMaterials:2",
+        "2026-10-06T05:34:39.196Z t=9368 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:146:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:34:39.575Z t=9747 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=9747",
+        "2026-10-06T05:34:40.801Z t=10973 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:546",
+        "2026-10-06T05:34:40.835Z t=11008 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=11008"
+      ]
+    },
+    {
+      "name": "fixed-latest-2-cold",
+      "temperature": "cold",
+      "pair": 2,
+      "gameplayMs": 20506,
+      "readyMs": 19086,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 21101,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 20656672768,
+      "freeMemoryBytesAfter": 18521235456,
+      "phases": [
+        "2026-10-06T05:34:52.644Z t=7549 INFO [JS] GODMODE_ARENA_PRELOAD=client:6319",
+        "2026-10-06T05:34:52.677Z t=7582 INFO [JS] GODMODE_ARENA_PRELOAD=server:28",
+        "2026-10-06T05:34:52.988Z t=7894 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:240:rehook:71:foliageMaterials:2",
+        "2026-10-06T05:35:03.793Z t=18698 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:144:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:35:04.181Z t=19086 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=19086",
+        "2026-10-06T05:35:05.547Z t=20452 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:632",
+        "2026-10-06T05:35:05.600Z t=20506 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=20506"
+      ]
+    },
+    {
+      "name": "fixed-latest-2-warm",
+      "temperature": "warm",
+      "pair": 2,
+      "gameplayMs": 11023,
+      "readyMs": 9761,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 11459,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 20661903360,
+      "freeMemoryBytesAfter": 18977267712,
+      "phases": [
+        "2026-10-06T05:35:15.763Z t=5507 INFO [JS] GODMODE_ARENA_PRELOAD=client:4972",
+        "2026-10-06T05:35:15.797Z t=5540 INFO [JS] GODMODE_ARENA_PRELOAD=server:28",
+        "2026-10-06T05:35:16.066Z t=5810 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:193:rehook:75:foliageMaterials:2",
+        "2026-10-06T05:35:19.638Z t=9382 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:146:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:35:20.017Z t=9761 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=9761",
+        "2026-10-06T05:35:21.248Z t=10992 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:551",
+        "2026-10-06T05:35:21.279Z t=11023 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=11023"
+      ]
+    },
+    {
+      "name": "fixed-latest-3-cold",
+      "temperature": "cold",
+      "pair": 3,
+      "gameplayMs": 20425,
+      "readyMs": 19032,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 21060,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 20666486784,
+      "freeMemoryBytesAfter": 18479112192,
+      "phases": [
+        "2026-10-06T05:35:33.198Z t=7522 INFO [JS] GODMODE_ARENA_PRELOAD=client:6302",
+        "2026-10-06T05:35:33.230Z t=7554 INFO [JS] GODMODE_ARENA_PRELOAD=server:27",
+        "2026-10-06T05:35:33.536Z t=7860 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:235:rehook:71:foliageMaterials:2",
+        "2026-10-06T05:35:44.296Z t=18620 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:150:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:35:44.708Z t=19032 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=19032",
+        "2026-10-06T05:35:46.041Z t=20365 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:614",
+        "2026-10-06T05:35:46.101Z t=20425 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=20425"
+      ]
+    },
+    {
+      "name": "fixed-latest-3-warm",
+      "temperature": "warm",
+      "pair": 3,
+      "gameplayMs": 11001,
+      "readyMs": 9739,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 11327,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 20587098112,
+      "freeMemoryBytesAfter": 18918518784,
+      "phases": [
+        "2026-10-06T05:35:56.317Z t=5473 INFO [JS] GODMODE_ARENA_PRELOAD=client:4946",
+        "2026-10-06T05:35:56.351Z t=5506 INFO [JS] GODMODE_ARENA_PRELOAD=server:28",
+        "2026-10-06T05:35:56.618Z t=5774 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:194:rehook:73:foliageMaterials:2",
+        "2026-10-06T05:36:00.215Z t=9370 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:146:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:36:00.583Z t=9739 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=9739",
+        "2026-10-06T05:36:01.801Z t=10957 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:549",
+        "2026-10-06T05:36:01.846Z t=11001 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=11001"
+      ]
+    }
+  ]
+}
