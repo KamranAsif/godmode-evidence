@@ -1,0 +1,292 @@
+{
+  "baselineCommit": "7fbdbedbf",
+  "intermediateBase": "1a7b3eee7",
+  "contendedBase": "a3e0715c9",
+  "finalBase": "9c25255d6",
+  "finalCommit": "821098ce65ce6e392389e3361a7493e514df88e3",
+  "baseline": {
+    "cold": {
+      "seconds": [
+        null,
+        null,
+        null
+      ],
+      "medianSeconds": null
+    },
+    "warm": {
+      "seconds": [
+        null,
+        null,
+        null
+      ],
+      "medianSeconds": null
+    }
+  },
+  "intermediate": {
+    "cold": {
+      "seconds": [
+        22.336,
+        21.833,
+        21.985
+      ],
+      "medianSeconds": 21.985
+    },
+    "warm": {
+      "seconds": [
+        11.18,
+        11.388,
+        12.015
+      ],
+      "medianSeconds": 11.388
+    }
+  },
+  "contended": {
+    "cold": {
+      "seconds": [
+        60.059,
+        43.446,
+        38.418
+      ],
+      "medianSeconds": 43.446
+    },
+    "warm": {
+      "seconds": [
+        57.558,
+        23.062,
+        11.611
+      ],
+      "medianSeconds": 23.062
+    }
+  },
+  "after": {
+    "cold": {
+      "seconds": [
+        20.986,
+        20.758,
+        20.577
+      ],
+      "medianSeconds": 20.758
+    },
+    "warm": {
+      "seconds": [
+        11.023,
+        11.021,
+        11.008
+      ],
+      "medianSeconds": 11.021
+    }
+  },
+  "coldDefinition": "Fresh Godot game/user/shader cache per pair; OS file cache and driver shader cache retained.",
+  "measurement": "Native release executable; Godot millisecond clock to completed rendered gameplay frame after loading panel and primary viewmodel readiness.",
+  "prebuilt": {
+    "mode": "write",
+    "client": {
+      "nodes": 24829,
+      "fingerprint": "1266463152",
+      "buildMs": 76714,
+      "loadMs": 15482,
+      "expandedSoups": 5,
+      "importedTextures": 26,
+      "expansion": {
+        "position": 0.00006103515625,
+        "normal": 0.00022396445274353027
+      },
+      "matches": true,
+      "differences": []
+    },
+    "server": {
+      "nodes": 4171,
+      "fingerprint": "1276010704",
+      "buildMs": 4215,
+      "loadMs": 188,
+      "expandedSoups": 0,
+      "importedTextures": 0,
+      "expansion": {
+        "position": 0,
+        "normal": 0
+      },
+      "matches": true,
+      "differences": []
+    },
+    "removedFiles": 12,
+    "ok": true
+  },
+  "afterReady": {
+    "cold": {
+      "seconds": [
+        19.65,
+        19.381,
+        19.187
+      ],
+      "medianSeconds": 19.381
+    },
+    "warm": {
+      "seconds": [
+        10.362,
+        9.756,
+        9.753
+      ],
+      "medianSeconds": 9.756
+    }
+  },
+  "nativePipelineDiagnostics": [
+    {
+      "name": "fixed-current-1-cold",
+      "count": 21
+    },
+    {
+      "name": "fixed-current-1-warm",
+      "count": 21
+    },
+    {
+      "name": "fixed-current-2-cold",
+      "count": 21
+    },
+    {
+      "name": "fixed-current-2-warm",
+      "count": 21
+    },
+    {
+      "name": "fixed-current-3-cold",
+      "count": 21
+    },
+    {
+      "name": "fixed-current-3-warm",
+      "count": 21
+    }
+  ],
+  "finalRuns": [
+    {
+      "name": "fixed-current-1-cold",
+      "temperature": "cold",
+      "pair": 1,
+      "gameplayMs": 20986,
+      "readyMs": 19650,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 27313,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 19865657344,
+      "freeMemoryBytesAfter": 17670868992,
+      "phases": [
+        "2026-10-06T04:59:21.116Z t=7904 INFO [JS] GODMODE_ARENA_PRELOAD=client:6420",
+        "2026-10-06T04:59:21.149Z t=7937 INFO [JS] GODMODE_ARENA_PRELOAD=server:28",
+        "2026-10-06T04:59:21.472Z t=8260 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:252:rehook:70:foliageMaterials:2",
+        "2026-10-06T04:59:32.471Z t=19259 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:148:rehook:0:foliageMaterials:0",
+        "2026-10-06T04:59:32.861Z t=19650 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=19650",
+        "2026-10-06T04:59:34.163Z t=20951 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:602",
+        "2026-10-06T04:59:34.198Z t=20986 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=20986"
+      ]
+    },
+    {
+      "name": "fixed-current-1-warm",
+      "temperature": "warm",
+      "pair": 1,
+      "gameplayMs": 11023,
+      "readyMs": 10362,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 11374,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 19814334464,
+      "freeMemoryBytesAfter": 18198507520,
+      "phases": [
+        "2026-10-06T04:59:44.386Z t=5478 INFO [JS] GODMODE_ARENA_PRELOAD=client:4958",
+        "2026-10-06T04:59:44.416Z t=5508 INFO [JS] GODMODE_ARENA_PRELOAD=server:29",
+        "2026-10-06T04:59:44.684Z t=5776 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:196:rehook:72:foliageMaterials:2",
+        "2026-10-06T04:59:48.270Z t=9362 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:150:rehook:0:foliageMaterials:0",
+        "2026-10-06T04:59:49.270Z t=10362 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=10362",
+        "2026-10-06T04:59:49.898Z t=10990 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:550",
+        "2026-10-06T04:59:49.931Z t=11023 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=11023"
+      ]
+    },
+    {
+      "name": "fixed-current-2-cold",
+      "temperature": "cold",
+      "pair": 2,
+      "gameplayMs": 20758,
+      "readyMs": 19381,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 21408,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 19827920896,
+      "freeMemoryBytesAfter": 17490538496,
+      "phases": [
+        "2026-10-06T05:00:01.917Z t=7674 INFO [JS] GODMODE_ARENA_PRELOAD=client:6310",
+        "2026-10-06T05:00:01.950Z t=7707 INFO [JS] GODMODE_ARENA_PRELOAD=server:28",
+        "2026-10-06T05:00:02.265Z t=8023 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:242:rehook:72:foliageMaterials:2",
+        "2026-10-06T05:00:13.185Z t=18943 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:169:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:00:13.624Z t=19381 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=19381",
+        "2026-10-06T05:00:14.946Z t=20704 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:605",
+        "2026-10-06T05:00:15.000Z t=20758 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=20758"
+      ]
+    },
+    {
+      "name": "fixed-current-2-warm",
+      "temperature": "warm",
+      "pair": 2,
+      "gameplayMs": 11021,
+      "readyMs": 9756,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 11372,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 19690917888,
+      "freeMemoryBytesAfter": 18078343168,
+      "phases": [
+        "2026-10-06T05:00:25.316Z t=5494 INFO [JS] GODMODE_ARENA_PRELOAD=client:4951",
+        "2026-10-06T05:00:25.350Z t=5528 INFO [JS] GODMODE_ARENA_PRELOAD=server:29",
+        "2026-10-06T05:00:25.617Z t=5795 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:195:rehook:72:foliageMaterials:2",
+        "2026-10-06T05:00:29.199Z t=9377 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:144:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:00:29.578Z t=9756 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=9756",
+        "2026-10-06T05:00:30.797Z t=10975 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:545",
+        "2026-10-06T05:00:30.843Z t=11021 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=11021"
+      ]
+    },
+    {
+      "name": "fixed-current-3-cold",
+      "temperature": "cold",
+      "pair": 3,
+      "gameplayMs": 20577,
+      "readyMs": 19187,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 20967,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 19761410048,
+      "freeMemoryBytesAfter": 17652891648,
+      "phases": [
+        "2026-10-06T05:00:42.724Z t=7578 INFO [JS] GODMODE_ARENA_PRELOAD=client:6323",
+        "2026-10-06T05:00:42.757Z t=7610 INFO [JS] GODMODE_ARENA_PRELOAD=server:27",
+        "2026-10-06T05:00:43.085Z t=7939 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:247:rehook:81:foliageMaterials:2",
+        "2026-10-06T05:00:53.905Z t=18759 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:153:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:00:54.333Z t=19187 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=19187",
+        "2026-10-06T05:00:55.670Z t=20523 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:627",
+        "2026-10-06T05:00:55.723Z t=20577 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=20577"
+      ]
+    },
+    {
+      "name": "fixed-current-3-warm",
+      "temperature": "warm",
+      "pair": 3,
+      "gameplayMs": 11008,
+      "readyMs": 9753,
+      "timedOut": false,
+      "deadlineSeconds": 90,
+      "observedMs": 11348,
+      "totalMemoryBytes": 34032001024,
+      "freeMemoryBytesBefore": 19745017856,
+      "freeMemoryBytesAfter": 18126966784,
+      "phases": [
+        "2026-10-06T05:01:05.896Z t=5471 INFO [JS] GODMODE_ARENA_PRELOAD=client:4936",
+        "2026-10-06T05:01:05.930Z t=5505 INFO [JS] GODMODE_ARENA_PRELOAD=server:29",
+        "2026-10-06T05:01:06.200Z t=5775 INFO [JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:197:rehook:72:foliageMaterials:2",
+        "2026-10-06T05:01:09.791Z t=9366 INFO [JS] GODMODE_ARENA_BUILD=server:prebuilt:load:0:instantiate:146:rehook:0:foliageMaterials:0",
+        "2026-10-06T05:01:10.179Z t=9753 INFO [JS] GODMODE_FIRST_GAMEPLAY_FRAME=9753",
+        "2026-10-06T05:01:11.397Z t=10971 INFO [JS] GODMODE_MOCAP_LOAD=machineGun:546",
+        "2026-10-06T05:01:11.434Z t=11008 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=11008"
+      ]
+    }
+  ]
+}
