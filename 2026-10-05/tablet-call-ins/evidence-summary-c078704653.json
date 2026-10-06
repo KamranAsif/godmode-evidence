@@ -1,0 +1,175 @@
+{
+  "nativePixels": true,
+  "scriptErrors": false,
+  "notes": "Actual survival run via godot-cli, unbaked arena; developer invincibility and slow time for captures. Call-ins used the ordinary console/RPC path.",
+  "captures": [
+    {
+      "name": "controlled-ac130",
+      "scene": "res://scenes/main.tscn",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "captureAccepted": true,
+      "before": {
+        "streakView": {
+          "gun": "ac105",
+          "polarity": "whiteHot",
+          "ride": "ac130",
+          "tablet": false
+        },
+        "nowMs": 295482.55,
+        "activation": null,
+        "ride": {
+          "id": "ac130",
+          "startedAtMs": 287146,
+          "controlAtMs": 287746
+        }
+      },
+      "after": {
+        "streakView": {
+          "gun": "ac105",
+          "polarity": "whiteHot",
+          "ride": "ac130",
+          "tablet": false
+        },
+        "nowMs": 300902.55,
+        "activation": null,
+        "ride": {
+          "id": "ac130",
+          "startedAtMs": 287146,
+          "controlAtMs": 287746
+        }
+      }
+    },
+    {
+      "name": "call-in-airstrike-tablet",
+      "scene": "res://scenes/main.tscn",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "captureAccepted": true,
+      "before": {
+        "streakView": {
+          "gun": null,
+          "polarity": "whiteHot",
+          "ride": null,
+          "tablet": true
+        },
+        "nowMs": 338539.9,
+        "activation": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45
+        },
+        "ride": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45,
+          "controlAtMs": 339915.45
+        }
+      },
+      "after": {
+        "streakView": {
+          "gun": null,
+          "polarity": "whiteHot",
+          "ride": null,
+          "tablet": true
+        },
+        "nowMs": 338624.1,
+        "activation": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45
+        },
+        "ride": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45,
+          "controlAtMs": 339915.45
+        }
+      }
+    },
+    {
+      "name": "call-in-airstrike-tap",
+      "scene": "res://scenes/main.tscn",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "captureAccepted": true,
+      "before": {
+        "streakView": {
+          "gun": null,
+          "polarity": "whiteHot",
+          "ride": null,
+          "tablet": true
+        },
+        "nowMs": 338843.35,
+        "activation": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45
+        },
+        "ride": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45,
+          "controlAtMs": 339915.45
+        }
+      },
+      "after": {
+        "streakView": {
+          "gun": null,
+          "polarity": "whiteHot",
+          "ride": "precisionAirstrike",
+          "tablet": true
+        },
+        "nowMs": 338988.45,
+        "activation": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45
+        },
+        "ride": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45,
+          "controlAtMs": 339915.45
+        }
+      }
+    },
+    {
+      "name": "airstrike-map-after-tablet",
+      "scene": "res://scenes/main.tscn",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "captureAccepted": true,
+      "before": {
+        "streakView": {
+          "gun": null,
+          "polarity": "whiteHot",
+          "ride": "precisionAirstrike",
+          "tablet": false
+        },
+        "nowMs": 340039.1,
+        "activation": null,
+        "ride": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45,
+          "controlAtMs": 339915.45
+        }
+      },
+      "after": {
+        "streakView": {
+          "gun": null,
+          "polarity": "whiteHot",
+          "ride": "precisionAirstrike",
+          "tablet": false
+        },
+        "nowMs": 342990.1,
+        "activation": null,
+        "ride": {
+          "id": "precisionAirstrike",
+          "startedAtMs": 337615.45,
+          "controlAtMs": 339915.45
+        }
+      }
+    }
+  ]
+}
