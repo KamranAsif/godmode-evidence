@@ -1,0 +1,22 @@
+{
+  "sha256": "69fcf5a5453c90cdb1362b5b84b52ef2f1853170a74ac950b39b8d53bdb8b6d9",
+  "videoSha256": "9ca3b09755d333337217e003b15f59ac94de0ba9d965295445e0d824e4a186bb",
+  "wavSha256": "6479b5492635c1687845a3cfc9e4c41ebbbd3a5b4d3399dfe3ad9ba070964065",
+  "audioStartOffsetSeconds": -0.021488,
+  "firstNativeVideoSampleSeconds": 0.016485,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "videoEncoding": {
+    "capturedFrames": 106,
+    "meanGapMs": 76.34075238095238,
+    "maxGapMs": 102.36000000000001,
+    "targetIntervalsMissed": 117,
+    "outputFps": 30,
+    "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+  },
+  "audioEncoding": "320kbps AAC from original-rate stereo Master capture; float32 WAV is separately retained",
+  "limitation": "Capture clocks aligned using engine timestamps and the first native video sample. Master mix/output-device latency not measured. No audible quality verdict implied. No audio normalization or video interpolation."
+}
