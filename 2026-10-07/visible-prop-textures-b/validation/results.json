@@ -1,0 +1,34 @@
+{
+  "source": "9e017bd213c0a007f17f8f3d3ae40afdd8260449",
+  "stackedOn": {
+    "pr": 1010,
+    "commit": "c69e90aabcbd077a8095bd322aa41d29e1a7cad0"
+  },
+  "modelsOptedIn": 75,
+  "contactSheets": 90,
+  "streetViewsPerBatch": 6,
+  "batches": 2,
+  "commands": {
+    "pnpm format": "ran after final code edits",
+    "pnpm build": "PASS, saved client/server matches=true differences=[]",
+    "pnpm lint": "PASS, zero errors; five existing max-lines warnings",
+    "selectedLightingAndHudUnitTests": "33/33 PASS",
+    "prebuilt --check": "PASS current cache",
+    "headlessSmoke": "PASS live player, no script errors, exact instance stopped"
+  },
+  "engineZeroProofLocal": "2026-10-07T07:04:20-04:00",
+  "finalSmokeStopForced": true,
+  "review": "Kamran visual/temporal review pending; draft only; do not merge.",
+  "captureNotes": [
+    "No script errors or shader compilation errors in either capture pass.",
+    "19 startup pre-raster Vulkan pipeline warnings each pass; 20 also observed in earlier A/B controls.",
+    "Native realtime recordings include readback stalls; 1080p30 output retains measured speed with held/dropped native frames, no interpolation.",
+    "Batch 2 moving-crate sheets supersede batch 1 crate sheets; stage panels are representative actual building materials.",
+    "No new lightmap bake or density-only causal claim. Existing B production lighting reused unchanged."
+  ],
+  "rawBytesVerified": {
+    "commit": "cb6bc147a901e6bc80fe609bc8fbb68584f3a065",
+    "files": 161,
+    "bytes": 615545515
+  }
+}
