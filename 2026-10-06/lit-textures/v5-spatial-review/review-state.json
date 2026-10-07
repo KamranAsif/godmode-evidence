@@ -1,0 +1,60 @@
+{
+  "sourceCommit": "669f0c2a1f77130d4edc528f29d4232d4d3bafaa",
+  "spatial": "PASS: v3 44 PNGs; v4 eight matched lighting PNGs and ten valid motion paths sampled; v5 ten far-car PNGs and two replacement paths sampled.",
+  "matchedDensity": "PASS visual crop comparison only; no isolated density causal claim or full-production-bake approval.",
+  "temporal": "UNVERIFIED for all twelve valid original clips. Overall ALL PASS held; no waiver requested or assumed.",
+  "reviewerNeeded": "Human/video-capable reviewer must watch all six matched paths at native pixels and normal 1x speed and identify reviewer, evidence commit and verdict.",
+  "tours": [
+    "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/01c28d7529f91d1944675053bb5e32e459cb204a/2026-10-06/lit-textures/v5-far-car-clear/main-motion-tour-1080p30.mp4",
+    "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/01c28d7529f91d1944675053bb5e32e459cb204a/2026-10-06/lit-textures/v5-far-car-clear/candidate-motion-tour-1080p30.mp4"
+  ],
+  "originalClips": [
+    {
+      "id": "tree-close",
+      "main": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/main-motion-tree-close.mp4",
+      "candidate": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/candidate-motion-tree-close.mp4"
+    },
+    {
+      "id": "tree-mid",
+      "main": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/main-motion-tree-mid.mp4",
+      "candidate": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/candidate-motion-tree-mid.mp4"
+    },
+    {
+      "id": "tree-far",
+      "main": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/main-motion-tree-far.mp4",
+      "candidate": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/candidate-motion-tree-far.mp4"
+    },
+    {
+      "id": "car-close",
+      "main": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/main-motion-car-close.mp4",
+      "candidate": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/candidate-motion-car-close.mp4"
+    },
+    {
+      "id": "car-mid",
+      "main": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/main-motion-car-mid.mp4",
+      "candidate": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/6a67de7fe0fb79d77465dfae5d07599135cfeea7/2026-10-06/lit-textures/v4-crop-recovery/candidate-motion-car-mid.mp4"
+    },
+    {
+      "id": "car-far",
+      "main": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/01c28d7529f91d1944675053bb5e32e459cb204a/2026-10-06/lit-textures/v5-far-car-clear/main-motion-car-far.mp4",
+      "candidate": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/01c28d7529f91d1944675053bb5e32e459cb204a/2026-10-06/lit-textures/v5-far-car-clear/candidate-motion-car-far.mp4"
+    }
+  ],
+  "excluded": "Both v4 far-car originals and v4 tours containing them; old v2 clips remain excluded.",
+  "captureNote": "Native elapsed timestamps retained; capture gaps disclosed. CFR30 copies duplicate/drop existing frames without interpolation, scaling or speed change. Encoding metadata and decoded spatial samples cannot certify shimmer absence.",
+  "gpuHandoff": {
+    "to": "%150@windows",
+    "releasedAtUtc": "2026-10-07T03:57:05Z",
+    "candidatePid": 14144,
+    "candidateExited": true,
+    "controlPid": 5568,
+    "controlStopForced": false,
+    "finalImportExited": true,
+    "managedEnginesObservedAtRelease": 0,
+    "windowsGodotProcessesObservedAtRelease": 0,
+    "sourceClean": true,
+    "ownership": "154 owns zero engines; GPU yours sent directly to150."
+  },
+  "productionAtlas": "Original complete atlas restored and actual imported cache verified. Full rebake remains release-owned.",
+  "pr": "Prepared, not opened: waiting required ALL PASS. Never merge before Kamran look approval."
+}
