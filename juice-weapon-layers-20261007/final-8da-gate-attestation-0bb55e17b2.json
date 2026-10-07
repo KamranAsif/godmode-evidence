@@ -1,0 +1,554 @@
+{
+  "signedBy": "Codex /root, independent CPU-only source/vision/receipt auditor",
+  "date": "2026-10-07",
+  "verdict": "FINAL scoped ALL PASS: exact8da source/root/cache/defaultsmoke/API; captured1e vision unchanged",
+  "latestHead": "8da621244062d3fedaf75105768fb4312921c065",
+  "latestTree": "0e8ea2af33d7af7f4d8320ea23d4877bc3576901",
+  "latestBase": "c26265c1619056d7e0697b33f66be5cbe56c891b",
+  "runtimeProducer": "8da621244062d3fedaf75105768fb4312921c065",
+  "captureProducer": "1e84fcf69420ca1c559c15323b384714864e44ef",
+  "source": "PASS original feature edits preserved,+50/-7;four weapon paths unchanged",
+  "root": "PASS exact default13/13 including production compile",
+  "cache": "PASS built-in verified restore-only receipt,1117inputs586copied/generated:false",
+  "rootBundle": "8da-root-bundle.json",
+  "smoke": {
+    "verdict": "PASS fresh exact8da default scene",
+    "health": 100,
+    "liveEnemies": 1,
+    "scriptErrors": [],
+    "otherErrors": [
+      "ERROR: Condition \"!actions.custom_samplers.has(function->arguments[j].tex_builtin)\" is true. Continuing."
+    ],
+    "settings": {
+      "audioPercent": 100,
+      "fullscreen": true,
+      "keyBindings": {
+        "aim": [
+          "mouse:2",
+          null
+        ],
+        "crouch": [
+          "key:67",
+          "key:4194326"
+        ],
+        "dash": [
+          "key:4194328",
+          null
+        ],
+        "dropCheat": [
+          "key:71",
+          null
+        ],
+        "fire": [
+          "mouse:1",
+          null
+        ],
+        "interact": [
+          "key:70",
+          null
+        ],
+        "jump": [
+          "key:32",
+          null
+        ],
+        "knife": [
+          "key:86",
+          null
+        ],
+        "moveBackward": [
+          "key:83",
+          null
+        ],
+        "moveForward": [
+          "key:87",
+          null
+        ],
+        "moveLeft": [
+          "key:65",
+          null
+        ],
+        "moveRight": [
+          "key:68",
+          null
+        ],
+        "reload": [
+          "key:82",
+          null
+        ],
+        "scoreboard": [
+          "key:4194306",
+          null
+        ],
+        "sprint": [
+          "key:4194325",
+          null
+        ],
+        "swapWeapon": [
+          "key:81",
+          null
+        ],
+        "toggleHelp": [
+          "key:4194332",
+          null
+        ],
+        "toggleMap": [
+          "key:77",
+          null
+        ]
+      },
+      "killstreaksAlwaysReady": true,
+      "newKillstreakFlow": false,
+      "resolutionHeight": 720,
+      "resolutionWidth": 1280,
+      "screenShakePercent": 100,
+      "sendCrashReports": false,
+      "showFpsCounter": false,
+      "testingAutoCover": false,
+      "unlockAllKillstreaks": true
+    },
+    "stop": {
+      "schemaVersion": 1,
+      "ok": true,
+      "message": "Stopped game (pid 17252)",
+      "data": {
+        "pid": 17252,
+        "kind": "game",
+        "instance": "juice-weapon-final-smoke4",
+        "projectPath": "D:\\work\\godmode-roguelite-worktrees\\juice-weapon-layers",
+        "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\b412b60c9f92\\game-juice-weapon-final-smoke4.log",
+        "inspectionUrl": "http://127.0.0.1:50570/inspect",
+        "inspectPort": 50570,
+        "startedAt": "2026-10-07T16:06:06.734Z",
+        "sessionId": "juice-147",
+        "processStartToken": "Wednesday, October 7, 2026 12:06:06 PM",
+        "forced": true
+      }
+    }
+  },
+  "api": {
+    "verdict": "PASS fresh exact8da all12atomic cases",
+    "rows": [
+      {
+        "family": "rifle",
+        "distanceMeters": 1,
+        "atomicIdleVoices": 27,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -8.93819999694824,
+            -8.93819999694824
+          ],
+          [
+            -5.43697500228882,
+            -5.43697500228882
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "rifle",
+        "distanceMeters": 6,
+        "atomicIdleVoices": 26,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -8.93819999694824,
+            -8.93819999694824
+          ],
+          [
+            -5.43697500228882,
+            -5.43697500228882
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "rifle",
+        "distanceMeters": 20,
+        "atomicIdleVoices": 11,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -14.9588003158569,
+            -14.9588003158569
+          ],
+          [
+            -1.75720715522766,
+            -1.75720715522766
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "rifle",
+        "distanceMeters": 40,
+        "atomicIdleVoices": 15,
+        "newVoices": 1,
+        "gainsAndCeilingsDb": [
+          [
+            -1,
+            3
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "pistol",
+        "distanceMeters": 1,
+        "atomicIdleVoices": 18,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -6.9382004737854,
+            -6.9382004737854
+          ],
+          [
+            -6.43697500228882,
+            -6.43697500228882
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "pistol",
+        "distanceMeters": 6,
+        "atomicIdleVoices": 8,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -6.9382004737854,
+            -6.9382004737854
+          ],
+          [
+            -6.43697500228882,
+            -6.43697500228882
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "pistol",
+        "distanceMeters": 20,
+        "atomicIdleVoices": 9,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -12.9588003158569,
+            -12.9588003158569
+          ],
+          [
+            -2.75720715522766,
+            -2.75720715522766
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "pistol",
+        "distanceMeters": 40,
+        "atomicIdleVoices": 10,
+        "newVoices": 1,
+        "gainsAndCeilingsDb": [
+          [
+            -2,
+            3
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "shotgun",
+        "distanceMeters": 1,
+        "atomicIdleVoices": 9,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -3.93820023536682,
+            -3.93820023536682
+          ],
+          [
+            -4.43697500228882,
+            -4.43697500228882
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "shotgun",
+        "distanceMeters": 6,
+        "atomicIdleVoices": 8,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -3.93820023536682,
+            -3.93820023536682
+          ],
+          [
+            -4.43697500228882,
+            -4.43697500228882
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "shotgun",
+        "distanceMeters": 20,
+        "atomicIdleVoices": 7,
+        "newVoices": 2,
+        "gainsAndCeilingsDb": [
+          [
+            -9.95880031585693,
+            -9.95880031585693
+          ],
+          [
+            -0.757207155227661,
+            -0.757207155227661
+          ]
+        ],
+        "paused": false
+      },
+      {
+        "family": "shotgun",
+        "distanceMeters": 40,
+        "atomicIdleVoices": 6,
+        "newVoices": 1,
+        "gainsAndCeilingsDb": [
+          [
+            0,
+            3
+          ]
+        ],
+        "paused": false
+      }
+    ],
+    "buses": [
+      "GameplaySfx",
+      "GameplayUI",
+      "GameplayPriority",
+      "GameplayStream",
+      "GameplayAmbience",
+      "Music"
+    ],
+    "scriptErrors": [],
+    "otherErrors": [
+      "ERROR: Condition \"!actions.custom_samplers.has(function->arguments[j].tex_builtin)\" is true. Continuing."
+    ],
+    "setup": "Testing invincibility and slow simulation isolate bounded report sources with enemies alive; no killall/XP drops or pause bypass.",
+    "simulationScale": 0.001,
+    "stop": {
+      "schemaVersion": 1,
+      "ok": true,
+      "message": "Stopped game (pid 48424)",
+      "data": {
+        "pid": 48424,
+        "kind": "game",
+        "instance": "juice-audio-main-integration4",
+        "projectPath": "D:\\work\\godmode-roguelite-worktrees\\juice-weapon-layers",
+        "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\b412b60c9f92\\game-juice-audio-main-integration4.log",
+        "inspectionUrl": "http://127.0.0.1:50670/inspect",
+        "inspectPort": 50670,
+        "startedAt": "2026-10-07T16:06:30.682Z",
+        "sessionId": "juice-147",
+        "processStartToken": "Wednesday, October 7, 2026 12:06:30 PM",
+        "forced": true
+      }
+    }
+  },
+  "currentPublicLocalFilesVerified": 12,
+  "currentFiles": [
+    {
+      "source": "artifacts\\juice\\current-head-gate-proof.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/current-head-gate-proof-3488d9f8c2.json",
+      "sha256": "3488d9f8c26313c730388253f84f9bcd376d4935dc46237ec7e9ec235b9a925e",
+      "remoteSha256": "3488d9f8c26313c730388253f84f9bcd376d4935dc46237ec7e9ec235b9a925e",
+      "bytes": 3933,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\juice-weapon-final-smoke4-proof.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/juice-weapon-final-smoke4-proof-33ba55a288.json",
+      "sha256": "33ba55a288d1d6711c5f4c720ce390eec0e3181fdaada8151de15aec7075dc12",
+      "remoteSha256": "33ba55a288d1d6711c5f4c720ce390eec0e3181fdaada8151de15aec7075dc12",
+      "bytes": 1430,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\juice-weapon-final-smoke4-observed.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/juice-weapon-final-smoke4-observed-4446a2079e.json",
+      "sha256": "4446a2079e36fb9aa2f006a7770e47fa32c5fd54273e09a90053a5dbd3b5c0bb",
+      "remoteSha256": "4446a2079e36fb9aa2f006a7770e47fa32c5fd54273e09a90053a5dbd3b5c0bb",
+      "bytes": 31712,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\juice-audio-main-integration4-proof.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/juice-audio-main-integration4-proof-672a05b346.json",
+      "sha256": "672a05b34693f44815c3e4efad334fe1ff7ea9541ccc617443c66f1de622f424",
+      "remoteSha256": "672a05b34693f44815c3e4efad334fe1ff7ea9541ccc617443c66f1de622f424",
+      "bytes": 1422,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\juice-audio-main-integration4-observed.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/juice-audio-main-integration4-observed-387e0780c8.json",
+      "sha256": "387e0780c8b867b3b388455f38fc67b8868097a6f2dac105ac6e1245608b8069",
+      "remoteSha256": "387e0780c8b867b3b388455f38fc67b8868097a6f2dac105ac6e1245608b8069",
+      "bytes": 407810,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\juice-audio-main-integration4-diagnostics.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/juice-audio-main-integration4-diagnostics-f1ab7a35fd.json",
+      "sha256": "f1ab7a35fd93e3e9dd52e63440520be9311635e4647f52c53467ff3c1a983e70",
+      "remoteSha256": "f1ab7a35fd93e3e9dd52e63440520be9311635e4647f52c53467ff3c1a983e70",
+      "bytes": 427755,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\slot-stop-account.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/slot-stop-account-7a89eb8b0a.json",
+      "sha256": "7a89eb8b0aa3f01198e3bd1d636fa15c7c68e26ba4ed439246f824a24e124130",
+      "remoteSha256": "7a89eb8b0aa3f01198e3bd1d636fa15c7c68e26ba4ed439246f824a24e124130",
+      "bytes": 328,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\global-ps-account.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/global-ps-account-ef3e71e200.json",
+      "sha256": "ef3e71e200ef4e2403e67c5f5c6a6749e28363c3e79929693a228e7b895a64d5",
+      "remoteSha256": "ef3e71e200ef4e2403e67c5f5c6a6749e28363c3e79929693a228e7b895a64d5",
+      "bytes": 228,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\owned-native-account.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/owned-native-account-a5338d955b.json",
+      "sha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "remoteSha256": "a5338d955b09046ec0b16f3a9625b7955c763aae07dc722e474e6078745f932f",
+      "bytes": 4,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\root-final-binding.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/root-final-binding-a1d5746964.json",
+      "sha256": "a1d57469643394c7695b4828931f424545306058a85c09a5142142e730bbec0e",
+      "remoteSha256": "a1d57469643394c7695b4828931f424545306058a85c09a5142142e730bbec0e",
+      "bytes": 221,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\pnpm-test-account-client-final.log",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/pnpm-test-account-client-final-2764d3670f.log",
+      "sha256": "2764d3670ffcb08b5d053bc4b517948f3956a4ca41c15628f6fbf53ce76dfc4a",
+      "remoteSha256": "2764d3670ffcb08b5d053bc4b517948f3956a4ca41c15628f6fbf53ce76dfc4a",
+      "bytes": 287862,
+      "matches": true
+    },
+    {
+      "source": "artifacts\\juice\\machine-cache-restore-proof.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/machine-cache-restore-proof-c0557d9ed8.json",
+      "sha256": "c0557d9ed80d9705fb4241ca8126b1722a6f2f1d5c1f7a9e1cefe216c22d79c1",
+      "remoteSha256": "c0557d9ed80d9705fb4241ca8126b1722a6f2f1d5c1f7a9e1cefe216c22d79c1",
+      "bytes": 350,
+      "matches": true
+    }
+  ],
+  "previouslyVerifiedFixtureFailureFiles": [
+    {
+      "source": "artifacts\\juice\\audio_client.ts",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/audio_client-c5faedb866.ts",
+      "sha256": "c5faedb86668bfdf61a402a6d548834cd3dbb4d90c1f902fa54b940095064524",
+      "remoteSha256": "c5faedb86668bfdf61a402a6d548834cd3dbb4d90c1f902fa54b940095064524",
+      "bytes": 2697,
+      "matches": true,
+      "scope": "historicalda33 runtime/fixture/cleanup",
+      "reusedPreviouslyVerifiedPublicBytes": true
+    },
+    {
+      "source": "artifacts\\juice\\current-integration.mjs",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/current-integration-72ca49b25a.mjs",
+      "sha256": "72ca49b25ac49a0dfc385b7c08fb238ec3fef08995674bf2d917d18e4fa13c14",
+      "remoteSha256": "72ca49b25ac49a0dfc385b7c08fb238ec3fef08995674bf2d917d18e4fa13c14",
+      "bytes": 5728,
+      "matches": true,
+      "scope": "historicalda33 runtime/fixture/cleanup",
+      "reusedPreviouslyVerifiedPublicBytes": true
+    },
+    {
+      "source": "artifacts\\juice\\juice-audio-main-integration1-proof.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/juice-audio-main-integration1-proof-4aa936d933.json",
+      "sha256": "4aa936d9331e6d747c6afd1dada5859d414b03d557e58659c6d559cd78766994",
+      "remoteSha256": "4aa936d9331e6d747c6afd1dada5859d414b03d557e58659c6d559cd78766994",
+      "bytes": 1423,
+      "matches": true,
+      "scope": "historicalda33 runtime/fixture/cleanup",
+      "reusedPreviouslyVerifiedPublicBytes": true
+    },
+    {
+      "source": "artifacts\\juice\\juice-audio-main-integration2-proof.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/juice-audio-main-integration2-proof-fcc16c6553.json",
+      "sha256": "fcc16c655373bd3baa44dc0baca391f6e5f64bacf2456506c2ac7e3fed501d49",
+      "remoteSha256": "fcc16c655373bd3baa44dc0baca391f6e5f64bacf2456506c2ac7e3fed501d49",
+      "bytes": 1423,
+      "matches": true,
+      "scope": "historicalda33 runtime/fixture/cleanup",
+      "reusedPreviouslyVerifiedPublicBytes": true
+    },
+    {
+      "source": "artifacts\\juice\\juice-audio-main-integration2-diagnostics.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-weapon-layers-20261007/juice-audio-main-integration2-diagnostics-12244cf99c.json",
+      "sha256": "12244cf99c346d8e8e24ba956dd3c62dd57a314d6e06ab78593c6e782ea87e0a",
+      "remoteSha256": "12244cf99c346d8e8e24ba956dd3c62dd57a314d6e06ab78593c6e782ea87e0a",
+      "bytes": 64182,
+      "matches": true,
+      "scope": "historicalda33 runtime/fixture/cleanup",
+      "reusedPreviouslyVerifiedPublicBytes": true
+    }
+  ],
+  "failedAttemptDisclosures": [
+    "Attempt1 observed zero new voices at rifle6 after killall; no pause diagnostic was captured, so the proposed pause cause is unconfirmed.",
+    "Attempt2 was unpaused but counted an unrelated untrimmed voice between separate CLI observations. Final fixture brackets the production call with atomic pool observations; requirements remain two near voices, one far voice and nominal/reset ceilings."
+  ],
+  "failedCauseLimits": "Attempt1 pause cause remains unconfirmed;attempt2 exact extra cue remains unproven;atomic reruns pass unchanged assertions without production fix",
+  "oldDa33PackagePreserved": {
+    "source": "artifacts/juice/da33-head-gate-proof-historical.json",
+    "sha256": "8152bc570e811d2a5e2a6ecf748837723966c5e71ee35888c3b37ad153041edf"
+  },
+  "cleanupReceipts": {
+    "session": {
+      "schemaVersion": 1,
+      "ok": true,
+      "message": "Ended session juice-147: stopped 0 engines",
+      "data": {
+        "sessionId": "juice-147",
+        "engines": 0,
+        "stopped": [],
+        "recordsRemoved": 0
+      }
+    },
+    "global": {
+      "schemaVersion": 1,
+      "ok": true,
+      "message": "Found 0 managed processes across all projects",
+      "data": {
+        "instances": []
+      }
+    },
+    "native": []
+  },
+  "bookkeepingDisclosure": "Producer reports final API proof written12:07:01.6910955 before slot cap;inventory/session/global/native checks and release notifications followed at12:09:02,late bookkeeping disclosed. Proofs contain forced stops;no exact termination timestamp is independently encoded.",
+  "captureSignatureUnmodified": true,
+  "captureAttestationSha256": "b7c8213b26e22cb5f10f83d5afcee3dbbb9bd0bb857f1989340e3847825a5b65",
+  "scopeLimits": [
+    "Current smoke/API are headless;no new rendered or account-campaign certification",
+    "Smoke uses enabled unlockAllKillstreaks/killstreaksAlwaysReady testing settings;not stock-settings/earning proof",
+    "Controlled API uses .001 simulation/invincibility with live enemies;not natural enemy attack/audio certification",
+    "No actual listening or continuous native1x-motion PASS",
+    "Unmatched natural candidate Masterpeak1.35052168/94samples>=unity remains numerical headroom concern;no peak-safety/audible clipping or improvement guarantee",
+    "Existing samplerERROR and forced producer stops retained;bookkeeping delay disclosed",
+    "Auditor did not run engines/tests/restore or rehash all cache assets;root/restore/runtime producer receipts independently inspected"
+  ],
+  "auditorEnginesOwnedOrLaunched": 0,
+  "productionEditsOrMerge": false,
+  "pendingRequiredScopedGates": []
+}
