@@ -1,0 +1,93 @@
+{
+  "head": "f90a7a3800171803c782cf7c8b271f17d78527a6",
+  "tree": "9317b94b6747afc03bed798f5808fbeb72d70033",
+  "base": "e2772ac50910112ca45423bbc600e942d12afb53",
+  "passed": true,
+  "root": {
+    "head": "da00f37641ec2364270ccb775a08b306b1326494",
+    "tree": "f9bc8b0357fdb7da0127a9090416a8c46f9c51ed",
+    "base": "590d7f738ddfacdac18bac898b5e62efcc2b097d",
+    "startedAt": "2026-10-07T18:56:05.7184097+00:00",
+    "endedAt": "2026-10-07T18:59:26.1052252+00:00",
+    "exitCode": 0,
+    "buildCommand": "pnpm build:scripts",
+    "policy": "PR arena freshness failures accepted; all other checks required",
+    "generationOverride": false,
+    "studyLightingOverride": false
+  },
+  "rootPass": "13/13 PR-mode steps; build:scripts instead of build",
+  "finalRebaseCompilation": "build:scripts exit0",
+  "rebaseTestCarry": "Only upstream account presentation changes; both feature files preserved. Per user policy, unchanged feature tests and audit retained.",
+  "capturedProducer": "c0359a5343eb20c94a17d6000c7199def454fb2b",
+  "featureBlobs": {
+    "scripts/combat_vfx.ts": {
+      "c0359a5343eb20c94a17d6000c7199def454fb2b": "592d9d7df6a78ecdbd2f25f3a37a0fe95323ba77",
+      "da00f37641ec2364270ccb775a08b306b1326494": "592d9d7df6a78ecdbd2f25f3a37a0fe95323ba77",
+      "f90a7a3800171803c782cf7c8b271f17d78527a6": "592d9d7df6a78ecdbd2f25f3a37a0fe95323ba77"
+    },
+    "assets/shaders/impact_dust.gdshader": {
+      "c0359a5343eb20c94a17d6000c7199def454fb2b": "f8e00ecb47404b23023c2d8b4c9d149e8e2b525c",
+      "da00f37641ec2364270ccb775a08b306b1326494": "f8e00ecb47404b23023c2d8b4c9d149e8e2b525c",
+      "f90a7a3800171803c782cf7c8b271f17d78527a6": "f8e00ecb47404b23023c2d8b4c9d149e8e2b525c"
+    }
+  },
+  "defaultSceneSmoke": {
+    "health": 100,
+    "enemies": 1,
+    "scriptErrors": [],
+    "otherErrors": [
+      "ERROR: Condition \"!actions.custom_samplers.has(function->arguments[j].tex_builtin)\" is true. Continuing."
+    ],
+    "stop": {
+      "schemaVersion": 1,
+      "ok": true,
+      "message": "Stopped game (pid 49716)",
+      "data": {
+        "pid": 49716,
+        "kind": "game",
+        "instance": "juice-surface-final-smoke2",
+        "projectPath": "D:\\work\\godmode-roguelite-worktrees\\juice-surface-impacts",
+        "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\35b576c89518\\game-juice-surface-final-smoke2.log",
+        "inspectionUrl": "http://127.0.0.1:62036/inspect",
+        "inspectPort": 62036,
+        "startedAt": "2026-10-07T19:05:24.969Z",
+        "sessionId": "s-muyh9get-78229ed83e9f",
+        "processStartToken": "Wednesday, October 7, 2026 3:05:24 PM",
+        "forced": true
+      }
+    },
+    "sessionEnd": {
+      "schemaVersion": 1,
+      "ok": true,
+      "message": "Ended session s-muyh9get-78229ed83e9f: stopped 0 engines",
+      "data": {
+        "sessionId": "s-muyh9get-78229ed83e9f",
+        "engines": 0,
+        "stopped": [],
+        "recordsRemoved": 0,
+        "reaped": {
+          "filesRemoved": 19,
+          "directoriesRemoved": 26
+        }
+      }
+    },
+    "ownedRemaining": []
+  },
+  "arenaFreshness": {
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "inputs: assets/shaders/street-prop.gdshader changed\ninputs: packages/game-rules/src/match.ts changed\ninputs: scripts/client/faceted_surface.ts changed\ninputs: scripts/client/street_prop_material.ts changed\ninputs: scripts/client/western_block_materials.ts changed\ninputs: scripts/dumbo_cordon_visuals.ts changed\ninputs: scripts/environment_detail.ts changed\ninputs: scripts/environment_modules/furniture_materials.ts changed\ninputs: scripts/environment_modules/module_meshes.ts changed\ninputs: scripts/street_dressing.ts changed\nThe prebuilt arena is stale (10 differences). Run pnpm maps:prebuild-arena.\n"
+  },
+  "arenaPolicy": "Explicit release-only regeneration rule. Prefab freshness remains stale and accepted for this PR; smoke disables automatic generation. No current arena/export/published-build certification.",
+  "receipts": {
+    "root-final-binding.json": "98fc754534ba96d07001ebcdeaeaecc3fb2771ed473aa7737c8bdf26ab7a4668",
+    "pnpm-test-post-texture-final.log": "a32ecc50cbf06a80102ad027331de78a0b6c1a58c23574328823b1058b472515",
+    "bounded-root-proof.json": "335e2e75b00997103c7fa1d59a81209a1a21544230ba1f271c2ae299aedcbeba",
+    "pr-root-suite.mjs": "41a509cebe62f92ebb995d90cf6302743536f6f130d719b00784a8260b7c0853",
+    "build-scripts-account-rebase.log": "7fcc55add2444d49b384ecfcb1d192b50bd9ef05632154c6e65ac7487cc5eabd",
+    "juice-surface-final-smoke2-proof.json": "c3dfd9c600d6e64a7cc134412ae7f7a02505546990fb1f9e3b41c26e3eb7210d",
+    "juice-surface-final-smoke2-observed.json": "e5e2cfce1e7eb5f4cc65cfa0d25498cc30493bf39017574453b2605b7e1e0d62",
+    "default-smoke-pr.mjs": "326631b36704e4e97b4e0c9b30db2dea6c67559e4889340717a685792336e793"
+  },
+  "auditScope": "Existing signed ALL PASS covers byte-identical c035 feature captures; rebase does not invalidate it. No new rendered visual or audible claim."
+}
