@@ -1,0 +1,3039 @@
+{
+  "candidateHead": "4e0482e1319b912f82e873cfc75e280cd36b155f",
+  "candidateTree": "fd3d874164d65c8004b19af1145d8fd90997d875",
+  "base": "bfce057de19529c66d193f7b69a103e099575e2a",
+  "limitations": [
+    "Invincible acquisition at timescale4, then normal time ordinary gunfire.",
+    "Same requested seed 0C0FFEE1, different actual target IDs, arena locations and ranges. Not a pixel-matched A/B.",
+    "CFR30 video holds/drops measured native captures, with no interpolation or spatial resampling. Silent evidence does not verify audio.",
+    "Rejected candidate initial launch lacked imported resources; no captures from it accepted."
+  ],
+  "runs": {
+    "before": {
+      "timing": {
+        "capturedFrames": 101,
+        "meanGapMs": 60.055200000000006,
+        "maxGapMs": 206.6049999999997,
+        "targetIntervalsMissed": 84,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-enemy-hit\\artifacts\\juice\\before-lethal\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-enemy-hit\\artifacts\\juice\\before-lethal.mp4"
+        ],
+        "sha256": "646439f2a61b2877b0dc32bd86226e1d76252d95d485acf5e60045aa1f34748e",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "deaths": [
+        {
+          "id": "soldier-e10",
+          "onsetFrame": 27,
+          "onsetSeconds": 1.342485,
+          "onsetServerTimeMs": 51354.0,
+          "onsetOriginalMesh": [
+            true
+          ],
+          "firstLaterOriginalMesh": {
+            "frame": 28,
+            "seconds": 1.388046,
+            "serverTimeMs": 51354.0,
+            "originalMesh": [
+              true
+            ],
+            "nativeDeath": true
+          },
+          "samples": [
+            {
+              "frame": 27,
+              "seconds": 1.342485,
+              "serverTimeMs": 51354.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 28,
+              "seconds": 1.388046,
+              "serverTimeMs": 51354.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 29,
+              "seconds": 1.436163,
+              "serverTimeMs": 51481.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 30,
+              "seconds": 1.481851,
+              "serverTimeMs": 51522.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 31,
+              "seconds": 1.547742,
+              "serverTimeMs": 51583.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 32,
+              "seconds": 1.607584,
+              "serverTimeMs": 51645.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 33,
+              "seconds": 1.678813,
+              "serverTimeMs": 51712.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 34,
+              "seconds": 1.75512,
+              "serverTimeMs": 51781.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 35,
+              "seconds": 1.846323,
+              "serverTimeMs": 51874.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 36,
+              "seconds": 1.915273,
+              "serverTimeMs": 51949.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 37,
+              "seconds": 1.987934,
+              "serverTimeMs": 52022.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 38,
+              "seconds": 2.055634,
+              "serverTimeMs": 52089.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 39,
+              "seconds": 2.127994,
+              "serverTimeMs": 52162.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 40,
+              "seconds": 2.195016,
+              "serverTimeMs": 52230.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 41,
+              "seconds": 2.26895,
+              "serverTimeMs": 52302.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 42,
+              "seconds": 2.341116,
+              "serverTimeMs": 52373.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 43,
+              "seconds": 2.414262,
+              "serverTimeMs": 52448.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 44,
+              "seconds": 2.486569,
+              "serverTimeMs": 52519.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 45,
+              "seconds": 2.579745,
+              "serverTimeMs": 52595.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 46,
+              "seconds": 2.654592,
+              "serverTimeMs": 52595.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 47,
+              "seconds": 2.736675,
+              "serverTimeMs": 52764.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 48,
+              "seconds": 2.80228,
+              "serverTimeMs": 52840.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 49,
+              "seconds": 2.855342,
+              "serverTimeMs": 52895.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 50,
+              "seconds": 2.918832,
+              "serverTimeMs": 52955.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 51,
+              "seconds": 2.972848,
+              "serverTimeMs": 53011.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 52,
+              "seconds": 3.037026,
+              "serverTimeMs": 53073.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 53,
+              "seconds": 3.090289,
+              "serverTimeMs": 53129.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 54,
+              "seconds": 3.167103,
+              "serverTimeMs": 53205.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 55,
+              "seconds": 3.228216,
+              "serverTimeMs": 53267.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 56,
+              "seconds": 3.344487,
+              "serverTimeMs": 53380.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 57,
+              "seconds": 3.40762,
+              "serverTimeMs": 53447.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 58,
+              "seconds": 3.470585,
+              "serverTimeMs": 53508.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 59,
+              "seconds": 3.534098,
+              "serverTimeMs": 53573.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 60,
+              "seconds": 3.596657,
+              "serverTimeMs": 53635.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 61,
+              "seconds": 3.66673,
+              "serverTimeMs": 53698.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 62,
+              "seconds": 3.728376,
+              "serverTimeMs": 53698.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 63,
+              "seconds": 3.80995,
+              "serverTimeMs": 53819.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 64,
+              "seconds": 3.874295,
+              "serverTimeMs": 53912.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 65,
+              "seconds": 3.937093,
+              "serverTimeMs": 53960.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 66,
+              "seconds": 3.984706,
+              "serverTimeMs": 54023.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 67,
+              "seconds": 4.043764,
+              "serverTimeMs": 54072.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 68,
+              "seconds": 4.095218,
+              "serverTimeMs": 54132.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 69,
+              "seconds": 4.163699,
+              "serverTimeMs": 54191.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 70,
+              "seconds": 4.214577,
+              "serverTimeMs": 54252.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 71,
+              "seconds": 4.270204,
+              "serverTimeMs": 54303.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 72,
+              "seconds": 4.318708,
+              "serverTimeMs": 54357.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 73,
+              "seconds": 4.368343,
+              "serverTimeMs": 54406.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 74,
+              "seconds": 4.574948,
+              "serverTimeMs": 54591.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 75,
+              "seconds": 4.627562,
+              "serverTimeMs": 54666.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 76,
+              "seconds": 4.690833,
+              "serverTimeMs": 54715.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 77,
+              "seconds": 4.743098,
+              "serverTimeMs": 54780.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 78,
+              "seconds": 4.798906,
+              "serverTimeMs": 54832.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 79,
+              "seconds": 4.856036,
+              "serverTimeMs": 54888.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 80,
+              "seconds": 4.907107,
+              "serverTimeMs": 54942.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 81,
+              "seconds": 4.954778,
+              "serverTimeMs": 54993.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 82,
+              "seconds": 5.005831,
+              "serverTimeMs": 55043.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 83,
+              "seconds": 5.063535,
+              "serverTimeMs": 55096.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            }
+          ]
+        },
+        {
+          "id": "soldier-e14",
+          "onsetFrame": 45,
+          "onsetSeconds": 2.579745,
+          "onsetServerTimeMs": 52595.0,
+          "onsetOriginalMesh": [
+            true
+          ],
+          "firstLaterOriginalMesh": {
+            "frame": 46,
+            "seconds": 2.654592,
+            "serverTimeMs": 52595.0,
+            "originalMesh": [
+              true
+            ],
+            "nativeDeath": true
+          },
+          "samples": [
+            {
+              "frame": 45,
+              "seconds": 2.579745,
+              "serverTimeMs": 52595.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 46,
+              "seconds": 2.654592,
+              "serverTimeMs": 52595.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 47,
+              "seconds": 2.736675,
+              "serverTimeMs": 52764.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 48,
+              "seconds": 2.80228,
+              "serverTimeMs": 52840.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 49,
+              "seconds": 2.855342,
+              "serverTimeMs": 52895.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 50,
+              "seconds": 2.918832,
+              "serverTimeMs": 52955.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 51,
+              "seconds": 2.972848,
+              "serverTimeMs": 53011.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 52,
+              "seconds": 3.037026,
+              "serverTimeMs": 53073.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 53,
+              "seconds": 3.090289,
+              "serverTimeMs": 53129.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 54,
+              "seconds": 3.167103,
+              "serverTimeMs": 53205.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 55,
+              "seconds": 3.228216,
+              "serverTimeMs": 53267.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 56,
+              "seconds": 3.344487,
+              "serverTimeMs": 53380.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 57,
+              "seconds": 3.40762,
+              "serverTimeMs": 53447.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 58,
+              "seconds": 3.470585,
+              "serverTimeMs": 53508.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 59,
+              "seconds": 3.534098,
+              "serverTimeMs": 53573.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 60,
+              "seconds": 3.596657,
+              "serverTimeMs": 53635.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 61,
+              "seconds": 3.66673,
+              "serverTimeMs": 53698.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 62,
+              "seconds": 3.728376,
+              "serverTimeMs": 53698.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 63,
+              "seconds": 3.80995,
+              "serverTimeMs": 53819.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 64,
+              "seconds": 3.874295,
+              "serverTimeMs": 53912.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 65,
+              "seconds": 3.937093,
+              "serverTimeMs": 53960.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 66,
+              "seconds": 3.984706,
+              "serverTimeMs": 54023.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 67,
+              "seconds": 4.043764,
+              "serverTimeMs": 54072.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 68,
+              "seconds": 4.095218,
+              "serverTimeMs": 54132.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 69,
+              "seconds": 4.163699,
+              "serverTimeMs": 54191.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 70,
+              "seconds": 4.214577,
+              "serverTimeMs": 54252.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 71,
+              "seconds": 4.270204,
+              "serverTimeMs": 54303.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 72,
+              "seconds": 4.318708,
+              "serverTimeMs": 54357.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 73,
+              "seconds": 4.368343,
+              "serverTimeMs": 54406.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 74,
+              "seconds": 4.574948,
+              "serverTimeMs": 54591.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 75,
+              "seconds": 4.627562,
+              "serverTimeMs": 54666.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 76,
+              "seconds": 4.690833,
+              "serverTimeMs": 54715.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 77,
+              "seconds": 4.743098,
+              "serverTimeMs": 54780.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 78,
+              "seconds": 4.798906,
+              "serverTimeMs": 54832.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 79,
+              "seconds": 4.856036,
+              "serverTimeMs": 54888.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 80,
+              "seconds": 4.907107,
+              "serverTimeMs": 54942.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 81,
+              "seconds": 4.954778,
+              "serverTimeMs": 54993.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 82,
+              "seconds": 5.005831,
+              "serverTimeMs": 55043.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 83,
+              "seconds": 5.063535,
+              "serverTimeMs": 55096.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 84,
+              "seconds": 5.118527,
+              "serverTimeMs": 55154.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 85,
+              "seconds": 5.177651,
+              "serverTimeMs": 55210.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 86,
+              "seconds": 5.2315,
+              "serverTimeMs": 55268.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 87,
+              "seconds": 5.288144,
+              "serverTimeMs": 55323.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 88,
+              "seconds": 5.344883,
+              "serverTimeMs": 55380.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 89,
+              "seconds": 5.404655,
+              "serverTimeMs": 55436.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 90,
+              "seconds": 5.461279,
+              "serverTimeMs": 55498.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 91,
+              "seconds": 5.519228,
+              "serverTimeMs": 55553.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 92,
+              "seconds": 5.573734,
+              "serverTimeMs": 55610.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 93,
+              "seconds": 5.631071,
+              "serverTimeMs": 55665.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 94,
+              "seconds": 5.685357,
+              "serverTimeMs": 55723.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 95,
+              "seconds": 5.742466,
+              "serverTimeMs": 55777.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 96,
+              "seconds": 5.797378,
+              "serverTimeMs": 55835.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 97,
+              "seconds": 5.854388,
+              "serverTimeMs": 55889.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 98,
+              "seconds": 5.907968,
+              "serverTimeMs": 55945.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 99,
+              "seconds": 5.961288,
+              "serverTimeMs": 55999.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 100,
+              "seconds": 6.015907,
+              "serverTimeMs": 56053.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            }
+          ]
+        },
+        {
+          "id": "soldier-e5",
+          "onsetFrame": 61,
+          "onsetSeconds": 3.66673,
+          "onsetServerTimeMs": 53698.0,
+          "onsetOriginalMesh": [
+            true
+          ],
+          "firstLaterOriginalMesh": {
+            "frame": 62,
+            "seconds": 3.728376,
+            "serverTimeMs": 53698.0,
+            "originalMesh": [
+              true
+            ],
+            "nativeDeath": true
+          },
+          "samples": [
+            {
+              "frame": 61,
+              "seconds": 3.66673,
+              "serverTimeMs": 53698.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 62,
+              "seconds": 3.728376,
+              "serverTimeMs": 53698.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 63,
+              "seconds": 3.80995,
+              "serverTimeMs": 53819.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 64,
+              "seconds": 3.874295,
+              "serverTimeMs": 53912.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 65,
+              "seconds": 3.937093,
+              "serverTimeMs": 53960.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 66,
+              "seconds": 3.984706,
+              "serverTimeMs": 54023.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 67,
+              "seconds": 4.043764,
+              "serverTimeMs": 54072.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 68,
+              "seconds": 4.095218,
+              "serverTimeMs": 54132.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 69,
+              "seconds": 4.163699,
+              "serverTimeMs": 54191.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 70,
+              "seconds": 4.214577,
+              "serverTimeMs": 54252.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 71,
+              "seconds": 4.270204,
+              "serverTimeMs": 54303.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 72,
+              "seconds": 4.318708,
+              "serverTimeMs": 54357.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 73,
+              "seconds": 4.368343,
+              "serverTimeMs": 54406.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 74,
+              "seconds": 4.574948,
+              "serverTimeMs": 54591.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 75,
+              "seconds": 4.627562,
+              "serverTimeMs": 54666.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 76,
+              "seconds": 4.690833,
+              "serverTimeMs": 54715.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 77,
+              "seconds": 4.743098,
+              "serverTimeMs": 54780.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 78,
+              "seconds": 4.798906,
+              "serverTimeMs": 54832.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 79,
+              "seconds": 4.856036,
+              "serverTimeMs": 54888.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 80,
+              "seconds": 4.907107,
+              "serverTimeMs": 54942.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 81,
+              "seconds": 4.954778,
+              "serverTimeMs": 54993.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 82,
+              "seconds": 5.005831,
+              "serverTimeMs": 55043.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 83,
+              "seconds": 5.063535,
+              "serverTimeMs": 55096.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 84,
+              "seconds": 5.118527,
+              "serverTimeMs": 55154.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 85,
+              "seconds": 5.177651,
+              "serverTimeMs": 55210.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 86,
+              "seconds": 5.2315,
+              "serverTimeMs": 55268.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 87,
+              "seconds": 5.288144,
+              "serverTimeMs": 55323.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 88,
+              "seconds": 5.344883,
+              "serverTimeMs": 55380.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 89,
+              "seconds": 5.404655,
+              "serverTimeMs": 55436.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 90,
+              "seconds": 5.461279,
+              "serverTimeMs": 55498.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 91,
+              "seconds": 5.519228,
+              "serverTimeMs": 55553.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 92,
+              "seconds": 5.573734,
+              "serverTimeMs": 55610.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 93,
+              "seconds": 5.631071,
+              "serverTimeMs": 55665.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 94,
+              "seconds": 5.685357,
+              "serverTimeMs": 55723.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 95,
+              "seconds": 5.742466,
+              "serverTimeMs": 55777.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 96,
+              "seconds": 5.797378,
+              "serverTimeMs": 55835.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 97,
+              "seconds": 5.854388,
+              "serverTimeMs": 55889.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 98,
+              "seconds": 5.907968,
+              "serverTimeMs": 55945.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 99,
+              "seconds": 5.961288,
+              "serverTimeMs": 55999.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 100,
+              "seconds": 6.015907,
+              "serverTimeMs": 56053.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            }
+          ]
+        }
+      ],
+      "fixtureFiles": {
+        "lifecycle.gd": "383d7c66f08acd6b0af09f8aefdbd8dae2e69707d54457bf4cc1417f98cc73cf",
+        "lifecycle_client.ts": "5c17dfa1dfc94c75ac0ff85924318948c9cf63b51fa15f877d986c711cc2db78",
+        "lifecycle.tscn": "3d5bba5ec97eaf2ad8e7f24868feb090ffba38d8d63c44246a29c9294122e18e",
+        "lifecycle_client.tscn": "411e9ea53da11619ea8859e39d1242b71c3e0c68255d8329db9170463b1282a7"
+      },
+      "finalFracture": {
+        "activations": 5.0,
+        "activeParts": 0.0,
+        "expandedVertices": 18000.0,
+        "maxPositionError": 0.0,
+        "maxWeightError": 0.0,
+        "meshes": 1.0,
+        "preparedAtImport": true,
+        "restorations": 5.0,
+        "samples": 186.0,
+        "sourceVertices": 22137.0
+      }
+    },
+    "after": {
+      "timing": {
+        "capturedFrames": 98,
+        "meanGapMs": 61.95450515463918,
+        "maxGapMs": 162.6859999999999,
+        "targetIntervalsMissed": 79,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-lethal-hit\\artifacts\\juice\\after-lethal\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-lethal-hit\\artifacts\\juice\\after-lethal.mp4"
+        ],
+        "sha256": "439e69ad54aed4c09ac1c4584b98329104a6275e266b7bd004bc56a931ecaff5",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "deaths": [
+        {
+          "id": "soldier-e15",
+          "onsetFrame": 20,
+          "onsetSeconds": 0.985107,
+          "onsetServerTimeMs": 41447.0,
+          "onsetOriginalMesh": [
+            false
+          ],
+          "firstLaterOriginalMesh": {
+            "frame": 25,
+            "seconds": 1.264188,
+            "serverTimeMs": 41730.0,
+            "originalMesh": [
+              true
+            ],
+            "nativeDeath": true
+          },
+          "samples": [
+            {
+              "frame": 20,
+              "seconds": 0.985107,
+              "serverTimeMs": 41447.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 21,
+              "seconds": 1.028225,
+              "serverTimeMs": 41447.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 22,
+              "seconds": 1.080758,
+              "serverTimeMs": 41556.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 23,
+              "seconds": 1.13262,
+              "serverTimeMs": 41603.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 24,
+              "seconds": 1.200447,
+              "serverTimeMs": 41667.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 25,
+              "seconds": 1.264188,
+              "serverTimeMs": 41730.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 26,
+              "seconds": 1.330128,
+              "serverTimeMs": 41801.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 27,
+              "seconds": 1.393822,
+              "serverTimeMs": 41861.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 28,
+              "seconds": 1.475227,
+              "serverTimeMs": 41942.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 29,
+              "seconds": 1.535936,
+              "serverTimeMs": 42004.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 30,
+              "seconds": 1.597726,
+              "serverTimeMs": 42068.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 31,
+              "seconds": 1.656549,
+              "serverTimeMs": 42125.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 32,
+              "seconds": 1.719796,
+              "serverTimeMs": 42190.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 33,
+              "seconds": 1.779088,
+              "serverTimeMs": 42248.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 34,
+              "seconds": 1.839432,
+              "serverTimeMs": 42310.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 35,
+              "seconds": 1.902432,
+              "serverTimeMs": 42369.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 36,
+              "seconds": 1.964039,
+              "serverTimeMs": 42435.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 37,
+              "seconds": 2.020523,
+              "serverTimeMs": 42491.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 38,
+              "seconds": 2.096314,
+              "serverTimeMs": 42554.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 39,
+              "seconds": 2.15291,
+              "serverTimeMs": 42554.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 40,
+              "seconds": 2.211641,
+              "serverTimeMs": 42682.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 41,
+              "seconds": 2.261672,
+              "serverTimeMs": 42736.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 42,
+              "seconds": 2.305128,
+              "serverTimeMs": 42774.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 43,
+              "seconds": 2.360604,
+              "serverTimeMs": 42830.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 44,
+              "seconds": 2.405404,
+              "serverTimeMs": 42882.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 45,
+              "seconds": 2.444859,
+              "serverTimeMs": 42920.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 46,
+              "seconds": 2.480498,
+              "serverTimeMs": 42959.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 47,
+              "seconds": 2.521824,
+              "serverTimeMs": 42959.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 48,
+              "seconds": 2.604063,
+              "serverTimeMs": 43073.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 49,
+              "seconds": 2.648939,
+              "serverTimeMs": 43117.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 50,
+              "seconds": 2.684302,
+              "serverTimeMs": 43160.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 51,
+              "seconds": 2.722439,
+              "serverTimeMs": 43198.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 52,
+              "seconds": 2.764337,
+              "serverTimeMs": 43234.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 53,
+              "seconds": 2.805008,
+              "serverTimeMs": 43282.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 54,
+              "seconds": 2.842083,
+              "serverTimeMs": 43320.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 55,
+              "seconds": 2.886372,
+              "serverTimeMs": 43320.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 56,
+              "seconds": 2.929093,
+              "serverTimeMs": 43399.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 57,
+              "seconds": 2.966214,
+              "serverTimeMs": 43442.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 58,
+              "seconds": 3.020999,
+              "serverTimeMs": 43488.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 59,
+              "seconds": 3.055895,
+              "serverTimeMs": 43488.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 60,
+              "seconds": 3.09356,
+              "serverTimeMs": 43569.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 61,
+              "seconds": 3.13526,
+              "serverTimeMs": 43612.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 62,
+              "seconds": 3.189557,
+              "serverTimeMs": 43656.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 63,
+              "seconds": 3.296065,
+              "serverTimeMs": 43758.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 64,
+              "seconds": 3.376081,
+              "serverTimeMs": 43839.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 65,
+              "seconds": 3.452544,
+              "serverTimeMs": 43915.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 66,
+              "seconds": 3.535518,
+              "serverTimeMs": 43996.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 67,
+              "seconds": 3.606453,
+              "serverTimeMs": 44071.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 68,
+              "seconds": 3.687707,
+              "serverTimeMs": 44151.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 69,
+              "seconds": 3.760649,
+              "serverTimeMs": 44225.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 70,
+              "seconds": 3.840666,
+              "serverTimeMs": 44303.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 71,
+              "seconds": 4.00327,
+              "serverTimeMs": 44467.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 72,
+              "seconds": 4.081564,
+              "serverTimeMs": 44545.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 73,
+              "seconds": 4.157794,
+              "serverTimeMs": 44620.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 74,
+              "seconds": 4.234088,
+              "serverTimeMs": 44696.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 75,
+              "seconds": 4.308606,
+              "serverTimeMs": 44771.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 76,
+              "seconds": 4.391277,
+              "serverTimeMs": 44853.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            }
+          ]
+        },
+        {
+          "id": "soldier-e22",
+          "onsetFrame": 38,
+          "onsetSeconds": 2.096314,
+          "onsetServerTimeMs": 42554.0,
+          "onsetOriginalMesh": [
+            false
+          ],
+          "firstLaterOriginalMesh": {
+            "frame": 43,
+            "seconds": 2.360604,
+            "serverTimeMs": 42830.0,
+            "originalMesh": [
+              true
+            ],
+            "nativeDeath": true
+          },
+          "samples": [
+            {
+              "frame": 38,
+              "seconds": 2.096314,
+              "serverTimeMs": 42554.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 39,
+              "seconds": 2.15291,
+              "serverTimeMs": 42554.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 40,
+              "seconds": 2.211641,
+              "serverTimeMs": 42682.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 41,
+              "seconds": 2.261672,
+              "serverTimeMs": 42736.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 42,
+              "seconds": 2.305128,
+              "serverTimeMs": 42774.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 43,
+              "seconds": 2.360604,
+              "serverTimeMs": 42830.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 44,
+              "seconds": 2.405404,
+              "serverTimeMs": 42882.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 45,
+              "seconds": 2.444859,
+              "serverTimeMs": 42920.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 46,
+              "seconds": 2.480498,
+              "serverTimeMs": 42959.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 47,
+              "seconds": 2.521824,
+              "serverTimeMs": 42959.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 48,
+              "seconds": 2.604063,
+              "serverTimeMs": 43073.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 49,
+              "seconds": 2.648939,
+              "serverTimeMs": 43117.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 50,
+              "seconds": 2.684302,
+              "serverTimeMs": 43160.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 51,
+              "seconds": 2.722439,
+              "serverTimeMs": 43198.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 52,
+              "seconds": 2.764337,
+              "serverTimeMs": 43234.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 53,
+              "seconds": 2.805008,
+              "serverTimeMs": 43282.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 54,
+              "seconds": 2.842083,
+              "serverTimeMs": 43320.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 55,
+              "seconds": 2.886372,
+              "serverTimeMs": 43320.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 56,
+              "seconds": 2.929093,
+              "serverTimeMs": 43399.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 57,
+              "seconds": 2.966214,
+              "serverTimeMs": 43442.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 58,
+              "seconds": 3.020999,
+              "serverTimeMs": 43488.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 59,
+              "seconds": 3.055895,
+              "serverTimeMs": 43488.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 60,
+              "seconds": 3.09356,
+              "serverTimeMs": 43569.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 61,
+              "seconds": 3.13526,
+              "serverTimeMs": 43612.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 62,
+              "seconds": 3.189557,
+              "serverTimeMs": 43656.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 63,
+              "seconds": 3.296065,
+              "serverTimeMs": 43758.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 64,
+              "seconds": 3.376081,
+              "serverTimeMs": 43839.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 65,
+              "seconds": 3.452544,
+              "serverTimeMs": 43915.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 66,
+              "seconds": 3.535518,
+              "serverTimeMs": 43996.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 67,
+              "seconds": 3.606453,
+              "serverTimeMs": 44071.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 68,
+              "seconds": 3.687707,
+              "serverTimeMs": 44151.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 69,
+              "seconds": 3.760649,
+              "serverTimeMs": 44225.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 70,
+              "seconds": 3.840666,
+              "serverTimeMs": 44303.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 71,
+              "seconds": 4.00327,
+              "serverTimeMs": 44467.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 72,
+              "seconds": 4.081564,
+              "serverTimeMs": 44545.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 73,
+              "seconds": 4.157794,
+              "serverTimeMs": 44620.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 74,
+              "seconds": 4.234088,
+              "serverTimeMs": 44696.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 75,
+              "seconds": 4.308606,
+              "serverTimeMs": 44771.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 76,
+              "seconds": 4.391277,
+              "serverTimeMs": 44853.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 77,
+              "seconds": 4.465667,
+              "serverTimeMs": 44929.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 78,
+              "seconds": 4.540046,
+              "serverTimeMs": 45003.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 79,
+              "seconds": 4.611064,
+              "serverTimeMs": 45077.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 80,
+              "seconds": 4.680392,
+              "serverTimeMs": 45150.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 81,
+              "seconds": 4.733593,
+              "serverTimeMs": 45209.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 82,
+              "seconds": 4.779191,
+              "serverTimeMs": 45253.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 83,
+              "seconds": 4.822809,
+              "serverTimeMs": 45253.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 84,
+              "seconds": 4.865351,
+              "serverTimeMs": 45337.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 85,
+              "seconds": 4.907343,
+              "serverTimeMs": 45378.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 86,
+              "seconds": 4.9682,
+              "serverTimeMs": 45429.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 87,
+              "seconds": 5.055435,
+              "serverTimeMs": 45503.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 88,
+              "seconds": 5.144608,
+              "serverTimeMs": 45600.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 89,
+              "seconds": 5.228524,
+              "serverTimeMs": 45684.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 90,
+              "seconds": 5.39121,
+              "serverTimeMs": 45845.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 91,
+              "seconds": 5.485816,
+              "serverTimeMs": 45939.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 92,
+              "seconds": 5.571885,
+              "serverTimeMs": 46029.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 93,
+              "seconds": 5.660437,
+              "serverTimeMs": 46117.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 94,
+              "seconds": 5.760717,
+              "serverTimeMs": 46205.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 95,
+              "seconds": 5.844751,
+              "serverTimeMs": 46305.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            }
+          ]
+        },
+        {
+          "id": "soldier-e23",
+          "onsetFrame": 58,
+          "onsetSeconds": 3.020999,
+          "onsetServerTimeMs": 43488.0,
+          "onsetOriginalMesh": [
+            false
+          ],
+          "firstLaterOriginalMesh": {
+            "frame": 63,
+            "seconds": 3.296065,
+            "serverTimeMs": 43758.0,
+            "originalMesh": [
+              true
+            ],
+            "nativeDeath": true
+          },
+          "samples": [
+            {
+              "frame": 58,
+              "seconds": 3.020999,
+              "serverTimeMs": 43488.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 59,
+              "seconds": 3.055895,
+              "serverTimeMs": 43488.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 60,
+              "seconds": 3.09356,
+              "serverTimeMs": 43569.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 61,
+              "seconds": 3.13526,
+              "serverTimeMs": 43612.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 62,
+              "seconds": 3.189557,
+              "serverTimeMs": 43656.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 63,
+              "seconds": 3.296065,
+              "serverTimeMs": 43758.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 64,
+              "seconds": 3.376081,
+              "serverTimeMs": 43839.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 65,
+              "seconds": 3.452544,
+              "serverTimeMs": 43915.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 66,
+              "seconds": 3.535518,
+              "serverTimeMs": 43996.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 67,
+              "seconds": 3.606453,
+              "serverTimeMs": 44071.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 68,
+              "seconds": 3.687707,
+              "serverTimeMs": 44151.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 69,
+              "seconds": 3.760649,
+              "serverTimeMs": 44225.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 70,
+              "seconds": 3.840666,
+              "serverTimeMs": 44303.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 71,
+              "seconds": 4.00327,
+              "serverTimeMs": 44467.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 72,
+              "seconds": 4.081564,
+              "serverTimeMs": 44545.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 73,
+              "seconds": 4.157794,
+              "serverTimeMs": 44620.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 74,
+              "seconds": 4.234088,
+              "serverTimeMs": 44696.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 75,
+              "seconds": 4.308606,
+              "serverTimeMs": 44771.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 76,
+              "seconds": 4.391277,
+              "serverTimeMs": 44853.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 77,
+              "seconds": 4.465667,
+              "serverTimeMs": 44929.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 78,
+              "seconds": 4.540046,
+              "serverTimeMs": 45003.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 79,
+              "seconds": 4.611064,
+              "serverTimeMs": 45077.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 80,
+              "seconds": 4.680392,
+              "serverTimeMs": 45150.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 81,
+              "seconds": 4.733593,
+              "serverTimeMs": 45209.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 82,
+              "seconds": 4.779191,
+              "serverTimeMs": 45253.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 83,
+              "seconds": 4.822809,
+              "serverTimeMs": 45253.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 84,
+              "seconds": 4.865351,
+              "serverTimeMs": 45337.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 85,
+              "seconds": 4.907343,
+              "serverTimeMs": 45378.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 86,
+              "seconds": 4.9682,
+              "serverTimeMs": 45429.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 87,
+              "seconds": 5.055435,
+              "serverTimeMs": 45503.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 88,
+              "seconds": 5.144608,
+              "serverTimeMs": 45600.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 89,
+              "seconds": 5.228524,
+              "serverTimeMs": 45684.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 90,
+              "seconds": 5.39121,
+              "serverTimeMs": 45845.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 91,
+              "seconds": 5.485816,
+              "serverTimeMs": 45939.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 92,
+              "seconds": 5.571885,
+              "serverTimeMs": 46029.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 93,
+              "seconds": 5.660437,
+              "serverTimeMs": 46117.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 94,
+              "seconds": 5.760717,
+              "serverTimeMs": 46205.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 95,
+              "seconds": 5.844751,
+              "serverTimeMs": 46305.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 96,
+              "seconds": 5.934113,
+              "serverTimeMs": 46388.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            },
+            {
+              "frame": 97,
+              "seconds": 6.019355,
+              "serverTimeMs": 46476.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true
+            }
+          ]
+        }
+      ],
+      "fixtureFiles": {
+        "lifecycle.gd": "383d7c66f08acd6b0af09f8aefdbd8dae2e69707d54457bf4cc1417f98cc73cf",
+        "lifecycle_client.ts": "5c17dfa1dfc94c75ac0ff85924318948c9cf63b51fa15f877d986c711cc2db78",
+        "lifecycle.tscn": "3d5bba5ec97eaf2ad8e7f24868feb090ffba38d8d63c44246a29c9294122e18e",
+        "lifecycle_client.tscn": "411e9ea53da11619ea8859e39d1242b71c3e0c68255d8329db9170463b1282a7"
+      },
+      "finalFracture": {
+        "activations": 16.0,
+        "activeParts": 0.0,
+        "expandedVertices": 18000.0,
+        "maxPositionError": 0.0,
+        "maxWeightError": 0.0,
+        "meshes": 1.0,
+        "preparedAtImport": true,
+        "restorations": 16.0,
+        "samples": 186.0,
+        "sourceVertices": 22137.0
+      }
+    }
+  }
+}
