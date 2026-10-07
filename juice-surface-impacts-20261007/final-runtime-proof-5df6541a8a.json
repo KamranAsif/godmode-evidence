@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "captureProducer": "c0359a5343eb20c94a17d6000c7199def454fb2b",
+  "captureControl": "8a231a40cc60cb908f0387af7bcd23ec81a2af62",
+  "currentRebaseHead": "6f721c476e1c576f67aa0649aea0716d9160cc2f",
+  "currentRebaseBase": "677fd7f9c4c4ce75995ed6882cea2d651be19aa3",
+  "featurePathsUnchangedFromProducer": [
+    "scripts/combat_vfx.ts",
+    "assets/shaders/impact_dust.gdshader"
+  ],
+  "currentRebaseGate": "Fresh cache, default root test and smoke pending; prior producer gates do not certify current main",
+  "nativeFramesTotal": 574,
+  "clips": [
+    {
+      "label": "surface-control-ground",
+      "sourceCommit": "8a231a40cc60cb908f0387af7bcd23ec81a2af62",
+      "nativeFrames": 90,
+      "elapsedSeconds": 4.529466,
+      "timing": {
+        "capturedFrames": 90,
+        "meanGapMs": 50.441550561797754,
+        "maxGapMs": 114.6079999999996,
+        "targetIntervalsMissed": 26,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "metadataFile": "surface-control-ground.json",
+      "metadataSha256": "d738fdd28a192ab56ab3c8468993a8d2ed584f8ceda8f0b20a7d9e5cde42efbf",
+      "videoFile": "surface-control-ground.mp4",
+      "videoSha256": "dbe8017dc8a3486aed26da97fadf0dfe74209c23dc45d53a5dc761c2e3d79a4e",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "outputFps": 30,
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-surface-control\\artifacts\\juice\\surface-control-ground\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-surface-control\\artifacts\\juice\\surface-control-ground.mp4"
+        ],
+        "sha256": "dbe8017dc8a3486aed26da97fadf0dfe74209c23dc45d53a5dc761c2e3d79a4e",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "audio": "No audio track; this evidence reviews visual dust only",
+      "fixtureSurfaces": [],
+      "fixtureScope": "Actual player fire input and world impact routing",
+      "allOpenersClear": true
+    },
+    {
+      "label": "surface-control-families",
+      "sourceCommit": "8a231a40cc60cb908f0387af7bcd23ec81a2af62",
+      "nativeFrames": 173,
+      "elapsedSeconds": 16.042214,
+      "timing": {
+        "capturedFrames": 173,
+        "meanGapMs": 92.87618023255814,
+        "maxGapMs": 397.7600000000001,
+        "targetIntervalsMissed": 354,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "metadataFile": "surface-control-families.json",
+      "metadataSha256": "3b0356050d05dda741d064c1ce280af8e60d318af526beb356eddaee9855df56",
+      "videoFile": "surface-control-families.mp4",
+      "videoSha256": "55e6fd0d9398e02db42e4d7b8a726ce595b624dc9de420ece35c89d9087724a3",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "outputFps": 30,
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-surface-control\\artifacts\\juice\\surface-control-families\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-surface-control\\artifacts\\juice\\surface-control-families.mp4"
+        ],
+        "sha256": "55e6fd0d9398e02db42e4d7b8a726ce595b624dc9de420ece35c89d9087724a3",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "audio": "No audio track; this evidence reviews visual dust only",
+      "fixtureSurfaces": [
+        "concrete",
+        "metal",
+        "wood",
+        "paper",
+        "glass",
+        "fabric",
+        "rubber",
+        "plastic"
+      ],
+      "fixtureScope": "Production client spawnSurfaceImpact at fixed 4 m, not physical hits",
+      "allOpenersClear": true
+    },
+    {
+      "label": "surface-candidate-ground",
+      "sourceCommit": "c0359a5343eb20c94a17d6000c7199def454fb2b",
+      "nativeFrames": 113,
+      "elapsedSeconds": 4.528525,
+      "timing": {
+        "capturedFrames": 113,
+        "meanGapMs": 40.03911607142857,
+        "maxGapMs": 131.61699999999988,
+        "targetIntervalsMissed": 14,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "metadataFile": "surface-candidate-ground.json",
+      "metadataSha256": "a0b6dafb7f8afdc0fe90d97e6dc17cee370c567093f0ea746fb58d38cc2a60a9",
+      "videoFile": "surface-candidate-ground.mp4",
+      "videoSha256": "e14f3ba6712b91552dcf9bce6b414a7d9d9fdb33963b69caa76da24f9363ccab",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "outputFps": 30,
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-surface-impacts\\artifacts\\juice\\surface-candidate-ground\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-surface-impacts\\artifacts\\juice\\surface-candidate-ground.mp4"
+        ],
+        "sha256": "e14f3ba6712b91552dcf9bce6b414a7d9d9fdb33963b69caa76da24f9363ccab",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "audio": "No audio track; this evidence reviews visual dust only",
+      "fixtureSurfaces": [],
+      "fixtureScope": "Actual player fire input and world impact routing",
+      "allOpenersClear": true
+    },
+    {
+      "label": "surface-candidate-families",
+      "sourceCommit": "c0359a5343eb20c94a17d6000c7199def454fb2b",
+      "nativeFrames": 198,
+      "elapsedSeconds": 16.054685,
+      "timing": {
+        "capturedFrames": 198,
+        "meanGapMs": 81.22551269035533,
+        "maxGapMs": 293.7460000000005,
+        "targetIntervalsMissed": 254,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "metadataFile": "surface-candidate-families.json",
+      "metadataSha256": "22cf0e3316a53c23e5fcc8bc66514032d5000d98efac9dd24ee5a4afedd4a281",
+      "videoFile": "surface-candidate-families.mp4",
+      "videoSha256": "ebffebedea4af32a4c9ac3b152a451b2fe6467eca022add56f111fd5501f1fa6",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "outputFps": 30,
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-surface-impacts\\artifacts\\juice\\surface-candidate-families\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-surface-impacts\\artifacts\\juice\\surface-candidate-families.mp4"
+        ],
+        "sha256": "ebffebedea4af32a4c9ac3b152a451b2fe6467eca022add56f111fd5501f1fa6",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "audio": "No audio track; this evidence reviews visual dust only",
+      "fixtureSurfaces": [
+        "concrete",
+        "metal",
+        "wood",
+        "paper",
+        "glass",
+        "fabric",
+        "rubber",
+        "plastic"
+      ],
+      "fixtureScope": "Production client spawnSurfaceImpact at fixed 4 m, not physical hits",
+      "allOpenersClear": true
+    }
+  ],
+  "stills": [
+    {
+      "file": "before-impact-final.png",
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-surface-control\\artifacts\\juice\\surface-control-families\\frame-0010.png",
+      "sha256": "3b1deb46a78e414b473cda972a18bbd43add0d189eee067f4f690681808be318",
+      "nativeIndex": 10,
+      "nativeSeconds": 0.747277,
+      "eventAgeSeconds": 0.18415700000000002,
+      "surface": "concrete",
+      "comparison": "Same fixed pose and approximate effect age; separate world seeds and chat, not pixel-matched"
+    },
+    {
+      "file": "after-impact-final.png",
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-surface-impacts\\artifacts\\juice\\surface-candidate-families\\frame-0012.png",
+      "sha256": "a2428de674d624c325ffd0bf52bb54f58c9df87325b967d36467af17d738ef3f",
+      "nativeIndex": 12,
+      "nativeSeconds": 0.747855,
+      "eventAgeSeconds": 0.22350100000000006,
+      "surface": "concrete",
+      "comparison": "Same fixed pose and approximate effect age; separate world seeds and chat, not pixel-matched"
+    }
+  ],
+  "producerDefaultTest": {
+    "head": "c0359a5343eb20c94a17d6000c7199def454fb2b",
+    "result": "13/13 PASS",
+    "log": "pnpm-test-surface-c035.log",
+    "sha256": "903c9335d669e7f57054ac1ea5edaedbbaac21d1b1955d96b521d303409b8d36"
+  },
+  "producerDefaultSmoke": {
+    "head": "c0359a5343eb20c94a17d6000c7199def454fb2b",
+    "health": 100,
+    "enemies": 1,
+    "scriptErrors": [],
+    "otherErrors": [
+      "ERROR: Condition \"!actions.custom_samplers.has(function->arguments[j].tex_builtin)\" is true. Continuing."
+    ],
+    "stopForced": true,
+    "proofSha256": "345d01972e6115f5ef3984c1964287637e0aceb119b612dffb6da3a1614f5c12",
+    "observationSha256": "10934fdb878d20563448b3e9001282bb54828759f2d5b4a1c318169133911c0a"
+  },
+  "limitations": [
+    "CFR 30 holds/drops measured native frames; readback gaps are disclosed, no native 30 or continuous 1x claim",
+    "Families use a bounded production client fixture, not authority damage or material collision tests",
+    "Captured producer predates main677 material textures and Friendly Fire Off; latest-main integration still pending",
+    "Existing triangle lattice, chips/sparks, weapon handling and material profiles are unchanged",
+    "Independent vision verdict pending; no audible quality claim"
+  ]
+}
