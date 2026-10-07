@@ -1,0 +1,50 @@
+{
+  "currentSource": "7568a41e499445ec6aca1164d3c5aed7341dbaaa",
+  "currentBase": "5056ee3d6418d458542899b0f97047c0a9ea75d0",
+  "captureProducer": "1e84fcf69420ca1c559c15323b384714864e44ef",
+  "captureBase": "2824fe0285100a7675adcd1dc5f10d958f27e838",
+  "priorSource": "55097416d43d134cdd11c5bbab159acef66a51ca",
+  "priorBase": "677fd7f9c4c4ce75995ed6882cea2d651be19aa3",
+  "trackedClean": true,
+  "featureResult": "PASS: complete added/removed feature lines identical in order; +50/-7 four files; main audio-priority sections retained",
+  "capturedPatchSha256": "e32e8685f84b920b2884a76bcee36acbabefb0694fb61a138a3bbe105a0b71b5",
+  "currentContextPatchSha256": "abd304fc75b02d559457e6ae7b043af1c8b4b906d821f81936ac2e71bdf84e24",
+  "changedFeatureLinesSha256": "ace69f35ecbba8b9d733df8537dcb3af448f54f3e08154a83009adfb17c37a8f",
+  "files": [
+    {
+      "path": "packages/game-rules/src/enemy_audio.ts",
+      "blobIds": {
+        "1e84fcf69420ca1c559c15323b384714864e44ef": "02b7b4f635f86569451a8a3d240e6dc514bbdf29",
+        "55097416d43d134cdd11c5bbab159acef66a51ca": "02b7b4f635f86569451a8a3d240e6dc514bbdf29",
+        "7568a41e499445ec6aca1164d3c5aed7341dbaaa": "02b7b4f635f86569451a8a3d240e6dc514bbdf29"
+      }
+    },
+    {
+      "path": "packages/game-rules/test/enemy_audio.test.ts",
+      "blobIds": {
+        "1e84fcf69420ca1c559c15323b384714864e44ef": "0c3edbe8a8fb0d86a6944c28ac30c51bfc11fd55",
+        "55097416d43d134cdd11c5bbab159acef66a51ca": "0c3edbe8a8fb0d86a6944c28ac30c51bfc11fd55",
+        "7568a41e499445ec6aca1164d3c5aed7341dbaaa": "0c3edbe8a8fb0d86a6944c28ac30c51bfc11fd55"
+      }
+    },
+    {
+      "path": "scripts/client/soldier_view.ts",
+      "blobIds": {
+        "1e84fcf69420ca1c559c15323b384714864e44ef": "8ea459df81abe8426b9075ac47d5551a6bee19cc",
+        "55097416d43d134cdd11c5bbab159acef66a51ca": "8ea459df81abe8426b9075ac47d5551a6bee19cc",
+        "7568a41e499445ec6aca1164d3c5aed7341dbaaa": "8ea459df81abe8426b9075ac47d5551a6bee19cc"
+      }
+    },
+    {
+      "path": "scripts/game_audio.ts",
+      "blobIds": {
+        "1e84fcf69420ca1c559c15323b384714864e44ef": "c4086af2a89c6a18bb0b61efddb41fae766e02b9",
+        "55097416d43d134cdd11c5bbab159acef66a51ca": "c4086af2a89c6a18bb0b61efddb41fae766e02b9",
+        "7568a41e499445ec6aca1164d3c5aed7341dbaaa": "f05219a45699804b4a704f83210f74cfa3cdc987"
+      }
+    }
+  ],
+  "wholeFileLimitation": "Current game_audio.ts includes merged main #1015 priority/ducking changes. It is not byte-identical to captured 1e. Other three weapon paths are byte-identical; 550 four paths were byte-identical.",
+  "latestHeadRoot": "PENDING fresh cache/default pnpm test",
+  "latestHeadSmoke": "PENDING producer default headless smoke"
+}
