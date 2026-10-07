@@ -1,0 +1,2337 @@
+{
+  "candidateHead": "850b70e3b809f8dcb0b9c0f14ee78af186b41983",
+  "candidateTree": "93fc2205441fbd1b78eba61618d84da6af1c4968",
+  "controlHead": "bfcb267190b4be15c72e4a196a44a202524ea83f",
+  "controlTree": "ec1aabbfcf4364014ff67053db26787f74a41b1a",
+  "base": "24bb855f4ad9f1aa5e12e67410fcfecfe92c25a6",
+  "limitations": [
+    "Acquisition uses invincible and timescale4; ordinary gun firing and native death captured at timescale1.",
+    "Ignored harness adds whenDeath condition to normal input release only. It never calls effect/death/mesh/timer implementation.",
+    "Same requested seed, actual actors/locations/ranges vary. Not pixel-matched.",
+    "Control capture starts ordinary body aim via input aimAt; candidate retains acquired body aim. Both stop on observed nativeDeath.",
+    "Silent CFR30 hold/drop using actual native timestamps; no interpolation or spatial resize; no audible quality claim.",
+    "Earlier hip-fire, failed readiness, or no-kill takes excluded: before-hold1/2/5 and after-hold2/3."
+  ],
+  "runs": {
+    "before": {
+      "folder": "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-lethal-hold6",
+      "instance": "juice-lethal-hold-control6",
+      "pid": 26752,
+      "timing": {
+        "capturedFrames": 146,
+        "meanGapMs": 44.798703448275866,
+        "maxGapMs": 228.1909999999998,
+        "targetIntervalsMissed": 20,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-lethal-hold6\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-lethal-hold6.mp4"
+        ],
+        "sha256": "69693d7cd6582e64670336a3f2887741e597620a7d79ccd54adf23408a56bd67",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "deaths": [
+        {
+          "id": "soldier-e8",
+          "onsetFrame": 21,
+          "onsetSeconds": 0.959843,
+          "onsetServerTimeMs": 64429.0,
+          "onsetOriginalMesh": [
+            true
+          ],
+          "firstLaterOriginalMesh": {
+            "frame": 22,
+            "seconds": 1.000206,
+            "serverTimeMs": 64503.0,
+            "originalMesh": [
+              true
+            ],
+            "nativeDeath": true,
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          "samples": [
+            {
+              "frame": 21,
+              "seconds": 0.959843,
+              "serverTimeMs": 64429.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 22,
+              "seconds": 1.000206,
+              "serverTimeMs": 64503.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 23,
+              "seconds": 1.036004,
+              "serverTimeMs": 64537.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 24,
+              "seconds": 1.066602,
+              "serverTimeMs": 64569.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 25,
+              "seconds": 1.109904,
+              "serverTimeMs": 64607.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 26,
+              "seconds": 1.148355,
+              "serverTimeMs": 64649.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 27,
+              "seconds": 1.19059,
+              "serverTimeMs": 64692.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 28,
+              "seconds": 1.228558,
+              "serverTimeMs": 64730.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 29,
+              "seconds": 1.271778,
+              "serverTimeMs": 64773.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 30,
+              "seconds": 1.316622,
+              "serverTimeMs": 64817.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 31,
+              "seconds": 1.377122,
+              "serverTimeMs": 64877.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 32,
+              "seconds": 1.419988,
+              "serverTimeMs": 64921.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 33,
+              "seconds": 1.459084,
+              "serverTimeMs": 64959.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 34,
+              "seconds": 1.500396,
+              "serverTimeMs": 65001.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 35,
+              "seconds": 1.539621,
+              "serverTimeMs": 65041.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 36,
+              "seconds": 1.635514,
+              "serverTimeMs": 65136.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 37,
+              "seconds": 1.679596,
+              "serverTimeMs": 65181.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 38,
+              "seconds": 1.72371,
+              "serverTimeMs": 65224.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 39,
+              "seconds": 1.762809,
+              "serverTimeMs": 65264.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 40,
+              "seconds": 1.80626,
+              "serverTimeMs": 65307.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 41,
+              "seconds": 1.844042,
+              "serverTimeMs": 65346.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 42,
+              "seconds": 1.882347,
+              "serverTimeMs": 65383.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 43,
+              "seconds": 1.925488,
+              "serverTimeMs": 65427.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 44,
+              "seconds": 1.963944,
+              "serverTimeMs": 65465.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 45,
+              "seconds": 2.006353,
+              "serverTimeMs": 65507.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 46,
+              "seconds": 2.045258,
+              "serverTimeMs": 65546.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 47,
+              "seconds": 2.087864,
+              "serverTimeMs": 65588.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 48,
+              "seconds": 2.128361,
+              "serverTimeMs": 65629.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 49,
+              "seconds": 2.172976,
+              "serverTimeMs": 65673.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 50,
+              "seconds": 2.21351,
+              "serverTimeMs": 65713.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 51,
+              "seconds": 2.254969,
+              "serverTimeMs": 65756.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 52,
+              "seconds": 2.296948,
+              "serverTimeMs": 65797.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 53,
+              "seconds": 2.339434,
+              "serverTimeMs": 65839.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 54,
+              "seconds": 2.395815,
+              "serverTimeMs": 65894.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 55,
+              "seconds": 2.442397,
+              "serverTimeMs": 65942.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 56,
+              "seconds": 2.484434,
+              "serverTimeMs": 65984.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 57,
+              "seconds": 2.528252,
+              "serverTimeMs": 66028.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 58,
+              "seconds": 2.572852,
+              "serverTimeMs": 66072.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 59,
+              "seconds": 2.614215,
+              "serverTimeMs": 66114.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 60,
+              "seconds": 2.658263,
+              "serverTimeMs": 66159.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 61,
+              "seconds": 2.698926,
+              "serverTimeMs": 66201.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 62,
+              "seconds": 2.738716,
+              "serverTimeMs": 66240.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 63,
+              "seconds": 2.777753,
+              "serverTimeMs": 66279.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 64,
+              "seconds": 2.826355,
+              "serverTimeMs": 66325.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 65,
+              "seconds": 2.871059,
+              "serverTimeMs": 66371.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 66,
+              "seconds": 2.913692,
+              "serverTimeMs": 66413.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 67,
+              "seconds": 2.964334,
+              "serverTimeMs": 66464.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 68,
+              "seconds": 3.00779,
+              "serverTimeMs": 66504.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 69,
+              "seconds": 3.066026,
+              "serverTimeMs": 66565.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 70,
+              "seconds": 3.112103,
+              "serverTimeMs": 66612.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 71,
+              "seconds": 3.160996,
+              "serverTimeMs": 66660.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 72,
+              "seconds": 3.207015,
+              "serverTimeMs": 66705.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 73,
+              "seconds": 3.249567,
+              "serverTimeMs": 66748.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 74,
+              "seconds": 3.297663,
+              "serverTimeMs": 66796.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 75,
+              "seconds": 3.34288,
+              "serverTimeMs": 66842.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 76,
+              "seconds": 3.385233,
+              "serverTimeMs": 66885.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 77,
+              "seconds": 3.426675,
+              "serverTimeMs": 66926.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 78,
+              "seconds": 3.470161,
+              "serverTimeMs": 66971.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 79,
+              "seconds": 3.51382,
+              "serverTimeMs": 67013.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 80,
+              "seconds": 3.563887,
+              "serverTimeMs": 67062.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 81,
+              "seconds": 3.607666,
+              "serverTimeMs": 67107.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 82,
+              "seconds": 3.650936,
+              "serverTimeMs": 67150.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 83,
+              "seconds": 3.696201,
+              "serverTimeMs": 67197.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 84,
+              "seconds": 3.737347,
+              "serverTimeMs": 67238.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 85,
+              "seconds": 3.775353,
+              "serverTimeMs": 67276.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 86,
+              "seconds": 3.817022,
+              "serverTimeMs": 67315.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 87,
+              "seconds": 3.860148,
+              "serverTimeMs": 67359.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 88,
+              "seconds": 3.899377,
+              "serverTimeMs": 67400.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 89,
+              "seconds": 3.941989,
+              "serverTimeMs": 67443.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 90,
+              "seconds": 3.984059,
+              "serverTimeMs": 67484.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 91,
+              "seconds": 4.03097,
+              "serverTimeMs": 67529.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 92,
+              "seconds": 4.076775,
+              "serverTimeMs": 67574.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 93,
+              "seconds": 4.117864,
+              "serverTimeMs": 67619.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 94,
+              "seconds": 4.156815,
+              "serverTimeMs": 67659.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 95,
+              "seconds": 4.197326,
+              "serverTimeMs": 67698.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 96,
+              "seconds": 4.241816,
+              "serverTimeMs": 67739.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 97,
+              "seconds": 4.29226,
+              "serverTimeMs": 67789.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            },
+            {
+              "frame": 98,
+              "seconds": 4.33278,
+              "serverTimeMs": 67832.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -567.953125,
+                -16.404296875,
+                -437.5361328125
+              ]
+            }
+          ]
+        }
+      ],
+      "fixtureFiles": {
+        "lifecycle.gd": "545742b9a5fc2b1e89c5a360cd0b5088e297c0367fe351bc1b9357db7cc0bc11",
+        "lifecycle_client.ts": "5c17dfa1dfc94c75ac0ff85924318948c9cf63b51fa15f877d986c711cc2db78",
+        "lifecycle.tscn": "3d5bba5ec97eaf2ad8e7f24868feb090ffba38d8d63c44246a29c9294122e18e",
+        "lifecycle_client.tscn": "411e9ea53da11619ea8859e39d1242b71c3e0c68255d8329db9170463b1282a7"
+      },
+      "targetGateLog": "{\"secondsWaited\":2,\"target\":null,\"turning\":false,\"nearest\":72.26833349812398,\"lockedDistance\":null,\"health\":100}\n{\"secondsWaited\":4,\"target\":\"soldier-e4\",\"turning\":false,\"nearest\":27.743821616186704,\"lockedDistance\":27.743821616186704,\"health\":100}\n{\"secondsWaited\":6,\"target\":\"soldier-e4\",\"turning\":false,\"nearest\":6.230705232825916,\"lockedDistance\":6.230705232825916,\"health\":100}\n{\"secondsWaited\":8,\"target\":\"soldier-e4\",\"turning\":false,\"nearest\":6.18317508786346,\"lockedDistance\":6.18317508786346,\"health\":100}\n{\"secondsWaited\":10,\"target\":\"soldier-e8\",\"turning\":false,\"nearest\":7.725570692197541,\"lockedDistance\":8.058518069601158,\"health\":100}\nREADY: normal-time confirmed target; capture actual feedback next.\n",
+      "finalFracture": {
+        "activations": 1.0,
+        "activeParts": 0.0,
+        "expandedVertices": 18000.0,
+        "maxPositionError": 0.0,
+        "maxWeightError": 0.0,
+        "meshes": 1.0,
+        "preparedAtImport": true,
+        "restorations": 1.0,
+        "samples": 186.0,
+        "sourceVertices": 22137.0
+      }
+    },
+    "after": {
+      "folder": "D:\\work\\godmode-roguelite-worktrees\\juice-lethal-hit\\artifacts\\juice\\after-lethal-hold4",
+      "instance": "juice-lethal-hold-candidate4",
+      "pid": 38940,
+      "timing": {
+        "capturedFrames": 127,
+        "meanGapMs": 51.391150793650795,
+        "maxGapMs": 230.36700000000022,
+        "targetIntervalsMissed": 43,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-lethal-hit\\artifacts\\juice\\after-lethal-hold4\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-lethal-hit\\artifacts\\juice\\after-lethal-hold4.mp4"
+        ],
+        "sha256": "c7cba18148d5b914d201ad5664b4095a96724e94ccb4a9fb6648d3a5ae03cf3c",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "deaths": [
+        {
+          "id": "soldier-e3",
+          "onsetFrame": 19,
+          "onsetSeconds": 0.961891,
+          "onsetServerTimeMs": 45325.0,
+          "onsetOriginalMesh": [
+            false
+          ],
+          "firstLaterOriginalMesh": {
+            "frame": 24,
+            "seconds": 1.215235,
+            "serverTimeMs": 45605.0,
+            "originalMesh": [
+              true
+            ],
+            "nativeDeath": true,
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          "samples": [
+            {
+              "frame": 19,
+              "seconds": 0.961891,
+              "serverTimeMs": 45325.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 20,
+              "seconds": 1.036272,
+              "serverTimeMs": 45425.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 21,
+              "seconds": 1.080097,
+              "serverTimeMs": 45470.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 22,
+              "seconds": 1.123059,
+              "serverTimeMs": 45514.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 23,
+              "seconds": 1.167741,
+              "serverTimeMs": 45556.0,
+              "originalMesh": [
+                false
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 24,
+              "seconds": 1.215235,
+              "serverTimeMs": 45605.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 25,
+              "seconds": 1.2614,
+              "serverTimeMs": 45651.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 26,
+              "seconds": 1.311307,
+              "serverTimeMs": 45700.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 27,
+              "seconds": 1.416583,
+              "serverTimeMs": 45803.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 28,
+              "seconds": 1.468509,
+              "serverTimeMs": 45856.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 29,
+              "seconds": 1.515969,
+              "serverTimeMs": 45905.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 30,
+              "seconds": 1.567469,
+              "serverTimeMs": 45955.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 31,
+              "seconds": 1.614779,
+              "serverTimeMs": 46004.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 32,
+              "seconds": 1.665308,
+              "serverTimeMs": 46053.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 33,
+              "seconds": 1.717061,
+              "serverTimeMs": 46104.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 34,
+              "seconds": 1.765145,
+              "serverTimeMs": 46154.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 35,
+              "seconds": 1.814145,
+              "serverTimeMs": 46203.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 36,
+              "seconds": 1.879517,
+              "serverTimeMs": 46266.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 37,
+              "seconds": 1.93216,
+              "serverTimeMs": 46320.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 38,
+              "seconds": 1.980078,
+              "serverTimeMs": 46369.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 39,
+              "seconds": 2.027984,
+              "serverTimeMs": 46416.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 40,
+              "seconds": 2.079412,
+              "serverTimeMs": 46467.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 41,
+              "seconds": 2.132117,
+              "serverTimeMs": 46521.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 42,
+              "seconds": 2.178467,
+              "serverTimeMs": 46567.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 43,
+              "seconds": 2.229994,
+              "serverTimeMs": 46618.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 44,
+              "seconds": 2.276393,
+              "serverTimeMs": 46666.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 45,
+              "seconds": 2.32297,
+              "serverTimeMs": 46709.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 46,
+              "seconds": 2.370501,
+              "serverTimeMs": 46758.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 47,
+              "seconds": 2.41642,
+              "serverTimeMs": 46806.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 48,
+              "seconds": 2.463804,
+              "serverTimeMs": 46852.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 49,
+              "seconds": 2.514512,
+              "serverTimeMs": 46901.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 50,
+              "seconds": 2.563283,
+              "serverTimeMs": 46951.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 51,
+              "seconds": 2.626387,
+              "serverTimeMs": 47013.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 52,
+              "seconds": 2.686095,
+              "serverTimeMs": 47074.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 53,
+              "seconds": 2.748388,
+              "serverTimeMs": 47137.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 54,
+              "seconds": 2.829459,
+              "serverTimeMs": 47218.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 55,
+              "seconds": 2.88141,
+              "serverTimeMs": 47269.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 56,
+              "seconds": 2.928148,
+              "serverTimeMs": 47318.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 57,
+              "seconds": 2.973915,
+              "serverTimeMs": 47364.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 58,
+              "seconds": 3.023072,
+              "serverTimeMs": 47412.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 59,
+              "seconds": 3.066771,
+              "serverTimeMs": 47412.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 60,
+              "seconds": 3.115956,
+              "serverTimeMs": 47501.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 61,
+              "seconds": 3.163833,
+              "serverTimeMs": 47546.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 62,
+              "seconds": 3.210202,
+              "serverTimeMs": 47595.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 63,
+              "seconds": 3.258999,
+              "serverTimeMs": 47644.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 64,
+              "seconds": 3.305254,
+              "serverTimeMs": 47691.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 65,
+              "seconds": 3.35423,
+              "serverTimeMs": 47738.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 66,
+              "seconds": 3.401019,
+              "serverTimeMs": 47789.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 67,
+              "seconds": 3.446981,
+              "serverTimeMs": 47834.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 68,
+              "seconds": 3.497473,
+              "serverTimeMs": 47883.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 69,
+              "seconds": 3.545135,
+              "serverTimeMs": 47932.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 70,
+              "seconds": 3.593435,
+              "serverTimeMs": 47980.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 71,
+              "seconds": 3.641038,
+              "serverTimeMs": 48030.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 72,
+              "seconds": 3.688551,
+              "serverTimeMs": 48078.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 73,
+              "seconds": 3.73445,
+              "serverTimeMs": 48124.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 74,
+              "seconds": 3.785389,
+              "serverTimeMs": 48173.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 75,
+              "seconds": 3.83193,
+              "serverTimeMs": 48222.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 76,
+              "seconds": 3.880536,
+              "serverTimeMs": 48270.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 77,
+              "seconds": 3.925607,
+              "serverTimeMs": 48270.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 78,
+              "seconds": 3.976106,
+              "serverTimeMs": 48360.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 79,
+              "seconds": 4.023683,
+              "serverTimeMs": 48409.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 80,
+              "seconds": 4.073825,
+              "serverTimeMs": 48455.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 81,
+              "seconds": 4.119343,
+              "serverTimeMs": 48505.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 82,
+              "seconds": 4.225906,
+              "serverTimeMs": 48606.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 83,
+              "seconds": 4.276076,
+              "serverTimeMs": 48660.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 84,
+              "seconds": 4.322155,
+              "serverTimeMs": 48707.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 85,
+              "seconds": 4.370554,
+              "serverTimeMs": 48753.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 86,
+              "seconds": 4.41762,
+              "serverTimeMs": 48805.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 87,
+              "seconds": 4.464612,
+              "serverTimeMs": 48851.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 88,
+              "seconds": 4.515925,
+              "serverTimeMs": 48902.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 89,
+              "seconds": 4.564827,
+              "serverTimeMs": 48951.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 90,
+              "seconds": 4.612624,
+              "serverTimeMs": 48998.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 91,
+              "seconds": 4.663577,
+              "serverTimeMs": 49048.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            },
+            {
+              "frame": 92,
+              "seconds": 4.712046,
+              "serverTimeMs": 49099.0,
+              "originalMesh": [
+                true
+              ],
+              "nativeDeath": true,
+              "position": [
+                -489.861328125,
+                -15.9580078125,
+                -386.01171875
+              ]
+            }
+          ]
+        }
+      ],
+      "fixtureFiles": {
+        "lifecycle.gd": "545742b9a5fc2b1e89c5a360cd0b5088e297c0367fe351bc1b9357db7cc0bc11",
+        "lifecycle_client.ts": "5c17dfa1dfc94c75ac0ff85924318948c9cf63b51fa15f877d986c711cc2db78",
+        "lifecycle.tscn": "3d5bba5ec97eaf2ad8e7f24868feb090ffba38d8d63c44246a29c9294122e18e",
+        "lifecycle_client.tscn": "411e9ea53da11619ea8859e39d1242b71c3e0c68255d8329db9170463b1282a7"
+      },
+      "targetGateLog": "{\"secondsWaited\":2,\"target\":\"soldier-e7\",\"turning\":false,\"nearest\":6.2918047689813585,\"lockedDistance\":12.254218289965799,\"health\":100}\n{\"secondsWaited\":4,\"target\":\"soldier-e11\",\"turning\":true,\"nearest\":6.236914554863875,\"lockedDistance\":6.236914554863875,\"health\":100}\n{\"secondsWaited\":6,\"target\":\"soldier-e3\",\"turning\":false,\"nearest\":9.234947432124164,\"lockedDistance\":9.498434439707415,\"health\":100}\nREADY: normal-time confirmed target; capture actual feedback next.\n",
+      "finalFracture": {
+        "activations": 4.0,
+        "activeParts": 0.0,
+        "expandedVertices": 18000.0,
+        "maxPositionError": 0.0,
+        "maxWeightError": 0.0,
+        "meshes": 1.0,
+        "preparedAtImport": true,
+        "restorations": 4.0,
+        "samples": 186.0,
+        "sourceVertices": 22137.0
+      }
+    }
+  }
+}
