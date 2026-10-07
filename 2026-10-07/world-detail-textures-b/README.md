@@ -69,3 +69,7 @@ Four valid realtime paths joined by hard cuts. Skyline/bridge back-facing motion
 | tour-waterfront-street.mp4 | [MP4](https://raw.githubusercontent.com/KamranAsif/godmode-evidence/01643705f6e78f5e0d80c57dd9cbf123b5f014e2/2026-10-07/world-detail-textures-b/world/tour-waterfront-street.mp4) | [JSON](https://raw.githubusercontent.com/KamranAsif/godmode-evidence/01643705f6e78f5e0d80c57dd9cbf123b5f014e2/2026-10-07/world-detail-textures-b/world/tour-waterfront-street.json) | 68 / 564.2 ms |
 
 Verification, default pnpm test 13/13, import/cache comparison and exact owned-engine stop receipts are under `proof/`. No lightmap bake was performed. Published receipt hashes use the exact Git/raw HTTP bytes.
+
+## Final merge
+
+PR #1021 merged as `2a534069f1927cac8cda3e49975fe41eeb57e2b0`. Tested source `2d51436d41ff76271b2229001374ab610a295dad`, tree `104715784d331751b0928f1856218e76ee5b2787`; merged tree matches exactly. Final default `pnpm test`:13/13; focused machine-cache tests:8/8. Final headless smoke passed. Shared cache `53322f403dc44dfce0843b72d5f6ed217b8652642c32945a619d7ab10edadb6a` is published from a genuine matching client/server generation. All twelve captured texture file blobs match the final source. See `proof/final-verification.json` and the exact log/stop receipts.

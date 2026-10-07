@@ -1,0 +1,17 @@
+
+> godmode-exe@ maps:prebuild-arena D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007
+> pnpm build:scripts && node tools/maps/prebuilt/build.mjs
+
+
+> godmode-exe@ build:scripts D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007
+> node tools/build/write-build-info.mjs && pnpm --filter @godmode/game-rules build && pnpm --filter @godmode/godot-cli build && tsc -p tsconfig.json
+
+
+> @godmode/game-rules@0.1.0 build D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007\packages\game-rules
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+
+> @godmode/godot-cli@0.1.0 build D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007\tools\godot-cli
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+{"ok":true,"verify":false,"output":"assets/maps/dumbo/prebuilt","client":{"nodes":24874,"fingerprint":"1149334945","buildMs":80076,"loadMs":21957,"expandedSoups":5,"importedTextures":32,"expansion":{"position":0.00006103515625,"normal":0.00020714104175567627},"matches":true,"differences":[]},"server":{"nodes":4171,"fingerprint":"1276010704","buildMs":5286,"loadMs":199,"expandedSoups":0,"importedTextures":0,"expansion":{"position":0,"normal":0},"matches":true,"differences":[]}}

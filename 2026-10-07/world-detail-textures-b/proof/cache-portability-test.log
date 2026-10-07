@@ -1,0 +1,16 @@
+✔ the arena's inputs are the same list, hashed the same, every time (615.6164ms)
+✔ fingerprint depends on content and paths, not ordering or file timestamps (8.4288ms)
+✔ machine cache defaults outside the checkout and accepts an override (0.1874ms)
+✔ the fingerprint lock serializes worktrees and reclaims an abandoned holder (85.9269ms)
+✔ cache publishes verified outputs and restores a worktree receipt (17.6418ms)
+✔ a file whose size and time match its stamp keeps its recorded hash; any other is read again (2.1927ms)
+✔ the receipt is current exactly when every input and output hash matches (0.2227ms)
+✔ a receipt written for the tree as it is matches the tree's own inputs (996.1583ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1787.8263

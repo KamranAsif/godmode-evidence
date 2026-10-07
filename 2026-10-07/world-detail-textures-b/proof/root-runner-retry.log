@@ -1,0 +1,16 @@
+✔ pnpm test runs the runner, and test:unit is the whole unit directory in one pass (0.6297ms)
+✔ every test:* script is a step, folded into test:unit, or excluded with a reason (0.4928ms)
+✔ the three gates are the ones whose failure makes the rest meaningless (0.1505ms)
+✔ only the step that actually thrashes the machine takes the lock away from other lanes (0.0769ms)
+✔ a run that stopped early can never be mistaken for one that finished (0.3018ms)
+✔ the queue is FIFO, and a lane that died is not in it (0.2339ms)
+✔ a waiting lane says what it is waiting for, so a stall is not mistaken for a hang (0.0922ms)
+✔ two lanes cannot run a locked step at the same time, and the second one waits (1598.1076ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1666.952

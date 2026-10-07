@@ -1,11 +1,11 @@
 {
   "aiBudget": {
-    "assistanceMs": 0.0443333333333333,
-    "decisionsMs": 0.0378333333333333,
-    "maxMs": 0.404,
-    "meanMs": 0.0863333333333334,
+    "assistanceMs": 0.0435,
+    "decisionsMs": 0.039,
+    "maxMs": 0.405,
+    "meanMs": 0.0866666666666667,
     "meanRays": 0,
-    "p95Ms": 0.404,
+    "p95Ms": 0.405,
     "ticks": 6
   },
   "audio": {
@@ -66,12 +66,12 @@
     "cheatVoices": [],
     "cueLog": [
       {
-        "atMs": 13097,
+        "atMs": 15805,
         "id": "match-start",
         "spatial": false
       },
       {
-        "atMs": 13675,
+        "atMs": 16540,
         "id": "landing",
         "spatial": false
       }
@@ -232,30 +232,30 @@
         "target": 0
       },
       "explore": {
-        "gain": 0.0801,
+        "gain": 0.0778,
         "loaded": true,
-        "outputGain": 0.0801,
+        "outputGain": 0.0778,
         "playing": true,
         "target": 0.1995
       },
       "traffic": {
-        "gain": 0.0255,
+        "gain": 0.0248,
         "loaded": true,
-        "outputGain": 0.0255,
+        "outputGain": 0.0248,
         "playing": true,
         "target": 0.0635
       },
       "water": {
-        "gain": 0.008,
+        "gain": 0.0078,
         "loaded": true,
-        "outputGain": 0.008,
+        "outputGain": 0.0078,
         "playing": true,
         "target": 0.0199
       },
       "wind": {
-        "gain": 0.006,
+        "gain": 0.0059,
         "loaded": true,
-        "outputGain": 0.006,
+        "outputGain": 0.0059,
         "playing": true,
         "target": 0.015
       }
@@ -274,6 +274,7 @@
   "desktopTrainer": {
     "closed": false,
     "contentScale": 0.928125023841858,
+    "focused": "",
     "maximized": false,
     "minimized": false,
     "open": false,
@@ -336,8 +337,8 @@
   },
   "localPeerId": 2,
   "localServerTick": {
-    "maxMs": 73.8546128251665,
-    "meanMs": 3.07261716579688
+    "maxMs": 72.6150716599486,
+    "meanMs": 3.02458491753125
   },
   "mainMenuOpen": false,
   "mainMenuStatus": "",
@@ -400,7 +401,7 @@
     "authoredAssaultRifle": {
       "boneCount": 68,
       "clip": "AssaultRifleIdle",
-      "phase": 0.5915
+      "phase": 0.9735
     },
     "authoredPistol": null,
     "body": {
@@ -433,7 +434,7 @@
       "active": false,
       "blend": 0,
       "choreographed": true,
-      "phase": 0.5915,
+      "phase": 0.9735,
       "pinned": false,
       "pose": {
         "supportHandEulerRadians": [
@@ -505,19 +506,19 @@
       "active": true,
       "correctionMetres": 0,
       "corrections": 0,
-      "framesHeld": 2,
-      "framesMoved": 1,
+      "framesHeld": 1,
+      "framesMoved": 2,
       "historyDepth": 1,
       "lastInputSequence": 6,
       "renderedPosition": [
-        -524.439453125,
-        -14.8865222930908,
-        -300.3154296875
+        -553.2568359375,
+        -15.7109975814819,
+        -313.9697265625
       ],
       "serverPosition": [
-        -524.439453125,
-        -14.88671875,
-        -300.3154296875
+        -553.2568359375,
+        -15.7109375,
+        -313.9697265625
       ],
       "snaps": 0,
       "snapshotsApplied": 1,
@@ -588,7 +589,7 @@
       "sightScreen": {
         "ButtSocket": [
           0.0546,
-          0.0595
+          0.0596
         ],
         "FrontSightSocket": [
           0.5886,
@@ -649,7 +650,7 @@
     "weaponRecoil": 0,
     "weaponSwitch": {
       "active": false,
-      "endsAtMs": 13099,
+      "endsAtMs": 15731,
       "progress": 1,
       "verticalOffset": 0
     },
@@ -757,8 +758,8 @@
     "run": {
       "combatUntilMs": 0,
       "interactables": [],
-      "seed": 2790543646,
-      "startedAtMs": 12499,
+      "seed": 851498195,
+      "startedAtMs": 15131,
       "survival": {
         "bestKps": 0,
         "bonusHealth": 0,
@@ -788,7 +789,7 @@
         "dead": false,
         "diedTo": "",
         "drops": [],
-        "elapsedMs": 1173,
+        "elapsedMs": 1405,
         "elites": [],
         "enemies": 0,
         "events": {
@@ -818,9 +819,11 @@
             "dogKills": 0,
             "kills": 0,
             "peakViewers": 0,
-            "survivedMs": 1173,
+            "pickupCash": 0,
+            "survivedMs": 1405,
             "tips": 0
-          }
+          },
+          "resourcePickups": []
         },
         "minute": "RIFLEMEN",
         "offer": null,
@@ -831,6 +834,7 @@
         "streaks": {
           "activation": null,
           "adrenalineUntilMs": 0,
+          "autoCover": false,
           "blasts": [],
           "burning": [],
           "chainEndsAtMs": 0,
@@ -838,6 +842,7 @@
           "cooldownUntilMs": {},
           "cooldownsBypassed": false,
           "counter": 0,
+          "cover": null,
           "dogShots": [],
           "dogs": [],
           "dogsUntilMs": 0,
@@ -870,23 +875,28 @@
             "kills": 5,
             "name": "Predator Missile"
           },
-          "nowMs": 13672,
+          "nowMs": 16536,
           "nuke": null,
           "out": false,
+          "prototype": false,
           "ride": null,
-          "strikes": []
+          "strikes": [],
+          "supportCar": null,
+          "targeting": null
         },
         "streamKills": [],
         "supply": {
           "drops": [],
-          "nextCrateInMs": 41866,
+          "nextCrateInMs": 48678,
           "owned": []
         }
       }
     },
     "startingWeapon": "machineGun",
     "streakView": {
+      "autoCover": false,
       "blackness": 0,
+      "feedSize": null,
       "frames": null,
       "gun": null,
       "oneClick": {
@@ -896,7 +906,10 @@
         "haze": 0,
         "mushroomCloud": false
       },
+      "phoneAds": false,
+      "phoneBlend": 0,
       "polarity": "whiteHot",
+      "prototype": false,
       "ride": null,
       "tablet": false
     },
@@ -938,9 +951,9 @@
     },
     "survivalPlayer": {
       "at": [
-        -524.439453125,
-        -14.88671875,
-        -300.3154296875
+        -553.2568359375,
+        -15.7109375,
+        -313.9697265625
       ],
       "health": 100,
       "loaded": 30,
@@ -1054,11 +1067,13 @@
       ]
     },
     "killstreaksAlwaysReady": false,
+    "newKillstreakFlow": false,
     "resolutionHeight": 720,
     "resolutionWidth": 1280,
     "screenShakePercent": 100,
     "sendCrashReports": true,
     "showFpsCounter": false,
+    "testingAutoCover": false,
     "unlockAllKillstreaks": false
   },
   "settingsMenuOpen": false,
@@ -1068,7 +1083,7 @@
   "snapshot": {
     "aiFrozen": false,
     "corpses": [],
-    "endsAtMs": 86412303,
+    "endsAtMs": 86414815,
     "killLimit": 1000000,
     "matchDurationMs": 86400000,
     "maxPlayers": 1,
@@ -1103,12 +1118,12 @@
         "loadedAmmo": 30,
         "mantle": null,
         "movementMultiplier": 1.4,
-        "name": "GrumpyJaguar",
+        "name": "JaggedSparrow",
         "pitch": 0,
         "position": [
-          -524.439453125,
-          -14.88671875,
-          -300.3154296875
+          -553.2568359375,
+          -15.7109375,
+          -313.9697265625
         ],
         "reloadScale": 1,
         "reloading": false,
@@ -1122,22 +1137,22 @@
         "team": "",
         "verticalVelocity": 0,
         "weapon": "machineGun",
-        "weaponReadyAtMs": 13099,
-        "weaponSwitchEndsAtMs": 13099,
+        "weaponReadyAtMs": 15731,
+        "weaponSwitchEndsAtMs": 15731,
         "yaw": -1.57075743048897
       }
     ],
-    "serverTimeMs": 13674,
+    "serverTimeMs": 16539,
     "systemAdmins": []
   },
   "snapshotLastFullPacket": {
-    "bytes": 100,
+    "bytes": 101,
     "delta": false,
     "sequence": 0,
-    "serverTimeMs": 13095
+    "serverTimeMs": 15801
   },
   "snapshotPacket": {
-    "bytes": 26,
+    "bytes": 27,
     "delta": true,
     "sequence": 1
   },
