@@ -1,0 +1,95 @@
+{
+  "source": "0b0eeede2418fde724f86ad676ecb2aeae0d6150",
+  "stackBase": "9e017bd213c0a007f17f8f3d3ae40afdd8260449",
+  "stackPr": 1011,
+  "format": "PASS",
+  "lint": {
+    "errors": 0,
+    "existingWarnings": 5
+  },
+  "focusedUnitTests": {
+    "pass": 14,
+    "fail": 0
+  },
+  "productionBuild": {
+    "ok": true,
+    "verify": false,
+    "output": "assets/maps/dumbo/prebuilt",
+    "client": {
+      "nodes": 24874,
+      "fingerprint": "1698877265",
+      "buildMs": 82779,
+      "loadMs": 26640,
+      "expandedSoups": 5,
+      "importedTextures": 32,
+      "expansion": {
+        "position": 6.103515625e-05,
+        "normal": 0.00020714104175567627
+      },
+      "matches": true,
+      "differences": []
+    },
+    "server": {
+      "nodes": 4171,
+      "fingerprint": "1276010704",
+      "buildMs": 5599,
+      "loadMs": 210,
+      "expandedSoups": 0,
+      "importedTextures": 0,
+      "expansion": {
+        "position": 0,
+        "normal": 0
+      },
+      "matches": true,
+      "differences": []
+    }
+  },
+  "prebuiltCheck": {
+    "ok": true,
+    "receipt": "assets/maps/dumbo/prebuilt/receipt.json"
+  },
+  "headlessSmoke": "PASS: live player and no script errors; forced stop on headless engine",
+  "rifleFractureRoundtrip": true,
+  "magazineGeometryVisible": {
+    "magazine-assault-rifle": 1,
+    "magazine-pistol": 1
+  },
+  "assetSheets": 42,
+  "streetViews": 6,
+  "nativeMotionSections": 6,
+  "excluded": [
+    {
+      "asset": {
+        "id": "ground-casting",
+        "ground": "casting",
+        "nativeGeometryCutout": true
+      },
+      "reason": "Missing native ground detail"
+    }
+  ],
+  "motionMaxNativeGapMs": 368.50000000000006,
+  "review": "Kamran audits look and continuous playback; no auditor or temporal PASS claimed.",
+  "ownedSessionEnd": {
+    "schemaVersion": 1,
+    "ok": true,
+    "message": "Ended session combat-textures-slot-a-20261007: stopped 0 engines",
+    "data": {
+      "sessionId": "combat-textures-slot-a-20261007",
+      "engines": 0,
+      "stopped": [],
+      "recordsRemoved": 0,
+      "reaped": {
+        "filesRemoved": 0,
+        "directoriesRemoved": 0
+      }
+    }
+  },
+  "ownedNativeEngines": [],
+  "notes": [
+    "Gallery floor bounds and magazine parent visibility were corrected only in ignored fixtures; incomplete/blank attempts excluded and retained locally.",
+    "Casting geometry is absent in this map; route remains available for its existing conditional generation.",
+    "Earlier fixture optional metadata probes emitted engine messages; final fixture guards missing metadata. Existing native Vulkan pipeline and exit-resource warnings are retained; no blanket all-engine-errors claim.",
+    "No production lightmap bake or approved phone pose change.",
+    "All published JSON hashes use actual LF bytes, not CRLF checkout bytes."
+  ]
+}
