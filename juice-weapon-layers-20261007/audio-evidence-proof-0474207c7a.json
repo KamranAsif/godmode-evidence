@@ -1,0 +1,460 @@
+{
+  "candidate": "3ddb6450e3f2d0bdab32b07430e109185c6edeb0",
+  "base": "d69194b2c0c10b815f9f42057121428b21b943d0",
+  "controlHead": "9afaba9709fd9fb492b0c10df2bfda8b97d15a3d",
+  "controlTree": "e5a331642148e61cb26d7250409f6b244599be47",
+  "scope": "Controlled production audio source fixtures: 3 families at 6/20/40m, simulation0.05, prewarmed. Supplemental clips are separate actual NPC combats at1x after hidden debug spawn/invincibility/physical approach. No local shooting or injected audio during natural clips. Separate encounters, not pixel- or mix-matched.",
+  "limitations": [
+    "CFR30 uses timestamped native-frame holds/drops; no interpolation or resize.",
+    "Master capture is before output fader/OS device; no normalization or resampling. No audible quality evaluation.",
+    "Natural controls and candidate both contain float samples exceeding unity; their separate fights do not isolate mix headroom. Equal-power weights do not guarantee peak safety.",
+    "Default candidate headless smoke remains pending orchestrator GPU restoration. No merge readiness implied."
+  ],
+  "rootTestLogSha256": "9a618b427ffbf68ec38d14982cabf6a4fa12c4fa26e241184296ba0680ba37f0",
+  "stills": [
+    {
+      "name": "before-weapon-audio.png",
+      "sha256": "3b8d8fae1bf8a6d979828e4d85e841c6b0313598b5875c9b1b9d7e5af1488a84",
+      "nativeFrame": 70,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "after-weapon-audio.png",
+      "sha256": "b20841828752ef5bcff36fcd6e7cdd14e8a2b8d11cf9cc70a5443d1c83ebbce7",
+      "nativeFrame": 70,
+      "dimensions": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "clips": [
+    {
+      "name": "juice-audio-before1",
+      "directory": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\juice-audio-before1",
+      "timing": {
+        "capturedFrames": 141,
+        "meanGapMs": 67.82497142857143,
+        "maxGapMs": 223.34099999999955,
+        "targetIntervalsMissed": 156,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "videoMetadataSha256": "11280265475c50071a4a3d7b69ca4f6adcff70b36817cb399167ef8d556a2158",
+      "audioMetadataSha256": "60edab8cb07b7dff50ff6071cfda61f01bab2d2ef051e1918d2be624b292bd67",
+      "mux": {
+        "sha256": "fa79e9d2fefe735294cabf3781a34ba348d631ee18f6397ebd802d37d6bdec50",
+        "videoSha256": "edf244778cd234c8af089972f4917614962b9e6bb15dad0948f2648d97f44858",
+        "wavSha256": "9307f51cad27c619c3a1a32ed05e46f5e04687536366d48b32933cd37adfab63",
+        "audioStartOffsetSeconds": -0.015805999999999997,
+        "firstNativeVideoSampleSeconds": 0.015693,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "fps": 30,
+        "videoEncoding": {
+          "capturedFrames": 141,
+          "meanGapMs": 67.82497142857143,
+          "maxGapMs": 223.34099999999955,
+          "targetIntervalsMissed": 156,
+          "outputFps": 30,
+          "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+        },
+        "audioEncoding": "320kbps AAC from original-rate stereo Master capture; float32 WAV is separately retained",
+        "limitation": "Capture clocks aligned using engine timestamps and the first native video sample. Master mix/output-device latency not measured. No audible quality verdict implied. No audio normalization or video interpolation."
+      },
+      "audio": {
+        "sha256": "9307f51cad27c619c3a1a32ed05e46f5e04687536366d48b32933cd37adfab63",
+        "rawSha256": "1ba1c5a14f472d129a92d37ce0c8af5d1217f4d49ce2b23b4c68d43d28399077",
+        "audioFrames": 466432,
+        "durationSeconds": 9.717333333333332,
+        "peak": 0.3614973723888397,
+        "rms": 0.047115870281719575,
+        "peakDbfs": -8.837897102170464,
+        "rmsDbfs": -26.536655651541203,
+        "samplesAtOrAboveUnity": 0,
+        "resampling": false,
+        "normalization": false,
+        "format": "IEEE float32 WAV, original engine mix rate, stereo",
+        "qualityVerdict": "Not an audible mix evaluation; Master capture is before output fader/OS device."
+      },
+      "serverElapsedMs": 474.0,
+      "cueDeltasDuringNativeFrames": {
+        "combat-enemy-pistol": 3.0,
+        "combat-enemy-rifle": 3.0,
+        "combat-enemy-shotgun": 3.0,
+        "combat-rifle-windup": 1.0,
+        "soldier-step": 3.0
+      },
+      "events": [
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-rifle",
+            "distance": 6.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 0.0,
+          "activeWorldAfter": 1.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-rifle",
+            "distance": 20.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 2.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-rifle",
+            "distance": 40.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 2.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-pistol",
+            "distance": 6.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 2.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-pistol",
+            "distance": 20.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 2.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-pistol",
+            "distance": 40.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 2.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-shotgun",
+            "distance": 6.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 2.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-shotgun",
+            "distance": 20.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 2.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-shotgun",
+            "distance": 40.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 2.0
+        }
+      ]
+    },
+    {
+      "name": "juice-audio-before1-natural",
+      "directory": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\juice-audio-before1-natural",
+      "timing": {
+        "capturedFrames": 127,
+        "meanGapMs": 63.08227777777778,
+        "maxGapMs": 172.6870000000007,
+        "targetIntervalsMissed": 132,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "videoMetadataSha256": "764f7132ae8e8ce8b0ae3f566e573db219c0dd5b75f0085e524a06fe4a97f3a0",
+      "audioMetadataSha256": "f0d2b8e98a387121dfde8b619df093c00847caccbde94c13253efa4230653c38",
+      "mux": {
+        "sha256": "d08470dca85b71702244c95a350302853d13dc6ad6be04b2d2db97a2f364bdc4",
+        "videoSha256": "3ba0ab455c337af66cb8cbc2f0961e0b6403c158b22b595f664835cd53e1d113",
+        "wavSha256": "4d529d5f98f7b529519858d1a968001b7b3649c4b17ce9dd45464863221f43b0",
+        "audioStartOffsetSeconds": -0.019846000000000003,
+        "firstNativeVideoSampleSeconds": 0.015689,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "fps": 30,
+        "videoEncoding": {
+          "capturedFrames": 127,
+          "meanGapMs": 63.08227777777778,
+          "maxGapMs": 172.6870000000007,
+          "targetIntervalsMissed": 132,
+          "outputFps": 30,
+          "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+        },
+        "audioEncoding": "320kbps AAC from original-rate stereo Master capture; float32 WAV is separately retained",
+        "limitation": "Capture clocks aligned using engine timestamps and the first native video sample. Master mix/output-device latency not measured. No audible quality verdict implied. No audio normalization or video interpolation."
+      },
+      "audio": {
+        "sha256": "4d529d5f98f7b529519858d1a968001b7b3649c4b17ce9dd45464863221f43b0",
+        "rawSha256": "3d2f33a33feb43580f695ab0011d1d7daba5db4fbd02a7884ea51af404336bb8",
+        "audioFrames": 391680,
+        "durationSeconds": 8.16,
+        "peak": 1.0747556686401367,
+        "rms": 0.1347815446691222,
+        "peakDbfs": 0.6261948883445361,
+        "rmsDbfs": -17.407391413740697,
+        "samplesAtOrAboveUnity": 14,
+        "resampling": false,
+        "normalization": false,
+        "format": "IEEE float32 WAV, original engine mix rate, stereo",
+        "qualityVerdict": "Not an audible mix evaluation; Master capture is before output fader/OS device."
+      },
+      "serverElapsedMs": 7961.0,
+      "cueDeltasDuringNativeFrames": {
+        "combat-enemy-rifle": 33.0,
+        "combat-pistol-windup": 3.0,
+        "combat-rifle-windup": 5.0,
+        "soldier-step": 44.0
+      },
+      "events": []
+    },
+    {
+      "name": "juice-audio-after1",
+      "directory": "D:\\work\\godmode-roguelite-worktrees\\juice-weapon-layers\\artifacts\\juice\\juice-audio-after1",
+      "timing": {
+        "capturedFrames": 124,
+        "meanGapMs": 76.7639918699187,
+        "maxGapMs": 215.05400000000031,
+        "targetIntervalsMissed": 138,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "videoMetadataSha256": "dc023a0545141aa2b31fd176b724430f663de3849bba42204a847b33985bf339",
+      "audioMetadataSha256": "d54642f2c8cc5f3a373149b397258050df9006a696ab9092584a814b06b64d5f",
+      "mux": {
+        "sha256": "3aa1c21c2fe11a0211002a57e3940df9ea99467dbac9c9e3846ee93df16dfcde",
+        "videoSha256": "63fe0d8764614fadf553ed2819f2f17a91b83e71edc72b65b9ee64e2dc4043f6",
+        "wavSha256": "4a4633b74344e6b170f17f9d61407c4b9cfe29d45761f7f301a7393519745620",
+        "audioStartOffsetSeconds": -0.025959000000000003,
+        "firstNativeVideoSampleSeconds": 0.025458,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "fps": 30,
+        "videoEncoding": {
+          "capturedFrames": 124,
+          "meanGapMs": 76.7639918699187,
+          "maxGapMs": 215.05400000000031,
+          "targetIntervalsMissed": 138,
+          "outputFps": 30,
+          "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+        },
+        "audioEncoding": "320kbps AAC from original-rate stereo Master capture; float32 WAV is separately retained",
+        "limitation": "Capture clocks aligned using engine timestamps and the first native video sample. Master mix/output-device latency not measured. No audible quality verdict implied. No audio normalization or video interpolation."
+      },
+      "audio": {
+        "sha256": "4a4633b74344e6b170f17f9d61407c4b9cfe29d45761f7f301a7393519745620",
+        "rawSha256": "b0cb26d602a1d7d0dae90ad6dc2027e89e29a29eb678ca0780c623a0a877609a",
+        "audioFrames": 460800,
+        "durationSeconds": 9.6,
+        "peak": 0.3801235258579254,
+        "rms": 0.0424030989500503,
+        "peakDbfs": -8.401505021297428,
+        "rmsDbfs": -27.452048053180423,
+        "samplesAtOrAboveUnity": 0,
+        "resampling": false,
+        "normalization": false,
+        "format": "IEEE float32 WAV, original engine mix rate, stereo",
+        "qualityVerdict": "Not an audible mix evaluation; Master capture is before output fader/OS device."
+      },
+      "serverElapsedMs": 453.0,
+      "cueDeltasDuringNativeFrames": {
+        "combat-enemy-pistol": 3.0,
+        "combat-enemy-rifle": 7.0,
+        "combat-enemy-shotgun": 3.0,
+        "machine-fire": 6.0,
+        "pistol-fire": 2.0,
+        "shotgun-fire": 2.0,
+        "soldier-step": 2.0
+      },
+      "events": [
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-rifle",
+            "distance": 6.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 0.0,
+          "activeWorldAfter": 2.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-rifle",
+            "distance": 20.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 2.0,
+          "activeWorldAfter": 4.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-rifle",
+            "distance": 40.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 4.0,
+          "activeWorldAfter": 5.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-pistol",
+            "distance": 6.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 3.0,
+          "activeWorldAfter": 5.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-pistol",
+            "distance": 20.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 4.0,
+          "activeWorldAfter": 6.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-pistol",
+            "distance": 40.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 4.0,
+          "activeWorldAfter": 5.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-shotgun",
+            "distance": 6.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 1.0,
+          "activeWorldAfter": 3.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-shotgun",
+            "distance": 20.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 2.0,
+          "activeWorldAfter": 4.0
+        },
+        {
+          "result": {
+            "accepted": true,
+            "cue": "combat-enemy-shotgun",
+            "distance": 40.0,
+            "scope": "Controlled source position, production sound API; not an enemy attack"
+          },
+          "activeWorldBefore": 4.0,
+          "activeWorldAfter": 5.0
+        }
+      ]
+    },
+    {
+      "name": "juice-audio-after1-natural",
+      "directory": "D:\\work\\godmode-roguelite-worktrees\\juice-weapon-layers\\artifacts\\juice\\juice-audio-after1-natural",
+      "timing": {
+        "capturedFrames": 182,
+        "meanGapMs": 44.07325414364641,
+        "maxGapMs": 222.82899999999995,
+        "targetIntervalsMissed": 33,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "videoMetadataSha256": "9116b7b69fd6ce48b711e432db5a7358bcbaa3b8f0a9edd372bae72dfb2ec9e6",
+      "audioMetadataSha256": "31e715c420f6dc51eb9b7660e9e88be95e54269b8f72d1e5dff7d2de67afc47c",
+      "mux": {
+        "sha256": "dc0d9e26ee8a209146e4d948dc1cc8e53d882f412a730cc9a3bb465a449bd9d9",
+        "videoSha256": "010a651fd87ef1b608da526a1e9d3121cb855d071cc2a03f24ec19361994e7af",
+        "wavSha256": "e8c4b18f018eeb12c44ad22e7c3ce70a0412ac9a47131d2d71ad2a47b2446824",
+        "audioStartOffsetSeconds": -0.006746,
+        "firstNativeVideoSampleSeconds": 0.004252,
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "fps": 30,
+        "videoEncoding": {
+          "capturedFrames": 182,
+          "meanGapMs": 44.07325414364641,
+          "maxGapMs": 222.82899999999995,
+          "targetIntervalsMissed": 33,
+          "outputFps": 30,
+          "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+        },
+        "audioEncoding": "320kbps AAC from original-rate stereo Master capture; float32 WAV is separately retained",
+        "limitation": "Capture clocks aligned using engine timestamps and the first native video sample. Master mix/output-device latency not measured. No audible quality verdict implied. No audio normalization or video interpolation."
+      },
+      "audio": {
+        "sha256": "e8c4b18f018eeb12c44ad22e7c3ce70a0412ac9a47131d2d71ad2a47b2446824",
+        "rawSha256": "4100655760370da514b87ef5ee1dc9182052ba8ad0ee94ff269850efbcc39b2f",
+        "audioFrames": 392192,
+        "durationSeconds": 8.170666666666667,
+        "peak": 1.1688710451126099,
+        "rms": 0.09244317813754228,
+        "peakDbfs": 1.355332011342577,
+        "rmsDbfs": -20.682502643375862,
+        "samplesAtOrAboveUnity": 78,
+        "resampling": false,
+        "normalization": false,
+        "format": "IEEE float32 WAV, original engine mix rate, stereo",
+        "qualityVerdict": "Not an audible mix evaluation; Master capture is before output fader/OS device."
+      },
+      "serverElapsedMs": 7978.0,
+      "cueDeltasDuringNativeFrames": {
+        "combat-enemy-rifle": 35.0,
+        "combat-rifle-windup": 6.0,
+        "machine-fire": 35.0,
+        "picket-chirp": 9.0,
+        "soldier-step": 137.0,
+        "ui-open": 1.0
+      },
+      "events": []
+    }
+  ]
+}
