@@ -1,0 +1,103 @@
+{
+  "auditor": "Codex independent CPU-only surface vision auditor",
+  "issuedUtc": "2026-10-07T14:10:56.559737+00:00",
+  "verdict": "ALL_PASS_SCOPED_C035_CAPTURE_ONLY",
+  "producer": "c0359a5343eb20c94a17d6000c7199def454fb2b",
+  "control": "8a231a40cc60cb908f0387af7bcd23ec81a2af62",
+  "verifiedCriteria": [
+    "Irregular folded dust remains readable at fixed4m and in ordinary shots despite lower brightness than white radial control.",
+    "No hard rectangular card edge or atlas seam observed in every-frame reviewed dust regions.",
+    "Triangle/reticle and six recorded HUD regions remain readable throughout recorded frames.",
+    "All574 native and1238 decoded frames covered by6036 exact distinct native-pixel region groups with exhaustive membership.",
+    "All122 start/end/event-boundary original full-frame contexts viewed; both published original stills viewed and byte/RGB matched.",
+    "All14 public raw resources independently byte matched;13 proof-declared hashes matched.",
+    "Source helper lexical balance, explicitUV, atlas layout, per-slot progress/reset/pooling checked."
+  ],
+  "limits": [
+    "Six explicit half-open rectangles only; not every pixel of every full frame.",
+    "LiveTube donation popup can extend below y435; its lower portion was seen in boundary contexts, not covered in every-frame region review.",
+    "No open cheat UI in these clips; source preservation only.",
+    "CFR holds/drops are not smooth1x or continuous1x evidence.",
+    "Exact groups use RGB24 identity, with explicit members; no perceptual deduplication.",
+    "Fixed4m productionAPI fixture is diagnostic, not a collision/raycast test.",
+    "Metal haze is weak and spark-led; fabric/rubber brief and subtle; glass correctly has zero dust.",
+    "Still event ages184ms/224ms differ; random debris and ambient HUD state differ; no equal-peak-brightness claim.",
+    "ADS/open cheat UI/visible enemy spawning/cap-pressure not exercised; preservation is source-scoped.",
+    "c035 smoke receipt passed but continuing sampler diagnostic and forced stop retained; no zero-error/clean-stop claim.",
+    "Sparse native sampling leaves unrecorded motion gaps."
+  ],
+  "currentHead": "3f9f977e0f7857559c8bb4ce14518866b7737569",
+  "currentHeadGate": "PENDING_AUTHENTIC_CACHE_ROOT_SMOKE_RECEIPTS",
+  "allpassSigned": false,
+  "report": "final-scoped-c035-review.txt",
+  "summary": "matched-review-summary.json",
+  "coverage": "strict-region-ledger.json",
+  "previousIntegrationHead": "7d8fef5620be3b799ea5f7743c444bf73c79d7c3",
+  "currentHeadTree": "fb0b024cdba3301212612bf1d1af60de7147f0df",
+  "currentBase": "4fba2d8343be0bc0e12ca08b6b72ab5400ffcf50",
+  "currentHeadGateSigned": false,
+  "previousSampledVerdict": "PASS_SCOPED_CAPTURE_SUPERSEDED_BY_STRICTER_COVERAGE_REQUIREMENT",
+  "acceptanceInput": "FINAL_FOUR_CLIPS_ONLY",
+  "overviewOnlyAcceptance": false,
+  "coverageCounts": {
+    "nativeFrames": 574,
+    "decodedFrames": 1238,
+    "regionMemberships": 10872,
+    "distinctRegionGroupsViewed": 6036,
+    "originalBoundaryContextsViewed": 122,
+    "originalNativeBoundaryContextsViewed": 60,
+    "originalDecodedBoundaryContextsViewed": 62,
+    "publishedOriginalStillsViewed": 2
+  },
+  "regions": {
+    "dust_triangle_reticle": [
+      760,
+      420,
+      1110,
+      760
+    ],
+    "game_radar": [
+      0,
+      0,
+      300,
+      300
+    ],
+    "game_ammo": [
+      1460,
+      915,
+      1920,
+      1080
+    ],
+    "game_streaks": [
+      0,
+      915,
+      210,
+      1080
+    ],
+    "livetube": [
+      1460,
+      0,
+      1920,
+      435
+    ],
+    "game_top_banner": [
+      730,
+      175,
+      1200,
+      290
+    ]
+  },
+  "continuous1xClaim": false,
+  "scopedAllPassSigned": true,
+  "allpassSignedMeaning": "Overall/current-head ALLPASS remains false; scoped capture ALL PASS is separately signed.",
+  "signature": {
+    "auditor": "Codex independent CPU-only surface vision auditor",
+    "signedUtc": "2026-10-07T14:10:56.559737+00:00",
+    "decision": "ALL_PASS_SCOPED_C035_CAPTURE_ONLY",
+    "scope": "Final four c035/base8a clips: exact recorded regional clarity/shape,122 original boundary contexts,2 published original stills, public byte integrity and scoped source review. Exclusions and limits remain attached.",
+    "latestIntegrationGates": "PENDING_UNSIGNED",
+    "signatureType": "Recorded audit decision with SHA256 content attestation; no public-key signature"
+  },
+  "hashAttestation": "final-scoped-c035-hash-attestation.json",
+  "newMainContext": "Latest3f9 on movementmain4fba read-only verified; twofeaturepaths unchanged fromc035. Authentic current-head gates pending."
+}
