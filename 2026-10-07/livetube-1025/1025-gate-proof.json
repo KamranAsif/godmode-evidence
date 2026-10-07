@@ -1,0 +1,29 @@
+{
+  "affectedGate": {
+    "label": "1025-latest-main-affected",
+    "command": "pnpm build:scripts && pnpm lint && pnpm format:check && pnpm test:unit",
+    "code": 0,
+    "timedOut": false,
+    "endedAt": "2026-10-07T19:36:23.609Z"
+  },
+  "pr": 1025,
+  "head": "7060f1eee3837d8bd6884b542844a0c1a81ea1e3",
+  "tree": "2a8910f22af4cdb57ad2aa9cbca8b6e44e72f987",
+  "fullRoot": {
+    "head": "f48642b56c4b8d3f36ef9b018045a494fd50e7de",
+    "tree": "36b1c12d79de8429315fbee0afa6f93c46aeccee",
+    "base": "c27c14380b73f0ad54385c83bb458462e42f30e0",
+    "passed": 12,
+    "exit": {
+      "label": "1025-full-root",
+      "command": "pnpm test",
+      "code": 0,
+      "timedOut": false,
+      "endedAt": "2026-10-07T19:19:12.768Z"
+    }
+  },
+  "treeMatchesFullTest": false,
+  "policy": "Arena bake/export forbidden for PRs; pnpm test uses release-only arena preparation from #1041. Arena freshness/fingerprint accepted stale. Rebase passes remain valid unless affected code changes.",
+  "captureManifest": "1025-capture-manifest.json",
+  "checkedAt": "2026-10-07T19:40:12.750Z"
+}
