@@ -1,0 +1,251 @@
+{
+  "commit": "68a574e08",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "testing": {
+    "unlockAllKillstreaks": true,
+    "killstreaksAlwaysReady": true
+  },
+  "callIns": [
+    {
+      "id": "precisionAirstrike",
+      "view": {
+        "blackness": 0,
+        "gun": null,
+        "polarity": "whiteHot",
+        "ride": null,
+        "tablet": false
+      },
+      "player": {
+        "at": [
+          -540.1435546875,
+          -16.0634765625,
+          -422.8134765625
+        ],
+        "health": 100,
+        "loaded": 27,
+        "reserve": 270,
+        "runArmor": 0
+      },
+      "flight": {
+        "confirmAtMs": 577603.5,
+        "id": 266,
+        "jets": [
+          {
+            "offset": -5,
+            "overMs": 5000
+          },
+          {
+            "offset": 0,
+            "overMs": 7000
+          },
+          {
+            "offset": 5,
+            "overMs": 9000
+          }
+        ],
+        "kind": "precisionAirstrike",
+        "x": -540.143249511719,
+        "y": -16.2499996185303,
+        "yaw": 3.14159265358979,
+        "z": -392.271667480469
+      },
+      "out": false
+    },
+    {
+      "id": "napalmStrike",
+      "view": {
+        "blackness": 0,
+        "gun": null,
+        "polarity": "whiteHot",
+        "ride": null,
+        "tablet": false
+      },
+      "player": {
+        "at": [
+          -500,
+          -16.115234375,
+          -430
+        ],
+        "health": 100,
+        "loaded": 27,
+        "reserve": 90,
+        "runArmor": 0
+      },
+      "flight": {
+        "confirmAtMs": 268523.8,
+        "id": 148,
+        "jets": [
+          {
+            "offset": -2.5,
+            "overMs": 3500
+          },
+          {
+            "offset": 2.5,
+            "overMs": 4200
+          }
+        ],
+        "kind": "napalmStrike",
+        "x": -500,
+        "y": -16.2926052269668,
+        "yaw": 3.14159265358979,
+        "z": -376.299987792969
+      },
+      "out": false
+    },
+    {
+      "id": "stealthBomber",
+      "view": {
+        "blackness": 0,
+        "gun": null,
+        "polarity": "whiteHot",
+        "ride": null,
+        "tablet": false
+      },
+      "player": {
+        "at": [
+          -540.1435546875,
+          -16.0634765625,
+          -422.8134765625
+        ],
+        "health": 100,
+        "loaded": 27,
+        "reserve": 270,
+        "runArmor": 0
+      },
+      "flight": {
+        "confirmAtMs": 549358.5,
+        "id": 229,
+        "jets": [
+          {
+            "offset": 0,
+            "overMs": 5772.72727272727
+          }
+        ],
+        "kind": "stealthBomber",
+        "x": -540.143249511719,
+        "y": -16.2499996185303,
+        "yaw": 3.14159265358979,
+        "z": -392.271667480469
+      },
+      "out": false
+    }
+  ],
+  "napalm": {
+    "patchMs": 30000,
+    "burnMs": 5000,
+    "activeAtMs": 285447.8,
+    "ageMsRange": [
+      12406.0,
+      13502.0
+    ],
+    "activePatches": 24,
+    "expiredAtMs": 304744.8,
+    "remainingPatches": 0
+  },
+  "helicopter": {
+    "shots": 49,
+    "directHits": 49,
+    "firstShotMs": 408669.8,
+    "lastShotMs": 421618.8,
+    "explosionEvents": 0,
+    "victims": [
+      "smg-e32",
+      "smg-e33",
+      "soldier-e10",
+      "soldier-e12",
+      "soldier-e19",
+      "soldier-e3",
+      "soldier-e35",
+      "soldier-e39",
+      "soldier-e4",
+      "soldier-e46"
+    ]
+  },
+  "ac130": {
+    "105": {
+      "shellScale": [
+        0.600000083446503,
+        0.600000023841858,
+        2.40000009536743
+      ],
+      "unitMeshBounds": {
+        "position": [
+          -0.48746395111084,
+          -0.5,
+          -0.48746395111084
+        ],
+        "size": [
+          0.97492790222168,
+          1,
+          0.97492790222168
+        ]
+      },
+      "tracerScale": [
+        0.240000024437904,
+        0.240000024437904,
+        7.20000076293945
+      ]
+    },
+    "40": {
+      "shellScale": [
+        0.349999994039536,
+        0.349999994039536,
+        1.39999997615814
+      ],
+      "unitMeshBounds": {
+        "position": [
+          -0.48746395111084,
+          -0.5,
+          -0.48746395111084
+        ],
+        "size": [
+          0.97492790222168,
+          1,
+          0.97492790222168
+        ]
+      },
+      "tracerScale": [
+        0.140000000596046,
+        0.140000000596046,
+        4.19999980926514
+      ]
+    },
+    "25": {
+      "shellScale": [
+        0.180000007152557,
+        0.180000007152557,
+        0.720000028610229
+      ],
+      "unitMeshBounds": {
+        "position": [
+          -0.48746395111084,
+          -0.5,
+          -0.48746395111084
+        ],
+        "size": [
+          0.97492790222168,
+          1,
+          0.97492790222168
+        ]
+      },
+      "tracerScale": [
+        0.0720000043511391,
+        0.0720000043511391,
+        2.16000008583069
+      ]
+    }
+  },
+  "tests": {
+    "pnpmTest": "13 of 13 steps passed",
+    "headlessSmoke": "Airstrike flight launched on foot; no script exceptions"
+  },
+  "aircraftAudit": {
+    "jet": "Source nose -X rotated -pi/2 to flight -Z; source-axis length/span scaling corrected.",
+    "bomber": "Source nose -X already rotated -pi/2 to flight -Z.",
+    "helicopter": "Transport source nose +Z already corrected by Frame pi; supply flight yaw pi matches travel.",
+    "ac130": "Ride is a camera orbit; no AC-130 body is currently drawn."
+  }
+}
