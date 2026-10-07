@@ -1,0 +1,912 @@
+{
+  "schemaVersion": 2,
+  "baselineCommit": "64fa2ec4d7aef316ea67540ddf15168ad75aaf07",
+  "candidateCommit": "6b7a7fe3c24e8bd111a6f016549c39a95aa98aac",
+  "prototypeCommit": "57597833892a53f4796a14a8a24d0482bfa596c3",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "renderer": "GodotJS 4.6.1 Forward+ D3D12",
+  "adapter": "AMD Radeon RX 9070 XT",
+  "lighting": {
+    "adjustment_brightness": 1,
+    "adjustment_contrast": 1,
+    "adjustment_enabled": true,
+    "adjustment_saturation": 1.0349999666214,
+    "ambient_light_color": [
+      0.860000014305115,
+      0.899999976158142,
+      0.959999978542328,
+      1
+    ],
+    "ambient_light_energy": 1.5,
+    "ambient_light_sky_contribution": 0.300000011920929,
+    "ambient_light_source": 2,
+    "background_energy_multiplier": 1,
+    "fog_aerial_perspective": 0.200000002980232,
+    "fog_density": 0.00034999998752027,
+    "fog_enabled": true,
+    "fog_sky_affect": 0,
+    "glow_bloom": 0,
+    "glow_enabled": true,
+    "glow_hdr_threshold": 2.20000004768372,
+    "glow_intensity": 0.300000011920929,
+    "glow_normalized": false,
+    "glow_strength": 1,
+    "reflected_light_source": 2,
+    "sdfgi_enabled": false,
+    "ssao_ao_channel_affect": 0,
+    "ssao_detail": 0.649999976158142,
+    "ssao_enabled": true,
+    "ssao_intensity": 1.79999995231628,
+    "ssao_light_affect": 0.200000002980232,
+    "ssao_power": 1.5,
+    "ssao_radius": 1.10000002384186,
+    "ssao_sharpness": 0.850000023841858,
+    "ssil_enabled": true,
+    "ssil_intensity": 1,
+    "ssil_radius": 5,
+    "ssr_enabled": false,
+    "ssr_max_steps": 48,
+    "tonemap_exposure": 0.5,
+    "tonemap_mode": 3,
+    "tonemap_white": 6,
+    "volumetric_fog_density": 0.0500000007450581,
+    "volumetric_fog_enabled": false,
+    "volumetric_fog_length": 64
+  },
+  "before": [
+    {
+      "view": {
+        "id": "outdoor",
+        "position": [
+          -402,
+          -15.5820005417,
+          -392
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-outdoor.png",
+      "frames": {
+        "url": "http://127.0.0.1:52320/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 10000,
+        "frames": 905,
+        "engineFrames": 905,
+        "sampled": 905,
+        "dropped": 0,
+        "windowMs": 10008.433,
+        "fps": 90.42374565528888,
+        "meanMs": 11.058892817679558,
+        "medianMs": 10.951000213623,
+        "p95Ms": 12.1549997329712,
+        "p99Ms": 12.5389995574951,
+        "worstMs": 12.887,
+        "bestMs": 9.528,
+        "engine": {
+          "displayServer": "Windows",
+          "headless": false,
+          "maxFps": 0,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingMethod": "forward_plus",
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "peers": {
+        "instances": [
+          {
+            "pid": 32372,
+            "kind": "game",
+            "instance": "lit-review-main-release035",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\1ff3d34506dd\\game-lit-review-main-release035.log",
+            "inspectionUrl": "http://127.0.0.1:52320/inspect",
+            "inspectPort": 52320,
+            "startedAt": "2026-10-07T01:28:56.292Z",
+            "sessionId": "s-muxfi77q-495e4cecc912",
+            "processStartToken": "Tuesday, October 6, 2026 9:28:56 PM",
+            "alive": true
+          },
+          {
+            "pid": 12136,
+            "kind": "game",
+            "instance": "tablet-candidate",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\tablet-highres-hold",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\80558f94de10\\game-tablet-candidate.log",
+            "inspectionUrl": "http://127.0.0.1:52351/inspect",
+            "inspectPort": 52351,
+            "startedAt": "2026-10-07T01:29:07.630Z",
+            "sessionId": "tablet-polish-20261006",
+            "processStartToken": "Tuesday, October 6, 2026 9:29:07 PM",
+            "alive": true
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "id": "covered",
+        "position": [
+          -542.946,
+          -15.774,
+          -361.28
+        ],
+        "yaw": -1.5708,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-covered.png",
+      "frames": {
+        "url": "http://127.0.0.1:52320/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 10000,
+        "frames": 325,
+        "engineFrames": 325,
+        "sampled": 325,
+        "dropped": 0,
+        "windowMs": 10009.377,
+        "fps": 32.46955329987071,
+        "meanMs": 30.79762769230769,
+        "medianMs": 30.6860008239746,
+        "p95Ms": 32.0589981079102,
+        "p99Ms": 32.5130004882812,
+        "worstMs": 32.701,
+        "bestMs": 28.689,
+        "engine": {
+          "displayServer": "Windows",
+          "headless": false,
+          "maxFps": 0,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingMethod": "forward_plus",
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "peers": {
+        "instances": [
+          {
+            "pid": 32372,
+            "kind": "game",
+            "instance": "lit-review-main-release035",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\1ff3d34506dd\\game-lit-review-main-release035.log",
+            "inspectionUrl": "http://127.0.0.1:52320/inspect",
+            "inspectPort": 52320,
+            "startedAt": "2026-10-07T01:28:56.292Z",
+            "sessionId": "s-muxfi77q-495e4cecc912",
+            "processStartToken": "Tuesday, October 6, 2026 9:28:56 PM",
+            "alive": true
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "id": "contact",
+        "position": [
+          -400,
+          -15.582,
+          -399
+        ],
+        "yaw": -1.1,
+        "pitch": -0.5,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-contact.png",
+      "frames": {
+        "url": "http://127.0.0.1:52320/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 10000,
+        "frames": 463,
+        "engineFrames": 463,
+        "sampled": 463,
+        "dropped": 0,
+        "windowMs": 10023.892,
+        "fps": 46.18964370326416,
+        "meanMs": 21.64954859611231,
+        "medianMs": 21.6429996490479,
+        "p95Ms": 23.056999206543,
+        "p99Ms": 23.4829998016357,
+        "worstMs": 24.339,
+        "bestMs": 19.322,
+        "engine": {
+          "displayServer": "Windows",
+          "headless": false,
+          "maxFps": 0,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingMethod": "forward_plus",
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "peers": {
+        "instances": [
+          {
+            "pid": 32372,
+            "kind": "game",
+            "instance": "lit-review-main-release035",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\1ff3d34506dd\\game-lit-review-main-release035.log",
+            "inspectionUrl": "http://127.0.0.1:52320/inspect",
+            "inspectPort": 52320,
+            "startedAt": "2026-10-07T01:28:56.292Z",
+            "sessionId": "s-muxfi77q-495e4cecc912",
+            "processStartToken": "Tuesday, October 6, 2026 9:28:56 PM",
+            "alive": true
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "id": "gameplay",
+        "position": [
+          -406.027852,
+          -15.6,
+          -384.99851
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-gameplay.png",
+      "frames": {
+        "url": "http://127.0.0.1:52320/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 10000,
+        "frames": 816,
+        "engineFrames": 816,
+        "sampled": 816,
+        "dropped": 0,
+        "windowMs": 10016.91,
+        "fps": 81.46224733974849,
+        "meanMs": 12.275382352941175,
+        "medianMs": 11.4589996337891,
+        "p95Ms": 17.4330005645752,
+        "p99Ms": 25.3279991149902,
+        "worstMs": 87.141,
+        "bestMs": 5.607,
+        "engine": {
+          "displayServer": "Windows",
+          "headless": false,
+          "maxFps": 0,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingMethod": "forward_plus",
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "peers": {
+        "instances": [
+          {
+            "pid": 32372,
+            "kind": "game",
+            "instance": "lit-review-main-release035",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\1ff3d34506dd\\game-lit-review-main-release035.log",
+            "inspectionUrl": "http://127.0.0.1:52320/inspect",
+            "inspectPort": 52320,
+            "startedAt": "2026-10-07T01:28:56.292Z",
+            "sessionId": "s-muxfi77q-495e4cecc912",
+            "processStartToken": "Tuesday, October 6, 2026 9:28:56 PM",
+            "alive": true
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "id": "tree-close",
+        "position": [
+          -401,
+          -14.8,
+          -386.6
+        ],
+        "yaw": 0,
+        "pitch": 0.32,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-tree-close.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "tree-mid",
+        "position": [
+          -401,
+          -15.58,
+          -378
+        ],
+        "yaw": 0,
+        "pitch": 0.1,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-tree-mid.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "tree-far",
+        "position": [
+          -401,
+          -15.58,
+          -351
+        ],
+        "yaw": 0,
+        "pitch": 0.04,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-tree-far.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "street-cars-trees",
+        "position": [
+          -405,
+          -15.58,
+          -363
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-street-cars-trees.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "bark-close",
+        "position": [
+          -401,
+          -15.5,
+          -389.15
+        ],
+        "yaw": 0,
+        "pitch": 0.15,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-bark-close.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "car-close",
+        "position": [
+          -400.5,
+          -15.9,
+          -367
+        ],
+        "yaw": 0,
+        "pitch": -0.12,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-car-close.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "car-mid",
+        "position": [
+          -400.5,
+          -15.58,
+          -361
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-car-mid.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "car-far",
+        "position": [
+          -400.5,
+          -15.58,
+          -346
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/main-release035-car-far.png",
+      "frames": null
+    }
+  ],
+  "after": [
+    {
+      "view": {
+        "id": "outdoor",
+        "position": [
+          -402,
+          -15.5820005417,
+          -392
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-outdoor.png",
+      "frames": {
+        "url": "http://127.0.0.1:53155/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 10000,
+        "frames": 803,
+        "engineFrames": 803,
+        "sampled": 803,
+        "dropped": 0,
+        "windowMs": 10014.511,
+        "fps": 80.18364551199754,
+        "meanMs": 12.471210460772104,
+        "medianMs": 12.3459997177124,
+        "p95Ms": 14.6870002746582,
+        "p99Ms": 15.6940002441406,
+        "worstMs": 17.619,
+        "bestMs": 9.79,
+        "engine": {
+          "displayServer": "Windows",
+          "headless": false,
+          "maxFps": 0,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingMethod": "forward_plus",
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "peers": {
+        "instances": [
+          {
+            "pid": 31084,
+            "kind": "game",
+            "instance": "lit-review-candidate-release035",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\1ff3d34506dd\\game-lit-review-candidate-release035.log",
+            "inspectionUrl": "http://127.0.0.1:53155/inspect",
+            "inspectPort": 53155,
+            "startedAt": "2026-10-07T01:37:08.539Z",
+            "sessionId": "s-muxfi77q-495e4cecc912",
+            "processStartToken": "Tuesday, October 6, 2026 9:37:08 PM",
+            "alive": true
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "id": "covered",
+        "position": [
+          -542.946,
+          -15.774,
+          -361.28
+        ],
+        "yaw": -1.5708,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-covered.png",
+      "frames": {
+        "url": "http://127.0.0.1:53155/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 10000,
+        "frames": 290,
+        "engineFrames": 290,
+        "sampled": 290,
+        "dropped": 0,
+        "windowMs": 10004.548,
+        "fps": 28.986816795721303,
+        "meanMs": 34.49805517241379,
+        "medianMs": 34.6910018920898,
+        "p95Ms": 37.6730003356934,
+        "p99Ms": 39.1040000915527,
+        "worstMs": 39.768,
+        "bestMs": 30.643,
+        "engine": {
+          "displayServer": "Windows",
+          "headless": false,
+          "maxFps": 0,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingMethod": "forward_plus",
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "peers": {
+        "instances": [
+          {
+            "pid": 31084,
+            "kind": "game",
+            "instance": "lit-review-candidate-release035",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\1ff3d34506dd\\game-lit-review-candidate-release035.log",
+            "inspectionUrl": "http://127.0.0.1:53155/inspect",
+            "inspectPort": 53155,
+            "startedAt": "2026-10-07T01:37:08.539Z",
+            "sessionId": "s-muxfi77q-495e4cecc912",
+            "processStartToken": "Tuesday, October 6, 2026 9:37:08 PM",
+            "alive": true
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "id": "contact",
+        "position": [
+          -400,
+          -15.582,
+          -399
+        ],
+        "yaw": -1.1,
+        "pitch": -0.5,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-contact.png",
+      "frames": {
+        "url": "http://127.0.0.1:53155/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 10000,
+        "frames": 416,
+        "engineFrames": 416,
+        "sampled": 416,
+        "dropped": 0,
+        "windowMs": 10015.924,
+        "fps": 41.53386147898087,
+        "meanMs": 24.076473557692307,
+        "medianMs": 23.7299995422363,
+        "p95Ms": 27.0729999542236,
+        "p99Ms": 28.9979991912842,
+        "worstMs": 30.763,
+        "bestMs": 20.714,
+        "engine": {
+          "displayServer": "Windows",
+          "headless": false,
+          "maxFps": 0,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingMethod": "forward_plus",
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "peers": {
+        "instances": [
+          {
+            "pid": 31084,
+            "kind": "game",
+            "instance": "lit-review-candidate-release035",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\1ff3d34506dd\\game-lit-review-candidate-release035.log",
+            "inspectionUrl": "http://127.0.0.1:53155/inspect",
+            "inspectPort": 53155,
+            "startedAt": "2026-10-07T01:37:08.539Z",
+            "sessionId": "s-muxfi77q-495e4cecc912",
+            "processStartToken": "Tuesday, October 6, 2026 9:37:08 PM",
+            "alive": true
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "id": "gameplay",
+        "position": [
+          -406.027852,
+          -15.6,
+          -384.99851
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-gameplay.png",
+      "frames": {
+        "url": "http://127.0.0.1:53155/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 10000,
+        "frames": 739,
+        "engineFrames": 739,
+        "sampled": 739,
+        "dropped": 0,
+        "windowMs": 10011.969,
+        "fps": 73.81165483033358,
+        "meanMs": 13.547768606224627,
+        "medianMs": 13.3269996643066,
+        "p95Ms": 17.0970001220703,
+        "p99Ms": 20.5,
+        "worstMs": 42.199,
+        "bestMs": 7.511,
+        "engine": {
+          "displayServer": "Windows",
+          "headless": false,
+          "maxFps": 0,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingMethod": "forward_plus",
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "peers": {
+        "instances": [
+          {
+            "pid": 31084,
+            "kind": "game",
+            "instance": "lit-review-candidate-release035",
+            "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006",
+            "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\1ff3d34506dd\\game-lit-review-candidate-release035.log",
+            "inspectionUrl": "http://127.0.0.1:53155/inspect",
+            "inspectPort": 53155,
+            "startedAt": "2026-10-07T01:37:08.539Z",
+            "sessionId": "s-muxfi77q-495e4cecc912",
+            "processStartToken": "Tuesday, October 6, 2026 9:37:08 PM",
+            "alive": true
+          }
+        ]
+      }
+    },
+    {
+      "view": {
+        "id": "tree-close",
+        "position": [
+          -401,
+          -14.8,
+          -386.6
+        ],
+        "yaw": 0,
+        "pitch": 0.32,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-tree-close.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "tree-mid",
+        "position": [
+          -401,
+          -15.58,
+          -378
+        ],
+        "yaw": 0,
+        "pitch": 0.1,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-tree-mid.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "tree-far",
+        "position": [
+          -401,
+          -15.58,
+          -351
+        ],
+        "yaw": 0,
+        "pitch": 0.04,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-tree-far.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "street-cars-trees",
+        "position": [
+          -405,
+          -15.58,
+          -363
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-street-cars-trees.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "bark-close",
+        "position": [
+          -401,
+          -15.5,
+          -389.15
+        ],
+        "yaw": 0,
+        "pitch": 0.15,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-bark-close.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "car-close",
+        "position": [
+          -400.5,
+          -15.9,
+          -367
+        ],
+        "yaw": 0,
+        "pitch": -0.12,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-car-close.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "car-mid",
+        "position": [
+          -400.5,
+          -15.58,
+          -361
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-car-mid.png",
+      "frames": null
+    },
+    {
+      "view": {
+        "id": "car-far",
+        "position": [
+          -400.5,
+          -15.58,
+          -346
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "fov": 75
+      },
+      "file": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006/artifacts/lit-review/candidate-release035-car-far.png",
+      "frames": null
+    }
+  ],
+  "files": [
+    "main-outdoor.png",
+    "main-outdoor-inventory.json",
+    "main-outdoor-capture.json",
+    "main-covered.png",
+    "main-covered-inventory.json",
+    "main-covered-capture.json",
+    "main-contact.png",
+    "main-contact-inventory.json",
+    "main-contact-capture.json",
+    "main-gameplay.png",
+    "main-gameplay-inventory.json",
+    "main-gameplay-capture.json",
+    "main-tree-close.png",
+    "main-tree-close-inventory.json",
+    "main-tree-close-capture.json",
+    "main-tree-mid.png",
+    "main-tree-mid-inventory.json",
+    "main-tree-mid-capture.json",
+    "main-tree-far.png",
+    "main-tree-far-inventory.json",
+    "main-tree-far-capture.json",
+    "main-street-cars-trees.png",
+    "main-street-cars-trees-inventory.json",
+    "main-street-cars-trees-capture.json",
+    "main-bark-close.png",
+    "main-bark-close-inventory.json",
+    "main-bark-close-capture.json",
+    "main-car-close.png",
+    "main-car-close-inventory.json",
+    "main-car-close-capture.json",
+    "main-car-mid.png",
+    "main-car-mid-inventory.json",
+    "main-car-mid-capture.json",
+    "main-car-far.png",
+    "main-car-far-inventory.json",
+    "main-car-far-capture.json",
+    "main-shimmer-00.png",
+    "main-shimmer-01.png",
+    "main-shimmer-02.png",
+    "main-shimmer-03.png",
+    "main-shimmer-04.png",
+    "main-shimmer-05.png",
+    "main-shimmer-06.png",
+    "main-shimmer-07.png",
+    "main-motion-tree-close.mp4",
+    "main-motion-tree-close.json",
+    "main-motion-tree-mid.mp4",
+    "main-motion-tree-mid.json",
+    "main-motion-tree-far.mp4",
+    "main-motion-tree-far.json",
+    "main-motion-car-close.mp4",
+    "main-motion-car-close.json",
+    "main-motion-car-mid.mp4",
+    "main-motion-car-mid.json",
+    "main-motion-car-far.mp4",
+    "main-motion-car-far.json",
+    "candidate-outdoor.png",
+    "candidate-outdoor-inventory.json",
+    "candidate-outdoor-capture.json",
+    "candidate-covered.png",
+    "candidate-covered-inventory.json",
+    "candidate-covered-capture.json",
+    "candidate-contact.png",
+    "candidate-contact-inventory.json",
+    "candidate-contact-capture.json",
+    "candidate-gameplay.png",
+    "candidate-gameplay-inventory.json",
+    "candidate-gameplay-capture.json",
+    "candidate-tree-close.png",
+    "candidate-tree-close-inventory.json",
+    "candidate-tree-close-capture.json",
+    "candidate-tree-mid.png",
+    "candidate-tree-mid-inventory.json",
+    "candidate-tree-mid-capture.json",
+    "candidate-tree-far.png",
+    "candidate-tree-far-inventory.json",
+    "candidate-tree-far-capture.json",
+    "candidate-street-cars-trees.png",
+    "candidate-street-cars-trees-inventory.json",
+    "candidate-street-cars-trees-capture.json",
+    "candidate-bark-close.png",
+    "candidate-bark-close-inventory.json",
+    "candidate-bark-close-capture.json",
+    "candidate-car-close.png",
+    "candidate-car-close-inventory.json",
+    "candidate-car-close-capture.json",
+    "candidate-car-mid.png",
+    "candidate-car-mid-inventory.json",
+    "candidate-car-mid-capture.json",
+    "candidate-car-far.png",
+    "candidate-car-far-inventory.json",
+    "candidate-car-far-capture.json",
+    "candidate-shimmer-00.png",
+    "candidate-shimmer-01.png",
+    "candidate-shimmer-02.png",
+    "candidate-shimmer-03.png",
+    "candidate-shimmer-04.png",
+    "candidate-shimmer-05.png",
+    "candidate-shimmer-06.png",
+    "candidate-shimmer-07.png",
+    "candidate-motion-tree-close.mp4",
+    "candidate-motion-tree-close.json",
+    "candidate-motion-tree-mid.mp4",
+    "candidate-motion-tree-mid.json",
+    "candidate-motion-tree-far.mp4",
+    "candidate-motion-tree-far.json",
+    "candidate-motion-car-close.mp4",
+    "candidate-motion-car-close.json",
+    "candidate-motion-car-mid.mp4",
+    "candidate-motion-car-mid.json",
+    "candidate-motion-car-far.mp4",
+    "candidate-motion-car-far.json",
+    "prototype-baked-car.png",
+    "prototype-baked-street.png",
+    "prototype-baked-car-sunlit.png",
+    "prototype-baked-car-taxi.png"
+  ],
+  "mapMode": "Both passes force the live runtime map builder (GODMODE_PREBUILT_ARENA=0); cached packed materials cannot contaminate the baseline. These timings compare that matched live-builder workload, not the exported release workload.",
+  "cameraNote": "Eleven architectural camera inventories match exactly. Gameplay uses the live player camera at the same position and nominal rotation; the candidate has under 0.001 rad of momentary camera rotation from live presentation. Actor positions differ between runs.",
+  "atlas": "Production views retain the existing full atlas; denser low-ambient cropped audit follows separately. No full bake was run.",
+  "motion": "Native viewport readback at real elapsed-time camera positions; variable timestamp encoding, no interpolation/resizing. Per-clip JSON reports timestamps, missed capture intervals and readback overhead. FPS is measured separately.",
+  "prototypeNote": "The historic prototype-baked-car-sunlit filename is retained, but the car is largely shaded. It is not a strong directly sunlit-car comparison.",
+  "fps": "Uncapped, vsync off, 10-second samples after 10-second warmup. Per-view peer records are attached to captures; results describe this machine and shared load at collection time."
+}
