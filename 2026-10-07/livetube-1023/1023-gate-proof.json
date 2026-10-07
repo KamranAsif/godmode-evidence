@@ -1,0 +1,36 @@
+{
+  "affectedGate": {
+    "label": "1023-latest-main-affected",
+    "command": "pnpm test:unit && pnpm --filter @godmode/godot-cli test",
+    "code": 0,
+    "timedOut": false,
+    "endedAt": "2026-10-07T19:34:00.477Z"
+  },
+  "pr": 1023,
+  "head": "38c6f6cc1f9bceff1d14a8840cb723108f49d93f",
+  "tree": "654992b083ce380ee365c2ba3f1cbf6a9abed069",
+  "fullRoot": {
+    "head": "c27c14380b73f0ad54385c83bb458462e42f30e0",
+    "tree": "201a4feacd5c513b7220d714022530e65752e28b",
+    "base": "7636a810977061ba5886c79974562ea5242953e3",
+    "passed": 12,
+    "exit": {
+      "label": "1023-full-root",
+      "command": "pnpm test",
+      "code": 1,
+      "timedOut": false,
+      "endedAt": "2026-10-07T19:15:39.760Z"
+    },
+    "retry": {
+      "label": "1023-cli-lock-retry",
+      "command": "pnpm --filter @godmode/godot-cli test",
+      "code": 0,
+      "timedOut": false,
+      "endedAt": "2026-10-07T19:22:17.807Z"
+    }
+  },
+  "treeMatchesFullTest": false,
+  "policy": "Arena bake/export forbidden for PRs; pnpm test uses release-only arena preparation from #1041. Arena freshness/fingerprint accepted stale. Rebase passes remain valid unless affected code changes.",
+  "captureManifest": "1023-capture-manifest.json",
+  "checkedAt": "2026-10-07T19:34:24.260Z"
+}
