@@ -1,0 +1,70 @@
+{
+  "head": "8da621244062d3fedaf75105768fb4312921c065",
+  "tree": "0e8ea2af33d7af7f4d8320ea23d4877bc3576901",
+  "passed": true,
+  "defaultRoot": "13/13",
+  "defaultSceneSmoke": true,
+  "headlessAudioReports": 12,
+  "generationBypass": false,
+  "receipts": {
+    "root-final-binding.json": "a1d57469643394c7695b4828931f424545306058a85c09a5142142e730bbec0e",
+    "pnpm-test-account-client-final.log": "2764d3670ffcb08b5d053bc4b517948f3956a4ca41c15628f6fbf53ce76dfc4a",
+    "juice-weapon-final-smoke4-proof.json": "33ba55a288d1d6711c5f4c720ce390eec0e3181fdaada8151de15aec7075dc12",
+    "juice-weapon-final-smoke4-observed.json": "4446a2079e36fb9aa2f006a7770e47fa32c5fd54273e09a90053a5dbd3b5c0bb",
+    "juice-audio-main-integration4-proof.json": "672a05b34693f44815c3e4efad334fe1ff7ea9541ccc617443c66f1de622f424",
+    "juice-audio-main-integration4-observed.json": "387e0780c8b867b3b388455f38fc67b8868097a6f2dac105ac6e1245608b8069",
+    "juice-audio-main-integration1-proof.json": "4aa936d9331e6d747c6afd1dada5859d414b03d557e58659c6d559cd78766994",
+    "juice-audio-main-integration2-proof.json": "fcc16c655373bd3baa44dc0baca391f6e5f64bacf2456506c2ac7e3fed501d49",
+    "juice-audio-main-integration2-diagnostics.json": "12244cf99c346d8e8e24ba956dd3c62dd57a314d6e06ab78593c6e782ea87e0a",
+    "juice-audio-main-integration4-diagnostics.json": "f1ab7a35fd93e3e9dd52e63440520be9311635e4647f52c53467ff3c1a983e70",
+    "audio_client.ts": "c5faedb86668bfdf61a402a6d548834cd3dbb4d90c1f902fa54b940095064524",
+    "current-integration.mjs": "72ca49b25ac49a0dfc385b7c08fb238ec3fef08995674bf2d917d18e4fa13c14"
+  },
+  "scope": "Current-head default root, normal-game smoke, and headless production audio API/pool/bus integration. Captured vision producer remains 1e; no new rendered/audible-quality claim.",
+  "defaultSmokeOtherErrors": [
+    "ERROR: Condition \"!actions.custom_samplers.has(function->arguments[j].tex_builtin)\" is true. Continuing."
+  ],
+  "audioOtherErrors": [
+    "ERROR: Condition \"!actions.custom_samplers.has(function->arguments[j].tex_builtin)\" is true. Continuing."
+  ],
+  "defaultStop": {
+    "schemaVersion": 1,
+    "ok": true,
+    "message": "Stopped game (pid 17252)",
+    "data": {
+      "pid": 17252,
+      "kind": "game",
+      "instance": "juice-weapon-final-smoke4",
+      "projectPath": "D:\\work\\godmode-roguelite-worktrees\\juice-weapon-layers",
+      "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\b412b60c9f92\\game-juice-weapon-final-smoke4.log",
+      "inspectionUrl": "http://127.0.0.1:50570/inspect",
+      "inspectPort": 50570,
+      "startedAt": "2026-10-07T16:06:06.734Z",
+      "sessionId": "juice-147",
+      "processStartToken": "Wednesday, October 7, 2026 12:06:06 PM",
+      "forced": true
+    }
+  },
+  "audioStop": {
+    "schemaVersion": 1,
+    "ok": true,
+    "message": "Stopped game (pid 48424)",
+    "data": {
+      "pid": 48424,
+      "kind": "game",
+      "instance": "juice-audio-main-integration4",
+      "projectPath": "D:\\work\\godmode-roguelite-worktrees\\juice-weapon-layers",
+      "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\b412b60c9f92\\game-juice-audio-main-integration4.log",
+      "inspectionUrl": "http://127.0.0.1:50670/inspect",
+      "inspectPort": 50670,
+      "startedAt": "2026-10-07T16:06:30.682Z",
+      "sessionId": "juice-147",
+      "processStartToken": "Wednesday, October 7, 2026 12:06:30 PM",
+      "forced": true
+    }
+  },
+  "fixtureSetupFailures": [
+    "Attempt1 observed zero new voices at rifle6 after killall; no pause diagnostic was captured, so the proposed pause cause is unconfirmed.",
+    "Attempt2 was unpaused but counted an unrelated untrimmed voice between separate CLI observations. Final fixture brackets the production call with atomic pool observations; requirements remain two near voices, one far voice and nominal/reset ceilings."
+  ]
+}
