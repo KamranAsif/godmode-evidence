@@ -1,0 +1,122 @@
+{
+  "kind": "1080p30 six-view native-speed review tour",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "frameRate": 30,
+  "order": [
+    "tree-close",
+    "tree-mid",
+    "tree-far",
+    "car-close",
+    "car-mid",
+    "car-far"
+  ],
+  "sources": [
+    {
+      "file": "main-v5-far-car-clear-motion-tree-close.mp4",
+      "sha256": "d1d7e7a4be6e996643b79c51eda4eb5353a6ebc1adbfee487fec0aad0982c65c",
+      "elapsedSeconds": 5.018524,
+      "timing": {
+        "capturedFrames": 138,
+        "meanGapMs": 36.39216788321168,
+        "maxGapMs": 221.3639999999999,
+        "targetIntervalsMissed": 24,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "main-v5-far-car-clear-motion-tree-mid.mp4",
+      "sha256": "81ea17f58eec33b3579f72da88b499fa8ffbc42faf10194fb8dc816b9e5dd02f",
+      "elapsedSeconds": 5.012879,
+      "timing": {
+        "capturedFrames": 126,
+        "meanGapMs": 38.352176,
+        "maxGapMs": 211.77599999999995,
+        "targetIntervalsMissed": 10,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "main-v5-far-car-clear-motion-tree-far.mp4",
+      "sha256": "d5782982ec4655c10738fdd059cd579a61821bb7aada51a01a228eb99ae0391f",
+      "elapsedSeconds": 5.040828,
+      "timing": {
+        "capturedFrames": 84,
+        "meanGapMs": 60.02090361445783,
+        "maxGapMs": 299.7160000000001,
+        "targetIntervalsMissed": 65,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "main-v5-far-car-clear-motion-car-close.mp4",
+      "sha256": "a9bd166df057a285cdb5c113e3c8aafea88fb8a94d1b369ebbb553effb36657e",
+      "elapsedSeconds": 5.023325,
+      "timing": {
+        "capturedFrames": 94,
+        "meanGapMs": 53.46498924731183,
+        "maxGapMs": 185.6049999999998,
+        "targetIntervalsMissed": 47,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "main-v5-far-car-clear-motion-car-mid.mp4",
+      "sha256": "99ef73596ab0dfb6feff07ab971110ef8ad4b387b86f34f55d5211adcd6f6abe",
+      "elapsedSeconds": 5.038124,
+      "timing": {
+        "capturedFrames": 115,
+        "meanGapMs": 43.870026315789474,
+        "maxGapMs": 207.41800000000055,
+        "targetIntervalsMissed": 12,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "main-v5-far-car-clear-motion-car-far.mp4",
+      "sha256": "a572af5bdfc7ed17b534149539ac8ae1b87531541a16c89cf15bb0b44eb3fe94",
+      "elapsedSeconds": 5.016451,
+      "timing": {
+        "capturedFrames": 118,
+        "meanGapMs": 42.47305128205128,
+        "maxGapMs": 111.51200000000006,
+        "targetIntervalsMissed": 5,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    }
+  ],
+  "sha256": "35b739d096eeebf506930cf5eba1c1ef443beb6b8fc30936a0af943632cce4e5",
+  "command": [
+    "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006\\artifacts\\lit-review\\main-v5-far-car-clear-tour.ffconcat",
+    "-vf",
+    "fps=30",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "12",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006\\artifacts\\lit-review\\main-v5-far-car-clear-motion-tour-1080p30.mp4"
+  ],
+  "interpolation": false,
+  "note": "Straight cuts between the six native-time source clips. Constant30fps duplicates/drops existing images to match elapsed time; no optical interpolation, image scaling or change to playback speed. Original VFR sources and receipts are published separately."
+}

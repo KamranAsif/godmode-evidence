@@ -1,0 +1,35 @@
+{
+  "kind": "1920x1080 constant 30fps playback copy of native-time VFR evidence",
+  "nativeSource": "main-far-car-v5-motion-car-far.mp4",
+  "nativeSha256": "a572af5bdfc7ed17b534149539ac8ae1b87531541a16c89cf15bb0b44eb3fe94",
+  "nativeTiming": {
+    "capturedFrames": 118,
+    "meanGapMs": 42.47305128205128,
+    "maxGapMs": 111.51200000000006,
+    "targetIntervalsMissed": 5,
+    "encoderDuplicates": 1,
+    "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+  },
+  "sha256": "073e3693ad3264a87cace794ebc5ceb383804699695b9196ccded4182783f348",
+  "command": [
+    "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-i",
+    "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006\\artifacts\\lit-review\\main-far-car-v5-motion-car-far.mp4",
+    "-vf",
+    "fps=30",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "12",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006\\artifacts\\lit-review\\main-far-car-v5-motion-car-far-30fps.mp4"
+  ],
+  "interpolation": false,
+  "note": "Original elapsed timestamps retained at normal playback speed. CFR duplicates or drops existing native images as needed; no optical interpolation. Original VFR MP4 and detailed per-frame receipts remain available."
+}
