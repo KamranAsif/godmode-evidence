@@ -1,0 +1,136 @@
+{
+  "capturedSource": "e070759ae",
+  "capturedBase": "eedca1770",
+  "method": "Native PrintWindow 30 Hz, real simulation clock, no inspection polling during movies",
+  "note": "Final branch rebased onto 4fba2d834 after capture; completed inbound-preview cleanup and standard gunship exit-glitch conditional are CPU-validated after capture.",
+  "clips": [
+    {
+      "name": "standard-two-click-v4",
+      "sourceSha256": "f200020ff49217c18cccc8f04058872b36418d92d91704c38319490de0b27898",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:04:58.8302196Z",
+      "elapsedMs": 9983
+    },
+    {
+      "name": "standard-predator-thermal-v3",
+      "sourceSha256": "8df4fc97cbd8506f5f034dbccafecdc8f4f9d93d234db7320a3242d2c4eaac62",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:03:57.8261807Z",
+      "elapsedMs": 9991
+    },
+    {
+      "name": "standard-heli-thermal-v3",
+      "sourceSha256": "83eb3e5654eb7a967fba6ea179fe37420d5e87cf8a34c12ef41c1994931ed17c",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:05:14.4453098Z",
+      "elapsedMs": 9985
+    },
+    {
+      "name": "standard-ac130-thermal-v3",
+      "sourceSha256": "73ba50c8ffb3afcbfd2b614cc4793beeb5ed67fef6a68a4499bd43e5333994a0",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:06:04.2898645Z",
+      "elapsedMs": 9996
+    },
+    {
+      "name": "prototype-two-click-v4",
+      "sourceSha256": "f33e0d7deb0bb06db1073827d6250358e4a93e327f19c02a1c4f4861f2ae42d4",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:03:26.5033670Z",
+      "elapsedMs": 9986
+    },
+    {
+      "name": "prototype-predator-ads-v3",
+      "sourceSha256": "b6d2f0f1394a9e6fc4d7aa3334c6b2cff17c71fea2db4b3a88d39aedc7c28853",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:03:42.6197839Z",
+      "elapsedMs": 9980
+    },
+    {
+      "name": "prototype-heli-ads-v3",
+      "sourceSha256": "8262b2d5e588fd0eef2a1cb6c9079a6534a97ed68bc677c48cfc87aad890ae88",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:04:28.9909207Z",
+      "elapsedMs": 10001
+    },
+    {
+      "name": "prototype-ac130-ads-v3",
+      "sourceSha256": "575dd81926013d0e89a8b39ee4e5c4c0e5972f283f018d2718c332984b4daa24",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:04:44.6369890Z",
+      "elapsedMs": 10001
+    },
+    {
+      "name": "prototype-predator-cover-ads-v3",
+      "sourceSha256": "f69c1cddbbbdd47c51c4bc299b5e4dc3207d860b262e7db6c373d228c82de77c",
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 300,
+      "captureStartedAt": "2026-10-07T14:04:13.3253039Z",
+      "elapsedMs": 9984
+    }
+  ],
+  "outputs": [
+    {
+      "name": "current-flow-comparison-final-1080p30",
+      "parts": [
+        "standard-two-click-v4",
+        "standard-predator-thermal-v3",
+        "standard-heli-thermal-v3",
+        "standard-ac130-thermal-v3"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 1200,
+      "seconds": 40,
+      "bytes": 13587848,
+      "sha256": "80ad48c5596fb3f7a36a8b6c208538f52e7ff9332d45f9dd2e186006ee3d23a8"
+    },
+    {
+      "name": "prototype-flow-comparison-final-1080p30",
+      "parts": [
+        "prototype-two-click-v4",
+        "prototype-predator-ads-v3",
+        "prototype-heli-ads-v3",
+        "prototype-ac130-ads-v3",
+        "prototype-predator-cover-ads-v3"
+      ],
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 1500,
+      "seconds": 50,
+      "bytes": 25158081,
+      "sha256": "7e9dbee0b23843110ebbde0c84f9ccd24cc5993ca7ff54bec6fedfe6fda7dfa8"
+    }
+  ],
+  "validatedCommit": "8060f75ef772de9cfb0b2263c6a2d140384764f0",
+  "validatedTree": "4792caa6fc4a886096e21427f2000a2d62e814ad",
+  "validation": "Guarded pnpm test13/13; native contact-sheet review for all9clips; full decode and expected frame counts for both deliverables; earlier headless movement/default-cover/bail smoke PASS."
+}
