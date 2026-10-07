@@ -1,0 +1,135 @@
+{
+  "validatedUtc": "2026-10-07T09:08:04.311Z",
+  "branch": "art/roguelite-lit-textures-stronger-20261007",
+  "sourceCommit": "c69e90aabcbd077a8095bd322aa41d29e1a7cad0",
+  "mainBase": "d69194b2c0c10b815f9f42057121428b21b943d0",
+  "captureCommit": "68118b6c4e2e0b3c6be875334b12ee1eed2d8dfb",
+  "preservedCaptureBranch": "recovery/lit-textures-stronger-20261007-captured",
+  "capturedMaterialFilesByteIdenticalAfterRebase": [
+    "scripts/client/faceted_surface.ts",
+    "scripts/environment_modules/furniture_materials.ts",
+    "assets/maps/western_block/faceted-surface.gdshaderinc",
+    "assets/shaders/vehicle_paint.gdshader",
+    "ART_STYLE.md"
+  ],
+  "rebaseChangedFilesOnly": [
+    "scripts/client/stream_overlay.ts",
+    "scripts/hud_layout.ts",
+    "tests/unit/hud-layout.test.mjs"
+  ],
+  "checks": {
+    "format": "pnpm format PASS; tracked tree clean",
+    "fullBuild": "pnpm build PASS",
+    "generatedArena": {
+      "ok": true,
+      "verify": false,
+      "output": "assets/maps/dumbo/prebuilt",
+      "client": {
+        "nodes": 24874,
+        "fingerprint": "2606388498",
+        "buildMs": 97271,
+        "loadMs": 16980,
+        "expandedSoups": 5,
+        "importedTextures": 20,
+        "expansion": {
+          "position": 0.00006103515625,
+          "normal": 0.00020714104175567627
+        },
+        "matches": true,
+        "differences": []
+      },
+      "server": {
+        "nodes": 4171,
+        "fingerprint": "1276010704",
+        "buildMs": 3361,
+        "loadMs": 179,
+        "expandedSoups": 0,
+        "importedTextures": 0,
+        "expansion": {
+          "position": 0,
+          "normal": 0
+        },
+        "matches": true,
+        "differences": []
+      }
+    },
+    "prebuiltCurrent": {
+      "ok": true,
+      "receipt": "assets/maps/dumbo/prebuilt/receipt.json"
+    },
+    "lint": "pnpm lint PASS; 0 errors, 5 existing max-lines warnings",
+    "units": {
+      "command": "node --test study-lighting-output, study-lighting-scope, hud-layout; separately lighting-atlases",
+      "passed": 33,
+      "failed": 0
+    },
+    "headlessSmoke": "PASS: rebased production atlas/prebuilt survival loaded with a live player and zero script errors"
+  },
+  "headlessSmoke": {
+    "launch": {
+      "pid": 26628,
+      "kind": "game",
+      "instance": "lit-textures-stronger-smoke",
+      "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-stronger-20261007",
+      "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\12740a3a9117\\game-lit-textures-stronger-smoke.log",
+      "inspectionUrl": "http://127.0.0.1:50549/inspect",
+      "inspectPort": 50549,
+      "startedAt": "2026-10-07T09:03:14.630Z",
+      "sessionId": "lit-textures-stronger-final-smoke-20261007",
+      "processStartToken": "Wednesday, October 7, 2026 5:03:14 AM"
+    },
+    "stop": {
+      "pid": 26628,
+      "kind": "game",
+      "instance": "lit-textures-stronger-smoke",
+      "projectPath": "D:\\work\\godmode-roguelite-worktrees\\lit-textures-stronger-20261007",
+      "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\12740a3a9117\\game-lit-textures-stronger-smoke.log",
+      "inspectionUrl": "http://127.0.0.1:50549/inspect",
+      "inspectPort": 50549,
+      "startedAt": "2026-10-07T09:03:14.630Z",
+      "sessionId": "lit-textures-stronger-final-smoke-20261007",
+      "processStartToken": "Wednesday, October 7, 2026 5:03:14 AM",
+      "forced": true
+    }
+  },
+  "finalStoppedProof": {
+    "checkedUtc": "2026-10-07T09:05:25.140Z",
+    "stopped": [
+      {
+        "session": "lit-textures-stronger-slot2-20261007",
+        "result": {
+          "sessionId": "lit-textures-stronger-slot2-20261007",
+          "engines": 0,
+          "stopped": [],
+          "recordsRemoved": 0
+        }
+      },
+      {
+        "session": "lit-textures-stronger-final-smoke-20261007",
+        "result": {
+          "sessionId": "lit-textures-stronger-final-smoke-20261007",
+          "engines": 0,
+          "stopped": [],
+          "recordsRemoved": 0
+        }
+      },
+      {
+        "session": "s-muxvh20z-ea803b7c2525",
+        "result": {
+          "sessionId": "s-muxvh20z-ea803b7c2525",
+          "engines": 0,
+          "stopped": [],
+          "recordsRemoved": 0
+        }
+      }
+    ],
+    "managed": {
+      "instances": []
+    },
+    "native": [],
+    "ownedEngineCount": 0
+  },
+  "spatial": "Native 1920x1080 self-check only; no visible repeat/grid/seam found in ten views and eight moving-camera stills per variant.",
+  "temporal": "UNVERIFIED continuous playback. Stronger A/B adds stills only; no new MP4 is claimed.",
+  "mergeGate": "Do not merge until Kamran chooses and approves the look."
+}
