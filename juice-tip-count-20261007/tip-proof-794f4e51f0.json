@@ -1,0 +1,6914 @@
+{
+  "captureCandidateHead": "899732c4683887dc977ab4fee7ee8c91d52f330b",
+  "captureCandidateTree": "bc455736b3a95e8b3fe7a4516b4b95b19c29f50f",
+  "captureBase": "24bb855f4ad9f1aa5e12e67410fcfecfe92c25a6",
+  "controlHead": "bfcb267190b4be15c72e4a196a44a202524ea83f",
+  "controlTree": "ec1aabbfcf4364014ff67053db26787f74a41b1a",
+  "sourceHashes": {
+    "scripts/hud_layout.ts": "2f63f559b4d725199a22241c6e7f60c2225ca31e74338ab4bdc0ae0ce8084b9e",
+    "scripts/client/stream_overlay.ts": "d8de358f0185a5077c9ee5cd93c3a34472fa724a05fa80f239c97aee5b81670d",
+    "tests/unit/hud-layout.test.mjs": "e9b1db985efea1fc36a829f73e2466b0c9a6ac7a58105211e8170752cbe13629"
+  },
+  "runs": {
+    "before": {
+      "pid": 40652,
+      "instance": "juice-tip-control",
+      "timing": {
+        "capturedFrames": 80,
+        "meanGapMs": 101.00459493670886,
+        "maxGapMs": 226.98399999999987,
+        "targetIntervalsMissed": 173,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-tip\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-tip.mp4"
+        ],
+        "sha256": "02d88628e438bd3a4d22d3832b7f841eab099af556d49b59c94a020dd148a19c",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "seconds": 0.065932,
+          "serverTimeMs": 16737.0,
+          "tips": 0.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$0",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 1,
+          "seconds": 0.162052,
+          "serverTimeMs": 16835.0,
+          "tips": 0.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$0",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 2,
+          "seconds": 0.256017,
+          "serverTimeMs": 16928.0,
+          "tips": 0.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$0",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 3,
+          "seconds": 0.352213,
+          "serverTimeMs": 17021.0,
+          "tips": 0.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$0",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 4,
+          "seconds": 0.505307,
+          "serverTimeMs": 17118.0,
+          "tips": 25.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$25",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 5,
+          "seconds": 0.594099,
+          "serverTimeMs": 17267.0,
+          "tips": 25.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$25",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 6,
+          "seconds": 0.708939,
+          "serverTimeMs": 17358.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 7,
+          "seconds": 0.795411,
+          "serverTimeMs": 17470.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 8,
+          "seconds": 0.884535,
+          "serverTimeMs": 17558.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 9,
+          "seconds": 0.974402,
+          "serverTimeMs": 17649.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 10,
+          "seconds": 1.064401,
+          "serverTimeMs": 17739.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 11,
+          "seconds": 1.161127,
+          "serverTimeMs": 17834.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 12,
+          "seconds": 1.258669,
+          "serverTimeMs": 17926.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 13,
+          "seconds": 1.383639,
+          "serverTimeMs": 18025.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 14,
+          "seconds": 1.476214,
+          "serverTimeMs": 18150.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 15,
+          "seconds": 1.573657,
+          "serverTimeMs": 18246.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 16,
+          "seconds": 1.664531,
+          "serverTimeMs": 18339.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 17,
+          "seconds": 1.755141,
+          "serverTimeMs": 18429.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 18,
+          "seconds": 1.847054,
+          "serverTimeMs": 18520.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 19,
+          "seconds": 1.937407,
+          "serverTimeMs": 18612.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 20,
+          "seconds": 2.029267,
+          "serverTimeMs": 18702.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 21,
+          "seconds": 2.120404,
+          "serverTimeMs": 18794.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 22,
+          "seconds": 2.224931,
+          "serverTimeMs": 18886.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 23,
+          "seconds": 2.355623,
+          "serverTimeMs": 18997.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 24,
+          "seconds": 2.448908,
+          "serverTimeMs": 19122.0,
+          "tips": 30.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 25,
+          "seconds": 2.572023,
+          "serverTimeMs": 19214.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 26,
+          "seconds": 2.661184,
+          "serverTimeMs": 19334.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 27,
+          "seconds": 2.754206,
+          "serverTimeMs": 19429.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 28,
+          "seconds": 2.846643,
+          "serverTimeMs": 19519.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 29,
+          "seconds": 2.936903,
+          "serverTimeMs": 19611.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 30,
+          "seconds": 3.028843,
+          "serverTimeMs": 19701.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 31,
+          "seconds": 3.120562,
+          "serverTimeMs": 19794.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 32,
+          "seconds": 3.219225,
+          "serverTimeMs": 19886.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 33,
+          "seconds": 3.333183,
+          "serverTimeMs": 19985.0,
+          "tips": 40.0,
+          "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 34,
+          "seconds": 3.431801,
+          "serverTimeMs": 20104.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 35,
+          "seconds": 3.524861,
+          "serverTimeMs": 20197.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 36,
+          "seconds": 3.618241,
+          "serverTimeMs": 20290.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 37,
+          "seconds": 3.711596,
+          "serverTimeMs": 20384.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 38,
+          "seconds": 3.803648,
+          "serverTimeMs": 20476.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 39,
+          "seconds": 3.898392,
+          "serverTimeMs": 20569.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 40,
+          "seconds": 3.99273,
+          "serverTimeMs": 20664.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 41,
+          "seconds": 4.085606,
+          "serverTimeMs": 20758.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 42,
+          "seconds": 4.186157,
+          "serverTimeMs": 20850.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 43,
+          "seconds": 4.312216,
+          "serverTimeMs": 20952.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 44,
+          "seconds": 4.406632,
+          "serverTimeMs": 21078.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 45,
+          "seconds": 4.499627,
+          "serverTimeMs": 21172.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 46,
+          "seconds": 4.595929,
+          "serverTimeMs": 21265.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 47,
+          "seconds": 4.690618,
+          "serverTimeMs": 21362.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 48,
+          "seconds": 4.78355,
+          "serverTimeMs": 21455.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 49,
+          "seconds": 4.915133,
+          "serverTimeMs": 21556.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 50,
+          "seconds": 5.00414,
+          "serverTimeMs": 21676.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 51,
+          "seconds": 5.10484,
+          "serverTimeMs": 21773.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 52,
+          "seconds": 5.231514,
+          "serverTimeMs": 21871.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 53,
+          "seconds": 5.328785,
+          "serverTimeMs": 21998.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 54,
+          "seconds": 5.424016,
+          "serverTimeMs": 22094.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 55,
+          "seconds": 5.51922,
+          "serverTimeMs": 22191.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 56,
+          "seconds": 5.612384,
+          "serverTimeMs": 22284.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 57,
+          "seconds": 5.70635,
+          "serverTimeMs": 22378.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 58,
+          "seconds": 5.877345,
+          "serverTimeMs": 22530.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 59,
+          "seconds": 5.975043,
+          "serverTimeMs": 22643.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 60,
+          "seconds": 6.071738,
+          "serverTimeMs": 22740.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 61,
+          "seconds": 6.189415,
+          "serverTimeMs": 22837.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 62,
+          "seconds": 6.288936,
+          "serverTimeMs": 22955.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 63,
+          "seconds": 6.383511,
+          "serverTimeMs": 23054.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 64,
+          "seconds": 6.480523,
+          "serverTimeMs": 23149.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 65,
+          "seconds": 6.57309,
+          "serverTimeMs": 23246.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 66,
+          "seconds": 6.667245,
+          "serverTimeMs": 23339.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 67,
+          "seconds": 6.760422,
+          "serverTimeMs": 23433.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 68,
+          "seconds": 6.852528,
+          "serverTimeMs": 23526.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 69,
+          "seconds": 6.947684,
+          "serverTimeMs": 23618.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 70,
+          "seconds": 7.046901,
+          "serverTimeMs": 23713.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 71,
+          "seconds": 7.273885,
+          "serverTimeMs": 23912.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 72,
+          "seconds": 7.370584,
+          "serverTimeMs": 24040.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 73,
+          "seconds": 7.465925,
+          "serverTimeMs": 24136.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 74,
+          "seconds": 7.561435,
+          "serverTimeMs": 24232.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 75,
+          "seconds": 7.658662,
+          "serverTimeMs": 24327.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 76,
+          "seconds": 7.75375,
+          "serverTimeMs": 24424.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 77,
+          "seconds": 7.848195,
+          "serverTimeMs": 24519.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 78,
+          "seconds": 7.944289,
+          "serverTimeMs": 24614.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 79,
+          "seconds": 8.045295,
+          "serverTimeMs": 24710.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        }
+      ],
+      "deliveredEvents": [
+        {
+          "after": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -539.00390625,
+                  -14.6474609375,
+                  -276.26171875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -285.2001953125,
+                  -16.4248046875,
+                  -433.8662109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -537.166015625,
+                  -14.4833984375,
+                  -275.66796875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 17118.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "we're live!!",
+                    "user": "fps_grandma"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 200.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": true,
+              "overlay": {
+                "alerts": 1.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 0.0,
+                  "viewers": 46.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 48.0,
+              "request": null,
+              "streams": 11.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "",
+              "tipBotQueued": 1.0,
+              "tipCount": 1.0,
+              "tips": 25.0,
+              "viewers": 46.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$0",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 0.420337
+          },
+          "before": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -539.00390625,
+                  -14.6474609375,
+                  -276.26171875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -285.2001953125,
+                  -16.4248046875,
+                  -433.8662109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -537.166015625,
+                  -14.4833984375,
+                  -275.66796875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 17118.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "we're live!!",
+                    "user": "fps_grandma"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 200.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": true,
+              "overlay": {
+                "alerts": 0.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 0.0,
+                  "viewers": 46.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 48.0,
+              "request": null,
+              "streams": 11.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "",
+              "tipBotQueued": 0.0,
+              "tipCount": 0.0,
+              "tips": 0.0,
+              "viewers": 46.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$0",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 0.409943
+          },
+          "request": {
+            "name": "debug_console",
+            "payload": {
+              "run": "stream tip 25"
+            }
+          },
+          "result": {
+            "accepted": true,
+            "freeFly": null,
+            "open": false
+          }
+        },
+        {
+          "after": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -539.328125,
+                  -14.650390625,
+                  -276.365234375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -285.2001953125,
+                  -16.4248046875,
+                  -433.8662109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -537.166015625,
+                  -14.626953125,
+                  -275.66796875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 17358.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "we're live!!",
+                    "user": "fps_grandma"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moss_tea"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 200.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": true,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "moss_tea donated twenty-five dollars: dev console says hi",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 25.0,
+                  "viewers": 46.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 48.0,
+              "request": null,
+              "streams": 11.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+              "tipBotQueued": 0.0,
+              "tipCount": 2.0,
+              "tips": 30.0,
+              "viewers": 46.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$25",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 0.64057
+          },
+          "before": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -539.328125,
+                  -14.650390625,
+                  -276.365234375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -285.2001953125,
+                  -16.4248046875,
+                  -433.8662109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -537.166015625,
+                  -14.626953125,
+                  -275.66796875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 17358.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "we're live!!",
+                    "user": "fps_grandma"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moss_tea"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 200.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": true,
+              "overlay": {
+                "alerts": 1.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "moss_tea donated twenty-five dollars: dev console says hi",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 25.0,
+                  "viewers": 46.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 48.0,
+              "request": null,
+              "streams": 11.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+              "tipBotQueued": 0.0,
+              "tipCount": 1.0,
+              "tips": 25.0,
+              "viewers": 46.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$25",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 0.63005
+          },
+          "request": {
+            "name": "debug_console",
+            "payload": {
+              "run": "stream tip 5"
+            }
+          },
+          "result": {
+            "accepted": true,
+            "freeFly": null,
+            "open": false
+          }
+        },
+        {
+          "after": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -542.4111328125,
+                  -14.68359375,
+                  -277.353515625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -285.2001953125,
+                  -16.4248046875,
+                  -433.8662109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -538.7099609375,
+                  -14.6611328125,
+                  -276.8291015625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -682.572265625,
+                  -15.443359375,
+                  -319.3671875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -654.7001953125,
+                  -15.7578125,
+                  -178.7001953125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 19214.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "we're live!!",
+                    "user": "fps_grandma"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moss_tea"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moth_lamp"
+                  },
+                  {
+                    "text": "back to judge your setup",
+                    "user": "cheatsnob"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 200.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": true,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "moss_tea donated twenty-five dollars: dev console says hi",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 30.0,
+                  "viewers": 45.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 48.0,
+              "request": null,
+              "streams": 11.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+              "tipBotQueued": 1.0,
+              "tipCount": 3.0,
+              "tips": 40.0,
+              "viewers": 45.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$30",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 2.501849
+          },
+          "before": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -542.4111328125,
+                  -14.68359375,
+                  -277.353515625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -285.2001953125,
+                  -16.4248046875,
+                  -433.8662109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -538.7099609375,
+                  -14.6611328125,
+                  -276.8291015625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -682.572265625,
+                  -15.443359375,
+                  -319.3671875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -654.7001953125,
+                  -15.7578125,
+                  -178.7001953125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 19214.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "we're live!!",
+                    "user": "fps_grandma"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moss_tea"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moth_lamp"
+                  },
+                  {
+                    "text": "back to judge your setup",
+                    "user": "cheatsnob"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 200.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": true,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "moss_tea donated twenty-five dollars: dev console says hi",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 30.0,
+                  "viewers": 45.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 48.0,
+              "request": null,
+              "streams": 11.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "moss_tea donated twenty-five dollars: dev console says hi",
+              "tipBotQueued": 0.0,
+              "tipCount": 2.0,
+              "tips": 30.0,
+              "viewers": 45.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$30",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 2.488047
+          },
+          "request": {
+            "name": "debug_console",
+            "payload": {
+              "run": "stream tip 10"
+            }
+          },
+          "result": {
+            "accepted": true,
+            "freeFly": null,
+            "open": false
+          }
+        },
+        {
+          "after": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "windup",
+                "attackPhaseStartedAtMs": 21265.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -545.771484375,
+                  -14.814453125,
+                  -278.4267578125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -285.2001953125,
+                  -16.4248046875,
+                  -433.8662109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -541.982421875,
+                  -14.7451171875,
+                  -279.287109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -678.4794921875,
+                  -15.671875,
+                  -319.4111328125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -653.7802734375,
+                  -15.7998046875,
+                  -181.146484375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e6",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -537.892578125,
+                  -14.6435546875,
+                  -276.21484375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e7",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -706.6591796875,
+                  -16.1455078125,
+                  -350.05859375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 21556.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "we're live!!",
+                    "user": "fps_grandma"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moss_tea"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moth_lamp"
+                  },
+                  {
+                    "text": "back to judge your setup",
+                    "user": "cheatsnob"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "pixelpudding"
+                  },
+                  {
+                    "text": "generous chat today",
+                    "user": "moss_tea"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 200.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": true,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": false,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 40.0,
+                  "viewers": 44.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 48.0,
+              "request": null,
+              "streams": 11.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "",
+              "tipBotQueued": 1.0,
+              "tipCount": 4.0,
+              "tips": 41.0,
+              "viewers": 44.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$40",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 4.845303
+          },
+          "before": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "windup",
+                "attackPhaseStartedAtMs": 21265.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -545.771484375,
+                  -14.814453125,
+                  -278.4267578125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -285.2001953125,
+                  -16.4248046875,
+                  -433.8662109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -541.982421875,
+                  -14.7451171875,
+                  -279.287109375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -678.4794921875,
+                  -15.671875,
+                  -319.4111328125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -653.7802734375,
+                  -15.7998046875,
+                  -181.146484375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e6",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -537.892578125,
+                  -14.6435546875,
+                  -276.21484375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e7",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -706.6591796875,
+                  -16.1455078125,
+                  -350.05859375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 21556.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "we're live!!",
+                    "user": "fps_grandma"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moss_tea"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "moth_lamp"
+                  },
+                  {
+                    "text": "back to judge your setup",
+                    "user": "cheatsnob"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "pixelpudding"
+                  },
+                  {
+                    "text": "generous chat today",
+                    "user": "moss_tea"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 200.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": true,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": false,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 40.0,
+                  "viewers": 44.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 48.0,
+              "request": null,
+              "streams": 11.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "",
+              "tipBotQueued": 1.0,
+              "tipCount": 3.0,
+              "tips": 40.0,
+              "viewers": 44.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$40",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 4.83171
+          },
+          "request": {
+            "name": "debug_console",
+            "payload": {
+              "run": "stream tip 1"
+            }
+          },
+          "result": {
+            "accepted": true,
+            "freeFly": null,
+            "open": false
+          }
+        }
+      ],
+      "selectedPngFrame": 8,
+      "selectedPngSeconds": 0.884535,
+      "selectedPngSha256": "12c566b60efdabbf13b1d3b701a7fd1bc9cbe3b19bece76743695dc19cf3c8c6",
+      "fixtureFiles": {
+        "tip.gd": "fec66f9a6b18a5f658336ed2307062979ba82b5cbf70dd37abc4a3947896158e",
+        "tip.tscn": "a044d8809c3400e5d5c019e1d79d2f59da565e521c39e541ff8062d236b5993f",
+        "tip_client.tscn": "0b5bb675433fdcb9f5683ecdd3fa6ae7d7ee0217887edcf6cde6bdcae5a8dc3b"
+      }
+    },
+    "after": {
+      "pid": 37068,
+      "instance": "juice-tip-candidate",
+      "timing": {
+        "capturedFrames": 72,
+        "meanGapMs": 112.13561971830987,
+        "maxGapMs": 173.30099999999993,
+        "targetIntervalsMissed": 164,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      },
+      "encoding": {
+        "command": [
+          "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+          "-hide_banner",
+          "-y",
+          "-f",
+          "concat",
+          "-safe",
+          "0",
+          "-i",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\after-tip\\frames.ffconcat",
+          "-vf",
+          "fps=30",
+          "-fps_mode",
+          "cfr",
+          "-c:v",
+          "libx264",
+          "-threads",
+          "2",
+          "-preset",
+          "medium",
+          "-crf",
+          "12",
+          "-pix_fmt",
+          "yuv420p",
+          "-movflags",
+          "+faststart",
+          "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\after-tip.mp4"
+        ],
+        "sha256": "c56206c8365dc05983f0328865f55e0faa38ff86b4b816255096d4f7cc086e01",
+        "dimensions": [
+          1920,
+          1080
+        ],
+        "resampling": "Temporal hold/drop to 30fps; native 1920x1080 pixels",
+        "interpolation": false
+      },
+      "samples": [
+        {
+          "frame": 0,
+          "seconds": 0.074002,
+          "serverTimeMs": 12639.0,
+          "tips": 0.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$0",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 1,
+          "seconds": 0.182,
+          "serverTimeMs": 12778.0,
+          "tips": 0.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$0",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 2,
+          "seconds": 0.289862,
+          "serverTimeMs": 12888.0,
+          "tips": 0.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$0",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 3,
+          "seconds": 0.450319,
+          "serverTimeMs": 12993.0,
+          "tips": 25.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$0",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 4,
+          "seconds": 0.55689,
+          "serverTimeMs": 13153.0,
+          "tips": 25.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$14",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 5,
+          "seconds": 0.659384,
+          "serverTimeMs": 13260.0,
+          "tips": 25.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$21",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 6,
+          "seconds": 0.80067,
+          "serverTimeMs": 13366.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$24",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 7,
+          "seconds": 0.908483,
+          "serverTimeMs": 13503.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$27",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 8,
+          "seconds": 1.050804,
+          "serverTimeMs": 13611.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$29",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 9,
+          "seconds": 1.155629,
+          "serverTimeMs": 13754.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$29",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 10,
+          "seconds": 1.32893,
+          "serverTimeMs": 13920.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 11,
+          "seconds": 1.43954,
+          "serverTimeMs": 14033.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 12,
+          "seconds": 1.543168,
+          "serverTimeMs": 14141.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 13,
+          "seconds": 1.650778,
+          "serverTimeMs": 14244.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 14,
+          "seconds": 1.758619,
+          "serverTimeMs": 14357.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 15,
+          "seconds": 1.87277,
+          "serverTimeMs": 14463.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 16,
+          "seconds": 1.998896,
+          "serverTimeMs": 14575.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 17,
+          "seconds": 2.104834,
+          "serverTimeMs": 14703.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 18,
+          "seconds": 2.2285,
+          "serverTimeMs": 14812.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 19,
+          "seconds": 2.347485,
+          "serverTimeMs": 14939.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 20,
+          "seconds": 2.467275,
+          "serverTimeMs": 15055.0,
+          "tips": 30.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 21,
+          "seconds": 2.618913,
+          "serverTimeMs": 15170.0,
+          "tips": 40.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$30",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 22,
+          "seconds": 2.725254,
+          "serverTimeMs": 15323.0,
+          "tips": 40.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$35",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 23,
+          "seconds": 2.830414,
+          "serverTimeMs": 15426.0,
+          "tips": 40.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$38",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 24,
+          "seconds": 2.972792,
+          "serverTimeMs": 15537.0,
+          "tips": 40.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$39",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 25,
+          "seconds": 3.0782,
+          "serverTimeMs": 15675.0,
+          "tips": 40.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 26,
+          "seconds": 3.184112,
+          "serverTimeMs": 15784.0,
+          "tips": 40.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 27,
+          "seconds": 3.295437,
+          "serverTimeMs": 15887.0,
+          "tips": 40.0,
+          "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 28,
+          "seconds": 3.401808,
+          "serverTimeMs": 15999.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 29,
+          "seconds": 3.499321,
+          "serverTimeMs": 16103.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 30,
+          "seconds": 3.602312,
+          "serverTimeMs": 16200.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 31,
+          "seconds": 3.7149,
+          "serverTimeMs": 16304.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 32,
+          "seconds": 3.825264,
+          "serverTimeMs": 16417.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 33,
+          "seconds": 3.959065,
+          "serverTimeMs": 16530.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 34,
+          "seconds": 4.059196,
+          "serverTimeMs": 16660.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 35,
+          "seconds": 4.157927,
+          "serverTimeMs": 16759.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 36,
+          "seconds": 4.257132,
+          "serverTimeMs": 16859.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 37,
+          "seconds": 4.358784,
+          "serverTimeMs": 16958.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 38,
+          "seconds": 4.45756,
+          "serverTimeMs": 17060.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 39,
+          "seconds": 4.55619,
+          "serverTimeMs": 17159.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 40,
+          "seconds": 4.653346,
+          "serverTimeMs": 17256.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 41,
+          "seconds": 4.759939,
+          "serverTimeMs": 17354.0,
+          "tips": 40.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 42,
+          "seconds": 4.918327,
+          "serverTimeMs": 17460.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 43,
+          "seconds": 5.01762,
+          "serverTimeMs": 17618.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 44,
+          "seconds": 5.114921,
+          "serverTimeMs": 17717.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 45,
+          "seconds": 5.219978,
+          "serverTimeMs": 17820.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 46,
+          "seconds": 5.319464,
+          "serverTimeMs": 17920.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$40",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 47,
+          "seconds": 5.418973,
+          "serverTimeMs": 18020.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 48,
+          "seconds": 5.517234,
+          "serverTimeMs": 18119.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 49,
+          "seconds": 5.618051,
+          "serverTimeMs": 18220.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 50,
+          "seconds": 5.72328,
+          "serverTimeMs": 18318.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 51,
+          "seconds": 5.875217,
+          "serverTimeMs": 18425.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 52,
+          "seconds": 5.98757,
+          "serverTimeMs": 18583.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 53,
+          "seconds": 6.091702,
+          "serverTimeMs": 18688.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 54,
+          "seconds": 6.195504,
+          "serverTimeMs": 18793.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 55,
+          "seconds": 6.305326,
+          "serverTimeMs": 18897.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 56,
+          "seconds": 6.409406,
+          "serverTimeMs": 19007.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 57,
+          "seconds": 6.511577,
+          "serverTimeMs": 19111.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 58,
+          "seconds": 6.614532,
+          "serverTimeMs": 19214.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 59,
+          "seconds": 6.749849,
+          "serverTimeMs": 19316.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 60,
+          "seconds": 6.855335,
+          "serverTimeMs": 19451.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 61,
+          "seconds": 6.955845,
+          "serverTimeMs": 19556.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 62,
+          "seconds": 7.057738,
+          "serverTimeMs": 19656.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 63,
+          "seconds": 7.157396,
+          "serverTimeMs": 19759.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 64,
+          "seconds": 7.257714,
+          "serverTimeMs": 19859.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 65,
+          "seconds": 7.357951,
+          "serverTimeMs": 19958.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 66,
+          "seconds": 7.461673,
+          "serverTimeMs": 20060.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 67,
+          "seconds": 7.566293,
+          "serverTimeMs": 20164.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 68,
+          "seconds": 7.683422,
+          "serverTimeMs": 20267.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 69,
+          "seconds": 7.788614,
+          "serverTimeMs": 20389.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 70,
+          "seconds": 7.916037,
+          "serverTimeMs": 20494.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        },
+        {
+          "frame": 71,
+          "seconds": 8.035631,
+          "serverTimeMs": 20619.0,
+          "tips": 41.0,
+          "tipBot": "",
+          "labels": [
+            {
+              "rect": [
+                1156.0,
+                192.0,
+                102.0,
+                17.0
+              ],
+              "scale": [
+                1.0,
+                1.0
+              ],
+              "text": "$41",
+              "visible": true
+            }
+          ]
+        }
+      ],
+      "deliveredEvents": [
+        {
+          "after": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -478.947265625,
+                  -16.40625,
+                  -503.7001953125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -536.5986328125,
+                  -16.2978515625,
+                  -348.2529296875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -462.3251953125,
+                  -15.7177734375,
+                  -463.904296875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 12993.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "hi hi hi",
+                    "user": "quietkeyboard"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 1.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 0.0,
+                  "viewers": 17.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18.0,
+              "request": null,
+              "streams": 0.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "",
+              "tipBotQueued": 1.0,
+              "tipCount": 1.0,
+              "tips": 25.0,
+              "viewers": 17.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$0",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 0.365728
+          },
+          "before": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -478.947265625,
+                  -16.40625,
+                  -503.7001953125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -536.5986328125,
+                  -16.2978515625,
+                  -348.2529296875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -462.3251953125,
+                  -15.7177734375,
+                  -463.904296875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 12993.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "hi hi hi",
+                    "user": "quietkeyboard"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 0.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 0.0,
+                  "viewers": 17.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18.0,
+              "request": null,
+              "streams": 0.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "",
+              "tipBotQueued": 0.0,
+              "tipCount": 0.0,
+              "tips": 0.0,
+              "viewers": 17.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$0",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 0.338531
+          },
+          "request": {
+            "name": "debug_console",
+            "payload": {
+              "run": "stream tip 25"
+            }
+          },
+          "result": {
+            "accepted": true,
+            "freeFly": null,
+            "open": false
+          }
+        },
+        {
+          "after": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -479.1357421875,
+                  -16.408203125,
+                  -503.2265625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -537.1044921875,
+                  -16.2861328125,
+                  -348.197265625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -462.3251953125,
+                  -15.7177734375,
+                  -463.904296875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 13366.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "hi hi hi",
+                    "user": "quietkeyboard"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "cheatsnob"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "cheatsnob donated twenty-five dollars: dev console says hi",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 25.0,
+                  "viewers": 17.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18.0,
+              "request": null,
+              "streams": 0.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+              "tipBotQueued": 0.0,
+              "tipCount": 2.0,
+              "tips": 30.0,
+              "viewers": 17.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$21",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 0.729452
+          },
+          "before": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -479.1357421875,
+                  -16.408203125,
+                  -503.2265625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -537.1044921875,
+                  -16.2861328125,
+                  -348.197265625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -462.3251953125,
+                  -15.7177734375,
+                  -463.904296875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 13366.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "hi hi hi",
+                    "user": "quietkeyboard"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "cheatsnob"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 1.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "cheatsnob donated twenty-five dollars: dev console says hi",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 25.0,
+                  "viewers": 17.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18.0,
+              "request": null,
+              "streams": 0.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+              "tipBotQueued": 0.0,
+              "tipCount": 1.0,
+              "tips": 25.0,
+              "viewers": 17.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$21",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 0.71163
+          },
+          "request": {
+            "name": "debug_console",
+            "payload": {
+              "run": "stream tip 5"
+            }
+          },
+          "result": {
+            "accepted": true,
+            "freeFly": null,
+            "open": false
+          }
+        },
+        {
+          "after": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -480.078125,
+                  -16.4306640625,
+                  -500.853515625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -539.630859375,
+                  -16.2275390625,
+                  -347.9208984375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -463.4033203125,
+                  -15.8984375,
+                  -462.09765625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -400.65625,
+                  -16.7451171875,
+                  -430.974609375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -535.8662109375,
+                  -16.2978515625,
+                  -348.3330078125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 15170.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "hi hi hi",
+                    "user": "quietkeyboard"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "cheatsnob"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "hydrate_bot"
+                  },
+                  {
+                    "text": "hi. reload more this time",
+                    "user": "backseat_bex"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "cheatsnob donated twenty-five dollars: dev console says hi",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 30.0,
+                  "viewers": 17.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18.0,
+              "request": null,
+              "streams": 0.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+              "tipBotQueued": 1.0,
+              "tipCount": 3.0,
+              "tips": 40.0,
+              "viewers": 17.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$30",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 2.542449
+          },
+          "before": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -480.078125,
+                  -16.4306640625,
+                  -500.853515625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -539.630859375,
+                  -16.2275390625,
+                  -347.9208984375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -463.4033203125,
+                  -15.8984375,
+                  -462.09765625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -400.65625,
+                  -16.7451171875,
+                  -430.974609375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -535.8662109375,
+                  -16.2978515625,
+                  -348.3330078125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 15170.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "hi hi hi",
+                    "user": "quietkeyboard"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "cheatsnob"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "hydrate_bot"
+                  },
+                  {
+                    "text": "hi. reload more this time",
+                    "user": "backseat_bex"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": true,
+                "overlay": {
+                  "caption": "cheatsnob donated twenty-five dollars: dev console says hi",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 30.0,
+                  "viewers": 17.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18.0,
+              "request": null,
+              "streams": 0.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "cheatsnob donated twenty-five dollars: dev console says hi",
+              "tipBotQueued": 0.0,
+              "tipCount": 2.0,
+              "tips": 30.0,
+              "viewers": 17.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$30",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 2.517931
+          },
+          "request": {
+            "name": "debug_console",
+            "payload": {
+              "run": "stream tip 10"
+            }
+          },
+          "result": {
+            "accepted": true,
+            "freeFly": null,
+            "open": false
+          }
+        },
+        {
+          "after": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -481.3173828125,
+                  -16.388671875,
+                  -497.513671875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "windup",
+                "attackPhaseStartedAtMs": 17159.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -542.619140625,
+                  -16.2333984375,
+                  -347.5927734375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -465.3134765625,
+                  -16.126953125,
+                  -459.0576171875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -403.90234375,
+                  -16.4912109375,
+                  -432.330078125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -538.7626953125,
+                  -16.255859375,
+                  -348.384765625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e6",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -863.8662109375,
+                  -16.3720703125,
+                  -171.93359375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e7",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -562.8212890625,
+                  -16.310546875,
+                  -463.4599609375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e8",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -535.8662109375,
+                  -16.1162109375,
+                  -348.3330078125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 17460.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "dev console says hi",
+                    "user": "cheatsnob"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "hydrate_bot"
+                  },
+                  {
+                    "text": "hi. reload more this time",
+                    "user": "backseat_bex"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "pebble"
+                  },
+                  {
+                    "text": "this run is doomed, I can feel it",
+                    "user": "doomer_dale"
+                  },
+                  {
+                    "text": "ty for the tip",
+                    "user": "pancakeprone"
+                  },
+                  {
+                    "text": "W viewer",
+                    "user": "beans4brains"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": false,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 40.0,
+                  "viewers": 16.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18.0,
+              "request": null,
+              "streams": 0.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "",
+              "tipBotQueued": 1.0,
+              "tipCount": 4.0,
+              "tips": 41.0,
+              "viewers": 16.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$40",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 4.847676
+          },
+          "before": {
+            "aimbot": {
+              "ads": false,
+              "angle": 0.0,
+              "killSnaps": 0.0,
+              "lastSnap": null,
+              "lastTurn": null,
+              "switched": 0.0,
+              "target": null,
+              "turning": false
+            },
+            "corpses": [],
+            "enemies": [
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e1",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -481.3173828125,
+                  -16.388671875,
+                  -497.513671875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "windup",
+                "attackPhaseStartedAtMs": 17159.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e2",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -542.619140625,
+                  -16.2333984375,
+                  -347.5927734375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e3",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -465.3134765625,
+                  -16.126953125,
+                  -459.0576171875
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 128.0,
+                "id": "soldier-e4",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 128.0,
+                "position": [
+                  -403.90234375,
+                  -16.4912109375,
+                  -432.330078125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e5",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -538.7626953125,
+                  -16.255859375,
+                  -348.384765625
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e6",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -863.8662109375,
+                  -16.3720703125,
+                  -171.93359375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e7",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -562.8212890625,
+                  -16.310546875,
+                  -463.4599609375
+                ],
+                "shieldHealth": 0.0,
+                "targetId": 2.0,
+                "weapon": "rifle"
+              },
+              {
+                "attackPhase": "none",
+                "attackPhaseStartedAtMs": 0.0,
+                "flinchUntilMs": 0.0,
+                "health": 129.0,
+                "id": "soldier-e8",
+                "laggedUntilMs": 0.0,
+                "lastAttackAtMs": 0.0,
+                "lastShotHit": false,
+                "leakUntilMs": 0.0,
+                "level": "soldier",
+                "markedUntilMs": 0.0,
+                "maxHealth": 129.0,
+                "position": [
+                  -535.8662109375,
+                  -16.1162109375,
+                  -348.3330078125
+                ],
+                "shieldHealth": 0.0,
+                "targetId": null,
+                "weapon": "rifle"
+              }
+            ],
+            "fracture": {
+              "activations": 0.0,
+              "activeParts": 0.0,
+              "expandedVertices": 18000.0,
+              "maxPositionError": 0.0,
+              "maxWeightError": 0.0,
+              "meshes": 1.0,
+              "preparedAtImport": true,
+              "restorations": 0.0,
+              "samples": 186.0,
+              "sourceVertices": 22137.0
+            },
+            "mainMenuOpen": false,
+            "serverTimeMs": 17460.0,
+            "stream": {
+              "challenge": null,
+              "challengesDone": 0.0,
+              "chat": {
+                "lines": [
+                  {
+                    "text": "dev console says hi",
+                    "user": "cheatsnob"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "hydrate_bot"
+                  },
+                  {
+                    "text": "hi. reload more this time",
+                    "user": "backseat_bex"
+                  },
+                  {
+                    "text": "dev console says hi",
+                    "user": "pebble"
+                  },
+                  {
+                    "text": "this run is doomed, I can feel it",
+                    "user": "doomer_dale"
+                  },
+                  {
+                    "text": "ty for the tip",
+                    "user": "pancakeprone"
+                  },
+                  {
+                    "text": "W viewer",
+                    "user": "beans4brains"
+                  }
+                ],
+                "visible": true
+              },
+              "followers": 0.0,
+              "hype": 0.0,
+              "live": true,
+              "liveTube": false,
+              "overlay": {
+                "alerts": 2.0,
+                "endCard": false,
+                "opener": false,
+                "overlay": {
+                  "caption": "",
+                  "challenge": null,
+                  "hype": 0.0,
+                  "tips": 40.0,
+                  "viewers": 16.0,
+                  "visible": true
+                },
+                "visible": true
+              },
+              "peakViewers": 18.0,
+              "request": null,
+              "streams": 0.0,
+              "style": null,
+              "styleBonus": 1.0,
+              "tipBot": "",
+              "tipBotQueued": 1.0,
+              "tipCount": 3.0,
+              "tips": 40.0,
+              "viewers": 16.0
+            },
+            "tipLabels": [
+              {
+                "rect": [
+                  1156.0,
+                  192.0,
+                  102.0,
+                  17.0
+                ],
+                "scale": [
+                  1.0,
+                  1.0
+                ],
+                "text": "$40",
+                "visible": true
+              }
+            ],
+            "wallSeconds": 4.824355
+          },
+          "request": {
+            "name": "debug_console",
+            "payload": {
+              "run": "stream tip 1"
+            }
+          },
+          "result": {
+            "accepted": true,
+            "freeFly": null,
+            "open": false
+          }
+        }
+      ],
+      "selectedPngFrame": 7,
+      "selectedPngSeconds": 0.908483,
+      "selectedPngSha256": "66bd063c80a3cc0587d4c4bc5a8a375b176e49fed93091a6aafddeb5f63807e6",
+      "fixtureFiles": {
+        "tip.gd": "fec66f9a6b18a5f658336ed2307062979ba82b5cbf70dd37abc4a3947896158e",
+        "tip.tscn": "a044d8809c3400e5d5c019e1d79d2f59da565e521c39e541ff8062d236b5993f",
+        "tip_client.tscn": "0b5bb675433fdcb9f5683ecdd3fa6ae7d7ee0217887edcf6cde6bdcae5a8dc3b"
+      }
+    }
+  },
+  "limitations": [
+    "Ordinary stream tip developer commands use actual stream gift/chat/alert/TipBot paths; not earned-play proof.",
+    "Idle arena with invincible enabled at normal timescale, different world locations/actors; not pixel-matched.",
+    "Silent CFR30 temporal hold/drop of actual native frames, no interpolation or spatial resize. No audible-quality or continuous1x claim.",
+    "First/loss/hide/goLive behavior primarily source/unit coverage, not a rendered hide/restart trial."
+  ]
+}
