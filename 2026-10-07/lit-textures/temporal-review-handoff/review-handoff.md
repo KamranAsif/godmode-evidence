@@ -32,3 +32,5 @@ Excluded: V4 far-car originals and V4 tours containing them; all older V2 motion
 The corrected V5 CFR30 tours are navigation aids: [main tour](https://raw.githubusercontent.com/KamranAsif/godmode-evidence/01c28d7529f91d1944675053bb5e32e459cb204a/2026-10-06/lit-textures/v5-far-car-clear/main-motion-tour-1080p30.mp4), [candidate tour](https://raw.githubusercontent.com/KamranAsif/godmode-evidence/01c28d7529f91d1944675053bb5e32e459cb204a/2026-10-06/lit-textures/v5-far-car-clear/candidate-motion-tour-1080p30.mp4). Their duplication/drop conversion does not establish a temporal verdict.
 
 [Retained spatial report](https://raw.githubusercontent.com/KamranAsif/godmode-evidence/633268315899d9f69689a81473587dbb1f2c1f13/2026-10-06/lit-textures/v5-spatial-review/auditor-results.md). Once a complete temporal verdict exists, send it to %141 for overall ALL PASS; then open the source PR against main. Do not merge before Kamran approves the look.
+
+Receipt hash correction: Original MP4 hashes and receipt contents are unchanged. Receipt SHA256 now hashes the exact immutable raw HTTP bytes; the previous local CRLF byte hash is retained separately.
