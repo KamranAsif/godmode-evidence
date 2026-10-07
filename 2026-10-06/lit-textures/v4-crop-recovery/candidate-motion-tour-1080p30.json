@@ -1,0 +1,122 @@
+{
+  "kind": "1080p30 six-view native-speed review tour",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "frameRate": 30,
+  "order": [
+    "tree-close",
+    "tree-mid",
+    "tree-far",
+    "car-close",
+    "car-mid",
+    "car-far"
+  ],
+  "sources": [
+    {
+      "file": "candidate-crop-recovery-motion-tree-close.mp4",
+      "sha256": "1ed5946e6515baece56cd637eb8a9de35d5103bcb28636b4d7dbe8c49808f0fc",
+      "elapsedSeconds": 5.009127,
+      "timing": {
+        "capturedFrames": 139,
+        "meanGapMs": 36.0464420289855,
+        "maxGapMs": 178.02799999999985,
+        "targetIntervalsMissed": 10,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "candidate-crop-recovery-motion-tree-mid.mp4",
+      "sha256": "56ff6f5728f750937d334709532f52c7829e4668e91de9ee2bcd883e6aa4e3ec",
+      "elapsedSeconds": 5.002952,
+      "timing": {
+        "capturedFrames": 110,
+        "meanGapMs": 45.55357798165138,
+        "maxGapMs": 134.973,
+        "targetIntervalsMissed": 11,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "candidate-crop-recovery-motion-tree-far.mp4",
+      "sha256": "6aedd5d48542ac7a4c4f60121208c4b3d7af96c04e45197c920f51c13d8a9155",
+      "elapsedSeconds": 5.006591,
+      "timing": {
+        "capturedFrames": 100,
+        "meanGapMs": 50.06777777777778,
+        "maxGapMs": 88.29500000000002,
+        "targetIntervalsMissed": 48,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "candidate-crop-recovery-motion-car-close.mp4",
+      "sha256": "94fa912987fe4641487d227ed162a365ce2859158dcd263648324567533dd616",
+      "elapsedSeconds": 5.036363,
+      "timing": {
+        "capturedFrames": 105,
+        "meanGapMs": 47.9965576923077,
+        "maxGapMs": 201.063,
+        "targetIntervalsMissed": 26,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "candidate-crop-recovery-motion-car-mid.mp4",
+      "sha256": "ad108922e04d13c2de685090726d5e232a8138f4a6075274cf96c85d17ea3560",
+      "elapsedSeconds": 5.031404,
+      "timing": {
+        "capturedFrames": 101,
+        "meanGapMs": 49.896800000000006,
+        "maxGapMs": 157.09499999999997,
+        "targetIntervalsMissed": 37,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    },
+    {
+      "file": "candidate-crop-recovery-motion-car-far.mp4",
+      "sha256": "9457470735207539660729ef11aeb3598c60eceaf9bf9c7d15a467d27b8ffd8d",
+      "elapsedSeconds": 5.010065,
+      "timing": {
+        "capturedFrames": 100,
+        "meanGapMs": 50.1879292929293,
+        "maxGapMs": 233.7400000000005,
+        "targetIntervalsMissed": 32,
+        "encoderDuplicates": 1,
+        "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+      }
+    }
+  ],
+  "sha256": "744e70b3deaa2d98eb31aeac3c2a9536706611ee025ab59fd8b69cf864c431c4",
+  "command": [
+    "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006\\artifacts\\lit-review\\candidate-crop-recovery-tour.ffconcat",
+    "-vf",
+    "fps=30",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "12",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006\\artifacts\\lit-review\\candidate-crop-recovery-motion-tour-1080p30.mp4"
+  ],
+  "interpolation": false,
+  "note": "Straight cuts between the six native-time source clips. Constant30fps duplicates/drops existing images to match elapsed time; no optical interpolation, image scaling or change to playback speed. Original VFR sources and receipts are published separately."
+}

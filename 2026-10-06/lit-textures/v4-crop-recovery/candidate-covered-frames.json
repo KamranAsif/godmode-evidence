@@ -1,0 +1,30 @@
+{
+  "url": "http://127.0.0.1:58780/frames",
+  "requestedWindowMs": 10000,
+  "warmupMs": 10000,
+  "frames": 252,
+  "engineFrames": 252,
+  "sampled": 252,
+  "dropped": 0,
+  "windowMs": 10042.66,
+  "fps": 25.09295346053735,
+  "meanMs": 39.85128968253968,
+  "medianMs": 32.6650009155273,
+  "p95Ms": 73.9069976806641,
+  "p99Ms": 83.375,
+  "worstMs": 84.771,
+  "bestMs": 29.458,
+  "engine": {
+    "displayServer": "Windows",
+    "headless": false,
+    "maxFps": 0,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingMethod": "forward_plus",
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "vsyncMode": 0
+  },
+  "caveats": [
+    "the window's first 25 frames ran at a median of 67.29ms against 32.52ms for the rest, so the client was still warming up or something else was competing for the machine; raise --warmup-ms, or measure again on a quieter host, before trusting this as steady state"
+  ]
+}

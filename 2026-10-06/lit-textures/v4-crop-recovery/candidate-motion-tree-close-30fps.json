@@ -1,0 +1,35 @@
+{
+  "kind": "1920x1080 constant 30fps playback copy of native-time VFR evidence",
+  "nativeSource": "candidate-crop-recovery-motion-tree-close.mp4",
+  "nativeSha256": "1ed5946e6515baece56cd637eb8a9de35d5103bcb28636b4d7dbe8c49808f0fc",
+  "nativeTiming": {
+    "capturedFrames": 139,
+    "meanGapMs": 36.0464420289855,
+    "maxGapMs": 178.02799999999985,
+    "targetIntervalsMissed": 10,
+    "encoderDuplicates": 1,
+    "note": "One terminal duplicate holds the final native frame; all motion uses measured variable timestamps. Readback/write overhead and missed capture intervals are disclosed; no interpolated images."
+  },
+  "sha256": "e1b03d936ac569dcbe60b71ae31b2d84fd923a9da9abb1d9b3e287e74c78bd7e",
+  "command": [
+    "C:\\Users\\Kam\\AppData\\Roaming\\Python\\Python314\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+    "-hide_banner",
+    "-i",
+    "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006\\artifacts\\lit-review\\candidate-crop-recovery-motion-tree-close.mp4",
+    "-vf",
+    "fps=30",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "12",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "D:\\work\\godmode-roguelite-worktrees\\lit-textures-20261006\\artifacts\\lit-review\\candidate-crop-recovery-motion-tree-close-30fps.mp4"
+  ],
+  "interpolation": false,
+  "note": "Original elapsed timestamps retained at normal playback speed. CFR duplicates or drops existing native images as needed; no optical interpolation. Original VFR MP4 and detailed per-frame receipts remain available."
+}
