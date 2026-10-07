@@ -1,0 +1,119 @@
+30/30 assets captured; no per-asset audit loop
+painted-road-contact native tour recorded
+node : node:internal/errors:985
+At line:2 char:124
++ ... -coverage'; node artifacts/prop-review/batch-capture.mjs *> artifacts ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (node:internal/errors:985:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  const err = new Error(message);
+              ^
+
+Error: Command failed: C:\Program Files\nodejs\node.exe tools/godot-cli/dist/src/index.js runtime action --project 
+D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007 --instance world-detail-native --name 
+investigation_motion --payload {"output":"D:\\work\\godmode-roguelite-worktrees\\world-detail-textures-20261007/artifac
+ts/prop-review/output/tour-skyline-wall-close","seconds":3,"amplitude":0.35,"yaw_swing":0.012} --json
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at ChildProcess.exithandler (node:child_process:417:12)
+    at ChildProcess.emit (node:events:509:28)
+    at maybeClose (node:internal/child_process:1141:16)
+    at ChildProcess._handle.onexit (node:internal/child_process:306:5) {
+  code: 1,
+  killed: false,
+  signal: null,
+  cmd: 'C:\\Program Files\\nodejs\\node.exe tools/godot-cli/dist/src/index.js runtime action --project 
+D:\\work\\godmode-roguelite-worktrees\\world-detail-textures-20261007 --instance world-detail-native --name 
+investigation_motion --payload {"output":"D:\\\\work\\\\godmode-roguelite-worktrees\\\\world-detail-textures-20261007/a
+rtifacts/prop-review/output/tour-skyline-wall-close","seconds":3,"amplitude":0.35,"yaw_swing":0.012} --json',
+  stdout: '{"schemaVersion":1,"ok":false,"message":"Runtime action investigation_motion was refused: Recording already 
+active","data":{"ok":true,"result":{"accepted":false,"error":"Recording already active"},"store":{"aiBudget":{"assistan
+ceMs":0.06901,"decisionsMs":0.317956666666667,"maxMs":7.138,"meanMs":0.387886666666667,"meanRays":0,"p95Ms":0.749,"tick
+s":300},"audio":{"activeFootstepPlayers":0,"activeLocalPlayers":0,"activeWorldPlayers":0,"buses":["GameplaySfx","Gamepl
+ayUI","GameplayPriority","GameplayStream","GameplayAmbience","Music"],"cheatLoops":{"cheat-drone-hover":[{"playing":fal
+se,"volumeDb":0},{"playing":false,"volumeDb":0}],"cheat-drone-swarm-hover":[{"playing":false,"volumeDb":0}],"cheat-turr
+et-idle":[{"playing":false,"volumeDb":0},{"playing":false,"volumeDb":0},{"playing":false,"volumeDb":0}],"enemy-heli-rot
+or":[{"playing":false,"volumeDb":0},{"playing":false,"volumeDb":0}]},"cheatTakes":{},"cheatVoices":[],"cueLog":[{"atMs"
+:198458,"id":"match-start","spatial":false},{"atMs":199384,"id":"landing","spatial":false},{"atMs":200027,"id":"enemy-d
+eath","spatial":true},{"atMs":200357,"id":"kill-confirm","spatial":false},{"atMs":200359,"id":"enemy-death","spatial":t
+rue},{"atMs":201254,"id":"ui-open","spatial":false},{"atMs":202084,"id":"picket-chirp","spatial":true},{"atMs":202963,"
+id":"picket-chirp","spatial":true},{"atMs":203454,"id":"combat-rifle-windup","spatial":true},{"atMs":203939,"id":"picke
+t-chirp","spatial":true},{"atMs":204720,"id":"combat-enemy-rifle","spatial":true},{"atMs":204870,"id":"combat-enemy-rif
+le","spatial":true},{"atMs":204873,"id":"picket-chirp","spatial":true},{"atMs":205040,"id":"combat-enemy-rifle","spatia
+l":true},{"atMs":205185,"id":"combat-enemy-rifle","spatial":true},{"atMs":205349,"id":"combat-enemy-rifle","spatial":tr
+ue},{"atMs":205797,"id":"picket-chirp","spatial":true},{"atMs":206538,"id":"combat-rifle-windup","spatial":true},{"atMs
+":206694,"id":"picket-chirp","spatial":true},{"atMs":206918,"id":"ui-open","spatial":false}],"enemyLoops":{"mend":[{"cu
+toffHz":5000,"held":false,"pitch":1,"playing":false,"volumeDb":0},{"cutoffHz":5000,"held":false,"pitch":1,"playing":fal
+se,"volumeDb":0}],"motor":[{"cutoffHz":5000,"held":false,"pitch":1,"playing":false,"volumeDb":0},{"cutoffHz":5000,"held
+":false,"pitch":1,"playing":false,"volumeDb":0},{"cutoffHz":5000,"held":false,"pitch":1,"playing":false,"volumeDb":0}],
+"rotor":[{"cutoffHz":5000,"held":false,"pitch":1,"playing":false,"volumeDb":0},{"cutoffHz":5000,"held":false,"pitch":1,
+"playing":false,"volumeDb":0},{"cutoffHz":5000,"held":false,"pitch":1,"playing":false,"volumeDb":0},{"cutoffHz":5000,"h
+eld":false,"pitch":1,"playing":false,"volumeDb":0}],"shimmer":[{"cutoffHz":5000,"held":false,"pitch":1,"playing":false,
+"volumeDb":0},{"cutoffHz":5000,"held":false,"pitch":1,"playing":false,"volumeDb":0}],"sweep":[{"cutoffHz":5000,"held":f
+alse,"pitch":1,"playing":false,"volumeDb":0},{"cutoffHz":5000,"held":false,"pitch":1,"playing":false,"volumeDb":0}]},"e
+nemyTells":[{"held":true,"owner":"soldier-e6","playing":false}],"foreground":{"priority":0,"untilMs":0},"healthDistress
+":{"breathingPlaying":false,"breathingVolumeDb":0,"heartbeatPlaying":false,"heartbeatRate":1,"heartbeatVolumeDb":0},"la
+stPlayed":{"cue":"ui-open","spatial":false},"lastSpatialByCue":{"combat-enemy-rifle":true,"combat-rifle-windup":true,"e
+nemy-death":true,"kill-confirm":false,"landing":false,"match-start":false,"picket-chirp":true,"ui-open":false},"missing
+ReviewedResources":[],"playedCounts":{"combat-enemy-rifle":5,"combat-rifle-windup":2,"enemy-death":2,"kill-confirm":1,"
+landing":1,"match-start":1,"picket-chirp":6,"soldier-step":17,"ui-open":2},"recentFootsteps":[{"pitch":0.904,"take":"so
+ldier-step-04.ogg","volumeDb":6.1},{"pitch":0.987,"take":"soldier-step-01.ogg","volumeDb":5.6},{"pitch":0.939,"take":"s
+oldier-step-03.ogg","volumeDb":5.5},{"pitch":0.935,"take":"soldier-step-04.ogg","volumeDb":6.4},{"pitch":0.916,"take":"
+soldier-step-04.ogg","volumeDb":7},{"pitch":0.936,"take":"soldier-step-03.ogg","volumeDb":7},{"pitch":0.953,"take":"sol
+dier-step-04.ogg","volumeDb":8.5},{"pitch":0.975,"take":"soldier-step-04.ogg","volumeDb":5.8}],"recentPlayed":[{"id":"u
+i_open","spatial":false},{"id":"picket_chirp","spatial":true},{"id":"combat_rifle_windup","spatial":true},{"id":"picket
+_chirp","spatial":true},{"id":"combat_enemy_rifle","spatial":true}],"scheduledCount":0,"score":{"boss":{"gain":0,"loade
+d":true,"outputGain":0,"playing":false,"target":0},"combat":{"gain":0.2239,"loaded":true,"outputGain":0.2239,"playing":
+true,"target":0.2239},"explore":{"gain":0,"loaded":true,"outputGain":0,"playing":false,"target":0},"traffic":{"gain":0.
+0357,"loaded":true,"outputGain":0.0357,"playing":true,"target":0.0357},"water":{"gain":0.0112,"loaded":true,"outputGain
+":0.0112,"playing":true,"target":0.0112},"wind":{"gain":0.0085,"loaded":true,"outputGain":0.0085,"playing":true,"target
+":0.0085}},"volumePercent":100},"combatVfxPrewarmed":true,"consoleLines":["free-fly on: WASD + mouse, SPACE/C up-down, 
+SHIFT fast, ALT slow, wheel for speed; F3 lands","minimap hidden","killEnemies done: 1 killed"],"consoleOpen":false,"co
+ntrolsCanSave":true,"controlsCapture":null,"controlsMenuOpen":false,"controlsStatus":"","controlsWarning":"","debugFree
+Fly":[-368.400390625,-15.5821228027344,-369.2001953125],"desktopTrainer":{"closed":false,"contentScale":0.9281250238418
+58,"maximized":false,"minimized":false,"open":false,"rect":{"height":584.569606801275,"width":908.990435706695,"x":185.
+504782146652,"y":52.7948990435707},"tab":"CHEATS","visible":false},"firstRunHints":{"current":null,"seen":["aimbot"]},"
+input":{"cursorCaptureRequested":false,"cursorCaptured":false,"injected":{"active":false,"expiresInMs":null,"form":null
+,"holdId":null,"lastCompletedTapFrames":null,"lastCompletedTapHoldId":null,"lastCompletedTapSequence":null,"lastSampled
+Sequence":-1,"restoresHoldId":null,"sampledHoldId":0,"samples":0,"sequence":315,"tapFramesRemaining":null},"mouseMode":
+0},"lattice":{"fracture":{"activations":2,"activeParts":0,"expandedVertices":18000,"maxPositionError":0,"maxWeightError
+":0,"meshes":1,"preparedAtImport":true,"restorations":2,"samples":186,"sourceVertices":22137},"live":0,"merged":0,"open
+ed":3,"slots":[],"view":{"enemyMarks":[{"adminId":"soldier-e1","aimed":false,"bodyAtBirth":null,"bodyMoved":0,"bornAtMs
+":200026,"frames":0,"maxGap":null,"reachLostAtMs":null,"ref":{"opened":true,"slot":1,"startedAtMs":200026},"startGap":n
+ull},{"adminId":"soldier-e2","aimed":false,"bodyAtBirth":null,"bodyMoved":0,"bornAtMs":200358,"frames":0,"maxGap":null,
+"reachLostAtMs":null,"ref":{"opened":true,"slot":2,"startedAtMs":200358},"startGap":null}],"hits":0,"impactFrames":3,"s
+howing":false}},"localPeerId":2,"localServerTick":{"maxMs":0.194177118799786,"meanMs":0.0722671807389614},"mainMenuOpen
+":false,"mainMenuStatus":"","matchLoadingOpen":false,"matchLoadingProgress":1,"matchLoadingStatus":"STARTING RUN...","m
+etaMenu":{"dollars":1,"message":"","open":false,"shelf":[{"fresh":true,"id":"lagSwitch","price":2},{"fresh":true,"id":"
+autoAmmo","price":5},{"fresh":true,"id":"enemyRadar","price":8}],"tab":"upgrades","tabOpen":true,"unlocked":[],"upgrade
+s":{}},"mode":"client","navStats":{"failed":0,"outOfBounds":0,"queries":11,"queryMs":10.367,"queryPeakMs":1.102,"routeM
+s":10.072,"routePeakMs":1.579,"routes":11,"syncQueries":9},"navigation":{"areas":1125,"polygons":15596,"ready":true,"so
+urce":"dumbo-survival"},"pauseOpen":true,"pauseRespawnAvailable":true,"pauseRespawnNote":"Start a new survival run 
+from 0:00, with the gun alone. This run is lost.","presentation":{"aim":{"aimPitchRadians":0,"aimYawRadians":-1.5707963
+267949,"pitchRadians":0,"viewKickRadians":0,"viewKickYawRadians":0,"yawRadians":-1.5707963267949},"aiming":{"blend":0,"
+crosshairVisible":true,"foregroundBlurBlend":0,"requested":false},"artDirection":"white-red-cyan-faceted","authoredAssa
+ultRifle":null,"authoredPistol":null,"body":{"alive":true,"health":100,"runArmor":0},"cameraFov":75,"cameraMode":"first
+-person","characterAnimationSource":"Mixamo","combatVfx":{"activeBulletHoles":0,"activeDebris":0,"activeDust":0,"active
+Shells":0,"impactSpawnCount":0,"lastImpact":null,"recentImpacts":[],"shellSpawnCount":0},"debugThirdPerson":false,"defe
+nses":[{"armorVisible":false,"playerId":2}],"firstPersonFiringResidual":null,"firstPersonReload":{"active":false,"blend
+":0,"choreographed":true,"phase":0.937,"pinned":false,"pose":{"supportHandEulerRadians":[0,0,0],"supportHandOffset":[0,
+0,0],"weaponEulerRadians":[0,0,0],"weaponOffset":[0,0,0]},"weapon":"machineGun"},"firstPersonRigBoneCount":68,"healthDi
+stress":{"breathing":0,"heartbeat":0,"heartbeatRate":1,"intensity":0,"overlayVisible":false,"targetIntensity":0},"hud":
+{"ammo":"30 / 90","armor":"0","category":"","grenades":"G:0","health":"100","interactionPrompt":"","kills":"0/1000000",
+"layoutMode":"wide","safeMargin":24,"status":"","viewportSize":[1280,720],"weapon":"ASSAULT RIFLE"},"knife":{"category"
+:null,"clip":"KnifeSlash","elapsedMs":600,"lastPress":null,"loaded":false,"playing":false,"slashes":0},"localBodyVisibl
+e":false,"playerVisibility":[{"playerId":2,"renderedVisible":false}],"prediction":{"active":true,"correctionMetres":0,"
+corrections":0,"framesHeld":308,"framesMoved":3,"historyDepth":1,"lastInputSequence":314,"renderedPosition":[-368.40039
+0625,-16.2321224212646,-369.2001953125],"serverPosition":[-368.400390625,-16.232421875,-369.2001953125],"snaps":0,"snap
+shotsApplied":1052,"submittedSequence":315},"reticle":{"arms":{"bottom":[-1.5,13.1399459838867],"left":[-21.13994598388
+67,-1.5],"right":[13.1399459838867,-1.5],"top":[-1.5,-21.1399459838867]},"authoritativeSpreadRadians":0.028,"gapPx":13.
+1399458435787,"visible":true},"rigPose":null,"stancePlacement":{"anchor":[-0.107,1.282,-0.031],"bakedHands":false,"bone
+s":null,"borePitchRadians":0,"butt":[-0.107,1.282,-0.031],"buttToShoulder":3.72529029846191e-9,"palmResidualMeters":nul
+l},"supportHandContact":null,"systemAdmins":[{"animation":"rifleaimidle","animationAvailable":true,"animationPlays":13,
+"assetProvenance":"'... 16128 more characters,
+  stderr: ''
+}
+
+Node.js v24.19.0

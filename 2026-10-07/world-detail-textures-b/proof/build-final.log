@@ -1,0 +1,18 @@
+
+> godmode-exe@ build D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007
+> pnpm build:scripts && node tools/maps/prebuilt/build.mjs --ensure
+
+
+> godmode-exe@ build:scripts D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007
+> node tools/build/write-build-info.mjs && pnpm --filter @godmode/game-rules build && pnpm --filter @godmode/godot-cli build && tsc -p tsconfig.json
+
+
+> @godmode/game-rules@0.1.0 build D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007\packages\game-rules
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+
+> @godmode/godot-cli@0.1.0 build D:\work\godmode-roguelite-worktrees\world-detail-textures-20261007\tools\godot-cli
+> node -e "require('node:fs').rmSync('dist/test',{ recursive: true, force: true })" && tsc -p tsconfig.json
+
+[prebuilt-arena] Generating the survival arena (inputs: assets/maps/western_block/road-paint.gdshader changed, and 2 more); this takes a few minutes.
+{"ok":true,"verify":false,"output":"assets/maps/dumbo/prebuilt","client":{"nodes":24874,"fingerprint":"1149334945","buildMs":86082,"loadMs":24419,"expandedSoups":5,"importedTextures":32,"expansion":{"position":0.00006103515625,"normal":0.00020714104175567627},"matches":true,"differences":[]},"server":{"nodes":4171,"fingerprint":"1276010704","buildMs":6474,"loadMs":201,"expandedSoups":0,"importedTextures":0,"expansion":{"position":0,"normal":0},"matches":true,"differences":[]}}
