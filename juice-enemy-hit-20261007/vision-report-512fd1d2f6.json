@@ -1,0 +1,240 @@
+{
+  "audit": "Juice improvement 2: enemy impact-local triangle hit reactions",
+  "auditor": "Codex /root",
+  "sessionId": "juice2-codex-vision-root-20261007T022545Z",
+  "signedAtUtc": "2026-10-07T05:08:01Z",
+  "signature": {
+    "type": "auditor attestation",
+    "name": "Codex /root",
+    "cryptographicSignature": false
+  },
+  "candidateSha": "ff17b8a07498ec578de4896c358cae3ff570c782",
+  "controlParentSha": "9bc2d5ac3d29f25fd80c261c06f3ae0f5a46da46",
+  "sourceWorktree": "D:/work/godmode-roguelite-worktrees/juice-enemy-hit",
+  "sourceScope": [
+    "scripts/game_world.ts",
+    "scripts/runtime_actions/inspection_state.ts"
+  ],
+  "documentsRead": [
+    "AGENTS.md",
+    "GAME.md",
+    "ART_STYLE.md"
+  ],
+  "status": "PROVISIONAL_VISUAL_FINDINGS_LIFECYCLE_APPROVAL_WITHHELD",
+  "allPass": false,
+  "visualApproval": false,
+  "summary": "Observed rendered change supports impact-local triangles and removes broad red tint on captured supported rifleman rigs. No scoped visual regression found in available frames. Event-isolated expiry/death/cull/reset and precise flinch timing remain unproved.",
+  "coverage": {
+    "control": {
+      "nativeFullSceneFrames": {
+        "first": 0,
+        "last": 129,
+        "count": 130
+      },
+      "mp4FramesNativeImpactRoi": {
+        "first": 0,
+        "last": 180,
+        "count": 181
+      },
+      "rawHashMismatches": [],
+      "maxNativeGapMs": 248.076,
+      "mp4Sha256": "510734f461f918a58adaf898cfad94835eccaa6c3018fb549583efa0e501c814"
+    },
+    "candidate": {
+      "nativeFullSceneFrames": {
+        "first": 0,
+        "last": 87,
+        "count": 88
+      },
+      "mp4FramesNativeImpactRoi": {
+        "first": 0,
+        "last": 180,
+        "count": 181
+      },
+      "rawRgbaHashMismatches": [],
+      "decodedPngRgbaHashMismatches": [],
+      "maxNativeGapMs": 431.458,
+      "largestGapBetweenNativeFrames": [
+        2,
+        3
+      ],
+      "mp4Sha256": "e45a4f2013a9c9558eb03228fb03ff1450da2bfed273389baacc3ae954a63a92"
+    },
+    "nativeDimensions": [
+      1920,
+      1080
+    ],
+    "mp4Dimensions": [
+      1920,
+      1080
+    ],
+    "mp4Fps": 30,
+    "mp4FrameCountEach": 181,
+    "roiXYXY": [
+      720,
+      380,
+      1200,
+      740
+    ],
+    "spatialScale": 1,
+    "decodeHardwareAcceleration": "none",
+    "method": "Every native full scene viewed at original resolution. Every MP4 decoded frame viewed sequentially in an unscaled native-pixel impact/ADS ROI. Additional 1:1 detail crops inspected; no thumbnail judgments.",
+    "allEncodedFramesWholeSceneReviewed": false,
+    "normalSpeedPlaybackPerformed": false,
+    "audioReviewed": false,
+    "temporalEncoding": "Measured-timestamp holds/drops at 30fps; no synthesized in-between frames. Encoded frame count is not native motion coverage."
+  },
+  "hashCorrection": {
+    "priorError": "Encoded PNG file bytes were incorrectly compared with frames[].rawSha256. This was an auditor check error, not evidence of capture corruption.",
+    "correctMethod": "SHA256(frame-XXXX.rgba bytes) versus corresponding frames[].rawSha256; separately SHA256(PNG decoded to RGBA) versus same value.",
+    "candidateFramesVerified": 88,
+    "rawRgbaMismatches": [],
+    "decodedPngRgbaMismatches": [],
+    "firstExpectedAndActual": "e2b56e26ef63c25e1291bd478b350dd5b1816da5eca3fc392cd3c638eff43bb8"
+  },
+  "recommendedAfterStill": {
+    "path": "D:/work/godmode-roguelite-worktrees/juice-enemy-hit/artifacts/juice/after-enemy-hit/frame-0058.png",
+    "nativeIndex": 58,
+    "seconds": 4.275853,
+    "renderFrame": 298,
+    "regionApproxXYXY": [
+      926,
+      476,
+      961,
+      517
+    ],
+    "reason": "Clearest exposed head triangle facets above ADS post; torso and red shoulder retain original detail.",
+    "rawRgbaSha256": "e080efd23dfe643f5c57fd2be15eb52eefffd85622251015be0a47535c92ac0b",
+    "pngFileSha256": "57708bf65f257692e6ba33570942b9d32446ca4dd5758c16c082316b8b3a05a3",
+    "secondaryNativeIndex": 7,
+    "secondarySeconds": 0.955954,
+    "secondaryReason": "Closer local chest response; ADS post hides more of the patch.",
+    "publishedFrame5": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-enemy-hit-20261007/after-enemy-hit-e88053d642.png",
+    "localFrame5PngSha256": "e88053d642d28eb4945164f0b9e48e209a17ca54e075402f911405a011ed470a"
+  },
+  "gates": [
+    {
+      "id": "real-target-combat",
+      "status": "PASS_OBSERVED",
+      "evidence": "Three ADS gun kills and kill snaps in each capture; runtime kill records and rendered kill markers corroborate ordinary actual combat, plus surviving fourth target reactions."
+    },
+    {
+      "id": "clear-local-triangle-signature",
+      "status": "PASS_OBSERVED",
+      "evidence": "Candidate native 3/5/7 chest; 18/20/21 second chest; 39 third chest; 57/58 head. MP4 frames 18?29 and 126?128 show chest/head facets.",
+      "limit": "First target distance and camera differ; apparent size is not a matched comparison."
+    },
+    {
+      "id": "no-supported-rig-whole-red-wash",
+      "status": "PASS_OBSERVED",
+      "evidence": "Control red wash in native 3?14,19?30,38?54,61?75. Candidate never shows comparable full-body red tint across reviewed 0?87. Original red shoulder accents persist.",
+      "limit": "Captured supported rifleman rigs only; not an all-rig roster certification."
+    },
+    {
+      "id": "original-material-and-rig-detail",
+      "status": "PASS_OBSERVED",
+      "evidence": "Face/helmet/shoulder and dark armor remain outside chest patches. At 58 head facets coexist with dark torso/red shoulder. Native 59?87 has intact moving head/limbs/held gun and recovered materials. Sampled preparation errors: position 0, weight 0.",
+      "limit": "Finite sampled native views cannot prove every rig, material override or animation pose."
+    },
+    {
+      "id": "scope-and-existing-signature",
+      "status": "PASS_SOURCE_REVIEW",
+      "evidence": "Diff is 40 insertions/11 deletions in two files. Existing prepared triangle mesh/helper and shader reused; no assets/shader/style/gun/camera/map/hands/AI/spawn changes. Player-hit triangle implementation unchanged. Inspection exposes existing stats."
+    },
+    {
+      "id": "gun-ADS-HUD-regression",
+      "status": "PASS_OBSERVED",
+      "evidence": "No new visible deformation of player gun/ADS silhouette or HUD in all native full scenes. Camera snaps, kick, reticle/kill markers and panels remain recognizable relative to control. Source excludes these systems.",
+      "limit": "Not a numerical recoil trajectory match: different range/camera and sparse capture."
+    },
+    {
+      "id": "140ms-flinch",
+      "status": "PENDING_RUNTIME_TIMING",
+      "evidence": "SYSTEM_ADMIN_HIT_FLASH_MS remains 140 and existing remaining-time flinch calculation is unchanged. Visible pose reactions are present.",
+      "limit": "Capture cadence cannot prove exact duration; largest gap 431.458ms exceeds both requested lifetimes."
+    },
+    {
+      "id": "260ms-expiry-restoration",
+      "status": "PENDING_ISOLATED_LIFECYCLE",
+      "evidence": "Source uses existing LATTICE_IMPACT_LIFE_MS and restores in update loop. Native 58 patch disappears by 59 at 4.339860s; surviving actor remains visually intact.",
+      "limit": "No time-correlated last actual damage, activeParts >0 and expiry-only restoration readings; disappearance alone does not prove original mesh restoration or exact 260ms."
+    },
+    {
+      "id": "restore-before-death",
+      "status": "PENDING_ISOLATED_LIFECYCLE",
+      "evidence": "Source restores before native death setup. Kill frames 13,30,46/47 show original-looking body material, with no visible triangle explosion.",
+      "limit": "Camera snaps/occlusion and aggregate counters do not isolate an active fracture restored before this specific death transition."
+    },
+    {
+      "id": "restore-before-cull",
+      "status": "PENDING_ISOLATED_LIFECYCLE",
+      "evidence": "Source restore calls precede culled/free paths.",
+      "limit": "No runtime active-fracture cull trace or corresponding native frames supplied."
+    },
+    {
+      "id": "restore-before-reset",
+      "status": "PENDING_ISOLATED_LIFECYCLE",
+      "evidence": "Source reset restores every visual before queue_free and clears flash/fracture maps.",
+      "limit": "No leave_match/reset from active fracture with immediate cleanup evidence supplied."
+    },
+    {
+      "id": "no-active-fracture-leak",
+      "status": "PENDING_PATH_COVERAGE",
+      "evidence": "Supplied stores show activations 0?6, restorations 0?6 and activeParts 0 before/after capture.",
+      "limit": "Only eventual aggregate balance proven; path-isolated active expiry/death/cull/reset remains pending."
+    }
+  ],
+  "fractureTelemetry": {
+    "before": {
+      "activations": 0,
+      "restorations": 0,
+      "activeParts": 0
+    },
+    "after": {
+      "activations": 6,
+      "restorations": 6,
+      "activeParts": 0
+    },
+    "maxPositionError": 0,
+    "maxWeightError": 0,
+    "samples": 186,
+    "preparedAtImport": true,
+    "meaning": "Global mesh-part counts, not unique enemy/hit counts. No sampled active transition in the supplied pre/post stores."
+  },
+  "failures": [],
+  "pendingEvidenceRequired": [
+    "Expiry: real nonlethal hit with target ID/health and simulation clock; activeParts > baseline observed, no later hit/death/reset/cull; read-only samples bracket 260ms expiry and restoration delta to baseline, with recovered native body frame.",
+    "Flinch: actual damage time and native pose samples tight enough to assess the existing 140ms interval separately from 260ms mesh lifetime.",
+    "Death: real lethal follow-up while fracture is demonstrably active, event times ruling out prior expiry; restoration delta/activeParts baseline and original body/death native views before free.",
+    "Cull: ordinary runtime cull/free path while fracture is active, event identity/times, restoration delta and activeParts baseline; do not substitute death or expiry.",
+    "Reset: ordinary leave_match/reset while fracture is active, prompt post-action inspection showing cleanup to baseline; original detail after ordinary next run if needed.",
+    "Disclose unrelated global activations and inspection latency; global totals cannot assign per-target cleanup without event isolation."
+  ],
+  "fixes": "No production source fix justified by current visual evidence. Close missing evidence gates using the queued ordinary actual-hit lifecycle capture; if a path fails, report its exact native frame/region and restoration trace before prescribing a code fix.",
+  "comparisonLimits": [
+    "Initial acquired range: control 8.878m versus candidate 3.221m; later snap range 11.4m versus 12m. Not identical camera/range.",
+    "Native readback gaps reduce motion coverage; no precise no-shimmer or duration approval.",
+    "Source HEAD verified, but executable source SHA is not embedded in capture receipt. Candidate source provenance is supplied by capture owner.",
+    "Encoded full-scene MP4 frames were not all individually viewed; impact ROI is 1:1 for every decoded frame, and full-scene context is from every original native frame.",
+    "Silent evidence cannot assess TTS/audio. No performance or whole-game fairness approval."
+  ],
+  "inheritedPresentationNotes": [
+    "ADS front post hides local chest hits in both captures; do not change approved ADS/recoil for this scope.",
+    "Gold double/triple kill banners and large stream chat/donation panels remain prominent inherited presentation.",
+    "Enemy/world style, numbers, spawning/fairness and stream/TTS design are outside this rendered change; their standing direction is not certified by this clip."
+  ],
+  "validation": {
+    "pnpmTestLog": "artifacts/juice/pnpm-test.log",
+    "readLogResult": "ROOT SUITE OK; 13 of 13 steps passed; 0 failed",
+    "testsExecutedByAuditor": false,
+    "buildLintUnits": "Owner reported green build/scripts, lint and 613 units before rebase; not rerun by auditor."
+  },
+  "publishedProofSummary": {
+    "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-enemy-hit-20261007/combat-proof-summary-6862eb19f3.json",
+    "downloadSha256": "6862eb19f3963160bddf7f6b84e6ec6a89a7b28260d17287ec3c891914777e90",
+    "role": "Capture-owner corroboration and limits; not an audit or lifecycle approval."
+  },
+  "prohibitedActionsPerformed": [],
+  "processesStarted": "CPU-only shell/Python and software video decoding; no engines/imports/tests/GPU processes.",
+  "reportRevision": "Provisional rendered review complete; supplementary lifecycle evidence pending."
+}
