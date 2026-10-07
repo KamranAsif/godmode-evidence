@@ -1,0 +1,52 @@
+{
+    "schemaVersion":  1,
+    "verdict":  "PASS",
+    "scope":  "Independent Windows default-root verification of unchanged PR1031 patch rebased onto alerts main; no capture or audible-mix verdict implied.",
+    "head":  "ef16161640f25049de405b0d25b335d88434b02c",
+    "tree":  "9c54e70b84c01f5f96bedcd38dd9672eb7c2feed",
+    "base":  "fe5b7b2adf947e9e84da9388945993a664b5bc72",
+    "sourcePatch":  "49a045973e8377e8b40f67a9b1886aa80617ead4",
+    "root":  {
+                 "head":  "ef16161640f25049de405b0d25b335d88434b02c",
+                 "generationOverride":  false,
+                 "studyLightingOverride":  false,
+                 "sourcePatch":  "49a045973e8377e8b40f67a9b1886aa80617ead4",
+                 "startedAt":  "2026-10-07T17:16:18.1810019Z",
+                 "exitCode":  0,
+                 "endedAt":  "2026-10-07T17:19:35.2717632Z",
+                 "command":  "pnpm test",
+                 "base":  "fe5b7b2adf947e9e84da9388945993a664b5bc72",
+                 "tree":  "9c54e70b84c01f5f96bedcd38dd9672eb7c2feed"
+             },
+    "summary":  {
+                    "passed":  13,
+                    "total":  13,
+                    "failed":  0
+                },
+    "cache":  {
+                  "head":  "ef16161640f25049de405b0d25b335d88434b02c",
+                  "entry":  "C:\\Users\\Kam\\AppData\\Local\\godmode-prebuilt\\53322f403dc44dfce0843b72d5f6ed217b8652642c32945a619d7ab10edadb6a",
+                  "inputCount":  1117,
+                  "copied":  586,
+                  "passed":  true,
+                  "generated":  false,
+                  "scope":  "Built-in #1024 verified machine-cache restore only; no engine launched."
+              },
+    "trackedTreeClean":  true,
+    "enginesLaunched":  0,
+    "ownHeavyJobsAfterExit":  0,
+    "files":  [
+                  {
+                      "file":  "pnpm-test-suppression-windows.log",
+                      "sha256":  "364626cc4d97f1429511c8b4a4ce3434f15ea784cbe2478758f859dd04bd16be"
+                  },
+                  {
+                      "file":  "root-final-binding.json",
+                      "sha256":  "291af9f9942b8fd79764350e58c4384cca557b5d5628b18486853e104b81daa5"
+                  },
+                  {
+                      "file":  "machine-cache-restore-proof.json",
+                      "sha256":  "cbee89d4bac6d9dcf53ad31f29348bb16cdbae9cf9d59d0ed3691450b7d08b51"
+                  }
+              ]
+}
