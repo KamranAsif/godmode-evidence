@@ -1,0 +1,579 @@
+{
+  "audit": {
+    "schema_version": 1,
+    "audit_id": "juice-lane147-viewer-count-pulse-independent-codex-vision",
+    "stage": "COMPLETE_SCOPED_VISION_AUDIT",
+    "verdict": "SCOPED ALL PASS",
+    "all_pass": true,
+    "created_utc": "2026-10-07T06:25:55.9827880Z",
+    "candidate_worktree": "D:/work/godmode-roguelite-worktrees/juice-viewer-gains",
+    "candidate_head": "bfcb267190b4be15c72e4a196a44a202524ea83f",
+    "base_head": "bfce057de19529c66d193f7b69a103e099575e2a",
+    "base_reference": "#1001",
+    "authority": "Explicit user CPU-only audit instruction overrides stale no-reviewer/no-evidence boilerplate and routine engine/test/PR requirements.",
+    "operations": {
+      "engines": 0,
+      "imports": 0,
+      "tests_run": 0,
+      "source_edits": 0,
+      "pr_actions": 0,
+      "gpu_use": 0,
+      "subagents": 0,
+      "artifact_writes_only": true
+    },
+    "reviewed_files": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "866056d05be17712725123956272b948e3273f1b24a638ae7b2a77811afae50c"
+      },
+      {
+        "path": "GAME.md",
+        "sha256": "5efd5cb5a96c4decfa9be029df5cd2ba63dccb7d3ff94b24eeb3469fe993a5c3"
+      },
+      {
+        "path": "ART_STYLE.md",
+        "sha256": "42e0fe7526597970718d86d9df6431e6976d18b5f98a8e37321798fbdd8fd082"
+      },
+      {
+        "path": "scripts/client/stream_overlay.ts",
+        "sha256": "8b5b6d5904a52f93864a4b58a36ea221390d31b83f0c2e27f8002b160eb54f62"
+      },
+      {
+        "path": "scripts/hud_layout.ts",
+        "sha256": "d7bc43e4efe27e4af736bc50f1995f96a9de470eb7372bce9cc7fa9e7f0c51b3"
+      },
+      {
+        "path": "tests/unit/hud-layout.test.mjs",
+        "sha256": "8c8aa81ebbbe18c38572117ebc38d1b8916570509a2917651b18164c416aa643"
+      },
+      {
+        "path": "scripts/client/stream_session.ts",
+        "sha256": "7b905bf90bb0e15a87f37f5e2e67dd59ea22e048edceb30abd97cb90b89352ec"
+      },
+      {
+        "path": "artifacts/juice/viewer.gd",
+        "sha256": "4f433f0de672cc711fa5b4c49134f25eec3601a49ed9fefe567c0663d5d5b79d"
+      },
+      {
+        "path": "artifacts/juice/after-viewer-record.json",
+        "sha256": "5d0675f33795cb2a8791956618380083a2b8cd256433e7505033b465ac04f713"
+      },
+      {
+        "path": "artifacts/juice/encode.py",
+        "sha256": "f26c2ab11d28205d41943ca8c2e77ce11507174ab5a6f49187755a95734a4256"
+      },
+      {
+        "path": "artifacts/juice/hud-unit-triangle-base.log",
+        "sha256": "a433689b489e92b3e1818d1b7eb24ccd32431366c10c9edfbee7d6128355611b"
+      },
+      {
+        "path": "artifacts/juice/pnpm-test-triangle-base.log",
+        "sha256": "ff33a086bf5984fb25509b9c426db9becee0fae139558806fc5846980607bccf"
+      }
+    ],
+    "source_findings": [
+      {
+        "id": "scope",
+        "status": "SOURCE_SUPPORTED",
+        "detail": "Committed diff contains only stream_overlay.ts, hud_layout.ts and hud-layout.test.mjs: 48 insertions, 2 deletions. Viewer label text remains current count plus watching."
+      },
+      {
+        "id": "gain",
+        "status": "SOURCE_SUPPORTED",
+        "detail": "A strict viewer increase starts at scale 1.06 if 1500 ms have elapsed since the previous onset. Scale is 1 + 0.06*(1-age/650)^3 for 0 <= age < 650 ms; otherwise 1. Cooldown measures onset to onset."
+      },
+      {
+        "id": "reset",
+        "status": "SOURCE_SUPPORTED",
+        "detail": "Initial previous=null returns scale 1 and clears pulse timestamp. Hidden update and goLive reset previous, timestamp and scale. StreamSession.start calls goLive for a new run. Visual lifecycle evidence still pending."
+      },
+      {
+        "id": "loss",
+        "status": "SOURCE_SUPPORTED_WITH_QUALIFICATION",
+        "detail": "Loss never starts or restarts a pulse. Loss during an existing gain pulse retains the remaining settle and cooldown: at age 200 ms scale is approximately 1.01991. Loss at rest is neutral. Immediate neutral-on-any-loss is not implemented."
+      },
+      {
+        "id": "unchanged",
+        "status": "SOURCE_SUPPORTED",
+        "detail": "Inter/font declarations, palette, layer 7, chat, TTS, economy and combat code have no changes in this diff. Viewer scale and centered pivot can affect rendered bounds/readability; visual proof is pending."
+      },
+      {
+        "id": "test_logs",
+        "status": "EXISTING_LOGS_ONLY",
+        "detail": "Read existing final triangle-base logs: default root suite 13/13 steps passed and HUD unit test 20/20 passed. No test execution or independent reproduction by this auditor."
+      }
+    ],
+    "visual_gates": [
+      {
+        "id": "layout",
+        "status": "PASS",
+        "basis": "Across every native and decoded 1:1 viewer ROI, text stays inside the LiveTube strip with clear separation from LIVE, $0, chat and hype track. No label overlap, clipping, anchor shift or center intrusion observed. Scope: captured two-/three-digit counts at 1920x1080."
+      },
+      {
+        "id": "readability",
+        "status": "PASS",
+        "basis": "Count and watching remain legible at peak and throughout sampled settles. Encoded H.264/yuv420p frames retain readable text; slight scale resampling is restrained. No alarming flicker or gross text breakup in sampled sequence. No uninterrupted temporal-stability claim."
+      },
+      {
+        "id": "settle",
+        "status": "PASS",
+        "basis": "Candidate has three bounded pulses with sampled scale monotonically decreasing from 1.05999994 to 1; no overshoot or lingering scale. Native onset frames 5,29,67 return to exact neutral at 15,39,77. Last active to first neutral intervals bracket 650ms. Source cubic duration is 650ms; sampled footage cannot time sub-frame expiry exactly."
+      },
+      {
+        "id": "neutral_loss",
+        "status": "PASS",
+        "basis": "Explicit settled loss from 197 watching to 50 watching at native frame48/3.370280s stays scale1, as do subsequent 50->49 losses. Existing organic decay during gain settles retains decreasing scale and does not restart: 100->99 at f10, 200->199 at f31, 299->298 at f70. This is not immediate neutral-on-any-loss."
+      },
+      {
+        "id": "style_separation",
+        "status": "PASS",
+        "basis": "LiveTube Inter stream typography/chrome remains distinct from condensed combat readouts and the late monospace trainer strip. No new tint, glow or lattice added to count. Layer7/font/palette/chat/cheat-engine style code unchanged in diff. Full cheat-engine menu presentation is absent and not visually revalidated."
+      },
+      {
+        "id": "unchanged_combat_visibility",
+        "status": "PASS",
+        "basis": "Every native full-field context retains gun, iron-sight silhouette, crosshair, radar, ammo/streak areas and incoming damage/lattice presentation; the pulse is confined to the corner label. World/camera/enemy/damage timing and chat differ, so this establishes no visual obstruction from the pulse rather than pixel identity or full combat behavior equivalence."
+      }
+    ],
+    "evidence": {
+      "native_frame_pngs_reviewed": 189,
+      "standalone_pngs_reviewed": 2,
+      "total_distinct_native_pngs_reviewed": 191,
+      "control_native_range": [
+        0,
+        95
+      ],
+      "candidate_native_range": [
+        0,
+        92
+      ],
+      "mp4s_decoded": 2,
+      "decoded_frames_roi_reviewed": 402,
+      "control_decoded_range_zero_based": [
+        0,
+        205
+      ],
+      "candidate_decoded_range_zero_based": [
+        0,
+        195
+      ],
+      "decoded_file_numbering": "ffmpeg names frame0001 as zero-based decoded index0",
+      "roi": [
+        1440,
+        250,
+        1920,
+        345
+      ],
+      "roi_native_pixels": [
+        480,
+        95
+      ],
+      "roi_scale": "1:1 copied pixels, original-detail strip-sheet inspection; no spatial resize in ROI",
+      "full_context": "Complete native fields in640x360 overview tiles; standalone PNGs at original1920x1080",
+      "continuous_1x_playback_reviewed": false,
+      "audio_reviewed": false,
+      "reviewed_page_count": 54,
+      "raw_to_png_all_match": true,
+      "proof_all_frames_match_receipts": true,
+      "all_four_actions_per_run_accepted": true
+    },
+    "fixture_disclosures": [
+      "Four accepted ordinary debug_console stream viewers inputs per run:100 at~300ms,200 at~2000ms,50 at~3300ms,300 at~4700ms. Actual delivered times and subsequent frame text are in receipts; immediate after-action labels may still hold prior value until update.",
+      "Control scale always1. Candidate source range1..1.06; observed float max1.05999994277954. The final requested300 is first captured as299 due to ongoing existing decay.",
+      "Explicit50-viewer loss is after settle. Natural decay overlaps gain pulses and preserves their existing decreasing settle; never interpret this as a fresh loss celebration.",
+      "Silent CFR30 H.264/yuv420p video at1920x1080 uses measured native timestamps with hold/drop, no interpolation. Decoder ran on CPU with -hwaccel none.",
+      "Control video206 frames/6.8667s versus native capture elapsed6.626061s; candidate196 frames/6.5333s versus native elapsed6.501125s. Encoded timeline is not identical to raw sample timestamps; use receipts for event/settle timing."
+    ],
+    "gaps": [
+      "Only frame-by-frame sampled vision; no continuous 1x playback assessment. Control native mean/max gap 67.00/421.94ms (120 target intervals missed); candidate 70.10/231.77ms (101 missed). CFR30 holds/drops frames and cannot recover unrecorded motion.",
+      "Initial captured frame and final captured frame are neutral, but recordings do not cover actual goLive initial entry, hidden/reveal or restart transitions. Those resets are source-supported only.",
+      "Three gain onsets are more than1500ms apart (1704.115ms and2708.801ms); no close repeated-gain or exact cooldown-boundary fixture is recorded. Cooldown is source-supported and covered by existing reported unit assertions, not visually boundary-validated here.",
+      "Console jumps are controlled input through the production overlay, not evidence of naturally earned audience or audience/economy correctness. Ambient decay is the existing stream behavior.",
+      "Silent clips contain only video streams. No audible TTS, sound mix, audio timing or regression verdict.",
+      "World/camera, starting viewers (21 control vs15 candidate), chat and damage timing differ. Camera/gun are mostly stationary; magazine remains30. Shooting, recoil, reload, kill feedback and wider combat mechanics are not exercised by this viewer fixture.",
+      "The third visible text family is the trainer monospace strip. Full cheat-engine menu is not present; its unchanged source is inspected but menu appearance is not revalidated.",
+      "Full fields of all native frames were inspected at640x360 overview tiles plus original-detail standalone PNGs; every native/decoded LiveTube ROI was inspected at1:1. Decoded full-field overview sheets and extra native full-field1:1 sheets were generated but not reviewed. No claim of native-detail inspection outside the viewer region on every frame.",
+      "No performance, new engine/import/build/test or smoke execution by this auditor. Final pnpm-test-reset.log (UTF16) reports13/13; supplied smoke/cleanup report is not independently reproduced.",
+      "Count widths outside the captured two-/three-digit range and other viewport sizes are not visually covered."
+    ],
+    "next_step": "No required audit work remains within the observed fixture scope. Extra lifecycle/cooldown/audio/continuous-motion scenarios would expand coverage.",
+    "unqualified_all_pass": false,
+    "completed_utc": "2026-10-07T06:35:00.205561+00:00",
+    "scope": "Observed 1920x1080 fixture viewer-count presentation: layout, readability, sampled settle, settled loss/no loss retrigger, style separation and absence of pulse-driven combat obstruction. Other coverage explicitly excluded.",
+    "media_summary": {
+      "control": {
+        "native_frames": 96,
+        "decoded_frames": 206,
+        "video_sha256": "537a8d403c66266db278d73292daedbe51934094bc88f6f24ff85c187ab10551",
+        "receipt_sha256": "b61f2415d34c3a108514b240d0c99db89bbabd24cc5385857b6af499d8840b14",
+        "native_elapsed_seconds": 6.626061,
+        "encoded_duration_seconds": 6.866666666666666,
+        "timing": {
+          "capturedFrames": 96,
+          "meanGapMs": 67.00077894736843,
+          "maxGapMs": 421.9360000000001,
+          "targetIntervalsMissed": 120,
+          "outputFps": 30,
+          "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+        }
+      },
+      "candidate": {
+        "native_frames": 93,
+        "decoded_frames": 196,
+        "video_sha256": "668aa789aa768164e353d855d0023617f6b0978460d40195c065d8350deccfa4",
+        "receipt_sha256": "f63761844b07e9b2850e84fc4c17d88e694c4fafb8f6d376370d407ea934901f",
+        "native_elapsed_seconds": 6.501125,
+        "encoded_duration_seconds": 6.533333333333333,
+        "timing": {
+          "capturedFrames": 93,
+          "meanGapMs": 70.09660869565217,
+          "maxGapMs": 231.77199999999942,
+          "targetIntervalsMissed": 101,
+          "outputFps": 30,
+          "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+        }
+      }
+    },
+    "candidate_pulse_runs": [
+      {
+        "onset_index": 5,
+        "onset_seconds": 0.366413,
+        "onset_label": "100 watching",
+        "onset_scale": 1.05999994277954,
+        "samples": [
+          {
+            "index": 5,
+            "seconds": 0.366413,
+            "label": "100 watching",
+            "scale": 1.05999994277954
+          },
+          {
+            "index": 6,
+            "seconds": 0.439663,
+            "label": "100 watching",
+            "scale": 1.04262804985046
+          },
+          {
+            "index": 7,
+            "seconds": 0.505191,
+            "label": "100 watching",
+            "scale": 1.02949595451355
+          },
+          {
+            "index": 8,
+            "seconds": 0.57317,
+            "label": "100 watching",
+            "scale": 1.01925265789032
+          },
+          {
+            "index": 9,
+            "seconds": 0.638028,
+            "label": "100 watching",
+            "scale": 1.01189398765564
+          },
+          {
+            "index": 10,
+            "seconds": 0.709528,
+            "label": "99 watching",
+            "scale": 1.00644600391388
+          },
+          {
+            "index": 11,
+            "seconds": 0.774822,
+            "label": "99 watching",
+            "scale": 1.00313496589661
+          },
+          {
+            "index": 12,
+            "seconds": 0.844939,
+            "label": "99 watching",
+            "scale": 1.00113117694855
+          },
+          {
+            "index": 13,
+            "seconds": 0.914187,
+            "label": "99 watching",
+            "scale": 1.00026023387909
+          },
+          {
+            "index": 14,
+            "seconds": 0.985609,
+            "label": "99 watching",
+            "scale": 1.00000858306885
+          },
+          {
+            "index": 15,
+            "seconds": 1.059746,
+            "label": "99 watching",
+            "scale": 1.0
+          }
+        ],
+        "first_neutral_index": 15,
+        "first_neutral_seconds": 1.059746,
+        "elapsed_to_first_sampled_neutral_ms": 693.3330000000001,
+        "max_sample_gap_during_settle_ms": 74.13700000000011
+      },
+      {
+        "onset_index": 29,
+        "onset_seconds": 2.070528,
+        "onset_label": "200 watching",
+        "onset_scale": 1.05999994277954,
+        "samples": [
+          {
+            "index": 29,
+            "seconds": 2.070528,
+            "label": "200 watching",
+            "scale": 1.05999994277954
+          },
+          {
+            "index": 30,
+            "seconds": 2.140249,
+            "label": "200 watching",
+            "scale": 1.04218852519989
+          },
+          {
+            "index": 31,
+            "seconds": 2.206619,
+            "label": "199 watching",
+            "scale": 1.02949595451355
+          },
+          {
+            "index": 32,
+            "seconds": 2.269029,
+            "label": "199 watching",
+            "scale": 1.0197765827179
+          },
+          {
+            "index": 33,
+            "seconds": 2.335383,
+            "label": "199 watching",
+            "scale": 1.01246786117554
+          },
+          {
+            "index": 34,
+            "seconds": 2.400308,
+            "label": "199 watching",
+            "scale": 1.00702571868896
+          },
+          {
+            "index": 35,
+            "seconds": 2.465139,
+            "label": "199 watching",
+            "scale": 1.00349628925323
+          },
+          {
+            "index": 36,
+            "seconds": 2.52664,
+            "label": "199 watching",
+            "scale": 1.00149857997894
+          },
+          {
+            "index": 37,
+            "seconds": 2.633345,
+            "label": "198 watching",
+            "scale": 1.00014388561249
+          },
+          {
+            "index": 38,
+            "seconds": 2.70138,
+            "label": "198 watching",
+            "scale": 1.00000107288361
+          },
+          {
+            "index": 39,
+            "seconds": 2.768953,
+            "label": "198 watching",
+            "scale": 1.0
+          }
+        ],
+        "first_neutral_index": 39,
+        "first_neutral_seconds": 2.768953,
+        "elapsed_to_first_sampled_neutral_ms": 698.4250000000003,
+        "max_sample_gap_during_settle_ms": 106.70499999999983
+      },
+      {
+        "onset_index": 67,
+        "onset_seconds": 4.779329,
+        "onset_label": "299 watching",
+        "onset_scale": 1.05999994277954,
+        "samples": [
+          {
+            "index": 67,
+            "seconds": 4.779329,
+            "label": "299 watching",
+            "scale": 1.05999994277954
+          },
+          {
+            "index": 68,
+            "seconds": 4.852145,
+            "label": "299 watching",
+            "scale": 1.04240787029266
+          },
+          {
+            "index": 69,
+            "seconds": 4.915121,
+            "label": "299 watching",
+            "scale": 1.02932381629944
+          },
+          {
+            "index": 70,
+            "seconds": 4.981829,
+            "label": "298 watching",
+            "scale": 1.01951348781586
+          },
+          {
+            "index": 71,
+            "seconds": 5.04286,
+            "label": "298 watching",
+            "scale": 1.01227462291718
+          },
+          {
+            "index": 72,
+            "seconds": 5.106683,
+            "label": "298 watching",
+            "scale": 1.00729417800903
+          },
+          {
+            "index": 73,
+            "seconds": 5.16922,
+            "label": "298 watching",
+            "scale": 1.00379586219788
+          },
+          {
+            "index": 74,
+            "seconds": 5.250998,
+            "label": "297 watching",
+            "scale": 1.00127422809601
+          },
+          {
+            "index": 75,
+            "seconds": 5.313184,
+            "label": "297 watching",
+            "scale": 1.00032365322113
+          },
+          {
+            "index": 76,
+            "seconds": 5.378642,
+            "label": "297 watching",
+            "scale": 1.00002896785736
+          },
+          {
+            "index": 77,
+            "seconds": 5.44285,
+            "label": "297 watching",
+            "scale": 1.0
+          }
+        ],
+        "first_neutral_index": 77,
+        "first_neutral_seconds": 5.44285,
+        "elapsed_to_first_sampled_neutral_ms": 663.5210000000003,
+        "max_sample_gap_during_settle_ms": 81.7779999999999
+      }
+    ],
+    "test_evidence": "Read final pnpm-test-reset.log as UTF16: ROOT SUITE OK,13/13 steps,failed0. No tests run by auditor.",
+    "supplementary_source_coverage": {
+      "initial_hidden_restart": "SOURCE_SUPPORTED; no transition footage",
+      "cooldown1500ms": "SOURCE_SUPPORTED; exact boundary and repeated gains inside cooldown absent",
+      "fonts_colors_hud_layer_chat_tts_economy": "UNCHANGED_COMMITTED_DIFF"
+    },
+    "final_evidence_hashes": [
+      {
+        "path": "artifacts/juice/viewer-proof.json",
+        "sha256": "aefdd698309565bde26878fd79bf3f0fe11daef729abcd0de90b985895011597"
+      },
+      {
+        "path": "artifacts/juice/viewer-upload.json",
+        "sha256": "c827b36af9295717182676c325c05507029eef482c6afecdf09f254184d714fb"
+      },
+      {
+        "path": "artifacts/juice/viewer-proof-upload.json",
+        "sha256": "139b898f24a5b9df9d6db3028b783d305e427ff6d13b954035b8b8f66919cec7"
+      },
+      {
+        "path": "artifacts/juice/pnpm-test-reset.log",
+        "sha256": "7fab4dbf6eebad8dd84a938ec1897cdd7659ab278c591dcf8e1ba607959780b0"
+      },
+      {
+        "path": "artifacts/juice/before-viewer.png",
+        "sha256": "9faf262e5b0ac4cae5156e8c9dc13f7ea1c5e74c893ee460d40c4d412e068c88"
+      },
+      {
+        "path": "artifacts/juice/after-viewer.png",
+        "sha256": "870a15f55dfa4d83cfe76cdc56e7e34d905b02ef0bf77be34c05d0d1c0d2bb6c"
+      }
+    ],
+    "audit_supporting_records": [
+      {
+        "path": "artifacts\\juice\\audit-vision\\media-inventory.json",
+        "sha256": "2b039230e30683876c952de96ed65418553166a1863d77e734c06d37000beaa7"
+      },
+      {
+        "path": "artifacts\\juice\\audit-vision\\telemetry-analysis.json",
+        "sha256": "73b96e4f75fc838ba1f1f334676a0258175eedd8364ed53dc31163828f0552dc"
+      },
+      {
+        "path": "artifacts\\juice\\audit-vision\\visual-review-manifest.json",
+        "sha256": "494c747b495660d0bf03c161398c52ee4c6fda852f0c8d47883b9760b3b23c69"
+      }
+    ],
+    "published_evidence_urls": [
+      {
+        "source": "artifacts\\juice\\before-viewer.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-viewer-gains-20261007/before-viewer-9faf262e5b.png",
+        "path": "juice-viewer-gains-20261007/before-viewer-9faf262e5b.png",
+        "reused": false,
+        "inline": true
+      },
+      {
+        "source": "artifacts\\juice\\after-viewer.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-viewer-gains-20261007/after-viewer-870a15f55d.png",
+        "path": "juice-viewer-gains-20261007/after-viewer-870a15f55d.png",
+        "reused": false,
+        "inline": true
+      },
+      {
+        "source": "..\\juice-enemy-hit\\artifacts\\juice\\before-viewer.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-viewer-gains-20261007/before-viewer-537a8d403c.mp4",
+        "path": "juice-viewer-gains-20261007/before-viewer-537a8d403c.mp4",
+        "reused": false,
+        "inline": false
+      },
+      {
+        "source": "artifacts\\juice\\after-viewer.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-viewer-gains-20261007/after-viewer-668aa789aa.mp4",
+        "path": "juice-viewer-gains-20261007/after-viewer-668aa789aa.mp4",
+        "reused": false,
+        "inline": false
+      },
+      {
+        "source": "..\\juice-enemy-hit\\artifacts\\juice\\before-viewer.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-viewer-gains-20261007/before-viewer-b61f2415d3.json",
+        "path": "juice-viewer-gains-20261007/before-viewer-b61f2415d3.json",
+        "reused": false,
+        "inline": false
+      },
+      {
+        "source": "artifacts\\juice\\after-viewer.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-viewer-gains-20261007/after-viewer-f63761844b.json",
+        "path": "juice-viewer-gains-20261007/after-viewer-f63761844b.json",
+        "reused": false,
+        "inline": false
+      },
+      {
+        "source": "artifacts\\juice\\viewer-proof.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-viewer-gains-20261007/viewer-proof-aefdd69830.json",
+        "path": "juice-viewer-gains-20261007/viewer-proof-aefdd69830.json",
+        "reused": false,
+        "inline": false
+      }
+    ]
+  },
+  "signature": {
+    "signed_by": "Codex / independent vision auditor / root",
+    "signed_utc": "2026-10-07T06:35:00.205561+00:00",
+    "kind": "Named auditor attestation plus SHA256 integrity digest; not a public-key signature",
+    "attestation": "I independently inspected every indexed native frame in full-field context and every native/decoded viewer ROI at1:1, plus both original standalone PNGs, and read source/direction and receipts. The six observed-fixture gates pass within stated scope; excluded cases and actual gaps are disclosed. No engine, GPU, imports, tests, source changes or PR actions.",
+    "payload_sha256": "aa40f3076e021887ef72190c19f02d1d20dc2d56956e4a0f480677f0e0896536",
+    "digest_serialization": "UTF8 json.dumps(audit,ensure_ascii=False,sort_keys=True,separators=(comma,colon)); signature excluded"
+  }
+}
