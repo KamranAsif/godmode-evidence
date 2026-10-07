@@ -1,0 +1,10 @@
+node : (node:12872) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to 
+security vulnerabilities, as the arguments are not escaped, only concatenated.
+At line:6 char:1
++ node tools/godot-cli/dist/src/index.js project import --project . --j ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:12872) [D...y concatenated.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"schemaVersion":1,"ok":true,"message":"Refreshed project resource imports","data":{"projectPath":"D:\\work\\godmode-roguelite-worktrees\\street-prop-textures-20261007","godotPath":"C:\\tools\\GodotJS-4.6.1-v8-nopc\\editor\\godot.windows.editor.x86_64.exe","resourceImport":{"imported":true,"missingBefore":4,"attempts":1,"command":["C:\\tools\\GodotJS-4.6.1-v8-nopc\\editor\\godot.windows.editor.x86_64.exe","--path","D:\\work\\godmode-roguelite-worktrees\\street-prop-textures-20261007","--editor","--windowed","--resolution","640x360","--position","-10000,-10000","--quit"],"engineExitedAfterImport":true}}}
