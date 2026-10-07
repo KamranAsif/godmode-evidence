@@ -1,0 +1,213 @@
+{
+  "reportType": "FINAL_HUD_ONLY_VISUAL_AUDIT",
+  "overall": "ALL PASS",
+  "verdictScope": "Candidate e2a5a6a HUD hit-confirmation diff only: marker priority, ordinary/lethal onset and settle, outward fade, readability, preserved observed ADS/camera and three HUD layers. Does not certify the whole game's VFX, signature triangle execution, collision, spawning or fairness.",
+  "auditor": "Codex — Juice lane 147 vision auditor",
+  "signedAtUtc": "2026-10-07T02:58:21Z",
+  "candidateCommit": "e2a5a6af4dd3bc3353752b1040a1c7cd37765c87",
+  "worktree": "D:/work/godmode-roguelite-worktrees/juice-hit-confirmation",
+  "guidance": [
+    "AGENTS.md",
+    "GAME.md",
+    "ART_STYLE.md"
+  ],
+  "guidanceContext": "Juice worktree BattleDuty-aimbot horde-survival specification; stale main-checkout room-mode instructions not used for visual judgment.",
+  "supersedes": "candidate-interim-review.json (preserved as historical interim findings)",
+  "nativeFrameCoverage": {
+    "baseline-combat": "0000–0091; all 92",
+    "after-combat": "0000–0112; all 113",
+    "after-reel": "0000–0075; all 76",
+    "after-confirmed-combat": "0000–0119; all 120",
+    "after-reel-v2": "0000–0064; all 65",
+    "totalReviewed": 466,
+    "newReviewed": 185
+  },
+  "inspectionMethod": "Every frame reviewed via native-pixel central marker crops and reduced full-scene overview sheets. Selected 1920x1080 originals inspected, including actual combat frame0069 and the three-HUD still. Overview sheets are audit viewing aids; no submitted frame or video modified. All 185 new PNGs checked for 1920x1080 dimensions and decoded RGBA SHA256 match to metadata; no mismatches. Both new MP4s decoded in full without errors.",
+  "criteria": [
+    {
+      "criterion": "Real acquired-target ADS kills and retargets",
+      "status": "PASS",
+      "evidence": "Target-gate receipt locks soldier-e9 at 30.033m, ADS true, turning false. Both final combat inspect and store record killSnaps=3. Survival streamKills confirms 3 real gun kills, all ADS true, at server 48266,49377,50631ms, ranges30,23.9,38.5m. Actual marker onsets visible at frames17 (0.888s),38 (1.995s),63 (3.239s), followed by camera retargets."
+    },
+    {
+      "criterion": "Active kill retained while real ADS retarget hits next enemy",
+      "status": "PASS",
+      "evidence": "Third kill frames63–69: camera swings onto another living enemy at66–68; frame69 (3.497092s) shows red next-enemy hit flash while the fading orange kill X remains, without downgrade to white. Frame70 clears lethal feedback after its normal expiry; ordinary white marker returns at72. Recent audio confirms last enemy-death at36448ms, then next hit-confirm at36707ms and impact-flesh36711ms (259/263ms later, inside320ms lethal hold). Audio clock and capture clock are different; relative alignment is corroboration, not an asserted absolute clock mapping."
+    },
+    {
+      "criterion": "Production feedback priority, including boss over hit/kill",
+      "status": "PASS",
+      "evidence": "Corrected fixture kill delivered0.883457s remains lethal at frame15 (1.124574s) after ordinary hit delivered1.073569s, then expires without refresh. Boss delivered2.234578s remains larger lethal marker through frames32–36 after hit2.323144s and ordinary kill2.487937s; clear37 (2.779656s). Fixture explicitly supplementary to real gameplay."
+    },
+    {
+      "criterion": "Ordinary-hit onset, brief settle and clear",
+      "status": "PASS",
+      "evidence": "Hit actually delivered0.357003s pre-render. Frame4 (0.311s) has no marker; frame5 (0.380256s) samples onset23.253ms after delivery, within40ms pulse window. Frame6 (0.449216s) shows the slightly settled/fading white X; frame7 (0.517607s) is clear. Native bright-neutral marker-region envelope contracts from24x24 to23x23 pixels. This establishes a sampled onset/settle, not every instant or exact peak."
+    },
+    {
+      "criterion": "Lethal pulse, settle and successive-kill retrigger",
+      "status": "PASS",
+      "evidence": "Reel-v2 frame13 (0.902952s;19.495ms after delivered kill) is enlarged;14 (0.959451s;75.994ms) settled. Frame43 onset follows delivered3.320238s kill,44 settles;45 shows a renewed larger lethal pulse after delivered3.522409s kill,46–47 settle. Actual kill onsets17,38,63 support production gameplay presentation."
+    },
+    {
+      "criterion": "Outward fade and expiry",
+      "status": "PASS",
+      "evidence": "Actual lethal marker fades/expands at21 before clear22,42 before clear43,69 before clear70. Corrected fixture fading final kill at48 (3.782s), clear49 (3.856s); boss clear37. No sticky marker after expiry. Gaps limit continuous-motion/curve claims."
+    },
+    {
+      "criterion": "Marker hierarchy, readability and central aim clearance",
+      "status": "PASS",
+      "evidence": "Outlined white hit/headshot, larger orange-red kill and largest boss marker retain readable distinct weights. Native actual ADS frames show center hole and target visibility retained; marker stays centered, no new glow, no displacement or neighboring HUD layout disturbance. Body-red damage is inherited enemy-hit VFX, distinct from marker color."
+    },
+    {
+      "criterion": "Observed ADS/gun/camera presentation preservation",
+      "status": "PASS",
+      "evidence": "All120 actual combat frames plus113 original candidate magazine frames preserve iron-sight alignment, weapon framing, shot kick/settle, shell ejection, foreground blur and HUD-relative center. Actual kill retarget movements are expected. Source diff preserves existing shot feedback and changes no weapon/camera/hand code. Fixture invokes existing shot feedback and is not a gun-cadence test. Exact v0.28 timing/equality is not claimed."
+    },
+    {
+      "criterion": "Three distinct HUD layers and layout preservation",
+      "status": "PASS",
+      "evidence": "after-three-hud.png shows sharp BattleDuty-aimbot loot/cheat-engine app, sharp separate LiveTube stream overlay, and blurred underlying game/combat HUD, plus desktop taskbar. Receipt confirms cheatEngine.open=true, mode=loot and actual offers. Native baseline-crate.png corroborates unchanged placement/type hierarchy/blur composition. Real actual-combat HUD remains readable. Third layer is the cheat-engine app specified by GAME.md; a cyan notice is not required to establish that layer."
+    }
+  ],
+  "newEvidence": [
+    {
+      "name": "after-confirmed-combat",
+      "classification": "Actual ADS combat; no scheduled synthetic feedback",
+      "nativeFrames": 120,
+      "elapsedSeconds": 6.02836,
+      "meanGapMs": 50.36729411764706,
+      "maxGapMs": 227.16,
+      "targetIntervalsMissed": 34,
+      "encodedFps": 30,
+      "decodedFrames": 181,
+      "decodedDurationSeconds": 6.033333,
+      "mp4Decode": "PASS",
+      "nativePixelHashes": "120/120 match",
+      "mp4Sha256": "9fa412ba17f3e4dd22836645aeb9a7857b48ebc8ae0578f965b68acc9610f191",
+      "metadataSha256": "696d378cb9ca8c5ba9042bd391e972753dca28127ca7ab40788eab2d55afa62a",
+      "mp4Url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-hit-confirmation-20261006/after-confirmed-combat-9fa412ba17.mp4",
+      "metadataUrl": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-hit-confirmation-20261006/after-confirmed-combat-696d378cb9.json"
+    },
+    {
+      "name": "after-reel-v2",
+      "classification": "Synthetic production receive_combat_feedback presentation fixture, pre-render delivery",
+      "nativeFrames": 65,
+      "elapsedSeconds": 5.006964,
+      "meanGapMs": 77.471765625,
+      "maxGapMs": 165.123,
+      "targetIntervalsMissed": 86,
+      "encodedFps": 30,
+      "decodedFrames": 150,
+      "decodedDurationSeconds": 5,
+      "mp4Decode": "PASS",
+      "nativePixelHashes": "65/65 match",
+      "mp4Sha256": "6bbb595f49ba790b57727b1eabf0f8280b2966dcfa9e5efb18f88cb25d60ba57",
+      "metadataSha256": "50a4bb545cc58dbee06fafb9625300fcd76b59ac1bd6c5225678cb460d6cdae9",
+      "mp4Url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-hit-confirmation-20261006/after-reel-v2-6bbb595f49.mp4",
+      "metadataUrl": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-hit-confirmation-20261006/after-reel-v2-50a4bb545c.json"
+    },
+    {
+      "name": "after-three-hud.png",
+      "classification": "Actual candidate third-layer activation using debug lootbox setup",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "1d7f0120d60a90218d3e6e76fd338898aed2d70be94d0848a244c74a485f0f06",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-hit-confirmation-20261006/after-three-hud-1d7f0120d6.png"
+    },
+    {
+      "name": "after-confirmed-kill.png",
+      "dimensions": [
+        1920,
+        1080
+      ],
+      "sha256": "e9c336a80a85d54310b6a1aafc05b26d898444fdc81f12cd46beb8ac6ff8ebba",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-hit-confirmation-20261006/after-confirmed-kill-e9c336a80a.png"
+    },
+    {
+      "name": "confirmed-combat-inspect.log",
+      "sha256": "2e5db8d966c6cabd043073189e9181f5d4ee1d14c337648317815f7146b6bf99"
+    },
+    {
+      "name": "store.json",
+      "sha256": "80c757a3a3e8b5a17a6e9dfa8edd338520c400f6cfda08a756fa8e419b1c6d7c"
+    }
+  ],
+  "fixtureDelivery": [
+    {
+      "kind": "hit",
+      "seconds": 0.357003
+    },
+    {
+      "kind": "kill",
+      "seconds": 0.883457
+    },
+    {
+      "kind": "hit",
+      "seconds": 1.073569
+    },
+    {
+      "kind": "headshot",
+      "seconds": 1.51251
+    },
+    {
+      "kind": "boss-kill",
+      "seconds": 2.234578
+    },
+    {
+      "kind": "hit",
+      "seconds": 2.323144
+    },
+    {
+      "kind": "kill",
+      "seconds": 2.487937
+    },
+    {
+      "kind": "kill",
+      "seconds": 3.320238
+    },
+    {
+      "kind": "kill",
+      "seconds": 3.522409
+    }
+  ],
+  "limitations": [
+    "MP4s are native1920x1080 pixels encoded30fps using measured native timestamps and temporal holds/drops. Not native measured30fps, no generated intermediate images. Encoded held frames add no new motion evidence.",
+    "The ordinary-hit onset is sampled at23ms, not its exact initial peak; cadence and continuous interpolation are not inferred across capture gaps.",
+    "Normal-time real firing followed accelerated target waiting/refill and invincible debug setup. This still demonstrates actual simulation hits/kills, but does not test survival difficulty.",
+    "Three-HUD still proves activated composition; not a complete crate interaction/collision/spawn audit.",
+    "Old after-combat had no hits/kills and remains regression evidence only. Old after-reel and debug baseline-markers are presentation fixtures, not real hit-retarget proof.",
+    "Reel-v2 tail frames62–64 show a large dark world object progressively occluding the camera while SUPPLY approaches0M. User reports intended post-reel debug lootbox action may have overlapped because sleep ended early; exact command-to-frame boundary was not logged. All marker events/fades have completed before this tail.",
+    "Source check: client dev_console.ts:144 sends lootbox; server debug_commands.ts:122 maps it to survival crate; survival_run.ts:424 calls openCrate(nowMs,'debug'); openCrate at676 deals/opens an offer, not a physical crate spawn. This matches the separate loot UI screenshot, but does not itself explain/identify the dark mesh.",
+    "Independent supply receipt places landed crate at[-405.0701,-15.3793,-320.4008], beside player[-405.1387,-14.4775,-320.3975]. Existing supply_drop_view.ts:192 computes rounded SUPPLY distance and renders ongoing crate/helicopter meshes. This is consistent with nearby supply occlusion; exact mesh/collision cause is unproven. Tail excluded from world/collision/spawn certification, retained without claiming it is a marker regression."
+  ],
+  "inheritedLimitations": [
+    {
+      "criterion": "High fidelity enemy hit VFX / signature triangle shader execution",
+      "certification": "NOT CERTIFIED; outside HUD-only diff",
+      "observation": "Whole-red enemy hits persist from baseline and are ranked#2 next-PR debt. Shader/material/VFX source untouched. No new visual regression attributable to marker diff observed; no whole-game VFX PASS issued."
+    },
+    {
+      "criterion": "Tough-but-fair combat / invisible enemy spawns",
+      "certification": "NOT CERTIFIED; outside HUD-only diff",
+      "observation": "Short captures/debug invincibility cannot establish fairness or all spawn placement. AI/spawn source untouched; no whole-game fairness PASS issued."
+    },
+    {
+      "criterion": "Supply geometry/collision/near-camera spawn",
+      "certification": "NOT CERTIFIED; outside HUD-only diff",
+      "observation": "Dark occlusion in fixture tail documented as unresolved world/setup observation. Unchanged source and separate setup context do not certify acceptable physical behavior."
+    }
+  ],
+  "candidateRegressionsEstablished": [],
+  "unresolvedHudCaptureGates": [],
+  "sourceScope": "Seven-file66-add/4-remove marker change: feedback replacement/start timestamp, HUD root scale/alpha, reset/debug timing and unit tests. No shader, gun, camera, map, hands, AI, spawn or stream changes in candidate commit.",
+  "validation": {
+    "independentAudit": "Native visual frame review, receipt parsing, source diff inspection, dimensions/RGBA hash validation, full MP4 decode",
+    "userReported": "pnpm build/lint/HUD tests and pnpm test13/13, smoke loaded/action accepted/no TS errors",
+    "notRunByAuditor": "Godot, game, build, lint or unit tests"
+  },
+  "actions": "No engine started, no implementation/evidence edited; wrote only auditor-owned report files. Did not merge or publish PR.",
+  "signature": "Codex — Juice lane 147 vision auditor. Signed final HUD-only evidence receipt; ALL PASS applies solely to the enumerated HUD criteria."
+}
