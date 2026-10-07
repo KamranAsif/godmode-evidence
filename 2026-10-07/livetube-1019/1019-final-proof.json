@@ -1,0 +1,36 @@
+{
+  "pr": 1019,
+  "head": "5744d02401d8ee430fa55f2da25a94697998a6e5",
+  "base": "8d413f03888fca3a31e3c3919db95e856691a53b",
+  "tree": "f567055f3e453747a410ed8630ee68de312f8780",
+  "priorFullSuite": {
+    "head": "07c5443219ddcce42de8a4168c9cde7a9649cee0",
+    "base": "5925eb2cda2a7031c146f603a444959a1bbb25c4",
+    "passed": 13,
+    "endedAt": "2026-10-07T18:24:14.191Z"
+  },
+  "affectedGate": {
+    "label": "emotes-affected-gate",
+    "command": "pnpm build:scripts && pnpm test:unit && pnpm --filter @godmode/game-rules test",
+    "code": 0,
+    "timedOut": false,
+    "endedAt": "2026-10-07T19:00:28.777Z"
+  },
+  "policy": "Kamran: compile with pnpm build:scripts; do not regenerate/export arena for PRs; arena freshness/fingerprint failures accepted. Rebase only reruns affected checks.",
+  "captureSource": "0995fa2dc423315b2c463065883c27b598237dbf",
+  "captureUnchanged": "Emote glyphs/combo placement, six-second rate limit, heavy-fire reduction and OFF clearing unchanged; account announcements added upstream use a separate path.",
+  "arena": {
+    "retainedCache": "c6749d2071ea8e8faab4c76def9fa964371b73c01418583623b7a0555531398a",
+    "requiredEarlierMain": "63880ba5a616f37c2f3ca0bdac03eda12fbf39b5677b194c4faf470bafd439cb",
+    "freshness": "accepted stale; no generation performed"
+  },
+  "rendering": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 300,
+    "silent": true,
+    "maxGapMs": 80.006
+  },
+  "ownEngines": 0
+}
