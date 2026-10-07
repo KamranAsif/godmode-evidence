@@ -1,0 +1,22 @@
+{
+  "sourceCommit": "ea50808d21048d5b667a24d35a22c14764d8e1b6",
+  "baseCommit": "24bb855f4ad9f1aa5e12e67410fcfecfe92c25a6",
+  "preservedPriorCandidate": "669f0c2a1f77130d4edc528f29d4232d4d3bafaa",
+  "rebase": "Clean. Only upstream viewer UI files differ from the previously verified candidate; lighting and materials are unchanged.",
+  "passedAfterRebase": [
+    "pnpm build:scripts",
+    "pnpm lint: 0 errors, 5 existing warnings",
+    "36 lighting and HUD tests"
+  ],
+  "passedBeforeViewerOnlyRebase": [
+    "pnpm format",
+    "pnpm build including regenerated arena verification",
+    "16 lighting tests",
+    "headless survival smoke: live player, no script errors"
+  ],
+  "prebuiltCache": "Upstream scripts/game_world.ts changed, so this checkout needs arena cache regeneration at its next owned engine slot. No engine was started during this CPU-only handoff.",
+  "spatial": "ALL PASS per final auditor disposition",
+  "temporal": "Review delegated to Kamran by orchestrator. Auditor has not certified continuous playback or shimmer.",
+  "merge": "Do not merge before Kamran approves the look",
+  "gpu": "154 owns zero engines"
+}
