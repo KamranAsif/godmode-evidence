@@ -1,0 +1,539 @@
+{
+  "schemaVersion": 1,
+  "audit": "Independent Codex tip-count vision/source audit",
+  "allPass": true,
+  "mergeClearance": true,
+  "mergeClearanceScope": "Only the three-file tip-count delta at 9afaba970 on 08429cb; no merge action authorized or performed by this audit",
+  "candidateHead": "9afaba9709fd9fb492b0c10df2bfda8b97d15a3d",
+  "candidateTree": "e5a331642148e61cb26d7250409f6b244599be47",
+  "baseHead": "08429cb224892e6fae2336eb03e61374a9ee6866",
+  "baseTree": "93fc2205441fbd1b78eba61618d84da6af1c4968",
+  "captureCandidateHead": "899732c4683887dc977ab4fee7ee8c91d52f330b",
+  "captureCandidateTree": "bc455736b3a95e8b3fe7a4516b4b95b19c29f50f",
+  "captureBaseHead": "24bb855f4ad9f1aa5e12e67410fcfecfe92c25a6",
+  "captureBaseTree": "ec1aabbfcf4364014ff67053db26787f74a41b1a",
+  "smokeHead": "899732c4683887dc977ab4fee7ee8c91d52f330b",
+  "controlHead": "bfcb267190b4be15c72e4a196a44a202524ea83f",
+  "controlTree": "ec1aabbfcf4364014ff67053db26787f74a41b1a",
+  "sourceBlobs": [
+    {
+      "path": "scripts/hud_layout.ts",
+      "captureBlob": "9a12dfd743f1f6e0e535a2a1b0396469b73c9e4b",
+      "currentBlob": "9a12dfd743f1f6e0e535a2a1b0396469b73c9e4b",
+      "identical": true,
+      "worktreeSha256": "2f63f559b4d725199a22241c6e7f60c2225ca31e74338ab4bdc0ae0ce8084b9e",
+      "proofSha256": "2f63f559b4d725199a22241c6e7f60c2225ca31e74338ab4bdc0ae0ce8084b9e",
+      "proofHashMatchesWorktree": true
+    },
+    {
+      "path": "scripts/client/stream_overlay.ts",
+      "captureBlob": "74df7e855b879d7480a5ac8b3318f0023e06d936",
+      "currentBlob": "74df7e855b879d7480a5ac8b3318f0023e06d936",
+      "identical": true,
+      "worktreeSha256": "d8de358f0185a5077c9ee5cd93c3a34472fa724a05fa80f239c97aee5b81670d",
+      "proofSha256": "d8de358f0185a5077c9ee5cd93c3a34472fa724a05fa80f239c97aee5b81670d",
+      "proofHashMatchesWorktree": true
+    },
+    {
+      "path": "tests/unit/hud-layout.test.mjs",
+      "captureBlob": "5d94ff1df0cd432531c73c723470e150ecd4c734",
+      "currentBlob": "5d94ff1df0cd432531c73c723470e150ecd4c734",
+      "identical": true,
+      "worktreeSha256": "e9b1db985efea1fc36a829f73e2466b0c9a6ac7a58105211e8170752cbe13629",
+      "proofSha256": "e9b1db985efea1fc36a829f73e2466b0c9a6ac7a58105211e8170752cbe13629",
+      "proofHashMatchesWorktree": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "revision-and-rebase",
+      "pass": true,
+      "coverage": "Git blob identity and source bytes; exactly three files, 47 insertions, 2 deletions against current base"
+    },
+    {
+      "id": "native-and-published-integrity",
+      "pass": true,
+      "coverage": "152 PNG/RGBA pairs and seven remote downloads, HTTP 200, full SHA-256 comparisons"
+    },
+    {
+      "id": "normal-tip-path",
+      "pass": true,
+      "coverage": "Source trace debug_console -> StreamSession.debugTip -> LiveStream.gift -> chat/TipBot/alert/listeners; four accepted commands per run"
+    },
+    {
+      "id": "gain-retarget-settle",
+      "pass": true,
+      "coverage": "All native and encoded label frames at 1:1; increasing multi-dollar values, mid-count second gain, exact $30/$40/$41 settlement"
+    },
+    {
+      "id": "no-overshoot",
+      "pass": true,
+      "coverage": "Every recorded label sample, plus bounded cubic easing source"
+    },
+    {
+      "id": "geometry-style-obstruction",
+      "pass": true,
+      "coverage": "Every native label frame; full-frame contexts and selected originals; stable rect/scale, unchanged Inter/card/color/layout, no added obstruction"
+    },
+    {
+      "id": "first-loss-hide-goLive",
+      "pass": true,
+      "coverage": "Source inspection and owner-produced 22/22 HUD log; initial zero visible; nonzero first/loss/hide/restart not separately rendered"
+    },
+    {
+      "id": "three-layers-fiction-gun-triangle",
+      "pass": true,
+      "coverage": "Diff boundaries and source hierarchy; static capture context; no firing, audible TTS, fracture motion or triangle regression trial"
+    },
+    {
+      "id": "media-disclosure",
+      "pass": true,
+      "coverage": "Software decode 245/241 frames, native 1920x1080, silent CFR30, temporal holds/drops; raw gaps retained"
+    },
+    {
+      "id": "owner-verification-logs",
+      "pass": true,
+      "coverage": "Read existing original 13/13, HUD 22/22, rebased 13/13 and original smoke logs; auditor ran zero tests/engines/imports"
+    }
+  ],
+  "coverage": {
+    "candidateNativePngAndRgba": 72,
+    "controlNativePngAndRgba": 80,
+    "candidateDecodedMp4FramesReviewedAtLabel1to1": 245,
+    "controlDecodedMp4FramesReviewedAtLabel1to1": 241,
+    "nativeFullFrameOverviewCoverage": "All 72 candidate and 80 control frames",
+    "nativeFullFrameOriginalResolutionReviewed": {
+      "candidate": [
+        0,
+        7,
+        25,
+        47,
+        71
+      ],
+      "control": [
+        0,
+        8,
+        25,
+        49,
+        79
+      ]
+    },
+    "videoFullFrameOverviewCoverage": "Every 15th encoded frame: 17 candidate and 17 control contexts",
+    "videoFullFrameOriginalResolutionReviewed": {
+      "candidate": [
+        27,
+        244
+      ],
+      "control": [
+        26,
+        240
+      ]
+    },
+    "nativeLabelRoi": [
+      1470,
+      280,
+      1902,
+      324
+    ],
+    "logicalTipRect": [
+      1156,
+      192,
+      102,
+      17
+    ],
+    "logicalTipScale": [
+      1,
+      1
+    ],
+    "nativeCanvasScale": 1.5,
+    "candidateDistinctValues": [
+      0,
+      14,
+      21,
+      24,
+      27,
+      29,
+      30,
+      35,
+      38,
+      39,
+      40,
+      41
+    ],
+    "controlDistinctValues": [
+      0,
+      25,
+      30,
+      40,
+      41
+    ]
+  },
+  "limitations": [
+    "Captures and smoke belong to 899732c/24bb855, never 9afaba9/08429cb. Final tip-scope clearance transfers through identical Git blobs and a read-only review of the unrelated base delta.",
+    "Idle, invincible arena at normal timescale; donations are developer-triggered through normal gift pathways, not proof of tips earned by play.",
+    "Control/candidate differ in world location, actors, random chat, viewers (47->42 versus 17->16), opener timing and capture cadence. Screenshots are near the same capture time, not pixel-matched scenes.",
+    "Candidate native gaps mean/max 112.136/173.301 ms; control 101.005/226.984 ms. CFR30 holds/drops native frames. No generated interpolation, no spatial evidence resize, no continuous 1x or smooth-30fps claim.",
+    "All label crops are reviewed at native 1:1. Full-frame overview sheets are downscaled audit derivatives; selected full frames are reviewed at original resolution. Not every full video frame was visually reviewed at full-frame 1:1.",
+    "Silent videos establish no audible TTS quality. No player firing, reload, kill, active damage-fracture or triangle-signature motion is exercised; preservation is source-scope evidence.",
+    "First nonzero display, loss, hide/show and goLive reset are source/log covered, not a separately rendered reset/loss trial. The 450 ms duration is source-confirmed; capture gaps cannot establish exact render-frame completion time.",
+    "A one-dollar gain floors to its old integer until it reaches the target; visible candidate $40->41 settles at native frame 47. This is expected, not missing donation credit.",
+    "Existing central go-live panel and trainer notice cover world pixels early; the tip change adds no new footprint or centre obstruction. Challenge card not active in these clips.",
+    "Smoke stop forced:true is the owner-provided stop result, not evidence of graceful teardown. Auditor did not start or stop any engine or process belonging to the game."
+  ],
+  "realFailures": [],
+  "iterations": 1,
+  "events": {
+    "candidate": [
+      {
+        "scheduledMs": 300.0,
+        "command": "stream tip 25",
+        "deliveredSeconds": 0.365728,
+        "accepted": true,
+        "beforeText": "$0",
+        "afterText": "$0",
+        "beforeTips": 0.0,
+        "afterTips": 25.0
+      },
+      {
+        "scheduledMs": 600.0,
+        "command": "stream tip 5",
+        "deliveredSeconds": 0.729452,
+        "accepted": true,
+        "beforeText": "$21",
+        "afterText": "$21",
+        "beforeTips": 25.0,
+        "afterTips": 30.0
+      },
+      {
+        "scheduledMs": 2400.0,
+        "command": "stream tip 10",
+        "deliveredSeconds": 2.542449,
+        "accepted": true,
+        "beforeText": "$30",
+        "afterText": "$30",
+        "beforeTips": 30.0,
+        "afterTips": 40.0
+      },
+      {
+        "scheduledMs": 4800.0,
+        "command": "stream tip 1",
+        "deliveredSeconds": 4.847676,
+        "accepted": true,
+        "beforeText": "$40",
+        "afterText": "$40",
+        "beforeTips": 40.0,
+        "afterTips": 41.0
+      }
+    ],
+    "control": [
+      {
+        "scheduledMs": 300.0,
+        "command": "stream tip 25",
+        "deliveredSeconds": 0.420337,
+        "accepted": true,
+        "beforeText": "$0",
+        "afterText": "$0",
+        "beforeTips": 0.0,
+        "afterTips": 25.0
+      },
+      {
+        "scheduledMs": 600.0,
+        "command": "stream tip 5",
+        "deliveredSeconds": 0.64057,
+        "accepted": true,
+        "beforeText": "$25",
+        "afterText": "$25",
+        "beforeTips": 25.0,
+        "afterTips": 30.0
+      },
+      {
+        "scheduledMs": 2400.0,
+        "command": "stream tip 10",
+        "deliveredSeconds": 2.501849,
+        "accepted": true,
+        "beforeText": "$30",
+        "afterText": "$30",
+        "beforeTips": 30.0,
+        "afterTips": 40.0
+      },
+      {
+        "scheduledMs": 4800.0,
+        "command": "stream tip 1",
+        "deliveredSeconds": 4.845303,
+        "accepted": true,
+        "beforeText": "$40",
+        "afterText": "$40",
+        "beforeTips": 40.0,
+        "afterTips": 41.0
+      }
+    ]
+  },
+  "timing": {
+    "candidate": {
+      "nativeElapsedSeconds": 8.131499,
+      "decodedFrames": 245,
+      "gapsMs": {
+        "min": 97.15600000000002,
+        "mean": 112.13561971830987,
+        "max": 173.30099999999993
+      },
+      "reportedTiming": {
+        "capturedFrames": 72,
+        "meanGapMs": 112.13561971830987,
+        "maxGapMs": 173.30099999999993,
+        "targetIntervalsMissed": 164,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      }
+    },
+    "control": {
+      "nativeElapsedSeconds": 8.065909,
+      "decodedFrames": 241,
+      "gapsMs": {
+        "min": 86.472,
+        "mean": 101.00459493670886,
+        "max": 226.98399999999987
+      },
+      "reportedTiming": {
+        "capturedFrames": 80,
+        "meanGapMs": 101.00459493670886,
+        "maxGapMs": 226.98399999999987,
+        "targetIntervalsMissed": 173,
+        "outputFps": 30,
+        "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+      }
+    }
+  },
+  "publishedEvidence": [
+    {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\before-tip.png",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-tip-count-20261007/before-tip-12c566b60e.png",
+      "httpStatus": 200,
+      "contentType": "image/png",
+      "bytes": 2084234,
+      "localSha256": "12c566b60efdabbf13b1d3b701a7fd1bc9cbe3b19bece76743695dc19cf3c8c6",
+      "remoteSha256": "12c566b60efdabbf13b1d3b701a7fd1bc9cbe3b19bece76743695dc19cf3c8c6",
+      "byteIdentical": true,
+      "download": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\published-before-tip-12c566b60e.png"
+    },
+    {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\after-tip.png",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-tip-count-20261007/after-tip-66bd063c80.png",
+      "httpStatus": 200,
+      "contentType": "image/png",
+      "bytes": 2018343,
+      "localSha256": "66bd063c80a3cc0587d4c4bc5a8a375b176e49fed93091a6aafddeb5f63807e6",
+      "remoteSha256": "66bd063c80a3cc0587d4c4bc5a8a375b176e49fed93091a6aafddeb5f63807e6",
+      "byteIdentical": true,
+      "download": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\published-after-tip-66bd063c80.png"
+    },
+    {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-tip.mp4",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-tip-count-20261007/before-tip-02d88628e4.mp4",
+      "httpStatus": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 1032867,
+      "localSha256": "02d88628e438bd3a4d22d3832b7f841eab099af556d49b59c94a020dd148a19c",
+      "remoteSha256": "02d88628e438bd3a4d22d3832b7f841eab099af556d49b59c94a020dd148a19c",
+      "byteIdentical": true,
+      "download": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\published-before-tip-02d88628e4.mp4"
+    },
+    {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\after-tip.mp4",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-tip-count-20261007/after-tip-c56206c836.mp4",
+      "httpStatus": 200,
+      "contentType": "application/octet-stream",
+      "bytes": 1204689,
+      "localSha256": "c56206c8365dc05983f0328865f55e0faa38ff86b4b816255096d4f7cc086e01",
+      "remoteSha256": "c56206c8365dc05983f0328865f55e0faa38ff86b4b816255096d4f7cc086e01",
+      "byteIdentical": true,
+      "download": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\published-after-tip-c56206c836.mp4"
+    },
+    {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-tip.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-tip-count-20261007/before-tip-1e46158f1f.json",
+      "httpStatus": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 627250,
+      "localSha256": "1e46158f1f4009a64f583a2c1a44b81071c607037ce42f17b96b74a0dc410b60",
+      "remoteSha256": "1e46158f1f4009a64f583a2c1a44b81071c607037ce42f17b96b74a0dc410b60",
+      "byteIdentical": true,
+      "download": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\published-before-tip-1e46158f1f.json"
+    },
+    {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\after-tip.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-tip-count-20261007/after-tip-9b17a331df.json",
+      "httpStatus": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 600342,
+      "localSha256": "9b17a331dfe2c2bc09b03c6283b4f7bec300f96b1ff093f728cfa760e3ff5d66",
+      "remoteSha256": "9b17a331dfe2c2bc09b03c6283b4f7bec300f96b1ff093f728cfa760e3ff5d66",
+      "byteIdentical": true,
+      "download": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\published-after-tip-9b17a331df.json"
+    },
+    {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\tip-proof.json",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-tip-count-20261007/tip-proof-794f4e51f0.json",
+      "httpStatus": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 193264,
+      "localSha256": "794f4e51f0920aa89582033892809a146317fa9660319eb510c637f5b11fc4fe",
+      "remoteSha256": "794f4e51f0920aa89582033892809a146317fa9660319eb510c637f5b11fc4fe",
+      "byteIdentical": true,
+      "download": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\published-tip-proof-794f4e51f0.json"
+    }
+  ],
+  "pairedPngs": [
+    {
+      "label": "before",
+      "nativeFrame": 8,
+      "standalone": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\before-tip.png",
+      "native": "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-tip\\frame-0008.png",
+      "sha256": "12c566b60efdabbf13b1d3b701a7fd1bc9cbe3b19bece76743695dc19cf3c8c6",
+      "byteIdentical": true,
+      "proofSelectedHashMatches": true
+    },
+    {
+      "label": "after",
+      "nativeFrame": 7,
+      "standalone": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\after-tip.png",
+      "native": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\after-tip\\frame-0007.png",
+      "sha256": "66bd063c80a3cc0587d4c4bc5a8a375b176e49fed93091a6aafddeb5f63807e6",
+      "byteIdentical": true,
+      "proofSelectedHashMatches": true
+    }
+  ],
+  "supportHashes": [
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\evidence-analysis.json",
+      "sha256": "cb50e79b67cb5db5adfaa9cef1d9e4366e24b38a225fafaa718b847b28f34295"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision\\publication-verification.json",
+      "sha256": "3254dee6964ef2a547bb5c0c2d9c91c68bab8d68cf4ab68c12fcbbf5839cd387"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\pnpm-test.log",
+      "sha256": "b9654ee01799cb43fd8bbed789ff0d6278835ebebb44c97af2332068c5bc67ae"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\hud-tests.log",
+      "sha256": "c0e16d462ce80e99c6acd0535d1b77a538f8685d17dc9c5e7f9f69623ccc7e9d"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\pnpm-test-lethal-base.log",
+      "sha256": "d7d71d1c4619f633c86214d08f35c62fd85977ff61d1d3e9b565e4aae654ae08"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\smoke-launch.json",
+      "sha256": "75e1dbfe5a7a3f34a72854baf03275b7244ee3bcd4b678de0321e7b590abf61a"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\smoke-inspect-output.json",
+      "sha256": "1646c807475f51a3d93604bf17b6b27ed0aad6059bcc72aceebeaba5ac1e9cef"
+    },
+    {
+      "path": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\aa118cc91a54\\game-juice-tip-smoke.log",
+      "sha256": "bbe4368641a148401b3716127ab3e2da7ce753c4940ff916b246f5658ee6b47d"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\tip.gd",
+      "sha256": "fec66f9a6b18a5f658336ed2307062979ba82b5cbf70dd37abc4a3947896158e"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\tip_client.tscn",
+      "sha256": "0b5bb675433fdcb9f5683ecdd3fa6ae7d7ee0217887edcf6cde6bdcae5a8dc3b"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\tip.tscn",
+      "sha256": "a044d8809c3400e5d5c019e1d79d2f59da565e521c39e541ff8062d236b5993f"
+    },
+    {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\cache-input-comparison.json",
+      "sha256": "fc6313264d067cde5ad23ac7bd9af2c43f49e6d0e381298000b9767b41ea7df4"
+    }
+  ],
+  "readSourceHashes": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "866056d05be17712725123956272b948e3273f1b24a638ae7b2a77811afae50c"
+    },
+    {
+      "path": "GAME.md",
+      "sha256": "5efd5cb5a96c4decfa9be029df5cd2ba63dccb7d3ff94b24eeb3469fe993a5c3"
+    },
+    {
+      "path": "ART_STYLE.md",
+      "sha256": "42e0fe7526597970718d86d9df6431e6976d18b5f98a8e37321798fbdd8fd082"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "6ac04b5fb54789c5323ac0ee295f3345285a5ef73f320309a1f24482e9a5f82c"
+    },
+    {
+      "path": "docs/architecture/networking.md",
+      "sha256": "1a55222932f6b70eeae51e3800a9c2b2ecf8af5a0f86d93b34fd698c34022187"
+    },
+    {
+      "path": "docs/survival/meta.md",
+      "sha256": "64badac8ee1e7737fdc75d99f848d15b23d1e443ab03bddf3f7afd6db1fdf99c"
+    },
+    {
+      "path": "scripts/client/stream_session.ts",
+      "sha256": "7b905bf90bb0e15a87f37f5e2e67dd59ea22e048edceb30abd97cb90b89352ec"
+    },
+    {
+      "path": "scripts/client/stream_chat_view.ts",
+      "sha256": "2f885b280ba89f4deaa667af133b44d1db4ab4e04bfd580b354cfee68490a738"
+    },
+    {
+      "path": "scripts/client/stream_overlay.ts",
+      "sha256": "d8de358f0185a5077c9ee5cd93c3a34472fa724a05fa80f239c97aee5b81670d"
+    },
+    {
+      "path": "scripts/hud_layout.ts",
+      "sha256": "2f63f559b4d725199a22241c6e7f60c2225ca31e74338ab4bdc0ae0ce8084b9e"
+    },
+    {
+      "path": "scripts/client/dev_console.ts",
+      "sha256": "32a1ab8eadfc7b398dcc5378628d6846a7e69ee4f2c8e4951573e1e873e4be52"
+    },
+    {
+      "path": "packages/game-rules/src/live_stream.ts",
+      "sha256": "71c296c7f4ba9ffab2555e6dd05a251f9f4758d96327fb66bbab269697f6c965"
+    },
+    {
+      "path": "tests/unit/hud-layout.test.mjs",
+      "sha256": "e9b1db985efea1fc36a829f73e2466b0c9a6ac7a58105211e8170752cbe13629"
+    },
+    {
+      "path": "assets/audio/ATTRIBUTION.md",
+      "sha256": "63c2470c71ac79a61d7551a163b71db9c0233743601b7eb2459453b8d8735c25"
+    }
+  ],
+  "smoke": {
+    "pid": 10320,
+    "captureHead": "899732c4683887dc977ab4fee7ee8c91d52f330b",
+    "readyMarkers": [
+      "[JS] GODMODE_SERVER_READY=local",
+      "[JS] GODMODE_CLIENT_READY=2"
+    ],
+    "scriptErrorMatches": [],
+    "actualStreamTips": 5,
+    "stoppedForced": true,
+    "stopEvidence": "Owner chat attestation; no process control by auditor"
+  },
+  "signedBy": "Codex (/root), independent vision/source auditor",
+  "signedAt": "2026-10-07T07:50:04Z",
+  "signatureType": "Agent attestation",
+  "executionConstraints": {
+    "cpuOnly": true,
+    "enginesLaunched": 0,
+    "imports": 0,
+    "testsRun": 0,
+    "sourceEdits": 0,
+    "prActions": 0,
+    "writesRestrictedTo": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\audit-vision"
+  },
+  "markdownSha256": "b417bcb5166284156f0912ab57e4c2431bb70f47d0b4dc1ab3c3cfd0a064685c"
+}
