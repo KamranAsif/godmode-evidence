@@ -1,0 +1,145 @@
+FINAL INDEPENDENT CPU-ONLY SURFACE VISION REVIEW
+SIGNED: ALL PASS FOR SCOPED C035 CAPTURE ONLY. Overall/current-head ALLPASS NOT SIGNED.
+
+Acceptance input is exclusively the final four clips: control ground/families
+and candidate ground/families. Producer c0359a5343eb20c94a17d6000c7199def454fb2b;
+control 8a231a40cc60cb908f0387af7bcd23ec81a2af62. Earlier baseline, health and
+late clips are context only and excluded from this acceptance verdict.
+
+Critical appearance finding
+Candidate concrete dust has visible irregular gray lobes and rolling folds,
+with lower apparent brightness than the control's white radial puff. In the
+recorded ordinary shots it remains identifiable above the preserved bright
+triangle lattice; at the fixed4m fixture the cloud is subtler but still readable.
+No hard rectangular card edge, atlas-grid leak or seam was observed in the
+reviewed per-frame dust regions. The fade clears between recorded events.
+This supports keeping the current scope without new material counts, sizes,
+lifetimes or dust tuning. It does not establish equal brightness or peak impact.
+
+Wood has warm irregular dust with separately readable chips. Paper/plastic
+retain pale debris and irregular haze. Metal dust is the weakest read, with
+existing orange sparks carrying most of its cue. Fabric/rubber have brief dark
+clouds whose detail is less conspicuous against the barrier. These remain visible
+in the recorded regional sequences; no equal-prominence claim is made. Glass
+correctly has zero dust in both producers. The source profiles and post-fixture
+activeDust counts remain 2/1/2/1/0/2/1/1. Existing random debris differs.
+
+The reticle, triangle signature, radar, ammunition, streaks, LiveTube and supply
+banner remain readable in the recorded regions. No dust obstruction was found.
+The 4m fixture calls the existing production API in front of the camera; it is
+a diagnostic presentation fixture, not collision/raycast proof. Ordinary shots
+provide complementary scene evidence. ADS, open cheat UI, visible enemy spawning
+and cap-pressure reuse were not exercised; their preservation is source-scoped.
+
+Exact coverage
+574 native frames: control ground90, control families173, candidate ground113,
+candidate families198. Every native raw hash matches recorded metadata.
+1238 independently decoded RGB24 MP4 frames: each ground137, each families482.
+Each image is1920x1080. For every native and decoded frame the six half-open
+rectangles below are covered by direct visual review of every exact distinct
+RGB region at native pixel scale. Exact duplicate membership is exhaustive;
+SHA256 grouping uses fixed dimensions and exact pixels, never near duplicates.
+
+Region                        Rectangle[x0,y0,x1,y1]   Distinct groups viewed
+dust_triangle_reticle         [760,420,1110,760]        1435
+game_radar                    [0,0,300,300]             1111
+game_ammo                     [1460,915,1920,1080]       663
+game_streaks                  [0,915,210,1080]           529
+livetube                      [1460,0,1920,435]         1364
+game_top_banner               [730,175,1200,290]         934
+Total6036 reviewed groups,10872 region/frame memberships,1812 distinct frame IDs.
+Unscaled lossless PNG contact panels retain native pixels. Group-level reviewed
+page/panel records are authoritative; unused older contact layouts are not
+implicitly counted as viewed. Historical filenames containing pending-large
+now refer to reviewed groups, with final status explicitly recorded.
+
+122 original full-frame contexts were directly viewed at1920x1080:60 native,
+62 decoded. These cover starts, ends and before/after every scheduled material
+or action boundary, with reasons/index/seconds/file recorded individually.
+Full-frame exact RGB groups number1726 and list all members; only explicitly
+viewed boundary members claim direct full-frame inspection. Regional review
+does not imply that every pixel of every full frame was inspected. The lower
+part of a control LiveTube donation popup extends below y435; it is visible in
+full-frame boundary contexts, but is not included in every-frame region coverage.
+No open cheat panel appears in this evidence. Legacy overview ledgers retain
+their original resolution/status and point to the authoritative strict ledger.
+
+Both published before/after stills were directly viewed original at1920x1080.
+Before=control concrete native10,184.157ms after the event. After=candidate
+concrete native12,223.501ms after the event. Each matches its producer PNG bytes
+and native RGB pixels. The39ms age offset and random/ambient differences prevent
+a deterministic peak-brightness comparison.
+
+Motion limits
+Native capture gaps: ground control mean50.442/max114.608ms, candidate
+40.039/131.617ms; families control92.876/397.760ms, candidate81.226/293.746ms.
+These are capture sampling gaps, not render costs. The30fps CFR movies use
+holds/drops and create no new native samples. Every decoded frame has regional
+coverage, but neither continuous1x nor smooth1x motion is claimed; unrecorded
+motion through native gaps cannot be certified.
+
+Public integrity
+All14 final public raw URLs were independently fetched:HTTP200 and exact local
+byte equality. All13 proof-declared resource hashes match; the proof itself
+matches local bytes and its content-addressed URL. The UTF16 upload map, clip
+metadata, MP4 hashes and published still associations are retained in the
+public-byte-verification and published-stills ledgers. No redundant decoding
+was needed after the public files were shown byte-identical.
+
+Source review and historical correction
+Pool review passes for per-slot material/progress, shared texture, nonnegative
+delta and clamped age/lifetime progress, fade0.65*(1-progress), and reset of
+tint/opacity/progress/pose before visibility. Release hides and clears active
+state. No TIME dependence or per-frame material allocation was introduced.
+Active cap32 remains unchanged; existing allocation-before-trim means this is
+not a claim that total allocated nodes are bounded to32. Profiles, counts,
+sizes, lifetimes and triangle signature remain unchanged by the feature diff.
+Approved atlas is straight-alpha1024x2048,4x8 row-major32 frames of256 pixels;
+sampling uses clamped cell UV and adjacent-frame blending without mipmaps.
+
+The previous unbalanced-parentheses allegation concerned historical9e8c8344912d
+2813737c3e1e3e39fe74790995a5 only and was false; it is explicitly retracted.
+Its original expression was lexically balanced with division inside texture's
+second argument. No engine-confirmed syntax failure was established. c035's
+explicit vec2 atlas_uv helper takes fragment UV as an argument; both calls pass
+UV. Current expression/call lines34/35/40 have lexical final/minimum balance0.
+This source check is not an independent engine compilation by the auditor.
+
+Producer tests and current integration gates
+Public exact-c035 default root log verifies13/13 passed,0 failed. The earlier
+9e result ran unchanged bytes before commit; no exactcommit-at-test-start claim.
+c035 default smoke receipt marks passed:true/defaultScene:true/testBypass:false,
+with health100/enemies1/scriptErrors[]. It retains the continuing diagnostic
+ERROR: Condition "!actions.custom_samplers.has(function->arguments[j].tex_builtin)"
+is true. Continuing., and stopForced:true. No cause was established by this
+audit, and no zero-error/clean-stop assertion is made. Native capture instances
+were separately reported clean,forced:false. The auditor started no engines.
+
+Current source3f9f977e0f7857559c8bb4ce14518866b7737569,
+treefb0b024cdba3301212612bf1d1af60de7147f0df,
+base4fba2d8343be0bc0e12ca08b6b72ab5400ffcf50.
+Read-only git diff verifies both feature paths byte-identical to capturedc035;
+base-to-head diff names only scripts/combat_vfx.ts and
+assets/shaders/impact_dust.gdshader. This transfers source review, not capture
+producer identity or test results on the new base. Prior e6 compile/fixture/
+lint/16units are user-reported historical passes. Authentic latest default
+cache/root/smoke remain deferred. Current-head gate unsigned; ALLPASS false.
+
+Audit ownership and quiet state
+Only own reports/derived evidence were written under artifacts/juice/audit-surface.
+No game source edits, imports, exports, merges or engine runs. Heavy processing
+is stopped during A exactQUIET START10:00:12.221 and the following153 B movies;
+both exact MOVIES STOPPED notices are required before resuming. Finalization
+used existing PNG views, small source reads and report/ledger writes only.
+
+Authoritative records:scoped-capture-verdict.json,strict-region-ledger.json,
+public-byte-verification.json,published-stills-ledger.json. The older
+audit-report.txt preserves chronological findings/retractions; this final report
+supersedes its earlier sampled/pending acceptance statuses.
+
+Signed audit decision: Codex independent CPU-only surface vision auditor, 2026-10-07T14:10:56.559737+00:00.
+All listed verified capture/source/integrity criteria PASS within the exact exclusions above.
+Hash attestation:final-scoped-c035-hash-attestation.json and .sha256.
+After final review,153 MOVIES STOPPED/exactzero received.147 export active; no auditor heavy helpers or engines. User reports movement/pickup4fba main merge; future rebase/gates remain pending, separately attributed.
+
+Final integration identity update:3f9/main4fba read-only verified. Producer-to-head feature diff is empty; base diff names only2featurepaths. Captured producer remainsc035. Latest cache/root/smoke PENDING; no latest-gates ALLPASS.
