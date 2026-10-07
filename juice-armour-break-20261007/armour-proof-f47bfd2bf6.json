@@ -1,0 +1,239 @@
+{
+  "candidate": "0f3bd963baa8902bb1f0eb79ff814a551183231f",
+  "base": "d69194b2c0c10b815f9f42057121428b21b943d0",
+  "controlHead": "9afaba9709fd9fb492b0c10df2bfda8b97d15a3d",
+  "scope": "Actual bullet hits break commander plates. Debug spawn/invincibility/4x physical approach/refill; capture simulation1x; manual head-directed input. Separate combats, not pixel-matched camera views. No audio captured or audible claim.",
+  "excluded": [
+    "juice-armour-before1: helmet remained14, no break"
+  ],
+  "before": {
+    "directory": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\juice-armour-before2",
+    "timing": {
+      "capturedFrames": 118,
+      "meanGapMs": 68.0124188034188,
+      "maxGapMs": 131.61599999999973,
+      "targetIntervalsMissed": 125,
+      "outputFps": 30,
+      "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+    },
+    "videoSha256": "3085ebcd02b297f2eb067db33b77daa51cfc00d53018c743a0fc230de385b241",
+    "metadataSha256": "d2ce8b90692097c3dcfd1db2d73f70537af5f490c420c80b06fa27e2a0ef318d",
+    "breaks": [
+      {
+        "zone": "helmet",
+        "frame": 32,
+        "seconds": 2.322103,
+        "marker": {
+          "kind": "headshot",
+          "nowMs": 18830.0,
+          "startedAtMs": 18801.0,
+          "untilMs": 19041.0,
+          "visible": true
+        }
+      },
+      {
+        "zone": "chest",
+        "frame": 83,
+        "seconds": 5.866658,
+        "marker": {
+          "kind": "hit",
+          "nowMs": 22374.0,
+          "startedAtMs": 22342.0,
+          "untilMs": 22482.0,
+          "visible": true
+        }
+      }
+    ],
+    "markers": []
+  },
+  "after": {
+    "directory": "D:\\work\\godmode-roguelite-worktrees\\juice-armour-break\\artifacts\\juice\\juice-armour-after1",
+    "timing": {
+      "capturedFrames": 75,
+      "meanGapMs": 107.56833783783783,
+      "maxGapMs": 234.31200000000007,
+      "targetIntervalsMissed": 169,
+      "outputFps": 30,
+      "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+    },
+    "videoSha256": "b779f286962b100a5952414f062d3531551ee68c010476cee4792d8a8ffc33a9",
+    "metadataSha256": "baf7b4b7183d7e16ba7c093da7bd0951dd89ac759deb153b20b2d8fa9f8d73e5",
+    "breaks": [
+      {
+        "zone": "helmet",
+        "frame": 16,
+        "seconds": 1.48446,
+        "marker": {
+          "kind": "armourBreak",
+          "nowMs": 17828.0,
+          "startedAtMs": 17729.0,
+          "untilMs": 18029.0,
+          "visible": true
+        }
+      }
+    ],
+    "markers": [
+      {
+        "i": 16,
+        "t": 1.48446,
+        "marker": {
+          "kind": "armourBreak",
+          "nowMs": 17828.0,
+          "startedAtMs": 17729.0,
+          "untilMs": 18029.0,
+          "visible": true
+        },
+        "boss": {
+          "commander": {
+            "phase": 1.0,
+            "plates": {
+              "back": 253.0,
+              "chest": 253.0,
+              "helmet": 0.0,
+              "left": 253.0,
+              "right": 253.0
+            },
+            "stunned": false
+          },
+          "final": false,
+          "health": 2084.0,
+          "helicopter": null,
+          "id": "commander-e3",
+          "maxHealth": 2111.0
+        },
+        "enemies": [
+          {
+            "id": "commander-e3",
+            "weapon": "commander",
+            "health": 2084.0
+          }
+        ]
+      },
+      {
+        "i": 17,
+        "t": 1.586232,
+        "marker": {
+          "kind": "armourBreak",
+          "nowMs": 17929.0,
+          "startedAtMs": 17729.0,
+          "untilMs": 18029.0,
+          "visible": true
+        },
+        "boss": {
+          "commander": {
+            "phase": 1.0,
+            "plates": {
+              "back": 253.0,
+              "chest": 253.0,
+              "helmet": 0.0,
+              "left": 253.0,
+              "right": 253.0
+            },
+            "stunned": false
+          },
+          "final": false,
+          "health": 2054.0,
+          "helicopter": null,
+          "id": "commander-e3",
+          "maxHealth": 2111.0
+        },
+        "enemies": [
+          {
+            "id": "commander-e3",
+            "weapon": "commander",
+            "health": 2054.0
+          }
+        ]
+      },
+      {
+        "i": 18,
+        "t": 1.681711,
+        "marker": {
+          "kind": "armourBreak",
+          "nowMs": 18025.0,
+          "startedAtMs": 17729.0,
+          "untilMs": 18029.0,
+          "visible": true
+        },
+        "boss": {
+          "commander": {
+            "phase": 1.0,
+            "plates": {
+              "back": 253.0,
+              "chest": 253.0,
+              "helmet": 0.0,
+              "left": 253.0,
+              "right": 253.0
+            },
+            "stunned": false
+          },
+          "final": false,
+          "health": 2024.0,
+          "helicopter": null,
+          "id": "commander-e3",
+          "maxHealth": 2111.0
+        },
+        "enemies": [
+          {
+            "id": "commander-e3",
+            "weapon": "commander",
+            "health": 2024.0
+          }
+        ]
+      },
+      {
+        "i": 19,
+        "t": 1.778624,
+        "marker": {
+          "kind": "armourBreak",
+          "nowMs": 18121.0,
+          "startedAtMs": 17729.0,
+          "untilMs": 18029.0,
+          "visible": false
+        },
+        "boss": {
+          "commander": {
+            "phase": 1.0,
+            "plates": {
+              "back": 253.0,
+              "chest": 253.0,
+              "helmet": 0.0,
+              "left": 253.0,
+              "right": 253.0
+            },
+            "stunned": false
+          },
+          "final": false,
+          "health": 2024.0,
+          "helicopter": null,
+          "id": "commander-e3",
+          "maxHealth": 2111.0
+        },
+        "enemies": [
+          {
+            "id": "commander-e3",
+            "weapon": "commander",
+            "health": 2024.0
+          }
+        ]
+      }
+    ]
+  },
+  "stills": {
+    "before-armour.png": {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-tip-count\\artifacts\\juice\\juice-armour-before2\\frame-0032.png",
+      "sha256": "eb3a705be446cbaa820cd710c29c52dbf0fea302ab96492560c5eb397f8d1ad0"
+    },
+    "after-armour.png": {
+      "source": "D:\\work\\godmode-roguelite-worktrees\\juice-armour-break\\artifacts\\juice\\juice-armour-after1\\frame-0017.png",
+      "sha256": "46c282939f6f6fb4de2eed78175ffd81a6c6ddb48c6a660ce943200431dbaa99"
+    }
+  },
+  "harness": {
+    "armour.gd": "5df77283a8b5585dac3c7b10e0ee11589fecee3285ad2f3d9391c38b2b51842c",
+    "armour_client.ts": "f87f120aed710239b093a7db61aa003c3e83498a8924a37e9e1066d4b074fa00",
+    "prepare-boss.mjs": "51125107cc9f3b2e8947eb2ef996aa3cf8ff467f7c75c02fbe9923d2e3d11349",
+    "record-complete.mjs": "ecf13470854cad4f3111af1cce2c7cbf86feb7b0bb482f27e848f8a9bf431fd9",
+    "encode.py": "f26c2ab11d28205d41943ca8c2e77ce11507174ab5a6f49187755a95734a4256"
+  }
+}
