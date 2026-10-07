@@ -1,0 +1,5613 @@
+{
+  "schemaVersion": 1,
+  "audit": "juice improvement3 final lethal-round triangle impact",
+  "reportStage": "SUPPLEMENTAL_COMBINED_FINAL",
+  "auditor": "Independent Codex vision auditor (/root)",
+  "signedAtUtc": "2026-10-07T07:38:34.034816+00:00",
+  "signatureType": "Attributed independent audit statement with SHA256 manifest; not a cryptographic signature",
+  "verdict": "ALL PASS",
+  "allPass": true,
+  "visualGateCleared": true,
+  "mergeClearance": true,
+  "clearanceScope": "Independent lethal presentation source/visual gate only for candidate 850b70e3b on base 24bb855f4; no merge action or whole-game/audio clearance.",
+  "reason": "Combined accepted before/after evidence demonstrates localized terminal triangles, preserved exposed native detail/rig/held weapon, visible per-actor restoration and continuing native collapse. The held-view candidate supplement closes the initial follow-through gap within the observed sample.",
+  "scope": {
+    "authorized": [
+      "CPU source review",
+      "supplied capture and telemetry audit",
+      "audit artifacts in artifacts/juice/audit-vision"
+    ],
+    "excluded": [
+      "engines",
+      "imports",
+      "tests",
+      "source edits",
+      "PR actions",
+      "GPU capture generation"
+    ],
+    "intent": "Reuse the existing localized triangle fracture during the first 260 ms of native death, then restore the original mesh while native death continues.",
+    "obsoleteCriterionRejected": "Original mesh required throughout every frame of native death"
+  },
+  "documentsRead": [
+    "AGENTS.md",
+    "GAME.md",
+    "ART_STYLE.md",
+    "ARCHITECTURE.md",
+    "docs/architecture/enemies-and-ai.md",
+    "docs/architecture/weapons.md",
+    "docs/survival/enemies.md"
+  ],
+  "currentRevision": {
+    "candidateHead": "850b70e3b809f8dcb0b9c0f14ee78af186b41983",
+    "candidateTree": "93fc2205441fbd1b78eba61618d84da6af1c4968",
+    "base": "24bb855f4ad9f1aa5e12e67410fcfecfe92c25a6",
+    "controlHead": "bfcb267190b4be15c72e4a196a44a202524ea83f",
+    "controlTree": "ec1aabbfcf4364014ff67053db26787f74a41b1a",
+    "controlTreeEqualsBase": true,
+    "trackedWorkingDiffEmpty": true,
+    "controlTrackedWorkingDiffEmpty": true,
+    "diffAgainstBase": "scripts/client/combat_feel.ts       | 10 ++++++++++\n scripts/client/snapshot_renderer.ts |  1 +\n 2 files changed, 11 insertions(+)"
+  },
+  "originalCaptureRevision": {
+    "path": "D:/work/godmode-roguelite-worktrees/juice-lethal-hit",
+    "candidate": "4e0482e1319b912f82e873cfc75e280cd36b155f",
+    "baseOriginMain": "bfce057de19529c66d193f7b69a103e099575e2a",
+    "trackedTree": "fd3d874164d65c8004b19af1145d8fd90997d875",
+    "identityVerifiedLocally": true,
+    "diff": {
+      "files": 2,
+      "insertions": 11,
+      "deletions": 0
+    }
+  },
+  "sourceFileSha256": {
+    "scripts/client/combat_feel.ts": "4b0be5287dbd8023fd2f2ef04f922f6c3a99c92865f00f8da182a6ac9cc7d108",
+    "scripts/client/snapshot_renderer.ts": "83f5a7368ccbb88a97f2b7ec597900f2cd103170bf63443956e59a7d183a431e",
+    "scripts/game_world.ts": "f680915cbe5422a80c246af1128d5d65ed7c117f4b58fddf060c5d60dc58379e",
+    "scripts/client/triangle_fracture.ts": "96bcd38708c4bb37e3c9910a0d25a28b16caa358612906c4cc7df2056b58e7a1"
+  },
+  "sourceEqualsOriginalCapture": true,
+  "preservedInitialAudit": {
+    "verdict": "VISUAL_GATE_PENDING",
+    "signedAtUtc": "2026-10-07T06:51:18.347141+00:00",
+    "reportsUnchangedSha256": {
+      "audit-report.json": "c4a2c15739dc93a1ab9818af0effab88fd720cc560eca87a604adbf8293113c5",
+      "audit-report.md": "9eeac2245e2bd0cfc6fd712edd6806aa5edcdeb430e308d6da8e1ec5f0e96e1a"
+    },
+    "signatureManifestSha256": "9de78c42022b961caffc17e0a995ed102e7174838cd23998328e01f2319ca686",
+    "initialSourceAttestationUnmodifiedSha256": "e75206df8418bc70783a2523430a832ab064a7d544fddc39f020a7e51ad19292",
+    "gapResolution": "Initial offscreen-restoration gap is closed by accepted after-lethal-hold4 native f19-49 plus all decoded ROI frames, with continuing collapse thereafter. Initial verdict is preserved unchanged as the historical initial-evidence conclusion."
+  },
+  "visualCoverage": {
+    "nativePixels": [
+      1920,
+      1080
+    ],
+    "coordinateConvention": "Zero-based frame indexes; rectangle right/bottom coordinates exclusive.",
+    "method": "Consecutive native PNG and CPU-decoded MP4 crops/contact sheets, pasted without spatial resizing; label rows lie outside the source pixels. Full native context sheets also inspected. No stride sampling used to clear the impact/expiry gate.",
+    "initial": {
+      "nativePixels": [
+        1920,
+        1080
+      ],
+      "beforeNativeFullFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "afterNativeFullFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "beforeDecodedVideoRoiFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181
+      ],
+      "afterDecodedVideoRoiFrames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182
+      ],
+      "videoRoiExclusiveBounds": [
+        0,
+        300,
+        1920,
+        900
+      ],
+      "additionalNativeDeathWindowRoi": {
+        "before-native": {
+          "indexes": [
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71
+          ],
+          "roi": [
+            0,
+            300,
+            1920,
+            900
+          ],
+          "scale": 1,
+          "sheetCount": 3
+        },
+        "before-video": {
+          "indexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181
+          ],
+          "roi": [
+            0,
+            300,
+            1920,
+            900
+          ],
+          "scale": 1,
+          "sheetCount": 16
+        },
+        "after-native": {
+          "indexes": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+          ],
+          "roi": [
+            0,
+            300,
+            1920,
+            900
+          ],
+          "scale": 1,
+          "sheetCount": 3
+        },
+        "after-video": {
+          "indexes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            108,
+            109,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182
+          ],
+          "roi": [
+            0,
+            300,
+            1920,
+            900
+          ],
+          "scale": 1,
+          "sheetCount": 16
+        }
+      },
+      "allReviewedFramesAtOneToOnePixels": true,
+      "fullDecodedVideoOutsideRoiReviewed": false,
+      "continuousOneXPlaybackPerformed": false,
+      "audioAuditionPerformed": false,
+      "closeStillNative59Inspected": true
+    },
+    "supplement": {
+      "after-hold4": {
+        "nativeRoiFrames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126
+        ],
+        "decodedVideoRoiFrames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195
+        ],
+        "roiExclusiveBounds": [
+          800,
+          350,
+          1120,
+          750
+        ],
+        "nativeFullContextFrames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          92,
+          93,
+          94,
+          95,
+          124,
+          125,
+          126
+        ],
+        "nativeFullContextCount": 55,
+        "nativeSheetDirectory": "after-hold4/tight-native",
+        "videoSheetDirectory": "after-hold4/tight-video",
+        "fullContextDirectory": "after-hold4/native-sheets",
+        "targetCoverage": "Same struck soldier-e3 is visible around onset, the first restored sample and subsequent bending/seated collapse. Later torso/rifle is partly hidden behind the player weapon; feet/body outline remain visible. Last nativeDeath sample is f92; actor absent from telemetry at f93."
+      },
+      "before-hold6": {
+        "nativeRoiFrames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145
+        ],
+        "decodedVideoRoiFrames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158,
+          159,
+          160,
+          161,
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180,
+          181,
+          182,
+          183,
+          184,
+          185,
+          186,
+          187,
+          188,
+          189,
+          190,
+          191,
+          192,
+          193,
+          194,
+          195
+        ],
+        "roiExclusiveBounds": [
+          780,
+          350,
+          1100,
+          750
+        ],
+        "nativeFullContextFrames": [
+          0,
+          1,
+          2,
+          3,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          48,
+          49,
+          50,
+          51,
+          92,
+          93,
+          94,
+          95,
+          144,
+          145
+        ],
+        "nativeFullContextCount": 26,
+        "nativeSheetDirectory": "before-hold6/tight-native",
+        "videoSheetDirectory": "before-hold6/tight-video",
+        "fullContextDirectory": "before-hold6/native-sheets",
+        "targetCoverage": "Center target/death location is obscured by sights/wall; the visible left-side live actor is not used as evidence for soldier-e8 death motion. NativeDeath/originalMesh correlation is telemetry, not a visible supplementary-control corpse comparison."
+      }
+    },
+    "combinedDistinctNativeFramesReviewed": 472,
+    "combinedDistinctNativeFramesReviewedFullContext": 280,
+    "combinedDistinctDecodedVideoFramesReviewedInRoi": 757,
+    "allReviewedFramesAtOneToOnePixels": true,
+    "allSupplementNativeFramesReviewedFullFrame": false,
+    "fullDecodedVideoOutsideRoiReviewed": false,
+    "continuousOneXPlaybackPerformed": false,
+    "audioAuditionPerformed": false
+  },
+  "supplementEvidence": {
+    "candidateHead": "850b70e3b809f8dcb0b9c0f14ee78af186b41983",
+    "candidateTree": "93fc2205441fbd1b78eba61618d84da6af1c4968",
+    "base": "24bb855f4ad9f1aa5e12e67410fcfecfe92c25a6",
+    "controlHead": "bfcb267190b4be15c72e4a196a44a202524ea83f",
+    "controlTree": "ec1aabbfcf4364014ff67053db26787f74a41b1a",
+    "trackedWorkingDiffEmpty": true,
+    "controlTrackedWorkingDiffEmpty": true,
+    "controlTreeEqualsBase": true,
+    "diffAgainstBase": "scripts/client/combat_feel.ts       | 10 ++++++++++\n scripts/client/snapshot_renderer.ts |  1 +\n 2 files changed, 11 insertions(+)",
+    "sourceHashes": {
+      "scripts/client/combat_feel.ts": "4b0be5287dbd8023fd2f2ef04f922f6c3a99c92865f00f8da182a6ac9cc7d108",
+      "scripts/client/snapshot_renderer.ts": "83f5a7368ccbb88a97f2b7ec597900f2cd103170bf63443956e59a7d183a431e",
+      "scripts/game_world.ts": "f680915cbe5422a80c246af1128d5d65ed7c117f4b58fddf060c5d60dc58379e",
+      "scripts/client/triangle_fracture.ts": "96bcd38708c4bb37e3c9910a0d25a28b16caa358612906c4cc7df2056b58e7a1"
+    },
+    "sourceEqualsOriginalCapture": true,
+    "initialReportsUnchanged": {
+      "audit-report.json": "c4a2c15739dc93a1ab9818af0effab88fd720cc560eca87a604adbf8293113c5",
+      "audit-report.md": "9eeac2245e2bd0cfc6fd712edd6806aa5edcdeb430e308d6da8e1ec5f0e96e1a"
+    },
+    "proofSha256": "214584fdc15c3635e5056919af5bc0651e6ac65a6b5f686714c3594b274defaf",
+    "runs": {
+      "after": {
+        "folder": "D:\\work\\godmode-roguelite-worktrees\\juice-lethal-hit\\artifacts\\juice\\after-lethal-hold4",
+        "metadataSha256": "20436b5662377f427330a76eb59f4d967cdea33b4a85171456807ef5e0cf2b1f",
+        "receiptSha256": "0941fa88808204e36c05e85be6f9a6204aa9db93354684f6db068b2a0a36fba7",
+        "mp4Sha256": "c7cba18148d5b914d201ad5664b4095a96724e94ccb4a9fb6648d3a5ae03cf3c",
+        "nativeFrames": 127,
+        "decodedVideoFrames": 196,
+        "integrity": {
+          "allRawHashesMatch": true,
+          "allPngRgbMatchesRaw": true,
+          "mp4Sha256": "c7cba18148d5b914d201ad5664b4095a96724e94ccb4a9fb6648d3a5ae03cf3c",
+          "cpuDecodeExitCode": 0
+        },
+        "fixtures": {
+          "lifecycle.gd": "545742b9a5fc2b1e89c5a360cd0b5088e297c0367fe351bc1b9357db7cc0bc11",
+          "lifecycle_client.ts": "5c17dfa1dfc94c75ac0ff85924318948c9cf63b51fa15f877d986c711cc2db78",
+          "lifecycle.tscn": "3d5bba5ec97eaf2ad8e7f24868feb090ffba38d8d63c44246a29c9294122e18e",
+          "lifecycle_client.tscn": "411e9ea53da11619ea8859e39d1242b71c3e0c68255d8329db9170463b1282a7"
+        },
+        "actor": "soldier-e3",
+        "onset": {
+          "frame": 19,
+          "seconds": 0.961891,
+          "simMs": 45325.0,
+          "originalMesh": false,
+          "activeParts": 1.0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "position": [
+            -489.861328125,
+            -15.9580078125,
+            -386.01171875
+          ]
+        },
+        "firstOriginalDeathSample": {
+          "frame": 24,
+          "seconds": 1.215235,
+          "simMs": 45605.0,
+          "originalMesh": true,
+          "activeParts": 0.0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "position": [
+            -489.861328125,
+            -15.9580078125,
+            -386.01171875
+          ]
+        },
+        "lastDeathSample": {
+          "frame": 92,
+          "seconds": 4.712046,
+          "simMs": 49099.0,
+          "originalMesh": true,
+          "activeParts": 0.0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "position": [
+            -489.861328125,
+            -15.9580078125,
+            -386.01171875
+          ]
+        },
+        "allDeathSamples": [
+          {
+            "frame": 19,
+            "seconds": 0.961891,
+            "simMs": 45325.0,
+            "originalMesh": false,
+            "activeParts": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 20,
+            "seconds": 1.036272,
+            "simMs": 45425.0,
+            "originalMesh": false,
+            "activeParts": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 21,
+            "seconds": 1.080097,
+            "simMs": 45470.0,
+            "originalMesh": false,
+            "activeParts": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 22,
+            "seconds": 1.123059,
+            "simMs": 45514.0,
+            "originalMesh": false,
+            "activeParts": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 23,
+            "seconds": 1.167741,
+            "simMs": 45556.0,
+            "originalMesh": false,
+            "activeParts": 1.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 24,
+            "seconds": 1.215235,
+            "simMs": 45605.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 25,
+            "seconds": 1.2614,
+            "simMs": 45651.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 26,
+            "seconds": 1.311307,
+            "simMs": 45700.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 27,
+            "seconds": 1.416583,
+            "simMs": 45803.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 28,
+            "seconds": 1.468509,
+            "simMs": 45856.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 29,
+            "seconds": 1.515969,
+            "simMs": 45905.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 30,
+            "seconds": 1.567469,
+            "simMs": 45955.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 31,
+            "seconds": 1.614779,
+            "simMs": 46004.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 32,
+            "seconds": 1.665308,
+            "simMs": 46053.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 33,
+            "seconds": 1.717061,
+            "simMs": 46104.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 34,
+            "seconds": 1.765145,
+            "simMs": 46154.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 35,
+            "seconds": 1.814145,
+            "simMs": 46203.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 36,
+            "seconds": 1.879517,
+            "simMs": 46266.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 37,
+            "seconds": 1.93216,
+            "simMs": 46320.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 38,
+            "seconds": 1.980078,
+            "simMs": 46369.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 39,
+            "seconds": 2.027984,
+            "simMs": 46416.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 40,
+            "seconds": 2.079412,
+            "simMs": 46467.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 41,
+            "seconds": 2.132117,
+            "simMs": 46521.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 42,
+            "seconds": 2.178467,
+            "simMs": 46567.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 43,
+            "seconds": 2.229994,
+            "simMs": 46618.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 44,
+            "seconds": 2.276393,
+            "simMs": 46666.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 45,
+            "seconds": 2.32297,
+            "simMs": 46709.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 46,
+            "seconds": 2.370501,
+            "simMs": 46758.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 47,
+            "seconds": 2.41642,
+            "simMs": 46806.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 48,
+            "seconds": 2.463804,
+            "simMs": 46852.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 49,
+            "seconds": 2.514512,
+            "simMs": 46901.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 50,
+            "seconds": 2.563283,
+            "simMs": 46951.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 51,
+            "seconds": 2.626387,
+            "simMs": 47013.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 52,
+            "seconds": 2.686095,
+            "simMs": 47074.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 53,
+            "seconds": 2.748388,
+            "simMs": 47137.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 54,
+            "seconds": 2.829459,
+            "simMs": 47218.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 55,
+            "seconds": 2.88141,
+            "simMs": 47269.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 56,
+            "seconds": 2.928148,
+            "simMs": 47318.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 57,
+            "seconds": 2.973915,
+            "simMs": 47364.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 58,
+            "seconds": 3.023072,
+            "simMs": 47412.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 59,
+            "seconds": 3.066771,
+            "simMs": 47412.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 60,
+            "seconds": 3.115956,
+            "simMs": 47501.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 61,
+            "seconds": 3.163833,
+            "simMs": 47546.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 62,
+            "seconds": 3.210202,
+            "simMs": 47595.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 63,
+            "seconds": 3.258999,
+            "simMs": 47644.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 64,
+            "seconds": 3.305254,
+            "simMs": 47691.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 65,
+            "seconds": 3.35423,
+            "simMs": 47738.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 66,
+            "seconds": 3.401019,
+            "simMs": 47789.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 67,
+            "seconds": 3.446981,
+            "simMs": 47834.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 68,
+            "seconds": 3.497473,
+            "simMs": 47883.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 69,
+            "seconds": 3.545135,
+            "simMs": 47932.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 70,
+            "seconds": 3.593435,
+            "simMs": 47980.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 71,
+            "seconds": 3.641038,
+            "simMs": 48030.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 72,
+            "seconds": 3.688551,
+            "simMs": 48078.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 73,
+            "seconds": 3.73445,
+            "simMs": 48124.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 74,
+            "seconds": 3.785389,
+            "simMs": 48173.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 75,
+            "seconds": 3.83193,
+            "simMs": 48222.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 76,
+            "seconds": 3.880536,
+            "simMs": 48270.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 77,
+            "seconds": 3.925607,
+            "simMs": 48270.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 78,
+            "seconds": 3.976106,
+            "simMs": 48360.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 79,
+            "seconds": 4.023683,
+            "simMs": 48409.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 80,
+            "seconds": 4.073825,
+            "simMs": 48455.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 81,
+            "seconds": 4.119343,
+            "simMs": 48505.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 82,
+            "seconds": 4.225906,
+            "simMs": 48606.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 83,
+            "seconds": 4.276076,
+            "simMs": 48660.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 84,
+            "seconds": 4.322155,
+            "simMs": 48707.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 85,
+            "seconds": 4.370554,
+            "simMs": 48753.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 86,
+            "seconds": 4.41762,
+            "simMs": 48805.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 87,
+            "seconds": 4.464612,
+            "simMs": 48851.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 88,
+            "seconds": 4.515925,
+            "simMs": 48902.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 89,
+            "seconds": 4.564827,
+            "simMs": 48951.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 90,
+            "seconds": 4.612624,
+            "simMs": 48998.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 91,
+            "seconds": 4.663577,
+            "simMs": 49048.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          },
+          {
+            "frame": 92,
+            "seconds": 4.712046,
+            "simMs": 49099.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -489.861328125,
+              -15.9580078125,
+              -386.01171875
+            ]
+          }
+        ],
+        "impactWindowTiming": [
+          {
+            "frame": 16,
+            "seconds": 0.785922,
+            "simMs": 45168.0,
+            "gapFromPreviousMs": 52.51700000000004
+          },
+          {
+            "frame": 17,
+            "seconds": 0.831406,
+            "simMs": 45221.0,
+            "gapFromPreviousMs": 45.483999999999966
+          },
+          {
+            "frame": 18,
+            "seconds": 0.875128,
+            "simMs": 45264.0,
+            "gapFromPreviousMs": 43.72200000000004
+          },
+          {
+            "frame": 19,
+            "seconds": 0.961891,
+            "simMs": 45325.0,
+            "gapFromPreviousMs": 86.76300000000003
+          },
+          {
+            "frame": 20,
+            "seconds": 1.036272,
+            "simMs": 45425.0,
+            "gapFromPreviousMs": 74.38100000000003
+          },
+          {
+            "frame": 21,
+            "seconds": 1.080097,
+            "simMs": 45470.0,
+            "gapFromPreviousMs": 43.825
+          },
+          {
+            "frame": 22,
+            "seconds": 1.123059,
+            "simMs": 45514.0,
+            "gapFromPreviousMs": 42.96199999999995
+          },
+          {
+            "frame": 23,
+            "seconds": 1.167741,
+            "simMs": 45556.0,
+            "gapFromPreviousMs": 44.68199999999989
+          },
+          {
+            "frame": 24,
+            "seconds": 1.215235,
+            "simMs": 45605.0,
+            "gapFromPreviousMs": 47.49400000000015
+          },
+          {
+            "frame": 25,
+            "seconds": 1.2614,
+            "simMs": 45651.0,
+            "gapFromPreviousMs": 46.16500000000001
+          },
+          {
+            "frame": 26,
+            "seconds": 1.311307,
+            "simMs": 45700.0,
+            "gapFromPreviousMs": 49.906999999999925
+          },
+          {
+            "frame": 27,
+            "seconds": 1.416583,
+            "simMs": 45803.0,
+            "gapFromPreviousMs": 105.27599999999993
+          }
+        ],
+        "timing": {
+          "capturedFrames": 127,
+          "meanGapMs": 51.391150793650795,
+          "maxGapMs": 230.36700000000022,
+          "targetIntervalsMissed": 43,
+          "outputFps": 30,
+          "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+        },
+        "finalFracture": {
+          "activations": 4.0,
+          "activeParts": 0.0,
+          "expandedVertices": 18000.0,
+          "maxPositionError": 0.0,
+          "maxWeightError": 0.0,
+          "meshes": 1.0,
+          "preparedAtImport": true,
+          "restorations": 4.0,
+          "samples": 186.0,
+          "sourceVertices": 22137.0
+        },
+        "events": [
+          {
+            "atMs": 150.0,
+            "request": {
+              "name": "input",
+              "payload": {
+                "aim": true,
+                "hold": true,
+                "shoot": true
+              }
+            }
+          },
+          {
+            "atMs": 151.0,
+            "request": {
+              "name": "input",
+              "payload": {
+                "release": true
+              }
+            },
+            "whenDeath": true
+          }
+        ],
+        "deliveredEvents": [
+          {
+            "request": {
+              "name": "input",
+              "payload": {
+                "aim": true,
+                "hold": true,
+                "shoot": true
+              }
+            },
+            "result": {
+              "accepted": true,
+              "durationMs": null,
+              "form": "hold",
+              "holdId": 5.0,
+              "restoresHoldId": null,
+              "sequence": 754.0,
+              "tapFrames": null
+            }
+          },
+          {
+            "request": {
+              "name": "input",
+              "payload": {
+                "release": true
+              }
+            },
+            "result": {
+              "accepted": true,
+              "durationMs": null,
+              "form": "release",
+              "holdId": null,
+              "sequence": 798.0
+            }
+          }
+        ],
+        "targetGateLog": "{\"secondsWaited\":2,\"target\":\"soldier-e7\",\"turning\":false,\"nearest\":6.2918047689813585,\"lockedDistance\":12.254218289965799,\"health\":100}\n{\"secondsWaited\":4,\"target\":\"soldier-e11\",\"turning\":true,\"nearest\":6.236914554863875,\"lockedDistance\":6.236914554863875,\"health\":100}\n{\"secondsWaited\":6,\"target\":\"soldier-e3\",\"turning\":false,\"nearest\":9.234947432124164,\"lockedDistance\":9.498434439707415,\"health\":100}\nREADY: normal-time confirmed target; capture actual feedback next.\n"
+      },
+      "before": {
+        "folder": "D:\\work\\godmode-roguelite-worktrees\\juice-viewer-gains\\artifacts\\juice\\before-lethal-hold6",
+        "metadataSha256": "7b1a5e73e450a75ba23acf7655945e255458cdbbc8c9ccb29aefc25c7da32632",
+        "receiptSha256": "71154ac6845c15ba27ca16d80d2de36fbcaf3d652854e1b59c137d8d294628ab",
+        "mp4Sha256": "69693d7cd6582e64670336a3f2887741e597620a7d79ccd54adf23408a56bd67",
+        "nativeFrames": 146,
+        "decodedVideoFrames": 196,
+        "integrity": {
+          "allRawHashesMatch": true,
+          "allPngRgbMatchesRaw": true,
+          "mp4Sha256": "69693d7cd6582e64670336a3f2887741e597620a7d79ccd54adf23408a56bd67",
+          "cpuDecodeExitCode": 0
+        },
+        "fixtures": {
+          "lifecycle.gd": "545742b9a5fc2b1e89c5a360cd0b5088e297c0367fe351bc1b9357db7cc0bc11",
+          "lifecycle_client.ts": "5c17dfa1dfc94c75ac0ff85924318948c9cf63b51fa15f877d986c711cc2db78",
+          "lifecycle.tscn": "3d5bba5ec97eaf2ad8e7f24868feb090ffba38d8d63c44246a29c9294122e18e",
+          "lifecycle_client.tscn": "411e9ea53da11619ea8859e39d1242b71c3e0c68255d8329db9170463b1282a7"
+        },
+        "actor": "soldier-e8",
+        "onset": {
+          "frame": 21,
+          "seconds": 0.959843,
+          "simMs": 64429.0,
+          "originalMesh": true,
+          "activeParts": 0.0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "position": [
+            -567.953125,
+            -16.404296875,
+            -437.5361328125
+          ]
+        },
+        "firstOriginalDeathSample": {
+          "frame": 21,
+          "seconds": 0.959843,
+          "simMs": 64429.0,
+          "originalMesh": true,
+          "activeParts": 0.0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "position": [
+            -567.953125,
+            -16.404296875,
+            -437.5361328125
+          ]
+        },
+        "lastDeathSample": {
+          "frame": 98,
+          "seconds": 4.33278,
+          "simMs": 67832.0,
+          "originalMesh": true,
+          "activeParts": 0.0,
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "position": [
+            -567.953125,
+            -16.404296875,
+            -437.5361328125
+          ]
+        },
+        "allDeathSamples": [
+          {
+            "frame": 21,
+            "seconds": 0.959843,
+            "simMs": 64429.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 22,
+            "seconds": 1.000206,
+            "simMs": 64503.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 23,
+            "seconds": 1.036004,
+            "simMs": 64537.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 24,
+            "seconds": 1.066602,
+            "simMs": 64569.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 25,
+            "seconds": 1.109904,
+            "simMs": 64607.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 26,
+            "seconds": 1.148355,
+            "simMs": 64649.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 27,
+            "seconds": 1.19059,
+            "simMs": 64692.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 28,
+            "seconds": 1.228558,
+            "simMs": 64730.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 29,
+            "seconds": 1.271778,
+            "simMs": 64773.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 30,
+            "seconds": 1.316622,
+            "simMs": 64817.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 31,
+            "seconds": 1.377122,
+            "simMs": 64877.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 32,
+            "seconds": 1.419988,
+            "simMs": 64921.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 33,
+            "seconds": 1.459084,
+            "simMs": 64959.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 34,
+            "seconds": 1.500396,
+            "simMs": 65001.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 35,
+            "seconds": 1.539621,
+            "simMs": 65041.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 36,
+            "seconds": 1.635514,
+            "simMs": 65136.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 37,
+            "seconds": 1.679596,
+            "simMs": 65181.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 38,
+            "seconds": 1.72371,
+            "simMs": 65224.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 39,
+            "seconds": 1.762809,
+            "simMs": 65264.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 40,
+            "seconds": 1.80626,
+            "simMs": 65307.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 41,
+            "seconds": 1.844042,
+            "simMs": 65346.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 42,
+            "seconds": 1.882347,
+            "simMs": 65383.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 43,
+            "seconds": 1.925488,
+            "simMs": 65427.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 44,
+            "seconds": 1.963944,
+            "simMs": 65465.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 45,
+            "seconds": 2.006353,
+            "simMs": 65507.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 46,
+            "seconds": 2.045258,
+            "simMs": 65546.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 47,
+            "seconds": 2.087864,
+            "simMs": 65588.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 48,
+            "seconds": 2.128361,
+            "simMs": 65629.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 49,
+            "seconds": 2.172976,
+            "simMs": 65673.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 50,
+            "seconds": 2.21351,
+            "simMs": 65713.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 51,
+            "seconds": 2.254969,
+            "simMs": 65756.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 52,
+            "seconds": 2.296948,
+            "simMs": 65797.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 53,
+            "seconds": 2.339434,
+            "simMs": 65839.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 54,
+            "seconds": 2.395815,
+            "simMs": 65894.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 55,
+            "seconds": 2.442397,
+            "simMs": 65942.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 56,
+            "seconds": 2.484434,
+            "simMs": 65984.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 57,
+            "seconds": 2.528252,
+            "simMs": 66028.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 58,
+            "seconds": 2.572852,
+            "simMs": 66072.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 59,
+            "seconds": 2.614215,
+            "simMs": 66114.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 60,
+            "seconds": 2.658263,
+            "simMs": 66159.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 61,
+            "seconds": 2.698926,
+            "simMs": 66201.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 62,
+            "seconds": 2.738716,
+            "simMs": 66240.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 63,
+            "seconds": 2.777753,
+            "simMs": 66279.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 64,
+            "seconds": 2.826355,
+            "simMs": 66325.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 65,
+            "seconds": 2.871059,
+            "simMs": 66371.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 66,
+            "seconds": 2.913692,
+            "simMs": 66413.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 67,
+            "seconds": 2.964334,
+            "simMs": 66464.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 68,
+            "seconds": 3.00779,
+            "simMs": 66504.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 69,
+            "seconds": 3.066026,
+            "simMs": 66565.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 70,
+            "seconds": 3.112103,
+            "simMs": 66612.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 71,
+            "seconds": 3.160996,
+            "simMs": 66660.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 72,
+            "seconds": 3.207015,
+            "simMs": 66705.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 73,
+            "seconds": 3.249567,
+            "simMs": 66748.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 74,
+            "seconds": 3.297663,
+            "simMs": 66796.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 75,
+            "seconds": 3.34288,
+            "simMs": 66842.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 76,
+            "seconds": 3.385233,
+            "simMs": 66885.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 77,
+            "seconds": 3.426675,
+            "simMs": 66926.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 78,
+            "seconds": 3.470161,
+            "simMs": 66971.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 79,
+            "seconds": 3.51382,
+            "simMs": 67013.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 80,
+            "seconds": 3.563887,
+            "simMs": 67062.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 81,
+            "seconds": 3.607666,
+            "simMs": 67107.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 82,
+            "seconds": 3.650936,
+            "simMs": 67150.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 83,
+            "seconds": 3.696201,
+            "simMs": 67197.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 84,
+            "seconds": 3.737347,
+            "simMs": 67238.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 85,
+            "seconds": 3.775353,
+            "simMs": 67276.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 86,
+            "seconds": 3.817022,
+            "simMs": 67315.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 87,
+            "seconds": 3.860148,
+            "simMs": 67359.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 88,
+            "seconds": 3.899377,
+            "simMs": 67400.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 89,
+            "seconds": 3.941989,
+            "simMs": 67443.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 90,
+            "seconds": 3.984059,
+            "simMs": 67484.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 91,
+            "seconds": 4.03097,
+            "simMs": 67529.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 92,
+            "seconds": 4.076775,
+            "simMs": 67574.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 93,
+            "seconds": 4.117864,
+            "simMs": 67619.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 94,
+            "seconds": 4.156815,
+            "simMs": 67659.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 95,
+            "seconds": 4.197326,
+            "simMs": 67698.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 96,
+            "seconds": 4.241816,
+            "simMs": 67739.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 97,
+            "seconds": 4.29226,
+            "simMs": 67789.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          },
+          {
+            "frame": 98,
+            "seconds": 4.33278,
+            "simMs": 67832.0,
+            "originalMesh": true,
+            "activeParts": 0.0,
+            "scale": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "position": [
+              -567.953125,
+              -16.404296875,
+              -437.5361328125
+            ]
+          }
+        ],
+        "impactWindowTiming": [
+          {
+            "frame": 16,
+            "seconds": 0.700989,
+            "simMs": 64200.0,
+            "gapFromPreviousMs": 43.00199999999998
+          },
+          {
+            "frame": 17,
+            "seconds": 0.74488,
+            "simMs": 64243.0,
+            "gapFromPreviousMs": 43.89100000000001
+          },
+          {
+            "frame": 18,
+            "seconds": 0.78439,
+            "simMs": 64284.0,
+            "gapFromPreviousMs": 39.51000000000005
+          },
+          {
+            "frame": 19,
+            "seconds": 0.832319,
+            "simMs": 64331.0,
+            "gapFromPreviousMs": 47.929
+          },
+          {
+            "frame": 20,
+            "seconds": 0.881111,
+            "simMs": 64378.0,
+            "gapFromPreviousMs": 48.791999999999945
+          },
+          {
+            "frame": 21,
+            "seconds": 0.959843,
+            "simMs": 64429.0,
+            "gapFromPreviousMs": 78.73200000000003
+          },
+          {
+            "frame": 22,
+            "seconds": 1.000206,
+            "simMs": 64503.0,
+            "gapFromPreviousMs": 40.36299999999993
+          },
+          {
+            "frame": 23,
+            "seconds": 1.036004,
+            "simMs": 64537.0,
+            "gapFromPreviousMs": 35.797999999999995
+          },
+          {
+            "frame": 24,
+            "seconds": 1.066602,
+            "simMs": 64569.0,
+            "gapFromPreviousMs": 30.598000000000127
+          },
+          {
+            "frame": 25,
+            "seconds": 1.109904,
+            "simMs": 64607.0,
+            "gapFromPreviousMs": 43.30199999999995
+          },
+          {
+            "frame": 26,
+            "seconds": 1.148355,
+            "simMs": 64649.0,
+            "gapFromPreviousMs": 38.451000000000015
+          },
+          {
+            "frame": 27,
+            "seconds": 1.19059,
+            "simMs": 64692.0,
+            "gapFromPreviousMs": 42.23500000000002
+          }
+        ],
+        "timing": {
+          "capturedFrames": 146,
+          "meanGapMs": 44.798703448275866,
+          "maxGapMs": 228.1909999999998,
+          "targetIntervalsMissed": 20,
+          "outputFps": 30,
+          "note": "Encoded at 30fps by holding/dropping native frames using measured timestamps. No generated in-between images. Native frame gaps and readback overhead are disclosed."
+        },
+        "finalFracture": {
+          "activations": 1.0,
+          "activeParts": 0.0,
+          "expandedVertices": 18000.0,
+          "maxPositionError": 0.0,
+          "maxWeightError": 0.0,
+          "meshes": 1.0,
+          "preparedAtImport": true,
+          "restorations": 1.0,
+          "samples": 186.0,
+          "sourceVertices": 22137.0
+        },
+        "events": [
+          {
+            "atMs": 150.0,
+            "request": {
+              "name": "input",
+              "payload": {
+                "aim": true,
+                "aimAt": "body",
+                "hold": true,
+                "shoot": true
+              }
+            }
+          },
+          {
+            "atMs": 151.0,
+            "request": {
+              "name": "input",
+              "payload": {
+                "release": true
+              }
+            },
+            "whenDeath": true
+          }
+        ],
+        "deliveredEvents": [
+          {
+            "request": {
+              "name": "input",
+              "payload": {
+                "aim": true,
+                "aimAt": "body",
+                "hold": true,
+                "shoot": true
+              }
+            },
+            "result": {
+              "accepted": true,
+              "durationMs": null,
+              "form": "hold",
+              "holdId": 7.0,
+              "restoresHoldId": null,
+              "sequence": 993.0,
+              "tapFrames": null
+            }
+          },
+          {
+            "request": {
+              "name": "input",
+              "payload": {
+                "release": true
+              }
+            },
+            "result": {
+              "accepted": true,
+              "durationMs": null,
+              "form": "release",
+              "holdId": null,
+              "sequence": 1038.0
+            }
+          }
+        ],
+        "targetGateLog": "{\"secondsWaited\":2,\"target\":null,\"turning\":false,\"nearest\":72.26833349812398,\"lockedDistance\":null,\"health\":100}\n{\"secondsWaited\":4,\"target\":\"soldier-e4\",\"turning\":false,\"nearest\":27.743821616186704,\"lockedDistance\":27.743821616186704,\"health\":100}\n{\"secondsWaited\":6,\"target\":\"soldier-e4\",\"turning\":false,\"nearest\":6.230705232825916,\"lockedDistance\":6.230705232825916,\"health\":100}\n{\"secondsWaited\":8,\"target\":\"soldier-e4\",\"turning\":false,\"nearest\":6.18317508786346,\"lockedDistance\":6.18317508786346,\"health\":100}\n{\"secondsWaited\":10,\"target\":\"soldier-e8\",\"turning\":false,\"nearest\":7.725570692197541,\"lockedDistance\":8.058518069601158,\"health\":100}\nREADY: normal-time confirmed target; capture actual feedback next.\n"
+      }
+    },
+    "pairedStills": {
+      "before-lethal-held.png": {
+        "sha256": "7ee4e3837da988b29b0c6d303da001faca352f129913e5950b2d13c541cd4b5c",
+        "nativeFrame": 21,
+        "byteIdentical": true
+      },
+      "after-lethal-held.png": {
+        "sha256": "15126235b464839f349423b36eee91d4267ff8b46c8ae77b546a3ef587b6c83a",
+        "nativeFrame": 19,
+        "byteIdentical": true
+      },
+      "after-lethal-held-restored.png": {
+        "sha256": "61f678fd1eae3b0f7c69ebd40c47269d502929efb4e80ea09fc9b101342147c5",
+        "nativeFrame": 24,
+        "byteIdentical": true
+      }
+    },
+    "uploads": [
+      {
+        "source": "artifacts\\juice\\before-lethal-held.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-lethal-hit-20261007/before-lethal-held-7ee4e3837d.png",
+        "path": "juice-lethal-hit-20261007/before-lethal-held-7ee4e3837d.png",
+        "reused": false,
+        "inline": true
+      },
+      {
+        "source": "artifacts\\juice\\after-lethal-held.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-lethal-hit-20261007/after-lethal-held-15126235b4.png",
+        "path": "juice-lethal-hit-20261007/after-lethal-held-15126235b4.png",
+        "reused": false,
+        "inline": true
+      },
+      {
+        "source": "artifacts\\juice\\after-lethal-held-restored.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-lethal-hit-20261007/after-lethal-held-restored-61f678fd1e.png",
+        "path": "juice-lethal-hit-20261007/after-lethal-held-restored-61f678fd1e.png",
+        "reused": false,
+        "inline": true
+      },
+      {
+        "source": "..\\juice-viewer-gains\\artifacts\\juice\\before-lethal-hold6.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-lethal-hit-20261007/before-lethal-hold6-69693d7cd6.mp4",
+        "path": "juice-lethal-hit-20261007/before-lethal-hold6-69693d7cd6.mp4",
+        "reused": false,
+        "inline": false
+      },
+      {
+        "source": "artifacts\\juice\\after-lethal-hold4.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-lethal-hit-20261007/after-lethal-hold4-c7cba18148.mp4",
+        "path": "juice-lethal-hit-20261007/after-lethal-hold4-c7cba18148.mp4",
+        "reused": false,
+        "inline": false
+      },
+      {
+        "source": "..\\juice-viewer-gains\\artifacts\\juice\\before-lethal-hold6.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-lethal-hit-20261007/before-lethal-hold6-7b1a5e73e4.json",
+        "path": "juice-lethal-hit-20261007/before-lethal-hold6-7b1a5e73e4.json",
+        "reused": false,
+        "inline": false
+      },
+      {
+        "source": "artifacts\\juice\\after-lethal-hold4.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-lethal-hit-20261007/after-lethal-hold4-20436b5662.json",
+        "path": "juice-lethal-hit-20261007/after-lethal-hold4-20436b5662.json",
+        "reused": false,
+        "inline": false
+      },
+      {
+        "source": "artifacts\\juice\\lethal-hold-proof.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/juice-lethal-hit-20261007/lethal-hold-proof-214584fdc1.json",
+        "path": "juice-lethal-hit-20261007/lethal-hold-proof-214584fdc1.json",
+        "reused": false,
+        "inline": false
+      }
+    ]
+  },
+  "supplementEngineLogs": {
+    "after": {
+      "path": "C:/Users/Kam/AppData/Local/Temp/godot-cli/63f13eb965d9/game-juice-lethal-hold-candidate4.log",
+      "sha256": "2979204f545ec0cfb9e963664d1d7b407002fb63d881232b38abb26c981480df",
+      "lines": 571,
+      "errorLines": 62,
+      "errorCategories": {
+        "ERROR: Pre-raster shader (vertex shader) is not provided for pipeline creation.": 20,
+        "ERROR: Condition \"pipeline.is_null()\" is true.": 20,
+        "ERROR: Invalid Task ID": 20,
+        "ERROR: 1 RID allocations of type 'class NavRegion3D' were leaked at exit.": 1,
+        "ERROR: 1 RID allocations of type 'class NavMap3D' were leaked at exit.": 1
+      },
+      "scriptErrorLines": 0,
+      "serverReadyLines": [],
+      "deathOrHitLines": [
+        "[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e3\",\"visual\":false,\"ms\":0.184}",
+        "[JS] GODMODE_SYSTEM_ADMIN_SPAWNED=soldier-e3",
+        "[JS] GODMODE_PATROL_PRESENTATION={\"id\":\"soldier-e3\",\"distance\":23.485942840576172,\"visible\":false,\"seenPast\":\"\"}",
+        "[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e3\",\"visual\":true,\"ms\":0.545}",
+        "[JS] GODMODE_SYSTEM_ADMIN_TARGET=soldier-e3:2",
+        "[JS] GODMODE_PATROL_PRESENTATION={\"id\":\"soldier-e8\",\"distance\":98.30326843261719,\"visible\":false,\"seenPast\":\"\"}",
+        "[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e8\",\"visual\":true,\"ms\":0.587}",
+        "[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e8\",\"visual\":false,\"ms\":0.073}",
+        "[JS] GODMODE_SYSTEM_ADMIN_SPAWNED=soldier-e8",
+        "[JS] GODMODE_SYSTEM_ADMIN_TARGET=soldier-e8:2",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e3:body:108",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e3:body:88",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e3:body:68",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e3:body:48",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e3:body:28",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e3:body:8",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e3:body:0",
+        "[JS] GODMODE_SYSTEM_ADMIN_DESPAWNED=soldier-e3",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss"
+      ],
+      "targetHealthSequence": [
+        {
+          "frame": 0,
+          "simMs": 44395.0,
+          "health": 128.0
+        },
+        {
+          "frame": 1,
+          "simMs": 44437.0,
+          "health": 128.0
+        },
+        {
+          "frame": 2,
+          "simMs": 44481.0,
+          "health": 128.0
+        },
+        {
+          "frame": 3,
+          "simMs": 44521.0,
+          "health": 128.0
+        },
+        {
+          "frame": 4,
+          "simMs": 44579.0,
+          "health": 128.0
+        },
+        {
+          "frame": 5,
+          "simMs": 44635.0,
+          "health": 108.0
+        },
+        {
+          "frame": 6,
+          "simMs": 44685.0,
+          "health": 108.0
+        },
+        {
+          "frame": 7,
+          "simMs": 44742.0,
+          "health": 88.0
+        },
+        {
+          "frame": 8,
+          "simMs": 44786.0,
+          "health": 88.0
+        },
+        {
+          "frame": 9,
+          "simMs": 44837.0,
+          "health": 68.0
+        },
+        {
+          "frame": 10,
+          "simMs": 44884.0,
+          "health": 68.0
+        },
+        {
+          "frame": 11,
+          "simMs": 44936.0,
+          "health": 48.0
+        },
+        {
+          "frame": 12,
+          "simMs": 44980.0,
+          "health": 48.0
+        },
+        {
+          "frame": 13,
+          "simMs": 45025.0,
+          "health": 48.0
+        },
+        {
+          "frame": 14,
+          "simMs": 45079.0,
+          "health": 28.0
+        },
+        {
+          "frame": 15,
+          "simMs": 45123.0,
+          "health": 28.0
+        },
+        {
+          "frame": 16,
+          "simMs": 45168.0,
+          "health": 8.0
+        },
+        {
+          "frame": 17,
+          "simMs": 45221.0,
+          "health": 8.0
+        },
+        {
+          "frame": 18,
+          "simMs": 45264.0,
+          "health": 8.0
+        },
+        {
+          "frame": 19,
+          "simMs": 45325.0,
+          "health": null
+        },
+        {
+          "frame": 20,
+          "simMs": 45425.0,
+          "health": null
+        }
+      ]
+    },
+    "before": {
+      "path": "C:/Users/Kam/AppData/Local/Temp/godot-cli/75061659d3c9/game-juice-lethal-hold-control6.log",
+      "sha256": "2424587d6226c93c8ce436baf0e6f73032f57d40ada746db7449e12e8c03f946",
+      "lines": 585,
+      "errorLines": 62,
+      "errorCategories": {
+        "ERROR: Pre-raster shader (vertex shader) is not provided for pipeline creation.": 20,
+        "ERROR: Condition \"pipeline.is_null()\" is true.": 20,
+        "ERROR: Invalid Task ID": 20,
+        "ERROR: 1 RID allocations of type 'class NavRegion3D' were leaked at exit.": 1,
+        "ERROR: 1 RID allocations of type 'class NavMap3D' were leaked at exit.": 1
+      },
+      "scriptErrorLines": 0,
+      "serverReadyLines": [],
+      "deathOrHitLines": [
+        "[JS] GODMODE_PATROL_PRESENTATION={\"id\":\"soldier-e3\",\"distance\":101.26326751708984,\"visible\":false,\"seenPast\":\"\"}",
+        "[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e3\",\"visual\":true,\"ms\":0.625}",
+        "[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e3\",\"visual\":false,\"ms\":0.086}",
+        "[JS] GODMODE_SYSTEM_ADMIN_SPAWNED=soldier-e3",
+        "[JS] GODMODE_SYSTEM_ADMIN_TARGET=soldier-e3:2",
+        "[JS] GODMODE_PATROL_PRESENTATION={\"id\":\"soldier-e8\",\"distance\":101.67489624023438,\"visible\":false,\"seenPast\":\"\"}",
+        "[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e8\",\"visual\":true,\"ms\":0.654}",
+        "[JS] GODMODE_ACTOR_COST={\"id\":\"soldier-e8\",\"visual\":false,\"ms\":0.072}",
+        "[JS] GODMODE_SYSTEM_ADMIN_SPAWNED=soldier-e8",
+        "[JS] GODMODE_SYSTEM_ADMIN_TARGET=soldier-e8:2",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e8:rifle:2:miss",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e8:body:109",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e8:body:89",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e8:body:69",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e8:body:49",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e8:body:29",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:hit",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e8:body:9",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:hit",
+        "[JS] GODMODE_ADMIN_HIT=2:soldier-e8:body:0",
+        "[JS] GODMODE_SYSTEM_ADMIN_DESPAWNED=soldier-e8",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:hit",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:miss",
+        "[JS] GODMODE_SOLDIER_SHOT=soldier-e3:rifle:2:hit"
+      ],
+      "targetHealthSequence": [
+        {
+          "frame": 0,
+          "simMs": 63504.0,
+          "health": 129.0
+        },
+        {
+          "frame": 1,
+          "simMs": 63555.0,
+          "health": 129.0
+        },
+        {
+          "frame": 2,
+          "simMs": 63586.0,
+          "health": 129.0
+        },
+        {
+          "frame": 3,
+          "simMs": 63620.0,
+          "health": 129.0
+        },
+        {
+          "frame": 4,
+          "simMs": 63653.0,
+          "health": 129.0
+        },
+        {
+          "frame": 5,
+          "simMs": 63685.0,
+          "health": 129.0
+        },
+        {
+          "frame": 6,
+          "simMs": 63724.0,
+          "health": 109.0
+        },
+        {
+          "frame": 7,
+          "simMs": 63787.0,
+          "health": 109.0
+        },
+        {
+          "frame": 8,
+          "simMs": 63834.0,
+          "health": 89.0
+        },
+        {
+          "frame": 9,
+          "simMs": 63877.0,
+          "health": 89.0
+        },
+        {
+          "frame": 10,
+          "simMs": 63918.0,
+          "health": 89.0
+        },
+        {
+          "frame": 11,
+          "simMs": 63964.0,
+          "health": 69.0
+        },
+        {
+          "frame": 12,
+          "simMs": 64024.0,
+          "health": 69.0
+        },
+        {
+          "frame": 13,
+          "simMs": 64074.0,
+          "health": 49.0
+        },
+        {
+          "frame": 14,
+          "simMs": 64117.0,
+          "health": 49.0
+        },
+        {
+          "frame": 15,
+          "simMs": 64157.0,
+          "health": 49.0
+        },
+        {
+          "frame": 16,
+          "simMs": 64200.0,
+          "health": 29.0
+        },
+        {
+          "frame": 17,
+          "simMs": 64243.0,
+          "health": 29.0
+        },
+        {
+          "frame": 18,
+          "simMs": 64284.0,
+          "health": 29.0
+        },
+        {
+          "frame": 19,
+          "simMs": 64331.0,
+          "health": 9.0
+        },
+        {
+          "frame": 20,
+          "simMs": 64378.0,
+          "health": 9.0
+        },
+        {
+          "frame": 21,
+          "simMs": 64429.0,
+          "health": null
+        },
+        {
+          "frame": 22,
+          "simMs": 64503.0,
+          "health": null
+        }
+      ]
+    }
+  },
+  "initialPerActorDeaths": {
+    "referTo": "audit-report.json; preserved SHA256 above"
+  },
+  "checks": [
+    {
+      "id": "source_scope_and_identity",
+      "status": "PASS",
+      "basis": "Read the specified repository/game/art/architecture/enemies/weapons documents. Current diff against base 24bb855f4 is two client files, 11 additions. CombatFeel.onEnemyDied requires nativeDeath, reuses existing flash/ripple and prior health for conservative presentation heat, beside unchanged death sound. Both changed files, game_world.ts and triangle_fracture.ts are byte-identical at original capture 4e0482e13 and current 850b70e3b; working tree tracked diff empty."
+    },
+    {
+      "id": "media_integrity_and_frame_coverage",
+      "status": "PASS",
+      "basis": "Initial 199 and supplementary 273 raw RGBA hashes match metadata; every native PNG RGB matches raw RGB. All four MP4 hashes match their metadata and CPU decode succeeded. Initial all native full frames and every decoded ROI frame were inspected. Supplement every native and decoded ROI frame was inspected consecutively at 1:1, with exact full-context sampling recorded separately. The onset/restored standalone PNGs are byte-identical to control f21/candidate f19/f24."
+    },
+    {
+      "id": "ordinary_gun_native_death_correlation",
+      "status": "PASS",
+      "basis": "Supplement receipts contain exactly two delivered normal input actions, no pending actions: ADS rifle hold/shoot and release when nativeDeath is observed. Accepted logs show player-2 body hits reaching zero: candidate soldier-e3 108/88/68/48/28/8/0; control soldier-e8 109/89/69/49/29/9/0. Health snapshots, ammo 30 to 23, roster removal and same-id nativeDeath correlate. Acquisition used invincibility/timescale4, then normal time. Actual accepted events do not call VFX, mesh, death or timer manipulation."
+    },
+    {
+      "id": "per_actor_activation_and_expiry",
+      "status": "PASS",
+      "basis": "Candidate soldier-e3 nativeDeath first observed f19 at wall 0.961891 s, sim 45325, non-original mesh and activeParts=1. Same actor stays non-original f19-23, then original f24 at 1.215235 s, sim 45605, activeParts=0; all later death samples through f92 remain original. Observed 280 simulation ms to first restored sample is consistent with nominal 260 ms under discrete sampling, not an exact expiry measurement. Supplement control soldier-e8 first death f21 original and all death samples through f98 original. Counts 4/4 and 1/1 ending activeParts=0 support cleanup; they are not the attachment proof."
+    },
+    {
+      "id": "localized_triangle_signature_and_unaffected_detail",
+      "status": "PASS",
+      "basis": "Initial second kill native f38-40 / decoded f63-67 provides the clearest fine white localized chest/forearm triangle signature, with helmet/face, red sleeve, equipment and rifle retaining native detail. Supplement candidate f19 / decoded f29-30 exposes a small white chest-side terminal patch distinct from the red screen-space kill marker; surrounding helmet/clothing/equipment retain color and form. No body-wide white wash, screen-wide terminal debris or replacement of the native character by a proxy was observed. ADS/range/marker occlusion limits precise patch-shape comparison."
+    },
+    {
+      "id": "attachment_native_rig_and_held_weapon_across_expiry",
+      "status": "PASS",
+      "basis": "Supplement native f19-23 and decoded f29-35 were inspected individually. The exposed patch remains localized on the visible body during the early bend; no detached patch/weapon, T-pose or gross silhouette break was observed in unoccluded pixels. Original mesh return at native f24 / decoded f36 retains a coherent helmet, torso, arms and held rifle. Native f24-39 continuing bend and f40-49 seated fall preserve body/weapon relationships, closing the initial offscreen-expiry gap. This is visible coherence of one held-camera soldier death, not certification of every bone or animation pose."
+    },
+    {
+      "id": "restoration_and_continuing_native_death_motion",
+      "status": "PASS",
+      "basis": "The same soldier remains in view after restoration: native f24-39 bends/crouches, f40-49 lowers to seated collapse, f50-59 rolls/extends into a horizontal fall, then remains partly visible settled through the late death samples. No gross restoration pop, animation reset, frozen standing corpse or residual white terminal effect was observed in captured frames. NativeDeath remains true after restoration through f92; actor absent at f93. Initial control native f47-60 shows its original-mesh forward fall with held rifle; supplementary control corpse is obscured and is not claimed as a pixel-matched motion comparison."
+    },
+    {
+      "id": "preserved_ads_recoil_spawns_and_style_scope",
+      "status": "PASS",
+      "basis": "Changed source does not alter authoritative damage, weapon rules, audio, native death animation/timing, rig/assets/shader, v0.28 ADS/recoil, spawns or stream/TTS fiction. Ordinary ADS firing/recoil/ammo and input release remain visible. World/native weapon detail, flat LiveTube cards and game-fiction cheat presentation stay distinct in inspected context. Supplement both source trees contain merged viewer base 24bb855f4. Fair hidden spawning passes unchanged-source and initial fixture scope only; this is not an exhaustive spawning or viewer-feature audit."
+    }
+  ],
+  "excludedUnverifiedGates": [
+    {
+      "id": "audible_audio_and_tts",
+      "status": "UNVERIFIED_SILENT_MEDIA"
+    },
+    {
+      "id": "continuous_1x_playback",
+      "status": "NOT_PERFORMED"
+    },
+    {
+      "id": "whole_game_renderer_performance_and_all_poses",
+      "status": "OUTSIDE_SCOPE"
+    }
+  ],
+  "limitations": [
+    "Scope is the two-file lethal presentation change and supplied ordinary rifle deaths. ALL PASS is not a whole-game, every-character/every-angle, performance, renderer-health or audible-quality certification. Four candidate kills provide terminal evidence; only one supplementary candidate kill provides held-view restoration/follow-through.",
+    "Initial evidence retains actual capture candidate 4e0482e13 on bfce057de, before merged viewer pulse. It is not relabeled 850b70e3b. Supplement captures use 850b70e3b and control bfcb267 whose tracked tree equals merged base 24bb855f4. Four scoped source-file hashes are identical between original capture and rebase.",
+    "Requested seed 0C0FFEE1 does not produce pixel-matched camera/actors/locations. Initial lock ranges are control 4.088 m and candidate 6.279 m. Supplement control 8.058518 m and candidate 9.498434 m. Supplement control explicitly aimAt body on firing onset; candidate retains its acquired aim target. These differences preclude precise pixel/pose parity or effect-size comparison.",
+    "Supplementary control soldier-e8 corpse is hidden by sights/wall in inspected context. Its original-mesh/death claim is correlated telemetry/log evidence, not direct visible-collapse evidence. Initial control supplies the visible original-mesh native-death comparison. No claim that a visible nearby live actor is the killed control target.",
+    "Candidate ADS sights and red kill marker obscure part of the terminal patch; effect visible in exposed body pixels, not every pixel. Later player weapon partly hides torso/rifle during horizontal fall. Held-rifle continuity is visible across restoration and early collapse, not fully visible through final despawn.",
+    "Existing ripple anchor follows actor root translation/yaw rather than individual animated bones; the post-death mark probe skips removed snapshot actors. No gross attachment defect was observed in the held sample, but this does not establish bone-perfect patch anchoring for unobserved falls/angles. Aggregate counters alone were not used to clear the attachment gate.",
+    "All captured frames inspected does not mean every engine-rendered instant was captured. Supplement native gaps: candidate mean 51.391151 ms, max 230.367 ms, 43 target intervals missed; control mean 44.798703 ms, max 228.191 ms, 20 missed. Candidate f18-to-f19 onset gap 86.763 ms; subsequent f19-to-f24 gaps 74.381/43.825/42.962/44.682/47.494 ms. Exact subframe onset/expiry and unrecorded instants cannot be judged. Initial capture gaps remain in the preserved report.",
+    "All videos are silent CFR30, holding/dropping actual native images without interpolation; lossy H264 yuv420p affects fine edges/color. Native PNGs govern detail. CPU decode/contact-sheet inspection is frame-by-frame and not continuous 1x playback. All decoded frames were reviewed only inside the specified ROI, not over the entire decoded full frame.",
+    "Audio/TTS quality, mixing and audible sync are excluded/unverified: no audio track, no audition. Unchanged source/audio calls support source scope only. Silent clips cannot clear an audible-quality gate.",
+    "Accepted initial and supplementary engine logs each have 62 ERROR lines: 20 missing pre-raster vertex-shader pipeline, 20 pipeline.is_null, 20 Invalid Task ID, one NavRegion3D and one NavMap3D shutdown leak. Zero SCRIPT ERROR lines observed. Logs are not clean; shared errors cannot be attributed to this lethal diff from these runs alone. Renderer health remains outside this visual change verdict.",
+    "Default root 13/13 green is supplied evidence; the UTF16LE rebased log was read and hash checked. Official cache validation, original 859 inputs/564 outputs and headless serverReady/forced stop are supplied results, not rerun by this auditor. No engine, import, test, source edit, PR action or GPU capture was performed.",
+    "Original missing-resource failed candidate launch and rejected/no-death/failed-acquisition supplementary takes are excluded. Only accepted initial candidate-v2/control and supplement after-lethal-hold4/before-lethal-hold6 are evidence. Uploaded URL declarations were read; local bytes/hashes were verified, not remote bytes re-downloaded."
+  ],
+  "suppliedValidation": {
+    "rootTest": {
+      "path": "D:\\work\\godmode-roguelite-worktrees\\juice-lethal-hit\\artifacts\\juice\\pnpm-test-viewer-base.log",
+      "sha256": "863acee28bf8c21ead951f4092d3a2b318701026cab923392ffbe99838769385",
+      "encoding": "UTF16LE",
+      "tail": [
+        "\u2139 pass 117",
+        "\u2139 fail 0",
+        "\u2139 cancelled 0",
+        "\u2139 skipped 0",
+        "\u2139 todo 0",
+        "\u2139 duration_ms 20890.7967",
+        "[13/13] godot-cli: ok in 22.4 s",
+        "",
+        "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
+        "  ROOT SUITE  OK",
+        "",
+        "  steps run:   13 of 13",
+        "  passed:      13",
+        "  failed:      0",
+        "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
+      ],
+      "auditorExecuted": false
+    },
+    "cache": "User-reported official cache --check valid, original 859 inputs/564 outputs; not rerun.",
+    "headlessSmoke": "Supplied serverReady without script errors and forced:true stop; not executed by auditor."
+  },
+  "pendingRequiredEvidenceForThisScopedVerdict": [],
+  "auditInputSha256": {
+    "supplement-input-attestation.json": "7be585c18c548bcd03ed62d5bebd7b0ec02f3913aa8c766dfc6bbfbf35943978",
+    "supplement-log-review.json": "8fb9803f0e360381a0b03982dc8cbaa1fc9d6f9037d6e25806232081d147e8b9",
+    "after-hold4/analysis.json": "84b8399af5d2c82920c186ae45df48deff726b853e071098ad4998cf87082ea3",
+    "before-hold6/analysis.json": "78897f4755d7fca64d41998b9e1bb697deb1b073c358620742a508f6bf081587",
+    "evidence-analysis.json": "70eb28770e097f7d3f5e6198d4da2f130c4f1d07f5619b96a82363743ab992c1",
+    "roi-coverage.json": "e8504f1c2d1c7a8db81a3d5449e7a9f4521ed92771b003b267f60da8e6de3d67"
+  },
+  "signature": {
+    "signedBy": "Independent Codex vision auditor (/root)",
+    "signedAtUtc": "2026-10-07T07:38:34.034816+00:00",
+    "statement": "I independently reviewed the scoped source, local provenance, every captured native/decoded relevant ROI frame, and the full native context coverage listed. ALL PASS applies only to the stated lethal presentation gate and observed evidence; limitations and excluded gates are retained. No engine/import/test/source/PR action was taken."
+  }
+}
