@@ -1,0 +1,734 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-08",
+  "round": 5,
+  "baselineSha256": "a5029bc92b5b0c86639087606bbaaf4f9e13343d07ad17d8a220543f8cf5b80b",
+  "cameras": [
+    {
+      "id": "01-park-lawn",
+      "position": [
+        -410,
+        -15.5135,
+        -457
+      ],
+      "yaw": 1.7,
+      "pitch": 0,
+      "fov": 75,
+      "concept": "2026-10-08/frames/concept/01-park-lawn.png"
+    },
+    {
+      "id": "02-waterfront-promenade",
+      "position": [
+        -423,
+        0,
+        -462
+      ],
+      "yaw": -0.23,
+      "pitch": -0.43,
+      "fov": 75,
+      "concept": "2026-10-08/frames/concept/02-waterfront-promenade.png"
+    },
+    {
+      "id": "03-shopping-street",
+      "position": [
+        -402,
+        -15.582,
+        -392
+      ],
+      "yaw": 0,
+      "pitch": 0,
+      "fov": 75,
+      "concept": "2026-10-08/frames/concept/03-shopping-street.png"
+    },
+    {
+      "id": "04-under-bridge-street",
+      "position": [
+        -517,
+        -15.6,
+        -367
+      ],
+      "yaw": -1.55,
+      "pitch": 0.02,
+      "fov": 75,
+      "concept": "2026-10-08/frames/concept/04-under-bridge-street.png"
+    },
+    {
+      "id": "05-intersection",
+      "position": [
+        -416,
+        -15.6,
+        -370
+      ],
+      "yaw": -1.5,
+      "pitch": 0,
+      "fov": 75,
+      "concept": "2026-10-08/frames/concept/05-intersection.png"
+    },
+    {
+      "id": "06-bridge-tower-park",
+      "position": [
+        -483,
+        -15,
+        -485
+      ],
+      "target": [
+        -556,
+        25,
+        -456
+      ],
+      "yaw": 1.9489386421174981,
+      "pitch": 0.4710075068406675,
+      "fov": 45,
+      "label": "Tower from park",
+      "concept": "2026-10-08/frames/r5-bridge-reference/06-bridge-tower-park.png",
+      "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+    },
+    {
+      "id": "07-bridge-cables-park",
+      "position": [
+        -478,
+        -13,
+        -485
+      ],
+      "target": [
+        -543,
+        46,
+        -442
+      ],
+      "yaw": 2.155240226504248,
+      "pitch": 0.6479868403574548,
+      "fov": 45,
+      "label": "Cables and tower from park",
+      "concept": "2026-10-08/frames/r5-bridge-reference/07-bridge-cables-park.png",
+      "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+    },
+    {
+      "id": "08-bridge-deck-park",
+      "position": [
+        -488,
+        -14,
+        -469
+      ],
+      "target": [
+        -531,
+        6,
+        -425
+      ],
+      "yaw": 2.3676882369073753,
+      "pitch": 0.3143088599634357,
+      "fov": 50,
+      "label": "Deck edge from park",
+      "concept": "2026-10-08/frames/r5-bridge-reference/08-bridge-deck-park.png",
+      "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+    },
+    {
+      "id": "09-bridge-tower-under",
+      "position": [
+        -534,
+        -15,
+        -430
+      ],
+      "target": [
+        -556,
+        24,
+        -456
+      ],
+      "yaw": 0.702256931509007,
+      "pitch": 0.852928912564414,
+      "fov": 70,
+      "label": "Tower and arch from beneath",
+      "concept": "2026-10-08/frames/r5-bridge-reference/09-bridge-tower-under.png",
+      "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+    },
+    {
+      "id": "10-bridge-cables-under",
+      "position": [
+        -528,
+        -14,
+        -452
+      ],
+      "target": [
+        -519,
+        42,
+        -436
+      ],
+      "yaw": -2.6292031932790554,
+      "pitch": 1.2540217610060698,
+      "fov": 75,
+      "label": "Cables overhead",
+      "concept": "2026-10-08/frames/r5-bridge-reference/10-bridge-cables-under.png",
+      "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+    },
+    {
+      "id": "11-bridge-deck-under",
+      "position": [
+        -517,
+        -15,
+        -405
+      ],
+      "target": [
+        -540,
+        5,
+        -430
+      ],
+      "yaw": 0.7437555842988599,
+      "pitch": 0.5321025174692331,
+      "fov": 70,
+      "label": "Deck and trusses from beneath",
+      "concept": "2026-10-08/frames/r5-bridge-reference/11-bridge-deck-under.png",
+      "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+    }
+  ],
+  "sheets": [
+    {
+      "id": "r5-sun-1230",
+      "round": 5,
+      "sunSample": {
+        "date": "2026-10-08",
+        "hour": 12.5,
+        "latitude": 40.7,
+        "longitude": -73.99,
+        "utcOffset": -4,
+        "elevation": 43.13052150761579,
+        "azimuth": 175.4176564415984,
+        "method": "NOAA/Meeus; geometric elevation (no atmospheric refraction)",
+        "source": "https://gml.noaa.gov/grad/solcalc/calcdetails.html"
+      },
+      "title": "Sun sweet spot | Oct 8 12:30",
+      "aLabel": "Oct 8 14:00 | accepted GENTLE",
+      "bLabel": "Oct 8 12:30",
+      "sheet": "2026-10-08/ab-r5-sun-1230.png",
+      "frames": [
+        {
+          "camera": "01-park-lawn",
+          "a": "2026-10-08/frames/r5-sun-1230/01-park-lawn-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/01-park-lawn-B.png"
+        },
+        {
+          "camera": "02-waterfront-promenade",
+          "a": "2026-10-08/frames/r5-sun-1230/02-waterfront-promenade-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/02-waterfront-promenade-B.png"
+        },
+        {
+          "camera": "03-shopping-street",
+          "a": "2026-10-08/frames/r5-sun-1230/03-shopping-street-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/03-shopping-street-B.png"
+        },
+        {
+          "camera": "04-under-bridge-street",
+          "a": "2026-10-08/frames/r5-sun-1230/04-under-bridge-street-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/04-under-bridge-street-B.png"
+        },
+        {
+          "camera": "05-intersection",
+          "a": "2026-10-08/frames/r5-sun-1230/05-intersection-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/05-intersection-B.png"
+        },
+        {
+          "camera": "06-bridge-tower-park",
+          "a": "2026-10-08/frames/r5-sun-1230/06-bridge-tower-park-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/06-bridge-tower-park-B.png"
+        },
+        {
+          "camera": "07-bridge-cables-park",
+          "a": "2026-10-08/frames/r5-sun-1230/07-bridge-cables-park-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/07-bridge-cables-park-B.png"
+        },
+        {
+          "camera": "08-bridge-deck-park",
+          "a": "2026-10-08/frames/r5-sun-1230/08-bridge-deck-park-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/08-bridge-deck-park-B.png"
+        },
+        {
+          "camera": "09-bridge-tower-under",
+          "a": "2026-10-08/frames/r5-sun-1230/09-bridge-tower-under-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/09-bridge-tower-under-B.png"
+        },
+        {
+          "camera": "10-bridge-cables-under",
+          "a": "2026-10-08/frames/r5-sun-1230/10-bridge-cables-under-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/10-bridge-cables-under-B.png"
+        },
+        {
+          "camera": "11-bridge-deck-under",
+          "a": "2026-10-08/frames/r5-sun-1230/11-bridge-deck-under-A.png",
+          "b": "2026-10-08/frames/r5-sun-1230/11-bridge-deck-under-B.png"
+        }
+      ],
+      "crop": false
+    },
+    {
+      "id": "r5-sun-1330",
+      "round": 5,
+      "sunSample": {
+        "date": "2026-10-08",
+        "hour": 13.5,
+        "latitude": 40.7,
+        "longitude": -73.99,
+        "utcOffset": -4,
+        "elevation": 42.00922680290514,
+        "azimuth": 195.66683083909243,
+        "method": "NOAA/Meeus; geometric elevation (no atmospheric refraction)",
+        "source": "https://gml.noaa.gov/grad/solcalc/calcdetails.html"
+      },
+      "title": "Sun sweet spot | Oct 8 13:30",
+      "aLabel": "Oct 8 14:00 | accepted GENTLE",
+      "bLabel": "Oct 8 13:30",
+      "sheet": "2026-10-08/ab-r5-sun-1330.png",
+      "frames": [
+        {
+          "camera": "01-park-lawn",
+          "a": "2026-10-08/frames/r5-sun-1330/01-park-lawn-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/01-park-lawn-B.png"
+        },
+        {
+          "camera": "02-waterfront-promenade",
+          "a": "2026-10-08/frames/r5-sun-1330/02-waterfront-promenade-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/02-waterfront-promenade-B.png"
+        },
+        {
+          "camera": "03-shopping-street",
+          "a": "2026-10-08/frames/r5-sun-1330/03-shopping-street-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/03-shopping-street-B.png"
+        },
+        {
+          "camera": "04-under-bridge-street",
+          "a": "2026-10-08/frames/r5-sun-1330/04-under-bridge-street-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/04-under-bridge-street-B.png"
+        },
+        {
+          "camera": "05-intersection",
+          "a": "2026-10-08/frames/r5-sun-1330/05-intersection-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/05-intersection-B.png"
+        },
+        {
+          "camera": "06-bridge-tower-park",
+          "a": "2026-10-08/frames/r5-sun-1330/06-bridge-tower-park-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/06-bridge-tower-park-B.png"
+        },
+        {
+          "camera": "07-bridge-cables-park",
+          "a": "2026-10-08/frames/r5-sun-1330/07-bridge-cables-park-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/07-bridge-cables-park-B.png"
+        },
+        {
+          "camera": "08-bridge-deck-park",
+          "a": "2026-10-08/frames/r5-sun-1330/08-bridge-deck-park-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/08-bridge-deck-park-B.png"
+        },
+        {
+          "camera": "09-bridge-tower-under",
+          "a": "2026-10-08/frames/r5-sun-1330/09-bridge-tower-under-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/09-bridge-tower-under-B.png"
+        },
+        {
+          "camera": "10-bridge-cables-under",
+          "a": "2026-10-08/frames/r5-sun-1330/10-bridge-cables-under-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/10-bridge-cables-under-B.png"
+        },
+        {
+          "camera": "11-bridge-deck-under",
+          "a": "2026-10-08/frames/r5-sun-1330/11-bridge-deck-under-A.png",
+          "b": "2026-10-08/frames/r5-sun-1330/11-bridge-deck-under-B.png"
+        }
+      ],
+      "crop": false
+    },
+    {
+      "id": "r5-bridge-contrast",
+      "round": 5,
+      "title": "Bridge depth | 2pm world sun | Noon-facing bridge plane contrast",
+      "aLabel": "Oct 8 14:00 | accepted GENTLE",
+      "bLabel": "Noon-facing bridge plane contrast",
+      "sheet": "2026-10-08/ab-r5-bridge-contrast.png",
+      "frames": [
+        {
+          "camera": "01-park-lawn",
+          "a": "2026-10-08/frames/r5-bridge-contrast/01-park-lawn-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/01-park-lawn-B.png"
+        },
+        {
+          "camera": "02-waterfront-promenade",
+          "a": "2026-10-08/frames/r5-bridge-contrast/02-waterfront-promenade-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/02-waterfront-promenade-B.png"
+        },
+        {
+          "camera": "03-shopping-street",
+          "a": "2026-10-08/frames/r5-bridge-contrast/03-shopping-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/03-shopping-street-B.png"
+        },
+        {
+          "camera": "04-under-bridge-street",
+          "a": "2026-10-08/frames/r5-bridge-contrast/04-under-bridge-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/04-under-bridge-street-B.png"
+        },
+        {
+          "camera": "05-intersection",
+          "a": "2026-10-08/frames/r5-bridge-contrast/05-intersection-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/05-intersection-B.png"
+        },
+        {
+          "camera": "06-bridge-tower-park",
+          "a": "2026-10-08/frames/r5-bridge-contrast/06-bridge-tower-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/06-bridge-tower-park-B.png"
+        },
+        {
+          "camera": "07-bridge-cables-park",
+          "a": "2026-10-08/frames/r5-bridge-contrast/07-bridge-cables-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/07-bridge-cables-park-B.png"
+        },
+        {
+          "camera": "08-bridge-deck-park",
+          "a": "2026-10-08/frames/r5-bridge-contrast/08-bridge-deck-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/08-bridge-deck-park-B.png"
+        },
+        {
+          "camera": "09-bridge-tower-under",
+          "a": "2026-10-08/frames/r5-bridge-contrast/09-bridge-tower-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/09-bridge-tower-under-B.png"
+        },
+        {
+          "camera": "10-bridge-cables-under",
+          "a": "2026-10-08/frames/r5-bridge-contrast/10-bridge-cables-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/10-bridge-cables-under-B.png"
+        },
+        {
+          "camera": "11-bridge-deck-under",
+          "a": "2026-10-08/frames/r5-bridge-contrast/11-bridge-deck-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-contrast/11-bridge-deck-under-B.png"
+        }
+      ],
+      "crop": false
+    },
+    {
+      "id": "r5-bridge-sheen",
+      "round": 5,
+      "title": "Bridge depth | 2pm world sun | Bridge rim and sheen",
+      "aLabel": "Oct 8 14:00 | accepted GENTLE",
+      "bLabel": "Bridge rim and sheen",
+      "sheet": "2026-10-08/ab-r5-bridge-sheen.png",
+      "frames": [
+        {
+          "camera": "01-park-lawn",
+          "a": "2026-10-08/frames/r5-bridge-sheen/01-park-lawn-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/01-park-lawn-B.png"
+        },
+        {
+          "camera": "02-waterfront-promenade",
+          "a": "2026-10-08/frames/r5-bridge-sheen/02-waterfront-promenade-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/02-waterfront-promenade-B.png"
+        },
+        {
+          "camera": "03-shopping-street",
+          "a": "2026-10-08/frames/r5-bridge-sheen/03-shopping-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/03-shopping-street-B.png"
+        },
+        {
+          "camera": "04-under-bridge-street",
+          "a": "2026-10-08/frames/r5-bridge-sheen/04-under-bridge-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/04-under-bridge-street-B.png"
+        },
+        {
+          "camera": "05-intersection",
+          "a": "2026-10-08/frames/r5-bridge-sheen/05-intersection-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/05-intersection-B.png"
+        },
+        {
+          "camera": "06-bridge-tower-park",
+          "a": "2026-10-08/frames/r5-bridge-sheen/06-bridge-tower-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/06-bridge-tower-park-B.png"
+        },
+        {
+          "camera": "07-bridge-cables-park",
+          "a": "2026-10-08/frames/r5-bridge-sheen/07-bridge-cables-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/07-bridge-cables-park-B.png"
+        },
+        {
+          "camera": "08-bridge-deck-park",
+          "a": "2026-10-08/frames/r5-bridge-sheen/08-bridge-deck-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/08-bridge-deck-park-B.png"
+        },
+        {
+          "camera": "09-bridge-tower-under",
+          "a": "2026-10-08/frames/r5-bridge-sheen/09-bridge-tower-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/09-bridge-tower-under-B.png"
+        },
+        {
+          "camera": "10-bridge-cables-under",
+          "a": "2026-10-08/frames/r5-bridge-sheen/10-bridge-cables-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/10-bridge-cables-under-B.png"
+        },
+        {
+          "camera": "11-bridge-deck-under",
+          "a": "2026-10-08/frames/r5-bridge-sheen/11-bridge-deck-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-sheen/11-bridge-deck-under-B.png"
+        }
+      ],
+      "crop": false
+    },
+    {
+      "id": "r5-bridge-fill",
+      "round": 5,
+      "title": "Bridge depth | 2pm world sun | Bridge-only shadowless noon fill",
+      "aLabel": "Oct 8 14:00 | accepted GENTLE",
+      "bLabel": "Bridge-only shadowless noon fill",
+      "sheet": "2026-10-08/ab-r5-bridge-fill.png",
+      "frames": [
+        {
+          "camera": "01-park-lawn",
+          "a": "2026-10-08/frames/r5-bridge-fill/01-park-lawn-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/01-park-lawn-B.png"
+        },
+        {
+          "camera": "02-waterfront-promenade",
+          "a": "2026-10-08/frames/r5-bridge-fill/02-waterfront-promenade-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/02-waterfront-promenade-B.png"
+        },
+        {
+          "camera": "03-shopping-street",
+          "a": "2026-10-08/frames/r5-bridge-fill/03-shopping-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/03-shopping-street-B.png"
+        },
+        {
+          "camera": "04-under-bridge-street",
+          "a": "2026-10-08/frames/r5-bridge-fill/04-under-bridge-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/04-under-bridge-street-B.png"
+        },
+        {
+          "camera": "05-intersection",
+          "a": "2026-10-08/frames/r5-bridge-fill/05-intersection-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/05-intersection-B.png"
+        },
+        {
+          "camera": "06-bridge-tower-park",
+          "a": "2026-10-08/frames/r5-bridge-fill/06-bridge-tower-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/06-bridge-tower-park-B.png"
+        },
+        {
+          "camera": "07-bridge-cables-park",
+          "a": "2026-10-08/frames/r5-bridge-fill/07-bridge-cables-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/07-bridge-cables-park-B.png"
+        },
+        {
+          "camera": "08-bridge-deck-park",
+          "a": "2026-10-08/frames/r5-bridge-fill/08-bridge-deck-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/08-bridge-deck-park-B.png"
+        },
+        {
+          "camera": "09-bridge-tower-under",
+          "a": "2026-10-08/frames/r5-bridge-fill/09-bridge-tower-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/09-bridge-tower-under-B.png"
+        },
+        {
+          "camera": "10-bridge-cables-under",
+          "a": "2026-10-08/frames/r5-bridge-fill/10-bridge-cables-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/10-bridge-cables-under-B.png"
+        },
+        {
+          "camera": "11-bridge-deck-under",
+          "a": "2026-10-08/frames/r5-bridge-fill/11-bridge-deck-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-fill/11-bridge-deck-under-B.png"
+        }
+      ],
+      "crop": false
+    },
+    {
+      "id": "r5-bridge-underside",
+      "round": 5,
+      "title": "Bridge depth | 2pm world sun | Bridge underside AO and height gradient",
+      "aLabel": "Oct 8 14:00 | accepted GENTLE",
+      "bLabel": "Bridge underside AO and height gradient",
+      "sheet": "2026-10-08/ab-r5-bridge-underside.png",
+      "frames": [
+        {
+          "camera": "01-park-lawn",
+          "a": "2026-10-08/frames/r5-bridge-underside/01-park-lawn-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/01-park-lawn-B.png"
+        },
+        {
+          "camera": "02-waterfront-promenade",
+          "a": "2026-10-08/frames/r5-bridge-underside/02-waterfront-promenade-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/02-waterfront-promenade-B.png"
+        },
+        {
+          "camera": "03-shopping-street",
+          "a": "2026-10-08/frames/r5-bridge-underside/03-shopping-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/03-shopping-street-B.png"
+        },
+        {
+          "camera": "04-under-bridge-street",
+          "a": "2026-10-08/frames/r5-bridge-underside/04-under-bridge-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/04-under-bridge-street-B.png"
+        },
+        {
+          "camera": "05-intersection",
+          "a": "2026-10-08/frames/r5-bridge-underside/05-intersection-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/05-intersection-B.png"
+        },
+        {
+          "camera": "06-bridge-tower-park",
+          "a": "2026-10-08/frames/r5-bridge-underside/06-bridge-tower-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/06-bridge-tower-park-B.png"
+        },
+        {
+          "camera": "07-bridge-cables-park",
+          "a": "2026-10-08/frames/r5-bridge-underside/07-bridge-cables-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/07-bridge-cables-park-B.png"
+        },
+        {
+          "camera": "08-bridge-deck-park",
+          "a": "2026-10-08/frames/r5-bridge-underside/08-bridge-deck-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/08-bridge-deck-park-B.png"
+        },
+        {
+          "camera": "09-bridge-tower-under",
+          "a": "2026-10-08/frames/r5-bridge-underside/09-bridge-tower-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/09-bridge-tower-under-B.png"
+        },
+        {
+          "camera": "10-bridge-cables-under",
+          "a": "2026-10-08/frames/r5-bridge-underside/10-bridge-cables-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/10-bridge-cables-under-B.png"
+        },
+        {
+          "camera": "11-bridge-deck-under",
+          "a": "2026-10-08/frames/r5-bridge-underside/11-bridge-deck-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-underside/11-bridge-deck-under-B.png"
+        }
+      ],
+      "crop": false
+    },
+    {
+      "id": "r5-bridge-combo",
+      "round": 5,
+      "title": "Bridge depth | 2pm world sun | Restrained noon fill plus underside depth",
+      "aLabel": "Oct 8 14:00 | accepted GENTLE",
+      "bLabel": "Restrained noon fill plus underside depth",
+      "sheet": "2026-10-08/ab-r5-bridge-combo.png",
+      "frames": [
+        {
+          "camera": "01-park-lawn",
+          "a": "2026-10-08/frames/r5-bridge-combo/01-park-lawn-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/01-park-lawn-B.png"
+        },
+        {
+          "camera": "02-waterfront-promenade",
+          "a": "2026-10-08/frames/r5-bridge-combo/02-waterfront-promenade-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/02-waterfront-promenade-B.png"
+        },
+        {
+          "camera": "03-shopping-street",
+          "a": "2026-10-08/frames/r5-bridge-combo/03-shopping-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/03-shopping-street-B.png"
+        },
+        {
+          "camera": "04-under-bridge-street",
+          "a": "2026-10-08/frames/r5-bridge-combo/04-under-bridge-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/04-under-bridge-street-B.png"
+        },
+        {
+          "camera": "05-intersection",
+          "a": "2026-10-08/frames/r5-bridge-combo/05-intersection-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/05-intersection-B.png"
+        },
+        {
+          "camera": "06-bridge-tower-park",
+          "a": "2026-10-08/frames/r5-bridge-combo/06-bridge-tower-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/06-bridge-tower-park-B.png"
+        },
+        {
+          "camera": "07-bridge-cables-park",
+          "a": "2026-10-08/frames/r5-bridge-combo/07-bridge-cables-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/07-bridge-cables-park-B.png"
+        },
+        {
+          "camera": "08-bridge-deck-park",
+          "a": "2026-10-08/frames/r5-bridge-combo/08-bridge-deck-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/08-bridge-deck-park-B.png"
+        },
+        {
+          "camera": "09-bridge-tower-under",
+          "a": "2026-10-08/frames/r5-bridge-combo/09-bridge-tower-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/09-bridge-tower-under-B.png"
+        },
+        {
+          "camera": "10-bridge-cables-under",
+          "a": "2026-10-08/frames/r5-bridge-combo/10-bridge-cables-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/10-bridge-cables-under-B.png"
+        },
+        {
+          "camera": "11-bridge-deck-under",
+          "a": "2026-10-08/frames/r5-bridge-combo/11-bridge-deck-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-combo/11-bridge-deck-under-B.png"
+        }
+      ],
+      "crop": false
+    },
+    {
+      "id": "r5-bridge-local-noon",
+      "round": 5,
+      "title": "Bridge depth | 2pm world sun | Bridge gets its own noon key",
+      "aLabel": "Oct 8 14:00 | accepted GENTLE",
+      "bLabel": "Bridge gets its own noon key",
+      "sheet": "2026-10-08/ab-r5-bridge-local-noon.png",
+      "frames": [
+        {
+          "camera": "01-park-lawn",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/01-park-lawn-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/01-park-lawn-B.png"
+        },
+        {
+          "camera": "02-waterfront-promenade",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/02-waterfront-promenade-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/02-waterfront-promenade-B.png"
+        },
+        {
+          "camera": "03-shopping-street",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/03-shopping-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/03-shopping-street-B.png"
+        },
+        {
+          "camera": "04-under-bridge-street",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/04-under-bridge-street-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/04-under-bridge-street-B.png"
+        },
+        {
+          "camera": "05-intersection",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/05-intersection-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/05-intersection-B.png"
+        },
+        {
+          "camera": "06-bridge-tower-park",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/06-bridge-tower-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/06-bridge-tower-park-B.png"
+        },
+        {
+          "camera": "07-bridge-cables-park",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/07-bridge-cables-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/07-bridge-cables-park-B.png"
+        },
+        {
+          "camera": "08-bridge-deck-park",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/08-bridge-deck-park-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/08-bridge-deck-park-B.png"
+        },
+        {
+          "camera": "09-bridge-tower-under",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/09-bridge-tower-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/09-bridge-tower-under-B.png"
+        },
+        {
+          "camera": "10-bridge-cables-under",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/10-bridge-cables-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/10-bridge-cables-under-B.png"
+        },
+        {
+          "camera": "11-bridge-deck-under",
+          "a": "2026-10-08/frames/r5-bridge-local-noon/11-bridge-deck-under-A.png",
+          "b": "2026-10-08/frames/r5-bridge-local-noon/11-bridge-deck-under-B.png"
+        }
+      ],
+      "crop": false
+    }
+  ]
+}
