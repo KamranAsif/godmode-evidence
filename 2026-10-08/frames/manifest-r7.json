@@ -1,0 +1,561 @@
+{
+  "round": 7,
+  "cameras": [
+    "01-park-lawn",
+    "02-waterfront-promenade",
+    "03-shopping-street",
+    "04-under-bridge-street",
+    "05-intersection",
+    "06-bridge-tower-park",
+    "07-bridge-cables-park",
+    "08-bridge-deck-park",
+    "09-bridge-tower-under",
+    "10-bridge-cables-under",
+    "11-bridge-deck-under"
+  ],
+  "pools": [
+    {
+      "id": "r7-bake",
+      "title": "Final look: realtime vs bake",
+      "desc": "Final 12:45 amber sun, azure sky, gentle .65, accepted bridge contrast/underside and prop AO stay fixed. Eleven crop views per completed option. Bake study stopped by the orchestrator; incomplete candidates and the 128-receiver diagnostic are excluded.",
+      "options": [
+        {
+          "id": "realtime",
+          "label": "final realtime only",
+          "desc": "Realtime champion; no lightmaps; frame medians 3.20–78.25ms across 11 cameras (1920×1080 crop).",
+          "frames": {
+            "01-park-lawn": "2026-10-08/frames/r7-bake/realtime/01-park-lawn.png",
+            "02-waterfront-promenade": "2026-10-08/frames/r7-bake/realtime/02-waterfront-promenade.png",
+            "03-shopping-street": "2026-10-08/frames/r7-bake/realtime/03-shopping-street.png",
+            "04-under-bridge-street": "2026-10-08/frames/r7-bake/realtime/04-under-bridge-street.png",
+            "05-intersection": "2026-10-08/frames/r7-bake/realtime/05-intersection.png",
+            "06-bridge-tower-park": "2026-10-08/frames/r7-bake/realtime/06-bridge-tower-park.png",
+            "07-bridge-cables-park": "2026-10-08/frames/r7-bake/realtime/07-bridge-cables-park.png",
+            "08-bridge-deck-park": "2026-10-08/frames/r7-bake/realtime/08-bridge-deck-park.png",
+            "09-bridge-tower-under": "2026-10-08/frames/r7-bake/realtime/09-bridge-tower-under.png",
+            "10-bridge-cables-under": "2026-10-08/frames/r7-bake/realtime/10-bridge-cables-under.png",
+            "11-bridge-deck-under": "2026-10-08/frames/r7-bake/realtime/11-bridge-deck-under.png"
+          },
+          "bake": {
+            "bakeSec": 0,
+            "exposure": 0.649999976158142,
+            "option": {
+              "bounces": 3,
+              "directional": true,
+              "id": "realtime",
+              "indirectEnergy": 1,
+              "label": "final realtime only",
+              "quality": 2,
+              "rays": 512,
+              "realtime": true,
+              "sky": true,
+              "staticSun": false,
+              "texel": 0.2
+            },
+            "requestId": "1791506438543-21416",
+            "sunRotation": "(-43.22709, -0.527681, 0.0)"
+          },
+          "uv2Preparation": {
+            "aoVertices": 489282,
+            "expandedInstances": 22195,
+            "prepareSec": 335.733,
+            "staticMeshes": 22642,
+            "texel": 0.2,
+            "uniqueMeshes": 16457
+          },
+          "nativeAdapterSha256": null,
+          "timings": [
+            {
+              "camera": "01-park-lawn",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 39,
+              "engineFrames": 39,
+              "sampled": 39,
+              "dropped": 0,
+              "windowMs": 3058.953,
+              "fps": 12.7494603545723,
+              "meanMs": 78.43046153846154,
+              "medianMs": 78.2539978027344,
+              "p95Ms": 80.8939971923828,
+              "p99Ms": 80.9049987792969,
+              "worstMs": 80.905,
+              "bestMs": 75.556,
+              "engine": {
+                "bufferMemoryBytes": 1182546750,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1635078720,
+                "vsyncMode": 0
+              },
+              "caveats": [
+                "the window drew 39 frames, too few to check whether the client was still warming up; that check needs 50, so lengthen --window-ms if you need it"
+              ]
+            },
+            {
+              "camera": "02-waterfront-promenade",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 66,
+              "engineFrames": 66,
+              "sampled": 66,
+              "dropped": 0,
+              "windowMs": 3022.839,
+              "fps": 21.833779437145015,
+              "meanMs": 45.79806060606061,
+              "medianMs": 45.4860000610352,
+              "p95Ms": 48.5859985351563,
+              "p99Ms": 50.8209991455078,
+              "worstMs": 50.821,
+              "bestMs": 43.483,
+              "engine": {
+                "bufferMemoryBytes": 1188313918,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1646613056,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "03-shopping-street",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 65,
+              "engineFrames": 65,
+              "sampled": 65,
+              "dropped": 0,
+              "windowMs": 3034.706,
+              "fps": 21.41887879748483,
+              "meanMs": 46.6852,
+              "medianMs": 46.3800010681152,
+              "p95Ms": 48.0690002441406,
+              "p99Ms": 50.6209983825684,
+              "worstMs": 50.621,
+              "bestMs": 45.001,
+              "engine": {
+                "bufferMemoryBytes": 1188313918,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1646613056,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "04-under-bridge-street",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 128,
+              "engineFrames": 128,
+              "sampled": 128,
+              "dropped": 0,
+              "windowMs": 3009.114,
+              "fps": 42.53743793023461,
+              "meanMs": 23.5074375,
+              "medianMs": 23.4179992675781,
+              "p95Ms": 24.8840007781982,
+              "p99Ms": 25.8969993591309,
+              "worstMs": 26.834,
+              "bestMs": 21.596,
+              "engine": {
+                "bufferMemoryBytes": 1191197502,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1652380224,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "05-intersection",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 363,
+              "engineFrames": 363,
+              "sampled": 363,
+              "dropped": 0,
+              "windowMs": 3004.346,
+              "fps": 120.82496490084698,
+              "meanMs": 8.275950413223141,
+              "medianMs": 8.10499954223633,
+              "p95Ms": 9.08800029754639,
+              "p99Ms": 10.4420003890991,
+              "worstMs": 11.713,
+              "bestMs": 7.615,
+              "engine": {
+                "bufferMemoryBytes": 1191197502,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1652380224,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "06-bridge-tower-park",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 840,
+              "engineFrames": 840,
+              "sampled": 840,
+              "dropped": 0,
+              "windowMs": 3008.449,
+              "fps": 279.21364131484364,
+              "meanMs": 3.5812809523809523,
+              "medianMs": 3.55599999427795,
+              "p95Ms": 3.86800003051758,
+              "p99Ms": 3.96300005912781,
+              "worstMs": 4.105,
+              "bestMs": 2.729,
+              "engine": {
+                "bufferMemoryBytes": 1191197502,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1652380224,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "07-bridge-cables-park",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 935,
+              "engineFrames": 935,
+              "sampled": 935,
+              "dropped": 0,
+              "windowMs": 3019.099,
+              "fps": 309.6950447799161,
+              "meanMs": 3.228774331550802,
+              "medianMs": 3.19899988174438,
+              "p95Ms": 3.48799991607666,
+              "p99Ms": 3.63599991798401,
+              "worstMs": 4.141,
+              "bestMs": 2.432,
+              "engine": {
+                "bufferMemoryBytes": 1191197502,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1652380224,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "08-bridge-deck-park",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 206,
+              "engineFrames": 206,
+              "sampled": 206,
+              "dropped": 0,
+              "windowMs": 3014.789,
+              "fps": 68.32982341384421,
+              "meanMs": 14.634053398058251,
+              "medianMs": 14.5530004501343,
+              "p95Ms": 16.0939998626709,
+              "p99Ms": 17.1840000152588,
+              "worstMs": 18.111,
+              "bestMs": 12.753,
+              "engine": {
+                "bufferMemoryBytes": 1191197502,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1652380224,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "09-bridge-tower-under",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 864,
+              "engineFrames": 864,
+              "sampled": 864,
+              "dropped": 0,
+              "windowMs": 3009.038,
+              "fps": 287.13495808294874,
+              "meanMs": 3.482484953703704,
+              "medianMs": 3.4539999961853,
+              "p95Ms": 3.73699998855591,
+              "p99Ms": 3.8529999256134,
+              "worstMs": 4.037,
+              "bestMs": 2.627,
+              "engine": {
+                "bufferMemoryBytes": 1191197502,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1652380224,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "10-bridge-cables-under",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 884,
+              "engineFrames": 884,
+              "sampled": 884,
+              "dropped": 0,
+              "windowMs": 3015.005,
+              "fps": 293.20017711413414,
+              "meanMs": 3.4104490950226243,
+              "medianMs": 3.38100004196167,
+              "p95Ms": 3.66599988937378,
+              "p99Ms": 3.76300001144409,
+              "worstMs": 4.646,
+              "bestMs": 2.415,
+              "engine": {
+                "bufferMemoryBytes": 1191197502,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1652380224,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            },
+            {
+              "camera": "11-bridge-deck-under",
+              "url": "http://127.0.0.1:52759/frames",
+              "requestedWindowMs": 3000,
+              "warmupMs": 3000,
+              "frames": 156,
+              "engineFrames": 156,
+              "sampled": 156,
+              "dropped": 0,
+              "windowMs": 3010.894,
+              "fps": 51.81185388791502,
+              "meanMs": 19.29949358974359,
+              "medianMs": 18.9519996643066,
+              "p95Ms": 22.375,
+              "p99Ms": 23.4160003662109,
+              "worstMs": 23.803,
+              "bestMs": 17.024,
+              "engine": {
+                "bufferMemoryBytes": 1191197502,
+                "displayServer": "Windows",
+                "headless": false,
+                "lowTextures": false,
+                "maxFps": 0,
+                "noLightmap": false,
+                "physicsTicksPerSecond": 60,
+                "refreshRateHz": 60,
+                "renderingMethod": "forward_plus",
+                "textureMemoryBytes": 425179152,
+                "videoAdapter": "AMD Radeon RX 9070 XT",
+                "videoMemoryBytes": 1652380224,
+                "vsyncMode": 0
+              },
+              "caveats": []
+            }
+          ],
+          "peers": []
+        }
+      ]
+    }
+  ],
+  "studyStatus": {
+    "state": "stopped",
+    "reason": "Orchestrator cancelled the native bake at the 20,480-region checkpoint on 2026-10-09. No further bakes authorized.",
+    "excludedOptions": [
+      {
+        "id": "02m-3b-dynamic-dir",
+        "reason": "No completed full-crop bake receipt and eleven-camera capture set."
+      },
+      {
+        "id": "01m-3b-dynamic-dir",
+        "reason": "No completed full-crop bake receipt and eleven-camera capture set."
+      },
+      {
+        "id": "02m-6b-dynamic-dir",
+        "reason": "No completed full-crop bake receipt and eleven-camera capture set."
+      },
+      {
+        "id": "02m-3b-static-dir",
+        "reason": "No completed full-crop bake receipt and eleven-camera capture set."
+      },
+      {
+        "id": "02m-3b-dynamic-nondir",
+        "reason": "No completed full-crop bake receipt and eleven-camera capture set."
+      }
+    ],
+    "diagnostic": "The completed 0.2m/3b/dynamic/directional diagnostic has only 128 receivers, not the full crop, and is not a pool candidate."
+  },
+  "source": {
+    "productionCommit": "f36f4a3c78007d5668a66ae84c3b8c013b7c1553",
+    "hashes": {
+      "scripts/client/world_lighting_settings.ts": "2676832a314181fdcef8ddd7c317d9fc718f41e200b73e68dd795b66bd774b91",
+      "assets/maps/western_block/faceted-surface.gdshaderinc": "96e1f65b511c8fa9d8310898828cbc83a095d1838e158c59c00335e11ccd31b8",
+      "assets/shaders/prop-ao.gdshaderinc": "7672bb1b73eb07c338c38314468287a84f22973f64dc85ea4cd627b918cf6f7c",
+      "scripts/debug/lighting_bake_round7.ts": "8fd15dd20c603f3ee2cd758a5158fe7ef7057248f87fcf5c67063863728cbc58",
+      "tools/maps/study/round7-native/baker.gd": "2a5ee00f57bb6b5131cc5d193adadc1ccb3dfe6890ea7c4a04320c5d1196ab86",
+      "tools/maps/study/round7-native/view.gd": "6e0a1ac6d262bfb3fb29d8349b32f46ef74d362c259a57e22fc6aad4dc12c711",
+      "tools/maps/study/round7-options.mjs": "e100dba71931288553312646c10a3a7c291ba539466f61a74f53ede04604841e",
+      "tools/maps/study/round7-cameras.json": "9942211b9168581b209476b4f4aa0def52c0e9e62721243448ccd2396660d51a"
+    },
+    "sceneSha256": "04f69f340812adae6fa87a83398a40a8ebb14c30edf68de91266dc7fc712d779",
+    "renderer": "Captures: official Godot 4.6.1 / Windows Vulkan / RX 9070 XT",
+    "nativeBakeEngine": {
+      "usage": "Attempted bake engine; does not contribute to the realtime champion.",
+      "version": "Godot 4.6.1 stable",
+      "commit": "14d19694e0c88a3f9e82d899a0400f27a24c176e",
+      "patchSha256": "e53d70f1e70de41fba259aabb5800b898875e7a1d6d03d222cc0abcde938efc3",
+      "change": "Split vertex storage into buffers of at most 1 GiB, translate original indices in shaders, correct partial triangle-cluster bounds, use triangle derivatives for texel footprints, avoid singular downward-normal tangent bases, and bound unocclusion and indirect-light dispatches. Direct lighting preserves full-precision per-light AA sums and RNG state across sixteen submissions; empty atlas tiles are skipped. A stackless hierarchy over the original sorted clusters prunes missed subtrees while preserving leaf and triangle order. Geometry, quality, ray counts and probe ray counts are unchanged.",
+      "performance": {
+        "vertexBufferChunkBytes": 1073741824,
+        "gridSize": 128,
+        "regionSize": 64,
+        "directRegionSize": 32,
+        "directAaPasses": 16,
+        "directAccumulator": "float32 color, shadow and uint32 RNG per light",
+        "occupancyTileSize": 16,
+        "clusterTraversal": "stackless BVH over original sorted leaf clusters",
+        "indirectRegionSize": 16,
+        "raysPerPass": 4,
+        "probeRaysPerPass": 16
+      }
+    },
+    "geometry": "Same frozen 90m camera-union crop; static expansion of MultiMesh, no automatic LODs; custom AO restored after UV2 unwrap. Oversized UV2 layouts are subdivided without changing triangles or pixel density. Allocation split into batches at exact receiver UV2 density; every batch retains full-precision occluding geometry with coarse discarded albedo-only charts for other batches.",
+    "timing": "3s warmup + 3s window per camera. Crop measurements, not full-map production benchmarks. Shared GPU; other lanes may render between bakes. Peer inventory is recorded with each candidate.",
+    "indirectEnergy": "LightmapGI.bounce_indirect_energy; final sun light_indirect_energy remains 1.",
+    "frames": [
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/01-park-lawn.png",
+        "sha256": "a176fd400e788828dad195a14753066fec85f6355e674735cde2bcfea4eb6869"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/02-waterfront-promenade.png",
+        "sha256": "326e7de9570df9ec9024f312406c0c64220bee4638f9ddc29493d33522f2da8f"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/03-shopping-street.png",
+        "sha256": "d21e006679fb7e0eaf9ce56ab4defc8d440a20a324f787ad48d098027a8eff9c"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/04-under-bridge-street.png",
+        "sha256": "20d9e220e29c97e3ee3ab24b0db98ff2c8af9e28b35d5fef62c26e2c55d5e26d"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/05-intersection.png",
+        "sha256": "7bb3f58ac74ae23d58daf352c69acee81a7c25b2432dfc1eeafbbe21fe773daa"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/06-bridge-tower-park.png",
+        "sha256": "4f39cbea1c24d3ab4e046c4db448912fd34967385d083d7bf7a1aefde504521b"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/07-bridge-cables-park.png",
+        "sha256": "40b19459692e84b86c25934353a30b57ec1f1f92abc69ce09ac4bf2e82a5d09b"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/08-bridge-deck-park.png",
+        "sha256": "1de9babed33e4cd92589f48848f3a425259d952b6a32363bbec0be7aa27d1923"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/09-bridge-tower-under.png",
+        "sha256": "3f455f2427d704a6b9430b571d114abd0918eaf51400c40f5f63b8d826d28062"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/10-bridge-cables-under.png",
+        "sha256": "79b9e463cac6163cb3d3c2e24c0ca7d4d0da2e08622af04056d0cdbca8004af0"
+      },
+      {
+        "path": "2026-10-08/frames/r7-bake/realtime/11-bridge-deck-under.png",
+        "sha256": "6082f32800ba3d88d1a62a7f35ea8487cc72c07275acae2ea4eab0fe688238fd"
+      }
+    ]
+  }
+}
