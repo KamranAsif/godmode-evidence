@@ -1,0 +1,4797 @@
+{
+  "aiBudget": {
+    "assistanceMs": 0.00231666666666666,
+    "decisionsMs": 0.00569333333333331,
+    "maxMs": 0.044,
+    "meanMs": 0.00854666666666664,
+    "meanRays": 0,
+    "p95Ms": 0.013,
+    "ticks": 300
+  },
+  "audio": {
+    "activeFootstepPlayers": 0,
+    "activeLocalPlayers": 0,
+    "activeWorldPlayers": 0,
+    "buses": [
+      "GameplaySfx",
+      "GameplayUI",
+      "GameplayPriority",
+      "GameplayStream",
+      "GameplayAmbience",
+      "Music"
+    ],
+    "cheatLoops": {
+      "cheat-drone-hover": [
+        {
+          "playing": false,
+          "volumeDb": 0
+        },
+        {
+          "playing": false,
+          "volumeDb": 0
+        }
+      ],
+      "cheat-drone-swarm-hover": [
+        {
+          "playing": false,
+          "volumeDb": 0
+        }
+      ],
+      "cheat-turret-idle": [
+        {
+          "playing": false,
+          "volumeDb": 0
+        },
+        {
+          "playing": false,
+          "volumeDb": 0
+        },
+        {
+          "playing": false,
+          "volumeDb": 0
+        }
+      ],
+      "enemy-heli-rotor": [
+        {
+          "playing": false,
+          "volumeDb": 0
+        },
+        {
+          "playing": false,
+          "volumeDb": 0
+        }
+      ]
+    },
+    "cheatTakes": {
+      "cheat-drone-shot-01.ogg": 1387,
+      "cheat-drone-shot-02.ogg": 1375,
+      "cheat-drone-shot-03.ogg": 1428,
+      "cheat-grenade-blast-01.ogg": 6,
+      "cheat-grenade-blast-02.ogg": 7,
+      "cheat-mortar-impact-01.ogg": 160,
+      "cheat-mortar-impact-02.ogg": 160,
+      "cheat-mortar-whistle-01.ogg": 340,
+      "cheat-rpg-blast-01.ogg": 209,
+      "cheat-rpg-blast-02.ogg": 242,
+      "cheat-rpg-launch-01.ogg": 225,
+      "cheat-rpg-launch-02.ogg": 224,
+      "enemy-officer-radio-01.ogg": 107,
+      "enemy-uav-online-01.ogg": 8
+    },
+    "cheatVoices": [],
+    "cueLog": [
+      {
+        "atMs": 584054,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584055,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584055,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584056,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584056,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584056,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584057,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584057,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584058,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584058,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584058,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584059,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584059,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584060,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584060,
+        "id": "drone-sputter",
+        "spatial": true
+      },
+      {
+        "atMs": 584099,
+        "id": "heavy-breathing",
+        "spatial": false
+      },
+      {
+        "atMs": 587522,
+        "id": "ui-open",
+        "spatial": false
+      },
+      {
+        "atMs": 587676,
+        "id": "ui-hover",
+        "spatial": false
+      },
+      {
+        "atMs": 587799,
+        "id": "ui-hover",
+        "spatial": false
+      },
+      {
+        "atMs": 587934,
+        "id": "ui-hover",
+        "spatial": false
+      },
+      {
+        "atMs": 588065,
+        "id": "ui-hover",
+        "spatial": false
+      },
+      {
+        "atMs": 588199,
+        "id": "ui-hover",
+        "spatial": false
+      },
+      {
+        "atMs": 588366,
+        "id": "ui-hover",
+        "spatial": false
+      },
+      {
+        "atMs": 589098,
+        "id": "ui-confirm",
+        "spatial": false
+      }
+    ],
+    "enemyLoops": {
+      "mend": [
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 1,
+          "playing": false,
+          "volumeDb": -8
+        },
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 1,
+          "playing": false,
+          "volumeDb": -8
+        }
+      ],
+      "motor": [
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 1.15,
+          "playing": false,
+          "volumeDb": -6
+        },
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 1.15,
+          "playing": false,
+          "volumeDb": -6
+        },
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 1.052,
+          "playing": false,
+          "volumeDb": -8.6
+        }
+      ],
+      "rotor": [
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 0.64,
+          "playing": false,
+          "volumeDb": -18.9
+        },
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 0.803,
+          "playing": false,
+          "volumeDb": -14.6
+        },
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 0.803,
+          "playing": false,
+          "volumeDb": -14.6
+        },
+        {
+          "cutoffHz": 20500,
+          "held": false,
+          "pitch": 0.803,
+          "playing": false,
+          "volumeDb": -14.6
+        }
+      ],
+      "shimmer": [
+        {
+          "cutoffHz": 5000,
+          "held": false,
+          "pitch": 1,
+          "playing": false,
+          "volumeDb": 0
+        },
+        {
+          "cutoffHz": 5000,
+          "held": false,
+          "pitch": 1,
+          "playing": false,
+          "volumeDb": 0
+        }
+      ],
+      "sweep": [
+        {
+          "cutoffHz": 5000,
+          "held": false,
+          "pitch": 1,
+          "playing": false,
+          "volumeDb": 0
+        },
+        {
+          "cutoffHz": 5000,
+          "held": false,
+          "pitch": 1,
+          "playing": false,
+          "volumeDb": 0
+        }
+      ]
+    },
+    "enemyTells": [],
+    "foreground": {
+      "priority": 0,
+      "untilMs": 0
+    },
+    "healthDistress": {
+      "breathingPlaying": true,
+      "breathingVolumeDb": -7,
+      "heartbeatPlaying": false,
+      "heartbeatRate": 1,
+      "heartbeatVolumeDb": 0
+    },
+    "lastPlayed": {
+      "cue": "ui-confirm",
+      "spatial": false
+    },
+    "lastSpatialByCue": {
+      "armour-break-confirm": false,
+      "boss-danger": false,
+      "boss-kill-confirm": false,
+      "casing": true,
+      "cheat-drone-hover": true,
+      "cheat-drone-shot": true,
+      "cheat-grenade-blast": true,
+      "cheat-mortar-impact": true,
+      "cheat-mortar-whistle": true,
+      "cheat-rpg-blast": true,
+      "cheat-rpg-launch": false,
+      "combat-enemy-launcher": true,
+      "combat-enemy-pistol": true,
+      "combat-enemy-rifle": true,
+      "combat-enemy-shotgun": true,
+      "combat-hit-direction": true,
+      "combat-launcher-windup": true,
+      "combat-near-miss": true,
+      "combat-pistol-windup": true,
+      "combat-player-hit": false,
+      "combat-rifle-windup": true,
+      "combat-shotgun-windup": true,
+      "death-fall": false,
+      "dog-yelp": true,
+      "drone-crash": true,
+      "drone-sputter": true,
+      "dry-fire": false,
+      "enemy-death": true,
+      "enemy-heli-rotor": true,
+      "enemy-officer-radio": true,
+      "enemy-uav-online": false,
+      "heavy-breathing": false,
+      "hit-confirm": false,
+      "horde-escalate": false,
+      "impact-concrete": true,
+      "impact-flesh": true,
+      "impact-metal": true,
+      "kill-confirm": false,
+      "kill-thump": false,
+      "landing": false,
+      "low-ammo": false,
+      "machine-death": true,
+      "machine-fire": true,
+      "mag-out": false,
+      "marksman-charge": true,
+      "match-start": false,
+      "mend-loop": true,
+      "minigun-spinup": true,
+      "motor-loop": true,
+      "multi-kill-sting": false,
+      "picket-chirp": true,
+      "pistol-fire": true,
+      "player-step": false,
+      "rccar-beep": true,
+      "reload-ready": false,
+      "rotor-loop": true,
+      "sentry-lock": true,
+      "shotgun-fire": true,
+      "stream-ban-tick": false,
+      "stream-chat": false,
+      "stream-race-steal": false,
+      "stream-tip": false,
+      "stream-train": false,
+      "stream-viewer": false,
+      "ui-confirm": false,
+      "ui-hover": false,
+      "ui-open": false,
+      "weapon-ads-in": false,
+      "weapon-ads-out": false,
+      "weapon-ready": false
+    },
+    "missingReviewedResources": [],
+    "playedCounts": {
+      "armour-break-confirm": 8,
+      "boss-danger": 14,
+      "boss-kill-confirm": 3,
+      "casing": 3930,
+      "cheat-drone-hover": 2,
+      "cheat-drone-shot": 4190,
+      "cheat-grenade-blast": 13,
+      "cheat-mortar-impact": 320,
+      "cheat-mortar-whistle": 340,
+      "cheat-rpg-blast": 451,
+      "cheat-rpg-launch": 449,
+      "combat-enemy-launcher": 65,
+      "combat-enemy-pistol": 1164,
+      "combat-enemy-rifle": 8075,
+      "combat-enemy-shotgun": 35,
+      "combat-hit-direction": 11,
+      "combat-launcher-windup": 72,
+      "combat-near-miss": 1124,
+      "combat-pistol-windup": 780,
+      "combat-player-hit": 114,
+      "combat-rifle-windup": 2049,
+      "combat-shotgun-windup": 51,
+      "death-fall": 7,
+      "dog-yelp": 25,
+      "drone-crash": 38,
+      "drone-sputter": 52,
+      "dry-fire": 138,
+      "enemy-death": 732,
+      "enemy-heli-rotor": 407,
+      "enemy-officer-radio": 107,
+      "enemy-uav-online": 8,
+      "heavy-breathing": 7,
+      "heavy-step": 102,
+      "hit-confirm": 1937,
+      "horde-escalate": 27,
+      "impact-concrete": 1246,
+      "impact-flesh": 5651,
+      "impact-metal": 343,
+      "kill-confirm": 116,
+      "kill-thump": 119,
+      "landing": 1,
+      "low-ammo": 131,
+      "machine-death": 22,
+      "machine-fire": 5291,
+      "mag-out": 126,
+      "marksman-charge": 123,
+      "match-start": 1,
+      "mend-loop": 4,
+      "minigun-spinup": 75,
+      "motor-loop": 10,
+      "multi-kill-sting": 19,
+      "picket-chirp": 483,
+      "pistol-fire": 84,
+      "player-step": 63,
+      "rccar-beep": 29,
+      "reload-ready": 130,
+      "rotor-loop": 31,
+      "sentry-lock": 134,
+      "shotgun-fire": 8,
+      "soldier-step": 4742,
+      "stream-ban-tick": 5,
+      "stream-chat": 127,
+      "stream-race-steal": 172,
+      "stream-tip": 82,
+      "stream-train": 5,
+      "stream-viewer": 60,
+      "ui-confirm": 1,
+      "ui-hover": 6,
+      "ui-open": 2,
+      "weapon-ads-in": 145,
+      "weapon-ads-out": 145,
+      "weapon-ready": 6
+    },
+    "recentFootsteps": [
+      {
+        "pitch": 0.934,
+        "take": "soldier-step-03.ogg",
+        "volumeDb": 7.7
+      },
+      {
+        "pitch": 0.971,
+        "take": "soldier-step-03.ogg",
+        "volumeDb": 10
+      },
+      {
+        "pitch": 0.938,
+        "take": "soldier-step-04.ogg",
+        "volumeDb": 9.3
+      },
+      {
+        "pitch": 0.984,
+        "take": "soldier-step-03.ogg",
+        "volumeDb": 10.4
+      },
+      {
+        "pitch": 0.98,
+        "take": "soldier-step-02.ogg",
+        "volumeDb": 10.7
+      },
+      {
+        "pitch": 0.957,
+        "take": "soldier-step-01.ogg",
+        "volumeDb": 7.3
+      },
+      {
+        "pitch": 0.953,
+        "take": "soldier-step-03.ogg",
+        "volumeDb": 6.9
+      },
+      {
+        "pitch": 1.083,
+        "take": "heavy-step-04.ogg",
+        "volumeDb": 4.8
+      }
+    ],
+    "recentPlayed": [
+      {
+        "id": "ui_confirm",
+        "spatial": false
+      },
+      {
+        "id": "ui_hover",
+        "spatial": false
+      },
+      {
+        "id": "ui_hover",
+        "spatial": false
+      },
+      {
+        "id": "ui_hover",
+        "spatial": false
+      },
+      {
+        "id": "ui_hover",
+        "spatial": false
+      }
+    ],
+    "scheduledCount": 0,
+    "score": {
+      "boss": {
+        "gain": 0,
+        "loaded": true,
+        "outputGain": 0,
+        "playing": false,
+        "target": 0
+      },
+      "combat": {
+        "gain": 0,
+        "loaded": true,
+        "outputGain": 0,
+        "playing": false,
+        "target": 0
+      },
+      "explore": {
+        "gain": 0,
+        "loaded": true,
+        "outputGain": 0,
+        "playing": false,
+        "target": 0
+      },
+      "traffic": {
+        "gain": 0,
+        "loaded": true,
+        "outputGain": 0,
+        "playing": false,
+        "target": 0
+      },
+      "water": {
+        "gain": 0,
+        "loaded": true,
+        "outputGain": 0,
+        "playing": false,
+        "target": 0
+      },
+      "wind": {
+        "gain": 0,
+        "loaded": true,
+        "outputGain": 0,
+        "playing": false,
+        "target": 0
+      }
+    },
+    "volumePercent": 100
+  },
+  "combatVfxPrewarmed": true,
+  "consoleLines": [
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "timeScale done",
+    "killSelf done",
+    "killSelf done",
+    "killSelf done",
+    "killSelf done",
+    "killSelf done",
+    "killSelf done",
+    "killSelf done"
+  ],
+  "consoleOpen": false,
+  "controlsCanSave": true,
+  "controlsCapture": null,
+  "controlsMenuOpen": false,
+  "controlsStatus": "",
+  "controlsWarning": "",
+  "debugFreeFly": null,
+  "desktopTrainer": {
+    "aimbotInstruction": "",
+    "bestStream": "",
+    "closed": false,
+    "contentScale": 0.928125023841858,
+    "dismissal": null,
+    "focused": "",
+    "freshStock": 0,
+    "installConfirmation": "",
+    "installedCheats": [],
+    "installedExplanations": [],
+    "installedScroll": 0,
+    "maximized": false,
+    "minimized": false,
+    "opacity": 1,
+    "open": false,
+    "rect": {
+      "height": 584.569606801275,
+      "width": 908.990435706695,
+      "x": 185.504782146652,
+      "y": 52.7948990435707
+    },
+    "returnConfirming": false,
+    "stockNotice": "",
+    "streamRecord": "",
+    "tab": "CHEATS",
+    "visible": false,
+    "wallet": ""
+  },
+  "firstRunHints": {
+    "current": null,
+    "seen": [
+      "goal",
+      "aimbot",
+      "ammo",
+      "infoPanel",
+      "streak",
+      "knife"
+    ],
+    "text": "",
+    "visible": false
+  },
+  "input": {
+    "cursorCaptureRequested": true,
+    "cursorCaptured": true,
+    "injected": {
+      "active": false,
+      "expiresInMs": null,
+      "form": null,
+      "holdId": null,
+      "lastCompletedTapFrames": 1,
+      "lastCompletedTapHoldId": 464,
+      "lastCompletedTapSequence": 14289,
+      "lastSampledSequence": 14342,
+      "restoresHoldId": null,
+      "sampledHoldId": 463,
+      "samples": 53,
+      "sequence": 15663,
+      "tapFramesRemaining": null
+    },
+    "mouseMode": 2
+  },
+  "lattice": {
+    "fracture": {
+      "activations": 949,
+      "activeParts": 0,
+      "expandedVertices": 604422,
+      "maxPositionError": 0,
+      "maxWeightError": 0,
+      "meshes": 22,
+      "preparedAtImport": true,
+      "restorations": 949,
+      "samples": 6240,
+      "sourceVertices": 582940
+    },
+    "live": 0,
+    "merged": 1182,
+    "opened": 7088,
+    "slots": [],
+    "view": {
+      "enemyMarks": [
+        {
+          "adminId": "shield-e1131",
+          "aimed": true,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 1995478,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 7,
+            "startedAtMs": 1995478
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "shield-e1131",
+          "aimed": true,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2002310,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 5,
+            "startedAtMs": 2002310
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "soldier-e960",
+          "aimed": false,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2003618,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 1,
+            "startedAtMs": 2003618
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "shield-e1131",
+          "aimed": true,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2003950,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 4,
+            "startedAtMs": 2003950
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "shield-e1131",
+          "aimed": true,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2005802,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 6,
+            "startedAtMs": 2005802
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "dog-e1135",
+          "aimed": false,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2018414,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 2,
+            "startedAtMs": 2018414
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "dog-e1090",
+          "aimed": false,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2018734,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 5,
+            "startedAtMs": 2018734
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "soldier-e996",
+          "aimed": false,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2019382,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 1,
+            "startedAtMs": 2019382
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "dog-e1165",
+          "aimed": false,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2024666,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 4,
+            "startedAtMs": 2024666
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "soldier-e1044",
+          "aimed": false,
+          "bodyAtBirth": [
+            -517.748046875,
+            -16.41015625,
+            -379.234375
+          ],
+          "bodyMoved": 0,
+          "bornAtMs": 2026440,
+          "frames": 7,
+          "maxGap": 3.96904731303493e-14,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 6,
+            "startedAtMs": 2026440
+          },
+          "startGap": 3.96904731303493e-14
+        },
+        {
+          "adminId": "medic-e836",
+          "aimed": false,
+          "bodyAtBirth": null,
+          "bodyMoved": 0,
+          "bornAtMs": 2028491,
+          "frames": 0,
+          "maxGap": null,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 7,
+            "startedAtMs": 2028491
+          },
+          "startGap": null
+        },
+        {
+          "adminId": "soldier-e956",
+          "aimed": false,
+          "bodyAtBirth": [
+            -456.262725830078,
+            -16.17578125,
+            -375.607482910156
+          ],
+          "bodyMoved": 0.647458737428589,
+          "bornAtMs": 2029079,
+          "frames": 4,
+          "maxGap": 6.67244037799719e-14,
+          "reachLostAtMs": null,
+          "ref": {
+            "opened": true,
+            "slot": 0,
+            "startedAtMs": 2029079
+          },
+          "startGap": 9.65894031423886e-15
+        }
+      ],
+      "hits": 0,
+      "impactFrames": 3590,
+      "showing": false
+    }
+  },
+  "liveTubeApp": {
+    "channelCounts": [],
+    "focusRevealing": false,
+    "focusedItem": null,
+    "installed": null,
+    "open": false,
+    "page": "CHANNEL",
+    "scroll": 0,
+    "shortcut": true,
+    "toast": false,
+    "topPeak": "",
+    "unlockProgress": "",
+    "unlockedItems": [],
+    "wallet": "$29,478"
+  },
+  "loadout": {
+    "confirmation": "",
+    "confirmingSlots": [],
+    "pendingCosts": [],
+    "pendingEquips": [],
+    "pendingSlots": [],
+    "picking": null,
+    "slots": [
+      "predatorMissile",
+      "precisionAirstrike"
+    ]
+  },
+  "localPeerId": 2,
+  "localServerTick": {
+    "maxMs": 21.5083101573057,
+    "meanMs": 0.117865444648184
+  },
+  "mainMenuOpen": false,
+  "mainMenuStatus": "",
+  "matchLoadingOpen": false,
+  "matchLoadingProgress": 1,
+  "matchLoadingStatus": "Starting your stream...",
+  "metaMenu": {
+    "comparison": "",
+    "dollars": 29478,
+    "focusRevealing": false,
+    "focused": "",
+    "message": "",
+    "opacity": 1,
+    "open": false,
+    "purchase": null,
+    "rankRevealing": false,
+    "refused": null,
+    "restock": "Pay for a cheat and it's yours. Bought cheats are always on. New ones arrive after every stream.",
+    "shelf": [
+      {
+        "fresh": true,
+        "id": "secondCard",
+        "price": 10,
+        "rank": 0,
+        "rankLimit": 1
+      },
+      {
+        "fresh": true,
+        "id": "thirdCard",
+        "price": 40,
+        "rank": 0,
+        "rankLimit": 1
+      }
+    ],
+    "stockReveals": 0,
+    "tab": "upgrades",
+    "tabOpen": true,
+    "unlocked": [
+      "lagSwitch",
+      "autoAmmo",
+      "enemyRadar"
+    ],
+    "upgrades": {}
+  },
+  "mode": "client",
+  "navStats": {
+    "failed": 2365,
+    "outOfBounds": 0,
+    "queries": 6257,
+    "queryMs": 11078.019,
+    "queryPeakMs": 7.497,
+    "routeMs": 2059.408,
+    "routePeakMs": 7.879,
+    "routes": 14888,
+    "syncQueries": 1193
+  },
+  "navigation": {
+    "areas": 1125,
+    "polygons": 15596,
+    "ready": true,
+    "source": "dumbo-survival"
+  },
+  "pauseOpen": false,
+  "pauseRespawnAvailable": false,
+  "pauseRespawnNote": "",
+  "presentation": {
+    "aim": {
+      "aimPitchRadians": 0,
+      "aimYawRadians": -1.5707963267949,
+      "pitchRadians": 0,
+      "viewKickRadians": 0,
+      "viewKickYawRadians": 0,
+      "yawRadians": -1.5707963267949
+    },
+    "aiming": {
+      "blend": 0,
+      "crosshairVisible": false,
+      "foregroundBlurBlend": 0,
+      "requested": false
+    },
+    "artDirection": "white-red-cyan-faceted",
+    "authoredAssaultRifle": null,
+    "authoredPistol": null,
+    "body": {
+      "alive": false,
+      "health": 0,
+      "runArmor": 0
+    },
+    "cameraFov": 75,
+    "cameraMode": "first-person",
+    "characterAnimationSource": "Mixamo",
+    "combatVfx": {
+      "activeBulletHoles": 11,
+      "activeDebris": 0,
+      "activeDust": 0,
+      "activeEnemyBulletContacts": 0,
+      "activePlayerTracers": 0,
+      "activeShells": 0,
+      "activeSparkBursts": 0,
+      "activeSupportTracers": 0,
+      "enemyBulletContactCount": 1701,
+      "impactSpawnCount": 2082,
+      "incomingCoverImpactCount": 501,
+      "lastImpact": {
+        "normal": [
+          0.104425847530365,
+          0,
+          -0.994532704353332
+        ],
+        "position": [
+          -469.443328857422,
+          -15.8687705993652,
+          -375.215850830078
+        ],
+        "surface": "concrete",
+        "weapon": "machineGun"
+      },
+      "lastPlayerTracer": {
+        "from": [
+          -490.21435546875,
+          -15.5956649780273,
+          -377.699920654297
+        ],
+        "to": [
+          -490.427734375,
+          -16.145357131958,
+          -372.235534667969
+        ],
+        "weapon": "machineGun"
+      },
+      "playerTracerCount": 3930,
+      "recentImpacts": [
+        {
+          "normal": [
+            -0.104425847530365,
+            0,
+            0.994532704353332
+          ],
+          "position": [
+            -469.124786376953,
+            -15.7653818130493,
+            -373.271942138672
+          ],
+          "surface": "concrete",
+          "weapon": "machineGun"
+        },
+        {
+          "normal": [
+            1.19209275339927e-7,
+            0,
+            -1
+          ],
+          "position": [
+            -502.332061767578,
+            -15.9820890426636,
+            -376.300018310547
+          ],
+          "surface": "concrete",
+          "weapon": "pistol"
+        },
+        {
+          "normal": [
+            1.19209275339927e-7,
+            0,
+            -1
+          ],
+          "position": [
+            -502.332061767578,
+            -15.9820890426636,
+            -376.300018310547
+          ],
+          "surface": "concrete",
+          "weapon": "pistol"
+        },
+        {
+          "normal": [
+            0.104425847530365,
+            0,
+            -0.994532704353332
+          ],
+          "position": [
+            -469.588500976562,
+            -15.8387441635132,
+            -375.231079101562
+          ],
+          "surface": "concrete",
+          "weapon": "machineGun"
+        },
+        {
+          "normal": [
+            0.104425847530365,
+            0,
+            -0.994532704353332
+          ],
+          "position": [
+            -469.156860351562,
+            -15.8350172042847,
+            -375.185791015625
+          ],
+          "surface": "concrete",
+          "weapon": "machineGun"
+        },
+        {
+          "normal": [
+            1.19209275339927e-7,
+            0,
+            -1
+          ],
+          "position": [
+            -502.332061767578,
+            -15.9820890426636,
+            -376.300018310547
+          ],
+          "surface": "concrete",
+          "weapon": "pistol"
+        },
+        {
+          "normal": [
+            0.104425847530365,
+            0,
+            -0.994532704353332
+          ],
+          "position": [
+            -469.315979003906,
+            -15.8320074081421,
+            -375.202484130859
+          ],
+          "surface": "concrete",
+          "weapon": "machineGun"
+        },
+        {
+          "normal": [
+            0.104425847530365,
+            0,
+            -0.994532704353332
+          ],
+          "position": [
+            -469.443328857422,
+            -15.8687705993652,
+            -375.215850830078
+          ],
+          "surface": "concrete",
+          "weapon": "machineGun"
+        }
+      ],
+      "shellSpawnCount": 5441,
+      "shieldContactCount": 0,
+      "surfaceSparkThermalMode": 0
+    },
+    "damageNumberAnchors": [],
+    "debugThirdPerson": false,
+    "defenses": [
+      {
+        "armorVisible": false,
+        "playerId": 2
+      }
+    ],
+    "enemyDeaths": [],
+    "enemyReactions": [],
+    "firstPersonFiringResidual": null,
+    "firstPersonReload": {
+      "active": false,
+      "blend": 0,
+      "choreographed": false,
+      "phase": 0,
+      "pinned": false,
+      "pose": {
+        "supportHandEulerRadians": [
+          0,
+          0,
+          0
+        ],
+        "supportHandOffset": [
+          0,
+          0,
+          0
+        ],
+        "weaponEulerRadians": [
+          0,
+          0,
+          0
+        ],
+        "weaponOffset": [
+          0,
+          0,
+          0
+        ]
+      },
+      "weapon": "machineGun"
+    },
+    "firstPersonRigBoneCount": 68,
+    "healthDistress": {
+      "breathing": 1,
+      "heartbeat": 1,
+      "heartbeatRate": 1.83333333333333,
+      "intensity": 1,
+      "overlayVisible": true,
+      "targetIntensity": 1
+    },
+    "hud": {
+      "ammo": "30 / 90",
+      "armor": "0",
+      "category": "",
+      "grenades": "G:0",
+      "health": "0",
+      "interactionPrompt": "",
+      "kills": "0/1000000",
+      "layoutMode": "wide",
+      "safeMargin": 24,
+      "status": "",
+      "viewportSize": [
+        1280,
+        720
+      ],
+      "weapon": "ASSAULT RIFLE"
+    },
+    "knife": {
+      "category": null,
+      "clip": "KnifeSlash",
+      "elapsedMs": 600,
+      "lastPress": null,
+      "loaded": false,
+      "playing": false,
+      "slashes": 0
+    },
+    "localBodyVisible": false,
+    "playerVisibility": [
+      {
+        "playerId": 2,
+        "renderedVisible": false
+      }
+    ],
+    "prediction": {
+      "active": false,
+      "correctionMetres": 0,
+      "corrections": 606,
+      "framesHeld": 13444,
+      "framesMoved": 1415,
+      "historyDepth": 0,
+      "lastInputSequence": 15355,
+      "renderedPosition": [
+        -488.796875,
+        -16.2958984375,
+        -374.6044921875
+      ],
+      "serverPosition": [
+        -488.796875,
+        -16.2958984375,
+        -374.6044921875
+      ],
+      "snaps": 160,
+      "snapshotsApplied": 15008,
+      "submittedSequence": 15663
+    },
+    "reticle": {
+      "arms": {
+        "bottom": [
+          -1.5,
+          13.1399459838867
+        ],
+        "left": [
+          -21.1399459838867,
+          -1.5
+        ],
+        "right": [
+          13.1399459838867,
+          -1.5
+        ],
+        "top": [
+          -1.5,
+          -21.1399459838867
+        ]
+      },
+      "authoritativeSpreadRadians": 0.028,
+      "gapPx": 13.1399458435787,
+      "visible": false
+    },
+    "rigPose": null,
+    "shellCycle": {
+      "cancelled": 0,
+      "emitted": 0,
+      "lastAtMs": 0,
+      "pending": 0
+    },
+    "stancePlacement": {
+      "anchor": [
+        -0.107,
+        1.278,
+        -0.033
+      ],
+      "bakedHands": false,
+      "bones": null,
+      "borePitchRadians": 0,
+      "butt": [
+        -0.107,
+        1.278,
+        -0.033
+      ],
+      "buttToShoulder": 0,
+      "palmResidualMeters": null
+    },
+    "supportHandContact": null,
+    "systemAdmins": [],
+    "viewmodelPass": {
+      "limbScale": null,
+      "meshDepths": [],
+      "sightScreen": {
+        "ButtSocket": [
+          1.8649,
+          1.7628
+        ],
+        "FrontSightSocket": [
+          0.6005,
+          0.4885
+        ],
+        "MuzzleSocket": [
+          0.5724,
+          0.5584
+        ],
+        "RearSightSocket": [
+          0.7882,
+          0.5421
+        ],
+        "RightGripSocket": [
+          0.8175,
+          1.0716
+        ]
+      },
+      "subViewportSize": [
+        1280,
+        720
+      ],
+      "viewmodelCullMask": 524288,
+      "viewmodelFov": 50,
+      "visibleRect": [
+        1280,
+        720
+      ],
+      "weaponAxes": {
+        "bore": [
+          -0.102,
+          0.054,
+          -0.993
+        ],
+        "x": [
+          0.991,
+          -0.087,
+          -0.106
+        ],
+        "y": [
+          0.092,
+          0.995,
+          0.044
+        ]
+      },
+      "weaponMaterial": "no mesh",
+      "weaponMeshLayers": -1,
+      "windowSize": [
+        640,
+        360
+      ],
+      "worldCullMask": 524287,
+      "worldFov": 75
+    },
+    "weaponCalibration": {
+      "enabled": false
+    },
+    "weaponCarry": {
+      "pitch": 0,
+      "roll": 0,
+      "x": 0,
+      "y": 0,
+      "yaw": 0,
+      "z": 0
+    },
+    "weaponRecoil": 0,
+    "weaponSwitch": {
+      "active": false,
+      "endsAtMs": 0,
+      "progress": 1,
+      "verticalOffset": 0
+    },
+    "worldShot": {
+      "count": 3930,
+      "muzzleFlashVisible": false,
+      "recoil": 0,
+      "steadyAim": false,
+      "weapon": "machineGun",
+      "weaponSwitchOffset": 0,
+      "weaponSwitchProgress": 1
+    },
+    "worldShots": {
+      "2": {
+        "count": 3930,
+        "muzzleFlashVisible": false,
+        "recoil": 0,
+        "steadyAim": false,
+        "weapon": "machineGun",
+        "weaponSwitchOffset": 0,
+        "weaponSwitchProgress": 1
+      }
+    }
+  },
+  "roguelite": {
+    "aimbot": {
+      "ads": false,
+      "angle": 6.7,
+      "killSnaps": 258,
+      "lastSnap": {
+        "distance": 13.2,
+        "nearer": 1,
+        "nearerSeen": 0
+      },
+      "lastTurn": {
+        "degrees": 7,
+        "ms": 123
+      },
+      "switched": 44,
+      "target": null,
+      "turning": false
+    },
+    "armourReadout": "",
+    "cheatEngine": {
+      "aimbot": "",
+      "apply": "",
+      "armed": false,
+      "banishArmed": false,
+      "capReveals": 0,
+      "cards": [],
+      "choiceDetail": "",
+      "heading": "",
+      "kicker": "",
+      "maxed": [],
+      "maximized": false,
+      "mode": null,
+      "offers": [],
+      "open": false,
+      "openForMs": 0,
+      "rows": [],
+      "selected": 0,
+      "sent": false,
+      "slots": ""
+    },
+    "cheatScene": {
+      "blasts": 0,
+      "drones": 0,
+      "lastSupportContact": {
+        "metal": true,
+        "outward": [
+          0.0239846874028444,
+          -0.812067091464996,
+          0.583071112632751
+        ],
+        "position": [
+          -488.553283691406,
+          -12.319188117981,
+          -381.320953369141
+        ]
+      },
+      "mines": 0,
+      "mortars": 0,
+      "supportContacts": 4816,
+      "thrown": 0
+    },
+    "cloakers": [],
+    "enemies": [],
+    "gameHud": {
+      "banner": {
+        "detail": "ALL CHEATS REVOKED · MANUAL AIM\nBONUS BANK IN 29s · +100 FOLLOWERS AT CURRENT AUDIENCE",
+        "revealing": false,
+        "text": "ENDLESS · 3:31",
+        "visible": true
+      },
+      "damageNumbersShown": 1439,
+      "killFeedKills": 316,
+      "killFeedRows": 0,
+      "scoreboardOpen": false,
+      "snipers": [],
+      "standings": [],
+      "streakPills": {
+        "1": {
+          "id": "predatorMissile",
+          "mark": "",
+          "state": "idle"
+        },
+        "2": {
+          "id": "precisionAirstrike",
+          "mark": "",
+          "state": "idle"
+        }
+      },
+      "visibleDamageNumbers": 0
+    },
+    "hitIndicator": {
+      "bearing": 3.00273811781278,
+      "showing": 0
+    },
+    "lastMultiKill": "DOUBLE KILL",
+    "lastShakeRadians": 0.035,
+    "localReload": null,
+    "lootOverlay": {
+      "banner": "",
+      "blur": 0,
+      "muffled": false,
+      "taskbar": false
+    },
+    "medicAura": {
+      "held": [],
+      "overhealed": [],
+      "rising": 0,
+      "shed": 0
+    },
+    "minimap": {
+      "hidden": false,
+      "markers": 0,
+      "visible": false
+    },
+    "run": {
+      "combatUntilMs": 2053303,
+      "interactables": [
+        {
+          "id": "special-1",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -481.826477050781,
+            -15.9734184265137,
+            -373.353149414062
+          ]
+        },
+        {
+          "id": "special-2",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -478.572631835938,
+            -15.7618839263916,
+            -390.586975097656
+          ]
+        },
+        {
+          "id": "special-3",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -461.422546386719,
+            -16.0574829101562,
+            -389.91259765625
+          ]
+        },
+        {
+          "id": "special-4",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -501.121643066406,
+            -15.976782989502,
+            -377.76220703125
+          ]
+        },
+        {
+          "id": "special-5",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -481.918487548828,
+            -15.8505069732666,
+            -374.254516601562
+          ]
+        },
+        {
+          "id": "special-6",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -495.800323486328,
+            -15.8638317108154,
+            -368.344421386719
+          ]
+        },
+        {
+          "id": "special-7",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -499.233642578125,
+            -15.7443420410156,
+            -365.849884033203
+          ]
+        },
+        {
+          "id": "cache-8",
+          "kind": "upgrade",
+          "label": "EVOLUTION CACHE",
+          "position": [
+            -498.233642578125,
+            -15.7443420410156,
+            -365.849884033203
+          ]
+        },
+        {
+          "id": "special-9",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -482.782165527344,
+            -15.9701377868652,
+            -373.349060058594
+          ]
+        },
+        {
+          "id": "special-10",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -496.204498291016,
+            -15.764905166626,
+            -382.60009765625
+          ]
+        },
+        {
+          "id": "special-11",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -496.617309570312,
+            -16.0523788452148,
+            -370.961456298828
+          ]
+        },
+        {
+          "id": "special-12",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -495.901550292969,
+            -15.7206146240234,
+            -365.406463623047
+          ]
+        },
+        {
+          "id": "cache-13",
+          "kind": "upgrade",
+          "label": "EVOLUTION CACHE",
+          "position": [
+            -494.901550292969,
+            -15.7206146240234,
+            -365.406463623047
+          ]
+        },
+        {
+          "id": "special-14",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -497.435791015625,
+            -16.1293689727783,
+            -374.526672363281
+          ]
+        },
+        {
+          "id": "cache-15",
+          "kind": "upgrade",
+          "label": "EVOLUTION CACHE",
+          "position": [
+            -496.435791015625,
+            -16.1293689727783,
+            -374.526672363281
+          ]
+        },
+        {
+          "id": "special-16",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -494.034332275391,
+            -16.0973236083984,
+            -374.864898681641
+          ]
+        },
+        {
+          "id": "special-17",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -473.172729492188,
+            -15.8498775482178,
+            -371.254333496094
+          ]
+        },
+        {
+          "id": "special-18",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -472.378082275391,
+            -15.9614440917969,
+            -372.581726074219
+          ]
+        },
+        {
+          "id": "special-19",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -466.097198486328,
+            -15.8969604492187,
+            -386.85498046875
+          ]
+        },
+        {
+          "id": "special-20",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -466.092498779297,
+            -15.7290508270264,
+            -379.689666748047
+          ]
+        },
+        {
+          "id": "cache-21",
+          "kind": "upgrade",
+          "label": "EVOLUTION CACHE",
+          "position": [
+            -465.092498779297,
+            -15.7290508270264,
+            -379.689666748047
+          ]
+        },
+        {
+          "id": "special-22",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -462.356597900391,
+            -15.866446685791,
+            -375.547698974609
+          ]
+        },
+        {
+          "id": "special-23",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -505.047424316406,
+            -16.1826679229736,
+            -376.457214355469
+          ]
+        },
+        {
+          "id": "cache-24",
+          "kind": "upgrade",
+          "label": "EVOLUTION CACHE",
+          "position": [
+            -504.047424316406,
+            -16.1826679229736,
+            -376.457214355469
+          ]
+        },
+        {
+          "id": "special-25",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -532.874145507812,
+            -16.2352115631104,
+            -378.679992675781
+          ]
+        },
+        {
+          "id": "special-26",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -552.846374511719,
+            -16.2646896362305,
+            -381.312866210938
+          ]
+        },
+        {
+          "id": "special-27",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -496.951751708984,
+            -15.8630249023437,
+            -368.457397460938
+          ]
+        },
+        {
+          "id": "special-28",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -484.941314697266,
+            -15.9726497650146,
+            -374.013610839844
+          ]
+        },
+        {
+          "id": "special-29",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -486.593780517578,
+            -15.6589185714722,
+            -384.758087158203
+          ]
+        },
+        {
+          "id": "special-30",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -504.326721191406,
+            -16.1262523651123,
+            -376.792541503906
+          ]
+        },
+        {
+          "id": "special-31",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -471.214813232422,
+            -15.8813297271729,
+            -392.238250732422
+          ]
+        },
+        {
+          "id": "cache-32",
+          "kind": "upgrade",
+          "label": "EVOLUTION CACHE",
+          "position": [
+            -470.214813232422,
+            -15.8813297271729,
+            -392.238250732422
+          ]
+        },
+        {
+          "id": "special-33",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -497.984130859375,
+            -15.8389541625977,
+            -368.472930908203
+          ]
+        },
+        {
+          "id": "special-34",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -482.78857421875,
+            -15.7388927459717,
+            -380.790893554688
+          ]
+        },
+        {
+          "id": "cache-35",
+          "kind": "upgrade",
+          "label": "EVOLUTION CACHE",
+          "position": [
+            -481.78857421875,
+            -15.7388927459717,
+            -380.790893554688
+          ]
+        },
+        {
+          "id": "special-36",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -493.174713134766,
+            -15.729411315918,
+            -383.791900634766
+          ]
+        },
+        {
+          "id": "special-37",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -490.904449462891,
+            -15.7006542205811,
+            -384.341156005859
+          ]
+        },
+        {
+          "id": "cache-38",
+          "kind": "upgrade",
+          "label": "EVOLUTION CACHE",
+          "position": [
+            -489.904449462891,
+            -15.7006542205811,
+            -384.341156005859
+          ]
+        },
+        {
+          "id": "special-39",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -503.462188720703,
+            -16.1577655792236,
+            -376.699188232422
+          ]
+        },
+        {
+          "id": "special-40",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -499.655578613281,
+            -15.8967582702637,
+            -379.057159423828
+          ]
+        },
+        {
+          "id": "special-41",
+          "kind": "upgrade",
+          "label": "SPECIAL",
+          "position": [
+            -490.557342529297,
+            -15.9906036376953,
+            -369.037322998047
+          ]
+        }
+      ],
+      "seed": 3537365052,
+      "startedAtMs": 38674,
+      "survival": {
+        "accountEvents": [
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42396,
+            "ride": false,
+            "seq": 661,
+            "sniperDelta": 50,
+            "sniperViewers": 2226,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-17",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42346,
+            "ride": false,
+            "seq": 662,
+            "sniperDelta": 50,
+            "sniperViewers": 1372,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42296,
+            "ride": false,
+            "seq": 663,
+            "sniperDelta": 50,
+            "sniperViewers": 2276,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-17",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42246,
+            "ride": false,
+            "seq": 664,
+            "sniperDelta": 50,
+            "sniperViewers": 1422,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": 60,
+            "playerViewers": 42311,
+            "ride": false,
+            "seq": 665,
+            "sniperDelta": -60,
+            "sniperViewers": 2216,
+            "source": "playerBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": 60,
+            "playerViewers": 42371,
+            "ride": false,
+            "seq": 666,
+            "sniperDelta": -60,
+            "sniperViewers": 2156,
+            "source": "playerBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": 60,
+            "playerViewers": 42431,
+            "ride": false,
+            "seq": 667,
+            "sniperDelta": -60,
+            "sniperViewers": 2096,
+            "source": "playerBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42381,
+            "ride": false,
+            "seq": 668,
+            "sniperDelta": 50,
+            "sniperViewers": 2146,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42331,
+            "ride": false,
+            "seq": 669,
+            "sniperDelta": 50,
+            "sniperViewers": 2196,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": 60,
+            "playerViewers": 42527,
+            "ride": false,
+            "seq": 670,
+            "sniperDelta": -60,
+            "sniperViewers": 2136,
+            "source": "playerBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42477,
+            "ride": false,
+            "seq": 671,
+            "sniperDelta": 50,
+            "sniperViewers": 2186,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-15",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42427,
+            "ride": false,
+            "seq": 672,
+            "sniperDelta": 50,
+            "sniperViewers": 6100,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-17",
+            "kind": "raceSwing",
+            "playerDelta": 427,
+            "playerViewers": 42854,
+            "ride": false,
+            "seq": 673,
+            "sniperDelta": -427,
+            "sniperViewers": 995,
+            "source": "playerSniper",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-15",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42804,
+            "ride": false,
+            "seq": 674,
+            "sniperDelta": 50,
+            "sniperViewers": 6150,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-17",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42754,
+            "ride": false,
+            "seq": 675,
+            "sniperDelta": 50,
+            "sniperViewers": 1045,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-17",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42704,
+            "ride": false,
+            "seq": 676,
+            "sniperDelta": 50,
+            "sniperViewers": 1095,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-17",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42654,
+            "ride": false,
+            "seq": 677,
+            "sniperDelta": 50,
+            "sniperViewers": 1145,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-15",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42604,
+            "ride": false,
+            "seq": 678,
+            "sniperDelta": 50,
+            "sniperViewers": 6200,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-15",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42554,
+            "ride": false,
+            "seq": 679,
+            "sniperDelta": 50,
+            "sniperViewers": 6250,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-15",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42504,
+            "ride": false,
+            "seq": 680,
+            "sniperDelta": 50,
+            "sniperViewers": 6300,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-15",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42454,
+            "ride": false,
+            "seq": 681,
+            "sniperDelta": 50,
+            "sniperViewers": 6350,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42404,
+            "ride": false,
+            "seq": 682,
+            "sniperDelta": 50,
+            "sniperViewers": 2236,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42354,
+            "ride": false,
+            "seq": 683,
+            "sniperDelta": 50,
+            "sniperViewers": 2286,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "sniper-12",
+            "kind": "raceSwing",
+            "playerDelta": -50,
+            "playerViewers": 42304,
+            "ride": false,
+            "seq": 684,
+            "sniperDelta": 50,
+            "sniperViewers": 2336,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "",
+            "kind": "death",
+            "ride": false,
+            "seq": 685,
+            "viewers": 8460
+          },
+          {
+            "id": "sniper-15",
+            "kind": "raceSwing",
+            "playerDelta": -34,
+            "playerViewers": 8426,
+            "ride": false,
+            "seq": 686,
+            "sniperDelta": 34,
+            "sniperViewers": 6384,
+            "source": "sniperBot",
+            "viewers": 0
+          },
+          {
+            "id": "",
+            "kind": "death",
+            "ride": false,
+            "seq": 687,
+            "viewers": 1685
+          },
+          {
+            "id": "",
+            "kind": "death",
+            "ride": false,
+            "seq": 688,
+            "viewers": 337
+          },
+          {
+            "id": "",
+            "kind": "death",
+            "ride": false,
+            "seq": 689,
+            "viewers": 67
+          },
+          {
+            "id": "",
+            "kind": "death",
+            "ride": false,
+            "seq": 690,
+            "viewers": 13
+          },
+          {
+            "id": "",
+            "kind": "death",
+            "ride": false,
+            "seq": 691,
+            "viewers": 2
+          },
+          {
+            "id": "",
+            "kind": "death",
+            "ride": false,
+            "seq": 692,
+            "viewers": 0
+          }
+        ],
+        "aimbot": false,
+        "banWaveAtMs": 1800000,
+        "bestKps": 1.3,
+        "bonusHealth": 0,
+        "bonusHealthMax": 0,
+        "boss": null,
+        "bosses": [],
+        "build": {
+          "banishes": 0,
+          "claymores": [],
+          "drones": 0,
+          "evolved": [],
+          "evolvedIds": [],
+          "mortars": [],
+          "perkSlots": 3,
+          "ready": [],
+          "rerolls": 0,
+          "slowed": [],
+          "specialIds": [],
+          "specials": [],
+          "stats": [],
+          "stunned": [],
+          "thrown": [],
+          "turrets": [],
+          "weaponSlots": 3,
+          "weapons": []
+        },
+        "completed": true,
+        "dead": true,
+        "diedTo": "",
+        "drops": [
+          {
+            "kind": "special",
+            "x": -481.826477050781,
+            "z": -373.353149414062
+          },
+          {
+            "kind": "special",
+            "x": -478.572631835938,
+            "z": -390.586975097656
+          },
+          {
+            "kind": "special",
+            "x": -461.422546386719,
+            "z": -389.91259765625
+          },
+          {
+            "kind": "special",
+            "x": -501.121643066406,
+            "z": -377.76220703125
+          },
+          {
+            "kind": "special",
+            "x": -481.918487548828,
+            "z": -374.254516601562
+          },
+          {
+            "kind": "special",
+            "x": -495.800323486328,
+            "z": -368.344421386719
+          },
+          {
+            "kind": "special",
+            "x": -499.233642578125,
+            "z": -365.849884033203
+          },
+          {
+            "kind": "cache",
+            "x": -498.233642578125,
+            "z": -365.849884033203
+          },
+          {
+            "kind": "special",
+            "x": -482.782165527344,
+            "z": -373.349060058594
+          },
+          {
+            "kind": "special",
+            "x": -496.204498291016,
+            "z": -382.60009765625
+          },
+          {
+            "kind": "special",
+            "x": -496.617309570312,
+            "z": -370.961456298828
+          },
+          {
+            "kind": "special",
+            "x": -495.901550292969,
+            "z": -365.406463623047
+          },
+          {
+            "kind": "cache",
+            "x": -494.901550292969,
+            "z": -365.406463623047
+          },
+          {
+            "kind": "special",
+            "x": -497.435791015625,
+            "z": -374.526672363281
+          },
+          {
+            "kind": "cache",
+            "x": -496.435791015625,
+            "z": -374.526672363281
+          },
+          {
+            "kind": "special",
+            "x": -494.034332275391,
+            "z": -374.864898681641
+          },
+          {
+            "kind": "special",
+            "x": -473.172729492188,
+            "z": -371.254333496094
+          },
+          {
+            "kind": "special",
+            "x": -472.378082275391,
+            "z": -372.581726074219
+          },
+          {
+            "kind": "special",
+            "x": -466.097198486328,
+            "z": -386.85498046875
+          },
+          {
+            "kind": "special",
+            "x": -466.092498779297,
+            "z": -379.689666748047
+          },
+          {
+            "kind": "cache",
+            "x": -465.092498779297,
+            "z": -379.689666748047
+          },
+          {
+            "kind": "special",
+            "x": -462.356597900391,
+            "z": -375.547698974609
+          },
+          {
+            "kind": "special",
+            "x": -505.047424316406,
+            "z": -376.457214355469
+          },
+          {
+            "kind": "cache",
+            "x": -504.047424316406,
+            "z": -376.457214355469
+          },
+          {
+            "kind": "special",
+            "x": -532.874145507812,
+            "z": -378.679992675781
+          },
+          {
+            "kind": "special",
+            "x": -552.846374511719,
+            "z": -381.312866210938
+          },
+          {
+            "kind": "special",
+            "x": -496.951751708984,
+            "z": -368.457397460938
+          },
+          {
+            "kind": "special",
+            "x": -484.941314697266,
+            "z": -374.013610839844
+          },
+          {
+            "kind": "special",
+            "x": -486.593780517578,
+            "z": -384.758087158203
+          },
+          {
+            "kind": "special",
+            "x": -504.326721191406,
+            "z": -376.792541503906
+          },
+          {
+            "kind": "special",
+            "x": -471.214813232422,
+            "z": -392.238250732422
+          },
+          {
+            "kind": "cache",
+            "x": -470.214813232422,
+            "z": -392.238250732422
+          },
+          {
+            "kind": "special",
+            "x": -497.984130859375,
+            "z": -368.472930908203
+          },
+          {
+            "kind": "special",
+            "x": -482.78857421875,
+            "z": -380.790893554688
+          },
+          {
+            "kind": "cache",
+            "x": -481.78857421875,
+            "z": -380.790893554688
+          },
+          {
+            "kind": "special",
+            "x": -493.174713134766,
+            "z": -383.791900634766
+          },
+          {
+            "kind": "special",
+            "x": -490.904449462891,
+            "z": -384.341156005859
+          },
+          {
+            "kind": "cache",
+            "x": -489.904449462891,
+            "z": -384.341156005859
+          },
+          {
+            "kind": "special",
+            "x": -503.462188720703,
+            "z": -376.699188232422
+          },
+          {
+            "kind": "special",
+            "x": -499.655578613281,
+            "z": -379.057159423828
+          },
+          {
+            "kind": "special",
+            "x": -490.557342529297,
+            "z": -369.037322998047
+          }
+        ],
+        "elapsedMs": 2011648,
+        "elites": [
+          "marksman-e819",
+          "marksman-e1106",
+          "marksman-e1155"
+        ],
+        "endless": {
+          "bonusFollowers": 6350,
+          "minutes": 3,
+          "next": null,
+          "revoked": [
+            "damage",
+            "drone",
+            "meta:autoAmmo",
+            "meta:enemyRadar",
+            "meta:lagSwitch",
+            "rpg",
+            "aimbot"
+          ],
+          "viewers": 0
+        },
+        "enemies": 0,
+        "enemyStreak": null,
+        "events": {
+          "commanded": [
+            "soldier-e948",
+            "soldier-e955",
+            "soldier-e960",
+            "soldier-e994",
+            "soldier-e996",
+            "soldier-e999",
+            "soldier-e1044",
+            "soldier-e1049",
+            "soldier-e1069",
+            "soldier-e1070",
+            "heavy-e1108",
+            "soldier-e1127",
+            "medic-e1145",
+            "medic-e1146"
+          ],
+          "heli": null,
+          "uavUntilMs": 0
+        },
+        "godmodeUntilMs": 0,
+        "kills": 316,
+        "kps": 0,
+        "lock": null,
+        "mapHack": false,
+        "mapHackMeters": 45,
+        "message": "",
+        "meta": {
+          "ammoBoxes": [],
+          "autoAmmo": false,
+          "boxBanishes": 0,
+          "boxRerolls": 0,
+          "enemyRadar": false,
+          "extraLives": 0,
+          "lagSwitch": false,
+          "report": {
+            "averageViewers": 0,
+            "bossKills": 3,
+            "cratesOpened": 1,
+            "dogKills": 0,
+            "kills": 316,
+            "peakViewers": 0,
+            "pickupCash": 0,
+            "survivedMs": 2011648,
+            "tips": 0
+          },
+          "resourcePickups": []
+        },
+        "minute": "ATTACK DOGS, SMG RUSHERS, RPG  |  FINAL AUDIENCE PUSH",
+        "offer": null,
+        "respawnAfterStreak": false,
+        "secondLife": false,
+        "shield": 0,
+        "shieldMax": 0,
+        "snapLock": false,
+        "sniperRaces": [
+          {
+            "id": "sniper-12",
+            "name": "stream_snipe_12",
+            "playerViewers": 0,
+            "sniperViewers": 2336,
+            "startedAtMs": 791049
+          },
+          {
+            "id": "sniper-15",
+            "name": "stream_snipe_15",
+            "playerViewers": 0,
+            "sniperViewers": 6384,
+            "startedAtMs": 1217505
+          },
+          {
+            "id": "sniper-17",
+            "name": "stream_snipe_17",
+            "playerViewers": 0,
+            "sniperViewers": 1145,
+            "startedAtMs": 1375434
+          }
+        ],
+        "snipers": [
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "damage"
+            ],
+            "deaths": 0,
+            "enemyId": null,
+            "id": "sniper-1",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_1",
+            "operator": "heavy-b",
+            "streakKills": 6,
+            "tell": {
+              "cheat": "damage",
+              "phase": "warning",
+              "untilMs": 2059097
+            },
+            "tier": 1,
+            "viewers": 31
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 0,
+            "enemyId": null,
+            "id": "sniper-2",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_2",
+            "operator": "marksman-a",
+            "streakKills": 5,
+            "tell": null,
+            "tier": 2,
+            "viewers": 133
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 0,
+            "enemyId": null,
+            "id": "sniper-3",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_3",
+            "operator": "marksman-b",
+            "streakKills": 5,
+            "tell": {
+              "cheat": "aimbot",
+              "phase": "warning",
+              "untilMs": 2059511
+            },
+            "tier": 2,
+            "viewers": 135
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 0,
+            "enemyId": null,
+            "id": "sniper-4",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_4",
+            "operator": "marksman-a",
+            "streakKills": 13,
+            "tell": null,
+            "tier": 2,
+            "viewers": 138
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "aimbot"
+            ],
+            "deaths": 1,
+            "enemyId": null,
+            "id": "sniper-5",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_5",
+            "operator": "assault-b",
+            "streakKills": 0,
+            "tell": null,
+            "tier": 2,
+            "viewers": 137
+          },
+          {
+            "alive": false,
+            "armour": 53.5424342895542,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 0,
+            "enemyId": null,
+            "id": "sniper-6",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_6",
+            "operator": "marksman-b",
+            "streakKills": 8,
+            "tell": {
+              "cheat": "aimbot",
+              "phase": "active",
+              "untilMs": 2056647
+            },
+            "tier": 2,
+            "viewers": 138
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 0,
+            "enemyId": null,
+            "id": "sniper-7",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_7",
+            "operator": "marksman-a",
+            "streakKills": 10,
+            "tell": null,
+            "tier": 2,
+            "viewers": 133
+          },
+          {
+            "alive": false,
+            "armour": 0,
+            "cheats": [
+              "aimbot",
+              "wallhack",
+              "speedHack"
+            ],
+            "deaths": 2,
+            "enemyId": null,
+            "id": "rival-stage",
+            "isRival": true,
+            "killsAgainstPlayer": 0,
+            "name": "ROOK.EXE",
+            "operator": "assault-a",
+            "streakKills": 9,
+            "tell": null,
+            "tier": 3,
+            "viewers": 9936
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "speedHack"
+            ],
+            "deaths": 1,
+            "enemyId": null,
+            "id": "sniper-9",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_9",
+            "operator": "breach-b",
+            "streakKills": 0,
+            "tell": {
+              "cheat": "speedHack",
+              "phase": "active",
+              "untilMs": 2056649
+            },
+            "tier": 3,
+            "viewers": 483
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "speedHack"
+            ],
+            "deaths": 0,
+            "enemyId": null,
+            "id": "sniper-10",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_10",
+            "operator": "breach-a",
+            "streakKills": 5,
+            "tell": null,
+            "tier": 3,
+            "viewers": 560
+          },
+          {
+            "alive": false,
+            "armour": 0,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 2,
+            "enemyId": null,
+            "id": "sniper-11",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_11",
+            "operator": "marksman-a",
+            "streakKills": 64,
+            "tell": null,
+            "tier": 3,
+            "viewers": 650
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 4,
+            "enemyId": "marksman-e1106",
+            "id": "sniper-12",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_12",
+            "operator": "marksman-b",
+            "streakKills": 22,
+            "tell": null,
+            "tier": 3,
+            "viewers": 2336
+          },
+          {
+            "alive": false,
+            "armour": 0,
+            "cheats": [
+              "speedHack"
+            ],
+            "deaths": 2,
+            "enemyId": null,
+            "id": "sniper-13",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_13",
+            "operator": "breach-a",
+            "streakKills": 0,
+            "tell": null,
+            "tier": 3,
+            "viewers": 514
+          },
+          {
+            "alive": false,
+            "armour": 0,
+            "cheats": [
+              "speedHack"
+            ],
+            "deaths": 5,
+            "enemyId": null,
+            "id": "sniper-14",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_14",
+            "operator": "breach-a",
+            "streakKills": 0,
+            "tell": {
+              "cheat": "speedHack",
+              "phase": "active",
+              "untilMs": 2058282
+            },
+            "tier": 3,
+            "viewers": 492
+          },
+          {
+            "alive": false,
+            "armour": 0,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 0,
+            "enemyId": "marksman-e819",
+            "id": "sniper-15",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_15",
+            "operator": "marksman-a",
+            "streakKills": 108,
+            "tell": {
+              "cheat": "aimbot",
+              "phase": "warning",
+              "untilMs": 2058306
+            },
+            "tier": 3,
+            "viewers": 6384
+          },
+          {
+            "alive": false,
+            "armour": 225,
+            "cheats": [
+              "wallhack",
+              "aimbot",
+              "speedHack"
+            ],
+            "deaths": 1,
+            "enemyId": null,
+            "id": "rival-final",
+            "isRival": true,
+            "killsAgainstPlayer": 0,
+            "name": "CHECKMATE.EXE",
+            "operator": "marksman-b",
+            "streakKills": 14,
+            "tell": null,
+            "tier": 3,
+            "viewers": 62761
+          },
+          {
+            "alive": false,
+            "armour": 75,
+            "cheats": [
+              "wallhack",
+              "aimbot"
+            ],
+            "deaths": 4,
+            "enemyId": "marksman-e1155",
+            "id": "sniper-17",
+            "isRival": false,
+            "killsAgainstPlayer": 0,
+            "name": "stream_snipe_17",
+            "operator": "marksman-a",
+            "streakKills": 3,
+            "tell": null,
+            "tier": 3,
+            "viewers": 1145
+          }
+        ],
+        "streaks": {
+          "activation": null,
+          "adrenalineUntilMs": 0,
+          "blasts": [],
+          "burning": [],
+          "chainEndsAtMs": 0,
+          "chainWindowMs": 4000,
+          "completedRide": null,
+          "cooldownUntilMs": {},
+          "cooldownsBypassed": false,
+          "counter": 0,
+          "dogShots": [],
+          "dogs": [],
+          "dogsUntilMs": 0,
+          "earned": 0,
+          "empAtMs": 0,
+          "exitAtMs": 0,
+          "fires": [],
+          "flights": [],
+          "globalCooldownUntilMs": 0,
+          "held": [],
+          "juggernautUntilMs": 0,
+          "ladder": [
+            {
+              "id": "predatorMissile",
+              "key": 1,
+              "kills": 5,
+              "name": "Predator Missile"
+            },
+            {
+              "id": "precisionAirstrike",
+              "key": 2,
+              "kills": 7,
+              "name": "Precision Airstrike"
+            }
+          ],
+          "maxHeldEach": 1,
+          "next": {
+            "id": "predatorMissile",
+            "key": 1,
+            "kills": 5,
+            "name": "Predator Missile"
+          },
+          "nowMs": 2056049,
+          "nuke": null,
+          "out": false,
+          "prototype": false,
+          "ride": null,
+          "strikes": [],
+          "targeting": null
+        },
+        "streamKills": [
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1126273,
+            "by": "",
+            "cause": "gun",
+            "enemy": "drone",
+            "frozen": false,
+            "head": false,
+            "range": 16.3,
+            "seq": 253,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1130337,
+            "by": "",
+            "cause": "gun",
+            "enemy": "drone",
+            "frozen": false,
+            "head": false,
+            "range": 18.8,
+            "seq": 254,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1131757,
+            "by": "",
+            "cause": "gun",
+            "enemy": "drone",
+            "frozen": false,
+            "head": false,
+            "range": 14.6,
+            "seq": 255,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1136269,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 19.1,
+            "seq": 256,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1142461,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 20.3,
+            "seq": 257,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1146905,
+            "by": "",
+            "cause": "gun",
+            "enemy": "drone",
+            "frozen": false,
+            "head": false,
+            "range": 13.9,
+            "seq": 258,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1150729,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 24.6,
+            "seq": 259,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1154973,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 30.3,
+            "seq": 260,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1160533,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 31.2,
+            "seq": 261,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1167173,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 30.5,
+            "seq": 262,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1176157,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 35.7,
+            "seq": 263,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1179785,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "drone",
+            "frozen": false,
+            "head": false,
+            "range": 16.9,
+            "seq": 264,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1217301,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "sniper",
+            "frozen": false,
+            "head": false,
+            "range": 42.7,
+            "seq": 265,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1234389,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "sniper",
+            "frozen": false,
+            "head": false,
+            "range": 62.7,
+            "seq": 266,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1266626,
+            "by": "",
+            "cause": "gun",
+            "enemy": "heavy",
+            "frozen": false,
+            "head": false,
+            "range": 27.9,
+            "seq": 267,
+            "tier": "boss"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1274858,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 18.8,
+            "seq": 268,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1282710,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 11.2,
+            "seq": 269,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1290374,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 12.9,
+            "seq": 270,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1291270,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 15.3,
+            "seq": 271,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1296994,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 9.3,
+            "seq": 272,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1300646,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 18.4,
+            "seq": 273,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1303526,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 17.3,
+            "seq": 274,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1318674,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "pistol",
+            "frozen": false,
+            "head": false,
+            "range": 12,
+            "seq": 275,
+            "tier": "elite"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1355238,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 15,
+            "seq": 276,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1368814,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "riotshield",
+            "frozen": false,
+            "head": false,
+            "range": 6.8,
+            "seq": 277,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1375434,
+            "by": "",
+            "cause": "gun",
+            "enemy": "shotgun",
+            "frozen": false,
+            "head": false,
+            "range": 7.3,
+            "seq": 278,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1380402,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 17.5,
+            "seq": 279,
+            "tier": "regular"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1384266,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 18,
+            "seq": 280,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1388414,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 18.8,
+            "seq": 281,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1389578,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": true,
+            "range": 21.9,
+            "seq": 282,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1392198,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 23.6,
+            "seq": 283,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1397934,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 15.7,
+            "seq": 284,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1401878,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 11,
+            "seq": 285,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1422350,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 29.2,
+            "seq": 286,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1428654,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 28.7,
+            "seq": 287,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1437294,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 30.8,
+            "seq": 288,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1445414,
+            "by": "",
+            "cause": "gun",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 14.5,
+            "seq": 289,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1461274,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 11.1,
+            "seq": 290,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1477490,
+            "by": "",
+            "cause": "gun",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 6.8,
+            "seq": 291,
+            "tier": "regular"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1490030,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 19.7,
+            "seq": 292,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1508850,
+            "by": "",
+            "cause": "gun",
+            "enemy": "pistol",
+            "frozen": false,
+            "head": false,
+            "range": 14.2,
+            "seq": 293,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1510746,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "heavy",
+            "frozen": false,
+            "head": false,
+            "range": 23.5,
+            "seq": 294,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1519206,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 9,
+            "seq": 295,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1540834,
+            "by": "",
+            "cause": "gun",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 12.6,
+            "seq": 296,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1546310,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 12.6,
+            "seq": 297,
+            "tier": "elite"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1555802,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 5.9,
+            "seq": 298,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1561082,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 1.9,
+            "seq": 299,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1576494,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 13.9,
+            "seq": 300,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1589006,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 19.3,
+            "seq": 301,
+            "tier": "regular"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1613738,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 4.9,
+            "seq": 302,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": true,
+            "atMs": 1634710,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 23.3,
+            "seq": 303,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1667866,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 23.4,
+            "seq": 304,
+            "tier": "regular"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1679914,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "riotshield",
+            "frozen": false,
+            "head": false,
+            "range": 7.8,
+            "seq": 305,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1699570,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "pistol",
+            "frozen": false,
+            "head": false,
+            "range": 6.2,
+            "seq": 306,
+            "tier": "elite"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1741646,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "grenadier",
+            "frozen": false,
+            "head": false,
+            "range": 35,
+            "seq": 307,
+            "tier": "regular"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1753426,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "riotshield",
+            "frozen": false,
+            "head": false,
+            "range": 6,
+            "seq": 308,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1762014,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "pistol",
+            "frozen": false,
+            "head": false,
+            "range": 13.4,
+            "seq": 309,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1770086,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "smg",
+            "frozen": false,
+            "head": false,
+            "range": 8.2,
+            "seq": 310,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1790290,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 18.5,
+            "seq": 311,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1811014,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "riotshield",
+            "frozen": false,
+            "head": false,
+            "range": 9.5,
+            "seq": 312,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1819874,
+            "by": "",
+            "cause": "gun",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 6.8,
+            "seq": 313,
+            "tier": "regular"
+          },
+          {
+            "ads": false,
+            "aimbot": false,
+            "atMs": 1825230,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "riotshield",
+            "frozen": false,
+            "head": false,
+            "range": 9.3,
+            "seq": 314,
+            "tier": "elite"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1833186,
+            "by": "drone",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 11.2,
+            "seq": 315,
+            "tier": "regular"
+          },
+          {
+            "ads": true,
+            "aimbot": false,
+            "atMs": 1843942,
+            "by": "rpg",
+            "cause": "cheat",
+            "enemy": "rifleman",
+            "frozen": false,
+            "head": false,
+            "range": 11.1,
+            "seq": 316,
+            "tier": "elite"
+          }
+        ],
+        "supply": {
+          "drops": [],
+          "nextCrateInMs": 0,
+          "owned": []
+        }
+      }
+    },
+    "startingWeapon": "machineGun",
+    "streakView": {
+      "audio": {
+        "pending": 0,
+        "played": [
+          {
+            "atMs": 1301242,
+            "cue": "crate-land",
+            "pitch": 0.991839289665222,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -11.0556945800781
+          },
+          {
+            "atMs": 1303822,
+            "cue": "reveal-high",
+            "pitch": 1.0745210647583,
+            "propagationMs": 0,
+            "spatial": false,
+            "volumeDb": -4
+          },
+          {
+            "atMs": 1384502,
+            "cue": "reveal-high",
+            "pitch": 0.999908268451691,
+            "propagationMs": 0,
+            "spatial": false,
+            "volumeDb": -4
+          },
+          {
+            "atMs": 1389722,
+            "cue": "reveal-high",
+            "pitch": 0.984987497329712,
+            "propagationMs": 0,
+            "spatial": false,
+            "volumeDb": -4
+          },
+          {
+            "atMs": 1392470,
+            "cue": "reveal-high",
+            "pitch": 1.0302232503891,
+            "propagationMs": 0,
+            "spatial": false,
+            "volumeDb": -4
+          },
+          {
+            "atMs": 1396294,
+            "cue": "supply-heli",
+            "pitch": 1.0091165304184,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -6.21933603286743
+          },
+          {
+            "atMs": 1402758,
+            "cue": "reveal-high",
+            "pitch": 1.02509021759033,
+            "propagationMs": 0,
+            "spatial": false,
+            "volumeDb": -4
+          },
+          {
+            "atMs": 1402766,
+            "cue": "crate-land",
+            "pitch": 0.986639142036438,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -6.07306861877441
+          },
+          {
+            "atMs": 1406194,
+            "cue": "crate-land",
+            "pitch": 0.996014416217804,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -16.5440979003906
+          },
+          {
+            "atMs": 1511126,
+            "cue": "reveal-high",
+            "pitch": 1.02458620071411,
+            "propagationMs": 0,
+            "spatial": false,
+            "volumeDb": -4
+          },
+          {
+            "atMs": 1511182,
+            "cue": "supply-heli",
+            "pitch": 1.02335691452026,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -5.57711124420166
+          },
+          {
+            "atMs": 1517526,
+            "cue": "crate-land",
+            "pitch": 1.02276945114136,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -5.13672304153442
+          },
+          {
+            "atMs": 1518758,
+            "cue": "crate-land",
+            "pitch": 1.02081274986267,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -11.6227941513062
+          },
+          {
+            "atMs": 1520170,
+            "cue": "crate-land",
+            "pitch": 1.02017962932587,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -11.6582012176514
+          },
+          {
+            "atMs": 1521518,
+            "cue": "crate-land",
+            "pitch": 1.00052106380463,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -11.6637020111084
+          },
+          {
+            "atMs": 1620314,
+            "cue": "supply-heli",
+            "pitch": 0.990006744861603,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -7.65316104888916
+          },
+          {
+            "atMs": 1627578,
+            "cue": "crate-land",
+            "pitch": 1.01939189434052,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -5.23444509506226
+          },
+          {
+            "atMs": 1628738,
+            "cue": "crate-land",
+            "pitch": 0.992203712463379,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -12.124945640564
+          },
+          {
+            "atMs": 1629322,
+            "cue": "crate-land",
+            "pitch": 1.00962674617767,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -12.1319780349731
+          },
+          {
+            "atMs": 1752762,
+            "cue": "supply-heli",
+            "pitch": 1.01005387306213,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -7.1747989654541
+          },
+          {
+            "atMs": 1759174,
+            "cue": "crate-land",
+            "pitch": 0.99267041683197,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -6.4101037979126
+          },
+          {
+            "atMs": 1760842,
+            "cue": "crate-land",
+            "pitch": 1.00761437416077,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -18.6582355499268
+          },
+          {
+            "atMs": 1761362,
+            "cue": "crate-land",
+            "pitch": 1.00260937213898,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -18.6597328186035
+          },
+          {
+            "atMs": 1873779,
+            "cue": "supply-heli",
+            "pitch": 0.993258416652679,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -5.79138994216919
+          },
+          {
+            "atMs": 1879907,
+            "cue": "crate-land",
+            "pitch": 0.980785369873047,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -5.80150985717773
+          },
+          {
+            "atMs": 1881623,
+            "cue": "crate-land",
+            "pitch": 1.00442826747894,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -15.4851980209351
+          },
+          {
+            "atMs": 1882451,
+            "cue": "crate-land",
+            "pitch": 0.985427439212799,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -15.5214223861694
+          },
+          {
+            "atMs": 1988278,
+            "cue": "supply-heli",
+            "pitch": 0.996792852878571,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -7.48223257064819
+          },
+          {
+            "atMs": 1995114,
+            "cue": "crate-land",
+            "pitch": 0.971842050552368,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -8.75363636016846
+          },
+          {
+            "atMs": 1996254,
+            "cue": "crate-land",
+            "pitch": 1.02358317375183,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -51.9492225646973
+          },
+          {
+            "atMs": 1996870,
+            "cue": "crate-land",
+            "pitch": 0.98420512676239,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -51.9803848266602
+          },
+          {
+            "atMs": 1997154,
+            "cue": "crate-land",
+            "pitch": 1.01353776454926,
+            "propagationMs": 0,
+            "spatial": true,
+            "volumeDb": -51.9788475036621
+          }
+        ],
+        "worldVoices": 5
+      },
+      "blackness": 0,
+      "blastImpact": {
+        "pendingShakes": 0,
+        "shake": 0
+      },
+      "feedSize": null,
+      "frames": null,
+      "groundImpacts": 0,
+      "gun": null,
+      "lastGroundImpact": null,
+      "oneClick": {
+        "countdown": "",
+        "dogs": 0,
+        "flash": 0,
+        "haze": 0,
+        "mushroomCloud": false
+      },
+      "pendingGroundImpacts": 0,
+      "phoneAds": false,
+      "phoneBlend": 0,
+      "polarity": "whiteHot",
+      "prototype": false,
+      "ride": null,
+      "summary": {
+        "ageMs": 2056152,
+        "text": "",
+        "visible": false
+      },
+      "supplyPrompt": "",
+      "tablet": false
+    },
+    "stream": {
+      "adDollars": 0,
+      "bestAccountFollowers": 19970,
+      "challenge": {
+        "id": "pistolElite",
+        "progress": 0
+      },
+      "challengesDone": 1,
+      "chat": {
+        "lines": [
+          {
+            "text": "respawn button doing all the work 💀",
+            "user": "the_ratio_guy"
+          },
+          {
+            "text": "respawn button doing all the work 💀",
+            "user": "NoScopeNana"
+          },
+          {
+            "text": "respawn button doing all the work 💀",
+            "user": "pixelpudding"
+          },
+          {
+            "text": "WAIT THE WHOLE ACCOUNT???",
+            "user": "spud_sniper"
+          },
+          {
+            "text": "Audience hit zero. ENDLESS ended. Your completed stream is banked.",
+            "user": "LiveTube"
+          },
+          {
+            "text": "Audience hit zero. Completed payout and Endless followers banked.",
+            "user": "TipBot"
+          },
+          {
+            "text": "volume up chat",
+            "user": "couchcommander"
+          }
+        ],
+        "visible": true
+      },
+      "clipFollowers": 169,
+      "followers": 19970,
+      "hype": 0,
+      "lastRaid": {
+        "names": [
+          "neon_ferry",
+          "arcade_wren",
+          "lanternloop",
+          "dockside_dot",
+          "tiny_tug"
+        ],
+        "streamer": "QuayArcade",
+        "viewers": 150
+      },
+      "live": false,
+      "liveTube": true,
+      "overlay": {
+        "alerts": 0,
+        "bigTipReceipt": "",
+        "challengeArriving": false,
+        "challengeResult": "",
+        "challengeReward": "",
+        "clip": {
+          "followers": 80,
+          "revealing": false,
+          "shownFollowers": 80,
+          "viral": true,
+          "visible": false
+        },
+        "displayedFollowers": 19970,
+        "displayedViewers": 0,
+        "endCard": false,
+        "featAchieved": "",
+        "followerChange": null,
+        "followerMilestone": 10000,
+        "followerRewardReceipt": "",
+        "goLiveConfirming": false,
+        "hype": {
+          "peak": false,
+          "value": 0,
+          "visible": false
+        },
+        "incomeReceipt": "",
+        "milestoneReceipt": "",
+        "moment": null,
+        "momentDetail": "",
+        "momentTitle": "",
+        "newFollowerReceipt": "",
+        "opener": false,
+        "openerText": "",
+        "overlay": {
+          "caption": "",
+          "challenge": {
+            "pay": 15,
+            "progress": 0,
+            "result": null,
+            "resultAtMs": 0,
+            "secondsLeft": 56.53,
+            "startedAtMs": 571091,
+            "text": "finish an elite with the pistol",
+            "user": "CaptainCrouton"
+          },
+          "followers": 19970,
+          "hype": 0,
+          "poll": null,
+          "tips": 29666,
+          "train": {
+            "bonus": 150,
+            "goal": 100,
+            "level": 5,
+            "levelUpAtMs": 100825,
+            "progress": 100
+          },
+          "viewers": 0,
+          "visible": true
+        },
+        "predictionHeading": "",
+        "predictionOpening": false,
+        "predictionResult": "",
+        "predictionReward": "",
+        "race": {
+          "callout": "THEY LEAD · Kills take viewers",
+          "displayedPlayerViewers": "0",
+          "displayedSniperViewers": "2.3K",
+          "heading": "VIEWER RACE  ·  +2 MORE",
+          "id": "sniper-12",
+          "playerViewers": 0,
+          "result": null,
+          "sniperViewers": 2336
+        },
+        "raceStarted": "",
+        "raidReceipt": "",
+        "requestPinned": "",
+        "subscriptionReceipt": "",
+        "tipReceipt": "",
+        "trainProgress": "",
+        "trainReward": "",
+        "visible": true
+      },
+      "peakViewers": 50709,
+      "poll": {
+        "atMs": 559838,
+        "bonusTip": 0,
+        "poll": {
+          "closesAtMs": 569991,
+          "kind": "nextStreak",
+          "openedAtMs": 549991,
+          "question": "Next streak in 90s?",
+          "resolvesAtMs": 639991,
+          "streakCallsAtOpen": 0,
+          "yesPercent": 72
+        },
+        "success": false
+      },
+      "request": {
+        "amount": 180,
+        "message": "full spray build next time",
+        "style": "gunslinger",
+        "user": "sleepyscope"
+      },
+      "requestOutcome": null,
+      "settledFollowersGained": 13480,
+      "startingBestAccountFollowers": 29,
+      "streams": 2,
+      "style": "mixed",
+      "styleBonus": 1,
+      "tipBot": "",
+      "tipBotQueued": 0,
+      "tipCount": 170,
+      "tips": 29666,
+      "train": {
+        "bonus": 150,
+        "goal": 100,
+        "level": 5,
+        "levelUpAtMs": 100825,
+        "progress": 100
+      },
+      "viewers": 0,
+      "won": false
+    },
+    "survivalPlayer": {
+      "at": [
+        -488.796875,
+        -16.2958984375,
+        -374.6044921875
+      ],
+      "health": 0,
+      "loaded": 30,
+      "reserve": 90,
+      "runArmor": 0
+    },
+    "weapon": "machineGun",
+    "weaponPrompt": "",
+    "weaponPromptText": "",
+    "weaponRefill": ""
+  },
+  "routeWork": {
+    "cancelled": 35253,
+    "completed": 4424,
+    "deferred": 143,
+    "discarded": 81,
+    "exhaustedRoutes": 0,
+    "expired": 5859,
+    "latencyPeakMs": 10000,
+    "nativeCompleted": 5064,
+    "nativePeakMs": 7.043,
+    "peakFrameMs": 4.55199999996694,
+    "peakStepMs": 4.4440000000177,
+    "pending": 0,
+    "pollPeakMs": 2.062,
+    "queriesPerFramePeak": 1,
+    "steps": 69518,
+    "submitPeakMs": 2.171,
+    "submitted": 5064
+  },
+  "runSummary": {
+    "ammoBoxes": 0,
+    "open": true,
+    "shown": {
+      "account": {
+        "best": 19970,
+        "followers": 19970,
+        "previousBest": 29,
+        "won": false
+      },
+      "alreadyBanked": true,
+      "displayedFollowers": 19970,
+      "displayedRows": [
+        "316",
+        "50,709",
+        "+13,480",
+        "+6,350",
+        "$29,320",
+        "$150"
+      ],
+      "displayedTotal": 29470,
+      "displayedWallet": 29478,
+      "elapsedMs": 2011648,
+      "newBest": true,
+      "opened": [
+        "secondCard",
+        "thirdCard"
+      ],
+      "payoutRevealed": true,
+      "requestOutcome": null,
+      "requestRevealed": false,
+      "rowLabels": [
+        "> KILLS",
+        "> PEAK VIEWERS",
+        "> PRE-30 FOLLOWERS",
+        "> ENDLESS BONUS BANKED",
+        "> TIPS AT 30:00",
+        "> CHANNEL INCOME"
+      ],
+      "spendRevealed": true,
+      "total": 29470,
+      "unlockRevealed": true,
+      "verdict": "ENDLESS ENDED",
+      "verdictRevealed": true
+    }
+  },
+  "schemaVersion": 1,
+  "selectedCategory": "assault",
+  "settings": {
+    "audioPercent": 100,
+    "fullscreen": true,
+    "keyBindings": {
+      "aim": [
+        "mouse:2",
+        null
+      ],
+      "crouch": [
+        "key:67",
+        "key:4194326"
+      ],
+      "dash": [
+        "key:4194328",
+        null
+      ],
+      "dropCheat": [
+        "key:71",
+        null
+      ],
+      "fire": [
+        "mouse:1",
+        null
+      ],
+      "interact": [
+        "key:70",
+        null
+      ],
+      "jump": [
+        "key:32",
+        null
+      ],
+      "knife": [
+        "key:86",
+        null
+      ],
+      "moveBackward": [
+        "key:83",
+        null
+      ],
+      "moveForward": [
+        "key:87",
+        null
+      ],
+      "moveLeft": [
+        "key:65",
+        null
+      ],
+      "moveRight": [
+        "key:68",
+        null
+      ],
+      "reload": [
+        "key:82",
+        null
+      ],
+      "scoreboard": [
+        "key:4194306",
+        null
+      ],
+      "sprint": [
+        "key:4194325",
+        null
+      ],
+      "swapWeapon": [
+        "key:81",
+        null
+      ],
+      "toggleHelp": [
+        "key:4194332",
+        null
+      ],
+      "toggleMap": [
+        "key:77",
+        null
+      ]
+    },
+    "killstreaksAlwaysReady": false,
+    "newKillstreakFlow": false,
+    "resolutionHeight": 720,
+    "resolutionWidth": 1280,
+    "screenShakePercent": 100,
+    "sendCrashReports": true,
+    "showFpsCounter": false,
+    "streamAlerts": true,
+    "streamClips": true,
+    "streamEmotes": true,
+    "streamPredictions": true,
+    "streamRaids": true,
+    "streamTrain": true,
+    "unlockAllKillstreaks": false
+  },
+  "settingsMenuOpen": false,
+  "settingsStatus": "",
+  "simulationHz": 60,
+  "slowestNavQuery": {
+    "from": [
+      -747.198791503906,
+      -16.4000005086263,
+      -139.005279541016
+    ],
+    "ms": 7.497,
+    "to": [
+      -500.776763916016,
+      -17.1525630950928,
+      -392.50927734375
+    ]
+  },
+  "snapshot": {
+    "aiFrozen": false,
+    "corpses": [
+      {
+        "animation": "DeathBack",
+        "category": "assault",
+        "createdAtMs": 2026315,
+        "id": 1,
+        "position": [
+          -490.19140625,
+          -17.0107421875,
+          -378.3505859375
+        ],
+        "victimId": 2,
+        "yaw": 3.09955382347107
+      },
+      {
+        "animation": "DeathLeft",
+        "category": "assault",
+        "createdAtMs": 2030311,
+        "id": 2,
+        "position": [
+          -488.796875,
+          -17.1962890625,
+          -374.6044921875
+        ],
+        "victimId": 2,
+        "yaw": -1.57079637050629
+      },
+      {
+        "animation": "DeathRight",
+        "category": "assault",
+        "createdAtMs": 2034278,
+        "id": 3,
+        "position": [
+          -488.796875,
+          -17.1962890625,
+          -374.6044921875
+        ],
+        "victimId": 2,
+        "yaw": -1.57079637050629
+      },
+      {
+        "animation": "DeathBack",
+        "category": "assault",
+        "createdAtMs": 2038321,
+        "id": 4,
+        "position": [
+          -488.796875,
+          -17.1962890625,
+          -374.6044921875
+        ],
+        "victimId": 2,
+        "yaw": -1.57079637050629
+      },
+      {
+        "animation": "DeathRight",
+        "category": "assault",
+        "createdAtMs": 2042314,
+        "id": 5,
+        "position": [
+          -488.796875,
+          -17.1962890625,
+          -374.6044921875
+        ],
+        "victimId": 2,
+        "yaw": -1.57079637050629
+      },
+      {
+        "animation": "DeathFront",
+        "category": "assault",
+        "createdAtMs": 2046309,
+        "id": 6,
+        "position": [
+          -488.796875,
+          -17.1962890625,
+          -374.6044921875
+        ],
+        "victimId": 2,
+        "yaw": -1.57079637050629
+      },
+      {
+        "animation": "DeathRight",
+        "category": "assault",
+        "createdAtMs": 2050384,
+        "id": 7,
+        "position": [
+          -488.796875,
+          -17.1962890625,
+          -374.6044921875
+        ],
+        "victimId": 2,
+        "yaw": -1.57079637050629
+      }
+    ],
+    "endsAtMs": 86438644,
+    "killLimit": 1000000,
+    "matchDurationMs": 86400000,
+    "maxPlayers": 1,
+    "modeId": "roguelite",
+    "players": [
+      {
+        "accuracySpreadRadians": 0.028,
+        "aiming": false,
+        "alive": false,
+        "category": "assault",
+        "crouching": false,
+        "dashDirectionX": 0,
+        "dashDirectionZ": 0,
+        "dashEndsAtMs": 0,
+        "dashReadyAtMs": 0,
+        "deaths": 7,
+        "fireRateMultiplier": 1,
+        "firedRevealPosition": [
+          0,
+          0,
+          0
+        ],
+        "firedRevealUntilMs": 0,
+        "grenades": 0,
+        "grounded": true,
+        "health": 0,
+        "id": 2,
+        "infiniteAmmo": false,
+        "invincible": true,
+        "kills": 0,
+        "lastInputSequence": 15355,
+        "loadedAmmo": 30,
+        "mantle": null,
+        "movementMultiplier": 1,
+        "name": "NeonBeacon",
+        "pitch": 0,
+        "position": [
+          -488.796875,
+          -16.2958984375,
+          -374.6044921875
+        ],
+        "reloadScale": 1,
+        "reloading": false,
+        "reserveAmmo": 90,
+        "respawnAtMs": 2052384,
+        "role": "cheater",
+        "runArmor": 0,
+        "sprintRaiseEndsAtMs": 0,
+        "sprinting": false,
+        "startingWeapon": "machineGun",
+        "team": "",
+        "verticalVelocity": 0,
+        "weapon": "machineGun",
+        "weaponReadyAtMs": 0,
+        "weaponSwitchEndsAtMs": 0,
+        "yaw": -1.57075743048897
+      }
+    ],
+    "serverTimeMs": 2056184,
+    "systemAdmins": []
+  },
+  "snapshotLastFullPacket": {
+    "bytes": 1048,
+    "delta": false,
+    "sequence": 699,
+    "serverTimeMs": 93649
+  },
+  "snapshotPacket": {
+    "bytes": 21,
+    "delta": true,
+    "sequence": 15801
+  },
+  "soldierPools": "SoldierMuzzleFlash built=297 reused=778 released=1075 discarded=265 idle=32 · SoldierTracer built=297 reused=778 released=1075 discarded=265 idle=32 · MarksmanLaser built=3 reused=9 released=12 discarded=0 idle=3 · SniperGlint built=3 reused=9 released=12 discarded=0 idle=3",
+  "soldierStats": {
+    "aims": 3328,
+    "damage": 23070,
+    "hits": 4892,
+    "maxTokensHeld": 4,
+    "pickMs": 5595.10699999999,
+    "pickRayMs": 2821.1839999988,
+    "pickRays": 582097,
+    "pickRouteMaxMs": 16.447,
+    "pickRouteMs": 1182.29699999197,
+    "pickRouteSlow": 0,
+    "pickRoutes": 502395,
+    "pickSnapMs": 1256.64699999197,
+    "pickSnaps": 576083,
+    "pickStraightMs": 48.2980000000004,
+    "pickStraights": 3242,
+    "rounds": 15553,
+    "sightMs": 6870.846999987,
+    "spacingAwake": 129,
+    "spacingLowestMeters": 0,
+    "spacingMeanNearestMeters": 15.5060366535923,
+    "spacingMinNearestMeters": 1.36562513100788,
+    "spacingNowMeanMeters": 11.6437313408143,
+    "spacingNowMinMeters": 0.0914778148557415,
+    "spacingSamples": 3103,
+    "spotPicks": 9534,
+    "spotPicksDeferred": 35876,
+    "spotsUnreachable": 3539,
+    "steerMs": 17356.9710000132,
+    "updateMs": 121151.037999966,
+    "volleys": 3139
+  },
+  "stepClimbStats": {
+    "attempted": 7941,
+    "climbed": 1173,
+    "collisions": 26017,
+    "moves": 520629,
+    "skippedMoving": 12700,
+    "skippedNoHeadroom": 16,
+    "skippedNotPressed": 492061,
+    "skippedRemembered": 7911,
+    "skippedSpentMotion": 144,
+    "wasted": 6768
+  },
+  "waterfront": null,
+  "window": {
+    "mode": 0,
+    "position": [
+      -10000,
+      -10000
+    ],
+    "primaryScreen": 0,
+    "screen": 0,
+    "screenPosition": [
+      0,
+      0
+    ],
+    "screenSize": [
+      2560,
+      1440
+    ],
+    "size": [
+      640,
+      360
+    ],
+    "usableRect": [
+      0,
+      0,
+      2560,
+      1400
+    ]
+  }
+}
