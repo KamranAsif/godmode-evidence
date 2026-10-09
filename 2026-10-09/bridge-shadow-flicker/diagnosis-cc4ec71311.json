@@ -1,0 +1,416 @@
+{
+  "baseline": "189b2448a",
+  "testedCommit": "8f211ced7",
+  "engine": "GodotJS 4.6.1 V8 no pointer compression",
+  "renderer": "D3D12 Forward+",
+  "evidence": {
+    "gameplay": {
+      "resolutionPerSide": [
+        1920,
+        1080
+      ],
+      "seconds": 6,
+      "movement": "ordinary injected strafe input, full production scene",
+      "before": {
+        "taa": false,
+        "screenSpaceAa": 1,
+        "exposure": 0.649999976158142,
+        "sunShadowNormalBias": 1.39999997615814
+      },
+      "after": {
+        "taa": true,
+        "screenSpaceAa": 1,
+        "exposure": 0.649999976158142,
+        "sunShadowNormalBias": 1.39999997615814
+      }
+    },
+    "study": {
+      "resolutionPerSide": [
+        1920,
+        1080
+      ],
+      "seconds": 8,
+      "cameras": [
+        4,
+        9,
+        10,
+        11
+      ],
+      "captures": [
+        {
+          "id": "04-under-bridge-street",
+          "side": "before",
+          "variant": "baseline",
+          "pose": {
+            "id": "04-under-bridge-street",
+            "position": [
+              -517,
+              -15.6,
+              -367
+            ],
+            "yaw": -1.55,
+            "pitch": 0.02,
+            "fov": 75
+          },
+          "end": [
+            -509,
+            -15.6,
+            -367
+          ],
+          "frames": 240,
+          "elapsedMs": 7998,
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "04-under-bridge-street",
+          "side": "after",
+          "variant": "ssao-full-taa",
+          "pose": {
+            "id": "04-under-bridge-street",
+            "position": [
+              -517,
+              -15.6,
+              -367
+            ],
+            "yaw": -1.55,
+            "pitch": 0.02,
+            "fov": 75
+          },
+          "end": [
+            -509,
+            -15.6,
+            -367
+          ],
+          "frames": 240,
+          "elapsedMs": 7992,
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "09-bridge-tower-under",
+          "side": "before",
+          "variant": "baseline",
+          "pose": {
+            "id": "09-bridge-tower-under",
+            "position": [
+              -534,
+              -15,
+              -430
+            ],
+            "target": [
+              -556,
+              24,
+              -456
+            ],
+            "yaw": 0.702256931509007,
+            "pitch": 0.852928912564414,
+            "fov": 70,
+            "label": "Tower and arch from beneath",
+            "concept": "2026-10-08/frames/r5-bridge-reference/09-bridge-tower-under.png",
+            "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+          },
+          "end": [
+            -526,
+            -15,
+            -430
+          ],
+          "frames": 240,
+          "elapsedMs": 7996,
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "09-bridge-tower-under",
+          "side": "after",
+          "variant": "ssao-full-taa",
+          "pose": {
+            "id": "09-bridge-tower-under",
+            "position": [
+              -534,
+              -15,
+              -430
+            ],
+            "target": [
+              -556,
+              24,
+              -456
+            ],
+            "yaw": 0.702256931509007,
+            "pitch": 0.852928912564414,
+            "fov": 70,
+            "label": "Tower and arch from beneath",
+            "concept": "2026-10-08/frames/r5-bridge-reference/09-bridge-tower-under.png",
+            "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+          },
+          "end": [
+            -526,
+            -15,
+            -430
+          ],
+          "frames": 240,
+          "elapsedMs": 7996,
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "10-bridge-cables-under",
+          "side": "before",
+          "variant": "baseline",
+          "pose": {
+            "id": "10-bridge-cables-under",
+            "position": [
+              -528,
+              -14,
+              -452
+            ],
+            "target": [
+              -519,
+              42,
+              -436
+            ],
+            "yaw": -2.6292031932790554,
+            "pitch": 1.2540217610060698,
+            "fov": 75,
+            "label": "Cables overhead",
+            "concept": "2026-10-08/frames/r5-bridge-reference/10-bridge-cables-under.png",
+            "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+          },
+          "end": [
+            -520,
+            -14,
+            -452
+          ],
+          "frames": 240,
+          "elapsedMs": 7993,
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "10-bridge-cables-under",
+          "side": "after",
+          "variant": "ssao-full-taa",
+          "pose": {
+            "id": "10-bridge-cables-under",
+            "position": [
+              -528,
+              -14,
+              -452
+            ],
+            "target": [
+              -519,
+              42,
+              -436
+            ],
+            "yaw": -2.6292031932790554,
+            "pitch": 1.2540217610060698,
+            "fov": 75,
+            "label": "Cables overhead",
+            "concept": "2026-10-08/frames/r5-bridge-reference/10-bridge-cables-under.png",
+            "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+          },
+          "end": [
+            -520,
+            -14,
+            -452
+          ],
+          "frames": 240,
+          "elapsedMs": 7987,
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "11-bridge-deck-under",
+          "side": "before",
+          "variant": "baseline",
+          "pose": {
+            "id": "11-bridge-deck-under",
+            "position": [
+              -517,
+              -15,
+              -405
+            ],
+            "target": [
+              -540,
+              5,
+              -430
+            ],
+            "yaw": 0.7437555842988599,
+            "pitch": 0.5321025174692331,
+            "fov": 70,
+            "label": "Deck and trusses from beneath",
+            "concept": "2026-10-08/frames/r5-bridge-reference/11-bridge-deck-under.png",
+            "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+          },
+          "end": [
+            -509,
+            -15,
+            -405
+          ],
+          "frames": 240,
+          "elapsedMs": 7986,
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "11-bridge-deck-under",
+          "side": "after",
+          "variant": "ssao-full-taa",
+          "pose": {
+            "id": "11-bridge-deck-under",
+            "position": [
+              -517,
+              -15,
+              -405
+            ],
+            "target": [
+              -540,
+              5,
+              -430
+            ],
+            "yaw": 0.7437555842988599,
+            "pitch": 0.5321025174692331,
+            "fov": 70,
+            "label": "Deck and trusses from beneath",
+            "concept": "2026-10-08/frames/r5-bridge-reference/11-bridge-deck-under.png",
+            "conceptMapping": "rendered Oct12:00 bridge depth reference at this exact camera"
+          },
+          "end": [
+            -509,
+            -15,
+            -405
+          ],
+          "frames": 240,
+          "elapsedMs": 7993,
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    }
+  },
+  "isolation": [
+    {
+      "suspect": "Cascade swimming",
+      "observation": "Engine already snaps each cascade; changing splits or removing blending did not remove underside speckling."
+    },
+    {
+      "suspect": "200 m pancake/depth precision",
+      "observation": "24 m and 0 m did not remove it. Speckling persists with sun shadows disabled; approved 200 m retained."
+    },
+    {
+      "suspect": "PCSS noise/thin cable casters",
+      "observation": "Hard shadows, ultra samples and disabled cable shadow casting did not resolve the deck effect; all casters retained."
+    },
+    {
+      "suspect": "SSAO",
+      "observation": "Disabling SSAO removes the unstable dark contact bands but also loses the approved look. Full-resolution SSAO steadies them and preserves contacts."
+    },
+    {
+      "suspect": "SSIL",
+      "observation": "Disabling SSIL alone did not resolve the effect; retained."
+    },
+    {
+      "suspect": "Bias",
+      "observation": "Depth bias 0.15 and normal bias 3 did not remove the effect; original values retained."
+    },
+    {
+      "suspect": "Bridge treatment",
+      "observation": "Removing contrast/underside treatment changes the look but leaves speckling; approved values retained."
+    },
+    {
+      "suspect": "Subpixel edges",
+      "observation": "TAA steadies thin steel/cable edges more effectively than 4x MSAA or additional PCSS samples."
+    }
+  ],
+  "fix": {
+    "rendering/environment/ssao/half_size": false,
+    "rendering/anti_aliasing/quality/use_taa": true
+  },
+  "approvedSettings": {
+    "pancake": 200,
+    "angularDistance": 0.5,
+    "contact": "visible",
+    "bridge": {
+      "contrast": 0.7,
+      "underside": 0.6
+    },
+    "exposure": 0.65
+  },
+  "nativeFrameSamples": [
+    {
+      "id": "11-bridge-deck-under",
+      "side": "before",
+      "url": "http://127.0.0.1:59071/frames",
+      "requestedWindowMs": 5000,
+      "warmupMs": 2000,
+      "frames": 591,
+      "engineFrames": 591,
+      "sampled": 591,
+      "dropped": 0,
+      "windowMs": 5008.58,
+      "fps": 117.99751626209425,
+      "meanMs": 8.474560067681896,
+      "medianMs": 8.47799968719482,
+      "p95Ms": 8.63599967956543,
+      "p99Ms": 8.73700046539307,
+      "worstMs": 8.845,
+      "bestMs": 4.982,
+      "engine": {
+        "bufferMemoryBytes": 992345414,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "textureMemoryBytes": 427098112,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 3308453888,
+        "vsyncMode": 0
+      },
+      "caveats": []
+    },
+    {
+      "id": "11-bridge-deck-under",
+      "side": "after",
+      "url": "http://127.0.0.1:59071/frames",
+      "requestedWindowMs": 5000,
+      "warmupMs": 2000,
+      "frames": 518,
+      "engineFrames": 518,
+      "sampled": 518,
+      "dropped": 0,
+      "windowMs": 5008.405,
+      "fps": 103.42614065755465,
+      "meanMs": 9.668395752895753,
+      "medianMs": 9.66899967193604,
+      "p95Ms": 9.79800033569336,
+      "p99Ms": 9.86299991607666,
+      "worstMs": 9.887,
+      "bestMs": 8.484,
+      "engine": {
+        "bufferMemoryBytes": 992345414,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "textureMemoryBytes": 485818368,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 3367174144,
+        "vsyncMode": 0
+      },
+      "caveats": []
+    }
+  ],
+  "renderedScriptErrors": [],
+  "sources": {
+    "stabilisation": "https://github.com/godotengine/godot/blob/4.6-stable/servers/rendering/renderer_scene_cull.cpp",
+    "ssaoQuality": "https://docs.godotengine.org/en/4.6/classes/class_renderingserver.html#class-renderingserver-method-environment-set-ssao-quality"
+  }
+}
