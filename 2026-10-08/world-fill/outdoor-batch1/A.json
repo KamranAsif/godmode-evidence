@@ -1,0 +1,90 @@
+{
+  "sourceCommit": "f4b2f1a8667913242e84ddb5d303df2aaa52af6b",
+  "arena": "a9feccb4b1fd9d4465c91e8060cc8141a93c104cdef2a6c145897d8bda0b7329",
+  "cameras": [
+    {
+      "id": "01-park-lawn",
+      "position": [
+        -410,
+        -15.5135,
+        -457
+      ],
+      "yaw": 1.7,
+      "pitch": 0,
+      "fov": 75
+    },
+    {
+      "id": "02-waterfront-promenade",
+      "position": [
+        -423,
+        0,
+        -462
+      ],
+      "yaw": -0.23,
+      "pitch": -0.43,
+      "fov": 75
+    }
+  ],
+  "lighting": {
+    "exposure": 0.649999976158142,
+    "sunRotation": [
+      -43.2270927429199,
+      -0.527681052684784,
+      0
+    ]
+  },
+  "ao": {
+    "channel": "CUSTOM0.r occlusion",
+    "enabled": true,
+    "extraVertexBytes": 33207148,
+    "installMs": 0,
+    "instances": 2118,
+    "lodLevels": 0,
+    "meshes": 290,
+    "missing": 0,
+    "receivers": 1469,
+    "vertices": 8301787
+  },
+  "peers": {
+    "instances": [
+      {
+        "pid": 9148,
+        "kind": "game",
+        "instance": "v038-export-smoke",
+        "projectPath": "D:\\work\\godmode-roguelite-worktrees\\playtest-v0.38",
+        "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\97ebdef36df0\\game-v038-export-smoke.log",
+        "startedAt": "2026-10-09T12:53:31.675Z",
+        "binary": "D:\\work\\godmode-roguelite-worktrees\\playtest-v0.38\\artifacts\\release-v038\\build\\BattleDuty-aimbot.exe",
+        "sessionId": "playtest-v038-capture",
+        "processStartToken": "Friday, October 9, 2026 8:53:31 AM",
+        "alive": true
+      },
+      {
+        "pid": 22256,
+        "kind": "game",
+        "instance": "prebuilt-arena-export",
+        "projectPath": "D:\\work\\godmode-roguelite-worktrees\\world-fill-shrub-rhythm-20261009",
+        "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\3e487543e3ad\\game-prebuilt-arena-export.log",
+        "inspectionUrl": "http://127.0.0.1:55561/inspect",
+        "inspectPort": 55561,
+        "startedAt": "2026-10-09T12:53:05.253Z",
+        "sessionId": "s-mv0yubis-1476ff01de02",
+        "processStartToken": "Friday, October 9, 2026 8:53:05 AM",
+        "alive": true
+      }
+    ]
+  },
+  "logs": {
+    "pid": 23344,
+    "kind": "game",
+    "instance": "outdoor-a-21596",
+    "projectPath": "D:\\work\\godmode-roguelite-worktrees\\world-fill-outdoor-before-20261009",
+    "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\e03d50986151\\game-outdoor-a-21596.log",
+    "inspectionUrl": "http://127.0.0.1:55785/inspect",
+    "inspectPort": 55785,
+    "startedAt": "2026-10-09T12:56:20.370Z",
+    "sessionId": "s-mv0yyiwx-1c94723d5389",
+    "processStartToken": "Friday, October 9, 2026 8:56:20 AM",
+    "output": "Godot Engine v4.6.1.stable.custom_build.14d19694e (2026-02-16 15:13:51 UTC) - https://godotengine.org\r\nD3D12 12_0 - Forward+ - Using Device #0: AMD - AMD Radeon RX 9070 XT\r\n\r\n[JSDebugger][Debug] [LWS] [2026/10/09 08:56:20:7290] E: [null wsi]: lws_socket_bind: ERROR on binding fd 3412 to port 9229 (-1 10048)\r\n[JSDebugger][Debug] [LWS] [2026/10/09 08:56:20:7310] E: [vh|0|default||9229]: lws_create_vhost: init server failed\r\n[JSDebugger][Debug] [LWS] [2026/10/09 08:56:20:7320] E: lws_create_context: Failed to create default vhost\r\n[JSDebugger][Debug] devtools://devtools/bundled/inspector.html?v8only=true&ws=127.0.0.1:9229/1\r\nWARNING: res://addons/limbo_console/res/default_theme.tres:3 - ext_resource, invalid UID: uid://dbbw833hg2v7o - using text path instead: res://addons/limbo_console/res/fonts/monaspace_argon_bold.otf\r\n   at: ResourceLoaderText::load (scene\\resources\\resource_format_text.cpp:500)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _init_theme (res://addons/limbo_console/limbo_console.gd:623)\r\n       [1] _init (res://addons/limbo_console/limbo_console.gd:79)\r\nWARNING: res://addons/limbo_console/res/default_theme.tres:4 - ext_resource, invalid UID: uid://dmeyp84repfbw - using text path instead: res://addons/limbo_console/res/fonts/monaspace_argon_bold_italic.otf\r\n   at: ResourceLoaderText::load (scene\\resources\\resource_format_text.cpp:500)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _init_theme (res://addons/limbo_console/limbo_console.gd:623)\r\n       [1] _init (res://addons/limbo_console/limbo_console.gd:79)\r\nWARNING: res://addons/limbo_console/res/default_theme.tres:5 - ext_resource, invalid UID: uid://dhm45nttm5i3s - using text path instead: res://addons/limbo_console/res/fonts/monaspace_argon_italic.otf\r\n   at: ResourceLoaderText::load (scene\\resources\\resource_format_text.cpp:500)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _init_theme (res://addons/limbo_console/limbo_console.gd:623)\r\n       [1] _init (res://addons/limbo_console/limbo_console.gd:79)\r\nWARNING: res://addons/limbo_console/res/default_theme.tres:6 - ext_resource, invalid UID: uid://ds7dvyquauqub - using text path instead: res://addons/limbo_console/res/fonts/monaspace_argon_medium.otf\r\n   at: ResourceLoaderText::load (scene\\resources\\resource_format_text.cpp:500)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _init_theme (res://addons/limbo_console/limbo_console.gd:623)\r\n       [1] _init (res://addons/limbo_console/limbo_console.gd:79)\r\nWARNING: res://addons/limbo_console/res/default_theme.tres:7 - ext_resource, invalid UID: uid://d4js20k8kslqt - using text path instead: res://addons/limbo_console/res/fonts/monaspace_argon_regular.otf\r\n   at: ResourceLoaderText::load (scene\\resources\\resource_format_text.cpp:500)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _init_theme (res://addons/limbo_console/limbo_console.gd:623)\r\n       [1] _init (res://addons/limbo_console/limbo_console.gd:79)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.045588 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.046311 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.020905 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.021857 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.048796 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.049425 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.089183 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.089751 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.116971 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.117587 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.134668 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.135354 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.145425 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.146017 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.037529 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.039222 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.057724 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.058316 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.301525 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.313646 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.023576 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.024320 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.048830 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.050713 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.036941 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.037759 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.064027 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.064640 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.020583 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.021341 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.073496 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.074304 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.089495 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.090091 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.091980 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.092546 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.031099 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.031840 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.169890 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.174366 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.020465 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.028544 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.023772 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.024524 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.030167 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.031010 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.037463 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.038066 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.147655 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.148390 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.215923 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.216720 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.232503 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.233127 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.044445 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.057362 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.021131 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.021866 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.064008 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.065847 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.037498 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.038319 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.053097 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.053701 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.021836 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.022592 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.032779 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.033404 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.079285 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.079912 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.136490 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.137065 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 1.343278 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 1.344087 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.026764 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.027376 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.028883 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.029433 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.047723 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.049396 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.161164 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.161792 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 0.182485 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm._require: 0.183112 s (modules\\GodotJS\\bridge\\jsb_builtins.cpp:61)\r\n[jsb][Debug] slow process JSRealm._load_module: 1.543526 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1131)\r\n[jsb][Debug] slow process JSRealm.load: 1.544108 s (modules\\GodotJS\\bridge\\jsb_environment.cpp:1518)\r\n[jsb][Debug] slow process GodotJSScript.load_module: 1.544761 s (modules\\GodotJS\\weaver\\jsb_script.cpp:520)\r\n[JS] GODMODE_ARENA_BUILD=client:prebuilt:load:5127:instantiate:217:rehook:281:foliageMaterials:2\r\nGODOT_CLI_INSPECTION=http://127.0.0.1:55785/inspect\r\n"
+  }
+}
