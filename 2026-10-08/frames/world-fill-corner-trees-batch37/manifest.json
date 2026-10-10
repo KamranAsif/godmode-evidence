@@ -1,0 +1,3573 @@
+{
+  "id": "world-fill-corner-trees-batch37",
+  "feature": "largest-supported-mature-street-trees-in-vacant-furnishing-bands",
+  "fullMap": true,
+  "prebuilt": true,
+  "lighting": {
+    "exposure": 0.649999976158142,
+    "sunRotation": [
+      -43.2270927429199,
+      -0.527681052684784,
+      0
+    ]
+  },
+  "aLabel": "Merged mature crowns and vacant corner bands",
+  "bLabel": "Large rooted street trees with varied crowns",
+  "beforeSourceCommit": "f7055a1a09908289fdb83c51c991a9242490edfc",
+  "beforeArena": {
+    "inputFingerprint": "2bc5c536316609efad21b27f2f6762393e06fc7bc41a79cbf0dec8289902957b",
+    "clientSha256": "64f87dc1c2373281d9eba518f5af90d9e0f27dbf3bae0cfaeb4114747e47a669",
+    "outputFiles": 1301
+  },
+  "worldFill": {
+    "batches": 1105,
+    "blindWallPlantInstances": 49,
+    "cornerTreeInstances": 21,
+    "cornerTreeSoilInstances": 21,
+    "enabled": true,
+    "fittedShrubInstances": 8378,
+    "frontageTroughInstances": 48,
+    "landscapeBoulderInstances": 54,
+    "landscapeHedgeInstances": 92,
+    "landscapeMassInstances": 78,
+    "largePlanterInstances": 101,
+    "lawnCoverInstances": 4096,
+    "lawnEdgeInstances": 735,
+    "outdoorUseInstances": 195,
+    "parkCanopyInstances": 145,
+    "parkInfillInstances": 30,
+    "planting": 114,
+    "plantingInstances": 427,
+    "serviceInstances": 968,
+    "services": 202,
+    "shoreBoulderInstances": 127,
+    "streetUse": 340,
+    "streetUseInstances": 439,
+    "tintedFittedShrubInstances": 8378,
+    "upperPlantingInstances": 1151,
+    "wallClimberInstances": 333
+  },
+  "sourceCommit": "cb12d02e59e67e537457cde0fbbf9e90318b10bd",
+  "arena": {
+    "inputFingerprint": "65b90b54a5b1996ad977320ebcbb84adcc8f7e31af7d8eb622deb5adf69bca1e",
+    "clientSha256": "74a1a1a8c25150fa48c565cc74c029deecf11ad86771722b05eb5964f829a1bd",
+    "outputFiles": 1301
+  },
+  "ao": {
+    "channel": "CUSTOM0.r occlusion",
+    "enabled": true,
+    "extraVertexBytes": 17537116,
+    "installMs": 0,
+    "instances": 3417,
+    "lodLevels": 0,
+    "meshes": 495,
+    "missing": 0,
+    "receivers": 2428,
+    "vertices": 4384279
+  },
+  "sharedOutsideReceivers": [],
+  "cameras": [
+    {
+      "id": "01-park-lawn",
+      "position": [
+        -410,
+        -15.5135,
+        -457
+      ],
+      "yaw": 1.7,
+      "pitch": 0,
+      "fov": 75
+    },
+    {
+      "id": "02-waterfront-promenade",
+      "position": [
+        -423,
+        0,
+        -462
+      ],
+      "yaw": -0.23,
+      "pitch": -0.43,
+      "fov": 75
+    },
+    {
+      "id": "03-shopping-street",
+      "position": [
+        -402,
+        -15.582,
+        -392
+      ],
+      "yaw": 0,
+      "pitch": 0,
+      "fov": 75
+    },
+    {
+      "id": "04-under-bridge-street",
+      "position": [
+        -517,
+        -15.6,
+        -367
+      ],
+      "yaw": -1.55,
+      "pitch": 0.02,
+      "fov": 75
+    },
+    {
+      "id": "05-intersection",
+      "position": [
+        -416,
+        -15.6,
+        -370
+      ],
+      "yaw": -1.5,
+      "pitch": 0,
+      "fov": 75
+    }
+  ],
+  "frames": [
+    {
+      "camera": "01-park-lawn",
+      "a": "2026-10-08/frames/world-fill-corner-trees-batch37/01-park-lawn-A.png",
+      "aSha256": "1db68004da814c61abafa3a9fe440307e4908d354826d44be47019814c81ad87",
+      "b": "2026-10-08/frames/world-fill-corner-trees-batch37/01-park-lawn-B.png",
+      "bSha256": "97528e8b9a618fa9147611e5780bc0d9a1a6037e894039859cb732da922f8c15"
+    },
+    {
+      "camera": "02-waterfront-promenade",
+      "a": "2026-10-08/frames/world-fill-corner-trees-batch37/02-waterfront-promenade-A.png",
+      "aSha256": "fb1dc546ec7b9b7c747e0128645078bcf2a39d4529729ed30eef537d40c2a828",
+      "b": "2026-10-08/frames/world-fill-corner-trees-batch37/02-waterfront-promenade-B.png",
+      "bSha256": "e3816a7646e67116beefc91f642d430b16cfd39da85f370ca7df9ed0a758dc1e"
+    },
+    {
+      "camera": "03-shopping-street",
+      "a": "2026-10-08/frames/world-fill-corner-trees-batch37/03-shopping-street-A.png",
+      "aSha256": "1e4502e5271cc4e280344fcf9f1876623946902ffcfc31b036a139640df67df5",
+      "b": "2026-10-08/frames/world-fill-corner-trees-batch37/03-shopping-street-B.png",
+      "bSha256": "f1ea1227bedb1db8a531810a9ef392d3c7bc2eef293d533a704f877b03665514"
+    },
+    {
+      "camera": "04-under-bridge-street",
+      "a": "2026-10-08/frames/world-fill-corner-trees-batch37/04-under-bridge-street-A.png",
+      "aSha256": "933ada8cf44dbc89ece699655d5af2f3e5f5eade59fbed34ecb903836814d918",
+      "b": "2026-10-08/frames/world-fill-corner-trees-batch37/04-under-bridge-street-B.png",
+      "bSha256": "2cd67f8d649c41499ae2b9eab27ec73d81ec1f0ae826f1a6e000ab13ac725381"
+    },
+    {
+      "camera": "05-intersection",
+      "a": "2026-10-08/frames/world-fill-corner-trees-batch37/05-intersection-A.png",
+      "aSha256": "4bf2fc17281fabd1250bc136fe7cf79fdec8855db00c1f90c710141f653a41c8",
+      "b": "2026-10-08/frames/world-fill-corner-trees-batch37/05-intersection-B.png",
+      "bSha256": "e1d391a4de29b67dd6870b589b10528b34b4aea69eea783c396b0ea35d95e900"
+    }
+  ],
+  "motion": [
+    {
+      "camera": "03-shopping-street",
+      "file": "03-shopping-street-motion.mp4",
+      "receipt": {
+        "timingPath": "D:\\work\\godmode-roguelite-worktrees\\world-fill-corner-trees-20261010\\artifacts\\world-fill\\world-fill-corner-trees-batch37\\03-shopping-street-motion.mp4.timing.json",
+        "method": "PrintWindow/PW_RENDERFULLCONTENT",
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 150,
+        "startedAt": "2026-10-10T07:48:33.0644777Z",
+        "elapsedMs": 4984,
+        "frameTiming": [
+          {
+            "frame": 0,
+            "requestedMs": 0,
+            "startedMs": 0.756,
+            "capturedMs": 11.374,
+            "writtenMs": 64.377
+          },
+          {
+            "frame": 1,
+            "requestedMs": 33.333,
+            "startedMs": 64.378,
+            "capturedMs": 77.5,
+            "writtenMs": 77.91
+          },
+          {
+            "frame": 2,
+            "requestedMs": 66.667,
+            "startedMs": 77.91,
+            "capturedMs": 94.499,
+            "writtenMs": 94.989
+          },
+          {
+            "frame": 3,
+            "requestedMs": 100,
+            "startedMs": 114.285,
+            "capturedMs": 127.37,
+            "writtenMs": 127.795
+          },
+          {
+            "frame": 4,
+            "requestedMs": 133.333,
+            "startedMs": 145.282,
+            "capturedMs": 160.863,
+            "writtenMs": 161.288
+          },
+          {
+            "frame": 5,
+            "requestedMs": 166.667,
+            "startedMs": 175.946,
+            "capturedMs": 194.605,
+            "writtenMs": 195.04
+          },
+          {
+            "frame": 6,
+            "requestedMs": 200,
+            "startedMs": 206.793,
+            "capturedMs": 211.459,
+            "writtenMs": 211.878
+          },
+          {
+            "frame": 7,
+            "requestedMs": 233.333,
+            "startedMs": 238.084,
+            "capturedMs": 244.471,
+            "writtenMs": 244.879
+          },
+          {
+            "frame": 8,
+            "requestedMs": 266.667,
+            "startedMs": 268.195,
+            "capturedMs": 277.775,
+            "writtenMs": 278.182
+          },
+          {
+            "frame": 9,
+            "requestedMs": 300,
+            "startedMs": 299.603,
+            "capturedMs": 311.041,
+            "writtenMs": 311.459
+          },
+          {
+            "frame": 10,
+            "requestedMs": 333.333,
+            "startedMs": 346.088,
+            "capturedMs": 360.944,
+            "writtenMs": 361.36
+          },
+          {
+            "frame": 11,
+            "requestedMs": 366.667,
+            "startedMs": 377.3,
+            "capturedMs": 394.815,
+            "writtenMs": 395.239
+          },
+          {
+            "frame": 12,
+            "requestedMs": 400,
+            "startedMs": 409.335,
+            "capturedMs": 428.505,
+            "writtenMs": 428.921
+          },
+          {
+            "frame": 13,
+            "requestedMs": 433.333,
+            "startedMs": 440.778,
+            "capturedMs": 444.298,
+            "writtenMs": 444.696
+          },
+          {
+            "frame": 14,
+            "requestedMs": 466.667,
+            "startedMs": 472.07,
+            "capturedMs": 478.394,
+            "writtenMs": 478.796
+          },
+          {
+            "frame": 15,
+            "requestedMs": 500,
+            "startedMs": 503.179,
+            "capturedMs": 511.171,
+            "writtenMs": 511.575
+          },
+          {
+            "frame": 16,
+            "requestedMs": 533.333,
+            "startedMs": 533.792,
+            "capturedMs": 545.013,
+            "writtenMs": 545.424
+          },
+          {
+            "frame": 17,
+            "requestedMs": 566.667,
+            "startedMs": 579.936,
+            "capturedMs": 594.629,
+            "writtenMs": 595.045
+          },
+          {
+            "frame": 18,
+            "requestedMs": 600,
+            "startedMs": 610.06,
+            "capturedMs": 628.334,
+            "writtenMs": 628.766
+          },
+          {
+            "frame": 19,
+            "requestedMs": 633.333,
+            "startedMs": 641.578,
+            "capturedMs": 661.778,
+            "writtenMs": 662.23
+          },
+          {
+            "frame": 20,
+            "requestedMs": 666.667,
+            "startedMs": 673.167,
+            "capturedMs": 678.054,
+            "writtenMs": 678.482
+          },
+          {
+            "frame": 21,
+            "requestedMs": 700,
+            "startedMs": 703.806,
+            "capturedMs": 711.573,
+            "writtenMs": 711.997
+          },
+          {
+            "frame": 22,
+            "requestedMs": 733.333,
+            "startedMs": 734.371,
+            "capturedMs": 744.453,
+            "writtenMs": 744.853
+          },
+          {
+            "frame": 23,
+            "requestedMs": 766.667,
+            "startedMs": 780.901,
+            "capturedMs": 794.584,
+            "writtenMs": 794.985
+          },
+          {
+            "frame": 24,
+            "requestedMs": 800,
+            "startedMs": 811.258,
+            "capturedMs": 828.351,
+            "writtenMs": 828.762
+          },
+          {
+            "frame": 25,
+            "requestedMs": 833.333,
+            "startedMs": 841.963,
+            "capturedMs": 861.497,
+            "writtenMs": 861.938
+          },
+          {
+            "frame": 26,
+            "requestedMs": 866.667,
+            "startedMs": 873.265,
+            "capturedMs": 878.785,
+            "writtenMs": 879.188
+          },
+          {
+            "frame": 27,
+            "requestedMs": 900,
+            "startedMs": 904.756,
+            "capturedMs": 912.62,
+            "writtenMs": 913.032
+          },
+          {
+            "frame": 28,
+            "requestedMs": 933.333,
+            "startedMs": 935.562,
+            "capturedMs": 944.808,
+            "writtenMs": 945.205
+          },
+          {
+            "frame": 29,
+            "requestedMs": 966.667,
+            "startedMs": 967.228,
+            "capturedMs": 978.655,
+            "writtenMs": 979.113
+          },
+          {
+            "frame": 30,
+            "requestedMs": 1000,
+            "startedMs": 1013.537,
+            "capturedMs": 1028.262,
+            "writtenMs": 1028.676
+          },
+          {
+            "frame": 31,
+            "requestedMs": 1033.333,
+            "startedMs": 1044.815,
+            "capturedMs": 1061.751,
+            "writtenMs": 1062.154
+          },
+          {
+            "frame": 32,
+            "requestedMs": 1066.667,
+            "startedMs": 1076.241,
+            "capturedMs": 1095.443,
+            "writtenMs": 1095.956
+          },
+          {
+            "frame": 33,
+            "requestedMs": 1100,
+            "startedMs": 1107.503,
+            "capturedMs": 1111.438,
+            "writtenMs": 1111.862
+          },
+          {
+            "frame": 34,
+            "requestedMs": 1133.333,
+            "startedMs": 1138.187,
+            "capturedMs": 1144.963,
+            "writtenMs": 1145.371
+          },
+          {
+            "frame": 35,
+            "requestedMs": 1166.667,
+            "startedMs": 1170.265,
+            "capturedMs": 1179.14,
+            "writtenMs": 1179.553
+          },
+          {
+            "frame": 36,
+            "requestedMs": 1200,
+            "startedMs": 1200.637,
+            "capturedMs": 1212.002,
+            "writtenMs": 1212.41
+          },
+          {
+            "frame": 37,
+            "requestedMs": 1233.333,
+            "startedMs": 1247.52,
+            "capturedMs": 1261.707,
+            "writtenMs": 1262.11
+          },
+          {
+            "frame": 38,
+            "requestedMs": 1266.667,
+            "startedMs": 1277.811,
+            "capturedMs": 1295.164,
+            "writtenMs": 1295.565
+          },
+          {
+            "frame": 39,
+            "requestedMs": 1300,
+            "startedMs": 1308.277,
+            "capturedMs": 1311.632,
+            "writtenMs": 1312.031
+          },
+          {
+            "frame": 40,
+            "requestedMs": 1333.333,
+            "startedMs": 1340.329,
+            "capturedMs": 1344.784,
+            "writtenMs": 1345.182
+          },
+          {
+            "frame": 41,
+            "requestedMs": 1366.667,
+            "startedMs": 1370.911,
+            "capturedMs": 1378.553,
+            "writtenMs": 1378.966
+          },
+          {
+            "frame": 42,
+            "requestedMs": 1400,
+            "startedMs": 1402.129,
+            "capturedMs": 1411.836,
+            "writtenMs": 1412.253
+          },
+          {
+            "frame": 43,
+            "requestedMs": 1433.333,
+            "startedMs": 1448.322,
+            "capturedMs": 1461.736,
+            "writtenMs": 1462.145
+          },
+          {
+            "frame": 44,
+            "requestedMs": 1466.667,
+            "startedMs": 1479.098,
+            "capturedMs": 1495.564,
+            "writtenMs": 1495.983
+          },
+          {
+            "frame": 45,
+            "requestedMs": 1500,
+            "startedMs": 1510.06,
+            "capturedMs": 1528.651,
+            "writtenMs": 1529.05
+          },
+          {
+            "frame": 46,
+            "requestedMs": 1533.333,
+            "startedMs": 1540.688,
+            "capturedMs": 1545.527,
+            "writtenMs": 1545.953
+          },
+          {
+            "frame": 47,
+            "requestedMs": 1566.667,
+            "startedMs": 1571.162,
+            "capturedMs": 1578.7,
+            "writtenMs": 1579.106
+          },
+          {
+            "frame": 48,
+            "requestedMs": 1600,
+            "startedMs": 1602.108,
+            "capturedMs": 1611.937,
+            "writtenMs": 1612.344
+          },
+          {
+            "frame": 49,
+            "requestedMs": 1633.333,
+            "startedMs": 1633.086,
+            "capturedMs": 1645.604,
+            "writtenMs": 1646.009
+          },
+          {
+            "frame": 50,
+            "requestedMs": 1666.667,
+            "startedMs": 1679.248,
+            "capturedMs": 1695.113,
+            "writtenMs": 1695.513
+          },
+          {
+            "frame": 51,
+            "requestedMs": 1700,
+            "startedMs": 1709.742,
+            "capturedMs": 1728.825,
+            "writtenMs": 1729.244
+          },
+          {
+            "frame": 52,
+            "requestedMs": 1733.333,
+            "startedMs": 1740.358,
+            "capturedMs": 1745.46,
+            "writtenMs": 1745.861
+          },
+          {
+            "frame": 53,
+            "requestedMs": 1766.667,
+            "startedMs": 1771.408,
+            "capturedMs": 1778.778,
+            "writtenMs": 1779.21
+          },
+          {
+            "frame": 54,
+            "requestedMs": 1800,
+            "startedMs": 1802.242,
+            "capturedMs": 1812.365,
+            "writtenMs": 1812.769
+          },
+          {
+            "frame": 55,
+            "requestedMs": 1833.333,
+            "startedMs": 1848.416,
+            "capturedMs": 1862.121,
+            "writtenMs": 1862.529
+          },
+          {
+            "frame": 56,
+            "requestedMs": 1866.667,
+            "startedMs": 1879.969,
+            "capturedMs": 1895.971,
+            "writtenMs": 1896.372
+          },
+          {
+            "frame": 57,
+            "requestedMs": 1900,
+            "startedMs": 1911.509,
+            "capturedMs": 1928.933,
+            "writtenMs": 1929.348
+          },
+          {
+            "frame": 58,
+            "requestedMs": 1933.333,
+            "startedMs": 1942.157,
+            "capturedMs": 1945.685,
+            "writtenMs": 1946.094
+          },
+          {
+            "frame": 59,
+            "requestedMs": 1966.667,
+            "startedMs": 1974.338,
+            "capturedMs": 1979.52,
+            "writtenMs": 1979.974
+          },
+          {
+            "frame": 60,
+            "requestedMs": 2000,
+            "startedMs": 2005.836,
+            "capturedMs": 2012.324,
+            "writtenMs": 2012.725
+          },
+          {
+            "frame": 61,
+            "requestedMs": 2033.333,
+            "startedMs": 2037.484,
+            "capturedMs": 2045.422,
+            "writtenMs": 2045.839
+          },
+          {
+            "frame": 62,
+            "requestedMs": 2066.667,
+            "startedMs": 2067.851,
+            "capturedMs": 2079.135,
+            "writtenMs": 2079.544
+          },
+          {
+            "frame": 63,
+            "requestedMs": 2100,
+            "startedMs": 2113.835,
+            "capturedMs": 2129.199,
+            "writtenMs": 2129.616
+          },
+          {
+            "frame": 64,
+            "requestedMs": 2133.333,
+            "startedMs": 2144.606,
+            "capturedMs": 2162.808,
+            "writtenMs": 2163.216
+          },
+          {
+            "frame": 65,
+            "requestedMs": 2166.667,
+            "startedMs": 2175.319,
+            "capturedMs": 2179.42,
+            "writtenMs": 2179.824
+          },
+          {
+            "frame": 66,
+            "requestedMs": 2200,
+            "startedMs": 2205.838,
+            "capturedMs": 2212.853,
+            "writtenMs": 2213.27
+          },
+          {
+            "frame": 67,
+            "requestedMs": 2233.333,
+            "startedMs": 2237.089,
+            "capturedMs": 2245.921,
+            "writtenMs": 2246.327
+          },
+          {
+            "frame": 68,
+            "requestedMs": 2266.667,
+            "startedMs": 2268.67,
+            "capturedMs": 2279.663,
+            "writtenMs": 2280.078
+          },
+          {
+            "frame": 69,
+            "requestedMs": 2300,
+            "startedMs": 2299.414,
+            "capturedMs": 2312.597,
+            "writtenMs": 2313.002
+          },
+          {
+            "frame": 70,
+            "requestedMs": 2333.333,
+            "startedMs": 2345.317,
+            "capturedMs": 2362.437,
+            "writtenMs": 2362.837
+          },
+          {
+            "frame": 71,
+            "requestedMs": 2366.667,
+            "startedMs": 2377.402,
+            "capturedMs": 2396.058,
+            "writtenMs": 2396.461
+          },
+          {
+            "frame": 72,
+            "requestedMs": 2400,
+            "startedMs": 2408.819,
+            "capturedMs": 2412.498,
+            "writtenMs": 2412.904
+          },
+          {
+            "frame": 73,
+            "requestedMs": 2433.333,
+            "startedMs": 2439.623,
+            "capturedMs": 2445.823,
+            "writtenMs": 2446.236
+          },
+          {
+            "frame": 74,
+            "requestedMs": 2466.667,
+            "startedMs": 2471.023,
+            "capturedMs": 2479.891,
+            "writtenMs": 2480.307
+          },
+          {
+            "frame": 75,
+            "requestedMs": 2500,
+            "startedMs": 2502.308,
+            "capturedMs": 2512.68,
+            "writtenMs": 2513.106
+          },
+          {
+            "frame": 76,
+            "requestedMs": 2533.333,
+            "startedMs": 2533.862,
+            "capturedMs": 2546.467,
+            "writtenMs": 2546.88
+          },
+          {
+            "frame": 77,
+            "requestedMs": 2566.667,
+            "startedMs": 2579.255,
+            "capturedMs": 2598.101,
+            "writtenMs": 2598.511
+          },
+          {
+            "frame": 78,
+            "requestedMs": 2600,
+            "startedMs": 2610.248,
+            "capturedMs": 2629.434,
+            "writtenMs": 2629.852
+          },
+          {
+            "frame": 79,
+            "requestedMs": 2633.333,
+            "startedMs": 2640.63,
+            "capturedMs": 2646.866,
+            "writtenMs": 2647.28
+          },
+          {
+            "frame": 80,
+            "requestedMs": 2666.667,
+            "startedMs": 2671.921,
+            "capturedMs": 2679.989,
+            "writtenMs": 2680.399
+          },
+          {
+            "frame": 81,
+            "requestedMs": 2700,
+            "startedMs": 2703.075,
+            "capturedMs": 2713.283,
+            "writtenMs": 2713.693
+          },
+          {
+            "frame": 82,
+            "requestedMs": 2733.333,
+            "startedMs": 2734.431,
+            "capturedMs": 2746.71,
+            "writtenMs": 2747.116
+          },
+          {
+            "frame": 83,
+            "requestedMs": 2766.667,
+            "startedMs": 2780.652,
+            "capturedMs": 2796.877,
+            "writtenMs": 2797.309
+          },
+          {
+            "frame": 84,
+            "requestedMs": 2800,
+            "startedMs": 2811.868,
+            "capturedMs": 2829.991,
+            "writtenMs": 2830.391
+          },
+          {
+            "frame": 85,
+            "requestedMs": 2833.333,
+            "startedMs": 2843.898,
+            "capturedMs": 2863.065,
+            "writtenMs": 2863.48
+          },
+          {
+            "frame": 86,
+            "requestedMs": 2866.667,
+            "startedMs": 2874.287,
+            "capturedMs": 2879.922,
+            "writtenMs": 2880.349
+          },
+          {
+            "frame": 87,
+            "requestedMs": 2900,
+            "startedMs": 2906.326,
+            "capturedMs": 2913.688,
+            "writtenMs": 2914.087
+          },
+          {
+            "frame": 88,
+            "requestedMs": 2933.333,
+            "startedMs": 2937.58,
+            "capturedMs": 2947.434,
+            "writtenMs": 2947.856
+          },
+          {
+            "frame": 89,
+            "requestedMs": 2966.667,
+            "startedMs": 2968.813,
+            "capturedMs": 2980.251,
+            "writtenMs": 2980.703
+          },
+          {
+            "frame": 90,
+            "requestedMs": 3000,
+            "startedMs": 3000.902,
+            "capturedMs": 3014.138,
+            "writtenMs": 3014.543
+          },
+          {
+            "frame": 91,
+            "requestedMs": 3033.333,
+            "startedMs": 3047.244,
+            "capturedMs": 3064.151,
+            "writtenMs": 3064.548
+          },
+          {
+            "frame": 92,
+            "requestedMs": 3066.667,
+            "startedMs": 3077.941,
+            "capturedMs": 3096.884,
+            "writtenMs": 3097.299
+          },
+          {
+            "frame": 93,
+            "requestedMs": 3100,
+            "startedMs": 3110.049,
+            "capturedMs": 3130.188,
+            "writtenMs": 3130.588
+          },
+          {
+            "frame": 94,
+            "requestedMs": 3133.333,
+            "startedMs": 3140.863,
+            "capturedMs": 3147.021,
+            "writtenMs": 3147.431
+          },
+          {
+            "frame": 95,
+            "requestedMs": 3166.667,
+            "startedMs": 3171.336,
+            "capturedMs": 3179.758,
+            "writtenMs": 3180.155
+          },
+          {
+            "frame": 96,
+            "requestedMs": 3200,
+            "startedMs": 3202.997,
+            "capturedMs": 3213.438,
+            "writtenMs": 3213.834
+          },
+          {
+            "frame": 97,
+            "requestedMs": 3233.333,
+            "startedMs": 3234.891,
+            "capturedMs": 3247.46,
+            "writtenMs": 3247.919
+          },
+          {
+            "frame": 98,
+            "requestedMs": 3266.667,
+            "startedMs": 3266.224,
+            "capturedMs": 3280.602,
+            "writtenMs": 3281.004
+          },
+          {
+            "frame": 99,
+            "requestedMs": 3300,
+            "startedMs": 3314.294,
+            "capturedMs": 3330.717,
+            "writtenMs": 3331.181
+          },
+          {
+            "frame": 100,
+            "requestedMs": 3333.333,
+            "startedMs": 3345.366,
+            "capturedMs": 3363.656,
+            "writtenMs": 3364.055
+          },
+          {
+            "frame": 101,
+            "requestedMs": 3366.667,
+            "startedMs": 3376.857,
+            "capturedMs": 3380.684,
+            "writtenMs": 3381.088
+          },
+          {
+            "frame": 102,
+            "requestedMs": 3400,
+            "startedMs": 3408.103,
+            "capturedMs": 3413.814,
+            "writtenMs": 3414.258
+          },
+          {
+            "frame": 103,
+            "requestedMs": 3433.333,
+            "startedMs": 3438.807,
+            "capturedMs": 3447.773,
+            "writtenMs": 3448.187
+          },
+          {
+            "frame": 104,
+            "requestedMs": 3466.667,
+            "startedMs": 3470.558,
+            "capturedMs": 3480.512,
+            "writtenMs": 3480.923
+          },
+          {
+            "frame": 105,
+            "requestedMs": 3500,
+            "startedMs": 3501.405,
+            "capturedMs": 3513.314,
+            "writtenMs": 3513.721
+          },
+          {
+            "frame": 106,
+            "requestedMs": 3533.333,
+            "startedMs": 3532.9,
+            "capturedMs": 3547.462,
+            "writtenMs": 3547.861
+          },
+          {
+            "frame": 107,
+            "requestedMs": 3566.667,
+            "startedMs": 3579.029,
+            "capturedMs": 3597.476,
+            "writtenMs": 3597.899
+          },
+          {
+            "frame": 108,
+            "requestedMs": 3600,
+            "startedMs": 3610.901,
+            "capturedMs": 3631.063,
+            "writtenMs": 3631.503
+          },
+          {
+            "frame": 109,
+            "requestedMs": 3633.333,
+            "startedMs": 3641.297,
+            "capturedMs": 3647.367,
+            "writtenMs": 3647.77
+          },
+          {
+            "frame": 110,
+            "requestedMs": 3666.667,
+            "startedMs": 3671.871,
+            "capturedMs": 3681.097,
+            "writtenMs": 3681.532
+          },
+          {
+            "frame": 111,
+            "requestedMs": 3700,
+            "startedMs": 3702.22,
+            "capturedMs": 3714.875,
+            "writtenMs": 3715.288
+          },
+          {
+            "frame": 112,
+            "requestedMs": 3733.333,
+            "startedMs": 3733.969,
+            "capturedMs": 3747.466,
+            "writtenMs": 3747.865
+          },
+          {
+            "frame": 113,
+            "requestedMs": 3766.667,
+            "startedMs": 3779.957,
+            "capturedMs": 3797.763,
+            "writtenMs": 3798.181
+          },
+          {
+            "frame": 114,
+            "requestedMs": 3800,
+            "startedMs": 3811.45,
+            "capturedMs": 3831.007,
+            "writtenMs": 3831.409
+          },
+          {
+            "frame": 115,
+            "requestedMs": 3833.333,
+            "startedMs": 3843.02,
+            "capturedMs": 3847.136,
+            "writtenMs": 3847.552
+          },
+          {
+            "frame": 116,
+            "requestedMs": 3866.667,
+            "startedMs": 3874.522,
+            "capturedMs": 3880.626,
+            "writtenMs": 3881.027
+          },
+          {
+            "frame": 117,
+            "requestedMs": 3900,
+            "startedMs": 3905.136,
+            "capturedMs": 3913.827,
+            "writtenMs": 3914.226
+          },
+          {
+            "frame": 118,
+            "requestedMs": 3933.333,
+            "startedMs": 3935.439,
+            "capturedMs": 3947.456,
+            "writtenMs": 3947.88
+          },
+          {
+            "frame": 119,
+            "requestedMs": 3966.667,
+            "startedMs": 3981,
+            "capturedMs": 3997.992,
+            "writtenMs": 3998.475
+          },
+          {
+            "frame": 120,
+            "requestedMs": 4000,
+            "startedMs": 4012.194,
+            "capturedMs": 4031.363,
+            "writtenMs": 4031.778
+          },
+          {
+            "frame": 121,
+            "requestedMs": 4033.333,
+            "startedMs": 4043.568,
+            "capturedMs": 4047.845,
+            "writtenMs": 4048.255
+          },
+          {
+            "frame": 122,
+            "requestedMs": 4066.667,
+            "startedMs": 4074.996,
+            "capturedMs": 4081.995,
+            "writtenMs": 4082.412
+          },
+          {
+            "frame": 123,
+            "requestedMs": 4100,
+            "startedMs": 4105.411,
+            "capturedMs": 4114.404,
+            "writtenMs": 4114.802
+          },
+          {
+            "frame": 124,
+            "requestedMs": 4133.333,
+            "startedMs": 4136.953,
+            "capturedMs": 4148.337,
+            "writtenMs": 4148.738
+          },
+          {
+            "frame": 125,
+            "requestedMs": 4166.667,
+            "startedMs": 4167.518,
+            "capturedMs": 4181.162,
+            "writtenMs": 4181.569
+          },
+          {
+            "frame": 126,
+            "requestedMs": 4200,
+            "startedMs": 4214.965,
+            "capturedMs": 4231.821,
+            "writtenMs": 4232.286
+          },
+          {
+            "frame": 127,
+            "requestedMs": 4233.333,
+            "startedMs": 4245.437,
+            "capturedMs": 4264.244,
+            "writtenMs": 4264.641
+          },
+          {
+            "frame": 128,
+            "requestedMs": 4266.667,
+            "startedMs": 4276.776,
+            "capturedMs": 4280.887,
+            "writtenMs": 4281.291
+          },
+          {
+            "frame": 129,
+            "requestedMs": 4300,
+            "startedMs": 4307.464,
+            "capturedMs": 4315.255,
+            "writtenMs": 4315.663
+          },
+          {
+            "frame": 130,
+            "requestedMs": 4333.333,
+            "startedMs": 4338.453,
+            "capturedMs": 4348.156,
+            "writtenMs": 4348.576
+          },
+          {
+            "frame": 131,
+            "requestedMs": 4366.667,
+            "startedMs": 4370.527,
+            "capturedMs": 4380.958,
+            "writtenMs": 4381.38
+          },
+          {
+            "frame": 132,
+            "requestedMs": 4400,
+            "startedMs": 4401.354,
+            "capturedMs": 4414.438,
+            "writtenMs": 4414.835
+          },
+          {
+            "frame": 133,
+            "requestedMs": 4433.333,
+            "startedMs": 4447.9,
+            "capturedMs": 4465.608,
+            "writtenMs": 4466.057
+          },
+          {
+            "frame": 134,
+            "requestedMs": 4466.667,
+            "startedMs": 4466.058,
+            "capturedMs": 4481.082,
+            "writtenMs": 4481.496
+          },
+          {
+            "frame": 135,
+            "requestedMs": 4500,
+            "startedMs": 4509.78,
+            "capturedMs": 4514.933,
+            "writtenMs": 4515.377
+          },
+          {
+            "frame": 136,
+            "requestedMs": 4533.333,
+            "startedMs": 4539.884,
+            "capturedMs": 4548.223,
+            "writtenMs": 4548.637
+          },
+          {
+            "frame": 137,
+            "requestedMs": 4566.667,
+            "startedMs": 4570.618,
+            "capturedMs": 4581.857,
+            "writtenMs": 4582.258
+          },
+          {
+            "frame": 138,
+            "requestedMs": 4600,
+            "startedMs": 4601.927,
+            "capturedMs": 4615.178,
+            "writtenMs": 4615.59
+          },
+          {
+            "frame": 139,
+            "requestedMs": 4633.333,
+            "startedMs": 4633.539,
+            "capturedMs": 4648.178,
+            "writtenMs": 4648.586
+          },
+          {
+            "frame": 140,
+            "requestedMs": 4666.667,
+            "startedMs": 4681.648,
+            "capturedMs": 4699.037,
+            "writtenMs": 4699.459
+          },
+          {
+            "frame": 141,
+            "requestedMs": 4700,
+            "startedMs": 4699.46,
+            "capturedMs": 4714.905,
+            "writtenMs": 4715.35
+          },
+          {
+            "frame": 142,
+            "requestedMs": 4733.333,
+            "startedMs": 4743.43,
+            "capturedMs": 4748.42,
+            "writtenMs": 4748.819
+          },
+          {
+            "frame": 143,
+            "requestedMs": 4766.667,
+            "startedMs": 4773.442,
+            "capturedMs": 4781.556,
+            "writtenMs": 4781.988
+          },
+          {
+            "frame": 144,
+            "requestedMs": 4800,
+            "startedMs": 4804.996,
+            "capturedMs": 4814.991,
+            "writtenMs": 4815.404
+          },
+          {
+            "frame": 145,
+            "requestedMs": 4833.333,
+            "startedMs": 4835.407,
+            "capturedMs": 4849.154,
+            "writtenMs": 4849.571
+          },
+          {
+            "frame": 146,
+            "requestedMs": 4866.667,
+            "startedMs": 4866.894,
+            "capturedMs": 4881.555,
+            "writtenMs": 4881.997
+          },
+          {
+            "frame": 147,
+            "requestedMs": 4900,
+            "startedMs": 4913.565,
+            "capturedMs": 4932.258,
+            "writtenMs": 4932.666
+          },
+          {
+            "frame": 148,
+            "requestedMs": 4933.333,
+            "startedMs": 4932.667,
+            "capturedMs": 4948.916,
+            "writtenMs": 4949.317
+          },
+          {
+            "frame": 149,
+            "requestedMs": 4966.667,
+            "startedMs": 4975.995,
+            "capturedMs": 4981.609,
+            "writtenMs": 4982.047
+          }
+        ]
+      }
+    },
+    {
+      "camera": "04-under-bridge-street",
+      "file": "04-under-bridge-street-motion.mp4",
+      "receipt": {
+        "timingPath": "D:\\work\\godmode-roguelite-worktrees\\world-fill-corner-trees-20261010\\artifacts\\world-fill\\world-fill-corner-trees-batch37\\04-under-bridge-street-motion.mp4.timing.json",
+        "method": "PrintWindow/PW_RENDERFULLCONTENT",
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 150,
+        "startedAt": "2026-10-10T07:48:38.7218272Z",
+        "elapsedMs": 4998,
+        "frameTiming": [
+          {
+            "frame": 0,
+            "requestedMs": 0,
+            "startedMs": 0.836,
+            "capturedMs": 9.394,
+            "writtenMs": 16.916
+          },
+          {
+            "frame": 1,
+            "requestedMs": 33.333,
+            "startedMs": 33.16,
+            "capturedMs": 42.465,
+            "writtenMs": 42.875
+          },
+          {
+            "frame": 2,
+            "requestedMs": 66.667,
+            "startedMs": 79.87,
+            "capturedMs": 92.953,
+            "writtenMs": 93.381
+          },
+          {
+            "frame": 3,
+            "requestedMs": 100,
+            "startedMs": 110.556,
+            "capturedMs": 125.931,
+            "writtenMs": 126.349
+          },
+          {
+            "frame": 4,
+            "requestedMs": 133.333,
+            "startedMs": 141.841,
+            "capturedMs": 161.77,
+            "writtenMs": 162.178
+          },
+          {
+            "frame": 5,
+            "requestedMs": 166.667,
+            "startedMs": 171.895,
+            "capturedMs": 175.792,
+            "writtenMs": 176.245
+          },
+          {
+            "frame": 6,
+            "requestedMs": 200,
+            "startedMs": 203.886,
+            "capturedMs": 209.232,
+            "writtenMs": 209.638
+          },
+          {
+            "frame": 7,
+            "requestedMs": 233.333,
+            "startedMs": 234.905,
+            "capturedMs": 243.331,
+            "writtenMs": 243.74
+          },
+          {
+            "frame": 8,
+            "requestedMs": 266.667,
+            "startedMs": 267.001,
+            "capturedMs": 276.156,
+            "writtenMs": 276.563
+          },
+          {
+            "frame": 9,
+            "requestedMs": 300,
+            "startedMs": 313.683,
+            "capturedMs": 326.248,
+            "writtenMs": 326.721
+          },
+          {
+            "frame": 10,
+            "requestedMs": 333.333,
+            "startedMs": 345.247,
+            "capturedMs": 359.291,
+            "writtenMs": 359.737
+          },
+          {
+            "frame": 11,
+            "requestedMs": 366.667,
+            "startedMs": 376.254,
+            "capturedMs": 392.82,
+            "writtenMs": 393.224
+          },
+          {
+            "frame": 12,
+            "requestedMs": 400,
+            "startedMs": 406.033,
+            "capturedMs": 425.77,
+            "writtenMs": 426.186
+          },
+          {
+            "frame": 13,
+            "requestedMs": 433.333,
+            "startedMs": 436.915,
+            "capturedMs": 445.678,
+            "writtenMs": 446.093
+          },
+          {
+            "frame": 14,
+            "requestedMs": 466.667,
+            "startedMs": 467.591,
+            "capturedMs": 475.807,
+            "writtenMs": 476.207
+          },
+          {
+            "frame": 15,
+            "requestedMs": 500,
+            "startedMs": 513.773,
+            "capturedMs": 525.844,
+            "writtenMs": 526.244
+          },
+          {
+            "frame": 16,
+            "requestedMs": 533.333,
+            "startedMs": 545.779,
+            "capturedMs": 559.926,
+            "writtenMs": 560.33
+          },
+          {
+            "frame": 17,
+            "requestedMs": 566.667,
+            "startedMs": 576.784,
+            "capturedMs": 593.343,
+            "writtenMs": 593.798
+          },
+          {
+            "frame": 18,
+            "requestedMs": 600,
+            "startedMs": 607.031,
+            "capturedMs": 625.88,
+            "writtenMs": 626.284
+          },
+          {
+            "frame": 19,
+            "requestedMs": 633.333,
+            "startedMs": 638.083,
+            "capturedMs": 642.72,
+            "writtenMs": 643.13
+          },
+          {
+            "frame": 20,
+            "requestedMs": 666.667,
+            "startedMs": 669.797,
+            "capturedMs": 675.807,
+            "writtenMs": 676.204
+          },
+          {
+            "frame": 21,
+            "requestedMs": 700,
+            "startedMs": 701.182,
+            "capturedMs": 709.954,
+            "writtenMs": 710.374
+          },
+          {
+            "frame": 22,
+            "requestedMs": 733.333,
+            "startedMs": 747.559,
+            "capturedMs": 759.992,
+            "writtenMs": 760.395
+          },
+          {
+            "frame": 23,
+            "requestedMs": 766.667,
+            "startedMs": 778.096,
+            "capturedMs": 793.256,
+            "writtenMs": 793.678
+          },
+          {
+            "frame": 24,
+            "requestedMs": 800,
+            "startedMs": 809.569,
+            "capturedMs": 826.46,
+            "writtenMs": 826.861
+          },
+          {
+            "frame": 25,
+            "requestedMs": 833.333,
+            "startedMs": 840.73,
+            "capturedMs": 860.783,
+            "writtenMs": 861.182
+          },
+          {
+            "frame": 26,
+            "requestedMs": 866.667,
+            "startedMs": 871.725,
+            "capturedMs": 876.947,
+            "writtenMs": 877.347
+          },
+          {
+            "frame": 27,
+            "requestedMs": 900,
+            "startedMs": 903.103,
+            "capturedMs": 909.742,
+            "writtenMs": 910.147
+          },
+          {
+            "frame": 28,
+            "requestedMs": 933.333,
+            "startedMs": 934.756,
+            "capturedMs": 943.226,
+            "writtenMs": 943.627
+          },
+          {
+            "frame": 29,
+            "requestedMs": 966.667,
+            "startedMs": 980.714,
+            "capturedMs": 992.993,
+            "writtenMs": 993.393
+          },
+          {
+            "frame": 30,
+            "requestedMs": 1000,
+            "startedMs": 1012.759,
+            "capturedMs": 1026.697,
+            "writtenMs": 1027.098
+          },
+          {
+            "frame": 31,
+            "requestedMs": 1033.333,
+            "startedMs": 1044.344,
+            "capturedMs": 1063.337,
+            "writtenMs": 1063.756
+          },
+          {
+            "frame": 32,
+            "requestedMs": 1066.667,
+            "startedMs": 1074.865,
+            "capturedMs": 1093.539,
+            "writtenMs": 1093.953
+          },
+          {
+            "frame": 33,
+            "requestedMs": 1100,
+            "startedMs": 1105.772,
+            "capturedMs": 1110.765,
+            "writtenMs": 1111.167
+          },
+          {
+            "frame": 34,
+            "requestedMs": 1133.333,
+            "startedMs": 1135.965,
+            "capturedMs": 1143.934,
+            "writtenMs": 1144.336
+          },
+          {
+            "frame": 35,
+            "requestedMs": 1166.667,
+            "startedMs": 1180.991,
+            "capturedMs": 1193.52,
+            "writtenMs": 1193.924
+          },
+          {
+            "frame": 36,
+            "requestedMs": 1200,
+            "startedMs": 1212.67,
+            "capturedMs": 1226.546,
+            "writtenMs": 1226.943
+          },
+          {
+            "frame": 37,
+            "requestedMs": 1233.333,
+            "startedMs": 1243.505,
+            "capturedMs": 1259.978,
+            "writtenMs": 1260.409
+          },
+          {
+            "frame": 38,
+            "requestedMs": 1266.667,
+            "startedMs": 1274.335,
+            "capturedMs": 1293.601,
+            "writtenMs": 1294.002
+          },
+          {
+            "frame": 39,
+            "requestedMs": 1300,
+            "startedMs": 1305.83,
+            "capturedMs": 1310.21,
+            "writtenMs": 1310.614
+          },
+          {
+            "frame": 40,
+            "requestedMs": 1333.333,
+            "startedMs": 1337.445,
+            "capturedMs": 1346.12,
+            "writtenMs": 1346.53
+          },
+          {
+            "frame": 41,
+            "requestedMs": 1366.667,
+            "startedMs": 1368.591,
+            "capturedMs": 1377.143,
+            "writtenMs": 1377.546
+          },
+          {
+            "frame": 42,
+            "requestedMs": 1400,
+            "startedMs": 1399.623,
+            "capturedMs": 1411.721,
+            "writtenMs": 1412.136
+          },
+          {
+            "frame": 43,
+            "requestedMs": 1433.333,
+            "startedMs": 1446.811,
+            "capturedMs": 1460.059,
+            "writtenMs": 1460.463
+          },
+          {
+            "frame": 44,
+            "requestedMs": 1466.667,
+            "startedMs": 1478.701,
+            "capturedMs": 1493.848,
+            "writtenMs": 1494.307
+          },
+          {
+            "frame": 45,
+            "requestedMs": 1500,
+            "startedMs": 1509.538,
+            "capturedMs": 1527.413,
+            "writtenMs": 1527.811
+          },
+          {
+            "frame": 46,
+            "requestedMs": 1533.333,
+            "startedMs": 1541.684,
+            "capturedMs": 1560.067,
+            "writtenMs": 1560.465
+          },
+          {
+            "frame": 47,
+            "requestedMs": 1566.667,
+            "startedMs": 1573.262,
+            "capturedMs": 1577.474,
+            "writtenMs": 1577.871
+          },
+          {
+            "frame": 48,
+            "requestedMs": 1600,
+            "startedMs": 1604.084,
+            "capturedMs": 1610.327,
+            "writtenMs": 1610.726
+          },
+          {
+            "frame": 49,
+            "requestedMs": 1633.333,
+            "startedMs": 1634.525,
+            "capturedMs": 1643.932,
+            "writtenMs": 1644.359
+          },
+          {
+            "frame": 50,
+            "requestedMs": 1666.667,
+            "startedMs": 1680.517,
+            "capturedMs": 1695.085,
+            "writtenMs": 1695.502
+          },
+          {
+            "frame": 51,
+            "requestedMs": 1700,
+            "startedMs": 1711.329,
+            "capturedMs": 1727.09,
+            "writtenMs": 1727.512
+          },
+          {
+            "frame": 52,
+            "requestedMs": 1733.333,
+            "startedMs": 1742.604,
+            "capturedMs": 1760.579,
+            "writtenMs": 1760.995
+          },
+          {
+            "frame": 53,
+            "requestedMs": 1766.667,
+            "startedMs": 1773.794,
+            "capturedMs": 1793.862,
+            "writtenMs": 1794.268
+          },
+          {
+            "frame": 54,
+            "requestedMs": 1800,
+            "startedMs": 1804.572,
+            "capturedMs": 1810.251,
+            "writtenMs": 1810.649
+          },
+          {
+            "frame": 55,
+            "requestedMs": 1833.333,
+            "startedMs": 1835.6,
+            "capturedMs": 1843.989,
+            "writtenMs": 1844.386
+          },
+          {
+            "frame": 56,
+            "requestedMs": 1866.667,
+            "startedMs": 1867.66,
+            "capturedMs": 1877.493,
+            "writtenMs": 1877.903
+          },
+          {
+            "frame": 57,
+            "requestedMs": 1900,
+            "startedMs": 1913.774,
+            "capturedMs": 1927.412,
+            "writtenMs": 1927.83
+          },
+          {
+            "frame": 58,
+            "requestedMs": 1933.333,
+            "startedMs": 1944.757,
+            "capturedMs": 1961.02,
+            "writtenMs": 1961.444
+          },
+          {
+            "frame": 59,
+            "requestedMs": 1966.667,
+            "startedMs": 1975.368,
+            "capturedMs": 1994.691,
+            "writtenMs": 1995.104
+          },
+          {
+            "frame": 60,
+            "requestedMs": 2000,
+            "startedMs": 2005.869,
+            "capturedMs": 2011.848,
+            "writtenMs": 2012.3
+          },
+          {
+            "frame": 61,
+            "requestedMs": 2033.333,
+            "startedMs": 2036.64,
+            "capturedMs": 2044.023,
+            "writtenMs": 2044.429
+          },
+          {
+            "frame": 62,
+            "requestedMs": 2066.667,
+            "startedMs": 2067.754,
+            "capturedMs": 2077.458,
+            "writtenMs": 2077.867
+          },
+          {
+            "frame": 63,
+            "requestedMs": 2100,
+            "startedMs": 2114.238,
+            "capturedMs": 2127.624,
+            "writtenMs": 2128.059
+          },
+          {
+            "frame": 64,
+            "requestedMs": 2133.333,
+            "startedMs": 2145.196,
+            "capturedMs": 2160.669,
+            "writtenMs": 2161.098
+          },
+          {
+            "frame": 65,
+            "requestedMs": 2166.667,
+            "startedMs": 2175.864,
+            "capturedMs": 2195.527,
+            "writtenMs": 2195.943
+          },
+          {
+            "frame": 66,
+            "requestedMs": 2200,
+            "startedMs": 2206.087,
+            "capturedMs": 2212.258,
+            "writtenMs": 2212.712
+          },
+          {
+            "frame": 67,
+            "requestedMs": 2233.333,
+            "startedMs": 2238.091,
+            "capturedMs": 2244.191,
+            "writtenMs": 2244.602
+          },
+          {
+            "frame": 68,
+            "requestedMs": 2266.667,
+            "startedMs": 2268.657,
+            "capturedMs": 2278.097,
+            "writtenMs": 2278.523
+          },
+          {
+            "frame": 69,
+            "requestedMs": 2300,
+            "startedMs": 2314.294,
+            "capturedMs": 2327.92,
+            "writtenMs": 2328.409
+          },
+          {
+            "frame": 70,
+            "requestedMs": 2333.333,
+            "startedMs": 2345.694,
+            "capturedMs": 2360.948,
+            "writtenMs": 2361.388
+          },
+          {
+            "frame": 71,
+            "requestedMs": 2366.667,
+            "startedMs": 2375.942,
+            "capturedMs": 2394.454,
+            "writtenMs": 2394.867
+          },
+          {
+            "frame": 72,
+            "requestedMs": 2400,
+            "startedMs": 2407.51,
+            "capturedMs": 2411.2,
+            "writtenMs": 2411.605
+          },
+          {
+            "frame": 73,
+            "requestedMs": 2433.333,
+            "startedMs": 2439.659,
+            "capturedMs": 2444.519,
+            "writtenMs": 2444.956
+          },
+          {
+            "frame": 74,
+            "requestedMs": 2466.667,
+            "startedMs": 2471.757,
+            "capturedMs": 2478.18,
+            "writtenMs": 2478.578
+          },
+          {
+            "frame": 75,
+            "requestedMs": 2500,
+            "startedMs": 2503.914,
+            "capturedMs": 2511.596,
+            "writtenMs": 2511.998
+          },
+          {
+            "frame": 76,
+            "requestedMs": 2533.333,
+            "startedMs": 2534.62,
+            "capturedMs": 2544.751,
+            "writtenMs": 2545.152
+          },
+          {
+            "frame": 77,
+            "requestedMs": 2566.667,
+            "startedMs": 2581.158,
+            "capturedMs": 2594.669,
+            "writtenMs": 2595.07
+          },
+          {
+            "frame": 78,
+            "requestedMs": 2600,
+            "startedMs": 2612.579,
+            "capturedMs": 2629.232,
+            "writtenMs": 2629.682
+          },
+          {
+            "frame": 79,
+            "requestedMs": 2633.333,
+            "startedMs": 2644.018,
+            "capturedMs": 2661.833,
+            "writtenMs": 2662.237
+          },
+          {
+            "frame": 80,
+            "requestedMs": 2666.667,
+            "startedMs": 2675.197,
+            "capturedMs": 2694.798,
+            "writtenMs": 2695.194
+          },
+          {
+            "frame": 81,
+            "requestedMs": 2700,
+            "startedMs": 2706.001,
+            "capturedMs": 2713.659,
+            "writtenMs": 2714.061
+          },
+          {
+            "frame": 82,
+            "requestedMs": 2733.333,
+            "startedMs": 2737.127,
+            "capturedMs": 2744.98,
+            "writtenMs": 2745.382
+          },
+          {
+            "frame": 83,
+            "requestedMs": 2766.667,
+            "startedMs": 2768.764,
+            "capturedMs": 2778.591,
+            "writtenMs": 2779.009
+          },
+          {
+            "frame": 84,
+            "requestedMs": 2800,
+            "startedMs": 2800.8,
+            "capturedMs": 2811.23,
+            "writtenMs": 2811.68
+          },
+          {
+            "frame": 85,
+            "requestedMs": 2833.333,
+            "startedMs": 2847.425,
+            "capturedMs": 2861.418,
+            "writtenMs": 2861.841
+          },
+          {
+            "frame": 86,
+            "requestedMs": 2866.667,
+            "startedMs": 2878.397,
+            "capturedMs": 2894.93,
+            "writtenMs": 2895.339
+          },
+          {
+            "frame": 87,
+            "requestedMs": 2900,
+            "startedMs": 2909.583,
+            "capturedMs": 2928.683,
+            "writtenMs": 2929.111
+          },
+          {
+            "frame": 88,
+            "requestedMs": 2933.333,
+            "startedMs": 2940.936,
+            "capturedMs": 2947.518,
+            "writtenMs": 2947.92
+          },
+          {
+            "frame": 89,
+            "requestedMs": 2966.667,
+            "startedMs": 2971.605,
+            "capturedMs": 2978.815,
+            "writtenMs": 2979.224
+          },
+          {
+            "frame": 90,
+            "requestedMs": 3000,
+            "startedMs": 3002.323,
+            "capturedMs": 3012.92,
+            "writtenMs": 3013.337
+          },
+          {
+            "frame": 91,
+            "requestedMs": 3033.333,
+            "startedMs": 3033.488,
+            "capturedMs": 3046.249,
+            "writtenMs": 3046.662
+          },
+          {
+            "frame": 92,
+            "requestedMs": 3066.667,
+            "startedMs": 3080.795,
+            "capturedMs": 3095.183,
+            "writtenMs": 3095.587
+          },
+          {
+            "frame": 93,
+            "requestedMs": 3100,
+            "startedMs": 3111.153,
+            "capturedMs": 3128.625,
+            "writtenMs": 3129.027
+          },
+          {
+            "frame": 94,
+            "requestedMs": 3133.333,
+            "startedMs": 3142.651,
+            "capturedMs": 3162.138,
+            "writtenMs": 3162.538
+          },
+          {
+            "frame": 95,
+            "requestedMs": 3166.667,
+            "startedMs": 3174.728,
+            "capturedMs": 3178.401,
+            "writtenMs": 3178.81
+          },
+          {
+            "frame": 96,
+            "requestedMs": 3200,
+            "startedMs": 3206.337,
+            "capturedMs": 3212.275,
+            "writtenMs": 3212.692
+          },
+          {
+            "frame": 97,
+            "requestedMs": 3233.333,
+            "startedMs": 3237.582,
+            "capturedMs": 3245.067,
+            "writtenMs": 3245.491
+          },
+          {
+            "frame": 98,
+            "requestedMs": 3266.667,
+            "startedMs": 3268.804,
+            "capturedMs": 3279.443,
+            "writtenMs": 3279.855
+          },
+          {
+            "frame": 99,
+            "requestedMs": 3300,
+            "startedMs": 3314.518,
+            "capturedMs": 3328.575,
+            "writtenMs": 3329.065
+          },
+          {
+            "frame": 100,
+            "requestedMs": 3333.333,
+            "startedMs": 3345.533,
+            "capturedMs": 3361.951,
+            "writtenMs": 3362.407
+          },
+          {
+            "frame": 101,
+            "requestedMs": 3366.667,
+            "startedMs": 3376.584,
+            "capturedMs": 3395.341,
+            "writtenMs": 3395.752
+          },
+          {
+            "frame": 102,
+            "requestedMs": 3400,
+            "startedMs": 3407.667,
+            "capturedMs": 3412.427,
+            "writtenMs": 3412.84
+          },
+          {
+            "frame": 103,
+            "requestedMs": 3433.333,
+            "startedMs": 3438.934,
+            "capturedMs": 3445.073,
+            "writtenMs": 3445.473
+          },
+          {
+            "frame": 104,
+            "requestedMs": 3466.667,
+            "startedMs": 3470.997,
+            "capturedMs": 3478.534,
+            "writtenMs": 3479.046
+          },
+          {
+            "frame": 105,
+            "requestedMs": 3500,
+            "startedMs": 3502.199,
+            "capturedMs": 3513.448,
+            "writtenMs": 3513.849
+          },
+          {
+            "frame": 106,
+            "requestedMs": 3533.333,
+            "startedMs": 3533.474,
+            "capturedMs": 3545.916,
+            "writtenMs": 3546.317
+          },
+          {
+            "frame": 107,
+            "requestedMs": 3566.667,
+            "startedMs": 3580.977,
+            "capturedMs": 3595.676,
+            "writtenMs": 3596.126
+          },
+          {
+            "frame": 108,
+            "requestedMs": 3600,
+            "startedMs": 3611.004,
+            "capturedMs": 3628.665,
+            "writtenMs": 3629.077
+          },
+          {
+            "frame": 109,
+            "requestedMs": 3633.333,
+            "startedMs": 3641.911,
+            "capturedMs": 3645.431,
+            "writtenMs": 3645.83
+          },
+          {
+            "frame": 110,
+            "requestedMs": 3666.667,
+            "startedMs": 3673.946,
+            "capturedMs": 3678.848,
+            "writtenMs": 3679.255
+          },
+          {
+            "frame": 111,
+            "requestedMs": 3700,
+            "startedMs": 3703.954,
+            "capturedMs": 3712.213,
+            "writtenMs": 3712.615
+          },
+          {
+            "frame": 112,
+            "requestedMs": 3733.333,
+            "startedMs": 3735.988,
+            "capturedMs": 3748.85,
+            "writtenMs": 3749.273
+          },
+          {
+            "frame": 113,
+            "requestedMs": 3766.667,
+            "startedMs": 3766.317,
+            "capturedMs": 3778.962,
+            "writtenMs": 3779.396
+          },
+          {
+            "frame": 114,
+            "requestedMs": 3800,
+            "startedMs": 3812.551,
+            "capturedMs": 3829.658,
+            "writtenMs": 3830.068
+          },
+          {
+            "frame": 115,
+            "requestedMs": 3833.333,
+            "startedMs": 3843.784,
+            "capturedMs": 3862.814,
+            "writtenMs": 3863.229
+          },
+          {
+            "frame": 116,
+            "requestedMs": 3866.667,
+            "startedMs": 3874.172,
+            "capturedMs": 3878.965,
+            "writtenMs": 3879.363
+          },
+          {
+            "frame": 117,
+            "requestedMs": 3900,
+            "startedMs": 3905.427,
+            "capturedMs": 3912.788,
+            "writtenMs": 3913.185
+          },
+          {
+            "frame": 118,
+            "requestedMs": 3933.333,
+            "startedMs": 3936.177,
+            "capturedMs": 3946.771,
+            "writtenMs": 3947.177
+          },
+          {
+            "frame": 119,
+            "requestedMs": 3966.667,
+            "startedMs": 3966.608,
+            "capturedMs": 3979.743,
+            "writtenMs": 3980.146
+          },
+          {
+            "frame": 120,
+            "requestedMs": 4000,
+            "startedMs": 4013.7,
+            "capturedMs": 4031.174,
+            "writtenMs": 4031.587
+          },
+          {
+            "frame": 121,
+            "requestedMs": 4033.333,
+            "startedMs": 4044.429,
+            "capturedMs": 4063.098,
+            "writtenMs": 4063.493
+          },
+          {
+            "frame": 122,
+            "requestedMs": 4066.667,
+            "startedMs": 4075.638,
+            "capturedMs": 4079.765,
+            "writtenMs": 4080.167
+          },
+          {
+            "frame": 123,
+            "requestedMs": 4100,
+            "startedMs": 4106.917,
+            "capturedMs": 4112.428,
+            "writtenMs": 4112.836
+          },
+          {
+            "frame": 124,
+            "requestedMs": 4133.333,
+            "startedMs": 4137.544,
+            "capturedMs": 4145.644,
+            "writtenMs": 4146.047
+          },
+          {
+            "frame": 125,
+            "requestedMs": 4166.667,
+            "startedMs": 4169.664,
+            "capturedMs": 4179.388,
+            "writtenMs": 4179.843
+          },
+          {
+            "frame": 126,
+            "requestedMs": 4200,
+            "startedMs": 4214.883,
+            "capturedMs": 4230.021,
+            "writtenMs": 4230.436
+          },
+          {
+            "frame": 127,
+            "requestedMs": 4233.333,
+            "startedMs": 4246.948,
+            "capturedMs": 4265.965,
+            "writtenMs": 4266.369
+          },
+          {
+            "frame": 128,
+            "requestedMs": 4266.667,
+            "startedMs": 4266.37,
+            "capturedMs": 4279.473,
+            "writtenMs": 4279.891
+          },
+          {
+            "frame": 129,
+            "requestedMs": 4300,
+            "startedMs": 4309.574,
+            "capturedMs": 4331.105,
+            "writtenMs": 4331.545
+          },
+          {
+            "frame": 130,
+            "requestedMs": 4333.333,
+            "startedMs": 4341.174,
+            "capturedMs": 4346.182,
+            "writtenMs": 4346.581
+          },
+          {
+            "frame": 131,
+            "requestedMs": 4366.667,
+            "startedMs": 4372.739,
+            "capturedMs": 4380.723,
+            "writtenMs": 4381.124
+          },
+          {
+            "frame": 132,
+            "requestedMs": 4400,
+            "startedMs": 4403.238,
+            "capturedMs": 4413.364,
+            "writtenMs": 4413.788
+          },
+          {
+            "frame": 133,
+            "requestedMs": 4433.333,
+            "startedMs": 4434.502,
+            "capturedMs": 4445.729,
+            "writtenMs": 4446.161
+          },
+          {
+            "frame": 134,
+            "requestedMs": 4466.667,
+            "startedMs": 4480.808,
+            "capturedMs": 4496.207,
+            "writtenMs": 4496.608
+          },
+          {
+            "frame": 135,
+            "requestedMs": 4500,
+            "startedMs": 4511.922,
+            "capturedMs": 4530.006,
+            "writtenMs": 4530.407
+          },
+          {
+            "frame": 136,
+            "requestedMs": 4533.333,
+            "startedMs": 4543.952,
+            "capturedMs": 4562.835,
+            "writtenMs": 4563.267
+          },
+          {
+            "frame": 137,
+            "requestedMs": 4566.667,
+            "startedMs": 4576.023,
+            "capturedMs": 4579.702,
+            "writtenMs": 4580.1
+          },
+          {
+            "frame": 138,
+            "requestedMs": 4600,
+            "startedMs": 4606.996,
+            "capturedMs": 4613.497,
+            "writtenMs": 4613.895
+          },
+          {
+            "frame": 139,
+            "requestedMs": 4633.333,
+            "startedMs": 4637.092,
+            "capturedMs": 4647.762,
+            "writtenMs": 4648.234
+          },
+          {
+            "frame": 140,
+            "requestedMs": 4666.667,
+            "startedMs": 4668.651,
+            "capturedMs": 4679.868,
+            "writtenMs": 4680.268
+          },
+          {
+            "frame": 141,
+            "requestedMs": 4700,
+            "startedMs": 4700.062,
+            "capturedMs": 4713.023,
+            "writtenMs": 4713.421
+          },
+          {
+            "frame": 142,
+            "requestedMs": 4733.333,
+            "startedMs": 4746.796,
+            "capturedMs": 4764.115,
+            "writtenMs": 4764.518
+          },
+          {
+            "frame": 143,
+            "requestedMs": 4766.667,
+            "startedMs": 4777.281,
+            "capturedMs": 4796.207,
+            "writtenMs": 4796.617
+          },
+          {
+            "frame": 144,
+            "requestedMs": 4800,
+            "startedMs": 4808.472,
+            "capturedMs": 4813.761,
+            "writtenMs": 4814.161
+          },
+          {
+            "frame": 145,
+            "requestedMs": 4833.333,
+            "startedMs": 4839.707,
+            "capturedMs": 4846.562,
+            "writtenMs": 4846.991
+          },
+          {
+            "frame": 146,
+            "requestedMs": 4866.667,
+            "startedMs": 4870.82,
+            "capturedMs": 4880.43,
+            "writtenMs": 4880.838
+          },
+          {
+            "frame": 147,
+            "requestedMs": 4900,
+            "startedMs": 4900.826,
+            "capturedMs": 4913.985,
+            "writtenMs": 4914.39
+          },
+          {
+            "frame": 148,
+            "requestedMs": 4933.333,
+            "startedMs": 4946.416,
+            "capturedMs": 4963.549,
+            "writtenMs": 4963.96
+          },
+          {
+            "frame": 149,
+            "requestedMs": 4966.667,
+            "startedMs": 4977.688,
+            "capturedMs": 4996.798,
+            "writtenMs": 4997.208
+          }
+        ]
+      }
+    },
+    {
+      "camera": "05-intersection",
+      "file": "05-intersection-motion.mp4",
+      "receipt": {
+        "timingPath": "D:\\work\\godmode-roguelite-worktrees\\world-fill-corner-trees-20261010\\artifacts\\world-fill\\world-fill-corner-trees-batch37\\05-intersection-motion.mp4.timing.json",
+        "method": "PrintWindow/PW_RENDERFULLCONTENT",
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 150,
+        "startedAt": "2026-10-10T07:48:44.3747853Z",
+        "elapsedMs": 4999,
+        "frameTiming": [
+          {
+            "frame": 0,
+            "requestedMs": 0,
+            "startedMs": 0.88,
+            "capturedMs": 13.354,
+            "writtenMs": 17.2
+          },
+          {
+            "frame": 1,
+            "requestedMs": 33.333,
+            "startedMs": 37.347,
+            "capturedMs": 42.917,
+            "writtenMs": 43.331
+          },
+          {
+            "frame": 2,
+            "requestedMs": 66.667,
+            "startedMs": 67.636,
+            "capturedMs": 76.904,
+            "writtenMs": 77.318
+          },
+          {
+            "frame": 3,
+            "requestedMs": 100,
+            "startedMs": 113.397,
+            "capturedMs": 127.033,
+            "writtenMs": 127.46
+          },
+          {
+            "frame": 4,
+            "requestedMs": 133.333,
+            "startedMs": 144.792,
+            "capturedMs": 160.21,
+            "writtenMs": 160.645
+          },
+          {
+            "frame": 5,
+            "requestedMs": 166.667,
+            "startedMs": 175.329,
+            "capturedMs": 193.575,
+            "writtenMs": 194.009
+          },
+          {
+            "frame": 6,
+            "requestedMs": 200,
+            "startedMs": 206.974,
+            "capturedMs": 226.969,
+            "writtenMs": 227.412
+          },
+          {
+            "frame": 7,
+            "requestedMs": 233.333,
+            "startedMs": 237.36,
+            "capturedMs": 243.251,
+            "writtenMs": 243.678
+          },
+          {
+            "frame": 8,
+            "requestedMs": 266.667,
+            "startedMs": 269.594,
+            "capturedMs": 276.494,
+            "writtenMs": 276.915
+          },
+          {
+            "frame": 9,
+            "requestedMs": 300,
+            "startedMs": 300.582,
+            "capturedMs": 311.09,
+            "writtenMs": 311.504
+          },
+          {
+            "frame": 10,
+            "requestedMs": 333.333,
+            "startedMs": 332.628,
+            "capturedMs": 343.465,
+            "writtenMs": 343.882
+          },
+          {
+            "frame": 11,
+            "requestedMs": 366.667,
+            "startedMs": 379.361,
+            "capturedMs": 395.55,
+            "writtenMs": 395.954
+          },
+          {
+            "frame": 12,
+            "requestedMs": 400,
+            "startedMs": 409.175,
+            "capturedMs": 426.495,
+            "writtenMs": 426.899
+          },
+          {
+            "frame": 13,
+            "requestedMs": 433.333,
+            "startedMs": 440.619,
+            "capturedMs": 460.009,
+            "writtenMs": 460.416
+          },
+          {
+            "frame": 14,
+            "requestedMs": 466.667,
+            "startedMs": 470.795,
+            "capturedMs": 480.551,
+            "writtenMs": 480.964
+          },
+          {
+            "frame": 15,
+            "requestedMs": 500,
+            "startedMs": 500.91,
+            "capturedMs": 511.615,
+            "writtenMs": 512.016
+          },
+          {
+            "frame": 16,
+            "requestedMs": 533.333,
+            "startedMs": 546.829,
+            "capturedMs": 560.449,
+            "writtenMs": 560.86
+          },
+          {
+            "frame": 17,
+            "requestedMs": 566.667,
+            "startedMs": 576.567,
+            "capturedMs": 593.937,
+            "writtenMs": 594.355
+          },
+          {
+            "frame": 18,
+            "requestedMs": 600,
+            "startedMs": 608.015,
+            "capturedMs": 627.035,
+            "writtenMs": 627.443
+          },
+          {
+            "frame": 19,
+            "requestedMs": 633.333,
+            "startedMs": 639.297,
+            "capturedMs": 643.697,
+            "writtenMs": 644.1
+          },
+          {
+            "frame": 20,
+            "requestedMs": 666.667,
+            "startedMs": 670.418,
+            "capturedMs": 676.959,
+            "writtenMs": 677.401
+          },
+          {
+            "frame": 21,
+            "requestedMs": 700,
+            "startedMs": 701.916,
+            "capturedMs": 709.77,
+            "writtenMs": 710.178
+          },
+          {
+            "frame": 22,
+            "requestedMs": 733.333,
+            "startedMs": 733.897,
+            "capturedMs": 743.676,
+            "writtenMs": 744.089
+          },
+          {
+            "frame": 23,
+            "requestedMs": 766.667,
+            "startedMs": 780.974,
+            "capturedMs": 794.105,
+            "writtenMs": 794.523
+          },
+          {
+            "frame": 24,
+            "requestedMs": 800,
+            "startedMs": 811.912,
+            "capturedMs": 826.821,
+            "writtenMs": 827.271
+          },
+          {
+            "frame": 25,
+            "requestedMs": 833.333,
+            "startedMs": 842.931,
+            "capturedMs": 863.184,
+            "writtenMs": 863.591
+          },
+          {
+            "frame": 26,
+            "requestedMs": 866.667,
+            "startedMs": 874.202,
+            "capturedMs": 894.033,
+            "writtenMs": 894.443
+          },
+          {
+            "frame": 27,
+            "requestedMs": 900,
+            "startedMs": 905.34,
+            "capturedMs": 910.73,
+            "writtenMs": 911.199
+          },
+          {
+            "frame": 28,
+            "requestedMs": 933.333,
+            "startedMs": 935.899,
+            "capturedMs": 945.484,
+            "writtenMs": 945.888
+          },
+          {
+            "frame": 29,
+            "requestedMs": 966.667,
+            "startedMs": 967.347,
+            "capturedMs": 977.751,
+            "writtenMs": 978.156
+          },
+          {
+            "frame": 30,
+            "requestedMs": 1000,
+            "startedMs": 1013.677,
+            "capturedMs": 1027.145,
+            "writtenMs": 1027.546
+          },
+          {
+            "frame": 31,
+            "requestedMs": 1033.333,
+            "startedMs": 1044.285,
+            "capturedMs": 1060.884,
+            "writtenMs": 1061.295
+          },
+          {
+            "frame": 32,
+            "requestedMs": 1066.667,
+            "startedMs": 1075.924,
+            "capturedMs": 1094.024,
+            "writtenMs": 1094.429
+          },
+          {
+            "frame": 33,
+            "requestedMs": 1100,
+            "startedMs": 1106.907,
+            "capturedMs": 1110.928,
+            "writtenMs": 1111.334
+          },
+          {
+            "frame": 34,
+            "requestedMs": 1133.333,
+            "startedMs": 1137.938,
+            "capturedMs": 1144.589,
+            "writtenMs": 1144.998
+          },
+          {
+            "frame": 35,
+            "requestedMs": 1166.667,
+            "startedMs": 1169.366,
+            "capturedMs": 1177.112,
+            "writtenMs": 1177.519
+          },
+          {
+            "frame": 36,
+            "requestedMs": 1200,
+            "startedMs": 1200.76,
+            "capturedMs": 1210.5,
+            "writtenMs": 1210.946
+          },
+          {
+            "frame": 37,
+            "requestedMs": 1233.333,
+            "startedMs": 1247.774,
+            "capturedMs": 1260.659,
+            "writtenMs": 1261.067
+          },
+          {
+            "frame": 38,
+            "requestedMs": 1266.667,
+            "startedMs": 1279.22,
+            "capturedMs": 1294.112,
+            "writtenMs": 1294.523
+          },
+          {
+            "frame": 39,
+            "requestedMs": 1300,
+            "startedMs": 1311.361,
+            "capturedMs": 1329.593,
+            "writtenMs": 1329.996
+          },
+          {
+            "frame": 40,
+            "requestedMs": 1333.333,
+            "startedMs": 1342.294,
+            "capturedMs": 1360.742,
+            "writtenMs": 1361.145
+          },
+          {
+            "frame": 41,
+            "requestedMs": 1366.667,
+            "startedMs": 1373.267,
+            "capturedMs": 1377.772,
+            "writtenMs": 1378.192
+          },
+          {
+            "frame": 42,
+            "requestedMs": 1400,
+            "startedMs": 1404.215,
+            "capturedMs": 1414.155,
+            "writtenMs": 1414.569
+          },
+          {
+            "frame": 43,
+            "requestedMs": 1433.333,
+            "startedMs": 1434.638,
+            "capturedMs": 1445.678,
+            "writtenMs": 1446.09
+          },
+          {
+            "frame": 44,
+            "requestedMs": 1466.667,
+            "startedMs": 1481.163,
+            "capturedMs": 1494.788,
+            "writtenMs": 1495.19
+          },
+          {
+            "frame": 45,
+            "requestedMs": 1500,
+            "startedMs": 1512.569,
+            "capturedMs": 1527.642,
+            "writtenMs": 1528.06
+          },
+          {
+            "frame": 46,
+            "requestedMs": 1533.333,
+            "startedMs": 1543.05,
+            "capturedMs": 1561,
+            "writtenMs": 1561.412
+          },
+          {
+            "frame": 47,
+            "requestedMs": 1566.667,
+            "startedMs": 1574.107,
+            "capturedMs": 1577.937,
+            "writtenMs": 1578.341
+          },
+          {
+            "frame": 48,
+            "requestedMs": 1600,
+            "startedMs": 1605.252,
+            "capturedMs": 1611.446,
+            "writtenMs": 1611.854
+          },
+          {
+            "frame": 49,
+            "requestedMs": 1633.333,
+            "startedMs": 1636.608,
+            "capturedMs": 1644.742,
+            "writtenMs": 1645.144
+          },
+          {
+            "frame": 50,
+            "requestedMs": 1666.667,
+            "startedMs": 1668.069,
+            "capturedMs": 1677.634,
+            "writtenMs": 1678.103
+          },
+          {
+            "frame": 51,
+            "requestedMs": 1700,
+            "startedMs": 1700.203,
+            "capturedMs": 1712.423,
+            "writtenMs": 1712.832
+          },
+          {
+            "frame": 52,
+            "requestedMs": 1733.333,
+            "startedMs": 1746.577,
+            "capturedMs": 1761.068,
+            "writtenMs": 1761.483
+          },
+          {
+            "frame": 53,
+            "requestedMs": 1766.667,
+            "startedMs": 1777.378,
+            "capturedMs": 1797.226,
+            "writtenMs": 1797.628
+          },
+          {
+            "frame": 54,
+            "requestedMs": 1800,
+            "startedMs": 1807.703,
+            "capturedMs": 1811.738,
+            "writtenMs": 1812.141
+          },
+          {
+            "frame": 55,
+            "requestedMs": 1833.333,
+            "startedMs": 1838.168,
+            "capturedMs": 1845.734,
+            "writtenMs": 1846.212
+          },
+          {
+            "frame": 56,
+            "requestedMs": 1866.667,
+            "startedMs": 1868.924,
+            "capturedMs": 1878.98,
+            "writtenMs": 1879.401
+          },
+          {
+            "frame": 57,
+            "requestedMs": 1900,
+            "startedMs": 1900.38,
+            "capturedMs": 1911.231,
+            "writtenMs": 1911.638
+          },
+          {
+            "frame": 58,
+            "requestedMs": 1933.333,
+            "startedMs": 1947.023,
+            "capturedMs": 1961.702,
+            "writtenMs": 1962.111
+          },
+          {
+            "frame": 59,
+            "requestedMs": 1966.667,
+            "startedMs": 1978.317,
+            "capturedMs": 1995.121,
+            "writtenMs": 1995.532
+          },
+          {
+            "frame": 60,
+            "requestedMs": 2000,
+            "startedMs": 2008.575,
+            "capturedMs": 2028.882,
+            "writtenMs": 2029.299
+          },
+          {
+            "frame": 61,
+            "requestedMs": 2033.333,
+            "startedMs": 2040.099,
+            "capturedMs": 2044.889,
+            "writtenMs": 2045.3
+          },
+          {
+            "frame": 62,
+            "requestedMs": 2066.667,
+            "startedMs": 2072.174,
+            "capturedMs": 2078.845,
+            "writtenMs": 2079.264
+          },
+          {
+            "frame": 63,
+            "requestedMs": 2100,
+            "startedMs": 2104.272,
+            "capturedMs": 2111.219,
+            "writtenMs": 2111.638
+          },
+          {
+            "frame": 64,
+            "requestedMs": 2133.333,
+            "startedMs": 2134.637,
+            "capturedMs": 2145.063,
+            "writtenMs": 2145.474
+          },
+          {
+            "frame": 65,
+            "requestedMs": 2166.667,
+            "startedMs": 2181.126,
+            "capturedMs": 2195.001,
+            "writtenMs": 2195.404
+          },
+          {
+            "frame": 66,
+            "requestedMs": 2200,
+            "startedMs": 2211.621,
+            "capturedMs": 2228.415,
+            "writtenMs": 2228.839
+          },
+          {
+            "frame": 67,
+            "requestedMs": 2233.333,
+            "startedMs": 2242.821,
+            "capturedMs": 2265.137,
+            "writtenMs": 2265.541
+          },
+          {
+            "frame": 68,
+            "requestedMs": 2266.667,
+            "startedMs": 2273.279,
+            "capturedMs": 2279.742,
+            "writtenMs": 2280.142
+          },
+          {
+            "frame": 69,
+            "requestedMs": 2300,
+            "startedMs": 2304.754,
+            "capturedMs": 2311.876,
+            "writtenMs": 2312.286
+          },
+          {
+            "frame": 70,
+            "requestedMs": 2333.333,
+            "startedMs": 2335.552,
+            "capturedMs": 2345.775,
+            "writtenMs": 2346.176
+          },
+          {
+            "frame": 71,
+            "requestedMs": 2366.667,
+            "startedMs": 2366.67,
+            "capturedMs": 2378.625,
+            "writtenMs": 2379.054
+          },
+          {
+            "frame": 72,
+            "requestedMs": 2400,
+            "startedMs": 2411.986,
+            "capturedMs": 2428.498,
+            "writtenMs": 2428.907
+          },
+          {
+            "frame": 73,
+            "requestedMs": 2433.333,
+            "startedMs": 2443.511,
+            "capturedMs": 2461.939,
+            "writtenMs": 2462.339
+          },
+          {
+            "frame": 74,
+            "requestedMs": 2466.667,
+            "startedMs": 2475.049,
+            "capturedMs": 2478.98,
+            "writtenMs": 2479.384
+          },
+          {
+            "frame": 75,
+            "requestedMs": 2500,
+            "startedMs": 2506.631,
+            "capturedMs": 2511.65,
+            "writtenMs": 2512.051
+          },
+          {
+            "frame": 76,
+            "requestedMs": 2533.333,
+            "startedMs": 2538.247,
+            "capturedMs": 2546.167,
+            "writtenMs": 2546.575
+          },
+          {
+            "frame": 77,
+            "requestedMs": 2566.667,
+            "startedMs": 2569.633,
+            "capturedMs": 2578.833,
+            "writtenMs": 2579.24
+          },
+          {
+            "frame": 78,
+            "requestedMs": 2600,
+            "startedMs": 2601.619,
+            "capturedMs": 2612.156,
+            "writtenMs": 2612.577
+          },
+          {
+            "frame": 79,
+            "requestedMs": 2633.333,
+            "startedMs": 2647.576,
+            "capturedMs": 2664.027,
+            "writtenMs": 2664.493
+          },
+          {
+            "frame": 80,
+            "requestedMs": 2666.667,
+            "startedMs": 2677.786,
+            "capturedMs": 2695.47,
+            "writtenMs": 2695.898
+          },
+          {
+            "frame": 81,
+            "requestedMs": 2700,
+            "startedMs": 2708.63,
+            "capturedMs": 2712.008,
+            "writtenMs": 2712.417
+          },
+          {
+            "frame": 82,
+            "requestedMs": 2733.333,
+            "startedMs": 2739.223,
+            "capturedMs": 2745.953,
+            "writtenMs": 2746.387
+          },
+          {
+            "frame": 83,
+            "requestedMs": 2766.667,
+            "startedMs": 2771.225,
+            "capturedMs": 2778.513,
+            "writtenMs": 2778.941
+          },
+          {
+            "frame": 84,
+            "requestedMs": 2800,
+            "startedMs": 2802.713,
+            "capturedMs": 2812.072,
+            "writtenMs": 2812.478
+          },
+          {
+            "frame": 85,
+            "requestedMs": 2833.333,
+            "startedMs": 2833.502,
+            "capturedMs": 2846.07,
+            "writtenMs": 2846.486
+          },
+          {
+            "frame": 86,
+            "requestedMs": 2866.667,
+            "startedMs": 2880.573,
+            "capturedMs": 2896.261,
+            "writtenMs": 2896.663
+          },
+          {
+            "frame": 87,
+            "requestedMs": 2900,
+            "startedMs": 2911.77,
+            "capturedMs": 2929.725,
+            "writtenMs": 2930.145
+          },
+          {
+            "frame": 88,
+            "requestedMs": 2933.333,
+            "startedMs": 2943.214,
+            "capturedMs": 2963.02,
+            "writtenMs": 2963.432
+          },
+          {
+            "frame": 89,
+            "requestedMs": 2966.667,
+            "startedMs": 2973.305,
+            "capturedMs": 2979.111,
+            "writtenMs": 2979.526
+          },
+          {
+            "frame": 90,
+            "requestedMs": 3000,
+            "startedMs": 3004.197,
+            "capturedMs": 3012.096,
+            "writtenMs": 3012.523
+          },
+          {
+            "frame": 91,
+            "requestedMs": 3033.333,
+            "startedMs": 3034.206,
+            "capturedMs": 3047.561,
+            "writtenMs": 3047.968
+          },
+          {
+            "frame": 92,
+            "requestedMs": 3066.667,
+            "startedMs": 3081.621,
+            "capturedMs": 3096.7,
+            "writtenMs": 3097.15
+          },
+          {
+            "frame": 93,
+            "requestedMs": 3100,
+            "startedMs": 3112.214,
+            "capturedMs": 3129.376,
+            "writtenMs": 3129.809
+          },
+          {
+            "frame": 94,
+            "requestedMs": 3133.333,
+            "startedMs": 3143.317,
+            "capturedMs": 3162.825,
+            "writtenMs": 3163.272
+          },
+          {
+            "frame": 95,
+            "requestedMs": 3166.667,
+            "startedMs": 3175.912,
+            "capturedMs": 3195.989,
+            "writtenMs": 3196.422
+          },
+          {
+            "frame": 96,
+            "requestedMs": 3200,
+            "startedMs": 3207.36,
+            "capturedMs": 3212.948,
+            "writtenMs": 3213.383
+          },
+          {
+            "frame": 97,
+            "requestedMs": 3233.333,
+            "startedMs": 3238.419,
+            "capturedMs": 3246.375,
+            "writtenMs": 3246.812
+          },
+          {
+            "frame": 98,
+            "requestedMs": 3266.667,
+            "startedMs": 3269.766,
+            "capturedMs": 3279.758,
+            "writtenMs": 3280.167
+          },
+          {
+            "frame": 99,
+            "requestedMs": 3300,
+            "startedMs": 3300.779,
+            "capturedMs": 3312.746,
+            "writtenMs": 3313.16
+          },
+          {
+            "frame": 100,
+            "requestedMs": 3333.333,
+            "startedMs": 3346.365,
+            "capturedMs": 3362.824,
+            "writtenMs": 3363.228
+          },
+          {
+            "frame": 101,
+            "requestedMs": 3366.667,
+            "startedMs": 3377.66,
+            "capturedMs": 3395.983,
+            "writtenMs": 3396.39
+          },
+          {
+            "frame": 102,
+            "requestedMs": 3400,
+            "startedMs": 3409.362,
+            "capturedMs": 3414.197,
+            "writtenMs": 3414.621
+          },
+          {
+            "frame": 103,
+            "requestedMs": 3433.333,
+            "startedMs": 3439.727,
+            "capturedMs": 3446.141,
+            "writtenMs": 3446.548
+          },
+          {
+            "frame": 104,
+            "requestedMs": 3466.667,
+            "startedMs": 3471.145,
+            "capturedMs": 3479.925,
+            "writtenMs": 3480.334
+          },
+          {
+            "frame": 105,
+            "requestedMs": 3500,
+            "startedMs": 3503.157,
+            "capturedMs": 3513.238,
+            "writtenMs": 3513.648
+          },
+          {
+            "frame": 106,
+            "requestedMs": 3533.333,
+            "startedMs": 3534.416,
+            "capturedMs": 3546.476,
+            "writtenMs": 3546.899
+          },
+          {
+            "frame": 107,
+            "requestedMs": 3566.667,
+            "startedMs": 3566.521,
+            "capturedMs": 3583.045,
+            "writtenMs": 3583.444
+          },
+          {
+            "frame": 108,
+            "requestedMs": 3600,
+            "startedMs": 3612.983,
+            "capturedMs": 3629.809,
+            "writtenMs": 3630.217
+          },
+          {
+            "frame": 109,
+            "requestedMs": 3633.333,
+            "startedMs": 3643.495,
+            "capturedMs": 3662.71,
+            "writtenMs": 3663.155
+          },
+          {
+            "frame": 110,
+            "requestedMs": 3666.667,
+            "startedMs": 3674.334,
+            "capturedMs": 3679.343,
+            "writtenMs": 3679.816
+          },
+          {
+            "frame": 111,
+            "requestedMs": 3700,
+            "startedMs": 3705.491,
+            "capturedMs": 3713.437,
+            "writtenMs": 3713.923
+          },
+          {
+            "frame": 112,
+            "requestedMs": 3733.333,
+            "startedMs": 3736.934,
+            "capturedMs": 3746.112,
+            "writtenMs": 3746.522
+          },
+          {
+            "frame": 113,
+            "requestedMs": 3766.667,
+            "startedMs": 3767.731,
+            "capturedMs": 3780.569,
+            "writtenMs": 3780.989
+          },
+          {
+            "frame": 114,
+            "requestedMs": 3800,
+            "startedMs": 3813.668,
+            "capturedMs": 3830.018,
+            "writtenMs": 3830.424
+          },
+          {
+            "frame": 115,
+            "requestedMs": 3833.333,
+            "startedMs": 3845.065,
+            "capturedMs": 3863.196,
+            "writtenMs": 3863.609
+          },
+          {
+            "frame": 116,
+            "requestedMs": 3866.667,
+            "startedMs": 3876.456,
+            "capturedMs": 3896.827,
+            "writtenMs": 3897.233
+          },
+          {
+            "frame": 117,
+            "requestedMs": 3900,
+            "startedMs": 3907.807,
+            "capturedMs": 3913.101,
+            "writtenMs": 3913.504
+          },
+          {
+            "frame": 118,
+            "requestedMs": 3933.333,
+            "startedMs": 3939.399,
+            "capturedMs": 3946.73,
+            "writtenMs": 3947.136
+          },
+          {
+            "frame": 119,
+            "requestedMs": 3966.667,
+            "startedMs": 3970.477,
+            "capturedMs": 3979.894,
+            "writtenMs": 3980.344
+          },
+          {
+            "frame": 120,
+            "requestedMs": 4000,
+            "startedMs": 4002.002,
+            "capturedMs": 4013.17,
+            "writtenMs": 4013.596
+          },
+          {
+            "frame": 121,
+            "requestedMs": 4033.333,
+            "startedMs": 4033.025,
+            "capturedMs": 4049.438,
+            "writtenMs": 4049.878
+          },
+          {
+            "frame": 122,
+            "requestedMs": 4066.667,
+            "startedMs": 4080.241,
+            "capturedMs": 4096.977,
+            "writtenMs": 4097.467
+          },
+          {
+            "frame": 123,
+            "requestedMs": 4100,
+            "startedMs": 4111.688,
+            "capturedMs": 4130.902,
+            "writtenMs": 4131.307
+          },
+          {
+            "frame": 124,
+            "requestedMs": 4133.333,
+            "startedMs": 4143.132,
+            "capturedMs": 4148.992,
+            "writtenMs": 4149.405
+          },
+          {
+            "frame": 125,
+            "requestedMs": 4166.667,
+            "startedMs": 4174.493,
+            "capturedMs": 4180.264,
+            "writtenMs": 4180.67
+          },
+          {
+            "frame": 126,
+            "requestedMs": 4200,
+            "startedMs": 4205.309,
+            "capturedMs": 4213.944,
+            "writtenMs": 4214.35
+          },
+          {
+            "frame": 127,
+            "requestedMs": 4233.333,
+            "startedMs": 4236.483,
+            "capturedMs": 4247.043,
+            "writtenMs": 4247.453
+          },
+          {
+            "frame": 128,
+            "requestedMs": 4266.667,
+            "startedMs": 4267.44,
+            "capturedMs": 4280.159,
+            "writtenMs": 4280.582
+          },
+          {
+            "frame": 129,
+            "requestedMs": 4300,
+            "startedMs": 4312.234,
+            "capturedMs": 4330.521,
+            "writtenMs": 4330.926
+          },
+          {
+            "frame": 130,
+            "requestedMs": 4333.333,
+            "startedMs": 4343.233,
+            "capturedMs": 4346.823,
+            "writtenMs": 4347.24
+          },
+          {
+            "frame": 131,
+            "requestedMs": 4366.667,
+            "startedMs": 4375.388,
+            "capturedMs": 4379.79,
+            "writtenMs": 4380.195
+          },
+          {
+            "frame": 132,
+            "requestedMs": 4400,
+            "startedMs": 4406.52,
+            "capturedMs": 4413.874,
+            "writtenMs": 4414.288
+          },
+          {
+            "frame": 133,
+            "requestedMs": 4433.333,
+            "startedMs": 4437.552,
+            "capturedMs": 4447.804,
+            "writtenMs": 4448.209
+          },
+          {
+            "frame": 134,
+            "requestedMs": 4466.667,
+            "startedMs": 4468.433,
+            "capturedMs": 4480.322,
+            "writtenMs": 4480.74
+          },
+          {
+            "frame": 135,
+            "requestedMs": 4500,
+            "startedMs": 4499.996,
+            "capturedMs": 4516.797,
+            "writtenMs": 4517.219
+          },
+          {
+            "frame": 136,
+            "requestedMs": 4533.333,
+            "startedMs": 4545.909,
+            "capturedMs": 4564.077,
+            "writtenMs": 4564.536
+          },
+          {
+            "frame": 137,
+            "requestedMs": 4566.667,
+            "startedMs": 4576.867,
+            "capturedMs": 4580.446,
+            "writtenMs": 4580.854
+          },
+          {
+            "frame": 138,
+            "requestedMs": 4600,
+            "startedMs": 4607.836,
+            "capturedMs": 4615.957,
+            "writtenMs": 4616.388
+          },
+          {
+            "frame": 139,
+            "requestedMs": 4633.333,
+            "startedMs": 4638.806,
+            "capturedMs": 4647.133,
+            "writtenMs": 4647.541
+          },
+          {
+            "frame": 140,
+            "requestedMs": 4666.667,
+            "startedMs": 4670.88,
+            "capturedMs": 4680.38,
+            "writtenMs": 4680.793
+          },
+          {
+            "frame": 141,
+            "requestedMs": 4700,
+            "startedMs": 4702.248,
+            "capturedMs": 4714.411,
+            "writtenMs": 4714.827
+          },
+          {
+            "frame": 142,
+            "requestedMs": 4733.333,
+            "startedMs": 4748.452,
+            "capturedMs": 4764.311,
+            "writtenMs": 4764.743
+          },
+          {
+            "frame": 143,
+            "requestedMs": 4766.667,
+            "startedMs": 4779.661,
+            "capturedMs": 4797.619,
+            "writtenMs": 4798.029
+          },
+          {
+            "frame": 144,
+            "requestedMs": 4800,
+            "startedMs": 4811.188,
+            "capturedMs": 4831.106,
+            "writtenMs": 4831.529
+          },
+          {
+            "frame": 145,
+            "requestedMs": 4833.333,
+            "startedMs": 4842.187,
+            "capturedMs": 4847.152,
+            "writtenMs": 4847.571
+          },
+          {
+            "frame": 146,
+            "requestedMs": 4866.667,
+            "startedMs": 4872.628,
+            "capturedMs": 4880.97,
+            "writtenMs": 4881.378
+          },
+          {
+            "frame": 147,
+            "requestedMs": 4900,
+            "startedMs": 4903.587,
+            "capturedMs": 4914.291,
+            "writtenMs": 4914.704
+          },
+          {
+            "frame": 148,
+            "requestedMs": 4933.333,
+            "startedMs": 4934.826,
+            "capturedMs": 4948.023,
+            "writtenMs": 4948.443
+          },
+          {
+            "frame": 149,
+            "requestedMs": 4966.667,
+            "startedMs": 4981.62,
+            "capturedMs": 4998.3,
+            "writtenMs": 4998.714
+          }
+        ]
+      }
+    }
+  ],
+  "motionResolution": [
+    1280,
+    720
+  ],
+  "frameCosts": [
+    {
+      "camera": "01-park-lawn",
+      "side": "B",
+      "sharedMachine": true,
+      "url": "http://127.0.0.1:50866/frames",
+      "requestedWindowMs": 3000,
+      "warmupMs": 3000,
+      "frames": 46,
+      "engineFrames": 46,
+      "sampled": 46,
+      "dropped": 0,
+      "windowMs": 3070.103,
+      "fps": 14.983210661010396,
+      "meanMs": 66.73886956521739,
+      "medianMs": 65.0790023803711,
+      "p95Ms": 71.9710006713867,
+      "p99Ms": 75.1689987182617,
+      "worstMs": 75.169,
+      "bestMs": 62.6,
+      "engine": {
+        "bufferMemoryBytes": 973481966,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "textureMemoryBytes": 485818368,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 3618832384,
+        "vsyncMode": 0
+      },
+      "caveats": [
+        "the window drew 46 frames, too few to check whether the client was still warming up; that check needs 50, so lengthen --window-ms if you need it"
+      ]
+    },
+    {
+      "camera": "02-waterfront-promenade",
+      "side": "B",
+      "sharedMachine": true,
+      "url": "http://127.0.0.1:50866/frames",
+      "requestedWindowMs": 3000,
+      "warmupMs": 3000,
+      "frames": 177,
+      "engineFrames": 177,
+      "sampled": 177,
+      "dropped": 0,
+      "windowMs": 3029.215,
+      "fps": 58.4309796432409,
+      "meanMs": 17.113661016949152,
+      "medianMs": 17.113000869751,
+      "p95Ms": 17.2199993133545,
+      "p99Ms": 17.2719993591309,
+      "worstMs": 17.285,
+      "bestMs": 16.803,
+      "engine": {
+        "bufferMemoryBytes": 973481966,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "textureMemoryBytes": 485818368,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 3635609600,
+        "vsyncMode": 0
+      },
+      "caveats": []
+    },
+    {
+      "camera": "03-shopping-street",
+      "side": "B",
+      "sharedMachine": true,
+      "url": "http://127.0.0.1:50866/frames",
+      "requestedWindowMs": 3000,
+      "warmupMs": 3000,
+      "frames": 150,
+      "engineFrames": 150,
+      "sampled": 150,
+      "dropped": 0,
+      "windowMs": 3020.85,
+      "fps": 49.654898455732656,
+      "meanMs": 20.137980000000002,
+      "medianMs": 20.1340007781982,
+      "p95Ms": 20.2910003662109,
+      "p99Ms": 20.3759994506836,
+      "worstMs": 20.377,
+      "bestMs": 19.541,
+      "engine": {
+        "bufferMemoryBytes": 973481966,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "textureMemoryBytes": 485818368,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 3635609600,
+        "vsyncMode": 0
+      },
+      "caveats": []
+    },
+    {
+      "camera": "04-under-bridge-street",
+      "side": "B",
+      "sharedMachine": true,
+      "url": "http://127.0.0.1:50866/frames",
+      "requestedWindowMs": 3000,
+      "warmupMs": 3000,
+      "frames": 61,
+      "engineFrames": 61,
+      "sampled": 61,
+      "dropped": 0,
+      "windowMs": 3020.109,
+      "fps": 20.197946497957524,
+      "meanMs": 49.50844262295082,
+      "medianMs": 49.5449981689453,
+      "p95Ms": 49.7550010681152,
+      "p99Ms": 49.875,
+      "worstMs": 49.875,
+      "bestMs": 49.103,
+      "engine": {
+        "bufferMemoryBytes": 973481966,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "textureMemoryBytes": 485818368,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 3635609600,
+        "vsyncMode": 0
+      },
+      "caveats": []
+    },
+    {
+      "camera": "05-intersection",
+      "side": "B",
+      "sharedMachine": true,
+      "url": "http://127.0.0.1:50866/frames",
+      "requestedWindowMs": 3000,
+      "warmupMs": 3000,
+      "frames": 69,
+      "engineFrames": 69,
+      "sampled": 69,
+      "dropped": 0,
+      "windowMs": 3042.774,
+      "fps": 22.676675954244384,
+      "meanMs": 44.09666666666667,
+      "medianMs": 44.1479988098145,
+      "p95Ms": 44.3110008239746,
+      "p99Ms": 44.3849983215332,
+      "worstMs": 44.385,
+      "bestMs": 43.656,
+      "engine": {
+        "bufferMemoryBytes": 973481966,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingMethod": "forward_plus",
+        "textureMemoryBytes": 485818368,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 3635609600,
+        "vsyncMode": 0
+      },
+      "caveats": []
+    }
+  ],
+  "peers": {
+    "instances": [
+      {
+        "pid": 27584,
+        "kind": "game",
+        "instance": "prebuilt-arena-export",
+        "projectPath": "D:\\work\\godmode-roguelite-worktrees\\texture-pass98-20261010",
+        "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\cc3d84b771fe\\game-prebuilt-arena-export.log",
+        "inspectionUrl": "http://127.0.0.1:50819/inspect",
+        "inspectPort": 50819,
+        "startedAt": "2026-10-10T07:46:44.531Z",
+        "sessionId": "s-mv23c7fq-00a05f6a086d",
+        "processStartToken": "Saturday, October 10, 2026 3:46:44 AM",
+        "alive": true
+      }
+    ]
+  },
+  "overview": {
+    "motion": "2026-10-08/frames/world-fill-corner-trees-batch37/motion.mp4",
+    "comparison": "2026-10-08/frames/world-fill-corner-trees-batch37/comparison.png",
+    "after": "2026-10-08/frames/world-fill-corner-trees-batch37/after.png"
+  }
+}
