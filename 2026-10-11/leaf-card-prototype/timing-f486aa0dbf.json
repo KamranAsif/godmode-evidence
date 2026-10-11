@@ -1,0 +1,83 @@
+{
+  "commit": "d0ea07eb23b1756eda8eac5659839fb3cd5e82e0",
+  "scope": "Isolated native prototype stage; identical camera, lighting and paving with and without 100 leaf clumps. Includes alpha cutouts, shadows and postprocessing; not full-map gameplay timing.",
+  "engine": {
+    "bufferMemoryBytes": 37446836,
+    "displayServer": "Windows",
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "taa": true,
+    "textureMemoryBytes": 523689984,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 668917760,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "atlasProvenance": "Mac lane built-in Codex image generator; source and processing hashes committed.",
+  "cardsPerClump": 42,
+  "totalCards": 4200,
+  "triangles": 8400,
+  "baselineGpuMs": 1.63180852269938,
+  "hundredClumpGpuMs": 1.978986403014319,
+  "addedGpuMs": 0.347177880314939,
+  "windows": [
+    {
+      "clumps": 0,
+      "frames": 4306,
+      "windowMs": 8012.504,
+      "warmupMs": 3000,
+      "gpuMs": 1.628566186731491,
+      "renderCpuMs": 0.2376525773836809,
+      "visiblePrimitives": 12.0,
+      "shadowPrimitives": 48.0,
+      "caveats": []
+    },
+    {
+      "clumps": 100,
+      "frames": 3626,
+      "windowMs": 8007.849,
+      "warmupMs": 3000,
+      "gpuMs": 1.9777341428476338,
+      "renderCpuMs": 0.2546174843306051,
+      "visiblePrimitives": 8412.0,
+      "shadowPrimitives": 33648.0,
+      "caveats": []
+    },
+    {
+      "clumps": 0,
+      "frames": 4306,
+      "windowMs": 8006.085,
+      "warmupMs": 3000,
+      "gpuMs": 1.635050858667269,
+      "renderCpuMs": 0.24345169498429867,
+      "visiblePrimitives": 12.0,
+      "shadowPrimitives": 48.0,
+      "caveats": []
+    },
+    {
+      "clumps": 100,
+      "frames": 3616,
+      "windowMs": 8005.434,
+      "warmupMs": 3000,
+      "gpuMs": 1.980238663181004,
+      "renderCpuMs": 0.25586587364529867,
+      "visiblePrimitives": 8412.0,
+      "shadowPrimitives": 33648.0,
+      "caveats": []
+    }
+  ],
+  "renderLogWarningsAndErrors": [],
+  "rendererStopped": true,
+  "gpuHoldReleased": true
+}
