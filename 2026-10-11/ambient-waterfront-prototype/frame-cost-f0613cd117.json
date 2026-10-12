@@ -1,0 +1,119 @@
+{
+  "scope": "Waterfront scenery prototype in the shipped arena; cosmetic gunfire fixture. Gameplay also smoked against real player shooting.",
+  "camera": {
+    "id": "02-waterfront-promenade",
+    "position": [
+      -435,
+      -6.5,
+      -484
+    ],
+    "yaw": -0.93,
+    "pitch": -0.29,
+    "fov": 45
+  },
+  "engine": {
+    "bufferMemoryBytes": 2112045884,
+    "displayServer": "Windows",
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "taa": true,
+    "textureMemoryBytes": 731979776,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 5098102784,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "populationCap": 12,
+  "method": "GPU hold; uncapped production detail; TAA; two alternating on/off 10-second windows with 2-second warmup each; no inspections or captures inside windows.",
+  "samples": [
+    {
+      "sample": "on-1",
+      "frames": 1085,
+      "windowMs": 10012.123,
+      "meanMs": 9.227630414746542,
+      "medianMs": 9.22999954223633,
+      "p95Ms": 9.36400032043457,
+      "renderCpuMs": 2.0171207379635576,
+      "renderGpuMs": 8.993839635717151,
+      "caveats": []
+    },
+    {
+      "sample": "off-1",
+      "frames": 1083,
+      "windowMs": 10015.849,
+      "meanMs": 9.248107109879964,
+      "medianMs": 9.24699974060059,
+      "p95Ms": 9.38300037384033,
+      "renderCpuMs": 2.0204709147482363,
+      "renderGpuMs": 9.0076971371088,
+      "caveats": []
+    },
+    {
+      "sample": "on-2",
+      "frames": 1078,
+      "windowMs": 10003.909,
+      "meanMs": 9.279931354359926,
+      "medianMs": 9.27700042724609,
+      "p95Ms": 9.40100002288818,
+      "renderCpuMs": 2.0735565855242113,
+      "renderGpuMs": 9.039124312781224,
+      "caveats": []
+    },
+    {
+      "sample": "off-2",
+      "frames": 1084,
+      "windowMs": 10024.331,
+      "meanMs": 9.247403136531364,
+      "medianMs": 9.24699974060059,
+      "p95Ms": 9.38399982452393,
+      "renderCpuMs": 2.0256051663103136,
+      "renderGpuMs": 9.006166982474806,
+      "caveats": []
+    }
+  ],
+  "averages": {
+    "meanMs": {
+      "on": 9.253780884553233,
+      "off": 9.247755123205664,
+      "delta": 0.0060257613475691585
+    },
+    "medianMs": {
+      "on": 9.253499984741211,
+      "off": 9.24699974060059,
+      "delta": 0.006500244140621447
+    },
+    "p95Ms": {
+      "on": 9.382500171661375,
+      "off": 9.383500099182129,
+      "delta": -0.0009999275207537295
+    },
+    "renderCpuMs": {
+      "on": 2.0453386617438847,
+      "off": 2.0230380405292747,
+      "delta": 0.02230062121460996
+    },
+    "renderGpuMs": {
+      "on": 9.016481974249189,
+      "off": 9.006932059791803,
+      "delta": 0.009549914457386066
+    }
+  },
+  "controllerMeanUpdateMsIncludingInitialization": 0.109793157564344,
+  "collisionBodies": 0,
+  "combatResult": {
+    "hidden": 11,
+    "ambient": 1
+  },
+  "limits": "Small steady-state cost, close to measurement noise. This is a fixed-camera scenery A/B, not a live combat benchmark. CPU and GPU times overlap and must not be added. Bench pose and stand-up are rough; no committed sit clip exists."
+}
