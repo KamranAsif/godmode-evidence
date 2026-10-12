@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-12",
+  "status": "proposal_for_Kamran_review_only",
+  "shippingFontsOrColoursChanged": false,
+  "fixture": "res://tests/fixtures/type_system_review.tscn",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "localBasePath": "D:/work/godmode-roguelite-artifacts/type-system-20261012/artifacts/type-system",
+  "referenceUploadPolicy": "No reference images committed to game repository or evidence main. Copyrighted sources remain local. CC BY-SA trainer screenshot and attribution are on separate evidence branch type-refs-20261012.",
+  "layers": {
+    "os": {
+      "referenceFonts": [
+        {
+          "family": "Segoe UI Variable",
+          "licence": "Proprietary Microsoft; Windows licence does not authorize bundling in game",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/design/signature-experiences/typography",
+          "licenceSource": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+          "confidence": "Verified Windows 11 system family"
+        },
+        {
+          "family": "Courier New (classic trainer address/number fields); inherited toolkit UI labels",
+          "licence": "Courier New: proprietary Microsoft/Monotype; inherited face not conclusively identified",
+          "source": "https://raw.githubusercontent.com/cheat-engine/cheat-engine/7.1/Cheat%20Engine/MainUnit.lfm",
+          "licenceSource": "https://learn.microsoft.com/en-us/typography/fonts/font-faq",
+          "confidence": "7.1 form explicitly names Courier New; label font varies with toolkit/OS"
+        }
+      ],
+      "proposedFont": {
+        "family": "Selawik",
+        "licence": "SIL OFL 1.1",
+        "googleFontsFamily": null,
+        "source": "https://github.com/microsoft/Selawik/releases/tag/1.01",
+        "licenceText": "tests/fixtures/type_system_fonts/Selawik-OFL.txt",
+        "localLicenceText": "fonts/Selawik-OFL.txt",
+        "files": [
+          {
+            "path": "tests/fixtures/type_system_fonts/selawk.ttf",
+            "localPath": "fonts/selawk.ttf",
+            "sha256": "e9d98518d8ac2817782a9a382430463a2e0793ea68350b695bb727d9a830ee1c"
+          },
+          {
+            "path": "tests/fixtures/type_system_fonts/selawksb.ttf",
+            "localPath": "fonts/selawksb.ttf",
+            "sha256": "0a9e9d0549a10f24bef9b3a29e06fe6e0b5c21e7a784c503b048a307841a7783"
+          }
+        ]
+      },
+      "palette": {
+        "A / Sea glass": {
+          "desktop": "#0C2428",
+          "surface": "#F3F7F5",
+          "inset": "#E6EFEB",
+          "text": "#18332C",
+          "muted": "#536B62",
+          "accent": "#007F69",
+          "onAccent": "#FFFFFF",
+          "line": "#CBDAD3"
+        },
+        "B / Warm graphite": {
+          "desktop": "#211F2C",
+          "surface": "#272936",
+          "inset": "#1D1F2A",
+          "text": "#F5F2EB",
+          "muted": "#BDB9CD",
+          "accent": "#F0B86E",
+          "onAccent": "#28202A",
+          "line": "#454354"
+        }
+      },
+      "referenceImages": [
+        {
+          "localPath": "references/windows-light.jpg",
+          "sourceUrl": "https://news.microsoft.com/june-24-2021/",
+          "note": "Official Windows 11 light Start/desktop screenshot; asset filename is Wondows-11-Start.jpg",
+          "licence": "Copyright source owner; internal local review; public rehosting permission not established",
+          "uploadUrl": null
+        },
+        {
+          "localPath": "references/windows-dark.jpg",
+          "sourceUrl": "https://news.microsoft.com/june-24-2021/",
+          "note": "Official Windows 11 dark Start/desktop screenshot",
+          "licence": "Copyright source owner; internal local review; public rehosting permission not established",
+          "uploadUrl": null
+        },
+        {
+          "localPath": "references/classic-trainer.png",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cheat_Engine_7.1.png",
+          "note": "Romainluc, 2020-10-16; unchanged screenshot, disconnected blank application; visual reference only",
+          "licence": "CC BY-SA 4.0; attribution in reference-attribution.md; evidence branch type-refs-20261012",
+          "uploadUrl": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/type-refs-20261012/2026-10-12/type-refs/classic-trainer-b1df6ed927.png"
+        }
+      ],
+      "mockups": {
+        "A": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-12/type-system/osa-101b8d2fa3.png",
+        "B": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-12/type-system/osb-73961a7ba3.png"
+      },
+      "notes": "Regular/Semibold humanist UI; Sea glass recommended for clearer layer separation. Vendor distribution, not Google Fonts. Selawik lacks Segoe UI Variable optical sizing; limited glyph coverage and upstream kerning/hinting caveats."
+    },
+    "twitch": {
+      "referenceFonts": [
+        {
+          "family": "Inter UI / body",
+          "licence": "SIL OFL 1.1",
+          "source": "https://assets.twitch.tv/assets/core-7f25fd96463c5696e9da.css",
+          "licenceSource": "https://github.com/google/fonts/blob/main/ofl/inter/OFL.txt",
+          "confidence": "Verified by live CSS, downloaded WOFF2 name tables, and computed styles"
+        },
+        {
+          "family": "Roobert TWHINT / Roobert display",
+          "licence": "Proprietary Displaay/Twitch custom font; not bundled",
+          "source": "https://displaay.net/typeface/roobert/",
+          "licenceSource": "https://displaay.net/help/licenses",
+          "confidence": "Live --font-display and navigation computed styles; WOFF2 identifies Roobert TWHINT"
+        }
+      ],
+      "proposedFont": {
+        "family": "Inter",
+        "licence": "SIL OFL 1.1",
+        "googleFontsFamily": "Inter",
+        "source": "https://github.com/google/fonts/tree/main/ofl/inter",
+        "licenceText": "assets/fonts/Inter-OFL.txt",
+        "localLicenceText": "fonts/Inter-OFL.txt",
+        "files": [
+          {
+            "path": "assets/fonts/Inter-Variable.ttf",
+            "localPath": "fonts/Inter-Variable.ttf",
+            "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+          }
+        ]
+      },
+      "palette": {
+        "base": "#0E0E10",
+        "panel": "#18181B",
+        "input": "#1F1F23",
+        "text": "#EFEFF1",
+        "muted": "#ADADB8",
+        "accent": "#9146FF",
+        "link": "#BF94FF",
+        "live": "#EB0400"
+      },
+      "referenceImages": [
+        {
+          "localPath": "references/twitch-home.png",
+          "sourceUrl": "https://www.twitch.tv/directory",
+          "note": "Current web UI: Inter body and Roobert display; own public-page capture, 2026-10-12",
+          "licence": "Copyright source owner; internal local review; public rehosting permission not established",
+          "uploadUrl": null
+        },
+        {
+          "localPath": "references/twitch-channel.png",
+          "sourceUrl": "https://www.twitch.tv/twitch",
+          "note": "Official channel with Twitch-produced branded broadcast overlay visible in featured media",
+          "licence": "Copyright source owner; internal local review; public rehosting permission not established",
+          "uploadUrl": null
+        },
+        {
+          "localPath": "references/twitch-chat.png",
+          "sourceUrl": "https://www.twitch.tv/eslcs",
+          "note": "Current channel player/chat: video graphics have creator-selected typography, separate from Twitch UI",
+          "licence": "Copyright source owner; internal local review; public rehosting permission not established",
+          "uploadUrl": null
+        }
+      ],
+      "mockups": {
+        "appChatAndOverlay": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-12/type-system/livetube-933421686d.png"
+      },
+      "notes": "Inter 400/600, opsz 14. All LiveTube display uses open Inter instead of proprietary Roobert. Live Twitch purple token is #9147FF, proposal uses requested #9146FF. Creator-owned video overlay fonts are not dictated by Twitch."
+    },
+    "game": {
+      "referenceFonts": [
+        {
+          "family": "Hitmarker / Hitmarker Text (CoD franchise and product UI)",
+          "licence": "Proprietary exclusive Activision family; no OFL/Apache redistribution grant",
+          "source": "https://brand.callofduty.com/ar/typography/typeface",
+          "licenceSource": "https://brand.callofduty.com/ar/typography/typeface",
+          "confidence": "Official branding/UI documentation; exact ammo face across editions not proven"
+        },
+        {
+          "family": "Purista EA (Battlefield 3); exact Battlefield 2042 ammo family unverified",
+          "licence": "Proprietary EA custom adaptation; retail Purista commercial foundry licence",
+          "source": "https://www.suitcasetype.com/custom-fonts/purista-ea",
+          "licenceSource": "https://www.suitcasetype.com/licensing",
+          "confidence": "Vendor confirms BF3 adaptation; does not establish later HUD font identity"
+        }
+      ],
+      "proposedFont": {
+        "family": "Barlow Condensed",
+        "licence": "SIL OFL 1.1",
+        "googleFontsFamily": "Barlow Condensed",
+        "source": "https://github.com/google/fonts/tree/main/ofl/barlowcondensed",
+        "licenceText": "tests/fixtures/type_system_fonts/BarlowCondensed-OFL.txt",
+        "localLicenceText": "fonts/BarlowCondensed-OFL.txt",
+        "files": [
+          {
+            "path": "tests/fixtures/type_system_fonts/BarlowCondensed-Regular.ttf",
+            "localPath": "fonts/BarlowCondensed-Regular.ttf",
+            "sha256": "583cec5da3b84bc4dc7c9c72e2a565c94d34e431518b19d7e250b7830ad5f996"
+          },
+          {
+            "path": "tests/fixtures/type_system_fonts/BarlowCondensed-SemiBold.ttf",
+            "localPath": "fonts/BarlowCondensed-SemiBold.ttf",
+            "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+          }
+        ]
+      },
+      "palette": {
+        "text": "#F4F7FA",
+        "muted": "#BBC5CE",
+        "surface": "#101820",
+        "accent": "#58D7EA",
+        "enemy": "#FF5148",
+        "warning": "#FFD166"
+      },
+      "referenceImages": [
+        {
+          "localPath": "references/cod-brand-page-45.png",
+          "sourceUrl": "https://www.callofduty.com/cdn/brand/2024/03/CODWM_GUIDELINES_v07.pdf",
+          "note": "Official CoD Warzone Mobile brand guide, printed page 45: gameplay ammo 40/80 and Hitmarker video subtitle treatment; fetched via imgs.callofduty.com mirror",
+          "licence": "Copyright source owner; internal local review; public rehosting permission not established",
+          "uploadUrl": null
+        },
+        {
+          "localPath": "references/bf-poster-0.jpg",
+          "sourceUrl": "https://www.ea.com/en-gb/games/battlefield/battlefield-2042/news/battlefield-briefing-what-we-learned-from-open-beta",
+          "note": "Official Battlefield 2042 in-match HUD video poster: real magazine/reserve counter, minimap and kill feed",
+          "licence": "Copyright source owner; internal local review; public rehosting permission not established",
+          "uploadUrl": null
+        },
+        {
+          "localPath": "references/battlefield-map.png",
+          "sourceUrl": "https://www.ea.com/en-gb/games/battlefield/battlefield-2042/news/battlefield-briefing-what-we-learned-from-open-beta",
+          "note": "Official Battlefield 2042 tactical-map HUD typography and friend/enemy colour separation",
+          "licence": "Copyright source owner; internal local review; public rehosting permission not established",
+          "uploadUrl": null
+        }
+      ],
+      "mockups": {
+        "hudAmmoMinimapKillFeed": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-12/type-system/hud-8c2f590cc9.png"
+      },
+      "notes": "Condensed caps and larger magazine numerals; smaller reserve. Soft shadow and translucent neutral backings. Original Barlow glyphs; not claimed to be a metric clone. Static schematic minimap and illustrative kill feed over the actual cached DUMBO map."
+    }
+  }
+}
