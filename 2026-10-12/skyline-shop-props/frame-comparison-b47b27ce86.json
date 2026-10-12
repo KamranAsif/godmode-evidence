@@ -1,0 +1,87 @@
+{
+  "beforeCommit": "7ceea4eaca085958fb78cd83157679160a2641a3",
+  "afterCommit": "84fa3c0845109ddc4068a9e520aca2d78a7447b8",
+  "isolation": "Same private source-scene snapshot with only production distant horizon refreshed. One renderer, same GPU hold. Water frozen at 10 seconds. No arena prebuild or export.",
+  "size": [
+    2560,
+    1440
+  ],
+  "warmupMs": 6000,
+  "windowMs": 6000,
+  "engine": {
+    "bufferMemoryBytes": 1291513706,
+    "displayServer": "Windows",
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "taa": true,
+    "textureMemoryBytes": 651452416,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 4561231872,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "frames": [
+    {
+      "camera": "01-park-lawn",
+      "position": [
+        -431,
+        -15.5135,
+        -453
+      ],
+      "yaw": 1.12,
+      "pitch": -0.025,
+      "fov": 82,
+      "beforeMedianMs": 9.9680004119873,
+      "afterMedianMs": 10.0590000152588,
+      "beforeP95Ms": 10.2910003662109,
+      "afterP95Ms": 10.3330001831055,
+      "beforeFrames": 602,
+      "afterFrames": 600
+    },
+    {
+      "camera": "02-waterfront-promenade",
+      "position": [
+        -435,
+        -6.5,
+        -484
+      ],
+      "yaw": -0.93,
+      "pitch": -0.29,
+      "fov": 45,
+      "beforeMedianMs": 9.08300018310547,
+      "afterMedianMs": 9.20600032806396,
+      "beforeP95Ms": 9.27799987792969,
+      "afterP95Ms": 9.51700019836426,
+      "beforeFrames": 662,
+      "afterFrames": 654
+    },
+    {
+      "camera": "river-bridge-overview",
+      "position": [
+        -435,
+        -6.5,
+        -484
+      ],
+      "yaw": -0.412,
+      "pitch": 0.095,
+      "fov": 65,
+      "beforeMedianMs": 6.57600021362305,
+      "afterMedianMs": 6.62099981307983,
+      "beforeP95Ms": 6.74399995803833,
+      "afterP95Ms": 6.9850001335144,
+      "beforeFrames": 914,
+      "afterFrames": 901
+    }
+  ]
+}
