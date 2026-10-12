@@ -1,0 +1,92 @@
+{
+  "commit": "66b5696f761d795535618c83bb907fbacb8c8fd2",
+  "scope": "Isolated native 2560x1440 stage, identical paving/light/camera with and without 100 dense-cluster mounds; cutouts, volume AO and shadows included. No whole-map performance claim.",
+  "engine": {
+    "bufferMemoryBytes": 37643004,
+    "displayServer": "Windows",
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "taa": true,
+    "textureMemoryBytes": 520675328,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 702472192,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "cardsPerClump": 60,
+  "clusterCardsPerClump": 48,
+  "leavesPerCluster": 8,
+  "representedLeavesPerClump": 384,
+  "flowerCardsPerClump": 12,
+  "singleFlowerCardsPerClump": 6,
+  "threeFlowerClusterCardsPerClump": 6,
+  "representedBloomsPerClump": 24,
+  "cardsFor100Clumps": 6000,
+  "foliageTrianglesFor100Clumps": 12000,
+  "comparisonTroughCards": 180,
+  "comparisonTrailingIvyCards": 44,
+  "comparisonWallIvyCards": 112,
+  "cropWallIvyCards": 120,
+  "baselineGpuMs": 1.6436442283392505,
+  "hundredClumpGpuMs": 1.9777325680279154,
+  "addedGpuMs": 0.3340883396886649,
+  "windows": [
+    {
+      "clumps": 0,
+      "frames": 3203,
+      "windowMs": 6015.006,
+      "warmupMs": 2000,
+      "gpuMs": 1.6413518554003872,
+      "renderCpuMs": 0.23099906311309085,
+      "visiblePrimitives": 12.0,
+      "shadowPrimitives": 48.0,
+      "caveats": []
+    },
+    {
+      "clumps": 100,
+      "frames": 2726,
+      "windowMs": 6007.576,
+      "warmupMs": 2000,
+      "gpuMs": 1.9740124732715112,
+      "renderCpuMs": 0.24763242820563425,
+      "visiblePrimitives": 12012.0,
+      "shadowPrimitives": 48048.0,
+      "caveats": []
+    },
+    {
+      "clumps": 0,
+      "frames": 3202,
+      "windowMs": 6010.461,
+      "warmupMs": 2000,
+      "gpuMs": 1.6459366012781138,
+      "renderCpuMs": 0.2343803870676087,
+      "visiblePrimitives": 12.0,
+      "shadowPrimitives": 48.0,
+      "caveats": []
+    },
+    {
+      "clumps": 100,
+      "frames": 2704,
+      "windowMs": 6018.495,
+      "warmupMs": 2000,
+      "gpuMs": 1.9814526627843196,
+      "renderCpuMs": 0.24606139027684393,
+      "visiblePrimitives": 12012.0,
+      "shadowPrimitives": 48048.0,
+      "caveats": []
+    }
+  ],
+  "rendererStopped": true,
+  "gpuHoldReleased": true
+}
