@@ -1,0 +1,81 @@
+{
+  "commit": "24e86db722514b3c44fc34ba636844d8c7201e90",
+  "scope": "Isolated stage, revised card rotation/size/HSV; same camera, paving and lighting with and without 100 clumps. Includes cutouts and shadows; not whole-map gameplay.",
+  "engine": {
+    "bufferMemoryBytes": 37441628,
+    "displayServer": "Windows",
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "taa": true,
+    "textureMemoryBytes": 520413184,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 702472192,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "cardsPerClump": 42,
+  "totalCards": 4200,
+  "triangles": 8400,
+  "baselineGpuMs": 1.6467357067993302,
+  "hundredClumpGpuMs": 2.015127567073241,
+  "addedGpuMs": 0.3683918602739107,
+  "windows": [
+    {
+      "clumps": 0,
+      "frames": 3222,
+      "windowMs": 6008.688,
+      "warmupMs": 2000,
+      "gpuMs": 1.6451738062739603,
+      "renderCpuMs": 0.2346185596878302,
+      "visiblePrimitives": 12.0,
+      "shadowPrimitives": 48.0,
+      "caveats": []
+    },
+    {
+      "clumps": 100,
+      "frames": 2691,
+      "windowMs": 6014.171,
+      "warmupMs": 2000,
+      "gpuMs": 2.0147993305012077,
+      "renderCpuMs": 0.24146636910196656,
+      "visiblePrimitives": 8412.0,
+      "shadowPrimitives": 33648.0,
+      "caveats": []
+    },
+    {
+      "clumps": 0,
+      "frames": 3219,
+      "windowMs": 6012.02,
+      "warmupMs": 2000,
+      "gpuMs": 1.6482976073247004,
+      "renderCpuMs": 0.23604224909255514,
+      "visiblePrimitives": 12.0,
+      "shadowPrimitives": 48.0,
+      "caveats": []
+    },
+    {
+      "clumps": 100,
+      "frames": 2681,
+      "windowMs": 6009.294,
+      "warmupMs": 2000,
+      "gpuMs": 2.015455803645274,
+      "renderCpuMs": 0.24389593406027713,
+      "visiblePrimitives": 8412.0,
+      "shadowPrimitives": 33648.0,
+      "caveats": []
+    }
+  ],
+  "rendererStopped": true,
+  "gpuHoldReleased": true
+}
