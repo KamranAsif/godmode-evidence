@@ -1,0 +1,286 @@
+{
+  "issues": [
+    1865,
+    1870
+  ],
+  "base": "3283a77e2",
+  "fix": "ce5d02a58",
+  "playtest": "c19151c4baa3",
+  "playtestAndBaseAimbotSourceBlob": "6f2993fed8bbb30979f7759eb0d279e34398714e",
+  "renderedProfile": "--full --offscreen, capture-scoped GPU hold",
+  "bloodCapture": {
+    "player": {
+      "at": [
+        -527.263671875,
+        -15.9208984375,
+        -419.1904296875
+      ],
+      "health": 100,
+      "loaded": 29,
+      "reserve": 90,
+      "runArmor": 0
+    },
+    "slowMotionScale": 0.05,
+    "note": "Slow motion exposes the brief flesh contact; expiry capture returned to ordinary play time."
+  },
+  "issue1870PlayerPosition": [
+    -243.0947265625,
+    -16.7646484375,
+    -369.71875
+  ],
+  "reproduction": "Hold ADS, kill the lock while the remaining soldiers are hidden behind the parked car, then move one into a clear line outside the initial acquire cone.",
+  "rootCause": "The one-frame kill search discarded the pending acquisition when it found no visible candidate. Losing sight before the death snapshot also discarded the death watch.",
+  "before": {
+    "client": [
+      {
+        "atMs": 678880,
+        "data": {
+          "died": false,
+          "previous": null,
+          "snapshotMs": 678839,
+          "target": "soldier-e11"
+        },
+        "seq": 3,
+        "type": "assist.target"
+      },
+      {
+        "atMs": 680750,
+        "data": {
+          "died": true,
+          "previous": "soldier-e11",
+          "snapshotMs": 680746,
+          "target": null
+        },
+        "seq": 4,
+        "type": "assist.target"
+      }
+    ],
+    "livingEnemy": {
+      "health": 128,
+      "id": "soldier-e12",
+      "position": [
+        -248.263671875,
+        -17.029296875,
+        -378.86328125
+      ]
+    },
+    "target": null,
+    "server": [
+      {
+        "atMs": 680637,
+        "data": {
+          "adminId": "soldier-e11",
+          "attackerId": 2,
+          "died": false,
+          "distanceMeters": 14.9716136448097,
+          "healthAfter": 8,
+          "healthBefore": 28,
+          "level": "soldier",
+          "pelletHits": 1,
+          "region": "body",
+          "requestedDamage": 20,
+          "weapon": "machineGun"
+        },
+        "seq": 388,
+        "type": "admin.damaged"
+      },
+      {
+        "atMs": 680737,
+        "data": {
+          "adminId": "soldier-e11",
+          "level": "soldier",
+          "rosterSize": 2
+        },
+        "seq": 392,
+        "type": "admin.died"
+      },
+      {
+        "atMs": 680737,
+        "data": {
+          "adminId": "soldier-e11",
+          "attackerId": 2,
+          "died": true,
+          "distanceMeters": 15.2644993322694,
+          "healthAfter": 0,
+          "healthBefore": 8,
+          "level": "soldier",
+          "pelletHits": 1,
+          "region": "body",
+          "requestedDamage": 20,
+          "weapon": "machineGun"
+        },
+        "seq": 395,
+        "type": "admin.damaged"
+      }
+    ]
+  },
+  "after": {
+    "client": [
+      {
+        "atMs": 210878,
+        "data": {
+          "blocker": null,
+          "died": false,
+          "previous": null,
+          "reacquiring": false,
+          "snapshotMs": 210837,
+          "target": "soldier-e1"
+        },
+        "seq": 0,
+        "type": "assist.target"
+      },
+      {
+        "atMs": 212760,
+        "data": {
+          "snapshotMs": 212755,
+          "target": "soldier-e1"
+        },
+        "seq": 1,
+        "type": "assist.targetDied"
+      },
+      {
+        "atMs": 212760,
+        "data": {
+          "blocker": null,
+          "died": true,
+          "previous": "soldier-e1",
+          "reacquiring": true,
+          "snapshotMs": 212755,
+          "target": null
+        },
+        "seq": 2,
+        "type": "assist.target"
+      },
+      {
+        "atMs": 213550,
+        "data": {
+          "blocker": null,
+          "died": false,
+          "previous": null,
+          "reacquiring": false,
+          "snapshotMs": 213546,
+          "target": "soldier-e2"
+        },
+        "seq": 3,
+        "type": "assist.target"
+      }
+    ],
+    "livingEnemy": {
+      "health": 128,
+      "id": "soldier-e2",
+      "position": [
+        -249.1552734375,
+        -17.0732421875,
+        -379.806640625
+      ]
+    },
+    "target": "soldier-e2",
+    "turn": {
+      "degrees": 78,
+      "ms": 155
+    },
+    "blockedProbe": {
+      "asset": "",
+      "collider": "StreetVehicleSolid_360",
+      "hit": true,
+      "normal": [
+        0.99970531463623,
+        0.0147574050351977,
+        0.0192738156765699
+      ],
+      "position": [
+        -251.06770324707,
+        -16.4074420928955,
+        -375.042175292969
+      ],
+      "shape": "@CollisionShape3D@6278",
+      "shapeIndex": 0,
+      "surface": "metal"
+    },
+    "clearProbe": {
+      "asset": "",
+      "collider": "",
+      "hit": false,
+      "normal": [
+        0,
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "shape": "",
+      "shapeIndex": -1,
+      "surface": "concrete"
+    },
+    "server": [
+      {
+        "atMs": 212646,
+        "data": {
+          "adminId": "soldier-e1",
+          "attackerId": 2,
+          "died": false,
+          "distanceMeters": 12.9713357343442,
+          "healthAfter": 8,
+          "healthBefore": 28,
+          "level": "soldier",
+          "pelletHits": 1,
+          "region": "body",
+          "requestedDamage": 20,
+          "weapon": "machineGun"
+        },
+        "seq": 59,
+        "type": "admin.damaged"
+      },
+      {
+        "atMs": 212746,
+        "data": {
+          "adminId": "soldier-e1",
+          "level": "soldier",
+          "rosterSize": 2
+        },
+        "seq": 65,
+        "type": "admin.died"
+      },
+      {
+        "atMs": 212746,
+        "data": {
+          "adminId": "soldier-e1",
+          "attackerId": 2,
+          "died": true,
+          "distanceMeters": 12.9710554385742,
+          "healthAfter": 0,
+          "healthBefore": 8,
+          "level": "soldier",
+          "pelletHits": 1,
+          "region": "body",
+          "requestedDamage": 20,
+          "weapon": "machineGun"
+        },
+        "seq": 68,
+        "type": "admin.damaged"
+      }
+    ]
+  },
+  "unitTests": {
+    "baseline": {
+      "passed": 3,
+      "failed": 3
+    },
+    "fixed": {
+      "passed": 21,
+      "failed": 0
+    }
+  },
+  "bloodTuning": {
+    "puffSeconds": 0.2,
+    "particleCount": 2,
+    "baseSizeMeters": 0.16,
+    "dropSpray": false,
+    "stainSeconds": 1.2,
+    "stainProjectionMeters": 0.22,
+    "stainPoolPerOwner": 24
+  }
+}
