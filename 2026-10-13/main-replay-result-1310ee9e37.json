@@ -1,0 +1,29 @@
+{
+  "issue": 1862,
+  "commit": "e025cac19f833b0a2cb9e9c6304585acbf6247e4",
+  "exeSha256": "0e0e9dfb5d598d704ff73e2efce7fd4f331214d7338006ca65b8e3c7fcdeb3ba",
+  "rendered": true,
+  "renderer": "D3D12 Forward+ RX 9070 XT",
+  "nativeClientFingerprintMatches": true,
+  "nativeServerFingerprintMatches": true,
+  "bakedShaderFiles": 289,
+  "gameDevelopmentFilesInPack": 0,
+  "flow": "fresh login, opening dashboard/messages/installer, trainer GO LIVE, first run",
+  "freshUserData": "APPDATA under this worktree and custom dir issue1862-main-replay-s-mv67mox1; empty before launch; original saves untouched",
+  "clientRehookMs": 116,
+  "serverRehookMs": 0,
+  "goLiveToFirstPresentedMs": 33151.67300000001,
+  "windowsResponsiveness": {
+    "samplePeriodMs": 500,
+    "samplesBeforeGameplayCapture": 715,
+    "falseSamples": 12,
+    "firstFalse": "2026-10-13T07:05:33.5810854+00:00",
+    "lastFalse": "2026-10-13T07:05:47.3006877+00:00",
+    "allTrue": false
+  },
+  "recovered": true,
+  "screenshot": "main-first-run.png",
+  "diagnosticOnly": true,
+  "nativeSurfaceAuditNewOverlaps": 3,
+  "notes": "Shared capture lane, not an isolated performance benchmark. Native surface audit has three planter/sidewalk overlaps; unchanged main game content, native save/reload fingerprints verified; private diagnostic cache and publication disabled, no source audit exemption. Guard engine stopped before actual replay."
+}
