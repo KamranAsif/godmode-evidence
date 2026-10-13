@@ -1,0 +1,187 @@
+{
+  "windup": {
+    "time": 752341,
+    "player": [
+      -243.0947265625,
+      -16.7646484375,
+      -369.71875
+    ],
+    "enemy": {
+      "attackPhase": "windup",
+      "attackPhaseStartedAtMs": 752341,
+      "coverPose": "none",
+      "flinchUntilMs": 0,
+      "grounded": true,
+      "health": 900,
+      "id": "marksman-e2",
+      "laggedUntilMs": 0,
+      "lastAttackAtMs": 0,
+      "lastShotHit": false,
+      "leakUntilMs": 0,
+      "level": "soldier",
+      "markedUntilMs": 0,
+      "maxHealth": 900,
+      "position": [
+        -281.7041015625,
+        -16.810546875,
+        -357.103515625
+      ],
+      "shieldHealth": 0,
+      "targetId": 2,
+      "traversal": null,
+      "verticalVelocity": 0,
+      "weapon": "marksman"
+    },
+    "rival": {
+      "alive": true,
+      "armour": 225,
+      "cheats": [
+        "wallhack",
+        "aimbot",
+        "speedHack"
+      ],
+      "deaths": 0,
+      "enemyId": "marksman-e2",
+      "id": "rival-stage",
+      "isRival": true,
+      "killsAgainstPlayer": 0,
+      "name": "LUMBAR",
+      "operator": "marksman-a",
+      "streakKills": 0,
+      "tell": {
+        "cheat": "wallhack",
+        "phase": "active",
+        "untilMs": 754107.6
+      },
+      "tier": 3,
+      "viewers": 20000
+    }
+  },
+  "events": [
+    {
+      "atMs": 753840.8,
+      "data": {
+        "adminId": "marksman-e2",
+        "reason": "lineBroken",
+        "targetId": 2
+      },
+      "seq": 24,
+      "type": "soldier.aimCancelled"
+    },
+    {
+      "atMs": 753873.8,
+      "data": {
+        "adminId": "marksman-e2",
+        "candidates": 10,
+        "cover": false,
+        "found": true,
+        "weapon": "marksman",
+        "withSightline": 2,
+        "x": -255.711917420489,
+        "y": -16.4869073546491,
+        "z": -436.154924585824
+      },
+      "seq": 25,
+      "type": "soldier.spot"
+    }
+  ],
+  "after": {
+    "probe": {
+      "asset": "",
+      "collider": "StreetVehicleSolid_360",
+      "hit": true,
+      "normal": [
+        -0.99970531463623,
+        -0.0147574050351977,
+        -0.0192738156765699
+      ],
+      "position": [
+        -252.98649597168,
+        -16.542552947998,
+        -373.993072509766
+      ],
+      "shape": "@CollisionShape3D@6278",
+      "shapeIndex": 0,
+      "surface": "metal"
+    },
+    "time": 754194,
+    "player": {
+      "accuracySpreadRadians": 0.028,
+      "aiming": false,
+      "alive": true,
+      "category": "assault",
+      "crouching": false,
+      "dashDirectionX": 0,
+      "dashDirectionZ": 0,
+      "dashEndsAtMs": 0,
+      "dashReadyAtMs": 0,
+      "deaths": 0,
+      "fireRateMultiplier": 1,
+      "firedRevealPosition": [
+        0,
+        0,
+        0
+      ],
+      "firedRevealUntilMs": 0,
+      "grenades": 0,
+      "grounded": true,
+      "health": 100,
+      "id": 2,
+      "infiniteAmmo": false,
+      "invincible": false,
+      "kills": 0,
+      "lastInputSequence": 1005,
+      "loadedAmmo": 30,
+      "mantle": null,
+      "movementMultiplier": 1,
+      "name": "GrumpyHornet",
+      "pitch": 0,
+      "position": [
+        -243.0947265625,
+        -16.966796875,
+        -380
+      ],
+      "reloadScale": 1,
+      "reloading": false,
+      "reserveAmmo": 90,
+      "respawnAtMs": null,
+      "role": "cheater",
+      "runArmor": 0,
+      "sprintRaiseEndsAtMs": 0,
+      "sprinting": false,
+      "startingWeapon": "machineGun",
+      "team": "",
+      "verticalVelocity": 0,
+      "weapon": "machineGun",
+      "weaponReadyAtMs": 750259,
+      "weaponSwitchEndsAtMs": 750259,
+      "yaw": 1.88657718120805
+    },
+    "enemy": {
+      "attackPhase": "none",
+      "attackPhaseStartedAtMs": 753841,
+      "coverPose": "none",
+      "flinchUntilMs": 0,
+      "grounded": true,
+      "health": 900,
+      "id": "marksman-e2",
+      "laggedUntilMs": 0,
+      "lastAttackAtMs": 0,
+      "lastShotHit": false,
+      "leakUntilMs": 0,
+      "level": "soldier",
+      "markedUntilMs": 0,
+      "maxHealth": 900,
+      "position": [
+        -280.4306640625,
+        -16.7978515625,
+        -357.3271484375
+      ],
+      "shieldHealth": 0,
+      "targetId": 2,
+      "traversal": null,
+      "verticalVelocity": 0,
+      "weapon": "marksman"
+    }
+  }
+}
