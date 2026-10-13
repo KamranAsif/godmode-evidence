@@ -1,0 +1,217 @@
+{
+  "issue": 1941,
+  "profile": "CPU/headless cheap arena; normal play time",
+  "live": {
+    "flatCombatVoices": [
+      {
+        "cue": "nuke-boom",
+        "held": false,
+        "playing": true,
+        "positionSeconds": 0.466666668653488
+      },
+      {
+        "cue": "nuke-ring",
+        "held": false,
+        "playing": true,
+        "positionSeconds": 0.186666667461395
+      }
+    ],
+    "loops": [],
+    "pending": 0,
+    "played": [
+      {
+        "atMs": 65776,
+        "cue": "tablet-out",
+        "pitch": 1.01586675643921,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -6
+      },
+      {
+        "atMs": 65782,
+        "cue": "nuke-siren",
+        "pitch": 1.00093674659729,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -10
+      },
+      {
+        "atMs": 66938,
+        "cue": "tablet-tap",
+        "pitch": 1.00847589969635,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -4
+      },
+      {
+        "atMs": 67471,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 68466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 69466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 70466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 71466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 72466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 73472,
+        "cue": "nuke-boom",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -2
+      },
+      {
+        "atMs": 73734,
+        "cue": "nuke-ring",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -12
+      }
+    ],
+    "worldVoices": 0
+  },
+  "settled": {
+    "flatCombatVoices": [],
+    "loops": [],
+    "pending": 0,
+    "played": [
+      {
+        "atMs": 65776,
+        "cue": "tablet-out",
+        "pitch": 1.01586675643921,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -6
+      },
+      {
+        "atMs": 65782,
+        "cue": "nuke-siren",
+        "pitch": 1.00093674659729,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -10
+      },
+      {
+        "atMs": 66938,
+        "cue": "tablet-tap",
+        "pitch": 1.00847589969635,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -4
+      },
+      {
+        "atMs": 67471,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 68466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 69466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 70466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 71466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 72466,
+        "cue": "nuke-tick",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -8
+      },
+      {
+        "atMs": 73472,
+        "cue": "nuke-boom",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -2
+      },
+      {
+        "atMs": 73734,
+        "cue": "nuke-ring",
+        "pitch": 1,
+        "propagationMs": 0,
+        "spatial": false,
+        "volumeDb": -12
+      }
+    ],
+    "worldVoices": 0
+  },
+  "restart": {
+    "flatCombatVoices": [],
+    "loops": [],
+    "pending": 0,
+    "played": [],
+    "worldVoices": 0
+  },
+  "note": "One boom, one ring 262 ms later, no repeats; restart clears voices and queue. Frame-hitch boundaries are covered by the unit test."
+}
