@@ -1,0 +1,230 @@
+{
+  "binary": "D:\\work\\godmode-roguelite-worktrees\\1862-responsive-warmup\\artifacts\\1862\\export\\BattleDuty.exe",
+  "pid": 36816,
+  "startedAt": "2026-10-13T12:39:42.073Z",
+  "processStartedAt": null,
+  "samples": 232,
+  "respondingFalse": 6,
+  "respondingFalseAfterGoLive": 4,
+  "falseSampleIntervalsMs": 11254,
+  "goLiveSampleBoundary": "approximate: CLI startedAt precedes process creation",
+  "firstFalse": {
+    "at": "2026-10-13T12:39:49.5839195+00:00",
+    "responding": false,
+    "window": 150471804,
+    "cpu": 28.453125
+  },
+  "lastFalse": {
+    "at": "2026-10-13T12:40:46.5791002+00:00",
+    "responding": false,
+    "window": 150471804,
+    "cpu": 61.375
+  },
+  "goLiveToGameplayMs": null,
+  "animation": null,
+  "arenaLines": [
+    "[JS] GODMODE_ARENA_BUILD=client:prebuilt:load:0:instantiate:1678:rehook:95:foliageMaterials:555\r"
+  ],
+  "geometryLines": [
+    "[JS] GODMODE_GEOMETRY_WARMUP=staged:12459\r"
+  ],
+  "phases": [
+    {
+      "phase": "client.ready.begin",
+      "atMs": 7685.917
+    },
+    {
+      "phase": "arena.preload.begin",
+      "atMs": 7686.002
+    },
+    {
+      "phase": "arena.client.resource.begin",
+      "atMs": 7686.101
+    },
+    {
+      "phase": "arena.client.resource.end",
+      "atMs": 7686.176
+    },
+    {
+      "phase": "arena.server.resource.begin",
+      "atMs": 7686.229
+    },
+    {
+      "phase": "arena.server.resource.end",
+      "atMs": 7686.246
+    },
+    {
+      "phase": "arena.preload.end",
+      "atMs": 7686.26
+    },
+    {
+      "phase": "client.world.begin",
+      "atMs": 7686.582
+    },
+    {
+      "phase": "client.world.end",
+      "atMs": 7686.689
+    },
+    {
+      "phase": "presentation.begin",
+      "atMs": 7686.726
+    },
+    {
+      "phase": "audio.begin",
+      "atMs": 7686.739
+    },
+    {
+      "phase": "audio.end",
+      "atMs": 7742.716
+    },
+    {
+      "phase": "presentation.hud.begin",
+      "atMs": 7742.975
+    },
+    {
+      "phase": "presentation.hud.end",
+      "atMs": 8306.978
+    },
+    {
+      "phase": "presentation.menus.begin",
+      "atMs": 8307.129
+    },
+    {
+      "phase": "presentation.menus.end",
+      "atMs": 8519.05
+    },
+    {
+      "phase": "presentation.end",
+      "atMs": 8534.224
+    },
+    {
+      "phase": "menu.show",
+      "atMs": 8534.454
+    },
+    {
+      "phase": "client.ready.end",
+      "atMs": 8538.654
+    },
+    {
+      "phase": "menu.presented",
+      "atMs": 12831.213,
+      "textureBytes": 675315712,
+      "bufferBytes": 1940055824,
+      "pipelines": {
+        "mesh": 1030,
+        "surface": 19,
+        "draw": 0,
+        "specialization": 5
+      }
+    },
+    {
+      "phase": "menu.show",
+      "atMs": 49768.514
+    },
+    {
+      "phase": "menu.presented",
+      "atMs": 49777.038,
+      "textureBytes": 899248128,
+      "bufferBytes": 1957201620,
+      "pipelines": {
+        "mesh": 1030,
+        "surface": 19,
+        "draw": 0,
+        "specialization": 5
+      }
+    },
+    {
+      "phase": "menu.goLive",
+      "atMs": 55936.349
+    },
+    {
+      "phase": "scene.swap.begin",
+      "atMs": 55969.448
+    },
+    {
+      "phase": "resource:res://scenes/roguelite.tscn.begin",
+      "atMs": 55969.504
+    },
+    {
+      "phase": "resource:res://scenes/roguelite.tscn.end",
+      "atMs": 55969.827
+    },
+    {
+      "phase": "client.ready.begin",
+      "atMs": 55975.253
+    },
+    {
+      "phase": "arena.preload.begin",
+      "atMs": 55975.296
+    },
+    {
+      "phase": "arena.preload.end",
+      "atMs": 55975.315
+    },
+    {
+      "phase": "client.world.begin",
+      "atMs": 55975.755
+    },
+    {
+      "phase": "client.world.end",
+      "atMs": 55976.042
+    },
+    {
+      "phase": "arena.client.instance.begin",
+      "atMs": 55976.215
+    },
+    {
+      "phase": "arena.client.instance.end",
+      "atMs": 57654.049
+    },
+    {
+      "phase": "presentation.begin",
+      "atMs": 57748.806
+    },
+    {
+      "phase": "warmup.geometry.staged",
+      "atMs": 57778.171
+    },
+    {
+      "phase": "scene.swap.end",
+      "atMs": 57778.313
+    },
+    {
+      "phase": "audio.begin",
+      "atMs": 57822.47
+    },
+    {
+      "phase": "audio.end",
+      "atMs": 57826.484
+    },
+    {
+      "phase": "presentation.hud.begin",
+      "atMs": 57833.404
+    },
+    {
+      "phase": "presentation.hud.end",
+      "atMs": 57850.254
+    },
+    {
+      "phase": "presentation.menus.begin",
+      "atMs": 58650.318
+    },
+    {
+      "phase": "presentation.menus.end",
+      "atMs": 58750.175
+    },
+    {
+      "phase": "presentation.end",
+      "atMs": 64609.168
+    },
+    {
+      "phase": "warmup.begin",
+      "atMs": 64642.525
+    },
+    {
+      "phase": "client.ready.end",
+      "atMs": 64643.227
+    }
+  ],
+  "scriptErrors": []
+}
