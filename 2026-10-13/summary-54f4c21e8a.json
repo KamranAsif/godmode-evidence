@@ -1,0 +1,131 @@
+{
+  "label": "d3d12-smaa-staged-live",
+  "pid": 15168,
+  "driver": "d3d12",
+  "driverReset": false,
+  "events": [],
+  "boot": "2026-10-13T14:27:31.5000000Z",
+  "startedAt": "2026-10-13T19:26:27.522Z",
+  "endedAt": "2026-10-13T19:28:07.402Z",
+  "goLiveAtMs": 55444.387,
+  "gameplayAtMs": 71886.558,
+  "goLiveToGameplayMs": 16442.171000000002,
+  "totalProbes": 359,
+  "falseProbes": 0,
+  "notRespondingSpanMs": 0,
+  "notRespondingEnclosureMs": 0,
+  "maxProbeMs": 2124.5037,
+  "firstProbe": "2026-10-13T19:26:37.0522020+00:00",
+  "lastProbe": "2026-10-13T19:28:02.6676796+00:00",
+  "spans": [],
+  "notRespondingProbeIntervalMs": 0,
+  "loadingAnimations": [
+    {
+      "frames": 762,
+      "maxGapMs": 2061
+    }
+  ],
+  "longestLoadingDrawGapMs": 2061,
+  "startupSpans": [
+    {
+      "phase": "warmup",
+      "atMs": 58155.857,
+      "durationMs": 12785.436000000002
+    },
+    {
+      "phase": "client.ready",
+      "atMs": 55465.031,
+      "durationMs": 2691.476999999999
+    },
+    {
+      "phase": "server.start",
+      "atMs": 69203.363,
+      "durationMs": 1737.895000000004
+    },
+    {
+      "phase": "server.ready",
+      "atMs": 69204.746,
+      "durationMs": 1733.2770000000019
+    },
+    {
+      "phase": "scene.swap",
+      "atMs": 55461.152,
+      "durationMs": 1430.9079999999958
+    },
+    {
+      "phase": "arena.server.instance",
+      "atMs": 69204.846,
+      "durationMs": 1347.9439999999886
+    },
+    {
+      "phase": "arena.client.instance",
+      "atMs": 55465.725,
+      "durationMs": 1337.0710000000036
+    },
+    {
+      "phase": "presentation",
+      "atMs": 56873.546,
+      "durationMs": 1280.587999999996
+    },
+    {
+      "phase": "presentation.roguelite",
+      "atMs": 57105.809,
+      "durationMs": 817.3889999999956
+    },
+    {
+      "phase": "presentation.menus",
+      "atMs": 57023.157,
+      "durationMs": 77.08899999999994
+    },
+    {
+      "phase": "presentation.hud",
+      "atMs": 56939.732,
+      "durationMs": 17.221999999994296
+    },
+    {
+      "phase": "presentation.console",
+      "atMs": 58145.104,
+      "durationMs": 5.635000000002037
+    },
+    {
+      "phase": "audio",
+      "atMs": 56930.035,
+      "durationMs": 3.665999999997439
+    },
+    {
+      "phase": "presentation.bugReport",
+      "atMs": 58142.062,
+      "durationMs": 1.6410000000032596
+    },
+    {
+      "phase": "presentation.photo",
+      "atMs": 58138.907,
+      "durationMs": 0.35900000000401633
+    },
+    {
+      "phase": "presentation.crashReporter",
+      "atMs": 58152.111,
+      "durationMs": 0.2510000000038417
+    },
+    {
+      "phase": "resource:res://scenes/roguelite.tscn",
+      "atMs": 55461.178,
+      "durationMs": 0.22800000000279397
+    },
+    {
+      "phase": "client.world",
+      "atMs": 55465.402,
+      "durationMs": 0.22299999999813735
+    },
+    {
+      "phase": "server.world",
+      "atMs": 69204.783,
+      "durationMs": 0.03500000000349246
+    },
+    {
+      "phase": "arena.preload",
+      "atMs": 55465.046,
+      "durationMs": 0.008999999998195563
+    }
+  ]
+}
