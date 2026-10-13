@@ -1,0 +1,133 @@
+{
+  "revision": "6a6df034fc2368fffd6ad71c190eed9c5ebf2e13",
+  "method": {
+    "scene": "assets/maps/dumbo/prebuilt/survival_client.scn",
+    "sceneSha256": "c65abf3eeabdc5b10d44c93ec405bdbeed53b2d99b0e4ff32b8ae11599194b83",
+    "cacheEntry": "b2c4d2fe4b4e5b83fafaebf8bb92950020d51140ce3d3a92b38a05c2a7e189ff",
+    "baseline": "Cached complete foliage with no bush LODs after #1896",
+    "candidate": "Same scene; distance indices from production installFoliageLods only on foliageSilhouetteLodVersion=1 meshes",
+    "nearOffsetMeters": 8,
+    "farOffsetMeters": -12,
+    "windowMs": 5000,
+    "firstSampleWarmupMs": 15000,
+    "otherSampleWarmupMs": 5000,
+    "frozenScene": true,
+    "exclusiveTimingHold": true,
+    "headless": false,
+    "cap": 0,
+    "vsync": 0
+  },
+  "results": [
+    {
+      "view": {
+        "id": "bush",
+        "position": [
+          -490.8701171875,
+          -15.460538864135742,
+          -417.7333984375
+        ],
+        "yaw": -2.273296326794899,
+        "pitch": -0.10124999999999987,
+        "fov": 85
+      },
+      "beforeGpuMs": 46.13012967286287,
+      "afterGpuMs": 30.57672843226679,
+      "gpuChangeMs": -15.55340124059608,
+      "gpuChangePercent": -33.716361412583964,
+      "beforeWallMs": 46.40298148148148,
+      "afterWallMs": 30.997617283950614,
+      "beforeVisibleTriangles": 59674949,
+      "afterVisibleTriangles": 29087107,
+      "triangleReductionPercent": 51.25742461882958,
+      "beforeFrames": 108,
+      "afterFrames": 162,
+      "beforeWarmupMs": 15000,
+      "afterWarmupMs": 5000,
+      "windowMs": 5000,
+      "engine": {
+        "bufferMemoryBytes": 2127571492,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "msaa": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingDriver": "d3d12",
+        "renderingMethod": "forward_plus",
+        "scaling3dScale": 1,
+        "taa": true,
+        "textureMemoryBytes": 999694336,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 6071181312,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "vsyncMode": 0
+      },
+      "beforeRaw": "timing-before-bush.json",
+      "afterRaw": "timing-after-bush.json",
+      "beforeRawUrl": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-13/timing-before-bush-e92236ff48.json",
+      "afterRawUrl": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-13/timing-after-bush-656464ffeb.json"
+    },
+    {
+      "view": {
+        "id": "street",
+        "position": [
+          -404,
+          -15.582,
+          -390
+        ],
+        "yaw": 0,
+        "pitch": 0.1,
+        "fov": 55
+      },
+      "beforeGpuMs": 15.184444796088282,
+      "afterGpuMs": 14.43160056511793,
+      "gpuChangeMs": -0.7528442309703518,
+      "gpuChangePercent": -4.957996430427903,
+      "beforeWallMs": 15.388159509202454,
+      "afterWallMs": 14.638909620991253,
+      "beforeVisibleTriangles": 7214081,
+      "afterVisibleTriangles": 4532441,
+      "triangleReductionPercent": 37.17230233483655,
+      "beforeFrames": 326,
+      "afterFrames": 343,
+      "beforeWarmupMs": 5000,
+      "afterWarmupMs": 5000,
+      "windowMs": 5000,
+      "engine": {
+        "bufferMemoryBytes": 2127571492,
+        "displayServer": "Windows",
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "msaa": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingDriver": "d3d12",
+        "renderingMethod": "forward_plus",
+        "scaling3dScale": 1,
+        "taa": true,
+        "textureMemoryBytes": 999694336,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 6071181312,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "vsyncMode": 0
+      },
+      "beforeRaw": "timing-before-street.json",
+      "afterRaw": "timing-after-street.json",
+      "beforeRawUrl": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-13/timing-before-street-89957ec705.json",
+      "afterRawUrl": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-13/timing-after-street-4dd39afb3f.json"
+    }
+  ],
+  "discardedFirstPass": {
+    "reason": "Initial bush baseline included 56 zero GPU timestamp readings; excluded entirely from reported comparison. Repeated the paired comparison with 15 seconds initial warmup."
+  }
+}
