@@ -1,0 +1,16 @@
+{
+  "issue": 1862,
+  "release": "v0.42",
+  "zipSha256": "1169a146203fdc2203f46af7652de79319a9132b06f5428363c63860fbba14ab",
+  "flow": "login, opening dashboard/chat/install, trainer GO LIVE, first run",
+  "freshUserData": "APPDATA scoped to artifacts/1862/issue1862-v042/userdata and override.cfg custom directory isolated; original userdata untouched; override removed after stopping owned instance",
+  "observedWindowsRespondingFalse": true,
+  "recovered": true,
+  "clientRehookMs": 52679,
+  "firstColdRenderFrameMs": 39353,
+  "serverRehookMs": 22288,
+  "serverStartFrameMs": 24504,
+  "goLiveAtMs": 206261.488,
+  "presentedAtMs": 378883.863,
+  "notes": "Shared capture lane at 30fps. These are diagnostic phase durations, not isolated performance benchmarks. Issue has no hang screenshot/debug.json folder, so reproduction starts from its first-run loading position."
+}
