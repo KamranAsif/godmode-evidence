@@ -1,0 +1,35 @@
+{
+  "commit": "8d8b8cc91b880e5e32b2a85c4dc4b4cc458b192e",
+  "preset": "Windows Playtest",
+  "binarySha256": "73A588815F1CAF798324EB889178B61EEA3B42DBD5D39261F0F8E06DE12E3807",
+  "windowed": true,
+  "width": 1280,
+  "height": 720,
+  "startedAt": "2026-10-17T22:16:31.7673359Z",
+  "elapsedMs": 11989,
+  "capturedFrames": 360,
+  "requestedCaptureFps": 30,
+  "captureMethod": "PrintWindow/PW_RENDERFULLCONTENT",
+  "maxCaptureGapMs": 97.322,
+  "setup": [
+    "reroll",
+    "stream viewers 1000",
+    "stream hold on",
+    "invincible on",
+    "spawn rifleman 8"
+  ],
+  "observation": "Grunts move between positions and fire while planted; the grunt beside the planter has a visible muzzle flash around 8 seconds. The GIF is a crop of the original window recording. This visual check complements the authoritative server-event regression.",
+  "enginesStoppedAndGpuLeaseReleased": true,
+  "files": [
+    {
+      "name": "playtest-grunts-final.mp4",
+      "bytes": 3152439,
+      "sha256": "164408918b7eecb08c7cf7f7eac0824ff8739761b514bfe84a024a451cd8508d"
+    },
+    {
+      "name": "playtest-grunts.gif",
+      "bytes": 3047874,
+      "sha256": "c2dfea3425ba77ff917c53988417b08958bae333234fa1dc9ed527b34463a2f3"
+    }
+  ]
+}
