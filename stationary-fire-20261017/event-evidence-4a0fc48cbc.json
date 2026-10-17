@@ -1,0 +1,80 @@
+{
+  "baselineCommit": "b6d74984e",
+  "changeCommit": "8d8b8cc91b880e5e32b2a85c4dc4b4cc458b192e",
+  "rule": {
+    "settleMs": 150,
+    "maximumHorizontalMetersPerSecond": 0.05
+  },
+  "comparison": {
+    "before": {
+      "label": "before",
+      "seed": 1871,
+      "durationMs": 60000,
+      "startMs": 31725,
+      "endMs": 91725,
+      "input": "stationary player, no firing; normal survival director; audience loss held; ordinary damage and respawns",
+      "shots": 164,
+      "hits": 44,
+      "shotsPerMinute": 164,
+      "hitsPerMinute": 44,
+      "deaths": 4
+    },
+    "after": {
+      "label": "after",
+      "seed": 1871,
+      "durationMs": 60000,
+      "startMs": 72005,
+      "endMs": 132005,
+      "input": "stationary player, no firing; normal survival director; audience loss held; ordinary damage and respawns",
+      "shots": 96,
+      "hits": 40,
+      "shotsPerMinute": 96,
+      "hitsPerMinute": 40,
+      "deaths": 4
+    }
+  },
+  "caveat": "One short paired seed-1871 trial, not a statistical balance estimate. Viewer attrition held solely to keep the stream open across ordinary deaths/respawns. No combat or director stats retuned.",
+  "regression": {
+    "label": "after",
+    "seed": 1871,
+    "durationMs": 86608,
+    "startMs": 53040,
+    "endMs": 139648,
+    "input": "stationary invincible player; director stopped; each included ground ranged kind spawned separately",
+    "shots": 34,
+    "hits": 13,
+    "shotsPerMinute": 23.55440605948642,
+    "hitsPerMinute": 9.006096434509514,
+    "deaths": 0,
+    "coverage": {
+      "rifle": 3,
+      "pistol": 2,
+      "smg": 11,
+      "shotgun": 2,
+      "marksman": 1,
+      "medic": 2,
+      "shield": 1,
+      "heavy": 2,
+      "minigun": 1,
+      "officer": 1,
+      "grenadier": 1,
+      "rpg": 1,
+      "sentry": 8
+    },
+    "triggers": 36,
+    "maxShooterSpeed": 0,
+    "maxShooterDisplacementSpeed": 0,
+    "minShooterStillMs": 733
+  },
+  "checks": {
+    "targetedUnit": "35/35 soldier + enemy-shot-cover checks pass",
+    "rootSuite": "pnpm test: 10/11 steps pass; sole failure was a Windows CIM timeout in godot-cli's fake-engine screenshot serialization test",
+    "targetedRetry": "Exact failing fake-engine test passed alone; no surviving fake engines",
+    "fullE2eSweep": "not run"
+  },
+  "hashes": {
+    "before-events.json": "25bd580c360421271fd9ec34788977c4e59fd3b61237951a0b7d68e1589fea76",
+    "after-events.json": "89a3e1ceb97d9ffb6ccb62c4ef1b8cb03033cea26e2a415df40dc3e97662ef81",
+    "regression-events.json": "d299d1d58399ff74747039790210ee34deec0cd931a5b5bdbd86edfdeac59681"
+  }
+}
