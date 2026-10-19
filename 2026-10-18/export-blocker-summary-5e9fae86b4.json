@@ -1,0 +1,8 @@
+{
+    "command":  "node tools/godot-cli/dist/src/index.js game export --project . --preset \"Windows Playtest\" --output artifacts/windows-playtest/BattleDuty.exe --json",
+    "check":  "node tools/maps/prebuilt/build.mjs --ensure --strict",
+    "error":  "Export checks failed; nothing was exported. Arena rendered launch: Timed out waiting for gpu-measurement lock.",
+    "elapsedMs":  156690,
+    "log":  "D:/work/godmode-roguelite-worktrees/hitmarker-delay-20261018/artifacts/windows-playtest-export.log",
+    "failureLog":  "D:/work/godmode-roguelite-worktrees/hitmarker-delay-20261018/artifacts/prebuilt-arena/failure.json"
+}
