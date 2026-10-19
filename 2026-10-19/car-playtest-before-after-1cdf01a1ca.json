@@ -1,0 +1,518 @@
+{
+  "execution": {
+    "platform": "Windows",
+    "preset": "Windows Playtest",
+    "launch": "godot-cli game run --binary EXPORTED_EXE --fixture roguelite --instance UNIQUE --session OWNED",
+    "note": "Actual embedded production arena; ordinary run starts immediately. Native window input and shipped developer console only. Free camera measures mouse axes; it is off for all physical walking and shooting. No runtime inspection bridge."
+  },
+  "shooting": "Same parked sedan, machineGun, ordinary native ADS/fire. Time scale 0.05 preserves visible impact effects. Near-metal receipt distance below4.2m identifies the near car face; scenery beyond the far side is farther away.",
+  "before": {
+    "build": {
+      "commit": "e2bd46e1abb9+dirty",
+      "branch": "fix/enemy-walk-smoothness",
+      "built": "2026-10-19T03:50:22.469Z"
+    },
+    "binarySha256": "ac4d9356da66e8f7a46b49e63cc15dbacf7aaa2109db7314828a6be738237a92",
+    "clientLogSha256": "ade0c8756a2d30350d2576ea96cfee31a510b6d881f1f4e7cfb8b0af1dd870aa",
+    "calibration": {
+      "first": {
+        "a": [
+          -580,
+          -15.8,
+          -350
+        ],
+        "b": [
+          -576.2,
+          -15.8,
+          -350
+        ],
+        "yaw": -1.5707963267948966,
+        "pitch": 0
+      },
+      "horizontal": {
+        "a": [
+          -576.2,
+          -15.8,
+          -350
+        ],
+        "b": [
+          -572.9,
+          -15.8,
+          -348.2
+        ],
+        "yaw": -2.0701430484750207,
+        "pitch": 0
+      },
+      "vertical": {
+        "a": [
+          -572.9,
+          -15.8,
+          -348.2
+        ],
+        "b": [
+          -569.7,
+          -16.7,
+          -346.5
+        ],
+        "yaw": -2.0591302778513083,
+        "pitch": -0.24344988834376152
+      },
+      "mouseX": 0.002496733608400621,
+      "mouseY": 0.0024344988834376154,
+      "method": "Unblocked camera movement only; return to colliding player before feature actions"
+    }
+  },
+  "after": {
+    "build": {
+      "commit": "8b98b43a184a",
+      "branch": "fix/car-bullet-collision-20261019",
+      "built": "2026-10-19T06:55:48.009Z"
+    },
+    "binarySha256": "419efa4b75b557fa21c639fe1b47926adf848a45ed331774f2bd3a1e084412f3",
+    "clientLogSha256": "3a33a1de7c084d0d0222b011401b373d66f235dc7770c2be8ac183e0d00c0e65",
+    "calibration": {
+      "first": {
+        "a": [
+          -580,
+          -15.8,
+          -350
+        ],
+        "b": [
+          -576.2,
+          -15.8,
+          -350
+        ],
+        "yaw": -1.5707963267948966,
+        "pitch": 0
+      },
+      "horizontal": {
+        "a": [
+          -576.2,
+          -15.8,
+          -350
+        ],
+        "b": [
+          -572.9,
+          -15.8,
+          -348.2
+        ],
+        "yaw": -2.0701430484750207,
+        "pitch": 0
+      },
+      "vertical": {
+        "a": [
+          -572.9,
+          -15.8,
+          -348.2
+        ],
+        "b": [
+          -569.7,
+          -16.7,
+          -346.4
+        ],
+        "yaw": -2.0831857871056463,
+        "pitch": -0.24039049239591495
+      },
+      "mouseX": 0.002496733608400621,
+      "mouseY": 0.0024039049239591493,
+      "method": "Unblocked camera movement only; return to colliding player before feature actions"
+    }
+  },
+  "cases": [
+    {
+      "name": "above-hood",
+      "before": {
+        "player": [
+          -588,
+          -16.7,
+          -327.6
+        ],
+        "heldFireMs": 4050,
+        "timeScale": 0.05,
+        "requestedPitch": -0.03,
+        "measuredPitch": null,
+        "measuredYaw": null,
+        "nearMetalImpacts": 3,
+        "surfaceAudio": [
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.05
+          },
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.05
+          },
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.05
+          }
+        ],
+        "shotAudio": [
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-in:direct:actor=2",
+            "file": "weapon-ads-in-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:scheduled:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-out:direct:actor=2",
+            "file": "weapon-ads-out-01.ogg",
+            "distance": 0
+          }
+        ],
+        "capture": {
+          "file": "car-before-above-hood.png",
+          "sha256": "d411debf62068b585e8d1c7121c13e1727e899cb8344e4777167e2d6c7cfd593",
+          "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/car-before-above-hood-d411debf62.png"
+        }
+      },
+      "after": {
+        "player": [
+          -588,
+          -16.7,
+          -327.6
+        ],
+        "heldFireMs": 4050,
+        "timeScale": 0.05,
+        "requestedPitch": -0.03,
+        "measuredPitch": -0.026300616167979886,
+        "measuredYaw": 1.1071487177940904,
+        "nearMetalImpacts": 0,
+        "surfaceAudio": [],
+        "shotAudio": [
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-in:direct:actor=2",
+            "file": "weapon-ads-in-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-out:direct:actor=2",
+            "file": "weapon-ads-out-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:scheduled:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          }
+        ],
+        "capture": {
+          "file": "car-after-above-hood.png",
+          "sha256": "974e4ba1ab101fa780a7c75fd1b2ae3beec6463f3ace9c6331d4dabaccb76d33",
+          "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/car-after-above-hood-974e4ba1ab.png"
+        }
+      }
+    },
+    {
+      "name": "above-roof-slope",
+      "before": {
+        "player": [
+          -586.4,
+          -16.6,
+          -330.9
+        ],
+        "heldFireMs": 4050,
+        "timeScale": 0.05,
+        "requestedPitch": -0.03,
+        "measuredPitch": null,
+        "measuredYaw": null,
+        "nearMetalImpacts": 3,
+        "surfaceAudio": [
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.05
+          },
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.05
+          },
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.05
+          }
+        ],
+        "shotAudio": [
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-in:direct:actor=2",
+            "file": "weapon-ads-in-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:scheduled:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-out:direct:actor=2",
+            "file": "weapon-ads-out-01.ogg",
+            "distance": 0
+          }
+        ],
+        "capture": {
+          "file": "car-before-above-roof-slope.png",
+          "sha256": "5b9328b91bf6269bc8524831383b8908eeb27776896c848b3dadfdb794f68f76",
+          "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/car-before-above-roof-slope-5b9328b91b.png"
+        }
+      },
+      "after": {
+        "player": [
+          -587.8,
+          -16.6,
+          -331.5
+        ],
+        "heldFireMs": 4050,
+        "timeScale": 0.05,
+        "requestedPitch": -0.03,
+        "measuredPitch": -0.01719882690086616,
+        "measuredYaw": 1.1071487177940904,
+        "nearMetalImpacts": 0,
+        "surfaceAudio": [],
+        "shotAudio": [
+          {
+            "source": "GameAudio.playLocal:player-step:direct:actor=2",
+            "file": "step-concrete-06.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-in:direct:actor=2",
+            "file": "weapon-ads-in-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:scheduled:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-out:direct:actor=2",
+            "file": "weapon-ads-out-01.ogg",
+            "distance": 0
+          }
+        ],
+        "capture": {
+          "file": "car-after-above-roof-slope.png",
+          "sha256": "c703590f8c8c9aa125d6d78cb9a31411b3ac0e17d65ffc8417b67f61a0bc6387",
+          "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/car-after-above-roof-slope-c703590f8c.png"
+        }
+      }
+    },
+    {
+      "name": "solid-body",
+      "before": {
+        "player": [
+          -588,
+          -16.7,
+          -327.6
+        ],
+        "heldFireMs": 4050,
+        "timeScale": 0.05,
+        "requestedPitch": -0.3,
+        "measuredPitch": null,
+        "measuredYaw": null,
+        "nearMetalImpacts": 3,
+        "surfaceAudio": [
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.21
+          },
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.2
+          },
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 3.2
+          }
+        ],
+        "shotAudio": [
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-in:direct:actor=2",
+            "file": "weapon-ads-in-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:scheduled:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-out:direct:actor=2",
+            "file": "weapon-ads-out-01.ogg",
+            "distance": 0
+          }
+        ],
+        "capture": {
+          "file": "car-before-solid-body.png",
+          "sha256": "d6f89fd3b05fa9f795cb88c6845353ebac7d53bfeb4ea0ffb505c1af89443b71",
+          "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/car-before-solid-body-d6f89fd3b0.png"
+        }
+      },
+      "after": {
+        "player": [
+          -588.5,
+          -16.7,
+          -327.9
+        ],
+        "heldFireMs": 4050,
+        "timeScale": 0.05,
+        "requestedPitch": -0.3,
+        "measuredPitch": -0.29462394834094774,
+        "measuredYaw": 1.1441688336680154,
+        "nearMetalImpacts": 3,
+        "surfaceAudio": [
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 2.75
+          },
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 2.74
+          },
+          {
+            "source": "GameAudio.playCheat:impact-metal:actor=none",
+            "file": "impact-metal-01.ogg",
+            "distance": 2.73
+          }
+        ],
+        "shotAudio": [
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-in:direct:actor=2",
+            "file": "weapon-ads-in-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:direct:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:weapon-ads-out:direct:actor=2",
+            "file": "weapon-ads-out-01.ogg",
+            "distance": 0
+          },
+          {
+            "source": "GameAudio.playLocal:machine-fire:scheduled:actor=2",
+            "file": "machine-fire-01.ogg",
+            "distance": 0
+          }
+        ],
+        "capture": {
+          "file": "car-after-solid-body.png",
+          "sha256": "b346c0c1101508e0fb081f332dbafd5a586470685eeaf2d9a940324ff5e3114e",
+          "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/car-after-solid-body-b346c0c110.png"
+        }
+      }
+    }
+  ],
+  "serverShotComparison": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/car-server-comparison-ec1dd35572.json",
+  "sourceEquivalenceAfterRebase": {
+    "capturedCommit": "8b98b43a184af4649e7e86b8c8ce3f7bcb1bd49d",
+    "files": {
+      "scripts/vehicle_collision.ts": "ec6969b85436d852a3c56faea6b832a5eb437401",
+      "scripts/prebuilt_arena.ts": "64bf459ca6c72517817e10d0bc854e96afac9a6f",
+      "scripts/environment_modules/vehicle_hulls.generated.ts": "68f6df8fbf909bfbd286a5a458d5ed98d2bf4715"
+    },
+    "currentCommit": "33b31a7fa7f2f39c7790a8bc7b644afea5bf8473",
+    "unchanged": true
+  }
+}
