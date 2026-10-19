@@ -1,0 +1,9 @@
+{
+  "command": "node tools/godot-cli/dist/src/index.js game export --project . --session audio-audit-export-20261018 --preset \"Windows Playtest\" --output artifacts/playtest/BattleDuty.exe --json",
+  "arenaPreparation": "strict current arena passed; benchmark wallMs34969",
+  "result": "No build: Godot export failed for preset Windows Playtest",
+  "error": "Timed out waiting for gpu-measurement lock",
+  "queue": "capture slots full3/3; ticket1390; queue position4/5; ETA2026-10-19T03:50:10.264Z",
+  "log": "artifacts/playtest-export.log",
+  "headlessEvidence": "User standing same-rules headless exception when export is GPU locked; native isolated PCM and actual full-headless accepted-shot logs supplied."
+}
