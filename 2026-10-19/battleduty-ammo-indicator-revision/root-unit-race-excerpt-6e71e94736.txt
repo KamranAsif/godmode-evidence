@@ -1,0 +1,39 @@
+test at tests\unit\export-boundary.test.mjs:127:1
+✖ every export preset excludes all of tools/ and tests/ (221.3171ms)
+  Error: ENOENT: no such file or directory, scandir 'D:\work\godmode-roguelite-worktrees\ammo-diamond-indicator\tests\unit\compiled-guard-BTCXlb'
+      at readdirSync (node:fs:1631:26)
+      at walk (file:///D:/work/godmode-roguelite-worktrees/ammo-diamond-indicator/tests/unit/export-boundary.test.mjs:91:29)
+      at walk (file:///D:/work/godmode-roguelite-worktrees/ammo-diamond-indicator/tests/unit/export-boundary.test.mjs:93:38)
+      at walk (file:///D:/work/godmode-roguelite-worktrees/ammo-diamond-indicator/tests/unit/export-boundary.test.mjs:93:38)
+      at filesUnder (file:///D:/work/godmode-roguelite-worktrees/ammo-diamond-indicator/tests/unit/export-boundary.test.mjs:97:5)
+      at TestContext.<anonymous> (file:///D:/work/godmode-roguelite-worktrees/ammo-diamond-indicator/tests/unit/export-boundary.test.mjs:130:49)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19) {
+    errno: -4058,
+    code: 'ENOENT',
+    syscall: 'scandir',
+    path: 'D:\\work\\godmode-roguelite-worktrees\\ammo-diamond-indicator\\tests\\unit\\compiled-guard-BTCXlb'
+  }
+ ELIFECYCLE  Command failed with exit code 1.
+[ 4/11] test:unit: FAILED (exit 1) in 87.1 s
+
+[10/11] game-rules
+
+> @godmode/game-rules@0.1.0 test D:\work\godmode-roguelite-worktrees\ammo-diamond-indicator\packages\game-rules
+> pnpm run build && node --test dist/test/**/*.test.js
+
+
+> @godmode/game-rules@0.1.0 build D:\work\godmode-roguelite-worktrees\ammo-diamond-indicator\packages\game-rules
+> node ../../tools/build/typescript.mjs tsconfig.json
+
+✔ compiled status reports persistent positions and cleans an actually dead waiter process (3291.4599ms)
+✔ GPU TTL parsing validates durations and defaults to twenty minutes (0.3615ms)
+✔ a hold survives the issuing command, is shared across coordinators, and expires (17.6436ms)
+✔ a stale session owner releases its hold even before expiry (14.5372ms)
+✔ headless admission bypasses the hold, filesystem mutex and peer scan (6.0932ms)
+✔ the owner's rendered admission is immediate and release is idempotent (14.1735ms)
+✔ foreign rendered launch waits, reports ownership and resumes after release (13.3108ms)
+✔ foreign launch fails clearly at timeout and leaves the owner's hold intact (15.8143ms)
+✔ foreign rendered launch autom
