@@ -1,0 +1,42 @@
+PASS - Independent ammo indicator visual audit
+
+Auditor: separate Codex subagent; made none of the implementation changes.
+Started from FAIL pending concrete exported evidence. No engines, tests, or
+source changes were made by this auditor.
+
+Reviewed native 1920x1080 exported Windows Playtest captures directly:
+- before-5m.png and before-15m.png: published v0.50 baseline, old ground can.
+- after-5m.png and after-15m.png: PR Windows Playtest, floating magazine diamond.
+- after-pickup.png: marker gone, reserve 90 -> 120, visible +1 MAG feedback.
+All paths are relative to artifacts/ammo-indicator/.
+
+The before/after pairs use the same open street, drop XZ, 5 m and 15 m positions,
+and matched camera input. The cool thin diamond frame, slanted magazine with
+interior grooves, dark separation line and restrained halo follow concept 03.
+The indicator remains identifiable at 15 m against the approved warm street
+lighting and buildings. Its cool pale cyan agrees with the pickup feedback,
+and the glow is subdued enough to remain consistent with the HUD.
+
+Provenance checked: export receipt is successful Windows Playtest; launch and
+capture receipts tie after images to PID 38572 and before images to PID 18852.
+Binary hashes recorded in the evidence manifest match the variant metadata:
+before 906099ecdd420984e8120b24f462c6e5d7094e3037566eff5032911129fab816
+after  a032709c24122ff9125b055758b2b8359156420e0fa3ab2b12472795954c58fd
+Independently recomputed SHA256 for both distance pairs and after pickup;
+all five match evidence-manifest.json. Pack reports show the old can presenter
+in the baseline and the new marker with retired can presenter absent after.
+Both export variants have no runtime inspection bridge.
+
+Supplemental evidence was kept distinct from exported comparisons:
+source-death-body-5m.png visibly places the marker above a fallen soldier;
+source-audit.json records the actual credited kill and guaranteed low-reserve
+drop. The current source-death-5m/15m.png are separate reframed debug-drop
+images and are not treated as original kill captures or exported evidence.
+Actual runtime samples in runtime-bob-fade.json span 0.7750-0.8650 m above
+ground and support gentle bob, final-second opacity decay and removal at the
+20-second expiry (allowing inspection/presentation sampling delay).
+artifacts/ammo-pickup/PASS.json records the behavior check passing.
+
+No blocking visual findings. PASS for the requested exported 5 m/15 m
+before/after evidence, concept fidelity, readability, pickup feedback,
+and the separately evidenced corpse anchoring, bob and fade.
