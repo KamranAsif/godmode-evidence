@@ -1,0 +1,233 @@
+{
+  "result": "PASS",
+  "scope": "Capture provenance and package checks; visual verdict is separate",
+  "sourceCommit": "c073effa3fafd199131cda7cc6100b8cbfb8bb0c",
+  "preset": "Windows Playtest",
+  "compiledMarkerSha256": "034a29158e471f630e93b5af653ec76108846b7b3a0d34dd813af1af89650a4e",
+  "binary": {
+    "binary": "D:\\work\\godmode-roguelite-worktrees\\ammo-diamond-indicator\\artifacts\\ammo-indicator\\revision\\after\\BattleDuty.exe",
+    "sha256": "2EA1D93191AFC0AF37885D1C8D0EC410400B4FDBB780FA1F48BF8E93234732BF",
+    "label": "after",
+    "dropXZ": [
+      -562.062744,
+      -380.327759
+    ],
+    "distancesMeters": [
+      5,
+      15
+    ],
+    "commands": "Ordinary shipped console ammobox and tp; no inspection bridge",
+    "gameplayLog": "D:\\work\\godmode-roguelite-worktrees\\ammo-diamond-indicator\\artifacts\\ammo-indicator\\revision\\after\\logs\\client-20261019-063941-26812.log",
+    "discardedAttempt": {
+      "distanceMeters": 25,
+      "reason": "Console refused teleport outside the map; capture excluded, not used as evidence."
+    },
+    "bytes": 2280998216
+  },
+  "launch": {
+    "pid": 26812,
+    "kind": "game",
+    "instance": "ammo-revision-after",
+    "projectPath": "D:\\work\\godmode-roguelite-worktrees\\ammo-diamond-indicator",
+    "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\f10aa343fc60\\game-ammo-revision-after.log",
+    "startedAt": "2026-10-19T06:39:25.608Z",
+    "binary": "D:\\work\\godmode-roguelite-worktrees\\ammo-diamond-indicator\\artifacts\\ammo-indicator\\revision\\after\\BattleDuty.exe",
+    "sessionId": "ammo-marker-revision2-20261019",
+    "processStartToken": "argv:c62251a06832170ac039efc97a8aceee",
+    "inspectionUrl": null,
+    "launchPreparation": {
+      "runPrepareMs": 0,
+      "processSetupMs": 1800
+    }
+  },
+  "analyticalSizeProof": {
+    "head": "c073effa3",
+    "minimumDiamondPixelsAt1080p": 32,
+    "minimumSizeThroughDepthMeters": 25,
+    "hudAccent": "#58D7EA",
+    "diamondUvSpan": 0.8082845424975251,
+    "shaderGeometry": {
+      "quadWorldHeight": 0.76,
+      "vertexDenominatorUvSpan": 0.8083
+    },
+    "projectionCases": [
+      {
+        "verticalFovDegrees": 50,
+        "depth": 5,
+        "worldScale": 1,
+        "diamondPixels": 142.27515694401146
+      },
+      {
+        "verticalFovDegrees": 50,
+        "depth": 15,
+        "worldScale": 1,
+        "diamondPixels": 47.42505231467049
+      },
+      {
+        "verticalFovDegrees": 50,
+        "depth": 25,
+        "worldScale": 1.1245599279671232,
+        "diamondPixels": 31.99938804889373
+      },
+      {
+        "verticalFovDegrees": 75,
+        "depth": 5,
+        "worldScale": 1,
+        "diamondPixels": 86.46117794310653
+      },
+      {
+        "verticalFovDegrees": 75,
+        "depth": 15,
+        "worldScale": 1.1103036811486677,
+        "diamondPixels": 31.99938804889373
+      },
+      {
+        "verticalFovDegrees": 75,
+        "depth": 25,
+        "worldScale": 1.8505061352477798,
+        "diamondPixels": 31.99938804889373
+      },
+      {
+        "verticalFovDegrees": 100,
+        "depth": 5,
+        "worldScale": 1,
+        "diamondPixels": 55.669221943589214
+      },
+      {
+        "verticalFovDegrees": 100,
+        "depth": 15,
+        "worldScale": 1.7244387615828034,
+        "diamondPixels": 31.999388048893728
+      },
+      {
+        "verticalFovDegrees": 100,
+        "depth": 25,
+        "worldScale": 2.8740646026380055,
+        "diamondPixels": 31.999388048893728
+      }
+    ],
+    "note": "Analytical projection verification for unoccluded geometry; native visual captures certify5m/15m only. Invalid25m teleport capture is excluded.",
+    "normalGameplayVerticalFovDegrees": 75,
+    "minimumMarkerBottomAboveFlatGroundAt25m": 0.2179396035601724
+  },
+  "discardedAttempt": {
+    "distanceMeters": 25,
+    "reason": "Console refused teleport outside the map; capture excluded, not used as evidence."
+  },
+  "images": {
+    "5m": {
+      "file": "after-5m.png",
+      "sha256": "7b8be56ac36a175730bb9631e69ce0a2bae788343c692fc4d6cec69bd4871e24",
+      "pid": 26812,
+      "width": 1920,
+      "height": 1080,
+      "method": "PrintWindow/PW_RENDERFULLCONTENT",
+      "launchToCaptureMs": 87854
+    },
+    "15m": {
+      "file": "after-15m.png",
+      "sha256": "1c16f74ccb8c8a6e8c2550118c07ef8b45023333c1ca68e2d486d4c3616a4ac6",
+      "pid": 26812,
+      "width": 1920,
+      "height": 1080,
+      "method": "PrintWindow/PW_RENDERFULLCONTENT",
+      "launchToCaptureMs": 102934
+    },
+    "pickup": {
+      "file": "after-pickup.png",
+      "sha256": "1844c246402571f4ebc83ef8cd02c957ecf6f999b0c551b5f5db90a88151d117",
+      "pid": 26812,
+      "width": 1920,
+      "height": 1080,
+      "method": "PrintWindow/PW_RENDERFULLCONTENT",
+      "launchToCaptureMs": 132022
+    }
+  },
+  "packageCheck": {
+    "result": "PASS",
+    "marker": [
+      ".godot/GodotJS/scripts/ammo_indicator.js",
+      ".godot/GodotJS/scripts/ammo_indicator.js.map",
+      ".godot/GodotJS/scripts/client/ammo_indicator_view.js",
+      ".godot/GodotJS/scripts/client/ammo_indicator_view.js.map",
+      "scripts/ammo_indicator.ts",
+      "scripts/client/ammo_indicator_view.ts.remap"
+    ],
+    "retired": [],
+    "bridge": []
+  },
+  "clientScriptShaderErrors": [],
+  "priorCanBaseline": {
+    "release": "v0.50",
+    "source": "66a7918558ed469b9ac0063b2a317ffd4467cd8b",
+    "zipSha256": "750d702fe99cf863c6f2d7e15a276c6ba1b1a0710630317cb342b10f3f9caa8d",
+    "exeSha256": "906099ecdd420984e8120b24f462c6e5d7094e3037566eff5032911129fab816",
+    "exe": "artifacts\\ammo-indicator\\before\\BattleDuty.exe",
+    "url": "https://github.com/KamranAsif/Godmode.exe-roguelite/releases/tag/v0.50"
+  },
+  "priorCanCaptures": {
+    "binary": "D:\\work\\godmode-roguelite-worktrees\\ammo-diamond-indicator\\artifacts\\ammo-indicator\\before\\BattleDuty.exe",
+    "binarySha256": "906099ecdd420984e8120b24f462c6e5d7094e3037566eff5032911129fab816",
+    "instance": "ammo-export-before",
+    "pid": 18852,
+    "session": "ammo-marker-finish-20261019",
+    "startedAt": "2026-10-19T05:51:02.693Z",
+    "dropXZ": [
+      -562.062744,
+      -380.327759
+    ],
+    "distancesMeters": [
+      5,
+      15
+    ],
+    "input": "Ordinary shipped console ammobox/tp plus matched native mouseMove [0,80]; no inspection bridge",
+    "images": {
+      "5m": {
+        "file": "before-5m.png",
+        "sha256": "fd467cd75d1ec46311224fc2ab74622328288514a6a530151385d8fac0a3d97d",
+        "pid": 18852,
+        "width": 1920,
+        "height": 1080,
+        "method": "PrintWindow/PW_RENDERFULLCONTENT"
+      },
+      "15m": {
+        "file": "before-15m.png",
+        "sha256": "789c2fd8e109df7d824584047f502b1ede426ed77eadecbe750758928d89f961",
+        "pid": 18852,
+        "width": 1920,
+        "height": 1080,
+        "method": "PrintWindow/PW_RENDERFULLCONTENT"
+      },
+      "pickup": {
+        "file": "before-pickup.png",
+        "sha256": "a380305f155635b0faa0367228fc532406fb4710aa456da0dbceb866c2713e11",
+        "pid": 18852,
+        "width": 1920,
+        "height": 1080,
+        "method": "PrintWindow/PW_RENDERFULLCONTENT"
+      }
+    }
+  },
+  "setup": {
+    "dropXZ": [
+      -562.062744,
+      -380.327759
+    ],
+    "distancesMeters": [
+      5,
+      15
+    ],
+    "playerX": [
+      -567.062744,
+      -577.062744
+    ],
+    "playerY": -16.46,
+    "playerZ": -380.327759,
+    "mouseInput": [
+      0,
+      80
+    ],
+    "nativeConsole": "invincible on; health100; timescale0.05; spawns off; killall; ammobox; tp",
+    "notes": "Ordinary shipped developer console, no runtime inspection bridge. Original before-can captures retained because its binary and camera setup are unchanged."
+  }
+}
