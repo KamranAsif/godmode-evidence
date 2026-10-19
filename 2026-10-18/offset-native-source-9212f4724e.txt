@@ -1,0 +1,47 @@
+import { AudioEffectRecord, AudioServer, AudioStreamPlayer, FileAccess, Node, Time, type AudioStream } from "godot";
+import { audioSourcePath, nameAudioStream, playAudio, setNewSoundSet } from "../../scripts/audio_play";
+import { loadShared } from "../../scripts/shared_resources";
+export default class AudioResources extends Node {
+    private player = new AudioStreamPlayer();
+    private effect = new AudioEffectRecord();
+    private index = -1;
+    private started = 0;
+    private results: object[] = [];
+    private cases = [
+        { name: "active-casing", path: "res://assets/audio/sfx/casing-01.ogg", keep: false, from: 0 },
+        { name: "legacy-rifle", path: "res://assets/audio/sfx/machine-fire-01.ogg", keep: true, from: 0 },
+        { name: "replacement-rifle", path: "res://assets/audio/sfx/machine-fire-01.ogg", keep: false, from: 0 },
+        { name: "casing-replay", path: "res://assets/audio/swaps/restored-sfx-casing-01.ogg", keep: true, from: 1 },
+    ];
+    _ready(): void {
+        setNewSoundSet(true);
+        this.add_child(this.player);
+        AudioServer.add_bus_effect(0, this.effect);
+    }
+    _process(): void {
+        const now = Time.get_ticks_msec();
+        if (this.index >= this.cases.length || (this.index >= 0 && now - this.started < 1600)) return;
+        if (this.index >= 0) {
+            this.effect.set_recording_active(false);
+            this.effect.get_recording()?.save_to_wav(`res://artifacts/offset-${this.cases[this.index].name}.wav`);
+        }
+        this.player.stop();
+        this.index++;
+        if (this.index === this.cases.length) {
+            const file = FileAccess.open("res://artifacts/offset-native.json", FileAccess.ModeFlags.WRITE)!;
+            file.store_string(JSON.stringify({ completed: true, results: this.results })); file.close();
+            this.set_meta("godot_cli_state", JSON.stringify({ completed: true }));
+            return;
+        }
+        const c = this.cases[this.index];
+        this.player.stream = loadShared<AudioStream>(c.path);
+        nameAudioStream(this.player.stream, c.path);
+        this.player.volume_db = -18;
+        this.player.pitch_scale = 1;
+        this.player.bus = "Master";
+        this.effect.set_recording_active(true);
+        playAudio(this.player, `OffsetAudit:${c.name}`, c.from, undefined, c.keep, true);
+        this.results.push({ name: c.name, file: audioSourcePath(this.player.stream!), nativePosition: this.player.get_playback_position(), duration: this.player.stream!.get_length() });
+        this.started = Time.get_ticks_msec();
+    }
+}
