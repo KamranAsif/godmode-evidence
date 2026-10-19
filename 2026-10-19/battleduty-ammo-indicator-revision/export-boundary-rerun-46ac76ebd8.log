@@ -1,0 +1,21 @@
+✔ Godot's export filters are globs over whole paths, not directory rules (0.6533ms)
+✔ every export preset excludes the runtime inspection bridge (1.4576ms)
+✔ every export preset excludes all of tools/ and tests/ (619.7753ms)
+✔ tools/ is hidden from the exporter a second time, by its own .gdignore (0.317ms)
+✔ no export preset excludes the game's own resources (5.0381ms)
+✔ every raw .glb.bin model is packaged (164.3973ms)
+✔ the export leaves out the parts of the maps only the tools read (0.8548ms)
+✔ the pack's byte scan finds a literal that straddles a chunk boundary (9.6045ms)
+✔ the pack reader skips an embedded pack's alignment padding, and nothing more (10.367ms)
+✔ release filters exclude legacy lightmap assets and source/compiled loaders (22.904ms)
+✔ playtest exports explicitly carry debug wallet controls; production releases do not (1.8867ms)
+✔ audio console code and web assets are packaged only in playtest presets (6.5856ms)
+✔ both presets include every committed swap recording and its manifest (87.9306ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 979.5525
