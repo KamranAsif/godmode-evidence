@@ -1,0 +1,31 @@
+{
+  "pr": 2121,
+  "commit": "381f9f53c70e2028c128f6bef71224ef1a86a562",
+  "command": "node tools/godot-cli/dist/src/index.js game export --project . --session audio-offset-export-20261019 --preset \"Windows Playtest\" --output artifacts/playtest-offset/BattleDuty.exe --json",
+  "ok": false,
+  "message": "Timed out waiting for GPU: Rendered launch requires capture holds to drain; GPU queue head is session damage-arena-mveozx1k; queue position 6/7 (ticket #1418); estimated start 2026-10-19T05:13:14.309Z. Use godot-cli gpu status; ask the owner to stop its rendered runs/release, or wait for expiry.",
+  "preset": "Windows Playtest",
+  "preflightAndImportCompleted": true,
+  "packagingStarted": false,
+  "binaryProduced": false,
+  "exportedFeatureCheck": "Not run: no executable was produced.",
+  "initialCaptureAdmission": "2026-10-19T03:43:10.219Z",
+  "idleReclamation": {
+    "holdId": "3e4e39bc-ace8-4deb-84b6-908121fa5ac5",
+    "sessionId": "audio-offset-export-20261019",
+    "mode": "capture",
+    "reclaimedAt": "2026-10-19T03:45:10.554Z",
+    "idleSince": "2026-10-19T03:43:10.540Z",
+    "reason": "Released automatically: no running session engine or GPU operation for 2 continuous minutes"
+  },
+  "shortPackagingAdmission": "2026-10-19T03:50:04.822Z",
+  "note": "Initial GPU reservation was reclaimed automatically during the CPU preflight because no session engine/GPU operation was live for two continuous minutes. Packaging re-entered the shared queue and timed out. A five-minute packaging-only reservation arrived after that timeout and was released through session end. No peer engine or hold was stopped.",
+  "tests": {
+    "targetedAudio": 113,
+    "fullPnpmTest": {
+      "passed": 11,
+      "total": 11,
+      "wallSeconds": 220.8
+    }
+  }
+}
