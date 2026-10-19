@@ -1,0 +1,10 @@
+Revision c073effa3 validation:
+- TypeScript build: PASS.
+- Targeted ammo indicator / HUD layout / encounter preload: 59 PASS.
+- Full pnpm test run once: 10/11 steps PASS; test:unit failed on one unrelated filesystem race.
+- Unit tier: 2245 PASS, 1 FAIL, 1 SKIP. Failure: tests/unit/export-boundary.test.mjs:127, every export preset excludes all of tools/ and tests/: ENOENT scandir tests/unit/compiled-guard-BTCXlb while another unit test removed its temporary directory.
+- Isolated node --test tests/unit/export-boundary.test.mjs rerun: 13 PASS, 0 FAIL in 979.55ms.
+- All CLI tests passed in the full root run, including the previous process-record test flake.
+- No unrelated filesystem/test race fixes are included.
+- Native exported 5m/15m/pickup captures, package security and fresh independent visual auditor: PASS; see manifest and auditor report.
+- Ammo chance, guarantee, collection, expiry, minimap and +1 MAG behavior unchanged by this shader-only revision. Prior behavior-only full-renderer e2e PASS and actual bob/fade trace remain linked in PR.
