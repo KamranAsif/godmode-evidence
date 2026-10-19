@@ -1,0 +1,66 @@
+{
+    "kind":  "actual native F4 panels in isolated UI review fixture, 1280x720 at native scale; not exported gameplay evidence",
+    "passed":  true,
+    "stop":  true,
+    "warmupMs":  5000,
+    "nativeChecks":  [
+                         {
+                             "count":  1,
+                             "cue":  "hit-confirm",
+                             "elapsedMs":  135,
+                             "nativeReceipt":  {
+                                                   "atMs":  6243,
+                                                   "id":  "hit-confirm",
+                                                   "spatial":  false
+                                               },
+                             "requestedDelayMs":  "default100",
+                             "startedAtMs":  6108,
+                             "visualImmediate":  true
+                         },
+                         {
+                             "count":  2,
+                             "cue":  "hit-confirm",
+                             "elapsedMs":  1,
+                             "nativeReceipt":  {
+                                                   "atMs":  6676,
+                                                   "id":  "hit-confirm",
+                                                   "spatial":  false
+                                               },
+                             "requestedDelayMs":  0,
+                             "startedAtMs":  6675,
+                             "visualImmediate":  true
+                         },
+                         {
+                             "count":  3,
+                             "cue":  "hit-confirm",
+                             "elapsedMs":  268,
+                             "nativeReceipt":  {
+                                                   "atMs":  7476,
+                                                   "id":  "hit-confirm",
+                                                   "spatial":  false
+                                               },
+                             "requestedDelayMs":  250,
+                             "startedAtMs":  7208,
+                             "visualImmediate":  true
+                         },
+                         {
+                             "count":  0,
+                             "cue":  "kill-thump",
+                             "elapsedMs":  1,
+                             "nativeReceipt":  {
+                                                   "atMs":  7909,
+                                                   "id":  "kill-thump",
+                                                   "spatial":  false
+                                               },
+                             "requestedDelayMs":  1000,
+                             "startedAtMs":  7908
+                         }
+                     ],
+    "captures":  [
+                     "native-panel-before-final.png",
+                     "native-panel-after-final.png"
+                 ],
+    "baseline":  "d63e6a863",
+    "commit":  "15ce04aa8",
+    "note":  "Actual production classes in isolated native UI fixture. Not exported gameplay evidence."
+}
