@@ -1,0 +1,19 @@
+Grunt audio investigation - 2026-10-18
+
+Observed exported run: installed BattleDuty0.50 Windows Playtest, release commit66a7918558ed, running with args=[] (ordinary human launch). Source log client-20261018-234059-26384.log. Read only; no files in Downloads, Kamran main checkout or shared user data were modified.
+
+Actual native audio starts in9m15.741s of combat (23:41:12.683Z through23:50:28.424Z):
+- grunt-contact:21
+- grunt-run-gear:112
+- grunt-rifle-rack:30
+- grunt-squad-whistle:12
+
+All4 cue resources, swap resources, imported Vorbis payloads and playtest raw mirrors are present in the embedded PCK. No inspection bridge is packaged. Windows Playtest uses all_resources; enemies are not excluded and swaps are explicitly included.
+
+Production provides4 independent event sounds, one selected recording each: a0.65s spoken Contact! call,0.55s running gear/boot burst,0.25s mechanical rifle rack,0.48s squad whistle. The12 generation candidates are production selection history, not a12-take runtime pool. No additional spoken grunt phrases are supplied.
+
+Wiring: EnemyVoices selects living rifle soldiers, passes drawn position, authoritative attack phase and target to GruntAnnouncements. Contact is first acquisition per body, gear while hunting/moving, rack on pre-fire windup, whistle on a fresh arrival cohort after3s quiet. Global gaps3s/650ms/1s/12s, gear per-body1.3s, distances55m/35m. Excess events are intentionally dropped. Each cue resolves its one file; RNG changes pitch slightly, not cue identity. The normal world pool starts all4 on GameplaySfx. There is no grunt-specific foreground priority veto. Classic and New both retain these cues. These rule/presenter/source-asset files are unchanged between installed release66a7918558ed and inspected main4990ddbc1.
+
+Conclusion: the claim that only one cue starts is contradicted by the real exported combat log. The audible impression could still involve masking or distance; start logs do not prove what Kamran heard. Multiple spoken call variations do not exist yet and belong to sound production. No playback fix or source changes were made, and no speculative PR was opened.
+
+Validation: pnpm install; pnpm imports:seed; pnpm build:scripts; godot-cli project import (JSONoktrue);28 targeted enemy-audio, restoration and sound-set tests pass. No full suite because there are no source changes or PR.
