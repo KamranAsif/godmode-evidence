@@ -1,0 +1,178 @@
+{
+  "execution": {
+    "platform": "Windows",
+    "preset": "Windows Playtest",
+    "launch": "godot-cli game run --binary EXPORTED_EXE --fixture roguelite --instance UNIQUE --session OWNED",
+    "note": "Actual embedded production arena; ordinary run starts immediately. Native window input and shipped developer console only. Free camera measures mouse axes; it is off for all physical walking and shooting. No runtime inspection bridge."
+  },
+  "walking": "Native W held 1500ms at time scale 1, no jump; shipped pos reports authoritative snapshot coordinates.",
+  "before": {
+    "build": {
+      "commit": "e2bd46e1abb9+dirty",
+      "branch": "fix/enemy-walk-smoothness",
+      "built": "2026-10-19T03:50:22.469Z"
+    },
+    "binarySha256": "ac4d9356da66e8f7a46b49e63cc15dbacf7aaa2109db7314828a6be738237a92",
+    "clientLogSha256": "ade0c8756a2d30350d2576ea96cfee31a510b6d881f1f4e7cfb8b0af1dd870aa",
+    "calibration": {
+      "first": {
+        "a": [
+          -580,
+          -15.8,
+          -350
+        ],
+        "b": [
+          -576.2,
+          -15.8,
+          -350
+        ],
+        "yaw": -1.5707963267948966,
+        "pitch": 0
+      },
+      "horizontal": {
+        "a": [
+          -576.2,
+          -15.8,
+          -350
+        ],
+        "b": [
+          -572.9,
+          -15.8,
+          -348.2
+        ],
+        "yaw": -2.0701430484750207,
+        "pitch": 0
+      },
+      "vertical": {
+        "a": [
+          -572.9,
+          -15.8,
+          -348.2
+        ],
+        "b": [
+          -569.7,
+          -16.7,
+          -346.5
+        ],
+        "yaw": -2.0591302778513083,
+        "pitch": -0.24344988834376152
+      },
+      "mouseX": 0.002496733608400621,
+      "mouseY": 0.0024344988834376154,
+      "method": "Unblocked camera movement only; return to colliding player before feature actions"
+    },
+    "contact": {
+      "feature": "kerb",
+      "from": [
+        -585.1,
+        -16.6,
+        -334.4
+      ],
+      "to": [
+        -576.1,
+        -16.4,
+        -334.6
+      ],
+      "heldForwardMs": 1500,
+      "walkingTimeScale": 1,
+      "jump": false,
+      "progressOntoSidewalk": 1.548668296120045
+    },
+    "capture": {
+      "file": "kerb-before.png",
+      "sha256": "b485b3fe7d03385a3cadc3579695bc84ccc052627ec7261633dfa5b2997aa757",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/kerb-before-b485b3fe7d.png"
+    }
+  },
+  "after": {
+    "build": {
+      "commit": "b63f656f7f36",
+      "branch": "fix/kerb-step-20261019",
+      "built": "2026-10-19T07:03:25.495Z"
+    },
+    "binarySha256": "3b704bc48b5ccf536288a4fa60c61bb0fbffebc2122c6c60cdf2c47c9762db30",
+    "clientLogSha256": "2886b3afb7acc49f9caecc2d8b1073f135b6de4396750ee4d8de46ff0be9bf4a",
+    "calibration": {
+      "first": {
+        "a": [
+          -580,
+          -15.8,
+          -350
+        ],
+        "b": [
+          -576.3,
+          -15.8,
+          -350
+        ],
+        "yaw": -1.5707963267948966,
+        "pitch": 0
+      },
+      "horizontal": {
+        "a": [
+          -576.3,
+          -15.8,
+          -350
+        ],
+        "b": [
+          -573,
+          -15.8,
+          -348.2
+        ],
+        "yaw": -2.0701430484750354,
+        "pitch": 0
+      },
+      "vertical": {
+        "a": [
+          -573,
+          -15.8,
+          -348.2
+        ],
+        "b": [
+          -569.8,
+          -16.7,
+          -346.5
+        ],
+        "yaw": -2.0591302778512937,
+        "pitch": -0.24344988834375503
+      },
+      "mouseX": 0.0024967336084006945,
+      "mouseY": 0.0024344988834375503,
+      "method": "Unblocked camera movement only; return to colliding player before feature actions"
+    },
+    "contact": {
+      "feature": "kerb",
+      "from": [
+        -585.1,
+        -16.6,
+        -334.4
+      ],
+      "to": [
+        -576.2,
+        -16.3,
+        -338
+      ],
+      "heldForwardMs": 1500,
+      "walkingTimeScale": 1,
+      "jump": false,
+      "view": {
+        "yaw": -1.1902899496825374,
+        "pitch": 0.02652168525447603
+      },
+      "progressOntoSidewalk": 4.895136738730019
+    },
+    "capture": {
+      "file": "kerb-after.png",
+      "sha256": "09983d6ee32f0d0700322898a523350cdf619f4c9581d734e1cc9bc4425fd036",
+      "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/kerb-after-09983d6ee3.png"
+    }
+  },
+  "serverPositionComparison": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-19/kerb-server-comparison-f20ee96cb9.json",
+  "sourceEquivalenceAfterRebase": {
+    "capturedCommit": "b63f656f7f36f28a4ec1278320a9d212d74588c8",
+    "files": {
+      "scripts/player_movement.ts": "27443022107503590f193dd404f6201a20759dc4"
+    },
+    "currentCommit": "a8cf9463290dea95a5d5d7ff472ef0dc56b838de",
+    "unchanged": true
+  }
+}
