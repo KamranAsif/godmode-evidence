@@ -1,0 +1,238 @@
+BattleDuty #2130 verification, Windows pinned GodotJS 4.6.1 custom_build.14d19694e
+Base c51312439; fix 2eb224146. All native runs headless, with owned named instances/sessions.
+No full arena regeneration or deletion. No visual/player-facing changes.
+
+Root cause: FLAG_BUNDLE_RESOURCES in Godot's binary saver collects external
+resources internally, but write_variant still emits external indices from their
+resource paths. A single external BoxShape3D reproduces the invalid index and null
+shape without any arena cache or imported assets. Ordinary external saving works;
+duplicate_deep(ALL) then compressed saving preserves it with zero dependencies.
+Reference: https://github.com/godotengine/godot/blob/4.6-stable/core/io/resource_format_binary.cpp
+
+The large arena also exceeded the 60s generator deadline before reaching save:
+328284 physics nodes, 322923 shape uses, only 13270 unique shapes. Cache each shape
+signature/proxy mesh during construction and hash binary geometry. Publish the
+sentinel after reload/signature/dependency verification, before temporary node cleanup.
+The builder source fingerprint invalidates the old cheap cache automatically.
+
+BEFORE: exact issue command (unchanged normal generation deadline)
+$env:GODMODE_SESSION_ID='cheap-2130'
+node tools/godot-cli/dist/src/index.js game run --project . --instance cheap-2130-before --session cheap-2130 --headless --inspect --allow-actions --fixture roguelite
+node : (node:5972) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to 
+security vulnerabilities, as the arguments are not escaped, only concatenated.
+At line:2 char:83
++ ... StartNew(); node tools/godot-cli/dist/src/index.js game run --project ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((node:5972) [DE...y concatenated.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Error: Run preparation failed; no engine was started
+exit=1 elapsedMs=63696
+
+NATIVE ISOLATION: one external shape, no arena/import cache
+Godot Engine v4.6.1.stable.custom_build.14d19694e (2026-02-16 15:13:51 UTC) - https://godotengine.org
+
+[JSDebugger][Debug] devtools://devtools/bundled/inspector.html?v8only=true&ws=127.0.0.1:9229/1
+WARNING: Broken external resource! (index out of size)
+   at: ResourceLoaderBinary::parse_variant (core\io\resource_format_binary.cpp:446)
+   GDScript backtrace (most recent call first):
+       [0] _ready (res://artifacts/cheap-arena-2130/save_probe.gd:22)
+       [1] _start (res://tools/godot-cli/runner/inspection_bridge.gd:206)
+SAVE_PROBE={"dependencies":[],"mode":"bundle","saveError":0,"shapePreserved":false}
+SAVE_PROBE={"dependencies":["res://artifacts/cheap-arena-2130/external_shape.tres"],"mode":"external","saveError":0,"shapePreserved":true}
+SAVE_PROBE={"dependencies":[],"mode":"builtin","saveError":0,"shapePreserved":true}
+GODOT_CLI_INSPECTION=http://127.0.0.1:61321/inspect
+
+Godot Engine v4.6.1.stable.custom_build.14d19694e (2026-02-16 15:13:51 UTC) - https://godotengine.org
+
+[JSDebugger][Debug] devtools://devtools/bundled/inspector.html?v8only=true&ws=127.0.0.1:9229/1
+WARNING: Broken external resource! (index out of size)
+   at: ResourceLoaderBinary::parse_variant (core\io\resource_format_binary.cpp:446)
+   GDScript backtrace (most recent call first):
+       [0] _ready (res://artifacts/cheap-arena-2130/save_probe.gd:24)
+       [1] _start (res://tools/godot-cli/runner/inspection_bridge.gd:206)
+SAVE_PROBE={"dependencies":[],"mode":"bundle","saveError":0,"shapePreserved":false}
+SAVE_PROBE={"dependencies":["res://artifacts/cheap-arena-2130/external_shape.tres"],"mode":"external","saveError":0,"shapePreserved":true}
+SAVE_PROBE={"dependencies":[],"mode":"duplicate","saveError":0,"shapePreserved":true}
+GODOT_CLI_INSPECTION=http://127.0.0.1:61351/inspect
+
+REGRESSION before the save fix (same targeted native test exits 1)
+ cheap arena embeds external physics/navigation resources and survives binary reload (917.5116ms)
+ tests 1
+ suites 0
+ pass 0
+ fail 1
+ cancelled 0
+ skipped 0
+ todo 0
+ duration_ms 967.4604
+
+ failing tests:
+
+test at tools\godot-cli\dist\test\integration\cheap-arena.integration.test.js:11:1
+ cheap arena embeds external physics/navigation resources and survives binary reload (917.5116ms)
+  AssertionError [ERR_ASSERTION]: The input was expected to not match the regular expression /SCRIPT ERROR:|ERROR:|Broken external resource/. Input:
+  
+  'Godot Engine v4.6.1.stable.custom_build.14d19694e (2026-02-16 15:13:51 UTC) - https://godotengine.org\r\n' +
+    '\r\n' +
+    '[JSDebugger][Debug] [LWS] [2026/10/19 05:03:06:1934] E: [null wsi]: lws_socket_bind: ERROR on binding fd 1156 to port 9229 (-1 10048)\r\n' +
+    '[JSDebugger][Debug] [LWS] [2026/10/19 05:03:06:1944] E: [vh|0|default||9229]: lws_create_vhost: init server failed\r\n' +
+    '[JSDebugger][Debug] [LWS] [2026/10/19 05:03:06:1954] E: lws_create_context: Failed to create default vhost\r\n' +
+    '[JSDebugger][Debug] devtools://devtools/bundled/inspector.html?v8only=true&ws=127.0.0.1:9229/1\r\n' +
+    'WARNING: Broken external resource! (index out of size)\r\n' +
+    '   at: ResourceLoaderBinary::parse_variant (core\\io\\resource_format_binary.cpp:446)\r\n' +
+    '   GDScript backtrace (most recent call first):\r\n' +
+    '       [0] _ready (res://builder.gd:49)\r\n' +
+    '       [1] _ready (res://setup.gd:32)\r\n' +
+    '       [2] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\n' +
+    'WARNING: Broken external resource! (index out of size)\r\n' +
+    '   at: ResourceLoaderBinary::parse_variant (core\\io\\resource_format_binary.cpp:446)\r\n' +
+    '   GDScript backtrace (most recent call first):\r\n' +
+    '       [0] _ready (res://builder.gd:49)\r\n' +
+    '       [1] _ready (res://setup.gd:32)\r\n' +
+    '       [2] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\n' +
+    "SCRIPT ERROR: Attempt to call function 'get_class' in base 'null instance' on a null instance.\r\n" +
+    '   at: _physics_signature (res://builder.gd:69)\r\n' +
+    '   GDScript backtrace (most recent call first):\r\n' +
+    '       [0] _physics_signature (res://builder.gd:69)\r\n' +
+    '       [1] _physics_signature (res://builder.gd:77)\r\n' +
+    '       [2] _physics_signature (res://builder.gd:77)\r\n' +
+    '       [3] _ready (res://builder.gd:51)\r\n' +
+    '       [4] _ready (res://setup.gd:32)\r\n' +
+    '       [5] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\n' +
+    "SCRIPT ERROR: Attempt to call function 'get_class' in base 'null instance' on a null instance.\r\n" +
+    '   at: _physics_signature (res://builder.gd:69)\r\n' +
+    '   GDScript backtrace (most recent call first):\r\n' +
+    '       [0] _physics_signature (res://builder.gd:69)\r\n' +
+    '       [1] _physics_signature (res://builder.gd:77)\r\n' +
+    '       [2] _physics_signature (res://builder.gd:77)\r\n' +
+    '       [3] _ready (res://builder.gd:51)\r\n' +
+    '       [4] _ready (res://setup.gd:32)\r\n' +
+    '       [5] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\n' +
+    "SCRIPT ERROR: Attempt to call function 'get_vertices' in base 'null instance' on a null instance.\r\n" +
+    '   at: _physics_signature (res://builder.gd:74)\r\n' +
+    '   GDScript backtrace (most recent call first):\r\n' +
+    '       [0] _physics_signature (res://builder.gd:74)\r\n' +
+    '       [1] _physics_signature (res://builder.gd:77)\r\n' +
+    '       [2] _ready (res://builder.gd:51)\r\n' +
+    '       [3] _ready (res://setup.gd:32)\r\n' +
+    '       [4] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\n' +
+    'ERROR: Cheap arena changed physics/navigation or retained external production resources\r\n' +
+    '   at: VariantUtilityFunctions::push_error (core\\variant\\variant_utility.cpp:1024)\r\n' +
+    '   GDScript backtrace (most recent call first):\r\n' +
+    '       [0] _ready (res://builder.gd:55)\r\n' +
+    '       [1] _ready (res://setup.gd:32)\r\n' +
+    '       [2] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\n' +
+    'GODOT_CLI_INSPECTION=http://127.0.0.1:61522/inspect\r\n'
+  
+      at TestContext.<anonymous> (file:///D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/dist/test/integration/cheap-arena.integration.test.js:70:20)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: "Godot Engine v4.6.1.stable.custom_build.14d19694e (2026-02-16 15:13:51 UTC) - https://godotengine.org\r\n\r\n[JSDebugger][Debug] [LWS] [2026/10/19 05:03:06:1934] E: [null wsi]: lws_socket_bind: ERROR on binding fd 1156 to port 9229 (-1 10048)\r\n[JSDebugger][Debug] [LWS] [2026/10/19 05:03:06:1944] E: [vh|0|default||9229]: lws_create_vhost: init server failed\r\n[JSDebugger][Debug] [LWS] [2026/10/19 05:03:06:1954] E: lws_create_context: Failed to create default vhost\r\n[JSDebugger][Debug] devtools://devtools/bundled/inspector.html?v8only=true&ws=127.0.0.1:9229/1\r\nWARNING: Broken external resource! (index out of size)\r\n   at: ResourceLoaderBinary::parse_variant (core\\io\\resource_format_binary.cpp:446)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _ready (res://builder.gd:49)\r\n       [1] _ready (res://setup.gd:32)\r\n       [2] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\nWARNING: Broken external resource! (index out of size)\r\n   at: ResourceLoaderBinary::parse_variant (core\\io\\resource_format_binary.cpp:446)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _ready (res://builder.gd:49)\r\n       [1] _ready (res://setup.gd:32)\r\n       [2] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\nSCRIPT ERROR: Attempt to call function 'get_class' in base 'null instance' on a null instance.\r\n   at: _physics_signature (res://builder.gd:69)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _physics_signature (res://builder.gd:69)\r\n       [1] _physics_signature (res://builder.gd:77)\r\n       [2] _physics_signature (res://builder.gd:77)\r\n       [3] _ready (res://builder.gd:51)\r\n       [4] _ready (res://setup.gd:32)\r\n       [5] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\nSCRIPT ERROR: Attempt to call function 'get_class' in base 'null instance' on a null instance.\r\n   at: _physics_signature (res://builder.gd:69)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _physics_signature (res://builder.gd:69)\r\n       [1] _physics_signature (res://builder.gd:77)\r\n       [2] _physics_signature (res://builder.gd:77)\r\n       [3] _ready (res://builder.gd:51)\r\n       [4] _ready (res://setup.gd:32)\r\n       [5] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\nSCRIPT ERROR: Attempt to call function 'get_vertices' in base 'null instance' on a null instance.\r\n   at: _physics_signature (res://builder.gd:74)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _physics_signature (res://builder.gd:74)\r\n       [1] _physics_signature (res://builder.gd:77)\r\n       [2] _ready (res://builder.gd:51)\r\n       [3] _ready (res://setup.gd:32)\r\n       [4] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\nERROR: Cheap arena changed physics/navigation or retained external production resources\r\n   at: VariantUtilityFunctions::push_error (core\\variant\\variant_utility.cpp:1024)\r\n   GDScript backtrace (most recent call first):\r\n       [0] _ready (res://builder.gd:55)\r\n       [1] _ready (res://setup.gd:32)\r\n       [2] _start (D:/work/godmode-roguelite-worktrees/cheap-arena-reload-2130/tools/godot-cli/runner/inspection_bridge.gd:206)\r\nGODOT_CLI_INSPECTION=http://127.0.0.1:61522/inspect\r\n",
+
+REGRESSION after: external collision/navigation, shape/vertex mutations, shared proxy reload
+node --test tools/godot-cli/dist/test/integration/cheap-arena.integration.test.js
+ cheap arena embeds external physics/navigation resources and survives binary reload (887.1055ms)
+ tests 1
+ suites 0
+ pass 1
+ fail 0
+ cancelled 0
+ skipped 0
+ todo 0
+ duration_ms 952.3396
+
+COLD AND WARM FINAL ACTUAL FIXTURES
+Command: node artifacts/cheap-arena-2130/verify-startup.mjs
+Cold uses an empty private cheap cache and retains the existing verified full server arena.
+Warm moves the local derivative aside, then restores the verified private cache.
+Explicit --scene launches intentionally skip CLI preparation. The proof invokes the
+unchanged tools/godot-cli/cheap-arena.mjs hook before each explicit roguelite launch.
+The 60000ms preparation deadline is unchanged. Bridge startup is timed from before
+preparation; subsequent gameplay/server warmup is reported separately.
+Final actual headless fixture proof, unchanged 60000ms preparation deadline. Bridge startup and subsequent server warmup reported separately.
+fingerprint=a19c400bd6e47842104dbbab3df7cc57419c5d21f365a11d703fb4b3b02c0e38 coldReceiptExists=false
+cold preparationMs=39685 [cheap-arena] Restored a19c400bd6e4; collision/navigation unchanged; no production visual dependencies.
+
+cold command={"schemaVersion":1,"ok":true,"message":"Started game (pid 40008)","data":{"pid":40008,"kind":"game","instance":"cheap-2130-final-cold","projectPath":"D:\\work\\godmode-roguelite-worktrees\\cheap-arena-reload-2130","logPath":"C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\77e7ee6e8492\\game-cheap-2130-final-cold.log","inspectionUrl":"http://127.0.0.1:62482/inspect","inspectPort":62482,"startedAt":"2026-10-19T09:14:57.547Z","sessionId":"cheap-2130-final","processStartToken":"argv:278277a3b261079ea2489ddb68020308","launchPreparation":{"runPrepareMs":1,"processSetupMs":21}}}
+cold BRIDGE_READY totalMs=53887
+cold SERVER_READY totalMs=62846 scene=res://scenes/roguelite.tscn localServerTick={"maxMs":76.6398153,"meanMs":3.6525215}
+cold receipt={"fingerprint":"a19c400bd6e47842104dbbab3df7cc57419c5d21f365a11d703fb4b3b02c0e38","externalDependencies":0,"physicsNodes":328284,"physicsUnchanged":true,"proxies":322923}
+warm preparationMs=328 [cheap-arena] Restored a19c400bd6e4; collision/navigation unchanged; no production visual dependencies.
+
+warm command={"schemaVersion":1,"ok":true,"message":"Started game (pid 24700)","data":{"pid":24700,"kind":"game","instance":"cheap-2130-final-warm","projectPath":"D:\\work\\godmode-roguelite-worktrees\\cheap-arena-reload-2130","logPath":"C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\77e7ee6e8492\\game-cheap-2130-final-warm.log","inspectionUrl":"http://127.0.0.1:62517/inspect","inspectPort":62517,"startedAt":"2026-10-19T09:15:22.980Z","sessionId":"cheap-2130-final","processStartToken":"argv:f853572c815c3e93f90162d70cef122e","launchPreparation":{"runPrepareMs":1,"processSetupMs":22}}}
+warm BRIDGE_READY totalMs=16030
+warm SERVER_READY totalMs=26741 scene=res://scenes/roguelite.tscn localServerTick={"maxMs":90.1120755,"meanMs":4.27197}
+warm receipt={"fingerprint":"a19c400bd6e47842104dbbab3df7cc57419c5d21f365a11d703fb4b3b02c0e38","externalDependencies":0,"physicsNodes":328284,"physicsUnchanged":true,"proxies":322923}
+PASS cold and warm preparation and fixture bridge inside 60000ms; subsequent local server starts and is inspected without script/resource errors.
+
+EXACT ISSUE COMMAND AFTER (default main scene now boots the desktop dashboard)
+{"schemaVersion":1,"ok":true,"message":"Started game (pid 42100)","data":{"pid":42100,"kind":"game","instance":"cheap-2130-issue-after","projectPath":"D:\\work\\godmode-roguelite-worktrees\\cheap-arena-reload-2130","logPath":"C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\77e7ee6e8492\\game-cheap-2130-issue-after.log","inspectionUrl":"http://127.0.0.1:62574/inspect","inspectPort":62574,"startedAt":"2026-10-19T09:16:04.325Z","sessionId":"cheap-2130-issue-after","processStartToken":"argv:c693a6cb62c479cfeeeea1bc009dfb73","launchPreparation":{"runPrepareMs":801,"processSetupMs":21}}}
+{"inspectionOk":true,"scene":"res://scenes/desktop_boot.tscn"}
+
+FULL SUITE (run once)
+pnpm test
+43ms)
+ GIS holes stay open, including when a crop cuts through an outer ring (2.5386ms)
+ courtyard prism triangulates outward without filling the courtyard (1.2405ms)
+ generated geographic extract is chunked, cropped to the expanded waterfront boundary, and contains river and bridge (145.3609ms)
+ every mesh has semantic attribution and triangle ranges without geometry duplication (49.8859ms)
+ tests 49
+ suites 0
+ pass 49
+ fail 0
+ cancelled 0
+ skipped 0
+ todo 0
+ duration_ms 1462.4152
+[ 9/11] maps:test: ok in 1.7 s
+ project import bypasses a foreign hold on desktop hosts and bounds only HDR compression (3496.0256ms)
+ rendered export, arena scene, HDR import and capture paths refuse a foreign hold before GPU work (5076.3248ms)
+ hold drains an admitted one-shot operation and reports its session/PID, then cleans a stale ticket (1683.7914ms)
+ capture leases cap at fifteen minutes, renew only with live work, and yield to waiting timing (50.3477ms)
+ legacy multi-hour capture leases are shortened on observation and persisted (19.1034ms)
+ live captures preserve the default and accept bounded review resolutions (0.6091ms)
+ offscreen editor bootstrap remains small while the runner receives full target geometry (0.4469ms)
+ Windows session cleanup retries an injected failing lister with bounded backoff (1.1566ms)
+ an exhausted Windows lister fails cleanup rather than claiming no engines (0.3736ms)
+ Windows creation-time queries recover after a transient failure (0.1917ms)
+ query retries share a timeout budget and POSIX queries do not retry (0.1616ms)
+ recording stays bounded and uses a container that preserves fine edges (0.6038ms)
+ window input bounds keys, clicks, duration and console text before sending anything (0.9001ms)
+ native input allows enough time to finish the two-second reset confirmation (0.1165ms)
+ native hover accepts client coordinates without requiring a click (0.1238ms)
+ exported offscreen windows accept production client sizes and reject incomplete resize requests (0.1307ms)
+ release FPS input bounds relative look and a fire hold that always ends (0.1399ms)
+ an exported run never supplies --path or --script and retains managed cleanup (2351.5842ms)
+ exports refuse inspection and scene overrides before launching (0.604ms)
+ resource flags enable inspection independently and keep full resolution (4258.4172ms)
+ session end finds arbitrary export names without matching a shell mentioning them (43.911ms)
+ export window placement accepts an offscreen request without input (0.302ms)
+ an immediate post-fire key is bounded and cannot run without a fire hold (0.3325ms)
+ tests 295
+ suites 0
+ pass 289
+ fail 0
+ cancelled 0
+ skipped 6
+ todo 0
+ duration_ms 88468.8625
+Fake-engine post-suite check: no surviving engines
+[11/11] godot-cli: ok in 91.0 s
+
+
+  ROOT SUITE  OK
+
+  steps run:   11 of 11
+  passed:      11
+  failed:      0
+  wall time:   193.6 s
+  step time:   275.7 s (overlapping checks)
+
+exit=0
+
+REVIEW
+kamran-reviewer: PASS / no blocking findings. Reviewed source + regression + before/after logs; requires green pending pnpm test before PR. Review target c51312439 plus current two-file diff.
