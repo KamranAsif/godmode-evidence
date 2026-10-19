@@ -1,0 +1,33 @@
+{
+  "kind": "Controlled native client interpolation and production dog asset probe; separate from exported Playtest videos",
+  "conditions": {
+    "snapshotStepMs": 50,
+    "circleRadiusMeters": 3.5,
+    "slowGameSpeedMetersPerSecond": 0.64,
+    "matchedSimulationWindowMs": [
+      800,
+      2000
+    ],
+    "metric": "Absolute angle between rendered body yaw and rendered ground velocity after initial settling",
+    "processStepFpsCap": 60
+  },
+  "cases": [
+    {
+      "mode": "before",
+      "samples": 72,
+      "primaryGaits": [
+        "Walk"
+      ],
+      "absoluteFacingErrorMedianDegrees": 88.89950453813728
+    },
+    {
+      "mode": "after",
+      "samples": 72,
+      "primaryGaits": [
+        "Walk"
+      ],
+      "absoluteFacingErrorMedianDegrees": 1.3473293049210517
+    }
+  ],
+  "exportValidation": "Actual Windows Playtest circling and bite behavior audited visually; generic export animation trace omits the custom dog player. No exported per-dog speed or yaw measurement is claimed."
+}
