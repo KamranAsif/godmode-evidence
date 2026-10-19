@@ -1,0 +1,20 @@
+{
+    "pr":  2116,
+    "commit":  "15ce04aa8",
+    "command":  "node tools/godot-cli/dist/src/index.js game export --project . --preset \"Windows Playtest\" --output artifacts/windows-playtest/BattleDuty.exe --json",
+    "session":  "hitmarker-delay-export-retry-20261018",
+    "gpuAdmittedAt":  "2026-10-19T01:05:53.250Z",
+    "captureLeaseReclaimedAt":  "2026-10-19T01:07:53.716Z",
+    "reclaimedReason":  "No running session engine or GPU operation for 2 continuous minutes during CPU preparation and cache wait",
+    "compilation":  "passed",
+    "exportCheck":  "node tools/maps/prebuilt/build.mjs --ensure --strict",
+    "fingerprint":  "48dd8653342a4daa4dc83834547aabd5af7627cfbaffadb36b39a0e8386c7b61",
+    "error":  "Export checks failed; nothing was exported. Arena rendered launch: Timed out waiting for gpu-measurement lock.",
+    "arenaCheckElapsedMs":  258781,
+    "binaryProduced":  false,
+    "exportedFeatureCheck":  "not run: no binary produced",
+    "nativeFixtureChecks":  "previously passed; separate from exported gameplay",
+    "log":  "D:/work/godmode-roguelite-worktrees/hitmarker-delay-20261018/artifacts/windows-playtest-export-retry.log",
+    "failureLog":  "D:/work/godmode-roguelite-worktrees/hitmarker-delay-20261018/artifacts/prebuilt-arena/failure.json",
+    "cleanup":  "Owned retry session ended; stopped 0 engines; no other sessions touched"
+}
