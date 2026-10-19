@@ -1,0 +1,59 @@
+VERDICT: PASS
+Independent revised ammo-indicator visual audit
+Source revision: c073effa3fafd199131cda7cc6100b8cbfb8bb0c
+
+This report supersedes the earlier visual-auditor.txt PASS. That earlier result
+must not be used to approve the user-rejected pale, small 15 m marker.
+This auditor made none of the changes, started at FAIL pending new evidence,
+and did not edit runtime code, start engines, or run tests.
+
+I directly inspected the new, unedited native 1920x1080 Windows Playtest files
+at original full-image scale before doing pixel analysis:
+revision/after-5m.png
+revision/after-15m.png
+revision/after-pickup.png
+The valid original can baseline remains before-5m.png and before-15m.png.
+
+The revised 15 m marker reads as a teal diamond enclosing a magazine, with a
+much stronger dark backing and visible cool ink against the warm street.
+The inner magazine is distinguishable from its frame without enlarging the
+image. At 5 m the diamond and magazine remain restrained; the halo does not
+turn into a large beacon. The teal agrees with the +1 MAG HUD feedback.
+The pickup image shows the marker gone, reserve 90 -> 120 and +1 MAG.
+
+Independent pixel measurements, excluding dark backing and softer halo:
+Cyan ink defined by G-R>20, B-R>20, G>100 and B>100 in the marker region.
+5 m: bounds x917..1002, y477..560, visible cyan core height 84 pixels.
+15 m: bounds x946..973, y463..490, visible cyan core height 28 pixels.
+This is the requested roughly 28-32 pixel readable distant core, rather than
+an assertion that all 32 theoretical pixels are fully saturated teal.
+
+Provenance: successful normal Windows Playtest export, source c073effa3,
+binary SHA256 2ea1d93191afc0af37885d1c8d0ec410400b4fdbb780fa1f48bf8e93234732bf.
+Launch and capture receipts associate the valid images with PID 26812,
+instance ammo-revision-after and session ammo-marker-revision2-20261019.
+Independent PNG SHA256 values:
+5m     7b8be56ac36a175730bb9631e69ce0a2bae788343c692fc4d6cec69bd4871e24
+15m    1c16f74ccb8c8a6e8c2550118c07ef8b45023333c1ca68e2d486d4c3616a4ac6
+pickup 1844c246402571f4ebc83ef8cd02c957ecf6f999b0c551b5f5db90a88151d117
+The package check contains the revised marker and no old can presenter or
+runtime inspection bridge. The captures use the shipped console/native input.
+
+Scope and limits: the native visual PASS is for the requested 5 m and 15 m
+exported captures and pickup. No valid native 25 m or occlusion-pair capture
+was obtained. The attempted 25 m teleport was refused and its image and
+preliminary manifest are invalid probes, excluded from this verdict.
+
+The floor through 25 m is supported analytically, not claimed as a native
+25 m observation. I checked the shader formula independently: the diamond
+outer span is 0.80828454 of the quad, matching the 0.8083 denominator. The
+perspective scale yields a 31.9994 pixel outer diamond through depth 25 m at
+1080p, including normal FOV 75; its contrast is already fully enabled by
+15 m. The source uses the shared HUD #58D7EA accent with source_color.
+Normal depth testing remains enabled; there is no through-wall rendering
+flag. These code checks are not described as visual occlusion evidence.
+
+No blocking visual findings for the actual requested 15 m readability
+revision. The revised exported images, rather than code or prior evidence,
+establish this PASS. Published provenance must list only the valid 5 m,
+15 m and pickup images and exclude the refused 25 m probe.
