@@ -1,0 +1,169 @@
+{
+  "conditions": {
+    "enemies": 65,
+    "width": 1920,
+    "height": 1080,
+    "fullDetail": true,
+    "taa": false,
+    "exclusiveTiming": true,
+    "order": "fresh A:5/30, fresh B:30/5",
+    "mainThreadDefinition": "Scene processing elapsed time before render submission, excluding physics/render waits; not OS thread CPU accounting"
+  },
+  "freshPairedSceneObserver": {
+    "commit": "e2bd46e1abb95d8d94f5872af47f2c133ed6f1c1",
+    "trials": [
+      {
+        "trial": "A",
+        "radius": 5,
+        "frame": {
+          "median": 79.88,
+          "p95": 93.573
+        },
+        "main": {
+          "median": 33.241,
+          "p95": 42.578
+        }
+      },
+      {
+        "trial": "A",
+        "radius": 30,
+        "frame": {
+          "median": 78.865,
+          "p95": 92.44
+        },
+        "main": {
+          "median": 33.013,
+          "p95": 43.469
+        }
+      },
+      {
+        "trial": "B",
+        "radius": 5,
+        "frame": {
+          "median": 81.38,
+          "p95": 97.288
+        },
+        "main": {
+          "median": 32.941,
+          "p95": 43.293
+        }
+      },
+      {
+        "trial": "B",
+        "radius": 30,
+        "frame": {
+          "median": 89.426,
+          "p95": 107.007
+        },
+        "main": {
+          "median": 37.219,
+          "p95": 48.995
+        }
+      }
+    ],
+    "pooled": [
+      {
+        "radius": 5,
+        "frames": 248,
+        "frameMs": {
+          "median": 80.608,
+          "p95": 94.765
+        },
+        "mainSceneMs": {
+          "median": 33.115,
+          "p95": 43.054
+        }
+      },
+      {
+        "radius": 30,
+        "frames": 237,
+        "frameMs": {
+          "median": 81.891,
+          "p95": 104.212
+        },
+        "mainSceneMs": {
+          "median": 34.903,
+          "p95": 47.668
+        }
+      }
+    ]
+  },
+  "earlierNativeProfiler": {
+    "commit": "b3baabf7c68337d08e0349e6bffca0cf2eff3edd",
+    "definitions": {
+      "mainSceneMs": "Main-thread scene-node processing elapsed time from SceneTree.process_frame to a deferred final-priority sentinel, before render sync/draw. Includes native animation callbacks and preceding deferred updates. Excludes physics and later scene timers/render waits; not OS thread CPU accounting.",
+      "processMs": "Per-frame EngineProfiler._tick process_time: native main-loop process + render submission/sync elapsed time, excluding physics and sleep. Includes GPU waits; not an OS per-thread CPU counter. NOT Performance.TIME_PROCESS (which is a one-second maximum).",
+      "physicsMs": "Per-frame EngineProfiler._tick physics_time (largest physics step in the frame).",
+      "frameMs": "Native consecutive frame timestamps; no HTTP polling or file writes within measurement."
+    },
+    "pooled": [
+      {
+        "radius": 5,
+        "metrics": {
+          "frameMs": {
+            "median": 100.397,
+            "p95": 121.957
+          },
+          "processMs": {
+            "median": 78.061,
+            "p95": 98.387
+          },
+          "physicsMs": {
+            "median": 8.426,
+            "p95": 10.873
+          },
+          "renderCpuMs": {
+            "median": 25.4120006561279,
+            "p95": 32.2280006408691
+          },
+          "renderGpuMs": {
+            "median": 34.8470001220703,
+            "p95": 36.0880012512207
+          },
+          "engineFrameMs": {
+            "median": 100.041,
+            "p95": 121.441
+          },
+          "mainSceneMs": {
+            "median": 42.756,
+            "p95": 60.32
+          }
+        }
+      },
+      {
+        "radius": 30,
+        "metrics": {
+          "frameMs": {
+            "median": 88.556,
+            "p95": 122.237
+          },
+          "processMs": {
+            "median": 67.9,
+            "p95": 97.257
+          },
+          "physicsMs": {
+            "median": 8.146,
+            "p95": 12.278
+          },
+          "renderCpuMs": {
+            "median": 21.878999710083,
+            "p95": 30.4599990844727
+          },
+          "renderGpuMs": {
+            "median": 35.6920013427734,
+            "p95": 37.117000579834
+          },
+          "engineFrameMs": {
+            "median": 88.245,
+            "p95": 121.812
+          },
+          "mainSceneMs": {
+            "median": 38.301,
+            "p95": 57.987
+          }
+        }
+      }
+    ]
+  },
+  "caveat": "Runs are below30FPS, so both animation schedules already pose every drawn frame; these do not isolate the added pose work at high refresh. Scene processing excludes physics/render waits; native process includes render sync/waits but excludes physics/sleep. Neither is OS thread CPU accounting. One fresh pair flat, the other slower; do not interpret observer/run differences as an improvement."
+}
