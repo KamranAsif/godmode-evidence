@@ -1,0 +1,17 @@
+Ammo diamond indicator validation
+Source captured: 43b7b7e6e987
+
+PASS pnpm format; git diff --check; clean tracked worktree.
+pnpm test: 10 of 11 steps passed. Lint, format check, build, application unit tests and all other steps passed. The Godot CLI step had one failure in an unchanged Windows process-record test: 'a record a machine-wide listing removes leaves a note saying who removed it and why' ('mismatched should have been removed', 13.36 s). The same named test passed alone in 1.05 s, with no surviving fake engines. No tooling code was changed.
+PASS 59 focused marker, HUD and preload tests after rebase.
+PASS actual full-renderer behavior-only ammo pickup e2e: full reserve retention, outside/inside 2 m, one magazine gain and 20 s expiry.
+PASS actual marker motion: 0.7750-0.8650 m above ground, gentle bob, seven final-second fade samples, removal at 20 s.
+PASS native Windows Playtest pickup: reserve 90 -> 120, +1 MAG, marker removed.
+PASS independent visual auditor: exported before/after at 5 m and 15 m, plus separate source corpse and motion evidence.
+PASS exported pack: marker present; retired can presenter and runtime inspection bridge absent.
+Implementation reviewer: no blocking code findings. Its stale pickup README nit was fixed in a documentation-only commit. No additional review round.
+
+Known Windows infrastructure blocker: default cheap fixture preparation timed out. A diagnostic extended preparation run exposed 'Broken external resource! (index out of size)' while reloading the generated cheap arena at tools/godot-cli/runner/cheap_arena_builder.gd:47. The behavior test passed attached to the owned production visual audit instead. Matching verified full arena cache was reused and retained.
+All owned Godot instances are stopped; capture holds released. Worktree retained for PR merge.
+
+Final rebase: abd78d65a33a152ea86208c506f921912e4dfeb6 onto 76d72785e1a38a59a23f7b3614f758e511bd18cd. pnpm build:scripts and all 59 targeted checks PASS. Seven runtime feature files are byte-identical to the captured build; map/lighting inputs unchanged; compiled marker SHA256 matches the visual check. See rebase-verification.json.
