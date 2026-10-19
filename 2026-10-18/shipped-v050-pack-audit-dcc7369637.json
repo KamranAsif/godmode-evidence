@@ -1,0 +1,91 @@
+{
+  "kind": "Read-only audit of Kamran actual exported Windows Playtest combat log and its embedded PCK; no synthetic starts",
+  "binary": "C:/Users/Kam/Downloads/BattleDuty-0.50-windows/BattleDuty.exe",
+  "sourceLog": "C:/Users/Kam/Downloads/BattleDuty-0.50-windows/logs/client-20261018-234059-26384.log",
+  "sourceLogSha256": "bdec88ac4700d9e315ea0dc41c0ea45851ae1c6303ff7b44138ca60179da8ac2",
+  "header": [
+    "2026-10-18T23:40:59.230Z t=472623 INFO client log opened pid=26384 build=release executable=C:/Users/Kam/Downloads/BattleDuty-0.50-windows/BattleDuty.exe args=[]",
+    "2026-10-18T23:40:59.230Z t=472623 INFO engine=4.6.1-stable (custom_build) build=release commit=66a7918558ed branch=release/v050-retry-66a7918 built=2026-10-18T13:21:30.862Z",
+    "2026-10-18T23:40:59.230Z t=472623 INFO os=Windows 10.0.19045 cpu=\"AMD Ryzen 7 9800X3D 8-Core Processor\" cores=16 locale=en_US",
+    "2026-10-18T23:40:59.230Z t=472623 INFO gpu=\"AMD Radeon RX 9070 XT\" vendor=\"AMD\" api=12_0 driver=d3d12 method=forward_plus"
+  ],
+  "firstStart": "2026-10-18T23:41:12.683Z t=486076 INFO [JS] GODMODE_AUDIO_PLAY name=\"grunt-squad-whistle.ogg\" bus=\"GameplaySfx\" db=-2.00 pitch=1.004 src=\"GameAudio.playWorld:grunt-squad-whistle:direct:actor=none\" mode=3D distance=38.93 frame=22007 time=08:06.076 duplicates=1 resource=\"res://assets/audio/enemies/grunt-squad-whistle.ogg\"",
+  "lastStart": "2026-10-18T23:50:28.424Z t=1041817 INFO [JS] GODMODE_AUDIO_PLAY name=\"grunt-rifle-rack.ogg\" bus=\"GameplaySfx\" db=0.00 pitch=1.018 src=\"GameAudio.playWorld:grunt-rifle-rack:direct:actor=none\" mode=3D distance=25.25 frame=45320 time=17:21.817 duplicates=1 resource=\"res://assets/audio/enemies/grunt-rifle-rack.ogg\"",
+  "combatDurationMs": 555741,
+  "counts": {
+    "grunt-contact": 21,
+    "grunt-run-gear": 112,
+    "grunt-rifle-rack": 30,
+    "grunt-squad-whistle": 12
+  },
+  "packedGruntPaths": [
+    ".godot/imported/grunt-contact.ogg-12758751aecbd3afe9b843714693ca2c.oggvorbisstr",
+    ".godot/imported/grunt-contact.ogg-9541ad0275e990d3c6957124ac5833f3.oggvorbisstr",
+    ".godot/imported/grunt-m4a1-burst-01.ogg-3386e1ff6e2d638b1ac7a6deb957a9da.oggvorbisstr",
+    ".godot/imported/grunt-rifle-rack.ogg-2446e3707ee642f2628e36e7d87059ac.oggvorbisstr",
+    ".godot/imported/grunt-rifle-rack.ogg-cef2a5bec20733f4e31070bf4bc2f1a5.oggvorbisstr",
+    ".godot/imported/grunt-run-gear.ogg-4002d364b612a4948a21202e2fea0001.oggvorbisstr",
+    ".godot/imported/grunt-run-gear.ogg-e301d11f38f94be7128384a99cf20107.oggvorbisstr",
+    ".godot/imported/grunt-squad-whistle.ogg-77f439d6e41cd96b28d03ffa1b536c3f.oggvorbisstr",
+    ".godot/imported/grunt-squad-whistle.ogg-a394a4367d8dda7a533e93b82bc35b41.oggvorbisstr",
+    ".godot/imported/restored-sfx-grunt-m4a1-burst-01.mp3-c82b5535ae743a3b44fb742c19914756.mp3str",
+    "assets/audio-console/enemies/grunt-contact.ogg.bin",
+    "assets/audio-console/enemies/grunt-rifle-rack.ogg.bin",
+    "assets/audio-console/enemies/grunt-run-gear.ogg.bin",
+    "assets/audio-console/enemies/grunt-squad-whistle.ogg.bin",
+    "assets/audio-console/sfx/grunt-m4a1-burst-01.ogg.bin",
+    "assets/audio-console/swaps/grunt-contact.ogg.bin",
+    "assets/audio-console/swaps/grunt-rifle-rack.ogg.bin",
+    "assets/audio-console/swaps/grunt-run-gear.ogg.bin",
+    "assets/audio-console/swaps/grunt-squad-whistle.ogg.bin",
+    "assets/audio-console/swaps/restored-sfx-grunt-m4a1-burst-01.mp3.bin",
+    "assets/audio/enemies/grunt-contact.ogg.import",
+    "assets/audio/enemies/grunt-rifle-rack.ogg.import",
+    "assets/audio/enemies/grunt-run-gear.ogg.import",
+    "assets/audio/enemies/grunt-squad-whistle.ogg.import",
+    "assets/audio/sfx/grunt-m4a1-burst-01.ogg.import",
+    "assets/audio/swaps/grunt-contact.ogg.import",
+    "assets/audio/swaps/grunt-rifle-rack.ogg.import",
+    "assets/audio/swaps/grunt-run-gear.ogg.import",
+    "assets/audio/swaps/grunt-squad-whistle.ogg.import",
+    "assets/audio/swaps/restored-sfx-grunt-m4a1-burst-01.mp3.import"
+  ],
+  "packedEnemyVoiceScripts": [
+    ".godot/GodotJS/scripts/client/enemy_voices.js",
+    ".godot/GodotJS/scripts/client/enemy_voices.js.map",
+    "scripts/client/enemy_voices.ts.remap"
+  ],
+  "packedConsole": [
+    ".godot/GodotJS/scripts/audio_console/console.js",
+    ".godot/GodotJS/scripts/audio_console/console.js.map",
+    "scripts/audio_console/console.css",
+    "scripts/audio_console/console.ts.remap"
+  ],
+  "packedInspectionBridge": [],
+  "soundProduction": [
+    {
+      "cue": "grunt-contact",
+      "file": "assets/audio/enemies/grunt-contact.ogg",
+      "seconds": 0.65,
+      "sha256": "c81c50304d7902793cd06ddb214b651703d9d0d84a489a8549e5f837ec3b03c8"
+    },
+    {
+      "cue": "grunt-run-gear",
+      "file": "assets/audio/enemies/grunt-run-gear.ogg",
+      "seconds": 0.55,
+      "sha256": "23164d6914c7fbe205c2520d34a88418bf4e015db813d108258dd9670efeb0be"
+    },
+    {
+      "cue": "grunt-rifle-rack",
+      "file": "assets/audio/enemies/grunt-rifle-rack.ogg",
+      "seconds": 0.25,
+      "sha256": "bb6ce1df961e08f10d7ccaac19319cfad3871d6c50c9f428d239992745bbbed2"
+    },
+    {
+      "cue": "grunt-squad-whistle",
+      "file": "assets/audio/enemies/grunt-squad-whistle.ogg",
+      "seconds": 0.48,
+      "sha256": "21c258fdd5d4f7b36953d648884f1b4b699fb7fafa0ebe7f27a93b6cbb79ec4c"
+    }
+  ]
+}
