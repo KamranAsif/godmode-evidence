@@ -1,0 +1,44 @@
+{
+  "result": "FAIL",
+  "session": "perf-enemy-benchmark65-main3-20261020",
+  "label": "benchmark65-main3",
+  "started": "2026-10-20T14:32:36.259Z",
+  "lease": {
+    "id": "d5fbe54a-3430-465b-bb23-d94c03cb7502",
+    "sessionId": "perf-enemy-benchmark65-main3-20261020",
+    "reason": "Standard 65-enemy benchmark baseline; aim421 first; LOD/enemy FIFO peers; bounded8min",
+    "createdAt": "2026-10-20T14:37:52.915Z",
+    "expiresAt": "2026-10-20T14:45:52.915Z",
+    "mode": "timing",
+    "idleSince": "2026-10-20T14:37:53.462Z"
+  },
+  "error": "Command failed: C:\\Program Files\\nodejs\\node.exe tools/performance/gameplay-benchmark.mjs run --subset firefight-65,intersection-explosions --enemies 65 --output artifacts/benchmark65-main3.json",
+  "exitDetail": {
+    "code": 1,
+    "signal": null,
+    "killed": false
+  },
+  "cleanup": {
+    "sessionId": "perf-enemy-benchmark65-main3-20261020",
+    "engines": 0,
+    "stopped": [],
+    "recordsRemoved": 0
+  },
+  "completed": "2026-10-20T14:40:13.463Z",
+  "triage": {
+    "taa": true,
+    "validPerformanceResult": false,
+    "segmentsStarted": [
+      "GODMODE_BENCHMARK_SEGMENT=firefight-65",
+      "GODMODE_BENCHMARK_SEGMENT=intersection-explosions"
+    ],
+    "streaksActivated": [],
+    "firstError": {
+      "line": 1702,
+      "text": "ERROR: Create(Graphics)PipelineState failed with error 0x887a0005."
+    },
+    "logSha256": "d17fc422687c5e9e15513179ee42696731f4455c3b01eb2b289cff48add244ce",
+    "holdSeconds": 140.548,
+    "interpretation": "Device lost before any benchmark segment, no airstrike. TAA suspected, not proven without control."
+  }
+}
