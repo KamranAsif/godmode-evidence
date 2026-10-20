@@ -1,0 +1,13 @@
+Independent occlusion visual audit
+
+Verdict: PASS for the tested exterior play-space views on saved arena source ab0bd2165.
+
+I made no production changes and started no engines. I read the complete ART_STYLE.md; no style conflict was found.
+
+Reviewed the native 2560x1440 OFF/ON evidence for street-corner-a, street-corner-b, street-end, elevated, Pier 1, seawall, bridge-gap, the street-corridor settled probe, and the 41-frame building-182883 exterior path. Full-resolution representative intermediate and settled frames preserve facade edges, street ends, rooflines, bridge openings and waterfront reveals. The comparator contains 264 valid matched pairs: 236 byte-identical; zero valid pairs contain pixels differing by more than 16 channel levels. I independently recomputed all 41 exterior-path comparisons with the same result. No wrong disappearance or occlusion pop was found in these exterior views.
+
+The earlier FAIL was investigated, not ignored. The extra narrow-street probe was incorrectly placed inside solid building_182883. Exact source geometry gives winding number 1.0 at that camera and six enclosing surface hits. Saved native box buildings_118 contains the camera; enabling that sole box reproduces the 208 changed pixels. Native mesh and physics raycasts identify the missing grey triangle as the enclosing building's low roof, not an exposed bridge surface. This is an invalid solid-interior probe under the requested building-mass/windows-with-no-holes semantics. Evidence: auditor-interior-geometry.json, ../occlusion-diagnose/offender.json, ../occlusion-diagnose/grey-triangle-native-ray.json, ../occlusion-diagnose/sole-buildings-118.png, and the original enlarged OFF/ON crop.
+
+The replacement exterior path stays outside every surveyed building footprint at all 101 CPU samples, with minimum 2.54958m projected clearance. Its 41 native OFF/ON frame pairs preserve the visible facade, doors, windows, fence and trim. This resolves the earlier visual FAIL for the supported exterior play space without changing production source or adding a runtime exception.
+
+This PASS covers the captured exterior routes and viewpoints. It does not claim correct rendering from inside closed building masses.
