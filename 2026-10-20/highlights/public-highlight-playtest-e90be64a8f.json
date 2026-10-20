@@ -1,0 +1,56 @@
+{
+  "result": "FUNCTIONAL PASS; full suite 10/11 with unchanged queue-test timeout, targeted retry PASS",
+  "sourceCommit": "c36ea91504f9d9be5c92c30655e97c7589126f71",
+  "binarySha256": "330896a6fe93e5580582a754aa8def8d03421c31d16ed6c2f2430fa2090c159e",
+  "binaryBytes": 2403871764,
+  "preset": "Windows Playtest",
+  "embeddedPack": true,
+  "shaderBaker": true,
+  "packedPathCount": 10958,
+  "forbiddenPaths": [],
+  "d3d12RuntimeComplete": true,
+  "productionAA": "Project SMAA2, TAA false; no benchmark override",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "runCommands": [
+    "game run --binary artifacts/export/highlight/BattleDuty.exe --fixture roguelite --full --offscreen --offscreen-size 2560x1440 --settings-path artifacts/highlight-playtest2.settings.cfg",
+    "Native window-input: stream hold on (assert server ON), invincible on, health 10, health 100, 800 ms fire, stream viewers 0, stream hold off; Enter to apply pending loot",
+    "game capture --os-window --allow-unchecked"
+  ],
+  "captureReceipts": [
+    "GODMODE_STREAM_THUMBNAIL=31:ending:stream-31-1792517497110-ending.jpg"
+  ],
+  "persistedCaptures": [
+    {
+      "kind": "ending",
+      "file": "stream-31-1792517497110-ending.jpg",
+      "atMs": 134008,
+      "score": 5,
+      "title": "Stream failed. Nobody left watching.",
+      "user": "LiveTube"
+    }
+  ],
+  "combatCaptureCount": 0,
+  "endingJpegBytes": 8772,
+  "imageCaveat": "An existing in-run loot panel was open in the frozen ending image. This is functional exported-build proof, not the matched play-distance visual pair. No debug console or ending overlay is in the thumbnail.",
+  "fullSuite": "pnpm test:10/11 steps PASS in206.5s; unchanged godot-cli compiled-status fixture timed out waiting for2tickets",
+  "targetedRetry": "node tools/godot-cli/dist/test/support/run-suite.js --test-name-pattern=\"compiled status reports persistent positions\" tools/godot-cli/dist/test/unit/gpu.test.js:1/1PASS in4.7s,no surviving fake engines",
+  "focusedTests": "node --test tests/unit/prestige-save.test.mjs tests/unit/stream-audience-sync.test.mjs tests/unit/stream-media.test.mjs:239/239 PASS",
+  "holdStarted": "2026-10-20T17:30:44.517Z",
+  "completed": "2026-10-20T17:37:42.688Z",
+  "cleanup": {
+    "sessionId": "perf-enemy-highlight-playtest2-20261020",
+    "engines": 1,
+    "stopped": [
+      {
+        "pid": 1996,
+        "stopped": true,
+        "forced": true
+      }
+    ],
+    "recordsRemoved": 1
+  },
+  "priorAttempt": "First native-input attempt ended naturally before viewer hold was applied; rejected console-overlay photo archived. No production changes followed."
+}
