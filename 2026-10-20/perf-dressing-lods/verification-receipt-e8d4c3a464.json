@@ -1,0 +1,834 @@
+{
+  "tests": {
+    "sourceCommit": "18dbd319331b8a8e8255f7a4d96a6ad029a0b6be",
+    "sourceFingerprint": "50881e3e46cce76feeba20f099aaff75f6013d64ed8bd0d19a89154f835b2ef6",
+    "rootSuite": {
+      "exitCode": 0,
+      "passed": 11,
+      "failed": 0,
+      "wallTimeSec": 225.7,
+      "command": "pnpm test"
+    },
+    "policyUnits": {
+      "passed": 6
+    },
+    "inputFingerprintTest": {
+      "passed": 1
+    },
+    "nativeMeshFixtures": {
+      "samples": 32,
+      "changed": 21,
+      "excludedSurfacesExact": 15
+    },
+    "nativeInstaller": {
+      "changedNodes": 2,
+      "uniqueResultMesh": 1,
+      "originalSourceAndUnrelatedMultiMeshUnchanged": true
+    }
+  },
+  "independentVisualAudit": {
+    "verdict": "PASS",
+    "independent": true,
+    "defaultVerdict": "FAIL",
+    "commit": "260cd9607a337844deec04312675ee9202aea52f",
+    "arenaFingerprint": "50881e3e46cce76feeba20f099aaff75f6013d64ed8bd0d19a89154f835b2ef6",
+    "scope": "Visual acceptance of offline solid dressing far index LODs; approved close geometry, faceted look and lighting retained in accepted evidence.",
+    "productionChangesByAuditor": false,
+    "godotRunsByAuditor": 0,
+    "artStyleReadInFull": true,
+    "artStyleConflicts": [],
+    "blockingFindings": [],
+    "acceptedEvidence": {
+      "familySheets": [
+        "coffee-counter",
+        "frontage-services",
+        "hardware-pegboard",
+        "produce-stand"
+      ],
+      "savedWorldContexts": [
+        "Pier 1",
+        "street",
+        "65-enemy combat"
+      ],
+      "worldFovs": [
+        75,
+        32
+      ],
+      "nativeBaseAndLodMatches": 2997,
+      "instanceInvariants": 6672,
+      "controlledOriginalsManuallyInspected": 24,
+      "controlledFamilies": [
+        "florist-bucket-ladder",
+        "world-fill-dressing"
+      ],
+      "controlledDistancesM": [
+        8,
+        256
+      ],
+      "controlledFovs": [
+        75,
+        32
+      ],
+      "controlledTargetContributionChecksPassed": 16,
+      "controlledPrePostCameraPairs": 24,
+      "exportedBinaryViews": [
+        "street",
+        "hardware-far-ads32",
+        "florist-close-ads32"
+      ],
+      "exportedPrePostCameraAndResolutionPairs": 3,
+      "exportedScopedErrors": 0,
+      "exportedEngineViewport": [
+        2560,
+        1440
+      ],
+      "exportedRenderScale": 1,
+      "exportedRawCaptureRaster": [
+        2560,
+        1442
+      ],
+      "exactEmbeddedClientAndServerScenes": true,
+      "binaryBytes": 2408355556,
+      "binarySha256": "92222c94f63f4738e15ede80e05922d110422a237c979c8b21a5e2521d63b5b0"
+    },
+    "limitations": [
+      "Controlled probes retain exact saved resources, original world Y/scale/orientation and scene sun/environment, but use XZ relocation and a neutral floor; they are not gameplay locations.",
+      "Selected LOD receipts predict pinned-renderer selection from native buffers and camera/bounds; they are not direct GPU selected-index readback.",
+      "Raw Windows PrintWindow images have a visible black lower strip and clipped bottom HUD; audited scene content remains unobstructed. No claim that the strip is only a 2 px border.",
+      "Exported far hardware image is integrated scene context; identifiable pegboard detail acceptance comes from the accepted family A/B.",
+      "Production AA is TAA false / SMAA2. Static representative evidence does not establish every transition angle, performance gain or 120 FPS."
+    ],
+    "excludedEvidence": [
+      "failed trial2/trial3",
+      "earlier reticle-masked controlled capture",
+      "obstructed far florist/bin world views as sole appearance proof"
+    ],
+    "report": "artifacts/dressing-visual-final.md"
+  },
+  "controlledProbeProvenance": {
+    "florist-bucket-ladder": {
+      "accepted": true,
+      "centre": [
+        10000,
+        -14.2933883666992,
+        10000
+      ],
+      "family": "florist-bucket-ladder",
+      "floorY": -14.9465684890747,
+      "instanceBufferProofs": [
+        {
+          "controlledInstanceSha256": "d939febc25a4d21983e3a8ef4f9d5bff97f18a73a030df67243131621c1592cf",
+          "sameMeshResource": true,
+          "savedInstanceSha256": "d939febc25a4d21983e3a8ef4f9d5bff97f18a73a030df67243131621c1592cf"
+        },
+        {
+          "controlledInstanceSha256": "d939febc25a4d21983e3a8ef4f9d5bff97f18a73a030df67243131621c1592cf",
+          "sameMeshResource": true,
+          "savedInstanceSha256": "d939febc25a4d21983e3a8ef4f9d5bff97f18a73a030df67243131621c1592cf"
+        }
+      ],
+      "method": "Controlled lighting comparison: unobstructed single-instance exact saved mesh/material/color/custom buffers, original worldY/scale/orientation, approved scene sun/environment. XZ relocated, neutral floor, ordinary HUD; driver aims 1.2 degrees off target to avoid reticle masking. Not a gameplay location.",
+      "normal": [
+        0.999009370803833,
+        0,
+        0.044499970972538
+      ],
+      "originalInstance": 0,
+      "originalPath": "/root/Game/DumboSurvivalArena/EnvironmentModules/shopfront-part-4083483549_0_-3_-5",
+      "path": "/root/Game/ControlledExactResourceProbe/shopfront-part-4083483549_0_-3_-5",
+      "uiHiddenForTargetReadability": false
+    },
+    "world-fill-dressing": {
+      "accepted": true,
+      "centre": [
+        10000,
+        -15.1310205459595,
+        10000
+      ],
+      "family": "world-fill-dressing",
+      "floorY": -15.5833463668823,
+      "instanceBufferProofs": [
+        {
+          "controlledInstanceSha256": "ce47892022c92f66c98c5a396a6ab998f0d4a7350f2f33280adee0fc1b839207",
+          "sameMeshResource": true,
+          "savedInstanceSha256": "ce47892022c92f66c98c5a396a6ab998f0d4a7350f2f33280adee0fc1b839207"
+        },
+        {
+          "controlledInstanceSha256": "ce47892022c92f66c98c5a396a6ab998f0d4a7350f2f33280adee0fc1b839207",
+          "sameMeshResource": true,
+          "savedInstanceSha256": "ce47892022c92f66c98c5a396a6ab998f0d4a7350f2f33280adee0fc1b839207"
+        }
+      ],
+      "method": "Controlled lighting comparison: unobstructed single-instance exact saved mesh/material/color/custom buffers, original worldY/scale/orientation, approved scene sun/environment. XZ relocated, neutral floor, ordinary HUD; driver aims 1.2 degrees off target to avoid reticle masking. Not a gameplay location.",
+      "normal": [
+        0.996480464935303,
+        0,
+        0.0838255062699318
+      ],
+      "originalInstance": 1,
+      "originalPath": "/root/Game/DumboSurvivalArena/WorldFillStreetUse/street-bin_0_-3_-5",
+      "path": "/root/Game/ControlledExactResourceProbe/street-bin_0_-3_-5",
+      "uiHiddenForTargetReadability": false
+    }
+  },
+  "controlledNativeSelection": {
+    "pass": true,
+    "method": "Predicted pinned renderer selection from native index buffers and actual camera/batch bounds; not a direct selected-index GPU readback.",
+    "allEightMetreIndicesExact": true,
+    "activeByProjection": {
+      "32": [
+        "florist-bucket-ladder",
+        "world-fill-dressing"
+      ],
+      "75": [
+        "florist-bucket-ladder",
+        "world-fill-dressing"
+      ]
+    },
+    "rows": [
+      {
+        "family": "florist-bucket-ladder",
+        "distance": 8,
+        "fov": 75,
+        "nearestBatchBoundsM": 7.73755836486816,
+        "beforeTrianglesPerInstance": 39741,
+        "afterTrianglesPerInstance": 39741,
+        "sameIndices": true
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distance": 8,
+        "fov": 32,
+        "nearestBatchBoundsM": 7.73755836486816,
+        "beforeTrianglesPerInstance": 39741,
+        "afterTrianglesPerInstance": 39741,
+        "sameIndices": true
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distance": 256,
+        "fov": 75,
+        "nearestBatchBoundsM": 255.779815673828,
+        "beforeTrianglesPerInstance": 36655,
+        "afterTrianglesPerInstance": 11194,
+        "sameIndices": false
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distance": 256,
+        "fov": 32,
+        "nearestBatchBoundsM": 255.779815673828,
+        "beforeTrianglesPerInstance": 36655,
+        "afterTrianglesPerInstance": 11194,
+        "sameIndices": false
+      },
+      {
+        "family": "world-fill-dressing",
+        "distance": 8,
+        "fov": 75,
+        "nearestBatchBoundsM": 7.56206893920898,
+        "beforeTrianglesPerInstance": 3533,
+        "afterTrianglesPerInstance": 3533,
+        "sameIndices": true
+      },
+      {
+        "family": "world-fill-dressing",
+        "distance": 8,
+        "fov": 32,
+        "nearestBatchBoundsM": 7.56206893920898,
+        "beforeTrianglesPerInstance": 3533,
+        "afterTrianglesPerInstance": 3533,
+        "sameIndices": true
+      },
+      {
+        "family": "world-fill-dressing",
+        "distance": 256,
+        "fov": 75,
+        "nearestBatchBoundsM": 255.609649658203,
+        "beforeTrianglesPerInstance": 1765,
+        "afterTrianglesPerInstance": 881,
+        "sameIndices": false
+      },
+      {
+        "family": "world-fill-dressing",
+        "distance": 256,
+        "fov": 32,
+        "nearestBatchBoundsM": 255.609649658203,
+        "beforeTrianglesPerInstance": 1765,
+        "afterTrianglesPerInstance": 881,
+        "sameIndices": false
+      }
+    ]
+  },
+  "controlledTargetPixels": {
+    "pass": true,
+    "method": "Native 1440p still minus same camera/floor/lighting with only target removed. Positive centre contribution supplements manual identification; not an appearance-equivalence test.",
+    "rows": [
+      {
+        "family": "florist-bucket-ladder",
+        "distanceM": 8,
+        "fov": 75,
+        "stage": "before",
+        "changedPixelsOutsideReticleInNativeCentre128": 9239,
+        "changedBoundsInCentre128": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distanceM": 8,
+        "fov": 75,
+        "stage": "after",
+        "changedPixelsOutsideReticleInNativeCentre128": 9239,
+        "changedBoundsInCentre128": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distanceM": 8,
+        "fov": 32,
+        "stage": "before",
+        "changedPixelsOutsideReticleInNativeCentre128": 11805,
+        "changedBoundsInCentre128": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distanceM": 8,
+        "fov": 32,
+        "stage": "after",
+        "changedPixelsOutsideReticleInNativeCentre128": 11805,
+        "changedBoundsInCentre128": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distanceM": 256,
+        "fov": 75,
+        "stage": "before",
+        "changedPixelsOutsideReticleInNativeCentre128": 44,
+        "changedBoundsInCentre128": [
+          38,
+          62,
+          128,
+          71
+        ]
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distanceM": 256,
+        "fov": 75,
+        "stage": "after",
+        "changedPixelsOutsideReticleInNativeCentre128": 44,
+        "changedBoundsInCentre128": [
+          38,
+          62,
+          128,
+          71
+        ]
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distanceM": 256,
+        "fov": 32,
+        "stage": "before",
+        "changedPixelsOutsideReticleInNativeCentre128": 135,
+        "changedBoundsInCentre128": [
+          48,
+          58,
+          128,
+          73
+        ]
+      },
+      {
+        "family": "florist-bucket-ladder",
+        "distanceM": 256,
+        "fov": 32,
+        "stage": "after",
+        "changedPixelsOutsideReticleInNativeCentre128": 106,
+        "changedBoundsInCentre128": [
+          84,
+          58,
+          128,
+          73
+        ]
+      },
+      {
+        "family": "world-fill-dressing",
+        "distanceM": 8,
+        "fov": 75,
+        "stage": "before",
+        "changedPixelsOutsideReticleInNativeCentre128": 6346,
+        "changedBoundsInCentre128": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      {
+        "family": "world-fill-dressing",
+        "distanceM": 8,
+        "fov": 75,
+        "stage": "after",
+        "changedPixelsOutsideReticleInNativeCentre128": 6346,
+        "changedBoundsInCentre128": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      {
+        "family": "world-fill-dressing",
+        "distanceM": 8,
+        "fov": 32,
+        "stage": "before",
+        "changedPixelsOutsideReticleInNativeCentre128": 8765,
+        "changedBoundsInCentre128": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      {
+        "family": "world-fill-dressing",
+        "distanceM": 8,
+        "fov": 32,
+        "stage": "after",
+        "changedPixelsOutsideReticleInNativeCentre128": 8765,
+        "changedBoundsInCentre128": [
+          0,
+          0,
+          128,
+          128
+        ]
+      },
+      {
+        "family": "world-fill-dressing",
+        "distanceM": 256,
+        "fov": 75,
+        "stage": "before",
+        "changedPixelsOutsideReticleInNativeCentre128": 10,
+        "changedBoundsInCentre128": [
+          50,
+          61,
+          107,
+          67
+        ]
+      },
+      {
+        "family": "world-fill-dressing",
+        "distanceM": 256,
+        "fov": 75,
+        "stage": "after",
+        "changedPixelsOutsideReticleInNativeCentre128": 10,
+        "changedBoundsInCentre128": [
+          50,
+          61,
+          107,
+          67
+        ]
+      },
+      {
+        "family": "world-fill-dressing",
+        "distanceM": 256,
+        "fov": 32,
+        "stage": "before",
+        "changedPixelsOutsideReticleInNativeCentre128": 43,
+        "changedBoundsInCentre128": [
+          114,
+          60,
+          120,
+          68
+        ]
+      },
+      {
+        "family": "world-fill-dressing",
+        "distanceM": 256,
+        "fov": 32,
+        "stage": "after",
+        "changedPixelsOutsideReticleInNativeCentre128": 45,
+        "changedBoundsInCentre128": [
+          114,
+          60,
+          120,
+          68
+        ]
+      }
+    ]
+  },
+  "windowsPlaytest": {
+    "binary": {
+      "bytes": 2408355556,
+      "sha256": "92222c94f63f4738e15ede80e05922d110422a237c979c8b21a5e2521d63b5b0"
+    },
+    "views": [
+      {
+        "name": "street",
+        "actualBuild": "commit=260cd9607a33\nbranch=perf/dressing-far-lods-20261020\nbuilt=2026-10-20T17:15:02.550Z",
+        "requestedPose": {
+          "name": "street",
+          "position": [
+            -404,
+            -15.58,
+            -414
+          ],
+          "yaw": 3.141592653589793,
+          "pitch": 0,
+          "fov": 75
+        },
+        "actualCamera": {
+          "position": [
+            -404,
+            -15.579999923706055,
+            -414
+          ],
+          "rotation": [
+            0,
+            -3.141592502593994,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "actualResolution": {
+          "width": 2560,
+          "height": 1440,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "postCaptureCamera": {
+          "position": [
+            -404,
+            -15.579999923706055,
+            -414
+          ],
+          "rotation": [
+            0,
+            -3.141592502593994,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "postCaptureResolution": {
+          "width": 2560,
+          "height": 1440,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "rawCaptureRaster": [
+          2560,
+          1442
+        ],
+        "captureNote": "Engine-reported viewport2560x1440 at scale1; raw Windows PrintWindow PNG2560x1442 has a visible black lower strip and clipped bottom HUD larger than the nominal2px dimension difference. Scene regions used for validation remain unobstructed. Raw PNG retained without crop or resampling. Numeric camera/resolution receipts unchanged.",
+        "publicLogMarkers": [
+          "2026-10-20T17:28:09.331Z t=41990 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=41990",
+          "2026-10-20T17:28:10.432Z t=43091 INFO [JS] GODMODE_PERF_REPLAY_READY",
+          "D3D12 12_0 - Forward+ - Using Device #0: AMD - AMD Radeon RX 9070 XT\r",
+          "[JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=41990\r",
+          "[JS] GODMODE_PERF_REPLAY_READY\r"
+        ]
+      },
+      {
+        "name": "florist-close-ads32",
+        "actualBuild": "commit=260cd9607a33\nbranch=perf/dressing-far-lods-20261020\nbuilt=2026-10-20T17:15:02.550Z",
+        "requestedPose": {
+          "name": "florist-close-ads32",
+          "position": [
+            -155.435546875,
+            -14.466667175293,
+            -312.068115234375
+          ],
+          "yaw": 1.5262803945943797,
+          "pitch": 0.021661533723356143,
+          "fov": 32
+        },
+        "actualCamera": {
+          "position": [
+            -155.435546875,
+            -14.466667175292969,
+            -312.068115234375
+          ],
+          "rotation": [
+            0.021661533042788506,
+            1.526280403137207,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "actualResolution": {
+          "width": 2560,
+          "height": 1440,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "postCaptureCamera": {
+          "position": [
+            -155.435546875,
+            -14.466667175292969,
+            -312.068115234375
+          ],
+          "rotation": [
+            0.021661533042788506,
+            1.526280403137207,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "postCaptureResolution": {
+          "width": 2560,
+          "height": 1440,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "rawCaptureRaster": [
+          2560,
+          1442
+        ],
+        "captureNote": "Engine-reported viewport2560x1440 at scale1; raw Windows PrintWindow PNG2560x1442 has a visible black lower strip and clipped bottom HUD larger than the nominal2px dimension difference. Scene regions used for validation remain unobstructed. Raw PNG retained without crop or resampling. Numeric camera/resolution receipts unchanged.",
+        "publicLogMarkers": [
+          "2026-10-20T17:41:41.514Z t=42649 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=42649",
+          "2026-10-20T17:41:42.615Z t=43750 INFO [JS] GODMODE_PERF_REPLAY_READY",
+          "D3D12 12_0 - Forward+ - Using Device #0: AMD - AMD Radeon RX 9070 XT\r",
+          "[JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=42649\r",
+          "[JS] GODMODE_PERF_REPLAY_READY\r"
+        ]
+      },
+      {
+        "name": "hardware-far-ads32",
+        "actualBuild": "commit=260cd9607a33\nbranch=perf/dressing-far-lods-20261020\nbuilt=2026-10-20T17:15:02.550Z",
+        "requestedPose": {
+          "name": "hardware-far-ads32",
+          "position": [
+            -924.493286132812,
+            -14.466667175293,
+            -9.07188701629639
+          ],
+          "yaw": -1.145114535565404,
+          "pitch": 0.003881762894813962,
+          "fov": 32
+        },
+        "actualCamera": {
+          "position": [
+            -924.4932861328125,
+            -14.466667175292969,
+            -9.071887016296387
+          ],
+          "rotation": [
+            0.0038817627355456352,
+            -1.145114541053772,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "actualResolution": {
+          "width": 2560,
+          "height": 1440,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "postCaptureCamera": {
+          "position": [
+            -924.4932861328125,
+            -14.466667175292969,
+            -9.071887016296387
+          ],
+          "rotation": [
+            0.0038817627355456352,
+            -1.145114541053772,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "postCaptureResolution": {
+          "width": 2560,
+          "height": 1440,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "rawCaptureRaster": [
+          2560,
+          1442
+        ],
+        "captureNote": "Engine-reported viewport2560x1440 at scale1; raw Windows PrintWindow PNG2560x1442 has a visible black lower strip and clipped bottom HUD larger than the nominal2px dimension difference. Scene regions used for validation remain unobstructed. Raw PNG retained without crop or resampling. Numeric camera/resolution receipts unchanged.",
+        "publicLogMarkers": [
+          "2026-10-20T17:29:46.924Z t=42110 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=42110",
+          "2026-10-20T17:29:48.018Z t=43204 INFO [JS] GODMODE_PERF_REPLAY_READY",
+          "D3D12 12_0 - Forward+ - Using Device #0: AMD - AMD Radeon RX 9070 XT\r",
+          "[JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=42110\r",
+          "[JS] GODMODE_PERF_REPLAY_READY\r"
+        ]
+      }
+    ],
+    "renderErrorCheck": {
+      "pass": true,
+      "method": "Private actual-binary logs checked for engine/script/parse errors. Only readiness and counts published; raw logs excluded.",
+      "views": [
+        {
+          "name": "street",
+          "gameplayReady": true,
+          "errorCount": 0,
+          "pass": true
+        },
+        {
+          "name": "hardware-far-ads32",
+          "gameplayReady": true,
+          "errorCount": 0,
+          "pass": true
+        },
+        {
+          "name": "florist-close-ads32",
+          "gameplayReady": true,
+          "errorCount": 0,
+          "pass": true
+        }
+      ]
+    }
+  },
+  "exportPack": {
+    "pass": true,
+    "embeddedPack": true,
+    "packedFiles": 10982,
+    "developmentFiles": 0,
+    "bridgeLiteralFound": false,
+    "prebuiltClientAndServer": true
+  },
+  "exportedResourceIdentity": {
+    "pass": true,
+    "sourceFingerprint": "50881e3e46cce76feeba20f099aaff75f6013d64ed8bd0d19a89154f835b2ef6",
+    "resources": [
+      {
+        "path": "assets/maps/dumbo/prebuilt/survival_client.scn",
+        "bytes": 147660601,
+        "sha256": "7575dbf4ac71ce6f8bff75a7ecfb4f66c970341f517427020c87b56a659220ab",
+        "packedDirectoryMd5": "8adc35894d80992d7470efe13caa1fb3",
+        "exactAuditedResource": true
+      },
+      {
+        "path": "assets/maps/dumbo/prebuilt/survival_server.scn",
+        "bytes": 133363000,
+        "sha256": "e97bf0cdf7368a37475176b45e4557845efe7dd7440044671ca69215fbb0169c",
+        "packedDirectoryMd5": "0c0a5b461177eac6eb4c3511fd251711",
+        "exactAuditedResource": true
+      }
+    ]
+  },
+  "integratedBranchTests": {
+    "sourceCommit": "260cd9607a337844deec04312675ee9202aea52f",
+    "baseCommit": "0aa1e366c3984179e9912d49d876f7c3ad91869d",
+    "command": "pnpm test",
+    "exitCode": 0,
+    "wallTimeSec": 189.306
+  },
+  "integratedTestRetry": {
+    "firstAttempt": {
+      "sourceCommit": "260cd9607a337844deec04312675ee9202aea52f",
+      "baseCommit": "0aa1e366c3984179e9912d49d876f7c3ad91869d",
+      "command": "pnpm test",
+      "exitCode": 1,
+      "wallTimeSec": 246.314
+    },
+    "failure": "Unchanged CLI gpu.test queue fixture timed out waiting for 2 tickets",
+    "focusedRetry": {
+      "passed": 1,
+      "failed": 0,
+      "wallTimeMs": 4356.8022
+    },
+    "fullSuiteRetryPassed": true,
+    "cliSourceChanged": false
+  },
+  "integration": {
+    "measuredBase": "0b761da55",
+    "measuredCandidate": "18dbd319331b8a8e8255f7a4d96a6ad029a0b6be",
+    "integratedBase": "0aa1e366c3984179e9912d49d876f7c3ad91869d",
+    "integratedCandidate": "260cd9607a337844deec04312675ee9202aea52f",
+    "arenaFingerprint": "50881e3e46cce76feeba20f099aaff75f6013d64ed8bd0d19a89154f835b2ef6",
+    "arenaInputCount": 3233,
+    "arenaInputsExact": true,
+    "note": "Timing receipts isolate dressing LODs before the unrelated enemy-aim change #2158. They are not remeasured timings of the rebased branch. Windows Playtest and integrated suite validate the rebased branch; all offline arena inputs remain identical."
+  },
+  "savedArenaInvariants": {
+    "pass": true,
+    "staticBaseMatches": 2997,
+    "instances": 6672,
+    "changedLodNodes": 1094,
+    "changedByFamily": {
+      "coffee-counter": 30,
+      "florist-bucket-ladder": 25,
+      "ceramic-shelf": 28,
+      "bar-bottle-shelf": 27,
+      "bookshop-book-cart": 34,
+      "florist-display": 32,
+      "produce-stand": 44,
+      "bookshop-shelf": 37,
+      "cafe-pastry-case": 27,
+      "bakery-bread-rack": 23,
+      "bakery-counter": 36,
+      "deli-chilled-case": 38,
+      "clothing-rack": 31,
+      "window-display-plinth": 34,
+      "bicycle-display": 35,
+      "hardware-pegboard": 41,
+      "world-fill-dressing": 465,
+      "frontage-services": 107
+    },
+    "method": "Exact base packed channels, base faces, material names, instance world matrices, custom/color tails, shadow/range/LOD bias settings; one-to-one dressing nodes."
+  },
+  "savedNativeIndices": {
+    "pass": true,
+    "expectedNodes": 2997,
+    "savedNodes": 2997,
+    "matchedNativeBuffers": 2997,
+    "changedVersionNodes": 1094,
+    "uniqueSavedMeshes": 410,
+    "differences": [],
+    "method": "CPU-only native saved PackedScene resource buffers vs valid live trial4, exact base faces/channels and native LOD index bytes; rendering and material appearance require separate GPU evidence."
+  },
+  "savedLodRoundtrip": {
+    "pass": true,
+    "staticLodMatches": 2997,
+    "staticLodDifferences": 0,
+    "includesNativeLodIndexHashes": true,
+    "differences": []
+  }
+}
