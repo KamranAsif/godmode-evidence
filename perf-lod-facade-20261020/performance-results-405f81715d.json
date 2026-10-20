@@ -1,0 +1,126 @@
+{
+  "sourceFingerprint": "969d3e33fb728d88647840f379fb7da622d138e31c92a541989689db6515bf11",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "adapter": "AMD Radeon RX 9070 XT",
+  "seed": 1871,
+  "combatActors": 65,
+  "method": "Exclusive uncapped timing hold; live before-a/after/before-b, pooled baseline frames. Hidden counterpart retained equally in both variants. No dropped samples; engine frame counts match; all window caveats empty.",
+  "pier": {
+    "before": {
+      "frames": 935,
+      "medianMs": 21.3409996032715,
+      "p95Ms": 22.8090000152588,
+      "average": {
+        "visibleDrawCalls": 16873,
+        "visiblePrimitives": 23118942,
+        "shadowDrawCalls": 2690,
+        "shadowPrimitives": 5283198,
+        "renderGpuMs": 20.16197861452153,
+        "processMs": 24.51493475935829
+      }
+    },
+    "after": {
+      "frames": 486,
+      "medianMs": 20.625,
+      "p95Ms": 21.9260005950928,
+      "average": {
+        "visibleDrawCalls": 16503,
+        "visiblePrimitives": 21582161,
+        "shadowDrawCalls": 2690,
+        "shadowPrimitives": 5188251,
+        "renderGpuMs": 19.50704322234103,
+        "processMs": 21.527864197530864
+      }
+    },
+    "baselineBracketMedianDrift": 0.000984086226329327,
+    "delta": {
+      "medianMs": -0.7159996032714986,
+      "p95Ms": -0.8829994201660014,
+      "average": {
+        "visibleDrawCalls": -370,
+        "visiblePrimitives": -1536781,
+        "shadowDrawCalls": 0,
+        "shadowPrimitives": -94947,
+        "renderGpuMs": -0.6549353921805015,
+        "processMs": -2.9870705618274265
+      }
+    }
+  },
+  "combat": {
+    "before": {
+      "frames": 493,
+      "medianMs": 40.2140007019043,
+      "p95Ms": 48.2169990539551,
+      "average": {
+        "visibleDrawCalls": 3793.2839756592293,
+        "visiblePrimitives": 9120494.484787019,
+        "shadowDrawCalls": 15484.356997971603,
+        "shadowPrimitives": 33181666.73427992,
+        "renderGpuMs": 20.18288639834637,
+        "processMs": 40.109513184584216
+      }
+    },
+    "after": {
+      "frames": 247,
+      "medianMs": 39.8520011901855,
+      "p95Ms": 49.6839981079102,
+      "average": {
+        "visibleDrawCalls": 3685.97975708502,
+        "visiblePrimitives": 8686223.02834008,
+        "shadowDrawCalls": 15473.14979757085,
+        "shadowPrimitives": 32271857.17408907,
+        "renderGpuMs": 19.99508094015393,
+        "processMs": 40.794056680161944
+      }
+    },
+    "baselineBracketMedianDrift": 0.04897211232299708,
+    "delta": {
+      "medianMs": -0.36199951171879974,
+      "p95Ms": 1.4669990539550994,
+      "average": {
+        "visibleDrawCalls": -107.30421857420924,
+        "visiblePrimitives": -434271.4564469382,
+        "shadowDrawCalls": -11.207200400753209,
+        "shadowPrimitives": -909809.560190849,
+        "renderGpuMs": -0.18780545819243954,
+        "processMs": 0.6845434955777279
+      }
+    }
+  },
+  "combatInterpretation": "No reliable wall-frame gain: baseline median drift4.9percent exceeds observed0.9percent change; p95 is1.467ms worse. Profile indicates CPU limit; mean GPU improves0.188ms.",
+  "counterCaveat": "Raw Godot primitive counters omit instance multiplication in MultiMesh LOD branches; not corrected geometry totals.",
+  "baseInvariants": {
+    "pass": true,
+    "staticBaseMatches": 1139,
+    "changedLodNodes": 1139,
+    "glassBefore": 1480,
+    "glassAfter": 1039,
+    "glassInstances": 16371,
+    "maximumMatrixDelta": 0,
+    "method": "Base packed channels, base faces, material names, node transforms/render properties; glass per-bay world matrices and custom/color tails."
+  },
+  "lodRoundtrip": {
+    "staticMatches": 1139,
+    "staticDifferences": 0,
+    "glassShapesEqual": true
+  },
+  "savedSceneVerification": {
+    "client": {
+      "normalFingerprintDifferences": 0,
+      "nativeUniformContractDifferences": 0
+    },
+    "server": {
+      "normalFingerprintDifferences": 0,
+      "nativeUniformContractDifferences": 0
+    }
+  },
+  "tests": {
+    "rootSuite": "PASS11/11stages",
+    "targetedLodTests": "PASS9/9",
+    "nativeFixtures": "PASS"
+  },
+  "visualStatus": "PASS - independent default-FAIL Codex auditor accepted family, saved baked and actual exported Playtest evidence"
+}
