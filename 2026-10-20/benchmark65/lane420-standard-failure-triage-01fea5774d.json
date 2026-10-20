@@ -1,0 +1,47 @@
+{
+  "sourceSha256": "32b59dc864ccda90f7f84fb8362aba53ff945e74e6531a55f5b6fbf96737eb2e",
+  "driverResetUtc": "2026-10-20T14:21:43.910Z",
+  "eventId": 4101,
+  "renderingDriver": "d3d12",
+  "taa": true,
+  "evidence": [
+    {
+      "line": 404,
+      "text": "[JS] GODMODE_STREAM_SETTLED=0:14:31:false"
+    },
+    {
+      "line": 405,
+      "text": "[JS] GODMODE_SURVIVAL_PAYOUT=0:37:lagSwitch+enemyRadar"
+    },
+    {
+      "line": 410,
+      "text": "GODMODE_BENCHMARK_SEGMENT=shopping-street"
+    },
+    {
+      "line": 789,
+      "text": "GODMODE_BENCHMARK_SEGMENT=firefight"
+    },
+    {
+      "line": 1258,
+      "text": "[JS] GODMODE_STREAM_SETTLED=0.010107926259711195:14:32:false"
+    },
+    {
+      "line": 1259,
+      "text": "[JS] GODMODE_SURVIVAL_PAYOUT=0:37:"
+    },
+    {
+      "line": 1268,
+      "text": "GODMODE_BENCHMARK_SEGMENT=intersection-explosions"
+    },
+    {
+      "line": 2354,
+      "text": "GODMODE_BENCHMARK_COMPLETE=Action refused: debug_survival_command {\"accepted\":false,\"command\":\"streak:grant:precisionAirstrike\",\"error\":\"streak command refused\"}"
+    }
+  ],
+  "firstError": {
+    "line": 1270,
+    "text": "ERROR: Can't create buffer of size: 10368, error 0x887a0005."
+  },
+  "diagnosis": "precisionAirstrike still registered and grant accepted when run is live. Failure stream settled and paid out before intersection phase; no STREAK_USED log. Device removed while next wave builds buffers, before any airstrike activated. Cannot attribute root cause specifically to TAA from this single log; TAA on matches known AMD repro conditions, no TAA-off control yet.",
+  "fix": "Existing stream hold on console setup keeps audience alive, avoids idle run ending before streak steps. Never rename a still-valid streak ID or make required steps optional."
+}
