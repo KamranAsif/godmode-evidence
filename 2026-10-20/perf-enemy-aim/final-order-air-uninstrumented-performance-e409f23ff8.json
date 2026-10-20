@@ -1,0 +1,225 @@
+{
+  "measurement": "Uninstrumented full-detail65 enemy A/B/A combat",
+  "frameTraceEnabled": false,
+  "settings": {
+    "seed": 1136293662,
+    "enemies": 65,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "from": [
+      -404,
+      -15.58,
+      -414
+    ],
+    "yaw": 3.141592653589793,
+    "fov": 75,
+    "warmupMs": 15000,
+    "windowMs": 8000
+  },
+  "beforeFirst": {
+    "label": "before-verified-uninstrumented",
+    "manifest": {
+      "assets/maps/dumbo/prebuilt/receipt.json": "a703caa83e9f46fd5802e7b4d45dc38831ed366ed2c6719b608b26578175dad6",
+      "scripts/presentation.ts": "be72fa62210fb7d6215a790e8583a6865186c656d571bd371c61dc08e809765f",
+      "scripts/client/character_detail.ts": "465e00f1fc4cd072dbe5ced74fd265bbb8e272c729a33c53105c55c433a845f1",
+      "scripts/server/encounter_ai.ts": "b6dfd16292e4ad9bf54485ea9e794085376ce5283400cc167f7864e259a7ec4e",
+      "scripts/game_world.ts": "2e762b2bb4d130a1773c38fd8237c72b08bb21055181b95429569355ec8c8e1c",
+      "scripts/character_rig.ts": "d9179f7ada3b91f68c1f727aa885e2865d46a5bdce18e54cd1ec6534691b4be0",
+      "scripts/humanoid_aim_native.gd": "715e9b73a200d4a4befd9dd7964b2bbd49b8e0d6c08d469977f7f620bfcb351c",
+      "scripts/humanoid_aim_native_api.ts": "90888e8628d7d2ca1fa7f67a686abf3ce3fba43f6d52c7850699a5e26938bda3",
+      "scripts/client/soldier_view.ts": "007c9b6ff76fff15be1b50991d415cf8868ced8a70a4f1004400347da78e3aff",
+      "scripts/client/enemy_baked_aim.ts": "absent",
+      "scripts/enemy_aim_catalog.ts": "absent",
+      "assets/characters/enemy-aim/manifest.json": "absent",
+      "tools/engine/engine.json": "e1212463dc25086d53149f625b46ad21ce6ef4b94d238784f1fb5f2253fd73be",
+      "project.godot": "35db903466b478dce6734b2df2f715ad6a93f40973d3acd41c3cd652d8b6af2c",
+      "commit": "e6e64ec6c4ab0dafae5d09b6bd33efc0053eb81d",
+      "originMain": "0b761da55df19e860092728dc6145a29c1c7a39c",
+      "worktreeDiff": [],
+      "session": "perf-enemy-aim-verified-clean-20261020",
+      "frameTraceEnabled": false,
+      "scenario": {
+        "seed": 1136293662,
+        "enemies": 65,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "from": [
+          -404,
+          -15.58,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "fov": 75,
+        "warmupMs": 15000,
+        "windowMs": 8000
+      }
+    },
+    "windows": [
+      {
+        "frames": 212,
+        "medianMs": 36.8089981079102,
+        "p95Ms": 45.4309997558594,
+        "p99Ms": 52.5419998168945,
+        "meanMs": 37.77819343782821
+      },
+      {
+        "frames": 204,
+        "medianMs": 38.7770004272461,
+        "p95Ms": 47.257999420166,
+        "p99Ms": 57.8440017700195,
+        "meanMs": 39.35184796651204
+      }
+    ],
+    "stats": {
+      "frames": 416,
+      "medianMs": 37.5909996032715,
+      "p95Ms": 46.6100006103516,
+      "p99Ms": 55.3959999084473,
+      "meanMs": 38.54988940862509
+    }
+  },
+  "baked": {
+    "label": "after-verified-uninstrumented",
+    "manifest": {
+      "assets/maps/dumbo/prebuilt/receipt.json": "a703caa83e9f46fd5802e7b4d45dc38831ed366ed2c6719b608b26578175dad6",
+      "scripts/presentation.ts": "962c3390c4a4c8587e3917022a74645305f26b6a89d3b9947e78696c91dbd9d4",
+      "scripts/client/character_detail.ts": "465e00f1fc4cd072dbe5ced74fd265bbb8e272c729a33c53105c55c433a845f1",
+      "scripts/server/encounter_ai.ts": "b6dfd16292e4ad9bf54485ea9e794085376ce5283400cc167f7864e259a7ec4e",
+      "scripts/game_world.ts": "b72c51a97dafb2e9ac193a4ea25ebeeb2123dc56f959f8c139549ac53eb5acab",
+      "scripts/character_rig.ts": "d9179f7ada3b91f68c1f727aa885e2865d46a5bdce18e54cd1ec6534691b4be0",
+      "scripts/humanoid_aim_native.gd": "715e9b73a200d4a4befd9dd7964b2bbd49b8e0d6c08d469977f7f620bfcb351c",
+      "scripts/humanoid_aim_native_api.ts": "90888e8628d7d2ca1fa7f67a686abf3ce3fba43f6d52c7850699a5e26938bda3",
+      "scripts/client/soldier_view.ts": "a5c5c0647fbdb8b3d6415e54eaab3ea8334496d8bd242c40d4f6e794cc87a6f0",
+      "scripts/client/enemy_baked_aim.ts": "2e9c425e7236ba5cd04b3c276a97ae20f2d5cab8c2aff0c9c5383ac65cbad5ba",
+      "scripts/enemy_aim_catalog.ts": "66eb1c9645375e8f4c81def41de358dab3fc3e733f7f7f3e800f35111a82d053",
+      "assets/characters/enemy-aim/manifest.json": "ce23359e0c6019ac47fe7e0e20e83b5f908f62d6b47970ad34aa20f151e46a56",
+      "tools/engine/engine.json": "e1212463dc25086d53149f625b46ad21ce6ef4b94d238784f1fb5f2253fd73be",
+      "project.godot": "35db903466b478dce6734b2df2f715ad6a93f40973d3acd41c3cd652d8b6af2c",
+      "commit": "878e6b852e21df1971c6ba41661fa410f5f8674a",
+      "originMain": "0b761da55df19e860092728dc6145a29c1c7a39c",
+      "worktreeDiff": [],
+      "session": "perf-enemy-aim-verified-clean-20261020",
+      "frameTraceEnabled": false,
+      "scenario": {
+        "seed": 1136293662,
+        "enemies": 65,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "from": [
+          -404,
+          -15.58,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "fov": 75,
+        "warmupMs": 15000,
+        "windowMs": 8000
+      }
+    },
+    "windows": [
+      {
+        "frames": 297,
+        "medianMs": 27.0769996643066,
+        "p95Ms": 31.9750003814697,
+        "p99Ms": 34.7179985046387,
+        "meanMs": 27.02407745078758
+      },
+      {
+        "frames": 277,
+        "medianMs": 28.7859992980957,
+        "p95Ms": 35.6529998779297,
+        "p99Ms": 38.1220016479492,
+        "meanMs": 28.99938632262743
+      }
+    ],
+    "stats": {
+      "frames": 574,
+      "medianMs": 27.6580009460449,
+      "p95Ms": 33.9070014953613,
+      "p99Ms": 36.5849990844727,
+      "meanMs": 27.97731884015977
+    }
+  },
+  "beforeLast": {
+    "label": "before-verified-uninstrumented-bracket",
+    "manifest": {
+      "assets/maps/dumbo/prebuilt/receipt.json": "a703caa83e9f46fd5802e7b4d45dc38831ed366ed2c6719b608b26578175dad6",
+      "scripts/presentation.ts": "be72fa62210fb7d6215a790e8583a6865186c656d571bd371c61dc08e809765f",
+      "scripts/client/character_detail.ts": "465e00f1fc4cd072dbe5ced74fd265bbb8e272c729a33c53105c55c433a845f1",
+      "scripts/server/encounter_ai.ts": "b6dfd16292e4ad9bf54485ea9e794085376ce5283400cc167f7864e259a7ec4e",
+      "scripts/game_world.ts": "2e762b2bb4d130a1773c38fd8237c72b08bb21055181b95429569355ec8c8e1c",
+      "scripts/character_rig.ts": "d9179f7ada3b91f68c1f727aa885e2865d46a5bdce18e54cd1ec6534691b4be0",
+      "scripts/humanoid_aim_native.gd": "715e9b73a200d4a4befd9dd7964b2bbd49b8e0d6c08d469977f7f620bfcb351c",
+      "scripts/humanoid_aim_native_api.ts": "90888e8628d7d2ca1fa7f67a686abf3ce3fba43f6d52c7850699a5e26938bda3",
+      "scripts/client/soldier_view.ts": "007c9b6ff76fff15be1b50991d415cf8868ced8a70a4f1004400347da78e3aff",
+      "scripts/client/enemy_baked_aim.ts": "absent",
+      "scripts/enemy_aim_catalog.ts": "absent",
+      "assets/characters/enemy-aim/manifest.json": "absent",
+      "tools/engine/engine.json": "e1212463dc25086d53149f625b46ad21ce6ef4b94d238784f1fb5f2253fd73be",
+      "project.godot": "35db903466b478dce6734b2df2f715ad6a93f40973d3acd41c3cd652d8b6af2c",
+      "commit": "e6e64ec6c4ab0dafae5d09b6bd33efc0053eb81d",
+      "originMain": "0b761da55df19e860092728dc6145a29c1c7a39c",
+      "worktreeDiff": [],
+      "session": "perf-enemy-aim-verified-clean-20261020",
+      "frameTraceEnabled": false,
+      "scenario": {
+        "seed": 1136293662,
+        "enemies": 65,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "from": [
+          -404,
+          -15.58,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "fov": 75,
+        "warmupMs": 15000,
+        "windowMs": 8000
+      }
+    },
+    "windows": [
+      {
+        "frames": 212,
+        "medianMs": 37.3740005493164,
+        "p95Ms": 46.8160018920898,
+        "p99Ms": 49.5670013427734,
+        "meanMs": 37.9463065255363
+      },
+      {
+        "frames": 223,
+        "medianMs": 35.1180000305176,
+        "p95Ms": 42.7630004882812,
+        "p99Ms": 49.4669990539551,
+        "meanMs": 35.970731042425726
+      }
+    ],
+    "stats": {
+      "frames": 435,
+      "medianMs": 36.0699996948242,
+      "p95Ms": 45.5929985046387,
+      "p99Ms": 49.5670013427734,
+      "meanMs": 36.93354024338996
+    }
+  },
+  "pooledBefore": {
+    "frames": 851,
+    "medianMs": 36.9309997558594,
+    "p95Ms": 46.0099983215332,
+    "p99Ms": 52.5419998168945,
+    "meanMs": 37.723670975161774
+  },
+  "medianSavedMs": 9.272998809814503,
+  "p95SavedMs": 12.102996826171903,
+  "p99SavedMs": 15.957000732421804,
+  "baselineMedianDriftMs": 1.5209999084473012,
+  "verdict": "Improvement exceeds observed baseline drift"
+}
