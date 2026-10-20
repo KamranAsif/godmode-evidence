@@ -1,0 +1,262 @@
+{
+  "result": "PASS scenario and capture assertions; sustained frame change INCONCLUSIVE",
+  "resolution": [
+    2560,
+    1440
+  ],
+  "seed": 1136293662,
+  "aa": "none control, not production SMAA",
+  "timerInstrumentation": "No added stopwatches; existing standard benchmark",
+  "runs": [
+    {
+      "label": "before2",
+      "commit": "bb5437a37f1dde11692fd9c0e98be9f50422766b",
+      "workload": "a64bf73e74766d74c0c27d014b7e1ef67ce45345557350852d8bdb95b687f126",
+      "harness": "25385804077985045a412cf0259460ec8c5442312f218e5e2d2af12cf475dd35",
+      "arena": "a703caa83e9f46fd5802e7b4d45dc38831ed366ed2c6719b608b26578175dad6",
+      "frame": {
+        "median": 39.5550003051758,
+        "p95": 51.6870002746582,
+        "p99": 58.492000579834,
+        "max": 75.4449996948242,
+        "mean": 40.55219592790346
+      },
+      "gpu": {
+        "render": 19.58588513297,
+        "otherViewports": 1.0288689183977406
+      },
+      "counts": [
+        {
+          "actual": 65,
+          "actualMs": 22,
+          "expected": 65,
+          "name": "living-enemies",
+          "segment": 0
+        },
+        {
+          "actual": 65,
+          "actualMs": 30053,
+          "expected": 65,
+          "name": "living-enemies",
+          "segment": 0
+        }
+      ],
+      "cameras": [
+        {
+          "actualMs": 22,
+          "name": "camera-pose",
+          "pitch": 0,
+          "position": [
+            -404,
+            -15.6004991531372,
+            -414
+          ],
+          "segment": 0,
+          "yaw": -3.14159250259399
+        },
+        {
+          "actualMs": 30053,
+          "name": "camera-pose",
+          "pitch": 0,
+          "position": [
+            -404,
+            -15.6004991531372,
+            -414
+          ],
+          "segment": 0,
+          "yaw": -3.14159250259399
+        }
+      ],
+      "recoveryWindowMs": [
+        10812,
+        12012
+      ],
+      "recoveryWindowFrameMs": {
+        "median": 41.4480018615723,
+        "p95": 57.9500007629395,
+        "p99": 75.4449996948242,
+        "max": 75.4449996948242,
+        "mean": 42.68365517978011
+      },
+      "combatCaptureLog": [
+        "[JS] GODMODE_STREAM_THUMBNAIL=32:nearDeath:stream-32-1792513812229-nearDeath.jpg"
+      ]
+    },
+    {
+      "label": "after4",
+      "commit": "7a6f8bfcac38f0aab8afaa45938e732b7398fe92",
+      "workload": "a64bf73e74766d74c0c27d014b7e1ef67ce45345557350852d8bdb95b687f126",
+      "harness": "25385804077985045a412cf0259460ec8c5442312f218e5e2d2af12cf475dd35",
+      "arena": "a703caa83e9f46fd5802e7b4d45dc38831ed366ed2c6719b608b26578175dad6",
+      "frame": {
+        "median": 41.1349983215332,
+        "p95": 53.3819999694824,
+        "p99": 60.6769981384277,
+        "max": 95.8619995117188,
+        "mean": 41.919412604912175
+      },
+      "gpu": {
+        "render": 20.06982797209203,
+        "otherViewports": 1.040795805137214
+      },
+      "counts": [
+        {
+          "actual": 65,
+          "actualMs": 28,
+          "expected": 65,
+          "name": "living-enemies",
+          "segment": 0
+        },
+        {
+          "actual": 65,
+          "actualMs": 30024,
+          "expected": 65,
+          "name": "living-enemies",
+          "segment": 0
+        }
+      ],
+      "cameras": [
+        {
+          "actualMs": 28,
+          "name": "camera-pose",
+          "pitch": 0,
+          "position": [
+            -404,
+            -15.6004991531372,
+            -414
+          ],
+          "segment": 0,
+          "yaw": -3.14159250259399
+        },
+        {
+          "actualMs": 30024,
+          "name": "camera-pose",
+          "pitch": 0,
+          "position": [
+            -404,
+            -15.6004991531372,
+            -414
+          ],
+          "segment": 0,
+          "yaw": -3.14159250259399
+        }
+      ],
+      "recoveryWindowMs": [
+        10805,
+        12005
+      ],
+      "recoveryWindowFrameMs": {
+        "median": 42.8230018615723,
+        "p95": 51.6689987182617,
+        "p99": 53.6500015258789,
+        "max": 53.6500015258789,
+        "mean": 43.675249917166575
+      },
+      "combatCaptureLog": []
+    },
+    {
+      "label": "before3",
+      "commit": "bb5437a37f1dde11692fd9c0e98be9f50422766b",
+      "workload": "a64bf73e74766d74c0c27d014b7e1ef67ce45345557350852d8bdb95b687f126",
+      "harness": "25385804077985045a412cf0259460ec8c5442312f218e5e2d2af12cf475dd35",
+      "arena": "a703caa83e9f46fd5802e7b4d45dc38831ed366ed2c6719b608b26578175dad6",
+      "frame": {
+        "median": 53.0929985046387,
+        "p95": 62.4420013427734,
+        "p99": 77.8889999389648,
+        "max": 98.8990020751953,
+        "mean": 53.53853041785104
+      },
+      "gpu": {
+        "render": 20.77951965672625,
+        "otherViewports": 1.1398392850882375
+      },
+      "counts": [
+        {
+          "actual": 65,
+          "actualMs": 28,
+          "expected": 65,
+          "name": "living-enemies",
+          "segment": 0
+        },
+        {
+          "actual": 65,
+          "actualMs": 30069,
+          "expected": 65,
+          "name": "living-enemies",
+          "segment": 0
+        }
+      ],
+      "cameras": [
+        {
+          "actualMs": 28,
+          "name": "camera-pose",
+          "pitch": 0,
+          "position": [
+            -404,
+            -15.6004991531372,
+            -414
+          ],
+          "segment": 0,
+          "yaw": -3.14159250259399
+        },
+        {
+          "actualMs": 30069,
+          "name": "camera-pose",
+          "pitch": 0,
+          "position": [
+            -404,
+            -15.6004991531372,
+            -414
+          ],
+          "segment": 0,
+          "yaw": -3.14159250259399
+        }
+      ],
+      "recoveryWindowMs": [
+        10816,
+        12016
+      ],
+      "recoveryWindowFrameMs": {
+        "median": 54.9650001525879,
+        "p95": 67.6709976196289,
+        "p99": 91.7070007324219,
+        "max": 91.7070007324219,
+        "mean": 56.52009079673075
+      },
+      "combatCaptureLog": [
+        "[JS] GODMODE_STREAM_THUMBNAIL=32:nearDeath:stream-32-1792514864800-nearDeath.jpg"
+      ]
+    }
+  ],
+  "baselineMedianDriftMs": 13.537998199462898,
+  "endingWriterLog": [
+    "GODMODE_STREAM_THUMBNAIL_SKIPPED=timeout",
+    "GODMODE_STREAM_THUMBNAIL_FAILED=2",
+    "GODMODE_STREAM_THUMBNAIL=32:ending:stream-32-1792514436403-ending.jpg"
+  ],
+  "visualAudit": "PASS for thumbnail stills only",
+  "measurementBase": "Same pre-aim main; final export separately rebased onto aim-pose main",
+  "exportFeatureSourceMatchesMeasuredCandidate": [
+    {
+      "file": "scripts/client/stream_media.ts",
+      "matches": true
+    },
+    {
+      "file": "scripts/client/stream_session.ts",
+      "matches": true
+    },
+    {
+      "file": "scripts/client/roguelite_view.ts",
+      "matches": true
+    },
+    {
+      "file": "scripts/client/menu_controller.ts",
+      "matches": true
+    },
+    {
+      "file": "scripts/client/stream_thumbnail_writer.gd",
+      "matches": true
+    }
+  ]
+}
