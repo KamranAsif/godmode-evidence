@@ -1,0 +1,62 @@
+{
+  "mainCommit": "0b761da55",
+  "validPerformanceResult": false,
+  "error": "Action refused: debug_survival_command {\"accepted\":false,\"command\":\"streak:grant:precisionAirstrike\",\"error\":\"streak command refused\"}",
+  "completedSegments": [
+    {
+      "id": "shopping-street",
+      "frames": 457
+    },
+    {
+      "id": "firefight",
+      "frames": 260
+    }
+  ],
+  "engine": {
+    "bufferMemoryBytes": 2104142016,
+    "displayServer": "Windows",
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "staticMemoryBytes": 4567919941,
+    "taa": true,
+    "textureMemoryBytes": 3163062272,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 8368078848,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "conditions": {
+    "resolution": [
+      2560,
+      1440
+    ],
+    "enemies": 16,
+    "taa": true,
+    "foliage": "on",
+    "warmupMs": 10000,
+    "subset": "full"
+  },
+  "nativeError": "Cannot create GPU buffer, HRESULT0x887a0005 (device removed); associated Windows4101 confirms driver reset.",
+  "driverRecovery": {
+    "eventId": 4101,
+    "provider": "Display",
+    "at": "2026-10-20T14:21:43.910Z",
+    "message": "Display driver amduw23g-203304-e29338d6 stopped responding and has successfully recovered.",
+    "status": "OK",
+    "configManagerErrorCode": 0
+  },
+  "primaryScenarioFailure": "Action refused: debug_survival_command {\"accepted\":false,\"command\":\"streak:grant:precisionAirstrike\",\"error\":\"streak command refused\"}",
+  "ownedEnginesStopped": true,
+  "queuedLodGpuJobs": 0
+}
