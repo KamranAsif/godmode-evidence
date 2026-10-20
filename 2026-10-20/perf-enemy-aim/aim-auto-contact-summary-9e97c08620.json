@@ -1,0 +1,150 @@
+{
+  "requestedIdentityValidated": true,
+  "automatic": true,
+  "cases": 315,
+  "inactive": 0,
+  "worstLeft": {
+    "requested": {
+      "kind": "smg",
+      "scene": "res://assets/characters/mixamo/character-enemy-smg.glb",
+      "pitch": 0,
+      "automatic": true,
+      "shooting": false,
+      "walking": false,
+      "sprinting": true,
+      "crouching": false,
+      "airPhase": ""
+    },
+    "action": "sprint",
+    "airPhase": "",
+    "automatic": true,
+    "bakedAimActive": true,
+    "borePitch": 0.0128182612189908,
+    "clip": "MachineGunSprint",
+    "crouching": false,
+    "grips": {
+      "frame": {
+        "held": 0,
+        "solved": 1
+      },
+      "grips": [
+        {
+          "aimPitchRadians": -7.15255736860598e-9,
+          "animation": "MachineGunSprint",
+          "id": "review",
+          "kind": "smg",
+          "nativeAir": "ground",
+          "nativeBaked": {
+            "active": true,
+            "callback": 1,
+            "clip": "MachineGunSprint",
+            "enabled": true,
+            "priority": 1,
+            "rate": 0.86784839630127,
+            "sourceAssigned": "MachineGunSprint",
+            "sourceCallback": 1,
+            "sourceClip": "MachineGunSprint",
+            "sourcePriority": 0,
+            "sourceTime": 0.233561515808105,
+            "state": "MachineGunSprint",
+            "time": 0.175704956054688
+          },
+          "nativeStunned": false,
+          "solvedAtMs": 163453,
+          "stance": {
+            "active": true,
+            "bakedHands": true,
+            "borePitchRadians": -7.15255736860598e-9
+          }
+        }
+      ]
+    },
+    "gunVisible": true,
+    "kind": "smg",
+    "mountHand": "mixamorig_RightHand",
+    "pitch": 0,
+    "residuals": {
+      "Left": 0.00210298830643296,
+      "Right": 1.1922384146601e-7
+    },
+    "scene": "res://assets/characters/mixamo/character-enemy-smg.glb",
+    "shooting": false,
+    "special": "none",
+    "sprinting": true,
+    "walking": false
+  },
+  "worstRight": {
+    "requested": {
+      "kind": "rpg",
+      "scene": "res://assets/characters/mixamo/character-enemy-rpg.glb",
+      "pitch": -0.7853981633974483,
+      "automatic": true,
+      "shooting": false,
+      "walking": false,
+      "sprinting": false,
+      "crouching": false,
+      "airPhase": "land"
+    },
+    "action": "land",
+    "airPhase": "land",
+    "automatic": true,
+    "bakedAimActive": true,
+    "borePitch": -0.785349180869677,
+    "clip": "ShotgunJumpLand",
+    "crouching": false,
+    "grips": {
+      "frame": {
+        "held": 0,
+        "solved": 1
+      },
+      "grips": [
+        {
+          "aimPitchRadians": -0.785398155052798,
+          "animation": "",
+          "id": "review",
+          "kind": "rpg",
+          "nativeAir": "",
+          "nativeBaked": {
+            "active": true,
+            "callback": 1,
+            "clip": "ShotgunJumpLand",
+            "enabled": true,
+            "priority": 1,
+            "rate": 1.90476191043854,
+            "sourceAssigned": "ShotgunJumpLand",
+            "sourceCallback": 1,
+            "sourceClip": "",
+            "sourcePriority": 0,
+            "sourceTime": 0.666666686534882,
+            "state": "ShotgunJumpLand",
+            "time": 0.666666686534882
+          },
+          "nativeStunned": false,
+          "solvedAtMs": 178479,
+          "stance": {
+            "active": true,
+            "bakedHands": true,
+            "borePitchRadians": -0.785398155052798
+          }
+        }
+      ]
+    },
+    "gunVisible": true,
+    "kind": "rpg",
+    "mountHand": "mixamorig_RightHand",
+    "pitch": -0.785398163397448,
+    "residuals": {
+      "Left": 4.08900461934536e-7,
+      "Right": 1.2511652869307e-7
+    },
+    "scene": "res://assets/characters/mixamo/character-enemy-rpg.glb",
+    "shooting": false,
+    "special": "none",
+    "sprinting": false,
+    "walking": false
+  },
+  "maxShield": 1.19209289550781e-7,
+  "maxBoreError": 0.0128182612189908,
+  "maxMovingShotBoreError": 0.014298434521043957,
+  "errors": false
+}
