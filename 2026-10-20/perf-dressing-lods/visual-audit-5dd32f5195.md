@@ -1,0 +1,24 @@
+# Independent dressing far LOD visual audit
+
+Verdict: PASS. No blocking visible regression remains in the accepted evidence for commit 260cd9607a337844deec04312675ee9202aea52f, arena fingerprint 50881e3e46cce76feeba20f099aaff75f6013d64ed8bd0d19a89154f835b2ef6.
+
+This auditor made none of the production changes. Review was read-only CPU work and image inspection, with only audit reports authored. No Godot runs, builds, exports, tests or production edits were performed by the auditor. The verdict began at FAIL and remained there until the previously missing far target and actual exported-binary evidence was supplied. ART_STYLE.md was read in full, including its dated exceptions; no applicable style conflict was found.
+
+## Accepted evidence
+
+- `dressing-captures/comparisons/{coffee-counter,frontage-services,hardware-pegboard,produce-stand}.png` and native originals: representative 8/96/192/256 m before/after views at FOV75 and FOV32 retain close facets, silhouettes, materials and dressing identity. No discernible far reduction was found at native play scale. Obstructed intermediate shots were not used as sole family proof.
+- `dressing-baked-captures/`: saved-arena Pier 1, street and paused 65-enemy combat before/after views at both FOVs retain the approved lighting, planting density, near silhouettes and shop dressing. Readable florist and street-bin close views remain unchanged. The original obstructed far florist/bin world views were rejected as nonvacuous appearance proof.
+- `dressing-saved-indices-comparison.json`, `dressing-baked-captures/lod-roundtrip-comparison.json` and `invariants.json`: PASS for all 2997 paired base/native LOD buffers and 6672 instances. Saved base channels, faces, materials, transforms, colors, visibility, ranges and bounds are preserved. Existing foliage LODs are retained.
+- Corrected `dressing-controlled-probes/` set from 16:43-16:45 UTC: manually inspected all 24 native originals and both comparison sheets. Exact saved florist and street-bin mesh/material/selected-instance buffers, original world Y, scale and orientation are reused. At 8 m the rack, flower/pot tiers, bin slats, rim and feet are unchanged. At 256 m targets are identifiable off the reticle, disappear in target-removed references, and show no discernible silhouette/color/shading loss at native play scale, including FOV32. `target-visibility-proof.json` passes all 16 contribution checks; all 24 pre/post camera pairs independently match. These corrected probes resolve the two far sightline evidence gaps.
+- `dressing-playtest/{street,hardware-far-ads32,florist-close-ads32}.png`: all three actual integrated Windows Playtest images were manually inspected. Street dressing and approved look remain intact; the far hardware view has the expected waterfront/facade framing; the close florist FOV32 view exposes the original flower rack behind the window with intact facets, pots and tiers. All three pre/post camera and resolution receipts independently match, reporting 2560x1440 at scale 1 and build 260cd9607a33.
+- `dressing-playtest/render-error-check.json`: all three actual binary runs reached gameplay and report zero scoped engine/script/parse errors. `dressing-pr-evidence/export-pack-check.json` reports 10982 files, zero development files and no bridge literal. `export-resource-identity.json` confirms both embedded client/server scenes exactly match the audited candidate. Binary SHA256: `92222c94f63f4738e15ede80e05922d110422a237c979c8b21a5e2521d63b5b0`, 2408355556 bytes.
+
+## Limits and exclusions
+
+- Corrected controlled probes are explicitly XZ-relocated, neutral-floor lighting comparisons using the scene sun/environment and ordinary HUD. They supplement accepted full-world views; they are not gameplay locations. The earlier masked controlled attempt and failed trial2/trial3 images are excluded.
+- Native index selection receipts are pinned-renderer predictions from native buffers and camera/bounds data, not direct GPU selected-index readback. Target-removed raster checks establish actual target contribution separately.
+- Actual Windows PrintWindow originals are retained unchanged at 2560x1442. They have a visible black lower strip and clipped bottom HUD larger than the nominal 2 px size difference. The audited scene regions are unobstructed. The engine reports a 2560x1440 viewport at scale 1; this review does not claim the black strip is only a 2 px border.
+- The exported hardware far view validates integrated scene appearance; tiny individual pegboard parts across the water are assessed through the already accepted family A/B, not that overview alone.
+- Production AA is TAA false / SMAA2. Still images sample representative distances and views; this verdict does not claim a measured performance improvement, direct GPU LOD readback, every possible transition angle, or achievement of 120 FPS.
+
+Remaining visual blockers: none.
