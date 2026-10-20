@@ -1,0 +1,65 @@
+{
+  "diagnosticOnly": true,
+  "measurement": "Matched instrumented65 enemy weapon-pose attribution, not a whole-frame saving",
+  "runs": {
+    "before": {
+      "windows": [
+        {
+          "cpuFrames": 167,
+          "leafMsPerFrame": 7.18264670658683,
+          "leafSelfMsPerFrame": 7.18264670658683,
+          "calls": 9029,
+          "frameMeanMs": 50.04903111457825,
+          "commit": "e6e64ec6c4ab0dafae5d09b6bd33efc0053eb81d",
+          "frameTraceEnabled": true,
+          "nativeFrameMedianMs": 49.7809982299805,
+          "nativeFrameP95Ms": 60.4550018310547
+        },
+        {
+          "cpuFrames": 63,
+          "leafMsPerFrame": 18.2150793650794,
+          "leafSelfMsPerFrame": 18.2150793650794,
+          "calls": 3384,
+          "frameMeanMs": 159.5774114272174,
+          "commit": "e6e64ec6c4ab0dafae5d09b6bd33efc0053eb81d",
+          "frameTraceEnabled": true,
+          "nativeFrameMedianMs": 160.266998291016,
+          "nativeFrameP95Ms": 182.535995483398
+        }
+      ],
+      "cpuFrames": 230,
+      "weaponPoseMsPerFrame": 10.204573913043491
+    },
+    "after": {
+      "windows": [
+        {
+          "cpuFrames": 258,
+          "leafMsPerFrame": 0.0457325581395349,
+          "leafSelfMsPerFrame": 0.0457325581395349,
+          "calls": 13407,
+          "frameMeanMs": 31.988286842862923,
+          "commit": "878e6b852e21df1971c6ba41661fa410f5f8674a",
+          "frameTraceEnabled": true,
+          "nativeFrameMedianMs": 31.3110008239746,
+          "nativeFrameP95Ms": 40.8450012207031
+        },
+        {
+          "cpuFrames": 298,
+          "leafMsPerFrame": 0.0318288590604027,
+          "leafSelfMsPerFrame": 0.0318288590604027,
+          "calls": 14487,
+          "frameMeanMs": 27.54705496588114,
+          "commit": "878e6b852e21df1971c6ba41661fa410f5f8674a",
+          "frameTraceEnabled": true,
+          "nativeFrameMedianMs": 27.4650001525879,
+          "nativeFrameP95Ms": 32.9300003051758
+        }
+      ],
+      "cpuFrames": 556,
+      "weaponPoseMsPerFrame": 0.03828057553956836
+    }
+  },
+  "leafDifferenceMs": 10.166293337503923,
+  "warning": "The instrumented baseline is unstable: first window frame median 49.797 ms, second 160.267 ms. Both leaf pairs are reported; none is used to claim a whole-frame saving.",
+  "cleanWholeFrameMedianSavedMs": 9.272998809814503
+}
