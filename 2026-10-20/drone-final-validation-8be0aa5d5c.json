@@ -1,0 +1,105 @@
+{
+    "finalHead":  "33b4dabedd9f86fbba2c401e7caadf5fc937550d",
+    "base":  "46be7661cc7ff685b4753651fc7dd210e4eccf93",
+    "implementationReview":  {
+                                 "verdict":  "READY",
+                                 "blockingFindings":  [
+
+                                                      ],
+                                 "importantFindings":  [
+
+                                                       ],
+                                 "reviewer":  "/root/drone_review",
+                                 "documentationCorrection":  "docs/survival/README.md now describes nose contact and approved model"
+                             },
+    "visualAudit":  {
+                        "auditor":  "/root/drone_visual_audit",
+                        "madeImplementationChanges":  false,
+                        "defaultVerdict":  "FAIL",
+                        "finalVerdict":  "PASS",
+                        "blockingFindings":  [
+
+                                             ],
+                        "capturedRevision":  "55d120b17",
+                        "reviewedLaneRevision":  "0f50b8afe",
+                        "findings":  [
+                                         "Approved faceted tilt-rotor matches its recorded model hash; cyan emissive strips remain friendly and visible. No contact arm or markings.",
+                                         "Nose UI is upright and readable during final approach. Martyrdom 1, Magazine 1, and Damage 1 match the actual picker.",
+                                         "Separate rotor poses visibly change across captures.",
+                                         "Contact framing remains clear; receipts confirm automatic contact and an applied upgrade."
+                                     ],
+                        "scope":  "Original exported captures, baseline originals, comparison and receipts. Captured visual files are byte-equivalent to lane source; excludes performance and later server eligibility refresh. Baseline camera differs; approach captures use slow time. Auditor made no changes."
+                    },
+    "sourceEquivalence":  {
+                              "passed":  true,
+                              "finalHead":  "e5abd6903f0e49042e5abcf0fe132ec4b5345b84",
+                              "base":  "46be7661cc7ff685b4753651fc7dd210e4eccf93",
+                              "capturedVisual":  "55d120b17",
+                              "testedBehavior":  "0f50b8afe",
+                              "visual":  [
+                                             {
+                                                 "path":  "scripts/client/care_drone_model.ts",
+                                                 "sha256":  "040fac85bcb9452a88b77b2ee3b7ad05a1adf408f66ac623feb28a5a804148fd"
+                                             },
+                                             {
+                                                 "path":  "scripts/client/supply_drop_view.ts",
+                                                 "sha256":  "6a9321bb523fc572fb483cb655ccdb47a2ac7153acedeb8ceffc546ec1943a03"
+                                             },
+                                             {
+                                                 "path":  "scripts/client/killstreak_view.ts",
+                                                 "sha256":  "8e2b4d3f2583563e09435dd8f6c0a99d540dda295f23c33fe84fb8158690d4ac"
+                                             },
+                                             {
+                                                 "path":  "packages/game-rules/src/supply_drops.ts",
+                                                 "sha256":  "450755cddf1f84ceaadc81021c34cb0c851ee193071b828684a04fa1bbd54690"
+                                             },
+                                             {
+                                                 "path":  "packages/game-rules/src/care_delivery.ts",
+                                                 "sha256":  "b5895b6a6464714749c7f82b9dd20201fbe81e6675bfbd544382b93550f32985"
+                                             },
+                                             {
+                                                 "path":  "assets/pickups/care-package-drone.glb.bin",
+                                                 "sha256":  "83b285a70c682a9ab4e89769f83f255413b45f8a6cf8579422a0f4e54b2d1188"
+                                             }
+                                         ],
+                              "behavior":  [
+                                               {
+                                                   "path":  "scripts/server/supply_drops.ts",
+                                                   "sha256":  "f1dccc932853e8865aaf25123f5a75f25483e5ef9c9931fe903b8a5439afa1f3"
+                                               },
+                                               {
+                                                   "path":  "scripts/server/survival_run.ts",
+                                                   "sha256":  "bbe80d49323988da1a0fcb773926e9235a13a327d5f306ca0daf29a058f120a7"
+                                               },
+                                               {
+                                                   "path":  "tests/integration/care-delivery.mjs",
+                                                   "sha256":  "a3dab88ff8bd540154631c328203bc0f08aa53a3da0ecc93c38e40655c8861d2"
+                                               }
+                                           ],
+                              "note":  "Rebase adds main whole-map static occluders. No drone visual, touch-rule, delivery-server or delivery-test bytes changed. No arena regeneration for this rebase. Final documentation-only commit33b4dabed aligns the subsystem delivery guide; tested runtime bytes unchanged.",
+                              "finalDocumentationHead":  "33b4dabed"
+                          },
+    "tests":  {
+                  "cliFail":  0,
+                  "docOnlyAfterSuite":  true,
+                  "targetedRules":  6,
+                  "cliSkip":  6,
+                  "wallSeconds":  282.9,
+                  "tiers":  11,
+                  "targetedIntegration":  "PASS: eligibility refresh, moving contact, exact preview/pick, actual upgrade, death/respawn, FIFO",
+                  "cliPass":  289,
+                  "failed":  0,
+                  "rootSuite":  "PASS"
+              },
+    "capture":  {
+                    "slowTime":  true,
+                    "baselineCameraDiffers":  true,
+                    "automaticContact":  true,
+                    "exportedWindowsPlaytest":  true,
+                    "actualUpgradeApplied":  "Martyrdom 1",
+                    "revision":  "55d120b17",
+                    "gpuReleased":  "2026-10-20T04:16:35.661Z",
+                    "laterEligibilityRefreshValidatedSeparately":  true
+                },
+    "rifle":  "Approved body and cropped-magazine source records only; no gameplay integration"
+}
