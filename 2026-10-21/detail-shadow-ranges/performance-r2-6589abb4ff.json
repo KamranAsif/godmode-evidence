@@ -1,0 +1,464 @@
+{
+  "source": "95bc8c0c65b7014ff3f6f9a1540a13c19f6e25fb",
+  "base": "a4f683d563334288f665496cc4b918eee0ae5a9e",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "enemies": 16,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "firefight-65",
+        "durationMs": 30000,
+        "from": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "fixedCamera": true,
+        "settleMs": 13000,
+        "expectedLivingEnemies": 65,
+        "setup": [
+          {
+            "atMs": 0,
+            "kind": "wave",
+            "count": 65
+          }
+        ],
+        "events": []
+      },
+      {
+        "id": "shopping-street",
+        "durationMs": 12000,
+        "from": [
+          -404,
+          -15.582,
+          -390
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          }
+        ]
+      },
+      {
+        "id": "under-bridge",
+        "durationMs": 12000,
+        "from": [
+          -518,
+          -13.7,
+          -375
+        ],
+        "to": [
+          -534,
+          -13.7,
+          -395
+        ],
+        "yaw": -2.15,
+        "pitch": -0.06,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          },
+          {
+            "atMs": 4000,
+            "name": "debug_survival_command",
+            "payload": {
+              "command": "streak:blast:rcxd:12"
+            },
+            "optional": false
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "driver": "32.0.32015.7029",
+  "exportedSource": "893df7738c51c8c8b5884d6ff41d54d146732886",
+  "exportedRecipe": "51f66b6a3abc3d7ea738e72eb89a25d153930bb14f582a5b766d44a549535f1c",
+  "provenance": {
+    "baseMain": "a4f683d563334288f665496cc4b918eee0ae5a9e",
+    "sourceCommit": "95bc8c0c65b7014ff3f6f9a1540a13c19f6e25fb",
+    "exportedSource": "893df7738c51c8c8b5884d6ff41d54d146732886",
+    "exportedRecipe": "51f66b6a3abc3d7ea738e72eb89a25d153930bb14f582a5b766d44a549535f1c",
+    "mainChangedFiles": [
+      "scripts/client/death_telemetry.ts",
+      "scripts/client/snapshot_renderer.ts",
+      "scripts/client/soldier_footsteps.ts",
+      "scripts/client/soldier_view.ts",
+      "scripts/client/survival_hud.ts",
+      "scripts/nav_map.ts",
+      "scripts/server/admin_system.ts",
+      "scripts/server/ai_tick_counters.ts",
+      "scripts/server/crowd_weapons.ts",
+      "scripts/server/grenade_system.ts",
+      "scripts/server/killstreaks.ts",
+      "scripts/server/soldier_ai.ts",
+      "scripts/server/survival_run.ts",
+      "scripts/server_simulation.ts",
+      "tests/unit/death-telemetry.test.mjs",
+      "tests/unit/enemy-shot-cover.test.mjs",
+      "tests/unit/streak-viewmodel.test.mjs",
+      "tools/godot-cli/runner/gameplay_benchmark.gd",
+      "tools/performance/README.md"
+    ],
+    "staticArenaAndLookUnchanged": true,
+    "detailImplementationUnchangedByRebase": true,
+    "implementation": [
+      {
+        "path": "scripts/environment_modules/detail_shadow_policy.ts",
+        "sha256": "24fa44473d6cb89f332412de4102dc091457c0e5c0e5752c971734c177fba967",
+        "sameAsExportedSource": true
+      },
+      {
+        "path": "scripts/environment_modules/module_instancer.ts",
+        "sha256": "f5f2d3e10f9c86fe7c06362108b1bd301de1e993ee704a566096381358b0eee2",
+        "sameAsExportedSource": true
+      },
+      {
+        "path": "scripts/environment_modules/shadow_casters.gd",
+        "sha256": "6c14c63fa33ff094169a3eb9a97a64d83c6bc1cd81aca3794b8fb93c8d8501cc",
+        "sameAsExportedSource": true
+      },
+      {
+        "path": "scripts/debug/prebuilt_arena_export.ts",
+        "sha256": "4c8d784441f842b5ae30998b21f1c64e6b7503fb14c1d8fb1ebc9999badc75ff",
+        "sameAsExportedSource": true
+      }
+    ],
+    "controlSceneSha256": "383b091a51aaac99c05cd4608fb07d74b4d3de9c779ba343fbc9458a301b0b37",
+    "candidateSceneSha256": "cfb8ea6d75d5b12a35f5d154bd67db22fbedb34634de5e5ef0f088c0fc21db1b",
+    "inverse": {
+      "candidateSha256": "cfb8ea6d75d5b12a35f5d154bd67db22fbedb34634de5e5ef0f088c0fc21db1b",
+      "controlSha256": "383b091a51aaac99c05cd4608fb07d74b4d3de9c779ba343fbc9458a301b0b37",
+      "instances": 4962,
+      "nativeTargetGeometryAndBufferRoundTrip": true,
+      "note": "Offline control inverted from the verified production candidate: restore original caster flags and remove only the new shadow group/range receipt. Camera mesh arrays, transforms, layers, LOD bias and instance buffers checked across control save/reload.",
+      "ok": true,
+      "removedShadowBatches": 4076,
+      "restoredSources": 1829
+    },
+    "note": "Candidate uses exact source-893df production scene bytes audited and packed in Windows. Final-parent runtime recompiled after CPU/telemetry-only rebase; detail implementation, static arena pipeline and approved look unchanged. The new main nav counter extends input dependency closure, so no final-parent native recipe/output equivalence is claimed."
+  },
+  "phases": [
+    {
+      "phase": "firefight-65",
+      "runs": [
+        {
+          "label": "r2-control-1",
+          "medianMs": 20.0219993591309,
+          "p95Ms": 26.931999206543,
+          "p99Ms": 30.8150005340576,
+          "renderGpuMeanMs": 16.102998617283173,
+          "renderCpuMeanMs": 6.505396806962604,
+          "processMeanMs": 23.29121121883677,
+          "cameraDrawCalls": 3683.696675900277,
+          "cameraRawPrimitives": 7746710.621883657,
+          "shadowDrawCalls": 12543.888504155124,
+          "shadowRawPrimitives": 22085523.540166207,
+          "memory": {
+            "staticBytesMean": 4742467559.360111,
+            "videoBytesMean": 8474107745.152354,
+            "staticBytesPeak": 4750238903,
+            "videoBytesPeak": 8541356032
+          }
+        },
+        {
+          "label": "r2-candidate-1",
+          "medianMs": 19.4330005645752,
+          "p95Ms": 26.2150001525879,
+          "p99Ms": 32.3250007629395,
+          "renderGpuMeanMs": 15.36920014096078,
+          "renderCpuMeanMs": 5.528395553162156,
+          "processMeanMs": 22.571919137465972,
+          "cameraDrawCalls": 3692.896226415094,
+          "cameraRawPrimitives": 7909015.818059299,
+          "shadowDrawCalls": 8865.431940700808,
+          "shadowRawPrimitives": 21620846.849056605,
+          "memory": {
+            "staticBytesMean": 4783533538.433962,
+            "videoBytesMean": 8727849937.078167,
+            "staticBytesPeak": 4791439709,
+            "videoBytesPeak": 8809791488
+          }
+        },
+        {
+          "label": "r2-control-2",
+          "medianMs": 20.8419990539551,
+          "p95Ms": 28.0809993743896,
+          "p99Ms": 31.7199993133545,
+          "renderGpuMeanMs": 16.520264019039928,
+          "renderCpuMeanMs": 6.680995682160633,
+          "processMeanMs": 23.37596834532367,
+          "cameraDrawCalls": 3687.9683453237412,
+          "cameraRawPrimitives": 7764307.424460432,
+          "shadowDrawCalls": 12543.364028776978,
+          "shadowRawPrimitives": 22069248.21582734,
+          "memory": {
+            "staticBytesMean": 4733711242.923021,
+            "videoBytesMean": 8418290928.161151,
+            "staticBytesPeak": 4744128109,
+            "videoBytesPeak": 8541356032
+          }
+        }
+      ]
+    },
+    {
+      "phase": "shopping-street",
+      "runs": [
+        {
+          "label": "r2-control-1",
+          "medianMs": 11.4029998779297,
+          "p95Ms": 14.4980001449585,
+          "p99Ms": 15.5699996948242,
+          "renderGpuMeanMs": 10.436147343199018,
+          "renderCpuMeanMs": 2.061768173117535,
+          "processMeanMs": 17.174943025540472,
+          "cameraDrawCalls": 1292.925343811395,
+          "cameraRawPrimitives": 3531813.0736738704,
+          "shadowDrawCalls": 2762.5,
+          "shadowRawPrimitives": 8414420.518664047,
+          "memory": {
+            "staticBytesMean": 4670289180.994106,
+            "videoBytesMean": 8570757361.414538,
+            "staticBytesPeak": 4675543976,
+            "videoBytesPeak": 8608464896
+          }
+        },
+        {
+          "label": "r2-candidate-1",
+          "medianMs": 11.0900001525879,
+          "p95Ms": 14.0819997787476,
+          "p99Ms": 15.0120000839233,
+          "renderGpuMeanMs": 9.974779030869216,
+          "renderCpuMeanMs": 1.995297451082323,
+          "processMeanMs": 16.618813031161565,
+          "cameraDrawCalls": 1293.0944287063267,
+          "cameraRawPrimitives": 3503424.000944287,
+          "shadowDrawCalls": 2496.8630783758263,
+          "shadowRawPrimitives": 8093350.949008498,
+          "memory": {
+            "staticBytesMean": 4710177972.152974,
+            "videoBytesMean": 8809791488,
+            "staticBytesPeak": 4716823234,
+            "videoBytesPeak": 8809791488
+          }
+        },
+        {
+          "label": "r2-control-2",
+          "medianMs": 11.4680004119873,
+          "p95Ms": 14.4630002975464,
+          "p99Ms": 15.5139999389648,
+          "renderGpuMeanMs": 10.45547297898761,
+          "renderCpuMeanMs": 2.0600806303549457,
+          "processMeanMs": 19.205334316617307,
+          "cameraDrawCalls": 1292.2418879056047,
+          "cameraRawPrimitives": 3471142.922320551,
+          "shadowDrawCalls": 2756.758112094395,
+          "shadowRawPrimitives": 8243252.395280236,
+          "memory": {
+            "staticBytesMean": 4666385932.469027,
+            "videoBytesMean": 8541356032,
+            "staticBytesPeak": 4672120249,
+            "videoBytesPeak": 8541356032
+          }
+        }
+      ]
+    },
+    {
+      "phase": "under-bridge",
+      "runs": [
+        {
+          "label": "r2-control-1",
+          "medianMs": 19.3540000915527,
+          "p95Ms": 22.261999130249,
+          "p99Ms": 34.5369987487793,
+          "renderGpuMeanMs": 18.260166104845847,
+          "renderCpuMeanMs": 7.270828897572824,
+          "processMeanMs": 25.427152823920267,
+          "cameraDrawCalls": 7667.360465116279,
+          "cameraRawPrimitives": 10761782.740863787,
+          "shadowDrawCalls": 10261.712624584718,
+          "shadowRawPrimitives": 16992666.84219269,
+          "memory": {
+            "staticBytesMean": 4667965734.913621,
+            "videoBytesMean": 8541356032,
+            "staticBytesPeak": 4677249137,
+            "videoBytesPeak": 8541356032
+          }
+        },
+        {
+          "label": "r2-candidate-1",
+          "medianMs": 18.7959995269775,
+          "p95Ms": 21.7810001373291,
+          "p99Ms": 32.3849983215332,
+          "renderGpuMeanMs": 17.76225883477749,
+          "renderCpuMeanMs": 6.421022511563505,
+          "processMeanMs": 25.227274919614146,
+          "cameraDrawCalls": 7667.673633440514,
+          "cameraRawPrimitives": 10727708.289389068,
+          "shadowDrawCalls": 6681.66077170418,
+          "shadowRawPrimitives": 16252869.33118971,
+          "memory": {
+            "staticBytesMean": 4704300024.747588,
+            "videoBytesMean": 8809791488,
+            "staticBytesPeak": 4712929309,
+            "videoBytesPeak": 8809791488
+          }
+        },
+        {
+          "label": "r2-control-2",
+          "medianMs": 19.5440006256104,
+          "p95Ms": 23.3490009307861,
+          "p99Ms": 34.5779991149902,
+          "renderGpuMeanMs": 18.419402002689278,
+          "renderCpuMeanMs": 7.327013410315845,
+          "processMeanMs": 25.711519262981742,
+          "cameraDrawCalls": 7666.427135678392,
+          "cameraRawPrimitives": 10744084.703517588,
+          "shadowDrawCalls": 10261.608040201005,
+          "shadowRawPrimitives": 16908871.50753769,
+          "memory": {
+            "staticBytesMean": 4664257295.566164,
+            "videoBytesMean": 8541356032,
+            "staticBytesPeak": 4672844652,
+            "videoBytesPeak": 8541356032
+          }
+        }
+      ]
+    }
+  ],
+  "fixedViews": [
+    {
+      "view": "street",
+      "runs": [
+        {
+          "variant": "before",
+          "index": 0,
+          "medianMs": 15.9659996032715,
+          "p95Ms": 16.7549991607666,
+          "p99Ms": 17.2110004425049,
+          "cameraDrawCalls": 3579,
+          "cameraRawPrimitives": 6449249,
+          "shadowDrawCalls": 12355,
+          "shadowRawPrimitives": 18724018
+        },
+        {
+          "variant": "after",
+          "index": 1,
+          "medianMs": 14.9980001449585,
+          "p95Ms": 15.918999671936,
+          "p99Ms": 16.306999206543,
+          "cameraDrawCalls": 3579,
+          "cameraRawPrimitives": 6449249,
+          "shadowDrawCalls": 8676,
+          "shadowRawPrimitives": 18151111
+        },
+        {
+          "variant": "before",
+          "index": 2,
+          "medianMs": 15.9460000991821,
+          "p95Ms": 16.7630004882812,
+          "p99Ms": 17.2490005493164,
+          "cameraDrawCalls": 3579,
+          "cameraRawPrimitives": 6449249,
+          "shadowDrawCalls": 12355,
+          "shadowRawPrimitives": 18724018
+        }
+      ]
+    },
+    {
+      "view": "pier",
+      "runs": [
+        {
+          "variant": "before",
+          "index": 0,
+          "medianMs": 17.9179992675781,
+          "p95Ms": 18.9249992370605,
+          "p99Ms": 19.4659996032715,
+          "cameraDrawCalls": 16503,
+          "cameraRawPrimitives": 15899623,
+          "shadowDrawCalls": 2332,
+          "shadowRawPrimitives": 4204746
+        },
+        {
+          "variant": "after",
+          "index": 1,
+          "medianMs": 17.8360004425049,
+          "p95Ms": 18.8449993133545,
+          "p99Ms": 19.4069995880127,
+          "cameraDrawCalls": 16503,
+          "cameraRawPrimitives": 15899623,
+          "shadowDrawCalls": 2007,
+          "shadowRawPrimitives": 4113825
+        },
+        {
+          "variant": "before",
+          "index": 2,
+          "medianMs": 17.9610004425049,
+          "p95Ms": 19.0359992980957,
+          "p99Ms": 22.2719993591309,
+          "cameraDrawCalls": 16503,
+          "cameraRawPrimitives": 15899623,
+          "shadowDrawCalls": 2332,
+          "shadowRawPrimitives": 4204746
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Three sequential official benchmark runs: control, candidate, control; median/p95/p99 are per-run, not pooled. Each uses the same measured #2190 runtime and identical workload/measurement hashes.",
+    "Each phase table includes control drift and tail behavior; a change within the baseline spread is inconclusive. CPU and GPU times overlap, and are not added.",
+    "Raw Godot primitive counters omit MultiMesh instance multiplication when mesh LOD is active; they are monitor values, not true weighted triangle totals.",
+    "Candidate SCN is the exact officially verified and exported production scene. Control is its native offline inversion, restoring 1829 original caster flags and deleting only 4076 new shadow batches; target camera geometry/buffers verified after native save/reload. Exact scene hashes are recorded separately from the retained production receipt.",
+    "Windows export and native visual evidence apply to source 893df7738, recipe 51f66b6a. Final main rebase changed enemy CPU/telemetry logic, including a nav counter that extends the recipe dependency closure. Four detail implementation files, static arena pipeline/assets and lighting settings are unchanged; no final-parent native recipe/output equivalence is claimed.",
+    "Fixed views use zero enemies and toggle original/copy casters in one loaded arena; hidden shadow copies remain in the fixed control. Camera submissions and sun receipts are exact across each bracket. Benchmark control SCNs omit the copies.",
+    "Main #2191 audio-bus optimization merged after the candidate run. The final branch rebased onto it; this cohort is retained as matched #2190-source evidence, with no post-audio/final-HEAD frame-time claim.",
+    "Production settings are SMAA2, TAA false, native 2560x1440 scale1. Runs are uninstrumented, uncapped and under exclusive timing holds. The 8.3 ms target is not achieved."
+  ]
+}
