@@ -1,0 +1,67 @@
+{
+  "pass": true,
+  "currentSourceCommit": "e692f4f050cf609b681691a4e86ef1ed3fd75427",
+  "currentBaseCommit": "e6f0a07e17c8a0fed5d63abeef64059ea3ee65a4",
+  "priorNativeVisualSourceCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+  "matchedTimingSourceCommit": "a42a0f852f4cff32f135ac77ca82e77593202c6c",
+  "staticArenaFingerprint": "8ee249bd2ace71bd9db6c670346576395c15192352e1f3c87b3983c228e570e5",
+  "changedArenaInputs": [],
+  "offlinePrSourceFilesByteIdentical": true,
+  "currentValidationCommands": [
+    {
+      "name": "imports-seed",
+      "code": 0,
+      "file": "artifacts/building-rebase-2164/imports-seed-private.log",
+      "endedAt": "2026-10-21T13:42:48.869Z"
+    },
+    {
+      "name": "project-import",
+      "code": 0,
+      "file": "artifacts/building-rebase-2164/project-import-private.log",
+      "endedAt": "2026-10-21T13:43:18.153Z"
+    },
+    {
+      "name": "build-scripts",
+      "code": 0,
+      "file": "artifacts/building-rebase-2164/build-scripts-private.log",
+      "endedAt": "2026-10-21T13:43:52.794Z"
+    },
+    {
+      "name": "pnpm-test",
+      "code": 1,
+      "file": "artifacts/building-rebase-2164/pnpm-test-private.log",
+      "endedAt": "2026-10-21T13:47:19.516Z"
+    },
+    {
+      "name": "godot-cli-isolated",
+      "code": 0,
+      "file": "artifacts/building-rebase-2164/godot-cli-isolated-private.log",
+      "endedAt": "2026-10-21T13:59:24.675Z"
+    }
+  ],
+  "allTiersIndependentlyPassed": true,
+  "fullRootSuiteSingleInvocationPass": false,
+  "testRecovery": "All ten non-CLI tiers passed in both complete root runs. The complete CLI tier passed standalone with one file worker after transient Windows identity/queue fixture failures. All original failures retained.",
+  "originalRootFailure": {
+    "passed": 10,
+    "total": 11,
+    "failedTier": "godot-cli",
+    "failedTest": "stale process records never signal an unrelated live process",
+    "log": "artifacts/building-rebase-2164/pnpm-test-private.log"
+  },
+  "priorRecoveryResults": [
+    {
+      "name": "stale-process-target",
+      "code": 0,
+      "file": "artifacts/building-rebase-2164/stale-process-target-private.log",
+      "endedAt": "2026-10-21T13:51:58.326Z"
+    },
+    {
+      "name": "pnpm-test-retry",
+      "code": 1,
+      "file": "artifacts/building-rebase-2164/pnpm-test-retry-private.log",
+      "endedAt": "2026-10-21T13:55:15.571Z"
+    }
+  ],
+  "note": "Main#2164 changes enemy ground-turn CPU work. Completed matched before/after timing remains labeled with its actual a42 source; no #2164 CPU gain is attributed to this PR. Current import, build, full suite and actual Windows checks use the rebased e692 source. Static arena bytes and all five offline PR source files are unchanged."
+}
