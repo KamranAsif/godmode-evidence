@@ -1,0 +1,551 @@
+{
+  "statistic": "Arithmetic mean of two run statistics per arm; not pooled frame percentiles",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "enemies": 16,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "firefight-65",
+        "durationMs": 30000,
+        "from": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "fixedCamera": true,
+        "settleMs": 13000,
+        "expectedLivingEnemies": 65,
+        "setup": [
+          {
+            "atMs": 0,
+            "kind": "wave",
+            "count": 65
+          }
+        ],
+        "events": []
+      },
+      {
+        "id": "shopping-street",
+        "durationMs": 12000,
+        "from": [
+          -404,
+          -15.582,
+          -390
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          }
+        ]
+      },
+      {
+        "id": "under-bridge",
+        "durationMs": 12000,
+        "from": [
+          -518,
+          -13.7,
+          -375
+        ],
+        "to": [
+          -534,
+          -13.7,
+          -395
+        ],
+        "yaw": -2.15,
+        "pitch": -0.06,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          },
+          {
+            "atMs": 4000,
+            "name": "debug_survival_command",
+            "payload": {
+              "command": "streak:blast:rcxd:12"
+            },
+            "optional": false
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "provenance": [
+    {
+      "name": "before-1",
+      "createdAt": "2026-10-21T09:08:01.092Z",
+      "buildCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+      "checkoutCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+      "dirty": "",
+      "arenaReceiptSha256": "8560cadb20c84bba6229e09b8217bf1a7b7a75d0d63bc71615eb83a71bc1e219",
+      "workloadHash": "2891cffd95fa6b613eab4fbddced8c089d1fe9059ee4feae8800cdef3a9479f0",
+      "measurementHash": "e5765a2a8fdb3f1f09565306389a2fe10ee3f3e31b1c7cda518d96f8ee1ce4a5"
+    },
+    {
+      "name": "after-1",
+      "createdAt": "2026-10-21T10:49:21.848Z",
+      "buildCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+      "checkoutCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+      "dirty": "",
+      "arenaReceiptSha256": "964a7c1a5b0aafd73cdb72103049dba5021397ba54a6a1a70c16118a5bb7292d",
+      "workloadHash": "2891cffd95fa6b613eab4fbddced8c089d1fe9059ee4feae8800cdef3a9479f0",
+      "measurementHash": "e5765a2a8fdb3f1f09565306389a2fe10ee3f3e31b1c7cda518d96f8ee1ce4a5"
+    },
+    {
+      "name": "after-2",
+      "createdAt": "2026-10-21T10:52:30.258Z",
+      "buildCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+      "checkoutCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+      "dirty": "",
+      "arenaReceiptSha256": "964a7c1a5b0aafd73cdb72103049dba5021397ba54a6a1a70c16118a5bb7292d",
+      "workloadHash": "2891cffd95fa6b613eab4fbddced8c089d1fe9059ee4feae8800cdef3a9479f0",
+      "measurementHash": "e5765a2a8fdb3f1f09565306389a2fe10ee3f3e31b1c7cda518d96f8ee1ce4a5"
+    },
+    {
+      "name": "before-2",
+      "createdAt": "2026-10-21T11:12:06.621Z",
+      "buildCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+      "checkoutCommit": "39e9c5c550dd522ea3c4b9b8ba451b7605b96f49",
+      "dirty": "",
+      "arenaReceiptSha256": "8560cadb20c84bba6229e09b8217bf1a7b7a75d0d63bc71615eb83a71bc1e219",
+      "workloadHash": "2891cffd95fa6b613eab4fbddced8c089d1fe9059ee4feae8800cdef3a9479f0",
+      "measurementHash": "e5765a2a8fdb3f1f09565306389a2fe10ee3f3e31b1c7cda518d96f8ee1ce4a5"
+    }
+  ],
+  "rows": [
+    {
+      "id": "firefight-65",
+      "samples": [
+        {
+          "medianMs": 28.923999786377,
+          "p95Ms": 34.5279998779297,
+          "p99Ms": 39.7799987792969,
+          "processMs": 29.011191076624637,
+          "renderCpuMs": 8.695776932454597,
+          "gpuMs": 19.877870054642774,
+          "cameraCalls": 3687.305528612997,
+          "shadowCalls": 15475.141610087294,
+          "rawCameraPrimitives": 7743155.346265761,
+          "rawShadowPrimitives": 26562624.49369544
+        },
+        {
+          "medianMs": 27.4619998931885,
+          "p95Ms": 33.2140007019043,
+          "p99Ms": 39.2970008850098,
+          "processMs": 26.538867647058915,
+          "renderCpuMs": 7.537615801481636,
+          "gpuMs": 18.821632343180056,
+          "cameraCalls": 3695.863970588235,
+          "shadowCalls": 12542.224264705883,
+          "rawCameraPrimitives": 7839649.351102941,
+          "rawShadowPrimitives": 22019698.147058822
+        },
+        {
+          "medianMs": 30.2140007019043,
+          "p95Ms": 37.9249992370605,
+          "p99Ms": 47.4749984741211,
+          "processMs": 29.489305810397656,
+          "renderCpuMs": 7.96268399459263,
+          "gpuMs": 19.962716622697755,
+          "cameraCalls": 3681.5147808358815,
+          "shadowCalls": 12539.409785932721,
+          "rawCameraPrimitives": 7730450.642201835,
+          "rawShadowPrimitives": 22144915.043832824
+        },
+        {
+          "medianMs": 30.125,
+          "p95Ms": 37.2490005493164,
+          "p99Ms": 43.6180000305176,
+          "processMs": 30.256502532927964,
+          "renderCpuMs": 8.896827768772209,
+          "gpuMs": 20.042292839367175,
+          "cameraCalls": 3687.354609929078,
+          "shadowCalls": 15462.55116514691,
+          "rawCameraPrimitives": 7765585.8439716315,
+          "rawShadowPrimitives": 26413409.80851064
+        }
+      ],
+      "before": {
+        "medianMs": 29.524499893188498,
+        "p95Ms": 35.88850021362305,
+        "p99Ms": 41.698999404907255,
+        "processMs": 29.6338468047763,
+        "renderCpuMs": 8.796302350613402,
+        "gpuMs": 19.960081447004974,
+        "cameraCalls": 3687.3300692710372,
+        "shadowCalls": 15468.8463876171,
+        "rawCameraPrimitives": 7754370.595118696,
+        "rawShadowPrimitives": 26488017.151103042
+      },
+      "after": {
+        "medianMs": 28.8380002975464,
+        "p95Ms": 35.56949996948239,
+        "p99Ms": 43.38599967956545,
+        "processMs": 28.014086728728287,
+        "renderCpuMs": 7.750149898037133,
+        "gpuMs": 19.392174482938906,
+        "cameraCalls": 3688.6893757120583,
+        "shadowCalls": 12540.817025319302,
+        "rawCameraPrimitives": 7785049.996652388,
+        "rawShadowPrimitives": 22082306.595445823
+      },
+      "delta": {
+        "medianMs": -0.686499595642097,
+        "p95Ms": -0.3190002441406534,
+        "p99Ms": 1.687000274658196,
+        "processMs": -1.6197600760480135,
+        "renderCpuMs": -1.046152452576269,
+        "gpuMs": -0.5679069640660686,
+        "cameraCalls": 1.35930644102109,
+        "shadowCalls": -2928.029362297799,
+        "rawCameraPrimitives": 30679.401533692144,
+        "rawShadowPrimitives": -4405710.555657219
+      },
+      "baselineMetricDrift": {
+        "medianMs": 1.2010002136230007,
+        "p95Ms": 2.7210006713866974,
+        "p99Ms": 3.838001251220696,
+        "processMs": 1.2453114563033267,
+        "renderCpuMs": 0.20105083631761111,
+        "gpuMs": 0.16442278472440108,
+        "cameraCalls": 0.04908131608090116,
+        "shadowCalls": 12.590444940384259,
+        "rawCameraPrimitives": 22430.497705870308,
+        "rawShadowPrimitives": 149214.68518480286
+      },
+      "afterMetricDrift": {
+        "medianMs": 2.752000808715799,
+        "p95Ms": 4.7109985351562,
+        "p99Ms": 8.1779975891113,
+        "processMs": 2.9504381633387418,
+        "renderCpuMs": 0.4250681931109934,
+        "gpuMs": 1.141084279517699,
+        "cameraCalls": 14.349189752353595,
+        "shadowCalls": 2.8144787731616816,
+        "rawCameraPrimitives": 109198.70890110545,
+        "rawShadowPrimitives": 125216.89677400142
+      },
+      "repeatMetricVariation": {
+        "medianMs": 2.752000808715799,
+        "p95Ms": 4.7109985351562,
+        "p99Ms": 8.1779975891113,
+        "processMs": 2.9504381633387418,
+        "renderCpuMs": 0.4250681931109934,
+        "gpuMs": 1.141084279517699,
+        "cameraCalls": 14.349189752353595,
+        "shadowCalls": 12.590444940384259,
+        "rawCameraPrimitives": 109198.70890110545,
+        "rawShadowPrimitives": 149214.68518480286
+      },
+      "gpuVerdict": "GPU change within repeat variation",
+      "baselineDriftMs": 1.2010002136230007,
+      "baselineDriftPercent": 4.067808829846021,
+      "verdict": "inconclusive within repeat variation"
+    },
+    {
+      "id": "shopping-street",
+      "samples": [
+        {
+          "medianMs": 11.4770002365112,
+          "p95Ms": 15.0080003738403,
+          "p99Ms": 18.1450004577637,
+          "processMs": 19.273474827246,
+          "renderCpuMs": 2.158310959746308,
+          "gpuMs": 10.468254684342842,
+          "cameraCalls": 1292.8657453109577,
+          "shadowCalls": 3042.6051332675224,
+          "rawCameraPrimitives": 3478116.374136229,
+          "rawShadowPrimitives": 8703978.961500494
+        },
+        {
+          "medianMs": 11.1639995574951,
+          "p95Ms": 14.9060001373291,
+          "p99Ms": 19.7849998474121,
+          "processMs": 17.237049562682216,
+          "renderCpuMs": 2.1286452890485132,
+          "gpuMs": 10.263978632824102,
+          "cameraCalls": 1288.276967930029,
+          "shadowCalls": 2753.860058309038,
+          "rawCameraPrimitives": 3432546.1574344025,
+          "rawShadowPrimitives": 8078740.0126336245
+        },
+        {
+          "medianMs": 11.3809995651245,
+          "p95Ms": 14.8109998703003,
+          "p99Ms": 15.9949998855591,
+          "processMs": 18.822577109602424,
+          "renderCpuMs": 2.129958295336518,
+          "gpuMs": 10.28100097445354,
+          "cameraCalls": 1289.9544131910766,
+          "shadowCalls": 2755.930164888458,
+          "rawCameraPrimitives": 3482806.878758487,
+          "rawShadowPrimitives": 8271975.232783705
+        },
+        {
+          "medianMs": 11.5329999923706,
+          "p95Ms": 14.621000289917,
+          "p99Ms": 16.1620006561279,
+          "processMs": 18.64324117647069,
+          "renderCpuMs": 2.168770589781745,
+          "gpuMs": 10.447999995362549,
+          "cameraCalls": 1292.8960784313726,
+          "shadowCalls": 3043.8892156862744,
+          "rawCameraPrimitives": 3468516.7303921566,
+          "rawShadowPrimitives": 8569744.34509804
+        }
+      ],
+      "before": {
+        "medianMs": 11.5050001144409,
+        "p95Ms": 14.81450033187865,
+        "p99Ms": 17.1535005569458,
+        "processMs": 18.958358001858343,
+        "renderCpuMs": 2.1635407747640265,
+        "gpuMs": 10.458127339852695,
+        "cameraCalls": 1292.8809118711652,
+        "shadowCalls": 3043.247174476898,
+        "rawCameraPrimitives": 3473316.552264193,
+        "rawShadowPrimitives": 8636861.653299266
+      },
+      "after": {
+        "medianMs": 11.2724995613098,
+        "p95Ms": 14.8585000038147,
+        "p99Ms": 17.8899998664856,
+        "processMs": 18.02981333614232,
+        "renderCpuMs": 2.129301792192516,
+        "gpuMs": 10.272489803638821,
+        "cameraCalls": 1289.1156905605528,
+        "shadowCalls": 2754.895111598748,
+        "rawCameraPrimitives": 3457676.5180964447,
+        "rawShadowPrimitives": 8175357.622708665
+      },
+      "delta": {
+        "medianMs": -0.23250055313109996,
+        "p95Ms": 0.04399967193605114,
+        "p99Ms": 0.7364993095397985,
+        "processMs": -0.928544665716025,
+        "renderCpuMs": -0.03423898257151059,
+        "gpuMs": -0.18563753621387313,
+        "cameraCalls": -3.7652213106123327,
+        "shadowCalls": -288.35206287815026,
+        "rawCameraPrimitives": -15640.03416774841,
+        "rawShadowPrimitives": -461504.03059060127
+      },
+      "baselineMetricDrift": {
+        "medianMs": 0.05599975585939987,
+        "p95Ms": 0.38700008392330076,
+        "p99Ms": 1.982999801635799,
+        "processMs": 0.6302336507753132,
+        "renderCpuMs": 0.01045963003543715,
+        "gpuMs": 0.020254688980292812,
+        "cameraCalls": 0.03033312041497993,
+        "shadowCalls": 1.2840824187519502,
+        "rawCameraPrimitives": 9599.643744072411,
+        "rawShadowPrimitives": 134234.61640245467
+      },
+      "afterMetricDrift": {
+        "medianMs": 0.21700000762939986,
+        "p95Ms": 0.09500026702879971,
+        "p99Ms": 3.789999961852999,
+        "processMs": 1.5855275469202077,
+        "renderCpuMs": 0.0013130062880049032,
+        "gpuMs": 0.017022341629438387,
+        "cameraCalls": 1.6774452610475237,
+        "shadowCalls": 2.0701065794200986,
+        "rawCameraPrimitives": 50260.72132408433,
+        "rawShadowPrimitives": 193235.2201500805
+      },
+      "repeatMetricVariation": {
+        "medianMs": 0.21700000762939986,
+        "p95Ms": 0.38700008392330076,
+        "p99Ms": 3.789999961852999,
+        "processMs": 1.5855275469202077,
+        "renderCpuMs": 0.01045963003543715,
+        "gpuMs": 0.020254688980292812,
+        "cameraCalls": 1.6774452610475237,
+        "shadowCalls": 2.0701065794200986,
+        "rawCameraPrimitives": 50260.72132408433,
+        "rawShadowPrimitives": 193235.2201500805
+      },
+      "gpuVerdict": "GPU reduction exceeds repeat variation",
+      "baselineDriftMs": 0.05599975585939987,
+      "baselineDriftPercent": 0.4867427666437815,
+      "verdict": "improvement exceeds repeat variation"
+    },
+    {
+      "id": "under-bridge",
+      "samples": [
+        {
+          "medianMs": 19.7859992980957,
+          "p95Ms": 23.7189998626709,
+          "p99Ms": 34.5909996032715,
+          "processMs": 28.00055857385382,
+          "renderCpuMs": 8.156809854993192,
+          "gpuMs": 18.432606085047027,
+          "cameraCalls": 7674.404074702887,
+          "shadowCalls": 12693.531409168081,
+          "rawCameraPrimitives": 10731940.32597623,
+          "rawShadowPrimitives": 19794291.51612903
+        },
+        {
+          "medianMs": 19.3560009002686,
+          "p95Ms": 23.4599990844727,
+          "p99Ms": 38.0069999694824,
+          "processMs": 28.7283127090301,
+          "renderCpuMs": 7.68779933452607,
+          "gpuMs": 18.038202335204517,
+          "cameraCalls": 7674.52508361204,
+          "shadowCalls": 10256.10033444816,
+          "rawCameraPrimitives": 10773002.0819398,
+          "rawShadowPrimitives": 16910310.807692308
+        },
+        {
+          "medianMs": 19.3950004577637,
+          "p95Ms": 24.507999420166,
+          "p99Ms": 36.6780014038086,
+          "processMs": 26.743043697478992,
+          "renderCpuMs": 7.7708789975703185,
+          "gpuMs": 18.040221823363694,
+          "cameraCalls": 7671.058823529412,
+          "shadowCalls": 10258.203361344538,
+          "rawCameraPrimitives": 10713060.729411764,
+          "rawShadowPrimitives": 16771388.618487395
+        },
+        {
+          "medianMs": 20.2080001831055,
+          "p95Ms": 25.8560009002686,
+          "p99Ms": 37.9900016784668,
+          "processMs": 28.50394894366215,
+          "renderCpuMs": 8.539211256613186,
+          "gpuMs": 18.476378501301056,
+          "cameraCalls": 7680.973591549296,
+          "shadowCalls": 12690.81690140845,
+          "rawCameraPrimitives": 10737980.783450704,
+          "rawShadowPrimitives": 19680268.341549296
+        }
+      ],
+      "before": {
+        "medianMs": 19.9969997406006,
+        "p95Ms": 24.787500381469748,
+        "p99Ms": 36.29050064086915,
+        "processMs": 28.252253758757984,
+        "renderCpuMs": 8.348010555803189,
+        "gpuMs": 18.45449229317404,
+        "cameraCalls": 7677.688833126091,
+        "shadowCalls": 12692.174155288267,
+        "rawCameraPrimitives": 10734960.554713467,
+        "rawShadowPrimitives": 19737279.928839162
+      },
+      "after": {
+        "medianMs": 19.37550067901615,
+        "p95Ms": 23.98399925231935,
+        "p99Ms": 37.3425006866455,
+        "processMs": 27.735678203254544,
+        "renderCpuMs": 7.729339166048194,
+        "gpuMs": 18.039212079284106,
+        "cameraCalls": 7672.791953570726,
+        "shadowCalls": 10257.151847896348,
+        "rawCameraPrimitives": 10743031.405675782,
+        "rawShadowPrimitives": 16840849.713089854
+      },
+      "delta": {
+        "medianMs": -0.6214990615844513,
+        "p95Ms": -0.8035011291503977,
+        "p99Ms": 1.052000045776353,
+        "processMs": -0.5165755555034401,
+        "renderCpuMs": -0.6186713897549945,
+        "gpuMs": -0.4152802138899361,
+        "cameraCalls": -4.896879555364649,
+        "shadowCalls": -2435.0223073919187,
+        "rawCameraPrimitives": 8070.850962314755,
+        "rawShadowPrimitives": -2896430.2157493085
+      },
+      "baselineMetricDrift": {
+        "medianMs": 0.42200088500980115,
+        "p95Ms": 2.1370010375977024,
+        "p99Ms": 3.3990020751952983,
+        "processMs": 0.5033903698083293,
+        "renderCpuMs": 0.3824014016199939,
+        "gpuMs": 0.04377241625402917,
+        "cameraCalls": 6.5695168464089875,
+        "shadowCalls": 2.714507759630578,
+        "rawCameraPrimitives": 6040.457474473864,
+        "rawShadowPrimitives": 114023.17457973585
+      },
+      "afterMetricDrift": {
+        "medianMs": 0.038999557495099424,
+        "p95Ms": 1.0480003356933025,
+        "p99Ms": 1.3289985656737997,
+        "processMs": 1.9852690115511074,
+        "renderCpuMs": 0.08307966304424852,
+        "gpuMs": 0.0020194881591777403,
+        "cameraCalls": 3.4662600826286507,
+        "shadowCalls": 2.103026896378651,
+        "rawCameraPrimitives": 59941.35252803564,
+        "rawShadowPrimitives": 138922.18920491263
+      },
+      "repeatMetricVariation": {
+        "medianMs": 0.42200088500980115,
+        "p95Ms": 2.1370010375977024,
+        "p99Ms": 3.3990020751952983,
+        "processMs": 1.9852690115511074,
+        "renderCpuMs": 0.3824014016199939,
+        "gpuMs": 0.04377241625402917,
+        "cameraCalls": 6.5695168464089875,
+        "shadowCalls": 2.714507759630578,
+        "rawCameraPrimitives": 59941.35252803564,
+        "rawShadowPrimitives": 138922.18920491263
+      },
+      "gpuVerdict": "GPU reduction exceeds repeat variation",
+      "baselineDriftMs": 0.42200088500980115,
+      "baselineDriftPercent": 2.1103210005698916,
+      "verdict": "improvement exceeds repeat variation"
+    }
+  ]
+}
