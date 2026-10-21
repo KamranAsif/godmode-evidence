@@ -1,0 +1,737 @@
+{
+  "threshold": 5,
+  "rows": [
+    {
+      "id": "firefight-65",
+      "before": {
+        "frames": 1021,
+        "frameMs": {
+          "median": 29.3080005645752,
+          "p95": 35.6269989013672,
+          "p99": 40.7239990234375,
+          "max": 51.9249992370605,
+          "mean": 29.361123349360692
+        },
+        "worstOnePercentMs": 44.75863612781871,
+        "onePercentLowFps": 22.342057008713738,
+        "hitches": {
+          "over33Ms": 141,
+          "over50Ms": 1
+        },
+        "cpuMs": {
+          "process": 28.03495102840372,
+          "physics": 7.4084240940254364,
+          "render": 8.609792366083878,
+          "otherViewports": 0.3698344763430392
+        },
+        "gpuMs": {
+          "render": 20.086342790101078,
+          "otherViewports": 1.1325994124480998
+        },
+        "drawCalls": 19291.514201762977,
+        "primitives": 34246583.900097944,
+        "memory": {
+          "staticBytesMean": 4739466640.199804,
+          "videoBytesMean": 8514473049.261508,
+          "staticBytesPeak": 4748244020,
+          "videoBytesPeak": 8608464896
+        },
+        "monitorsMean": {
+          "collisionPairs": 0,
+          "drawCalls": 19291.514201762977,
+          "navigationMs": 0.00474632713026432,
+          "nodes": 678801.569049951,
+          "physicsActive": 0,
+          "physicsMs": 7.4084240940254364,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 741,
+          "primitives": 34246583.900097944,
+          "processMs": 28.03495102840372,
+          "renderCpuMs": 8.609792366083878,
+          "renderGpuMs": 20.086342790101078,
+          "renderOtherCpuMs": 0.3698344763430392,
+          "renderOtherGpuMs": 1.1325994124480998,
+          "renderSetupMs": 0.4239451518119491,
+          "resources": 59895,
+          "shadowDrawCalls": 15477.088148873654,
+          "shadowPrimitives": 26536638.808031343,
+          "staticMemoryBytes": 4739466640.199804,
+          "videoMemoryBytes": 8514473049.261508,
+          "visibleDrawCalls": 3684.0930460333007,
+          "visiblePrimitives": 7705420.027424094
+        },
+        "monitorsPeak": {
+          "collisionPairs": 0,
+          "drawCalls": 19330,
+          "navigationMs": 0.01,
+          "nodes": 679013,
+          "physicsActive": 0,
+          "physicsMs": 12.911,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 741,
+          "primitives": 34972160,
+          "processMs": 50.736,
+          "renderCpuMs": 17.3159999847412,
+          "renderGpuMs": 28.6270008087158,
+          "renderOtherCpuMs": 1.15099996700883,
+          "renderOtherGpuMs": 2.27100011520088,
+          "renderSetupMs": 2.76,
+          "resources": 59895,
+          "shadowDrawCalls": 15487,
+          "shadowPrimitives": 27063963,
+          "staticMemoryBytes": 4748244020,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 3715,
+          "visiblePrimitives": 7906792
+        }
+      },
+      "after": {
+        "frames": 1060,
+        "frameMs": {
+          "median": 27.8080005645752,
+          "p95": 35.5740013122559,
+          "p99": 43.4819984436035,
+          "max": 49.3230018615723,
+          "mean": 28.30501980691586
+        },
+        "worstOnePercentMs": 45.98963616111061,
+        "onePercentLowFps": 21.744029382985467,
+        "hitches": {
+          "over33Ms": 103,
+          "over50Ms": 0
+        },
+        "cpuMs": {
+          "process": 27.95035660377349,
+          "physics": 7.653206603773633,
+          "render": 7.836886793262557,
+          "otherViewports": 0.3881962266293755
+        },
+        "gpuMs": {
+          "render": 19.31390282702896,
+          "otherViewports": 1.1137405662384434
+        },
+        "drawCalls": 16355.790566037736,
+        "primitives": 29877976.601886794,
+        "memory": {
+          "staticBytesMean": 4734617859.79151,
+          "videoBytesMean": 8526098261.977359,
+          "staticBytesPeak": 4745095962,
+          "videoBytesPeak": 8608464896
+        },
+        "monitorsMean": {
+          "collisionPairs": 0,
+          "drawCalls": 16355.790566037736,
+          "navigationMs": 0.004603773584905614,
+          "nodes": 678932.5632075472,
+          "physicsActive": 0,
+          "physicsMs": 7.653206603773633,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 742,
+          "primitives": 29877976.601886794,
+          "processMs": 27.95035660377349,
+          "renderCpuMs": 7.836886793262557,
+          "renderGpuMs": 19.31390282702896,
+          "renderOtherCpuMs": 0.3881962266293755,
+          "renderOtherGpuMs": 1.1137405662384434,
+          "renderSetupMs": 0.4464056603773585,
+          "resources": 60046,
+          "shadowDrawCalls": 12536,
+          "shadowPrimitives": 22105063.28301887,
+          "staticMemoryBytes": 4734617859.79151,
+          "videoMemoryBytes": 8526098261.977359,
+          "visibleDrawCalls": 3688.904716981132,
+          "visiblePrimitives": 7768414.186792453
+        },
+        "monitorsPeak": {
+          "collisionPairs": 0,
+          "drawCalls": 16382,
+          "navigationMs": 0.01,
+          "nodes": 679184,
+          "physicsActive": 0,
+          "physicsMs": 14.896,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 742,
+          "primitives": 30282435,
+          "processMs": 47.146,
+          "renderCpuMs": 15.5649995803833,
+          "renderGpuMs": 27.1089992523193,
+          "renderOtherCpuMs": 1.99499998986721,
+          "renderOtherGpuMs": 2.28100003208965,
+          "renderSetupMs": 2.025,
+          "resources": 60046,
+          "shadowDrawCalls": 12543,
+          "shadowPrimitives": 22422018,
+          "staticMemoryBytes": 4745095962,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 3709,
+          "visiblePrimitives": 7869940
+        }
+      },
+      "deltaPercent": {
+        "median": -5.118056404752025,
+        "p95": -0.14875681574533228,
+        "p99": 6.77241795084691,
+        "max": -5.011068683138409,
+        "worstOnePercent": 2.75030729215362
+      },
+      "regressed": false
+    },
+    {
+      "id": "shopping-street",
+      "before": {
+        "frames": 1006,
+        "frameMs": {
+          "median": 11.5319995880127,
+          "p95": 14.9650001525879,
+          "p99": 17.625,
+          "max": 131.841995239258,
+          "mean": 11.935330995271505
+        },
+        "worstOnePercentMs": 38.956363157792545,
+        "onePercentLowFps": 25.669747351658707,
+        "hitches": {
+          "over33Ms": 3,
+          "over50Ms": 2
+        },
+        "cpuMs": {
+          "process": 17.064328031808945,
+          "physics": 12.975479125248311,
+          "render": 2.1622942321106167,
+          "otherViewports": 0.2585914506471422
+        },
+        "gpuMs": {
+          "render": 10.567074546283102,
+          "otherViewports": 0.8739502990227674
+        },
+        "drawCalls": 4550.4115308151095,
+        "primitives": 12025446.484095428,
+        "memory": {
+          "staticBytesMean": 4663480825.468191,
+          "videoBytesMean": 8608464896,
+          "staticBytesPeak": 4672304226,
+          "videoBytesPeak": 8608464896
+        },
+        "monitorsMean": {
+          "collisionPairs": 0,
+          "drawCalls": 4550.4115308151095,
+          "navigationMs": 0.0037415506958250596,
+          "nodes": 677144.0288270378,
+          "physicsActive": 0,
+          "physicsMs": 12.975479125248311,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 741,
+          "primitives": 12025446.484095428,
+          "processMs": 17.064328031808945,
+          "renderCpuMs": 2.1622942321106167,
+          "renderGpuMs": 10.567074546283102,
+          "renderOtherCpuMs": 0.2585914506471422,
+          "renderOtherGpuMs": 0.8739502990227674,
+          "renderSetupMs": 0.17860039761431412,
+          "resources": 59895,
+          "shadowDrawCalls": 3040.1292246520875,
+          "shadowPrimitives": 8579710.526838966,
+          "staticMemoryBytes": 4663480825.468191,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 1290.0228628230616,
+          "visiblePrimitives": 3440332.901590457
+        },
+        "monitorsPeak": {
+          "collisionPairs": 0,
+          "drawCalls": 5267,
+          "navigationMs": 0.006,
+          "nodes": 677539,
+          "physicsActive": 0,
+          "physicsMs": 102.961,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 741,
+          "primitives": 16211382,
+          "processMs": 48.807,
+          "renderCpuMs": 8.57199954986572,
+          "renderGpuMs": 23.4139995574951,
+          "renderOtherCpuMs": 0.678999982774258,
+          "renderOtherGpuMs": 2.46800009906292,
+          "renderSetupMs": 0.536,
+          "resources": 59895,
+          "shadowDrawCalls": 3546,
+          "shadowPrimitives": 11648016,
+          "staticMemoryBytes": 4672304226,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 1500,
+          "visiblePrimitives": 4785310
+        }
+      },
+      "after": {
+        "frames": 1021,
+        "frameMs": {
+          "median": 11.5430002212524,
+          "p95": 14.6120004653931,
+          "p99": 15.8819999694824,
+          "max": 139.901992797852,
+          "mean": 11.762636633974799
+        },
+        "worstOnePercentMs": 39.13663552024152,
+        "onePercentLowFps": 25.551506579629173,
+        "hitches": {
+          "over33Ms": 3,
+          "over50Ms": 3
+        },
+        "cpuMs": {
+          "process": 19.328639569050246,
+          "physics": 14.326077375122527,
+          "render": 2.0953506373752004,
+          "otherViewports": 0.2624338876426836
+        },
+        "gpuMs": {
+          "render": 10.38317532310519,
+          "otherViewports": 0.8747267372811341
+        },
+        "drawCalls": 4264.095984329089,
+        "primitives": 11727158.778648384,
+        "memory": {
+          "staticBytesMean": 4660515509.467189,
+          "videoBytesMean": 8637779835.612144,
+          "staticBytesPeak": 4669674656,
+          "videoBytesPeak": 8675573760
+        },
+        "monitorsMean": {
+          "collisionPairs": 0,
+          "drawCalls": 4264.095984329089,
+          "navigationMs": 0.0037159647404505975,
+          "nodes": 677266.4250734574,
+          "physicsActive": 0,
+          "physicsMs": 14.326077375122527,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 742,
+          "primitives": 11727158.778648384,
+          "processMs": 19.328639569050246,
+          "renderCpuMs": 2.0953506373752004,
+          "renderGpuMs": 10.38317532310519,
+          "renderOtherCpuMs": 0.2624338876426836,
+          "renderOtherGpuMs": 0.8747267372811341,
+          "renderSetupMs": 0.19270519098922625,
+          "resources": 60046,
+          "shadowDrawCalls": 2755.1028403525956,
+          "shadowPrimitives": 8249240.183153771,
+          "staticMemoryBytes": 4660515509.467189,
+          "videoMemoryBytes": 8637779835.612144,
+          "visibleDrawCalls": 1289.2223310479922,
+          "visiblePrimitives": 3472536.3281096965
+        },
+        "monitorsPeak": {
+          "collisionPairs": 0,
+          "drawCalls": 4983,
+          "navigationMs": 0.006,
+          "nodes": 677710,
+          "physicsActive": 0,
+          "physicsMs": 106.651,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 742,
+          "primitives": 15946179,
+          "processMs": 54.361,
+          "renderCpuMs": 7.62099981307983,
+          "renderGpuMs": 23.5429992675781,
+          "renderOtherCpuMs": 0.755999982357025,
+          "renderOtherGpuMs": 2.71899990364909,
+          "renderSetupMs": 0.566,
+          "resources": 60046,
+          "shadowDrawCalls": 3232,
+          "shadowPrimitives": 11580364,
+          "staticMemoryBytes": 4669674656,
+          "videoMemoryBytes": 8675573760,
+          "visibleDrawCalls": 1528,
+          "visiblePrimitives": 4618600
+        }
+      },
+      "deltaPercent": {
+        "median": 0.09539224447367989,
+        "p95": -2.3588351727063306,
+        "p99": -9.889361875277158,
+        "max": 6.113376503417767,
+        "worstOnePercent": 0.4627545998551863
+      },
+      "regressed": false
+    },
+    {
+      "id": "under-bridge",
+      "before": {
+        "frames": 571,
+        "frameMs": {
+          "median": 20.2490005493164,
+          "p95": 24.8659992218018,
+          "p99": 38.6640014648438,
+          "max": 75.536003112793,
+          "mean": 21.02209978721605
+        },
+        "worstOnePercentMs": 56.1410001118978,
+        "onePercentLowFps": 17.81229400984741,
+        "hitches": {
+          "over33Ms": 8,
+          "over50Ms": 3
+        },
+        "cpuMs": {
+          "process": 28.30691243432592,
+          "physics": 8.885532399299457,
+          "render": 8.323211896857952,
+          "otherViewports": 0.3254238179772312
+        },
+        "gpuMs": {
+          "render": 18.783656761650438,
+          "otherViewports": 0.8742556898836725
+        },
+        "drawCalls": 20557.411558669002,
+        "primitives": 30590969.84063047,
+        "memory": {
+          "staticBytesMean": 4660242915.148862,
+          "videoBytesMean": 8608464896,
+          "staticBytesPeak": 4669036997,
+          "videoBytesPeak": 8608464896
+        },
+        "monitorsMean": {
+          "collisionPairs": 0,
+          "drawCalls": 20557.411558669002,
+          "navigationMs": 0.004653239929947443,
+          "nodes": 677024.697022767,
+          "physicsActive": 0,
+          "physicsMs": 8.885532399299457,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 744.4325744308231,
+          "primitives": 30590969.84063047,
+          "processMs": 28.30691243432592,
+          "renderCpuMs": 8.323211896857952,
+          "renderGpuMs": 18.783656761650438,
+          "renderOtherCpuMs": 0.3254238179772312,
+          "renderOtherGpuMs": 0.8742556898836725,
+          "renderSetupMs": 0.2775586690017513,
+          "resources": 59895.68651488616,
+          "shadowDrawCalls": 12691.042031523642,
+          "shadowPrimitives": 19826325.23117338,
+          "staticMemoryBytes": 4660242915.148862,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 7677.810858143608,
+          "visiblePrimitives": 10759275.157618213
+        },
+        "monitorsPeak": {
+          "collisionPairs": 0,
+          "drawCalls": 21041,
+          "navigationMs": 0.007,
+          "nodes": 677233,
+          "physicsActive": 0,
+          "physicsMs": 40.79,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 746,
+          "primitives": 32206404,
+          "processMs": 68.409,
+          "renderCpuMs": 13.6049995422363,
+          "renderGpuMs": 32.726001739502,
+          "renderOtherCpuMs": 0.785000026226044,
+          "renderOtherGpuMs": 3.16300001181662,
+          "renderSetupMs": 0.986,
+          "resources": 59896,
+          "shadowDrawCalls": 12758,
+          "shadowPrimitives": 21600160,
+          "staticMemoryBytes": 4669036997,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 8108,
+          "visiblePrimitives": 11137610
+        }
+      },
+      "after": {
+        "frames": 592,
+        "frameMs": {
+          "median": 19.5930004119873,
+          "p95": 23.4300003051758,
+          "p99": 41.0970001220703,
+          "max": 94.5910034179688,
+          "mean": 20.291371603269834
+        },
+        "worstOnePercentMs": 61.50433349609377,
+        "onePercentLowFps": 16.25901693680676,
+        "hitches": {
+          "over33Ms": 7,
+          "over50Ms": 3
+        },
+        "cpuMs": {
+          "process": 26.42487162162179,
+          "physics": 13.22074155405402,
+          "render": 7.610155386900575,
+          "otherViewports": 0.3249425681691774
+        },
+        "gpuMs": {
+          "render": 18.33785135520473,
+          "otherViewports": 0.8748631746574257
+        },
+        "drawCalls": 18122.400337837837,
+        "primitives": 27700511.008445945,
+        "memory": {
+          "staticBytesMean": 4657663337.402027,
+          "videoBytesMean": 8608464896,
+          "staticBytesPeak": 4667095913,
+          "videoBytesPeak": 8608464896
+        },
+        "monitorsMean": {
+          "collisionPairs": 0,
+          "drawCalls": 18122.400337837837,
+          "navigationMs": 0.004951013513513514,
+          "nodes": 677161.5456081082,
+          "physicsActive": 0,
+          "physicsMs": 13.22074155405402,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 744.7297297297297,
+          "primitives": 27700511.008445945,
+          "processMs": 26.42487162162179,
+          "renderCpuMs": 7.610155386900575,
+          "renderGpuMs": 18.33785135520473,
+          "renderOtherCpuMs": 0.3249425681691774,
+          "renderOtherGpuMs": 0.8748631746574257,
+          "renderSetupMs": 0.2870760135135152,
+          "resources": 60046.68243243243,
+          "shadowDrawCalls": 10262.135135135135,
+          "shadowPrimitives": 16937360.425675675,
+          "staticMemoryBytes": 4657663337.402027,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 7672.8496621621625,
+          "visiblePrimitives": 10757781.613175675
+        },
+        "monitorsPeak": {
+          "collisionPairs": 0,
+          "drawCalls": 18577,
+          "navigationMs": 0.015,
+          "nodes": 677375,
+          "physicsActive": 0,
+          "physicsMs": 76.107,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 746,
+          "primitives": 29199943,
+          "processMs": 64.14,
+          "renderCpuMs": 11.83899974823,
+          "renderGpuMs": 30.5779991149902,
+          "renderOtherCpuMs": 0.757000029087067,
+          "renderOtherGpuMs": 2.79800006560981,
+          "renderSetupMs": 0.973,
+          "resources": 60047,
+          "shadowDrawCalls": 10314,
+          "shadowPrimitives": 18591786,
+          "staticMemoryBytes": 4667095913,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 8101,
+          "visiblePrimitives": 11159870
+        }
+      },
+      "deltaPercent": {
+        "median": -3.2396667466693563,
+        "p95": -5.774949575993549,
+        "p99": 6.292671645584225,
+        "max": 25.226381486881454,
+        "worstOnePercent": 9.55332711121284
+      },
+      "regressed": false
+    },
+    {
+      "id": "overall",
+      "before": {
+        "frames": 2598,
+        "frameMs": {
+          "median": 20.3229999542236,
+          "p95": 33.5839996337891,
+          "p99": 39.2070007324219,
+          "max": 131.841995239258,
+          "mean": 20.78070396437289
+        },
+        "worstOnePercentMs": 50.22169201190657,
+        "onePercentLowFps": 19.911714638425956,
+        "hitches": {
+          "over33Ms": 152,
+          "over50Ms": 6
+        },
+        "cpuMs": {
+          "process": 23.84666897613553,
+          "physics": 9.888749807544173,
+          "render": 6.050200152571521,
+          "otherViewports": 0.31699807535114205
+        },
+        "gpuMs": {
+          "render": 16.113972668651424,
+          "otherViewports": 0.975665126963045
+        },
+        "drawCalls": 13861.675134719015,
+        "primitives": 24838647.07621247,
+        "memory": {
+          "staticBytesMean": 4692631198.851039,
+          "videoBytesMean": 8571526606.731332,
+          "staticBytesPeak": 4748244020,
+          "videoBytesPeak": 8608464896
+        },
+        "monitorsMean": {
+          "collisionPairs": 0,
+          "drawCalls": 13861.675134719015,
+          "navigationMs": 0.004336797536566539,
+          "nodes": 677769.2059276366,
+          "physicsActive": 0,
+          "physicsMs": 9.888749807544173,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 741.7544264819091,
+          "primitives": 24838647.07621247,
+          "processMs": 23.84666897613553,
+          "renderCpuMs": 6.050200152571521,
+          "renderGpuMs": 16.113972668651424,
+          "renderOtherCpuMs": 0.31699807535114205,
+          "renderOtherGpuMs": 0.975665126963045,
+          "renderSetupMs": 0.2967690531177829,
+          "resources": 59895.15088529638,
+          "shadowDrawCalls": 10048.907621247114,
+          "shadowPrimitives": 18108517.598152425,
+          "staticMemoryBytes": 4692631198.851039,
+          "videoMemoryBytes": 8571526606.731332,
+          "visibleDrawCalls": 3634.816012317167,
+          "visiblePrimitives": 6725078.853733641
+        },
+        "monitorsPeak": {
+          "collisionPairs": 0,
+          "drawCalls": 21041,
+          "navigationMs": 0.01,
+          "nodes": 679013,
+          "physicsActive": 0,
+          "physicsMs": 102.961,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 746,
+          "primitives": 34972160,
+          "processMs": 68.409,
+          "renderCpuMs": 17.3159999847412,
+          "renderGpuMs": 32.726001739502,
+          "renderOtherCpuMs": 1.15099996700883,
+          "renderOtherGpuMs": 3.16300001181662,
+          "renderSetupMs": 2.76,
+          "resources": 59896,
+          "shadowDrawCalls": 15487,
+          "shadowPrimitives": 27063963,
+          "staticMemoryBytes": 4748244020,
+          "videoMemoryBytes": 8608464896,
+          "visibleDrawCalls": 8108,
+          "visiblePrimitives": 11137610
+        }
+      },
+      "after": {
+        "frames": 2673,
+        "frameMs": {
+          "median": 19.7119998931885,
+          "p95": 32.6380004882812,
+          "p99": 40.7270011901855,
+          "max": 139.901992797852,
+          "mean": 20.211546946410333
+        },
+        "worstOnePercentMs": 52.62859231454357,
+        "onePercentLowFps": 19.001078235635358,
+        "hitches": {
+          "over33Ms": 113,
+          "over50Ms": 6
+        },
+        "cpuMs": {
+          "process": 24.31928282828294,
+          "physics": 11.435092779648382,
+          "render": 5.593589596207831,
+          "otherViewports": 0.32615001865561954
+        },
+        "gpuMs": {
+          "render": 15.686482231134418,
+          "otherViewports": 0.9695398422648649
+        },
+        "drawCalls": 12128.41040029929,
+        "primitives": 22462696.157126825,
+        "memory": {
+          "staticBytesMean": 4689269720.271979,
+          "videoBytesMean": 8586999097.750842,
+          "staticBytesPeak": 4745095962,
+          "videoBytesPeak": 8675573760
+        },
+        "monitorsMean": {
+          "collisionPairs": 0,
+          "drawCalls": 12128.41040029929,
+          "navigationMs": 0.004341563786008235,
+          "nodes": 677903.9176954733,
+          "physicsActive": 0,
+          "physicsMs": 11.435092779648382,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 742.6045641601197,
+          "primitives": 22462696.157126825,
+          "processMs": 24.31928282828294,
+          "renderCpuMs": 5.593589596207831,
+          "renderGpuMs": 15.686482231134418,
+          "renderOtherCpuMs": 0.32615001865561954,
+          "renderOtherGpuMs": 0.9695398422648649,
+          "renderSetupMs": 0.314212869435092,
+          "resources": 60046.15114104003,
+          "shadowDrawCalls": 8296.410026187805,
+          "shadowPrimitives": 15668072.831649832,
+          "staticMemoryBytes": 4689269720.271979,
+          "videoMemoryBytes": 8586999097.750842,
+          "visibleDrawCalls": 3654.643471754583,
+          "visiblePrimitives": 6789594.217732884
+        },
+        "monitorsPeak": {
+          "collisionPairs": 0,
+          "drawCalls": 18577,
+          "navigationMs": 0.015,
+          "nodes": 679184,
+          "physicsActive": 0,
+          "physicsMs": 106.651,
+          "pipelineCanvas": 12,
+          "pipelineDraw": 0,
+          "pipelineMesh": 373,
+          "pipelineSurface": 746,
+          "primitives": 30282435,
+          "processMs": 64.14,
+          "renderCpuMs": 15.5649995803833,
+          "renderGpuMs": 30.5779991149902,
+          "renderOtherCpuMs": 1.99499998986721,
+          "renderOtherGpuMs": 2.79800006560981,
+          "renderSetupMs": 2.025,
+          "resources": 60047,
+          "shadowDrawCalls": 12543,
+          "shadowPrimitives": 22422018,
+          "staticMemoryBytes": 4745095962,
+          "videoMemoryBytes": 8675573760,
+          "visibleDrawCalls": 8101,
+          "visiblePrimitives": 11159870
+        }
+      },
+      "deltaPercent": {
+        "median": -3.0064462058325137,
+        "p95": -2.816815018530794,
+        "p99": 3.876859819339984,
+        "max": 6.113376503417767,
+        "worstOnePercent": 4.792551198924899
+      },
+      "regressed": false
+    }
+  ]
+}
