@@ -1,0 +1,54 @@
+{
+  "pass": true,
+  "scope": "Offline PR source identity and final-rebase provenance; no new arena-output equivalence claim",
+  "sourceCommit": "1f3b8f1d567e5e922a18a770cc9d3debbf213957",
+  "baseCommit": "d86ce5b566dafd07ea899696e75c8c76b4c793d3",
+  "actualWindowsSourceCommit": "e692f4f050cf609b681691a4e86ef1ed3fd75427",
+  "matchedTimingSourceCommit": "a42a0f852f4cff32f135ac77ca82e77593202c6c",
+  "currentRecipeFingerprint": "507a67c5abe0a953989af60e9b162ccd4795ae6b7cb9e21083c36ed728e8ac3a",
+  "auditedArenaFingerprint": "8ee249bd2ace71bd9db6c670346576395c15192352e1f3c87b3983c228e570e5",
+  "changedInputs": [
+    "packages/game-rules/src/closest_point_index.ts"
+  ],
+  "sourceFiles": [
+    {
+      "file": "scripts/debug/prebuilt_arena_export.ts",
+      "byteIdentical": true
+    },
+    {
+      "file": "scripts/environment_modules/shadow_casters.gd",
+      "byteIdentical": true
+    },
+    {
+      "file": "scripts/environment_modules/shadow_casters.gd.uid",
+      "byteIdentical": true
+    },
+    {
+      "file": "tests/unit/prebuilt-arena.test.mjs",
+      "byteIdentical": true
+    },
+    {
+      "file": "tools/maps/prebuilt/inputs.mjs",
+      "byteIdentical": true
+    }
+  ],
+  "baseChangeFiles": [
+    "packages/game-rules/src/closest_point_index.ts",
+    "packages/game-rules/test/closest_point_index.test.ts"
+  ],
+  "checks": [
+    {
+      "command": "pnpm build:scripts",
+      "code": 0
+    },
+    {
+      "command": "node --test packages/game-rules/dist/test/closest_point_index.test.js tests/unit/prebuilt-arena.test.mjs",
+      "code": 0,
+      "passed": 29,
+      "failed": 0
+    }
+  ],
+  "priorFullSuiteProof": "rebase2164-static-equivalence.json",
+  "note": "Final rebase adds only main#2166 closest-point-index CPU logic and its tests. All five shadow-proxy PR files are byte-identical; the only changed recipe input is the imported closest-point helper. Actual Windows binary/auditor remain e692 with audited arena8ee; no new bake/export/timing is claimed on this final parent. Arena regeneration remains release-only under AGENTS. Timings retain original sources, with no main#2164/#2166 CPU gain attributed.",
+  "verifiedAt": "2026-10-21T14:49:36.234Z"
+}
