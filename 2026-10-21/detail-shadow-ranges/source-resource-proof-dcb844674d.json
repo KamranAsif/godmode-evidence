@@ -1,0 +1,1147 @@
+{
+  "finalRuntimeSource": "95bc8c0c65b7014ff3f6f9a1540a13c19f6e25fb",
+  "finalMainParent": "a4f683d563334288f665496cc4b918eee0ae5a9e",
+  "exportedSource": "893df7738c51c8c8b5884d6ff41d54d146732886",
+  "exportedRecipe": "51f66b6a3abc3d7ea738e72eb89a25d153930bb14f582a5b766d44a549535f1c",
+  "finalParentRecipeEquivalenceClaim": false,
+  "sourceConnection": {
+    "baseMain": "a4f683d563334288f665496cc4b918eee0ae5a9e",
+    "sourceCommit": "95bc8c0c65b7014ff3f6f9a1540a13c19f6e25fb",
+    "exportedSource": "893df7738c51c8c8b5884d6ff41d54d146732886",
+    "exportedRecipe": "51f66b6a3abc3d7ea738e72eb89a25d153930bb14f582a5b766d44a549535f1c",
+    "mainChangedFiles": [
+      "scripts/client/death_telemetry.ts",
+      "scripts/client/snapshot_renderer.ts",
+      "scripts/client/soldier_footsteps.ts",
+      "scripts/client/soldier_view.ts",
+      "scripts/client/survival_hud.ts",
+      "scripts/nav_map.ts",
+      "scripts/server/admin_system.ts",
+      "scripts/server/ai_tick_counters.ts",
+      "scripts/server/crowd_weapons.ts",
+      "scripts/server/grenade_system.ts",
+      "scripts/server/killstreaks.ts",
+      "scripts/server/soldier_ai.ts",
+      "scripts/server/survival_run.ts",
+      "scripts/server_simulation.ts",
+      "tests/unit/death-telemetry.test.mjs",
+      "tests/unit/enemy-shot-cover.test.mjs",
+      "tests/unit/streak-viewmodel.test.mjs",
+      "tools/godot-cli/runner/gameplay_benchmark.gd",
+      "tools/performance/README.md"
+    ],
+    "staticArenaAndLookUnchanged": true,
+    "detailImplementationUnchangedByRebase": true,
+    "implementation": [
+      {
+        "path": "scripts/environment_modules/detail_shadow_policy.ts",
+        "sha256": "24fa44473d6cb89f332412de4102dc091457c0e5c0e5752c971734c177fba967",
+        "sameAsExportedSource": true
+      },
+      {
+        "path": "scripts/environment_modules/module_instancer.ts",
+        "sha256": "f5f2d3e10f9c86fe7c06362108b1bd301de1e993ee704a566096381358b0eee2",
+        "sameAsExportedSource": true
+      },
+      {
+        "path": "scripts/environment_modules/shadow_casters.gd",
+        "sha256": "6c14c63fa33ff094169a3eb9a97a64d83c6bc1cd81aca3794b8fb93c8d8501cc",
+        "sameAsExportedSource": true
+      },
+      {
+        "path": "scripts/debug/prebuilt_arena_export.ts",
+        "sha256": "4c8d784441f842b5ae30998b21f1c64e6b7503fb14c1d8fb1ebc9999badc75ff",
+        "sameAsExportedSource": true
+      }
+    ],
+    "controlSceneSha256": "383b091a51aaac99c05cd4608fb07d74b4d3de9c779ba343fbc9458a301b0b37",
+    "candidateSceneSha256": "cfb8ea6d75d5b12a35f5d154bd67db22fbedb34634de5e5ef0f088c0fc21db1b",
+    "inverse": {
+      "candidateSha256": "cfb8ea6d75d5b12a35f5d154bd67db22fbedb34634de5e5ef0f088c0fc21db1b",
+      "controlSha256": "383b091a51aaac99c05cd4608fb07d74b4d3de9c779ba343fbc9458a301b0b37",
+      "instances": 4962,
+      "nativeTargetGeometryAndBufferRoundTrip": true,
+      "note": "Offline control inverted from the verified production candidate: restore original caster flags and remove only the new shadow group/range receipt. Camera mesh arrays, transforms, layers, LOD bias and instance buffers checked across control save/reload.",
+      "ok": true,
+      "removedShadowBatches": 4076,
+      "restoredSources": 1829
+    },
+    "note": "Candidate uses exact source-893df production scene bytes audited and packed in Windows. Final-parent runtime recompiled after CPU/telemetry-only rebase; detail implementation, static arena pipeline and approved look unchanged. The new main nav counter extends input dependency closure, so no final-parent native recipe/output equivalence is claimed."
+  },
+  "productionNative": {
+    "client": {
+      "nodes": 347866,
+      "fingerprint": "4054169900",
+      "contentSha256": "5494b975710f560f32b843b33e18a04e84c97172a6de889a2fe38e2b3dc71810",
+      "buildMs": 474435,
+      "loadMs": 13060,
+      "expandedSoups": 0,
+      "importedTextures": 50,
+      "expansion": {
+        "position": 0,
+        "normal": 0
+      },
+      "matches": true,
+      "differences": []
+    },
+    "server": {
+      "nodes": 328567,
+      "fingerprint": "810773962",
+      "contentSha256": "6e730c5337514f78d4894eba9068769b9fa22b1ce3758181a7838d05b06a3e3d",
+      "buildMs": 234838,
+      "loadMs": 8524,
+      "expandedSoups": 0,
+      "importedTextures": 0,
+      "expansion": {
+        "position": 0,
+        "normal": 0
+      },
+      "matches": true,
+      "differences": []
+    },
+    "phase": "build-server",
+    "ok": true,
+    "outputCount": 2441
+  },
+  "productionFrameEquivalence": {
+    "ok": true,
+    "comparisons": [
+      {
+        "view": "street",
+        "fov": 75,
+        "variant": "before",
+        "index": 0,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 3579,
+          "cameraPrimitives": 6449249,
+          "shadowCalls": 12355,
+          "shadowPrimitives": 18724018
+        },
+        "production": {
+          "cameraCalls": 3579,
+          "cameraPrimitives": 6449249,
+          "shadowCalls": 12355,
+          "shadowPrimitives": 18724018
+        }
+      },
+      {
+        "view": "street",
+        "fov": 75,
+        "variant": "after",
+        "index": 1,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 3579,
+          "cameraPrimitives": 6449249,
+          "shadowCalls": 8676,
+          "shadowPrimitives": 18151111
+        },
+        "production": {
+          "cameraCalls": 3579,
+          "cameraPrimitives": 6449249,
+          "shadowCalls": 8676,
+          "shadowPrimitives": 18151111
+        }
+      },
+      {
+        "view": "street",
+        "fov": 75,
+        "variant": "none",
+        "index": 2,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 3579,
+          "cameraPrimitives": 6449249,
+          "shadowCalls": 7564,
+          "shadowPrimitives": 17657194
+        },
+        "production": {
+          "cameraCalls": 3579,
+          "cameraPrimitives": 6449249,
+          "shadowCalls": 7564,
+          "shadowPrimitives": 17657194
+        }
+      },
+      {
+        "view": "street",
+        "fov": 75,
+        "variant": "before",
+        "index": 3,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 3579,
+          "cameraPrimitives": 6449249,
+          "shadowCalls": 12355,
+          "shadowPrimitives": 18724018
+        },
+        "production": {
+          "cameraCalls": 3579,
+          "cameraPrimitives": 6449249,
+          "shadowCalls": 12355,
+          "shadowPrimitives": 18724018
+        }
+      },
+      {
+        "view": "street",
+        "fov": 32,
+        "variant": "before",
+        "index": 0,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1953,
+          "cameraPrimitives": 4910153,
+          "shadowCalls": 4095,
+          "shadowPrimitives": 10579138
+        },
+        "production": {
+          "cameraCalls": 1953,
+          "cameraPrimitives": 4910153,
+          "shadowCalls": 4095,
+          "shadowPrimitives": 10579138
+        }
+      },
+      {
+        "view": "street",
+        "fov": 32,
+        "variant": "after",
+        "index": 1,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1953,
+          "cameraPrimitives": 4910153,
+          "shadowCalls": 2922,
+          "shadowPrimitives": 10282870
+        },
+        "production": {
+          "cameraCalls": 1953,
+          "cameraPrimitives": 4910153,
+          "shadowCalls": 2922,
+          "shadowPrimitives": 10282870
+        }
+      },
+      {
+        "view": "street",
+        "fov": 32,
+        "variant": "none",
+        "index": 2,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1953,
+          "cameraPrimitives": 4910153,
+          "shadowCalls": 2355,
+          "shadowPrimitives": 9927807
+        },
+        "production": {
+          "cameraCalls": 1953,
+          "cameraPrimitives": 4910153,
+          "shadowCalls": 2355,
+          "shadowPrimitives": 9927807
+        }
+      },
+      {
+        "view": "street",
+        "fov": 32,
+        "variant": "before",
+        "index": 3,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1953,
+          "cameraPrimitives": 4910153,
+          "shadowCalls": 4095,
+          "shadowPrimitives": 10579138
+        },
+        "production": {
+          "cameraCalls": 1953,
+          "cameraPrimitives": 4910153,
+          "shadowCalls": 4095,
+          "shadowPrimitives": 10579138
+        }
+      },
+      {
+        "view": "fire-escape-20",
+        "fov": 75,
+        "variant": "before",
+        "index": 0,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1027,
+          "cameraPrimitives": 2580025,
+          "shadowCalls": 3104,
+          "shadowPrimitives": 6720001
+        },
+        "production": {
+          "cameraCalls": 1027,
+          "cameraPrimitives": 2580025,
+          "shadowCalls": 3104,
+          "shadowPrimitives": 6720001
+        }
+      },
+      {
+        "view": "fire-escape-20",
+        "fov": 75,
+        "variant": "after",
+        "index": 1,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1027,
+          "cameraPrimitives": 2580025,
+          "shadowCalls": 2749,
+          "shadowPrimitives": 6598473
+        },
+        "production": {
+          "cameraCalls": 1027,
+          "cameraPrimitives": 2580025,
+          "shadowCalls": 2749,
+          "shadowPrimitives": 6598473
+        }
+      },
+      {
+        "view": "fire-escape-20",
+        "fov": 75,
+        "variant": "none",
+        "index": 2,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1027,
+          "cameraPrimitives": 2580025,
+          "shadowCalls": 2118,
+          "shadowPrimitives": 6335956
+        },
+        "production": {
+          "cameraCalls": 1027,
+          "cameraPrimitives": 2580025,
+          "shadowCalls": 2118,
+          "shadowPrimitives": 6335956
+        }
+      },
+      {
+        "view": "fire-escape-20",
+        "fov": 75,
+        "variant": "before",
+        "index": 3,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1027,
+          "cameraPrimitives": 2580025,
+          "shadowCalls": 3104,
+          "shadowPrimitives": 6720001
+        },
+        "production": {
+          "cameraCalls": 1027,
+          "cameraPrimitives": 2580025,
+          "shadowCalls": 3104,
+          "shadowPrimitives": 6720001
+        }
+      },
+      {
+        "view": "fire-escape-20",
+        "fov": 32,
+        "variant": "before",
+        "index": 0,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 682,
+          "cameraPrimitives": 2408749,
+          "shadowCalls": 1692,
+          "shadowPrimitives": 5586589
+        },
+        "production": {
+          "cameraCalls": 682,
+          "cameraPrimitives": 2408749,
+          "shadowCalls": 1692,
+          "shadowPrimitives": 5586589
+        }
+      },
+      {
+        "view": "fire-escape-20",
+        "fov": 32,
+        "variant": "after",
+        "index": 1,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 682,
+          "cameraPrimitives": 2408749,
+          "shadowCalls": 1502,
+          "shadowPrimitives": 5398050
+        },
+        "production": {
+          "cameraCalls": 682,
+          "cameraPrimitives": 2408749,
+          "shadowCalls": 1502,
+          "shadowPrimitives": 5398050
+        }
+      },
+      {
+        "view": "fire-escape-20",
+        "fov": 32,
+        "variant": "none",
+        "index": 2,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 682,
+          "cameraPrimitives": 2408749,
+          "shadowCalls": 1146,
+          "shadowPrimitives": 5158943
+        },
+        "production": {
+          "cameraCalls": 682,
+          "cameraPrimitives": 2408749,
+          "shadowCalls": 1146,
+          "shadowPrimitives": 5158943
+        }
+      },
+      {
+        "view": "fire-escape-20",
+        "fov": 32,
+        "variant": "before",
+        "index": 3,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 682,
+          "cameraPrimitives": 2408749,
+          "shadowCalls": 1692,
+          "shadowPrimitives": 5586589
+        },
+        "production": {
+          "cameraCalls": 682,
+          "cameraPrimitives": 2408749,
+          "shadowCalls": 1692,
+          "shadowPrimitives": 5586589
+        }
+      },
+      {
+        "view": "fire-escape-45",
+        "fov": 75,
+        "variant": "before",
+        "index": 0,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1538,
+          "cameraPrimitives": 3249511,
+          "shadowCalls": 3602,
+          "shadowPrimitives": 7364981
+        },
+        "production": {
+          "cameraCalls": 1538,
+          "cameraPrimitives": 3249511,
+          "shadowCalls": 3602,
+          "shadowPrimitives": 7364981
+        }
+      },
+      {
+        "view": "fire-escape-45",
+        "fov": 75,
+        "variant": "after",
+        "index": 1,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1538,
+          "cameraPrimitives": 3249511,
+          "shadowCalls": 2973,
+          "shadowPrimitives": 7273573
+        },
+        "production": {
+          "cameraCalls": 1538,
+          "cameraPrimitives": 3249511,
+          "shadowCalls": 2973,
+          "shadowPrimitives": 7273573
+        }
+      },
+      {
+        "view": "fire-escape-45",
+        "fov": 75,
+        "variant": "none",
+        "index": 2,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1538,
+          "cameraPrimitives": 3249511,
+          "shadowCalls": 2387,
+          "shadowPrimitives": 7030253
+        },
+        "production": {
+          "cameraCalls": 1538,
+          "cameraPrimitives": 3249511,
+          "shadowCalls": 2387,
+          "shadowPrimitives": 7030253
+        }
+      },
+      {
+        "view": "fire-escape-45",
+        "fov": 75,
+        "variant": "before",
+        "index": 3,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1538,
+          "cameraPrimitives": 3249511,
+          "shadowCalls": 3602,
+          "shadowPrimitives": 7364981
+        },
+        "production": {
+          "cameraCalls": 1538,
+          "cameraPrimitives": 3249511,
+          "shadowCalls": 3602,
+          "shadowPrimitives": 7364981
+        }
+      },
+      {
+        "view": "fire-escape-45",
+        "fov": 32,
+        "variant": "before",
+        "index": 0,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1017,
+          "cameraPrimitives": 2681664,
+          "shadowCalls": 1962,
+          "shadowPrimitives": 6041111
+        },
+        "production": {
+          "cameraCalls": 1017,
+          "cameraPrimitives": 2681664,
+          "shadowCalls": 1962,
+          "shadowPrimitives": 6041111
+        }
+      },
+      {
+        "view": "fire-escape-45",
+        "fov": 32,
+        "variant": "after",
+        "index": 1,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1017,
+          "cameraPrimitives": 2681664,
+          "shadowCalls": 1642,
+          "shadowPrimitives": 5940945
+        },
+        "production": {
+          "cameraCalls": 1017,
+          "cameraPrimitives": 2681664,
+          "shadowCalls": 1642,
+          "shadowPrimitives": 5940945
+        }
+      },
+      {
+        "view": "fire-escape-45",
+        "fov": 32,
+        "variant": "none",
+        "index": 2,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1017,
+          "cameraPrimitives": 2681664,
+          "shadowCalls": 1211,
+          "shadowPrimitives": 5737155
+        },
+        "production": {
+          "cameraCalls": 1017,
+          "cameraPrimitives": 2681664,
+          "shadowCalls": 1211,
+          "shadowPrimitives": 5737155
+        }
+      },
+      {
+        "view": "fire-escape-45",
+        "fov": 32,
+        "variant": "before",
+        "index": 3,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 1017,
+          "cameraPrimitives": 2681664,
+          "shadowCalls": 1962,
+          "shadowPrimitives": 6041111
+        },
+        "production": {
+          "cameraCalls": 1017,
+          "cameraPrimitives": 2681664,
+          "shadowCalls": 1962,
+          "shadowPrimitives": 6041111
+        }
+      },
+      {
+        "view": "pier",
+        "fov": 75,
+        "variant": "before",
+        "index": 0,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 16503,
+          "cameraPrimitives": 15899623,
+          "shadowCalls": 2332,
+          "shadowPrimitives": 4204746
+        },
+        "production": {
+          "cameraCalls": 16503,
+          "cameraPrimitives": 15899623,
+          "shadowCalls": 2332,
+          "shadowPrimitives": 4204746
+        }
+      },
+      {
+        "view": "pier",
+        "fov": 75,
+        "variant": "after",
+        "index": 1,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 16503,
+          "cameraPrimitives": 15899623,
+          "shadowCalls": 2007,
+          "shadowPrimitives": 4113825
+        },
+        "production": {
+          "cameraCalls": 16503,
+          "cameraPrimitives": 15899623,
+          "shadowCalls": 2007,
+          "shadowPrimitives": 4113825
+        }
+      },
+      {
+        "view": "pier",
+        "fov": 75,
+        "variant": "none",
+        "index": 2,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 16503,
+          "cameraPrimitives": 15899623,
+          "shadowCalls": 2007,
+          "shadowPrimitives": 4113825
+        },
+        "production": {
+          "cameraCalls": 16503,
+          "cameraPrimitives": 15899623,
+          "shadowCalls": 2007,
+          "shadowPrimitives": 4113825
+        }
+      },
+      {
+        "view": "pier",
+        "fov": 75,
+        "variant": "before",
+        "index": 3,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 16503,
+          "cameraPrimitives": 15899623,
+          "shadowCalls": 2332,
+          "shadowPrimitives": 4204746
+        },
+        "production": {
+          "cameraCalls": 16503,
+          "cameraPrimitives": 15899623,
+          "shadowCalls": 2332,
+          "shadowPrimitives": 4204746
+        }
+      },
+      {
+        "view": "pier",
+        "fov": 32,
+        "variant": "before",
+        "index": 0,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 8963,
+          "cameraPrimitives": 10178773,
+          "shadowCalls": 1124,
+          "shadowPrimitives": 2610306
+        },
+        "production": {
+          "cameraCalls": 8963,
+          "cameraPrimitives": 10178773,
+          "shadowCalls": 1124,
+          "shadowPrimitives": 2610306
+        }
+      },
+      {
+        "view": "pier",
+        "fov": 32,
+        "variant": "after",
+        "index": 1,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 8963,
+          "cameraPrimitives": 10178773,
+          "shadowCalls": 1077,
+          "shadowPrimitives": 2599587
+        },
+        "production": {
+          "cameraCalls": 8963,
+          "cameraPrimitives": 10178773,
+          "shadowCalls": 1077,
+          "shadowPrimitives": 2599587
+        }
+      },
+      {
+        "view": "pier",
+        "fov": 32,
+        "variant": "none",
+        "index": 2,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 8963,
+          "cameraPrimitives": 10178773,
+          "shadowCalls": 1077,
+          "shadowPrimitives": 2599587
+        },
+        "production": {
+          "cameraCalls": 8963,
+          "cameraPrimitives": 10178773,
+          "shadowCalls": 1077,
+          "shadowPrimitives": 2599587
+        }
+      },
+      {
+        "view": "pier",
+        "fov": 32,
+        "variant": "before",
+        "index": 3,
+        "ok": true,
+        "changed": [],
+        "before": {
+          "cameraCalls": 8963,
+          "cameraPrimitives": 10178773,
+          "shadowCalls": 1124,
+          "shadowPrimitives": 2610306
+        },
+        "production": {
+          "cameraCalls": 8963,
+          "cameraPrimitives": 10178773,
+          "shadowCalls": 1124,
+          "shadowPrimitives": 2610306
+        }
+      }
+    ]
+  },
+  "nativeSavedRanges": {
+    "batches": 4076,
+    "instanceRows": 4962,
+    "ok": true
+  },
+  "packageSecurity": {
+    "pass": true,
+    "embeddedPack": true,
+    "packedFiles": 10994,
+    "developmentFiles": 0,
+    "bridgeLiteralFound": false,
+    "prebuiltClientAndServer": true
+  },
+  "packagedResources": {
+    "allExact": true,
+    "checked": 2441,
+    "importedRemaps": 52,
+    "remapNote": "26 texture PNGs and26 source importer metadata records become matching exported .import remaps plus exact same imported .ctex bytes. The exporter removes source/dependency/importer parameters, while importer/type/uid/path remain equal.",
+    "clientScene": {
+      "path": "assets/maps/dumbo/prebuilt/survival_client.scn",
+      "sourceSha256": "cfb8ea6d75d5b12a35f5d154bd67db22fbedb34634de5e5ef0f088c0fc21db1b",
+      "exportedPath": "assets/maps/dumbo/prebuilt/survival_client.scn",
+      "bytes": 148160946,
+      "packedDirectoryMd5": "91dfff5852e593abda35784c336da2cd",
+      "exactAuditedResource": true
+    },
+    "serverScene": {
+      "path": "assets/maps/dumbo/prebuilt/survival_server.scn",
+      "sourceSha256": "4a161a1bb50d4bb5552ec409e77c04215c6929b9c1d2d8dce7f78299d3f8a926",
+      "exportedPath": "assets/maps/dumbo/prebuilt/survival_server.scn",
+      "bytes": 133664964,
+      "packedDirectoryMd5": "8a04394b60fbc31c0f04bf1db07f2b18",
+      "exactAuditedResource": true
+    }
+  },
+  "exportedBinary": "10ffe1faccfa0dceef72b966d5f7bcbb5f7dd37ada39b428e4aebcd8d54c262e",
+  "actualWindows": [
+    {
+      "name": "street-fov75",
+      "pid": 20444,
+      "sameProcess": true,
+      "pose": {
+        "name": "street-fov75",
+        "position": [
+          -404,
+          -15.5799999237061,
+          -414
+        ],
+        "yaw": -3.14159250259399,
+        "pitch": 0,
+        "fov": 75
+      },
+      "actualCamera": {
+        "position": [
+          -404,
+          -15.579999923706055,
+          -414
+        ],
+        "rotation": [
+          0,
+          -3.141592502593994,
+          0
+        ],
+        "fov": 75,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "postCaptureCamera": {
+        "position": [
+          -404,
+          -15.579999923706055,
+          -414
+        ],
+        "rotation": [
+          0,
+          -3.141592502593994,
+          0
+        ],
+        "fov": 75,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "actualResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "postCaptureResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "rawCaptureRaster": [
+        2560,
+        1442
+      ],
+      "note": "Raw Windows PrintWindow includes a black lower strip and clipped HUD. Actual game viewport independently verified at native 2560x1440. Raw PNG retained without crop or resampling.",
+      "imageSha256": "acf6fdd6ae247a250e2066db7b84792d7bfc8e5af38df7d402a685c4503a1a1c"
+    },
+    {
+      "name": "street-fov32",
+      "pid": 20444,
+      "sameProcess": true,
+      "pose": {
+        "name": "street-fov32",
+        "position": [
+          -404,
+          -15.5799999237061,
+          -414
+        ],
+        "yaw": -3.14159250259399,
+        "pitch": 0,
+        "fov": 32
+      },
+      "actualCamera": {
+        "position": [
+          -404,
+          -15.579999923706055,
+          -414
+        ],
+        "rotation": [
+          0,
+          -3.141592502593994,
+          0
+        ],
+        "fov": 32,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "postCaptureCamera": {
+        "position": [
+          -404,
+          -15.579999923706055,
+          -414
+        ],
+        "rotation": [
+          0,
+          -3.141592502593994,
+          0
+        ],
+        "fov": 32,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "actualResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "postCaptureResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "rawCaptureRaster": [
+        2560,
+        1442
+      ],
+      "note": "Raw Windows PrintWindow includes a black lower strip and clipped HUD. Actual game viewport independently verified at native 2560x1440. Raw PNG retained without crop or resampling.",
+      "imageSha256": "374aba6f79de5a23a9e62b516a623c3045bb0ce88609a4069d9af46dd2dee77e"
+    },
+    {
+      "name": "fire-escape-20-fov32",
+      "pid": 20444,
+      "sameProcess": true,
+      "pose": {
+        "name": "fire-escape-20-fov32",
+        "position": [
+          -408.104309082031,
+          -15.5799999237061,
+          -406.416076660156
+        ],
+        "yaw": -0.459575831890106,
+        "pitch": 0.0656220763921738,
+        "fov": 32
+      },
+      "actualCamera": {
+        "position": [
+          -408.10430908203125,
+          -15.579999923706055,
+          -406.41607666015625
+        ],
+        "rotation": [
+          0.06562207639217377,
+          -0.4595758318901062,
+          0
+        ],
+        "fov": 32,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "postCaptureCamera": {
+        "position": [
+          -408.10430908203125,
+          -15.579999923706055,
+          -406.41607666015625
+        ],
+        "rotation": [
+          0.06562207639217377,
+          -0.4595758318901062,
+          0
+        ],
+        "fov": 32,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "actualResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "postCaptureResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "rawCaptureRaster": [
+        2560,
+        1442
+      ],
+      "note": "Raw Windows PrintWindow includes a black lower strip and clipped HUD. Actual game viewport independently verified at native 2560x1440. Raw PNG retained without crop or resampling.",
+      "imageSha256": "48c91a98e669658374a6d0a843e150f8e6a9d70723f35315054c81b14b5f4af1"
+    },
+    {
+      "name": "fire-escape-45-fov32",
+      "pid": 20444,
+      "sameProcess": true,
+      "pose": {
+        "name": "fire-escape-45-fov32",
+        "position": [
+          -409.327972412109,
+          -15.5799999237061,
+          -380.464477539062
+        ],
+        "yaw": -0.225921645760536,
+        "pitch": 0.0291485674679279,
+        "fov": 32
+      },
+      "actualCamera": {
+        "position": [
+          -409.3279724121094,
+          -15.579999923706055,
+          -380.4644775390625
+        ],
+        "rotation": [
+          0.029148569330573082,
+          -0.2259216457605362,
+          0
+        ],
+        "fov": 32,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "postCaptureCamera": {
+        "position": [
+          -409.3279724121094,
+          -15.579999923706055,
+          -380.4644775390625
+        ],
+        "rotation": [
+          0.029148569330573082,
+          -0.2259216457605362,
+          0
+        ],
+        "fov": 32,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "actualResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "postCaptureResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "rawCaptureRaster": [
+        2560,
+        1442
+      ],
+      "note": "Raw Windows PrintWindow includes a black lower strip and clipped HUD. Actual game viewport independently verified at native 2560x1440. Raw PNG retained without crop or resampling.",
+      "imageSha256": "7252d28552d1fa3a6d7501f31bed43f66d964dac6088893edb524140db431994"
+    },
+    {
+      "name": "pier-fov32",
+      "pid": 20444,
+      "sameProcess": true,
+      "pose": {
+        "name": "pier-fov32",
+        "position": [
+          -851.430541992188,
+          -14.466667175293,
+          -170.933746337891
+        ],
+        "yaw": -0.937807023525238,
+        "pitch": -0.00926099997013807,
+        "fov": 32
+      },
+      "actualCamera": {
+        "position": [
+          -851.4305419921875,
+          -14.466667175292969,
+          -170.93374633789062
+        ],
+        "rotation": [
+          -0.009260999970138073,
+          -0.937807023525238,
+          0
+        ],
+        "fov": 32,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "postCaptureCamera": {
+        "position": [
+          -851.4305419921875,
+          -14.466667175292969,
+          -170.93374633789062
+        ],
+        "rotation": [
+          -0.009260999970138073,
+          -0.937807023525238,
+          0
+        ],
+        "fov": 32,
+        "near": 0.05000000074505806,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "actualResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "postCaptureResolution": {
+        "width": 2560,
+        "height": 1440,
+        "windowWidth": 2560,
+        "windowHeight": 1440,
+        "scale3d": 1
+      },
+      "rawCaptureRaster": [
+        2560,
+        1442
+      ],
+      "note": "Raw Windows PrintWindow includes a black lower strip and clipped HUD. Actual game viewport independently verified at native 2560x1440. Raw PNG retained without crop or resampling.",
+      "imageSha256": "8ab32076da253c2e3fe0d45da282b050b7d815db50279fe30b6dd179304f4e00"
+    }
+  ],
+  "validation": {
+    "pass": true,
+    "sourceCommit": "95bc8c0c65b7014ff3f6f9a1540a13c19f6e25fb",
+    "results": [
+      {
+        "name": "format",
+        "code": 0,
+        "wallMs": 14649
+      },
+      {
+        "name": "test",
+        "code": 0,
+        "wallMs": 210842
+      }
+    ],
+    "at": "2026-10-21T22:29:04.001Z"
+  },
+  "visualAudit": "Overall verdict: PASS\n\nIndependent default-FAIL Codex visual audit of detail-shadow ranges. I made none of the implementation changes. This verdict covers visual preservation and evidence provenance, not performance, tests or merge readiness.\n\nReviewed 37 accepted production images: all 32 raw native originals in artifacts/detail-production-visual plus five actual exported Windows originals in artifacts/detail-playtest. Native coverage is street, fire-escape-20, fire-escape-45 and Pier, each at FOV75/32 with before/after/scoped-none/repeated-before controls. Windows coverage is street-fov75, street-fov32, fire-escape-20-fov32, fire-escape-45-fov32 and pier-fov32. Earlier derived diagnostic images are supplemental. The eight obstructed 10 m probe images and failed attempts are excluded.\n\nNo readable shadow loss, new light leak, near contact loss or changed silhouette was found in the accepted before/after views. Near street awning/bracket/frontage and fire-escape shadows remain. The partially tree-obstructed 20 m ADS view still exposes the platform/ladder, facade stripes and awning/sign receivers on the right; its none control removes readable shading there while after preserves it. The clear 45 m normal/ADS32 pairs show no readable regression. Pier supplies distant context. Repeated-before controls distinguish live foliage movement from static shadow-policy changes. The actual Windows images are unobstructed and agree with the accepted production-native views.\n\nNative receipts: eight quartets, one exact camera, one camera submission counter pair and one sun record per quartet; zero pre/post camera drift. All 32 actual image readbacks are 2560x1440, scale1, SMAA2/TAA false. Diagnostic-to-production inventory matches all 32 variants. Saved equivalence passes 4,962 instance rows / 4,076 batches. Official source-893df production verification matches client 347,866 nodes and server 328,567 nodes with empty differences. Bulk masses remain; the changed detail policy uses shared geometry in shadow-only partitions with nominal enter 36 / exit 40 hysteresis, leaving camera geometry unchanged.\n\nWindows receipts: all five accepted frames identify exported PID 20444 and matching FOVs, identical pre/post cameras and independently verified native 2560x1440 viewport at scale1. Requested/saved-native pose coordinates agree within float/decimal serialization precision, largest observed delta below 2e-9. Launch/photo/stop receipts identify the same executable; inspectionUrl is null and same-process shipped F5 photo mode is confirmed. Binary receipt: 2,406,482,426 bytes, SHA256 10ffe1faccfa0dceef72b966d5f7bcbb5f7dd37ada39b428e4aebcd8d54c262e.\n\nPackage receipts pass: 10,994 embedded files, zero development files, no bridge literal, and all 2,441 verified outputs exact. The 52 remapped entries are 26 PNGs plus 26 import metadata files, checked through matching importer/type/uid/path and imported .ctex digest/size. Client SCN SHA256 cfb8ea6d75d5b12a35f5d154bd67db22fbedb34634de5e5ef0f088c0fc21db1b matches the audited official production scene. I read the checker/receipts without rerunning a full binary hash during peer holds.\n\nFinal source connection: independently checked git HEAD 95bc8c0c65b7014ff3f6f9a1540a13c19f6e25fb on main a4f683d563334288f665496cc4b918eee0ae5a9e. Git diff from exported source 893df7738 shows no changes in the four detail implementation files. Assets, environment module/pipeline, project.godot and ART_STYLE.md are unchanged across the intervening main range. nav_map.ts adds a counter import/increment, extending recipe dependency closure without changing its geometry logic. The final source proof keeps the exact audited/exported candidate SCN and records a native inverse-control save/reload pass restoring 1,829 casters/removing 4,076 copies while preserving target geometry/transforms/layers/LOD/buffers. This is sufficient connection for the static visual change; it is not a claim of final-parent native recipe/output equivalence or a re-export of final HEAD. Exported recipe remains 51f66b6a3abc3d7ea738e72eb89a25d153930bb14f582a5b766d44a549535f1c at source 893df7738.\n\nLimits: Windows PrintWindow raw PNGs are 2560x1442 with a visible black lower strip, retained without cropping/resampling; that strip does not obstruct the changed shadow regions. The native game viewport is verified separately. Shipped canvas-only photo mode hides ordinary HUD. This is static A/B evidence for the shown near/mid/far views, not a universal motion/partition-boundary guarantee. Screenshot HUD values are not timings. No remaining visual blocker within this scope. No production edits, Godot/build/test/export runs, uploads or delegation were performed by this auditor; only audit artifacts were written.\n"
+}
