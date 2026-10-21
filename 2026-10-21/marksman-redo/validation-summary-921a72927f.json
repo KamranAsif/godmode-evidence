@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "utc": "2026-10-21T11:31:41.440Z",
+  "formatExitCode": 0,
+  "rootSuite": {
+    "command": "pnpm test",
+    "steps": 11,
+    "passed": 11,
+    "failed": 0,
+    "wallSeconds": 314.4,
+    "receipts": [
+      {
+        "command": "pnpm format",
+        "started": "2026-10-21T06:50:32.366Z",
+        "completed": "2026-10-21T06:50:47.422Z",
+        "code": 0
+      },
+      {
+        "command": "pnpm test",
+        "started": "2026-10-21T06:50:47.422Z",
+        "completed": "2026-10-21T06:56:02.161Z",
+        "code": 0
+      }
+    ]
+  },
+  "aimBake": {
+    "command": "node tools/assets/enemy-aim/build.mjs --check",
+    "libraries": 21,
+    "result": "cache hit",
+    "manifestFingerprint": "05b7f6cf65bef77df3f9b14cd74e126798fa433ac3a35f550d1074ef765035e8"
+  },
+  "visual": {
+    "defaultFailIndependentAuditor": "PASS",
+    "closePoseCount": 14,
+    "allGunsVisible": true,
+    "allBakedAimActive": true,
+    "maximumPalmResidualMm": 0.42751402361317997
+  },
+  "windows": {
+    "schemaVersion": 1,
+    "utc": "2026-10-21T11:31:41.318Z",
+    "binarySha256": "89ecd21160bdd76519709749282e2c7109cef59de0bfbeb9897c93aa87b176cd",
+    "binaryBytes": 2401718396,
+    "preset": "Windows Playtest",
+    "debug": false,
+    "shaderBaker": true,
+    "d3d12RuntimeComplete": true,
+    "embeddedPck": true,
+    "runtimeInspectionBridgeExcluded": true,
+    "bothMarksmanAssetsActive": true,
+    "scriptErrors": [],
+    "headlessSmoke": {
+      "instance": "marksman-headless-smoke-11204",
+      "firstGameplayFrame": true,
+      "inspectionSucceeded": true,
+      "scriptErrors": []
+    },
+    "nativeRun": {
+      "instance": "marksman-playtest-1792581936741-9704",
+      "pid": 23556,
+      "startedAt": "2026-10-21T11:25:44.272Z"
+    },
+    "method": "Exported Windows Playtest embedded PCK. Ordinary shipped roguelite run via documented launch shortcut, shipped console native input and its existing exec .lcs command batches, native OS-window captures. Normal Enter picks clear loot offers and shipped F5 photo mode hides HUD overlays for final captures. No runtime inspection bridge. Existing Playtest camera replay. Isolated existing Playtest tuning delays zero-viewer game-over to 600 seconds for inspection; all other tuning defaults retained. Batches of 16 ordinary rival spawn requests exercise randomized operator bodies. Frame profiling enabled solely to prove selected native aim asset paths, not to measure cost.",
+    "markers": [
+      "2026-10-21T11:26:39.002Z t=54703 INFO [JS] GODMODE_ROGUELITE_SEED=B7500062",
+      "2026-10-21T11:26:39.763Z t=55465 INFO [JS] GODMODE_FIRST_PRESENTED_GAMEPLAY_FRAME=55465",
+      "2026-10-21T11:27:31.484Z t=107186 INFO [JS] GODMODE_BAKED_ENEMY_AIM=marksman;active:true;clip:SniperRifleIdle;clips:42;pitches:9;asset:res://assets/characters/enemy-aim/character-stream-sniper-marksman-a-marksman.res",
+      "2026-10-21T11:27:32.055Z t=107756 INFO [JS] GODMODE_BAKED_ENEMY_AIM=marksman;active:true;clip:SniperRifleJumpLoop;clips:42;pitches:9;asset:res://assets/characters/enemy-aim/character-stream-sniper-marksman-b-marksman.res",
+      "2026-10-21T11:28:04.843Z t=140544 INFO [JS] GODMODE_PHOTO_MODE=true"
+    ],
+    "localPlaytestTuning": {
+      "zeroViewerSeconds": 600,
+      "defaultsOtherwise": true
+    },
+    "captureScope": "The two wide Windows images show unobscured ordinary native gameplay; they do not independently identify both marksman variants or prove individual poses. The native active-asset log verifies both A/B runtime aim paths. Detailed A/B body, hand and sprint visuals are the separate independently audited 5 m fixture captures bound to the exact source bodies.",
+    "nativeCaptures": [
+      {
+        "file": "first-gameplay.png",
+        "sha256": "e801a3a39f60ece7d7ab99cd81dc3f851f94a4b9e2fc85fc09cc401ecf77e48c",
+        "width": 1920,
+        "height": 1080,
+        "instance": "marksman-playtest-1792581936741-9704",
+        "pid": 23556,
+        "launchToCaptureMs": 70056
+      },
+      {
+        "file": "marksman-feature-forward.png",
+        "sha256": "28a06f338f60e4ad3d472f81196db1231e3ffd875b61431391ca91b7df08144d",
+        "width": 1920,
+        "height": 1080,
+        "instance": "marksman-playtest-1792581936741-9704",
+        "pid": 23556,
+        "launchToCaptureMs": 148143
+      },
+      {
+        "file": "marksman-feature.png",
+        "sha256": "cf1e7a80ea17c2a6ede994030bbae84e9304fe71c6e8e39c39c0fbcecd743e43",
+        "width": 1920,
+        "height": 1080,
+        "instance": "marksman-playtest-1792581936741-9704",
+        "pid": 23556,
+        "launchToCaptureMs": 196573
+      }
+    ]
+  },
+  "commands": {
+    "headlessRun": "node tools/godot-cli/dist/src/index.js game run --project . --headless --fixture roguelite --instance marksman-headless-smoke-11204 --inspect --session s-mvht1j4c-69259778becb --json",
+    "headlessInspect": "node tools/godot-cli/dist/src/index.js runtime inspect --project . --instance marksman-headless-smoke-11204 --store-only --json",
+    "export": "node tools/godot-cli/dist/src/index.js game export --project . --preset \"Windows Playtest\" --output artifacts/marksman-redo/playtest/BattleDuty.exe --json --session s-mvht1j4c-69259778becb",
+    "visualFixture": "node tools/godot-cli/dist/src/index.js game run --project . --instance marksman-after-capture-28976 --full --offscreen --offscreen-size 1920x1080 --scene res://tests/fixtures/enemy_aim_review.tscn --inspect --allow-actions --session s-mvhk9jgl-106b28086644",
+    "visualAction": {
+      "name": "enemy_aim_review",
+      "distance": 5,
+      "bearing": 30,
+      "phase": 0.25,
+      "variants": [
+        "a",
+        "b"
+      ],
+      "poses": [
+        "idle",
+        "walk",
+        "sprint",
+        "aim-level",
+        "aim-up",
+        "aim-down",
+        "shoot"
+      ],
+      "aimPitchesRadians": [
+        0,
+        0.6,
+        -0.6
+      ],
+      "playDistance": 25
+    },
+    "nativeRun": "node tools/godot-cli/dist/src/index.js game run --project . --binary artifacts/marksman-redo/playtest/BattleDuty.exe --instance marksman-playtest-1792581936741-9704 --fixture roguelite --full --offscreen --offscreen-size 1920x1080 --settings-path artifacts/marksman-redo/playtest/settings-1792581936741-9704.cfg --session s-mvhzslas-a12fa8d7859b --json",
+    "nativeMethod": "Exported Windows Playtest embedded PCK. Ordinary shipped roguelite run via documented launch shortcut, shipped console native input and its existing exec .lcs command batches, native OS-window captures. Normal Enter picks clear loot offers and shipped F5 photo mode hides HUD overlays for final captures. No runtime inspection bridge. Existing Playtest camera replay. Isolated existing Playtest tuning delays zero-viewer game-over to 600 seconds for inspection; all other tuning defaults retained. Batches of 16 ordinary rival spawn requests exercise randomized operator bodies. Frame profiling enabled solely to prove selected native aim asset paths, not to measure cost.",
+    "exportEnvironment": {
+      "GODMODE_PREBUILT_PUBLISH": "0"
+    },
+    "nativeConsoleBatches": [
+      {
+        "file": "native-batch-1792581936741-9704-1.lcs",
+        "sha256": "e7806664a7899e4b8b623bdc4834ecc80674425690fb4d6970b41b769193dde0",
+        "commands": [
+          "stream hold on",
+          "invincible on",
+          "tp -404 -16.25 -414",
+          "killall",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival",
+          "spawn rival"
+        ]
+      },
+      {
+        "file": "native-batch-1792581936741-9704-2.lcs",
+        "sha256": "647d92a8f5007df6ad53602614b455d84f941dbcdb326f497842a9e6f9b377f9",
+        "commands": [
+          "spawns off",
+          "perf load 2 \"D:/work/godmode-roguelite-worktrees/marksman-boonie-20261020/artifacts/marksman-redo/playtest/view.jsonl\""
+        ]
+      }
+    ]
+  },
+  "privateReceiptHashes": [
+    {
+      "artifact": "artifacts/marksman-redo/final-validation.json",
+      "sha256": "0db5da9d31f7c6819605ad3d4ce2ea947a03308fe344f0da7fa200fb2deb153d"
+    },
+    {
+      "artifact": "artifacts/marksman-redo/headless-smoke.json",
+      "sha256": "c3b504cb5a31b05a91a14351fcc49e2a01642eb0a5cad0bbc1902879f126e255"
+    },
+    {
+      "artifact": "artifacts/marksman-redo/playtest/export.json",
+      "sha256": "e362517b4f25880f1876ffa7b07055ed89cd531dd0ef17b3ca3e79a618f0f749"
+    },
+    {
+      "artifact": "artifacts/marksman-redo/playtest/pack-check.json",
+      "sha256": "60222c101b1ca4c0042a338cc5f4984430644e9d331e78701b5097d958326caa"
+    },
+    {
+      "artifact": "artifacts/marksman-redo/playtest/feature-check.json",
+      "sha256": "a5f134ca8fb3c3b93f31accf1b175f98867eaa5350ad44f2b064b7dee6606a64"
+    },
+    {
+      "artifact": "artifacts/marksman-redo/visual-audit.md",
+      "sha256": "93cd307ca08ffe0fb806ee7e7131d4d2cd8fe1a153440f853ab7c829bc2e2c1d"
+    },
+    {
+      "artifact": "artifacts/marksman-redo/pose-audit.json",
+      "sha256": "06ebcb910956c8eebe3d56feb765eb784ba23ae2f3c33d33cdfe042302a5afe5"
+    }
+  ]
+}
