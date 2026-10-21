@@ -1,0 +1,398 @@
+{
+  "source": "893df7738c51c8c8b5884d6ff41d54d146732886",
+  "base": "877e14ad5c6623e8c53730a86511edf4dd8007ff",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "enemies": 16,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "firefight-65",
+        "durationMs": 30000,
+        "from": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "fixedCamera": true,
+        "settleMs": 13000,
+        "expectedLivingEnemies": 65,
+        "setup": [
+          {
+            "atMs": 0,
+            "kind": "wave",
+            "count": 65
+          }
+        ],
+        "events": []
+      },
+      {
+        "id": "shopping-street",
+        "durationMs": 12000,
+        "from": [
+          -404,
+          -15.582,
+          -390
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          }
+        ]
+      },
+      {
+        "id": "under-bridge",
+        "durationMs": 12000,
+        "from": [
+          -518,
+          -13.7,
+          -375
+        ],
+        "to": [
+          -534,
+          -13.7,
+          -395
+        ],
+        "yaw": -2.15,
+        "pitch": -0.06,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          },
+          {
+            "atMs": 4000,
+            "name": "debug_survival_command",
+            "payload": {
+              "command": "streak:blast:rcxd:12"
+            },
+            "optional": false
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "driver": "32.0.32015.7029",
+  "phases": [
+    {
+      "phase": "firefight-65",
+      "runs": [
+        {
+          "label": "current-control-1",
+          "medianMs": 22.8120002746582,
+          "p95Ms": 28.8349990844727,
+          "p99Ms": 31.5009994506836,
+          "renderGpuMeanMs": 17.02537682139274,
+          "renderCpuMeanMs": 6.717988420729474,
+          "processMeanMs": 23.47567258687274,
+          "cameraDrawCalls": 3696.812355212355,
+          "cameraRawPrimitives": 7891368.501930502,
+          "shadowDrawCalls": 12545.671042471042,
+          "shadowRawPrimitives": 22242504.486486487,
+          "memory": {
+            "staticBytesMean": 4737577838.644788,
+            "videoBytesMean": 8473469845.250965,
+            "staticBytesPeak": 4750052445,
+            "videoBytesPeak": 8608464896
+          }
+        },
+        {
+          "label": "current-candidate-1",
+          "medianMs": 18.7479991912842,
+          "p95Ms": 27.7639999389648,
+          "p99Ms": 33.8520011901855,
+          "renderGpuMeanMs": 15.385519738978797,
+          "renderCpuMeanMs": 5.132838794299993,
+          "processMeanMs": 22.00049431438134,
+          "cameraDrawCalls": 3695.942474916388,
+          "cameraRawPrimitives": 7951069.221404682,
+          "shadowDrawCalls": 8868.691638795986,
+          "shadowRawPrimitives": 21792380.56521739,
+          "memory": {
+            "staticBytesMean": 4781343483.620067,
+            "videoBytesMean": 8789277273.385954,
+            "staticBytesPeak": 4791711707,
+            "videoBytesPeak": 8876900352
+          }
+        },
+        {
+          "label": "current-control-2",
+          "medianMs": 24.0480003356934,
+          "p95Ms": 31.2280006408691,
+          "p99Ms": 35.0499992370605,
+          "renderGpuMeanMs": 17.70044836528967,
+          "renderCpuMeanMs": 6.849855739562238,
+          "processMeanMs": 24.78784180327869,
+          "cameraDrawCalls": 3686.967213114754,
+          "cameraRawPrimitives": 7747128.545901639,
+          "shadowDrawCalls": 12540.918032786885,
+          "shadowRawPrimitives": 22169088.491803277,
+          "memory": {
+            "staticBytesMean": 4736750278.220491,
+            "videoBytesMean": 8528209295.527869,
+            "staticBytesPeak": 4745503368,
+            "videoBytesPeak": 8608464896
+          }
+        }
+      ]
+    },
+    {
+      "phase": "shopping-street",
+      "runs": [
+        {
+          "label": "current-control-1",
+          "medianMs": 11.414999961853,
+          "p95Ms": 14.6949996948242,
+          "p99Ms": 15.4479999542236,
+          "renderGpuMeanMs": 10.44859174610471,
+          "renderCpuMeanMs": 2.0362453416238466,
+          "processMeanMs": 18.161426889107066,
+          "cameraDrawCalls": 1291.8763493621198,
+          "cameraRawPrimitives": 3470789.456329735,
+          "shadowDrawCalls": 2757.377821393523,
+          "shadowRawPrimitives": 8206821.3925417075,
+          "memory": {
+            "staticBytesMean": 4668002856.562316,
+            "videoBytesMean": 8608464896,
+            "staticBytesPeak": 4673132666,
+            "videoBytesPeak": 8608464896
+          }
+        },
+        {
+          "label": "current-candidate-1",
+          "medianMs": 11.0139999389648,
+          "p95Ms": 14.1230001449585,
+          "p99Ms": 14.8929996490479,
+          "renderGpuMeanMs": 9.96257949301571,
+          "renderCpuMeanMs": 1.9565437452364722,
+          "processMeanMs": 15.3346020696143,
+          "cameraDrawCalls": 1287.6020696142991,
+          "cameraRawPrimitives": 3469048.706491063,
+          "shadowDrawCalls": 2492.8447789275633,
+          "shadowRawPrimitives": 8058244.04233302,
+          "memory": {
+            "staticBytesMean": 4710487559.400753,
+            "videoBytesMean": 8906130271.126999,
+            "staticBytesPeak": 4716230575,
+            "videoBytesPeak": 8944009216
+          }
+        },
+        {
+          "label": "current-control-2",
+          "medianMs": 11.4289999008179,
+          "p95Ms": 14.6409997940063,
+          "p99Ms": 16.4020004272461,
+          "renderGpuMeanMs": 10.415672574188594,
+          "renderCpuMeanMs": 2.0452094400409635,
+          "processMeanMs": 20.783522123893608,
+          "cameraDrawCalls": 1289.2645034414945,
+          "cameraRawPrimitives": 3466682.622418879,
+          "shadowDrawCalls": 2753.8210422812194,
+          "shadowRawPrimitives": 8241412.018682399,
+          "memory": {
+            "staticBytesMean": 4664432312.73353,
+            "videoBytesMean": 8637895135.276302,
+            "staticBytesPeak": 4671258856,
+            "videoBytesPeak": 8675573760
+          }
+        }
+      ]
+    },
+    {
+      "phase": "under-bridge",
+      "runs": [
+        {
+          "label": "current-control-1",
+          "medianMs": 19.4969997406006,
+          "p95Ms": 22.6870002746582,
+          "p99Ms": 31.3600006103516,
+          "renderGpuMeanMs": 18.357174776556406,
+          "renderCpuMeanMs": 7.223482523900699,
+          "processMeanMs": 26.25242262895175,
+          "cameraDrawCalls": 7668.658901830283,
+          "cameraRawPrimitives": 10706028.951747088,
+          "shadowDrawCalls": 10255.903494176373,
+          "shadowRawPrimitives": 16692563.600665558,
+          "memory": {
+            "staticBytesMean": 4665953771.424293,
+            "videoBytesMean": 8608464896,
+            "staticBytesPeak": 4674992156,
+            "videoBytesPeak": 8608464896
+          }
+        },
+        {
+          "label": "current-candidate-1",
+          "medianMs": 18.8439998626709,
+          "p95Ms": 22.4039993286133,
+          "p99Ms": 38.3520011901855,
+          "renderGpuMeanMs": 17.771653671574796,
+          "renderCpuMeanMs": 6.361460158883073,
+          "processMeanMs": 26.281549593495935,
+          "cameraDrawCalls": 7665.141463414634,
+          "cameraRawPrimitives": 10756003.660162602,
+          "shadowDrawCalls": 6681.715447154472,
+          "shadowRawPrimitives": 16321634.216260163,
+          "memory": {
+            "staticBytesMean": 4704151613.318699,
+            "videoBytesMean": 8876900352,
+            "staticBytesPeak": 4717738812,
+            "videoBytesPeak": 8876900352
+          }
+        },
+        {
+          "label": "current-control-2",
+          "medianMs": 19.4909992218018,
+          "p95Ms": 22.5629997253418,
+          "p99Ms": 35.7620010375977,
+          "renderGpuMeanMs": 18.35914861618581,
+          "renderCpuMeanMs": 7.257575965882938,
+          "processMeanMs": 26.97509015025025,
+          "cameraDrawCalls": 7669.470784641068,
+          "cameraRawPrimitives": 10758550.372287145,
+          "shadowDrawCalls": 10258.984974958265,
+          "shadowRawPrimitives": 16924464.901502505,
+          "memory": {
+            "staticBytesMean": 4658455157.193656,
+            "videoBytesMean": 8608464896,
+            "staticBytesPeak": 4667126912,
+            "videoBytesPeak": 8608464896
+          }
+        }
+      ]
+    }
+  ],
+  "fixedViews": [
+    {
+      "view": "street",
+      "runs": [
+        {
+          "variant": "before",
+          "index": 0,
+          "medianMs": 15.9779996871948,
+          "p95Ms": 16.7980003356934,
+          "p99Ms": 17.2180004119873,
+          "cameraDrawCalls": 3579,
+          "cameraRawPrimitives": 6449249,
+          "shadowDrawCalls": 12355,
+          "shadowRawPrimitives": 18724018
+        },
+        {
+          "variant": "after",
+          "index": 1,
+          "medianMs": 14.9899997711182,
+          "p95Ms": 16.0419998168945,
+          "p99Ms": 16.3770008087158,
+          "cameraDrawCalls": 3579,
+          "cameraRawPrimitives": 6449249,
+          "shadowDrawCalls": 8676,
+          "shadowRawPrimitives": 18151111
+        },
+        {
+          "variant": "before",
+          "index": 2,
+          "medianMs": 15.9910001754761,
+          "p95Ms": 16.7439994812012,
+          "p99Ms": 17.2029991149902,
+          "cameraDrawCalls": 3579,
+          "cameraRawPrimitives": 6449249,
+          "shadowDrawCalls": 12355,
+          "shadowRawPrimitives": 18724018
+        }
+      ]
+    },
+    {
+      "view": "pier",
+      "runs": [
+        {
+          "variant": "before",
+          "index": 0,
+          "medianMs": 18.0429992675781,
+          "p95Ms": 19.1380004882812,
+          "p99Ms": 20.8759994506836,
+          "cameraDrawCalls": 16503,
+          "cameraRawPrimitives": 15899623,
+          "shadowDrawCalls": 2332,
+          "shadowRawPrimitives": 4204746
+        },
+        {
+          "variant": "after",
+          "index": 1,
+          "medianMs": 17.9379997253418,
+          "p95Ms": 19.117000579834,
+          "p99Ms": 21.8379993438721,
+          "cameraDrawCalls": 16503,
+          "cameraRawPrimitives": 15899623,
+          "shadowDrawCalls": 2007,
+          "shadowRawPrimitives": 4113825
+        },
+        {
+          "variant": "before",
+          "index": 2,
+          "medianMs": 18.0510005950928,
+          "p95Ms": 19,
+          "p99Ms": 19.7639999389648,
+          "cameraDrawCalls": 16503,
+          "cameraRawPrimitives": 15899623,
+          "shadowDrawCalls": 2332,
+          "shadowRawPrimitives": 4204746
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Three sequential official benchmark runs: control, candidate, control; median/p95/p99 are per-run, not pooled.",
+    "Combat control median drift was 1.236 ms. Candidate median and mean GPU time improved against both controls.",
+    "Under-bridge candidate p99 worsened versus both controls; combat p99 lies inside the control range. No universal tail-latency improvement claimed.",
+    "Pier fixed median improved only 0.11 ms; p95 lies inside the control range and p99 worsened.",
+    "Raw primitive counters do not multiply MultiMesh instance counts when mesh LOD is active. They are monitor values, not true weighted triangle totals.",
+    "Diagnostic saved control/candidate geometry derived from verified cached arena and current static source; exact scene hashes and derivation are recorded separately from its unchanged base receipt. Official fresh-recipe production/export verification is a separate gate.",
+    "Fixed views toggle shadow sources/copies in one loaded scene, with zero enemies; hidden extra copies remain present in fixed control. Camera submissions and sun settings are exact across variants.",
+    "Production settings are currently SMAA2 and TAA false; all measurements use native 2560x1440, scale1, uninstrumented, uncapped."
+  ]
+}
