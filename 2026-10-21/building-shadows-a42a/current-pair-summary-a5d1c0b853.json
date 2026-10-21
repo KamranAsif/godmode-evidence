@@ -1,0 +1,264 @@
+{
+  "statistic": "One uninstrumented run per arm on the current runtime; native per-phase frame percentiles",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "enemies": 16,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "firefight-65",
+        "durationMs": 30000,
+        "from": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "fixedCamera": true,
+        "settleMs": 13000,
+        "expectedLivingEnemies": 65,
+        "setup": [
+          {
+            "atMs": 0,
+            "kind": "wave",
+            "count": 65
+          }
+        ],
+        "events": []
+      },
+      {
+        "id": "shopping-street",
+        "durationMs": 12000,
+        "from": [
+          -404,
+          -15.582,
+          -390
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          }
+        ]
+      },
+      {
+        "id": "under-bridge",
+        "durationMs": 12000,
+        "from": [
+          -518,
+          -13.7,
+          -375
+        ],
+        "to": [
+          -534,
+          -13.7,
+          -395
+        ],
+        "yaw": -2.15,
+        "pitch": -0.06,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          },
+          {
+            "atMs": 4000,
+            "name": "debug_survival_command",
+            "payload": {
+              "command": "streak:blast:rcxd:12"
+            },
+            "optional": false
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "provenance": [
+    {
+      "name": "before-current",
+      "createdAt": "2026-10-21T13:39:04.766Z",
+      "buildCommit": "a42a0f852f4cff32f135ac77ca82e77593202c6c",
+      "checkoutCommit": "a42a0f852f4cff32f135ac77ca82e77593202c6c",
+      "dirty": "",
+      "arenaReceiptSha256": "8560cadb20c84bba6229e09b8217bf1a7b7a75d0d63bc71615eb83a71bc1e219",
+      "workloadHash": "2891cffd95fa6b613eab4fbddced8c089d1fe9059ee4feae8800cdef3a9479f0",
+      "measurementHash": "e5765a2a8fdb3f1f09565306389a2fe10ee3f3e31b1c7cda518d96f8ee1ce4a5"
+    },
+    {
+      "name": "after-current",
+      "createdAt": "2026-10-21T12:50:58.657Z",
+      "buildCommit": "a42a0f852f4cff32f135ac77ca82e77593202c6c",
+      "checkoutCommit": "a42a0f852f4cff32f135ac77ca82e77593202c6c",
+      "dirty": "",
+      "arenaReceiptSha256": "964a7c1a5b0aafd73cdb72103049dba5021397ba54a6a1a70c16118a5bb7292d",
+      "workloadHash": "2891cffd95fa6b613eab4fbddced8c089d1fe9059ee4feae8800cdef3a9479f0",
+      "measurementHash": "e5765a2a8fdb3f1f09565306389a2fe10ee3f3e31b1c7cda518d96f8ee1ce4a5"
+    }
+  ],
+  "rows": [
+    {
+      "id": "firefight-65",
+      "before": {
+        "medianMs": 29.3080005645752,
+        "p95Ms": 35.6269989013672,
+        "p99Ms": 40.7239990234375,
+        "processMs": 28.03495102840372,
+        "renderCpuMs": 8.609792366083878,
+        "gpuMs": 20.086342790101078,
+        "cameraCalls": 3684.0930460333007,
+        "shadowCalls": 15477.088148873654,
+        "rawCameraPrimitives": 7705420.027424094,
+        "rawShadowPrimitives": 26536638.808031343
+      },
+      "after": {
+        "medianMs": 27.8080005645752,
+        "p95Ms": 35.5740013122559,
+        "p99Ms": 43.4819984436035,
+        "processMs": 27.95035660377349,
+        "renderCpuMs": 7.836886793262557,
+        "gpuMs": 19.31390282702896,
+        "cameraCalls": 3688.904716981132,
+        "shadowCalls": 12536,
+        "rawCameraPrimitives": 7768414.186792453,
+        "rawShadowPrimitives": 22105063.28301887
+      },
+      "delta": {
+        "medianMs": -1.5,
+        "p95Ms": -0.0529975891112997,
+        "p99Ms": 2.7579994201660014,
+        "processMs": -0.08459442463023237,
+        "renderCpuMs": -0.7729055728213217,
+        "gpuMs": -0.7724399630721166,
+        "cameraCalls": 4.811670947831317,
+        "shadowCalls": -2941.088148873654,
+        "rawCameraPrimitives": 62994.15936835855,
+        "rawShadowPrimitives": -4431575.5250124745
+      },
+      "verdict": "One matched pair on the rebased runtime; small timing differences require repeat context, not a significance claim"
+    },
+    {
+      "id": "shopping-street",
+      "before": {
+        "medianMs": 11.5319995880127,
+        "p95Ms": 14.9650001525879,
+        "p99Ms": 17.625,
+        "processMs": 17.064328031808945,
+        "renderCpuMs": 2.1622942321106167,
+        "gpuMs": 10.567074546283102,
+        "cameraCalls": 1290.0228628230616,
+        "shadowCalls": 3040.1292246520875,
+        "rawCameraPrimitives": 3440332.901590457,
+        "rawShadowPrimitives": 8579710.526838966
+      },
+      "after": {
+        "medianMs": 11.5430002212524,
+        "p95Ms": 14.6120004653931,
+        "p99Ms": 15.8819999694824,
+        "processMs": 19.328639569050246,
+        "renderCpuMs": 2.0953506373752004,
+        "gpuMs": 10.38317532310519,
+        "cameraCalls": 1289.2223310479922,
+        "shadowCalls": 2755.1028403525956,
+        "rawCameraPrimitives": 3472536.3281096965,
+        "rawShadowPrimitives": 8249240.183153771
+      },
+      "delta": {
+        "medianMs": 0.011000633239699908,
+        "p95Ms": -0.35299968719479935,
+        "p99Ms": -1.7430000305175994,
+        "processMs": 2.2643115372413014,
+        "renderCpuMs": -0.06694359473541622,
+        "gpuMs": -0.18389922317791196,
+        "cameraCalls": -0.8005317750694303,
+        "shadowCalls": -285.02638429949184,
+        "rawCameraPrimitives": 32203.42651923932,
+        "rawShadowPrimitives": -330470.34368519485
+      },
+      "verdict": "One matched pair on the rebased runtime; small timing differences require repeat context, not a significance claim"
+    },
+    {
+      "id": "under-bridge",
+      "before": {
+        "medianMs": 20.2490005493164,
+        "p95Ms": 24.8659992218018,
+        "p99Ms": 38.6640014648438,
+        "processMs": 28.30691243432592,
+        "renderCpuMs": 8.323211896857952,
+        "gpuMs": 18.783656761650438,
+        "cameraCalls": 7677.810858143608,
+        "shadowCalls": 12691.042031523642,
+        "rawCameraPrimitives": 10759275.157618213,
+        "rawShadowPrimitives": 19826325.23117338
+      },
+      "after": {
+        "medianMs": 19.5930004119873,
+        "p95Ms": 23.4300003051758,
+        "p99Ms": 41.0970001220703,
+        "processMs": 26.42487162162179,
+        "renderCpuMs": 7.610155386900575,
+        "gpuMs": 18.33785135520473,
+        "cameraCalls": 7672.8496621621625,
+        "shadowCalls": 10262.135135135135,
+        "rawCameraPrimitives": 10757781.613175675,
+        "rawShadowPrimitives": 16937360.425675675
+      },
+      "delta": {
+        "medianMs": -0.656000137329098,
+        "p95Ms": -1.4359989166260014,
+        "p99Ms": 2.4329986572264986,
+        "processMs": -1.8820408127041297,
+        "renderCpuMs": -0.7130565099573767,
+        "gpuMs": -0.4458054064457073,
+        "cameraCalls": -4.961195981445599,
+        "shadowCalls": -2428.9068963885074,
+        "rawCameraPrimitives": -1493.544442538172,
+        "rawShadowPrimitives": -2888964.805497706
+      },
+      "verdict": "One matched pair on the rebased runtime; small timing differences require repeat context, not a significance claim"
+    }
+  ]
+}
