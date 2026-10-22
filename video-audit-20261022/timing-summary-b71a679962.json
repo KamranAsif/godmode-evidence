@@ -1,0 +1,1060 @@
+{
+  "resolution": [
+    2560,
+    1440
+  ],
+  "seed": "0x43BA771E",
+  "instrumentation": "frames-only, no profiling or engine statistics; separate exclusive timing hold for every run",
+  "lighting": {
+    "firefight-65": {
+      "main": {
+        "median": 15.3509998321533,
+        "p95": 18.9340000152588,
+        "p99": 20.5900001525879,
+        "runMedians": [
+          15.3520002365112,
+          15.3229999542236,
+          15.3509998321533
+        ],
+        "pairedMsSaved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "medianFrameTimeChangePercent": 0
+      },
+      "V2": {
+        "median": 15.8940000534058,
+        "p95": 19.6319999694824,
+        "p99": 20.9939994812012,
+        "runMedians": [
+          15.7489995956421,
+          15.9340000152588,
+          15.8940000534058
+        ],
+        "pairedMsSaved": {
+          "median": -0.5430002212525,
+          "min": -0.6110000610351989,
+          "max": -0.39699935913090023
+        },
+        "medianFrameTimeChangePercent": 3.5372303249926684
+      }
+    },
+    "shopping-street": {
+      "main": {
+        "median": 10.585000038147,
+        "p95": 13.6400003433228,
+        "p99": 14.5799999237061,
+        "runMedians": [
+          10.7370004653931,
+          10.4890003204346,
+          10.585000038147
+        ],
+        "pairedMsSaved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "medianFrameTimeChangePercent": 0
+      },
+      "V2": {
+        "median": 11.2030000686646,
+        "p95": 14.2200002670288,
+        "p99": 15.085000038147,
+        "runMedians": [
+          11.0500001907349,
+          11.2030000686646,
+          11.3050003051758
+        ],
+        "pairedMsSaved": {
+          "median": -0.71399974823,
+          "min": -0.7200002670288015,
+          "max": -0.3129997253418004
+        },
+        "medianFrameTimeChangePercent": 5.838450904963688
+      }
+    },
+    "under-bridge": {
+      "main": {
+        "median": 17.9449996948242,
+        "p95": 20.2019996643066,
+        "p99": 27.7399997711182,
+        "runMedians": [
+          17.9449996948242,
+          17.886999130249,
+          18.0890007019043
+        ],
+        "pairedMsSaved": {
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "medianFrameTimeChangePercent": 0
+      },
+      "V2": {
+        "median": 18.6800003051758,
+        "p95": 21.4090003967285,
+        "p99": 38.2470016479492,
+        "runMedians": [
+          18.4939994812012,
+          18.7299995422363,
+          18.6800003051758
+        ],
+        "pairedMsSaved": {
+          "median": -0.5909996032714986,
+          "min": -0.8430004119873011,
+          "max": -0.5489997863769993
+        },
+        "medianFrameTimeChangePercent": 4.095851896634972
+      }
+    }
+  },
+  "fsr2": {
+    "status": "blocked by Kamran; do not run again in any mode",
+    "reason": "AMD Display 4101 recovery reproduced at 16:56:53 local with FSR2 77% as the only renderer. No valid FSR2 timing set was collected."
+  },
+  "receipts": [
+    {
+      "file": "lighting-1-main.json",
+      "commit": "c210195fb5f805f3d6f9d46e6cc4a22d461a710d",
+      "startedAt": "2026-10-22T20:06:58.261Z",
+      "completedAt": "2026-10-22T20:09:47.520Z",
+      "arena": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "measurementHash": "ef4e8e976be7b52eeb2df84d9352c64f394e2464ed9e4c70c2f1ffdfe0737b2d",
+      "conditions": {
+        "scenarioVersion": 1,
+        "seed": 1136293662,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "taa": false,
+        "screenSpaceAA": 2,
+        "profile": false,
+        "framesOnly": true,
+        "msaa": 0,
+        "scaling": 1,
+        "scalingMode": 0,
+        "fsrSharpness": 0.2,
+        "fov": 75,
+        "enemies": 16,
+        "warmupMs": 10000,
+        "segments": [
+          {
+            "id": "firefight-65",
+            "durationMs": 30000,
+            "from": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 3.141592653589793,
+            "pitch": 0,
+            "fixedCamera": true,
+            "settleMs": 13000,
+            "expectedLivingEnemies": 65,
+            "setup": [
+              {
+                "atMs": 0,
+                "kind": "wave",
+                "count": 65
+              }
+            ],
+            "events": []
+          },
+          {
+            "id": "shopping-street",
+            "durationMs": 12000,
+            "from": [
+              -404,
+              -15.582,
+              -390
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 0,
+            "pitch": 0,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              }
+            ]
+          },
+          {
+            "id": "under-bridge",
+            "durationMs": 12000,
+            "from": [
+              -518,
+              -13.7,
+              -375
+            ],
+            "to": [
+              -534,
+              -13.7,
+              -395
+            ],
+            "yaw": -2.15,
+            "pitch": -0.06,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              },
+              {
+                "atMs": 4000,
+                "name": "debug_survival_command",
+                "payload": {
+                  "command": "streak:blast:rcxd:12"
+                },
+                "optional": false
+              },
+              {
+                "atMs": 9000,
+                "name": "debug_kill_admins",
+                "payload": {},
+                "optional": true
+              }
+            ]
+          }
+        ],
+        "headlessSmoke": false,
+        "highlightEvent": false,
+        "foliage": "on",
+        "settings": {
+          "audioPercent": 100,
+          "showFps": false,
+          "shakePercent": 0,
+          "crashReports": false,
+          "stream": false,
+          "streaksAlwaysReady": true,
+          "newKillstreakFlow": false
+        }
+      },
+      "engine": {
+        "bufferMemoryBytes": 2101574244,
+        "displayServer": "Windows",
+        "frameProfile": false,
+        "framesOnly": true,
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "msaa": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingDriver": "d3d12",
+        "renderingMethod": "forward_plus",
+        "scaling3dMode": 0,
+        "scaling3dScale": 1,
+        "screenSpaceAA": 2,
+        "staticMemoryBytes": 4688137707,
+        "taa": false,
+        "textureMemoryBytes": 3141959680,
+        "threadModel": 2,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 8541356032,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "vsyncMode": 0
+      }
+    },
+    {
+      "file": "lighting-1-V2.json",
+      "commit": "749cf090c8b1fbeaea4de567cee4e24c0d6e9406",
+      "startedAt": "2026-10-22T20:31:17.403Z",
+      "completedAt": "2026-10-22T20:33:55.161Z",
+      "arena": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "measurementHash": "ef4e8e976be7b52eeb2df84d9352c64f394e2464ed9e4c70c2f1ffdfe0737b2d",
+      "conditions": {
+        "scenarioVersion": 1,
+        "seed": 1136293662,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "taa": false,
+        "screenSpaceAA": 2,
+        "profile": false,
+        "framesOnly": true,
+        "msaa": 0,
+        "scaling": 1,
+        "scalingMode": 0,
+        "fsrSharpness": 0.2,
+        "fov": 75,
+        "enemies": 16,
+        "warmupMs": 10000,
+        "segments": [
+          {
+            "id": "firefight-65",
+            "durationMs": 30000,
+            "from": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 3.141592653589793,
+            "pitch": 0,
+            "fixedCamera": true,
+            "settleMs": 13000,
+            "expectedLivingEnemies": 65,
+            "setup": [
+              {
+                "atMs": 0,
+                "kind": "wave",
+                "count": 65
+              }
+            ],
+            "events": []
+          },
+          {
+            "id": "shopping-street",
+            "durationMs": 12000,
+            "from": [
+              -404,
+              -15.582,
+              -390
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 0,
+            "pitch": 0,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              }
+            ]
+          },
+          {
+            "id": "under-bridge",
+            "durationMs": 12000,
+            "from": [
+              -518,
+              -13.7,
+              -375
+            ],
+            "to": [
+              -534,
+              -13.7,
+              -395
+            ],
+            "yaw": -2.15,
+            "pitch": -0.06,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              },
+              {
+                "atMs": 4000,
+                "name": "debug_survival_command",
+                "payload": {
+                  "command": "streak:blast:rcxd:12"
+                },
+                "optional": false
+              },
+              {
+                "atMs": 9000,
+                "name": "debug_kill_admins",
+                "payload": {},
+                "optional": true
+              }
+            ]
+          }
+        ],
+        "headlessSmoke": false,
+        "highlightEvent": false,
+        "foliage": "on",
+        "settings": {
+          "audioPercent": 100,
+          "showFps": false,
+          "shakePercent": 0,
+          "crashReports": false,
+          "stream": false,
+          "streaksAlwaysReady": true,
+          "newKillstreakFlow": false
+        }
+      },
+      "engine": {
+        "bufferMemoryBytes": 2101687772,
+        "displayServer": "Windows",
+        "frameProfile": false,
+        "framesOnly": true,
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "msaa": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingDriver": "d3d12",
+        "renderingMethod": "forward_plus",
+        "scaling3dMode": 0,
+        "scaling3dScale": 1,
+        "screenSpaceAA": 2,
+        "staticMemoryBytes": 4688545711,
+        "taa": false,
+        "textureMemoryBytes": 3144581120,
+        "threadModel": 2,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 8541356032,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "vsyncMode": 0
+      }
+    },
+    {
+      "file": "lighting-2-main.json",
+      "commit": "c210195fb5f805f3d6f9d46e6cc4a22d461a710d",
+      "startedAt": "2026-10-22T20:50:44.583Z",
+      "completedAt": "2026-10-22T20:53:39.770Z",
+      "arena": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "measurementHash": "ef4e8e976be7b52eeb2df84d9352c64f394e2464ed9e4c70c2f1ffdfe0737b2d",
+      "conditions": {
+        "scenarioVersion": 1,
+        "seed": 1136293662,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "taa": false,
+        "screenSpaceAA": 2,
+        "profile": false,
+        "framesOnly": true,
+        "msaa": 0,
+        "scaling": 1,
+        "scalingMode": 0,
+        "fsrSharpness": 0.2,
+        "fov": 75,
+        "enemies": 16,
+        "warmupMs": 10000,
+        "segments": [
+          {
+            "id": "firefight-65",
+            "durationMs": 30000,
+            "from": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 3.141592653589793,
+            "pitch": 0,
+            "fixedCamera": true,
+            "settleMs": 13000,
+            "expectedLivingEnemies": 65,
+            "setup": [
+              {
+                "atMs": 0,
+                "kind": "wave",
+                "count": 65
+              }
+            ],
+            "events": []
+          },
+          {
+            "id": "shopping-street",
+            "durationMs": 12000,
+            "from": [
+              -404,
+              -15.582,
+              -390
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 0,
+            "pitch": 0,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              }
+            ]
+          },
+          {
+            "id": "under-bridge",
+            "durationMs": 12000,
+            "from": [
+              -518,
+              -13.7,
+              -375
+            ],
+            "to": [
+              -534,
+              -13.7,
+              -395
+            ],
+            "yaw": -2.15,
+            "pitch": -0.06,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              },
+              {
+                "atMs": 4000,
+                "name": "debug_survival_command",
+                "payload": {
+                  "command": "streak:blast:rcxd:12"
+                },
+                "optional": false
+              },
+              {
+                "atMs": 9000,
+                "name": "debug_kill_admins",
+                "payload": {},
+                "optional": true
+              }
+            ]
+          }
+        ],
+        "headlessSmoke": false,
+        "highlightEvent": false,
+        "foliage": "on",
+        "settings": {
+          "audioPercent": 100,
+          "showFps": false,
+          "shakePercent": 0,
+          "crashReports": false,
+          "stream": false,
+          "streaksAlwaysReady": true,
+          "newKillstreakFlow": false
+        }
+      },
+      "engine": {
+        "bufferMemoryBytes": 2101681232,
+        "displayServer": "Windows",
+        "frameProfile": false,
+        "framesOnly": true,
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "msaa": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingDriver": "d3d12",
+        "renderingMethod": "forward_plus",
+        "scaling3dMode": 0,
+        "scaling3dScale": 1,
+        "screenSpaceAA": 2,
+        "staticMemoryBytes": 4689932293,
+        "taa": false,
+        "textureMemoryBytes": 3144515584,
+        "threadModel": 2,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 8541356032,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "vsyncMode": 0
+      }
+    },
+    {
+      "file": "lighting-2-V2.json",
+      "commit": "749cf090c8b1fbeaea4de567cee4e24c0d6e9406",
+      "startedAt": "2026-10-22T21:12:02.371Z",
+      "completedAt": "2026-10-22T21:14:41.578Z",
+      "arena": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "measurementHash": "ef4e8e976be7b52eeb2df84d9352c64f394e2464ed9e4c70c2f1ffdfe0737b2d",
+      "conditions": {
+        "scenarioVersion": 1,
+        "seed": 1136293662,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "taa": false,
+        "screenSpaceAA": 2,
+        "profile": false,
+        "framesOnly": true,
+        "msaa": 0,
+        "scaling": 1,
+        "scalingMode": 0,
+        "fsrSharpness": 0.2,
+        "fov": 75,
+        "enemies": 16,
+        "warmupMs": 10000,
+        "segments": [
+          {
+            "id": "firefight-65",
+            "durationMs": 30000,
+            "from": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 3.141592653589793,
+            "pitch": 0,
+            "fixedCamera": true,
+            "settleMs": 13000,
+            "expectedLivingEnemies": 65,
+            "setup": [
+              {
+                "atMs": 0,
+                "kind": "wave",
+                "count": 65
+              }
+            ],
+            "events": []
+          },
+          {
+            "id": "shopping-street",
+            "durationMs": 12000,
+            "from": [
+              -404,
+              -15.582,
+              -390
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 0,
+            "pitch": 0,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              }
+            ]
+          },
+          {
+            "id": "under-bridge",
+            "durationMs": 12000,
+            "from": [
+              -518,
+              -13.7,
+              -375
+            ],
+            "to": [
+              -534,
+              -13.7,
+              -395
+            ],
+            "yaw": -2.15,
+            "pitch": -0.06,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              },
+              {
+                "atMs": 4000,
+                "name": "debug_survival_command",
+                "payload": {
+                  "command": "streak:blast:rcxd:12"
+                },
+                "optional": false
+              },
+              {
+                "atMs": 9000,
+                "name": "debug_kill_admins",
+                "payload": {},
+                "optional": true
+              }
+            ]
+          }
+        ],
+        "headlessSmoke": false,
+        "highlightEvent": false,
+        "foliage": "on",
+        "settings": {
+          "audioPercent": 100,
+          "showFps": false,
+          "shakePercent": 0,
+          "crashReports": false,
+          "stream": false,
+          "streaksAlwaysReady": true,
+          "newKillstreakFlow": false
+        }
+      },
+      "engine": {
+        "bufferMemoryBytes": 2101688660,
+        "displayServer": "Windows",
+        "frameProfile": false,
+        "framesOnly": true,
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "msaa": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingDriver": "d3d12",
+        "renderingMethod": "forward_plus",
+        "scaling3dMode": 0,
+        "scaling3dScale": 1,
+        "screenSpaceAA": 2,
+        "staticMemoryBytes": 4691679018,
+        "taa": false,
+        "textureMemoryBytes": 3144450048,
+        "threadModel": 2,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 8541356032,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "vsyncMode": 0
+      }
+    },
+    {
+      "file": "lighting-3-main.json",
+      "commit": "c210195fb5f805f3d6f9d46e6cc4a22d461a710d",
+      "startedAt": "2026-10-22T21:42:22.353Z",
+      "completedAt": "2026-10-22T21:45:02.990Z",
+      "arena": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "measurementHash": "ef4e8e976be7b52eeb2df84d9352c64f394e2464ed9e4c70c2f1ffdfe0737b2d",
+      "conditions": {
+        "scenarioVersion": 1,
+        "seed": 1136293662,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "taa": false,
+        "screenSpaceAA": 2,
+        "profile": false,
+        "framesOnly": true,
+        "msaa": 0,
+        "scaling": 1,
+        "scalingMode": 0,
+        "fsrSharpness": 0.2,
+        "fov": 75,
+        "enemies": 16,
+        "warmupMs": 10000,
+        "segments": [
+          {
+            "id": "firefight-65",
+            "durationMs": 30000,
+            "from": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 3.141592653589793,
+            "pitch": 0,
+            "fixedCamera": true,
+            "settleMs": 13000,
+            "expectedLivingEnemies": 65,
+            "setup": [
+              {
+                "atMs": 0,
+                "kind": "wave",
+                "count": 65
+              }
+            ],
+            "events": []
+          },
+          {
+            "id": "shopping-street",
+            "durationMs": 12000,
+            "from": [
+              -404,
+              -15.582,
+              -390
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 0,
+            "pitch": 0,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              }
+            ]
+          },
+          {
+            "id": "under-bridge",
+            "durationMs": 12000,
+            "from": [
+              -518,
+              -13.7,
+              -375
+            ],
+            "to": [
+              -534,
+              -13.7,
+              -395
+            ],
+            "yaw": -2.15,
+            "pitch": -0.06,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              },
+              {
+                "atMs": 4000,
+                "name": "debug_survival_command",
+                "payload": {
+                  "command": "streak:blast:rcxd:12"
+                },
+                "optional": false
+              },
+              {
+                "atMs": 9000,
+                "name": "debug_kill_admins",
+                "payload": {},
+                "optional": true
+              }
+            ]
+          }
+        ],
+        "headlessSmoke": false,
+        "highlightEvent": false,
+        "foliage": "on",
+        "settings": {
+          "audioPercent": 100,
+          "showFps": false,
+          "shakePercent": 0,
+          "crashReports": false,
+          "stream": false,
+          "streaksAlwaysReady": true,
+          "newKillstreakFlow": false
+        }
+      },
+      "engine": {
+        "bufferMemoryBytes": 2101696740,
+        "displayServer": "Windows",
+        "frameProfile": false,
+        "framesOnly": true,
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "msaa": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingDriver": "d3d12",
+        "renderingMethod": "forward_plus",
+        "scaling3dMode": 0,
+        "scaling3dScale": 1,
+        "screenSpaceAA": 2,
+        "staticMemoryBytes": 4691926904,
+        "taa": false,
+        "textureMemoryBytes": 3144515584,
+        "threadModel": 2,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 8608464896,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "vsyncMode": 0
+      }
+    },
+    {
+      "file": "lighting-3-V2.json",
+      "commit": "749cf090c8b1fbeaea4de567cee4e24c0d6e9406",
+      "startedAt": "2026-10-22T22:10:07.268Z",
+      "completedAt": "2026-10-22T22:12:47.976Z",
+      "arena": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "measurementHash": "ef4e8e976be7b52eeb2df84d9352c64f394e2464ed9e4c70c2f1ffdfe0737b2d",
+      "conditions": {
+        "scenarioVersion": 1,
+        "seed": 1136293662,
+        "resolution": [
+          2560,
+          1440
+        ],
+        "taa": false,
+        "screenSpaceAA": 2,
+        "profile": false,
+        "framesOnly": true,
+        "msaa": 0,
+        "scaling": 1,
+        "scalingMode": 0,
+        "fsrSharpness": 0.2,
+        "fov": 75,
+        "enemies": 16,
+        "warmupMs": 10000,
+        "segments": [
+          {
+            "id": "firefight-65",
+            "durationMs": 30000,
+            "from": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 3.141592653589793,
+            "pitch": 0,
+            "fixedCamera": true,
+            "settleMs": 13000,
+            "expectedLivingEnemies": 65,
+            "setup": [
+              {
+                "atMs": 0,
+                "kind": "wave",
+                "count": 65
+              }
+            ],
+            "events": []
+          },
+          {
+            "id": "shopping-street",
+            "durationMs": 12000,
+            "from": [
+              -404,
+              -15.582,
+              -390
+            ],
+            "to": [
+              -404,
+              -15.582,
+              -414
+            ],
+            "yaw": 0,
+            "pitch": 0,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              }
+            ]
+          },
+          {
+            "id": "under-bridge",
+            "durationMs": 12000,
+            "from": [
+              -518,
+              -13.7,
+              -375
+            ],
+            "to": [
+              -534,
+              -13.7,
+              -395
+            ],
+            "yaw": -2.15,
+            "pitch": -0.06,
+            "events": [
+              {
+                "atMs": 500,
+                "kind": "wave",
+                "count": 16
+              },
+              {
+                "atMs": 4000,
+                "name": "debug_survival_command",
+                "payload": {
+                  "command": "streak:blast:rcxd:12"
+                },
+                "optional": false
+              },
+              {
+                "atMs": 9000,
+                "name": "debug_kill_admins",
+                "payload": {},
+                "optional": true
+              }
+            ]
+          }
+        ],
+        "headlessSmoke": false,
+        "highlightEvent": false,
+        "foliage": "on",
+        "settings": {
+          "audioPercent": 100,
+          "showFps": false,
+          "shakePercent": 0,
+          "crashReports": false,
+          "stream": false,
+          "streaksAlwaysReady": true,
+          "newKillstreakFlow": false
+        }
+      },
+      "engine": {
+        "bufferMemoryBytes": 2101703916,
+        "displayServer": "Windows",
+        "frameProfile": false,
+        "framesOnly": true,
+        "headless": false,
+        "lowTextures": false,
+        "maxFps": 0,
+        "msaa": 0,
+        "noLightmap": false,
+        "physicsTicksPerSecond": 60,
+        "refreshRateHz": 60,
+        "renderingDriver": "d3d12",
+        "renderingMethod": "forward_plus",
+        "scaling3dMode": 0,
+        "scaling3dScale": 1,
+        "screenSpaceAA": 2,
+        "staticMemoryBytes": 4691985096,
+        "taa": false,
+        "textureMemoryBytes": 3144515584,
+        "threadModel": 2,
+        "videoAdapter": "AMD Radeon RX 9070 XT",
+        "videoMemoryBytes": 8541356032,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "vsyncMode": 0
+      }
+    }
+  ]
+}
