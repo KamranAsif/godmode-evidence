@@ -1,0 +1,1267 @@
+{
+  "seed": "0x43BA771E",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fov": 75,
+  "views": [
+    {
+      "id": "01-shop",
+      "title": "Shop street",
+      "position": [
+        -404,
+        -15.582,
+        -390
+      ],
+      "yaw": 0,
+      "pitch": 0.02
+    },
+    {
+      "id": "02-facade",
+      "title": "Facade at 5 m",
+      "position": [
+        -404.5,
+        -15.582,
+        -402
+      ],
+      "yaw": 1.5707963267948966,
+      "pitch": 0.35
+    },
+    {
+      "id": "03-bridge",
+      "title": "Under the bridge",
+      "position": [
+        -518,
+        -13.7,
+        -375
+      ],
+      "yaw": -2.15,
+      "pitch": -0.06
+    },
+    {
+      "id": "04-fight",
+      "title": "Mid-fight / 12 riflemen",
+      "position": [
+        -404,
+        -15.582,
+        -414
+      ],
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "combat": true
+    },
+    {
+      "id": "05-side-street",
+      "title": "Shaded side street",
+      "position": [
+        -421,
+        -15.6,
+        -366
+      ],
+      "yaw": -1.54,
+      "pitch": 0.015
+    },
+    {
+      "id": "06-wide",
+      "title": "Wide waterfront",
+      "position": [
+        -435,
+        -11,
+        -484
+      ],
+      "yaw": -0.93,
+      "pitch": -0.18
+    }
+  ],
+  "experiments": [
+    {
+      "id": "material-response",
+      "rank": 1,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "static_nonvehicle_street_prop_materials": {
+          "paint.surface_roughness": 0.64,
+          "metal.surface_roughness": 0.6,
+          "wood.surface_roughness": 0.85
+        }
+      },
+      "C": {
+        "static_nonvehicle_street_prop_materials": {
+          "paint.surface_roughness": 0.5,
+          "metal.surface_roughness": 0.42,
+          "wood.surface_roughness": 0.78
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "01:12",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=72s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "01:00",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=60s"
+        }
+      ]
+    },
+    {
+      "id": "gradient-grade",
+      "rank": 2,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Filter_Strenght": 0.06
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Filter_Strenght": 0.14
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "05:23",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=323s"
+        }
+      ]
+    },
+    {
+      "id": "local-reflection-probe",
+      "rank": 3,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "ReflectionProbe": {
+          "count": 1,
+          "placement": "SHOP_FRONTAGE_APPROVED",
+          "size": [
+            16,
+            8,
+            16
+          ],
+          "origin_offset": [
+            0,
+            0,
+            0
+          ],
+          "max_distance": 24,
+          "intensity": 0.35,
+          "blend_distance": 2,
+          "box_projection": true,
+          "interior": false,
+          "enable_shadows": false,
+          "ambient_mode": "AMBIENT_DISABLED",
+          "update_mode": "UPDATE_ONCE",
+          "cull_mask": 2,
+          "position": [
+            -411,
+            -14.14901,
+            -400
+          ]
+        }
+      },
+      "C": {
+        "ReflectionProbe": {
+          "count": 1,
+          "placement": "SHOP_FRONTAGE_APPROVED",
+          "size": [
+            16,
+            8,
+            16
+          ],
+          "origin_offset": [
+            0,
+            0,
+            0
+          ],
+          "max_distance": 24,
+          "intensity": 0.7,
+          "blend_distance": 2,
+          "box_projection": true,
+          "interior": false,
+          "enable_shadows": false,
+          "ambient_mode": "AMBIENT_DISABLED",
+          "update_mode": "UPDATE_ONCE",
+          "cull_mask": 2,
+          "position": [
+            -411,
+            -14.14901,
+            -400
+          ]
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "13:50",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=830s"
+        },
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "01:12",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=72s"
+        }
+      ],
+      "specPlacement": "WESTERN_HERO_PROBE"
+    },
+    {
+      "id": "exposure",
+      "rank": 4,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "tonemap_exposure": 0.73
+        }
+      },
+      "C": {
+        "Environment": {
+          "tonemap_exposure": 0.78
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:30",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=30s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "06:23",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=383s"
+        }
+      ]
+    },
+    {
+      "id": "tone-curve",
+      "rank": 5,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "tonemap_mode": "TONE_MAPPER_AGX",
+          "tonemap_agx_contrast": 1.2
+        }
+      },
+      "C": {
+        "Environment": {
+          "tonemap_mode": "TONE_MAPPER_AGX",
+          "tonemap_agx_contrast": 1.3
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:06",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=6s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "06:23",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=383s"
+        },
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:03",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=183s"
+        }
+      ]
+    },
+    {
+      "id": "main-temperature",
+      "rank": 6,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Main_Color_Temp": 4400
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Main_Color_Temp": 4200
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "main-contrast",
+      "rank": 9,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "adjustment_enabled": true,
+          "adjustment_contrast": 1.1
+        }
+      },
+      "C": {
+        "Environment": {
+          "adjustment_enabled": true,
+          "adjustment_contrast": 1.14
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "main-saturation",
+      "rank": 10,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "adjustment_enabled": true,
+          "adjustment_saturation": 1.11
+        }
+      },
+      "C": {
+        "Environment": {
+          "adjustment_enabled": true,
+          "adjustment_saturation": 1.16
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        },
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:06",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=6s"
+        }
+      ]
+    },
+    {
+      "id": "zoned-temperature",
+      "rank": 11,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadow_Color_Temp": 2,
+            "Mid_Color_Temp": 0,
+            "High_Color_Temp": -1
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadow_Color_Temp": 5,
+            "Mid_Color_Temp": 0,
+            "High_Color_Temp": -3
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "zoned-brightness",
+      "rank": 13,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadow_Brightness": 1.03,
+            "Mid_Brightness": 1,
+            "High_Brightness": 1
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadow_Brightness": 1.08,
+            "Mid_Brightness": 1,
+            "High_Brightness": 1
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "sky-backdrop",
+      "rank": 16,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "morning_sky_shader": {
+          "panorama_energy": 1.5,
+          "atmosphere_blue": 0.85
+        }
+      },
+      "C": {
+        "morning_sky_shader": {
+          "panorama_energy": 1.35,
+          "atmosphere_blue": 0.75
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:57",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=57s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "05:22",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=322s"
+        }
+      ]
+    },
+    {
+      "id": "sky-radiance",
+      "rank": 17,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Sky": {
+          "radiance_size": "RADIANCE_SIZE_256"
+        }
+      },
+      "C": {
+        "Sky": {
+          "radiance_size": "RADIANCE_SIZE_512"
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "05:50",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=350s"
+        }
+      ]
+    },
+    {
+      "id": "key-fill-balance",
+      "rank": 18,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "ambient_light_energy": 0.7
+        }
+      },
+      "C": {
+        "Environment": {
+          "ambient_light_energy": 0.6
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:30",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=30s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "05:22",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=322s"
+        }
+      ]
+    },
+    {
+      "id": "ssao",
+      "rank": 19,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "ssao_radius": 2.5,
+          "ssao_intensity": 5,
+          "ssao_power": 2
+        }
+      },
+      "C": {
+        "Environment": {
+          "ssao_radius": 2,
+          "ssao_intensity": 6,
+          "ssao_power": 2
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:45",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=45s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "07:42",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=462s"
+        }
+      ]
+    },
+    {
+      "id": "ssil",
+      "rank": 20,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "ssil_enabled": true,
+          "ssil_intensity": 2.85
+        }
+      },
+      "C": {
+        "Environment": {
+          "ssil_enabled": true,
+          "ssil_intensity": 3.1
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:30",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=30s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "08:05",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=485s"
+        }
+      ]
+    },
+    {
+      "id": "distance-fog",
+      "rank": 21,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "fog_enabled": true,
+          "fog_density": 0.00012,
+          "fog_aerial_perspective": 0.06,
+          "fog_sky_affect": 0
+        }
+      },
+      "C": {
+        "Environment": {
+          "fog_enabled": true,
+          "fog_density": 0.0002,
+          "fog_aerial_perspective": 0.1,
+          "fog_sky_affect": 0
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:24",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=24s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "08:36",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=516s"
+        }
+      ]
+    },
+    {
+      "id": "sun-softness",
+      "rank": 26,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Sun": {
+          "light_angular_distance": 0.4,
+          "shadow_blur": 1.15
+        }
+      },
+      "C": {
+        "Sun": {
+          "light_angular_distance": 0.5,
+          "shadow_blur": 1.35
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:06",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=6s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "04:26",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=266s"
+        }
+      ]
+    },
+    {
+      "id": "debanding",
+      "rank": 35,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Viewport": {
+          "use_debanding": true
+        }
+      },
+      "C": {
+        "Viewport": {
+          "use_debanding": true
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "12:45",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=765s"
+        }
+      ]
+    },
+    {
+      "id": "glow",
+      "rank": 36,
+      "status": "try",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "glow_enabled": true,
+          "glow_intensity": 0.16,
+          "glow_hdr_threshold": 2.2,
+          "glow_bloom": 0
+        }
+      },
+      "C": {
+        "Environment": {
+          "glow_enabled": true,
+          "glow_intensity": 0.24,
+          "glow_hdr_threshold": 2.2,
+          "glow_bloom": 0
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:57",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=57s"
+        },
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:03",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=183s"
+        }
+      ]
+    },
+    {
+      "id": "main-green-tint",
+      "rank": 7,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Main_Green_Tint": -1
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Main_Green_Tint": -3
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "main-brightness",
+      "rank": 8,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "adjustment_enabled": true,
+          "adjustment_brightness": 1.02
+        }
+      },
+      "C": {
+        "Environment": {
+          "adjustment_enabled": true,
+          "adjustment_brightness": 1.05
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "zoned-tint",
+      "rank": 12,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadow_Green_Tint": -1,
+            "Mid_Green_Tint": 0,
+            "High_Green_Tint": 0
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadow_Green_Tint": -3,
+            "Mid_Green_Tint": 0,
+            "High_Green_Tint": 0
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "zoned-contrast",
+      "rank": 14,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadow_Contrast": 1,
+            "Mid_Contrast": 1.03,
+            "High_Contrast": 1
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadow_Contrast": 1,
+            "Mid_Contrast": 1.08,
+            "High_Contrast": 1
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "zoned-saturation",
+      "rank": 15,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadows_Saturation": 1,
+            "Mid_Saturation": 1,
+            "High_Saturation": 0.95
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Shadows_Saturation": 1,
+            "Mid_Saturation": 1,
+            "High_Saturation": 0.85
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "03:27",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=207s"
+        }
+      ]
+    },
+    {
+      "id": "volumetric-fog",
+      "rank": 22,
+      "status": "optional_expensive",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "volumetric_fog_enabled": true,
+          "volumetric_fog_density": 0,
+          "volumetric_fog_length": 64,
+          "volumetric_fog_albedo": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "volumetric_fog_gi_inject": 0,
+          "volumetric_fog_temporal_reprojection_enabled": true,
+          "volumetric_fog_temporal_reprojection_amount": 0.9
+        },
+        "FogVolume": {
+          "position_anchor": "UNDER_BRIDGE_CAMERA_PLUS_FORWARD_12M",
+          "size": [
+            24,
+            6,
+            24
+          ],
+          "shape": "SHAPE_BOX",
+          "FogMaterial": {
+            "density": 0.001,
+            "height_falloff": 0.1
+          }
+        }
+      },
+      "C": {
+        "Environment": {
+          "volumetric_fog_enabled": true,
+          "volumetric_fog_density": 0,
+          "volumetric_fog_length": 64,
+          "volumetric_fog_albedo": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "volumetric_fog_gi_inject": 0,
+          "volumetric_fog_temporal_reprojection_enabled": true,
+          "volumetric_fog_temporal_reprojection_amount": 0.9
+        },
+        "FogVolume": {
+          "position_anchor": "UNDER_BRIDGE_CAMERA_PLUS_FORWARD_12M",
+          "size": [
+            24,
+            6,
+            24
+          ],
+          "shape": "SHAPE_BOX",
+          "FogMaterial": {
+            "density": 0.003,
+            "height_falloff": 0.1
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:30",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=30s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "08:42",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=522s"
+        }
+      ]
+    },
+    {
+      "id": "light-shafts",
+      "rank": 23,
+      "status": "optional_expensive",
+      "A": "V2 source unchanged",
+      "B": {
+        "inherit_setup": "volumetric-fog.B_settings",
+        "Sun": {
+          "light_volumetric_fog_energy": 1.5
+        }
+      },
+      "C": {
+        "inherit_setup": "volumetric-fog.B_settings",
+        "Sun": {
+          "light_volumetric_fog_energy": 3
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:30",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=30s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "08:55",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=535s"
+        }
+      ]
+    },
+    {
+      "id": "ssr",
+      "rank": 24,
+      "status": "optional_expensive",
+      "A": "V2 source unchanged",
+      "B": {
+        "Environment": {
+          "ssr_enabled": true,
+          "ssr_max_steps": 32,
+          "ssr_fade_in": 0.15,
+          "ssr_fade_out": 2,
+          "ssr_depth_tolerance": 0.2
+        }
+      },
+      "C": {
+        "Environment": {
+          "ssr_enabled": true,
+          "ssr_max_steps": 64,
+          "ssr_fade_in": 0.15,
+          "ssr_fade_out": 2,
+          "ssr_depth_tolerance": 0.2
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "07:07",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=427s"
+        },
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "01:12",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=72s"
+        }
+      ]
+    },
+    {
+      "id": "cascade-distribution",
+      "rank": 27,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "Sun": {
+          "directional_shadow_split_2": 0.17
+        }
+      },
+      "C": {
+        "Sun": {
+          "directional_shadow_split_2": 0.2
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "06:36",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=396s"
+        }
+      ]
+    },
+    {
+      "id": "practical-pools",
+      "rank": 28,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "WesternPractical_* (existing OmniLight3D only)": {
+          "light_energy": 2.5,
+          "shadow_enabled": false
+        }
+      },
+      "C": {
+        "WesternPractical_* (existing OmniLight3D only)": {
+          "light_energy": 3,
+          "shadow_enabled": false
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "15:30",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=930s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "16:46",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=1006s"
+        }
+      ]
+    },
+    {
+      "id": "shadow-bias",
+      "rank": 29,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "Sun": {
+          "shadow_bias": 0.04,
+          "shadow_normal_bias": 1.2
+        }
+      },
+      "C": {
+        "Sun": {
+          "shadow_bias": 0.035,
+          "shadow_normal_bias": 1
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "04:04",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=244s"
+        }
+      ]
+    },
+    {
+      "id": "screen-effect-quality",
+      "rank": 32,
+      "status": "optional_expensive",
+      "A": "V2 source unchanged",
+      "B": {
+        "RenderingServer.calls": {
+          "environment_set_ssao_quality": [
+            "ENV_SSAO_QUALITY_HIGH",
+            false,
+            0.5,
+            2,
+            50,
+            300
+          ],
+          "environment_set_ssil_quality": [
+            "ENV_SSIL_QUALITY_HIGH",
+            true,
+            0.5,
+            2,
+            50,
+            300
+          ]
+        }
+      },
+      "C": {
+        "RenderingServer.calls": {
+          "environment_set_ssao_quality": [
+            "ENV_SSAO_QUALITY_ULTRA",
+            false,
+            0.5,
+            2,
+            50,
+            300
+          ],
+          "environment_set_ssil_quality": [
+            "ENV_SSIL_QUALITY_ULTRA",
+            false,
+            0.5,
+            2,
+            50,
+            300
+          ]
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "12:42",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=762s"
+        }
+      ]
+    },
+    {
+      "id": "anti-aliasing",
+      "rank": 33,
+      "status": "optional_expensive",
+      "A": "V2 source unchanged",
+      "B": {
+        "Viewport": {
+          "screen_space_aa": "SCREEN_SPACE_AA_SMAA",
+          "msaa_3d": "MSAA_2X",
+          "use_taa": false
+        }
+      },
+      "C": {
+        "Viewport": {
+          "screen_space_aa": "SCREEN_SPACE_AA_SMAA",
+          "msaa_3d": "MSAA_4X",
+          "use_taa": false
+        }
+      },
+      "sources": [
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "00:57",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=57s"
+        },
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "12:45",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=765s"
+        }
+      ]
+    },
+    {
+      "id": "anisotropic-filtering",
+      "rank": 34,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "ProjectSettings": {
+          "rendering/textures/default_filters/anisotropic_filtering_level": 3
+        }
+      },
+      "C": {
+        "ProjectSettings": {
+          "rendering/textures/default_filters/anisotropic_filtering_level": 4
+        }
+      },
+      "sources": [
+        {
+          "video_id": "X112OrjzWKQ",
+          "timestamp": "01:54",
+          "url": "https://www.youtube.com/watch?v=X112OrjzWKQ&t=114s"
+        },
+        {
+          "video_id": "hxeNPSiHoiA",
+          "timestamp": "01:24",
+          "url": "https://www.youtube.com/watch?v=hxeNPSiHoiA&t=84s"
+        }
+      ]
+    },
+    {
+      "id": "sharpen",
+      "rank": 38,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Blur_Amount": -0.1,
+            "Blur_Centered": 0.75
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Blur_Amount": -0.25,
+            "Blur_Centered": 0.75
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "02:33",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=153s"
+        }
+      ]
+    },
+    {
+      "id": "vignette",
+      "rank": 42,
+      "status": "optional",
+      "A": "V2 source unchanged",
+      "B": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Vignette": 0.05
+          }
+        }
+      },
+      "C": {
+        "postfx": {
+          "enabled": true,
+          "shader": "ScreenEffects_Ultimate",
+          "parameters": {
+            "Vignette": 0.12
+          }
+        }
+      },
+      "sources": [
+        {
+          "video_id": "38JYL-KEEoc",
+          "timestamp": "04:32",
+          "url": "https://www.youtube.com/watch?v=38JYL-KEEoc&t=272s"
+        }
+      ]
+    }
+  ],
+  "deviations": [
+    "Shop probe placement approved by Kamran; grounded 3 m above pavement at (-411,-14.14901,-400)",
+    "Gradient uses pinned graph HSV-value lookup",
+    "FSR2 blocked by Kamran; never run again in any mode"
+  ]
+}
