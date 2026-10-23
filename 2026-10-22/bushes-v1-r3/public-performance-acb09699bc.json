@@ -1,0 +1,626 @@
+{
+  "order": [
+    "B1",
+    "A1",
+    "B2",
+    "A2",
+    "B3",
+    "A3",
+    "B4"
+  ],
+  "beforeCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+  "afterCommit": "4e610029ac3ebd2318dbabf09c7656a6c6051f35",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "framesOnly": true,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "enemies": 65,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "under-bridge",
+        "durationMs": 12000,
+        "from": [
+          -518,
+          -13.7,
+          -375
+        ],
+        "to": [
+          -534,
+          -13.7,
+          -395
+        ],
+        "yaw": -2.15,
+        "pitch": -0.06,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 65
+          },
+          {
+            "atMs": 4000,
+            "name": "debug_survival_command",
+            "payload": {
+              "command": "streak:blast:rcxd:12"
+            },
+            "optional": false
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "hardware": [
+    {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.7029"
+    }
+  ],
+  "rows": [
+    {
+      "id": "under-bridge",
+      "before": {
+        "median": 18.32400035858155,
+        "p95": 23.92049980163575,
+        "p99": 35.59550094604495
+      },
+      "after": {
+        "median": 19.2059993743896,
+        "p95": 25.5240001678467,
+        "p99": 41.7439994812012
+      },
+      "pairedMedianMsSaved": -0.8579988479614507,
+      "pairedRangeMs": [
+        -0.9374990463256481,
+        -0.8059997558593999
+      ],
+      "maxAdjacentControlDriftMs": 0.11800003051759944,
+      "pairedP95MsSaved": -1.433500289917049,
+      "maxAdjacentControlP95DriftMs": 1.2010002136230007,
+      "pairedP99MsSaved": -6.860998153686552,
+      "maxAdjacentControlP99DriftMs": 5.536998748779304,
+      "pairs": [
+        {
+          "median": -0.9374990463256481,
+          "p95": -2.8465003967285014,
+          "p99": -2.4955005645751456
+        },
+        {
+          "median": -0.8059997558593999,
+          "p95": -1.415500640869201,
+          "p99": -6.889499664306648
+        },
+        {
+          "median": -0.8579988479614507,
+          "p95": -1.433500289917049,
+          "p99": -6.860998153686552
+        }
+      ],
+      "verdict": "p95 regressed"
+    },
+    {
+      "id": "overall",
+      "before": {
+        "median": 18.32400035858155,
+        "p95": 23.92049980163575,
+        "p99": 35.59550094604495
+      },
+      "after": {
+        "median": 19.2059993743896,
+        "p95": 25.5240001678467,
+        "p99": 41.7439994812012
+      },
+      "pairedMedianMsSaved": -0.8579988479614507,
+      "pairedRangeMs": [
+        -0.9374990463256481,
+        -0.8059997558593999
+      ],
+      "maxAdjacentControlDriftMs": 0.11800003051759944,
+      "pairedP95MsSaved": -1.433500289917049,
+      "maxAdjacentControlP95DriftMs": 1.2010002136230007,
+      "pairedP99MsSaved": -6.860998153686552,
+      "maxAdjacentControlP99DriftMs": 5.536998748779304,
+      "pairs": [
+        {
+          "median": -0.9374990463256481,
+          "p95": -2.8465003967285014,
+          "p99": -2.4955005645751456
+        },
+        {
+          "median": -0.8059997558593999,
+          "p95": -1.415500640869201,
+          "p99": -6.889499664306648
+        },
+        {
+          "median": -0.8579988479614507,
+          "p95": -1.433500289917049,
+          "p99": -6.860998153686552
+        }
+      ],
+      "verdict": "p95 regressed"
+    }
+  ],
+  "componentMetrics": null,
+  "definition": "Arm columns are medians of per-run median/p95/p99. Savings use the mean of adjacent controls minus the candidate, then the median of three pairs. Verdicts use paired p95 savings against maximum adjacent-control p95 drift.",
+  "runs": [
+    {
+      "label": "before-1",
+      "buildCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+      "workloadHash": "88da98efbe4e4779d472781678957ab2c960dca31f5151c70d791e993d27196e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "under-bridge",
+          "frames": 612,
+          "frameMs": {
+            "median": 18.2590007781982,
+            "p95": 24.3299999237061,
+            "p99": 40.2519989013672,
+            "max": 191.598007202148,
+            "mean": 19.617248380885403
+          },
+          "hitches": {
+            "over33Ms": 12,
+            "over50Ms": 6
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 18.2590007781982,
+          "p95": 24.3299999237061,
+          "p99": 40.2519989013672,
+          "max": 191.598007202148,
+          "mean": 19.617248380885403
+        },
+        "hitches": {
+          "over33Ms": 12,
+          "over50Ms": 6
+        }
+      }
+    },
+    {
+      "label": "after-1",
+      "buildCommit": "4e610029ac3ebd2318dbabf09c7656a6c6051f35",
+      "workloadHash": "88da98efbe4e4779d472781678957ab2c960dca31f5151c70d791e993d27196e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "fcc6ea10c4eaa15c3ec9e49ab04995ab722a560314289a362487c5a106ec4b9c",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "under-bridge",
+          "frames": 577,
+          "frameMs": {
+            "median": 19.2059993743896,
+            "p95": 26.746000289917,
+            "p99": 39.9790000915527,
+            "max": 193.623992919922,
+            "mean": 20.814675879850338
+          },
+          "hitches": {
+            "over33Ms": 17,
+            "over50Ms": 5
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 19.2059993743896,
+          "p95": 26.746000289917,
+          "p99": 39.9790000915527,
+          "max": 193.623992919922,
+          "mean": 20.814675879850338
+        },
+        "hitches": {
+          "over33Ms": 17,
+          "over50Ms": 5
+        }
+      }
+    },
+    {
+      "label": "before-2",
+      "buildCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+      "workloadHash": "88da98efbe4e4779d472781678957ab2c960dca31f5151c70d791e993d27196e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "under-bridge",
+          "frames": 620,
+          "frameMs": {
+            "median": 18.2779998779297,
+            "p95": 23.4689998626709,
+            "p99": 34.7150001525879,
+            "max": 185.481994628906,
+            "mean": 19.364111277364916
+          },
+          "hitches": {
+            "over33Ms": 9,
+            "over50Ms": 5
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 18.2779998779297,
+          "p95": 23.4689998626709,
+          "p99": 34.7150001525879,
+          "max": 185.481994628906,
+          "mean": 19.364111277364916
+        },
+        "hitches": {
+          "over33Ms": 9,
+          "over50Ms": 5
+        }
+      }
+    },
+    {
+      "label": "after-2",
+      "buildCommit": "4e610029ac3ebd2318dbabf09c7656a6c6051f35",
+      "workloadHash": "88da98efbe4e4779d472781678957ab2c960dca31f5151c70d791e993d27196e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "fcc6ea10c4eaa15c3ec9e49ab04995ab722a560314289a362487c5a106ec4b9c",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "under-bridge",
+          "frames": 585,
+          "frameMs": {
+            "median": 19.1429996490479,
+            "p95": 25.4850006103516,
+            "p99": 42.4850006103516,
+            "max": 191.52799987793,
+            "mean": 20.514745293315663
+          },
+          "hitches": {
+            "over33Ms": 11,
+            "over50Ms": 5
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 19.1429996490479,
+          "p95": 25.4850006103516,
+          "p99": 42.4850006103516,
+          "max": 191.52799987793,
+          "mean": 20.514745293315663
+        },
+        "hitches": {
+          "over33Ms": 11,
+          "over50Ms": 5
+        }
+      }
+    },
+    {
+      "label": "before-3",
+      "buildCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+      "workloadHash": "88da98efbe4e4779d472781678957ab2c960dca31f5151c70d791e993d27196e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "under-bridge",
+          "frames": 617,
+          "frameMs": {
+            "median": 18.3959999084473,
+            "p95": 24.6700000762939,
+            "p99": 36.476001739502,
+            "max": 186.477996826172,
+            "mean": 19.468700184041527
+          },
+          "hitches": {
+            "over33Ms": 11,
+            "over50Ms": 5
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 18.3959999084473,
+          "p95": 24.6700000762939,
+          "p99": 36.476001739502,
+          "max": 186.477996826172,
+          "mean": 19.468700184041527
+        },
+        "hitches": {
+          "over33Ms": 11,
+          "over50Ms": 5
+        }
+      }
+    },
+    {
+      "label": "after-3",
+      "buildCommit": "4e610029ac3ebd2318dbabf09c7656a6c6051f35",
+      "workloadHash": "88da98efbe4e4779d472781678957ab2c960dca31f5151c70d791e993d27196e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "fcc6ea10c4eaa15c3ec9e49ab04995ab722a560314289a362487c5a106ec4b9c",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "under-bridge",
+          "frames": 584,
+          "frameMs": {
+            "median": 19.2409992218018,
+            "p95": 25.5240001678467,
+            "p99": 41.7439994812012,
+            "max": 188.826995849609,
+            "mean": 20.56575510763142
+          },
+          "hitches": {
+            "over33Ms": 15,
+            "over50Ms": 5
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 19.2409992218018,
+          "p95": 25.5240001678467,
+          "p99": 41.7439994812012,
+          "max": 188.826995849609,
+          "mean": 20.56575510763142
+        },
+        "hitches": {
+          "over33Ms": 15,
+          "over50Ms": 5
+        }
+      }
+    },
+    {
+      "label": "before-4",
+      "buildCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+      "workloadHash": "88da98efbe4e4779d472781678957ab2c960dca31f5151c70d791e993d27196e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "under-bridge",
+          "frames": 621,
+          "frameMs": {
+            "median": 18.3700008392334,
+            "p95": 23.5109996795654,
+            "p99": 33.2900009155273,
+            "max": 188.671997070312,
+            "mean": 19.34685344972472
+          },
+          "hitches": {
+            "over33Ms": 7,
+            "over50Ms": 5
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 18.3700008392334,
+          "p95": 23.5109996795654,
+          "p99": 33.2900009155273,
+          "max": 188.671997070312,
+          "mean": 19.34685344972472
+        },
+        "hitches": {
+          "over33Ms": 7,
+          "over50Ms": 5
+        }
+      }
+    }
+  ],
+  "geometryAttribution": {
+    "buildCommit": "4e610029ac3ebd2318dbabf09c7656a6c6051f35",
+    "framesOnly": false,
+    "profile": false,
+    "segments": [
+      {
+        "id": "under-bridge",
+        "mean": {
+          "visiblePrimitives": 17054984.1875,
+          "shadowPrimitives": 15155753.902777778,
+          "visibleDrawCalls": 9317.256944444445,
+          "shadowDrawCalls": 5717.364583333333
+        },
+        "peak": {
+          "visiblePrimitives": 18191413,
+          "shadowPrimitives": 21502553,
+          "visibleDrawCalls": 9598,
+          "shadowDrawCalls": 6071
+        }
+      }
+    ],
+    "caveat": "Godot counters for the complete scene, not bush-only geometry or a GPU hardware census. MultiMesh mesh-LOD counters can omit instance multiplication. The new bush tiers use separate explicit meshes and native visibility ranges. Instrumented frame times excluded from headline results."
+  },
+  "verdict": [
+    {
+      "id": "under-bridge",
+      "median": "regressed",
+      "p95": "regressed",
+      "p99": "regressed"
+    }
+  ],
+  "verifiedArenas": {
+    "client": {
+      "nodes": 415470,
+      "fingerprint": "3489891013",
+      "contentSha256": "0dd95070ca75296a347595d39b05ac57b9b6a01375aa6594ae72e6046bc28e4a",
+      "buildMs": 402207,
+      "loadMs": 13932,
+      "expandedSoups": 0,
+      "importedTextures": 50,
+      "expansion": {
+        "position": 0,
+        "normal": 0
+      },
+      "matches": true,
+      "differences": []
+    },
+    "server": {
+      "nodes": 328461,
+      "fingerprint": "2792591748",
+      "contentSha256": "f6cd4c348a7865519186b705285f10332f83f792a747b01456729ec55723def1",
+      "buildMs": 226633,
+      "loadMs": 8379,
+      "expandedSoups": 0,
+      "importedTextures": 0,
+      "expansion": {
+        "position": 0,
+        "normal": 0
+      },
+      "matches": true,
+      "differences": []
+    }
+  },
+  "revision": 3,
+  "mainIncludes": "V2 lighting (#2209)",
+  "validation": {
+    "nativeStrictClientServer": "PASS; zero normal/property/uniform/position diffs",
+    "prebuiltFinalizationVersion": 5,
+    "renderedNativeBushFixture": "PASS",
+    "headlessGameConsoleSmoke": "PASS",
+    "rootTestStages": {
+      "passed": 11,
+      "total": 11
+    }
+  },
+  "tierGeometry": {
+    "variant": 0,
+    "visibleRangesM": [
+      12,
+      30,
+      70
+    ],
+    "shadowProxyM": [
+      12,
+      55
+    ],
+    "floweringTriangles": [
+      6348,
+      4224,
+      3342,
+      1602
+    ],
+    "greenTriangles": [
+      5376,
+      3792,
+      3216,
+      1518
+    ],
+    "shadowProxyTriangles": 56,
+    "leafCoreCounts": [
+      900,
+      900,
+      900
+    ],
+    "brightShootCounts": [
+      72,
+      72,
+      72
+    ],
+    "generation": "All visible tiers derive from the locked near mesh; no visible coarse-shell replacement"
+  },
+  "sourcePlantingEnvelopes": 6932,
+  "fittedCrowns": 18753,
+  "scope": "Bridge-only rerun; other revision-2 workload numbers do not represent this revision",
+  "worstCamera": "under-bridge"
+}
