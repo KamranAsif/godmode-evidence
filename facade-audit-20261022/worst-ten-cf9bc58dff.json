@@ -1,0 +1,807 @@
+{
+  "schemaVersion": 1,
+  "scope": "all",
+  "coverage": {
+    "interInstance": true,
+    "self": true,
+    "rangeSupplement": false
+  },
+  "underBoundedGeometries": 0,
+  "instances": 62427,
+  "broadphasePairs": 1246159,
+  "triangleTests": 1495007916,
+  "categories": {
+    "horizon": 576,
+    "other-static": 117573,
+    "other-facade": 22573,
+    "masonry-layers": 2140,
+    "facade-ground-contact": 1652,
+    "facade-openings": 1026,
+    "facade-attachments": 13191
+  },
+  "contactsFile": "artifacts/mesh-final/report.contacts.jsonl",
+  "snapshotHash": "da043ace5f592b13673a80a68279d82720b3d1ac472b03baebef1bf49b89d11a",
+  "elapsedMs": 5786372.2378,
+  "findings": [
+    {
+      "pair": [
+        "/DumboSurvivalArena/CityHorizonVisualOnly/manhattan-bridge-horizon",
+        "/DumboSurvivalArena/CityHorizonVisualOnly/manhattan-bridge-horizon"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "self": true,
+      "surfaces": [
+        0,
+        0
+      ],
+      "signature": "e8cfe93120f26309be0baa6237b06b3ff0a415bf9b083724306d64effbbae73c",
+      "areaSquareMeters": 44671.770742064866,
+      "depthMeters": 1.5014015800050373,
+      "crossingMeters": 129.0955925362472,
+      "contacts": 5690,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -105.93296578608931,
+          29.17799949645996,
+          -611.7011254780158
+        ],
+        "areaSquareMeters": 8006.631789412,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          0,
+          0
+        ],
+        "triangles": [
+          [
+            [
+              -83.16714477539062,
+              29.17799949645996,
+              -500.55198669433594
+            ],
+            [
+              -50.0323486328125,
+              29.17799949645996,
+              -514.6262359619141
+            ],
+            [
+              -397.83287048339844,
+              29.17799949645996,
+              -1333.4480285644531
+            ]
+          ],
+          [
+            [
+              -50.0323486328125,
+              29.17799949645996,
+              -514.6262359619141
+            ],
+            [
+              -83.16714477539062,
+              29.17799949645996,
+              -500.55198669433594
+            ],
+            [
+              -430.9676742553711,
+              29.17799949645996,
+              -1319.3738098144531
+            ]
+          ]
+        ]
+      },
+      "at": [
+        -105.93296578608931,
+        29.17799949645996,
+        -611.7011254780158
+      ],
+      "kind": "interpenetration",
+      "rank": 212.85837625097457,
+      "category": "horizon"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/BridgeDressingVisualOnly",
+        "/DumboSurvivalArena/SurvivalChunks/BridgeDressingVisualOnly"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "self": true,
+      "surfaces": [
+        2,
+        3
+      ],
+      "signature": "552250964b9c497fd1ebe44f1f2c62705b2e57ef85683a23b2174d7ce942d52c",
+      "areaSquareMeters": 14912.619460287755,
+      "depthMeters": 0.14994425865105976,
+      "crossingMeters": 1064.5050616348333,
+      "contacts": 1575,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -434.59337705613564,
+          10.841455326965521,
+          -343.71071783002117
+        ],
+        "areaSquareMeters": 27.265933342955616,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          3,
+          2
+        ],
+        "triangles": [
+          [
+            [
+              -430.4081726074219,
+              10.667549133300781,
+              -344.253173828125
+            ],
+            [
+              -433.1723327636719,
+              10.945798873901367,
+              -347.14447021484375
+            ],
+            [
+              -452.8330993652344,
+              10.945798873901367,
+              -328.348388671875
+            ]
+          ],
+          [
+            [
+              -450.0689697265625,
+              10.667549133300781,
+              -325.45709228515625
+            ],
+            [
+              -433.1723327636719,
+              10.945798873901367,
+              -347.14447021484375
+            ],
+            [
+              -430.4081726074219,
+              10.667549133300781,
+              -344.253173828125
+            ]
+          ]
+        ]
+      },
+      "at": [
+        -434.59337705613564,
+        10.841455326965521,
+        -343.71071783002117
+      ],
+      "kind": "interpenetration",
+      "rank": 122.2671807991483,
+      "category": "other-static"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/BridgeDressingVisualOnly",
+        "/DumboSurvivalArena/SurvivalChunks/BridgeDressingVisualOnly"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "self": true,
+      "surfaces": [
+        4,
+        4
+      ],
+      "signature": "05871d0831b4e7e218fb9d6e0f409f2f3b273d36e7e4e08a2aa0e35e8fba9338",
+      "areaSquareMeters": 14254.71099617603,
+      "depthMeters": 0,
+      "crossingMeters": 0,
+      "contacts": 548,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -440.72127600446004,
+          10.33663756471429,
+          -321.2507464353726
+        ],
+        "areaSquareMeters": 26.063152519247144,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          4,
+          4
+        ],
+        "triangles": [
+          [
+            [
+              -441.3428649902344,
+              10.162699699401855,
+              -317.19781494140625
+            ],
+            [
+              -425.3135986328125,
+              10.440999984741211,
+              -338.05596923828125
+            ],
+            [
+              -444.1070251464844,
+              10.440999984741211,
+              -320.089111328125
+            ]
+          ],
+          [
+            [
+              -422.5494689941406,
+              10.162699699401855,
+              -335.1647033691406
+            ],
+            [
+              -441.3428649902344,
+              10.162699699401855,
+              -317.19781494140625
+            ],
+            [
+              -444.1070251464844,
+              10.440999984741211,
+              -320.089111328125
+            ]
+          ]
+        ]
+      },
+      "at": [
+        -440.72127600446004,
+        10.33663756471429,
+        -321.2507464353726
+      ],
+      "kind": "coplanar",
+      "rank": 119.39309442415852,
+      "category": "other-static"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/BridgeFarHalfVisualOnly",
+        "/DumboSurvivalArena/SurvivalChunks/BridgeFarHalfVisualOnly"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "self": true,
+      "surfaces": [
+        2,
+        3
+      ],
+      "signature": "81fa680d8ee37d631119b37fd9e881e6bdf2fe2eea1a0bdb75acb91969c7fc32",
+      "areaSquareMeters": 13763.771657946974,
+      "depthMeters": 0.14999814219323485,
+      "crossingMeters": 2024.0623954291093,
+      "contacts": 432,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -1007.1144034225041,
+          10.301146246698828,
+          -942.5695647933019
+        ],
+        "areaSquareMeters": 163.41503924547465,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          3,
+          2
+        ],
+        "triangles": [
+          [
+            [
+              -994.2913208007812,
+              11.071172714233398,
+              -934.0767211914062
+            ],
+            [
+              -1010.8760986328125,
+              9.839130401611328,
+              -951.4244995117188
+            ],
+            [
+              -1030.536865234375,
+              9.839130401611328,
+              -932.6283569335938
+            ]
+          ],
+          [
+            [
+              -1013.9520874023438,
+              11.071172714233398,
+              -915.2806396484375
+            ],
+            [
+              -1010.8760986328125,
+              9.839130401611328,
+              -951.4244995117188
+            ],
+            [
+              -994.2913208007812,
+              11.071172714233398,
+              -934.0767211914062
+            ]
+          ]
+        ]
+      },
+      "at": [
+        -1007.1144034225041,
+        10.301146246698828,
+        -942.5695647933019
+      ],
+      "kind": "interpenetration",
+      "rank": 117.46909998817131,
+      "category": "other-static"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-4_-2/Ground_terrain_chunk_-4_-2",
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-4_-2/Ground_terrain_chunk_-4_-2"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "self": true,
+      "surfaces": [
+        0,
+        0
+      ],
+      "signature": "19f190c30ec958054356484fa215d5a2a7e836097ee243a4a2b67cd973a3de48",
+      "areaSquareMeters": 10742.024776723309,
+      "depthMeters": 0,
+      "crossingMeters": 0,
+      "contacts": 539693,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -512,
+          -8.581271489461264,
+          -180.9776357014974
+        ],
+        "areaSquareMeters": 0.8172913388843881,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          0,
+          0
+        ],
+        "triangles": [
+          [
+            [
+              -512,
+              -8.396282196044922,
+              -182.20138549804688
+            ],
+            [
+              -512,
+              -8.260442733764648,
+              -180.15463256835938
+            ],
+            [
+              -512,
+              -9.087089538574219,
+              -180.57688903808594
+            ]
+          ],
+          [
+            [
+              -512,
+              -8.396282196044922,
+              -182.20138549804688
+            ],
+            [
+              -512,
+              -8.260442733764648,
+              -180.15463256835938
+            ],
+            [
+              -512,
+              -9.087089538574219,
+              -180.57688903808594
+            ]
+          ]
+        ]
+      },
+      "at": [
+        -512,
+        -8.581271489461264,
+        -180.9776357014974
+      ],
+      "kind": "coplanar",
+      "rank": 103.6437396890102,
+      "category": "other-static"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-4_-2/Ground_terrain_chunk_-4_-2",
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-4_-1/Ground_terrain_chunk_-4_-1"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "signature": "0e6ca508fec459ea85cc258447d24f07cc65921c3e96b9a604e27fd5799c818e",
+      "at": [
+        -471.3855615370259,
+        -7.028014442623041,
+        -128
+      ],
+      "kind": "coplanar",
+      "areaSquareMeters": 9149.49914729308,
+      "depthMeters": 0,
+      "crossingMeters": 0,
+      "contacts": 1886044,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -471.3855615370259,
+          -7.028014442623041,
+          -128
+        ],
+        "areaSquareMeters": 0.696529931905161,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          0,
+          0
+        ],
+        "triangles": [
+          [
+            [
+              -471.8549499511719,
+              -7.3873114585876465,
+              -128
+            ],
+            [
+              -471.6994323730469,
+              -6.475659370422363,
+              -128
+            ],
+            [
+              -470.21649169921875,
+              -6.9690656661987305,
+              -128
+            ]
+          ],
+          [
+            [
+              -469.8018493652344,
+              -7.007386207580566,
+              -128
+            ],
+            [
+              -471.88665771484375,
+              -6.384494304656982,
+              -128
+            ],
+            [
+              -471.7705078125,
+              -7.336592197418213,
+              -128
+            ]
+          ]
+        ]
+      },
+      "rank": 95.65301431368005,
+      "category": "other-static"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-4_-1/Ground_terrain_chunk_-4_-1",
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-4_-1/Ground_terrain_chunk_-4_-1"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "self": true,
+      "surfaces": [
+        0,
+        0
+      ],
+      "signature": "115f5d8205ab7fc4d8b94170630396763689c914ec521d5ae611a6900b20e01d",
+      "areaSquareMeters": 9088.604005920386,
+      "depthMeters": 0,
+      "crossingMeters": 0,
+      "contacts": 413578,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -491.4132792154948,
+          -4.915063381195068,
+          -128
+        ],
+        "areaSquareMeters": 0.8799729056627257,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          0,
+          0
+        ],
+        "triangles": [
+          [
+            [
+              -490.2398376464844,
+              -4.749100208282471,
+              -128
+            ],
+            [
+              -492,
+              -4.498106479644775,
+              -128
+            ],
+            [
+              -492,
+              -5.497983455657959,
+              -128
+            ]
+          ],
+          [
+            [
+              -490.2398376464844,
+              -4.749100208282471,
+              -128
+            ],
+            [
+              -492,
+              -4.498106479644775,
+              -128
+            ],
+            [
+              -492,
+              -5.497983455657959,
+              -128
+            ]
+          ]
+        ]
+      },
+      "at": [
+        -491.4132792154948,
+        -4.915063381195068,
+        -128
+      ],
+      "kind": "coplanar",
+      "rank": 95.33417019054808,
+      "category": "other-static"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-4_-3/Ground_terrain_chunk_-4_-3",
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-4_-3/Ground_terrain_chunk_-4_-3"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "self": true,
+      "surfaces": [
+        0,
+        0
+      ],
+      "signature": "d84d3df0dfd873bc320cf1d5ff15498bd52e6d0d9f2ba52be809e826356feeb8",
+      "areaSquareMeters": 7586.963495170587,
+      "depthMeters": 0,
+      "crossingMeters": 0,
+      "contacts": 682425,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -420.68703206380206,
+          -13.041048685709635,
+          -256
+        ],
+        "areaSquareMeters": 1.0297814523946727,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          0,
+          0
+        ],
+        "triangles": [
+          [
+            [
+              -422.0599365234375,
+              -12.927046775817871,
+              -256
+            ],
+            [
+              -420.0005798339844,
+              -12.597999572753906,
+              -256
+            ],
+            [
+              -420.0005798339844,
+              -13.598099708557129,
+              -256
+            ]
+          ],
+          [
+            [
+              -422.0599365234375,
+              -12.927046775817871,
+              -256
+            ],
+            [
+              -420.0005798339844,
+              -12.597999572753906,
+              -256
+            ],
+            [
+              -420.0005798339844,
+              -13.598099708557129,
+              -256
+            ]
+          ]
+        ]
+      },
+      "at": [
+        -420.68703206380206,
+        -13.041048685709635,
+        -256
+      ],
+      "kind": "coplanar",
+      "rank": 87.10317729664393,
+      "category": "other-static"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-5_-1/Ground_terrain_chunk_-5_-1",
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-5_-1/Ground_terrain_chunk_-5_-1"
+      ],
+      "facadeSides": [
+        false,
+        false
+      ],
+      "self": true,
+      "surfaces": [
+        0,
+        0
+      ],
+      "signature": "2fa3527ae53d3bef9845cb58f45536b601a11dc31dc7aaa10cccab11eb1fd316",
+      "areaSquareMeters": 7399.259718877383,
+      "depthMeters": 0,
+      "crossingMeters": 0,
+      "contacts": 299938,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -576.6722208658854,
+          -0.13163290917873383,
+          0
+        ],
+        "areaSquareMeters": 0.8092224152310337,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          0,
+          0
+        ],
+        "triangles": [
+          [
+            [
+              -576.1011962890625,
+              -0.7787322998046875,
+              0
+            ],
+            [
+              -577.8142700195312,
+              0.21780511736869812,
+              0
+            ],
+            [
+              -576.1011962890625,
+              0.1660284548997879,
+              0
+            ]
+          ],
+          [
+            [
+              -576.1011962890625,
+              -0.7787322998046875,
+              0
+            ],
+            [
+              -577.8142700195312,
+              0.21780511736869812,
+              0
+            ],
+            [
+              -576.1011962890625,
+              0.1660284548997879,
+              0
+            ]
+          ]
+        ]
+      },
+      "at": [
+        -576.6722208658854,
+        -0.13163290917873383,
+        0
+      ],
+      "kind": "coplanar",
+      "rank": 86.01894976618456,
+      "category": "other-static"
+    },
+    {
+      "pair": [
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-2_-3/BuildingShell_building_chunk_-2_-3",
+        "/DumboSurvivalArena/SurvivalChunks/Chunk_-2_-3/BuildingSkirt_building_roof_chunk_-2_-3_Distant"
+      ],
+      "facadeSides": [
+        true,
+        true
+      ],
+      "signature": "8368a23e217433ce94df77c6c6a41de915e8abaced361e3c740141c1375e71f4",
+      "at": [
+        -174.8464399995317,
+        -15.859899520874023,
+        -298.0163217401065
+      ],
+      "kind": "interpenetration",
+      "areaSquareMeters": 7137.96896384174,
+      "depthMeters": 0.07437657041087178,
+      "crossingMeters": 219.83827762978146,
+      "contacts": 373,
+      "sample": {
+        "kind": "coplanar",
+        "at": [
+          -174.8464399995317,
+          -15.859899520874023,
+          -298.0163217401065
+        ],
+        "areaSquareMeters": 503.88269677185235,
+        "depthMeters": 0,
+        "crossingMeters": 0,
+        "surfaces": [
+          0,
+          0
+        ],
+        "triangles": [
+          [
+            [
+              -163.9770965576172,
+              -15.859899520874023,
+              -316.2411804199219
+            ],
+            [
+              -202.8721923828125,
+              -15.859899520874023,
+              -291.2467041015625
+            ],
+            [
+              -165.16659545898438,
+              -15.859899520874023,
+              -289.56689453125
+            ]
+          ],
+          [
+            [
+              -163.97711181640625,
+              -15.859662055969238,
+              -316.24114990234375
+            ],
+            [
+              -165.1665802001953,
+              -15.859662055969238,
+              -289.5669250488281
+            ],
+            [
+              -202.8722381591797,
+              -15.859662055969238,
+              -291.24664306640625
+            ]
+          ]
+        ]
+      },
+      "rank": 84.56087823690042,
+      "category": "other-facade"
+    }
+  ]
+}
