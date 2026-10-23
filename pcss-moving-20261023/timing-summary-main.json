@@ -1,0 +1,529 @@
+{
+  "buildCommit": "5adf922cf1a3fc07bc7ab2bf02b006fce12d2fae",
+  "engine": {
+    "bufferMemoryBytes": 2101145520,
+    "displayServer": "Windows",
+    "frameProfile": false,
+    "framesOnly": true,
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "screenSpaceAA": 2,
+    "staticMemoryBytes": 4682224021,
+    "taa": false,
+    "textureMemoryBytes": 3131473920,
+    "threadModel": 2,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 8608464896,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+  "workloadHash": "2aa3990fb3c38833509e8a0a9170d15d6a9c3d04713c40aaafb85939d92d987e",
+  "measurementHash": "b6269e1707853d152dcaa392c4088cd25634c297a0ea5fee6b04c45d0ddbe411",
+  "method": "H0 M1 L1 H1 L2 M2 H2 M3 L3 H3; first three runs had separate exclusive holds, remaining runs use bounded exclusive batches, with one renderer at a time. Standard benchmark, 65 enemies, timestamp-only, native 1440p SMAA, FSR2 off. Each candidate is compared with the mean of the enclosing HIGH controls.",
+  "runs": [
+    {
+      "arm": "H0",
+      "quality": 4,
+      "output": "artifacts/performance/pcss-main-H0-attempt2.json"
+    },
+    {
+      "arm": "M1",
+      "quality": 3,
+      "output": "artifacts/performance/pcss-main-M1.json"
+    },
+    {
+      "arm": "L1",
+      "quality": 2,
+      "output": "artifacts/performance/pcss-main-L1.json"
+    },
+    {
+      "arm": "H1",
+      "quality": 4,
+      "output": "artifacts/performance/pcss-main-H1.json"
+    },
+    {
+      "arm": "L2",
+      "quality": 2,
+      "output": "artifacts/performance/pcss-main-L2.json"
+    },
+    {
+      "arm": "M2",
+      "quality": 3,
+      "output": "artifacts/performance/pcss-main-M2.json"
+    },
+    {
+      "arm": "H2",
+      "quality": 4,
+      "output": "artifacts/performance/pcss-main-H2.json"
+    },
+    {
+      "arm": "M3",
+      "quality": 3,
+      "output": "artifacts/performance/pcss-main-M3-attempt2.json"
+    },
+    {
+      "arm": "L3",
+      "quality": 2,
+      "output": "artifacts/performance/pcss-main-L3.json"
+    },
+    {
+      "arm": "H3",
+      "quality": 4,
+      "output": "artifacts/performance/pcss-main-H3.json"
+    }
+  ],
+  "views": [
+    {
+      "id": "firefight-65",
+      "high": {
+        "median": 15.508999824523901,
+        "p95": 19.571499824523897,
+        "p99": 21.0215005874634
+      },
+      "highMedianRange": [
+        15.4130001068115,
+        15.5670003890991
+      ],
+      "highMedianSpreadMs": 0.15400028228759943,
+      "medium": {
+        "stats": {
+          "median": 14.0699996948242,
+          "p95": 18.6009998321533,
+          "p99": 19.9599990844727
+        },
+        "pairedSavings": {
+          "median": 1.4200005531311017,
+          "p95": 0.9525003433227504,
+          "p99": 1.0615015029907013
+        },
+        "pairedMedianRange": [
+          0.8079996109009002,
+          1.4354996681213503
+        ],
+        "paired": [
+          {
+            "median": 0.8079996109009002,
+            "p95": -1.2084999084472976,
+            "p99": -22.113999366760297
+          },
+          {
+            "median": 1.4354996681213503,
+            "p95": 1.5585002899169496,
+            "p99": 2.115999221801797
+          },
+          {
+            "median": 1.4200005531311017,
+            "p95": 0.9525003433227504,
+            "p99": 1.0615015029907013
+          }
+        ]
+      },
+      "low": {
+        "stats": {
+          "median": 13.6040000915527,
+          "p95": 18.3889999389648,
+          "p99": 19.7919998168945
+        },
+        "pairedSavings": {
+          "median": 1.8860001564026003,
+          "p95": 1.1645002365112482,
+          "p99": 1.229500770568901
+        },
+        "pairedMedianRange": [
+          -37.14249849319465,
+          1.9860000610351012
+        ],
+        "paired": [
+          {
+            "median": 1.9860000610351012,
+            "p95": 1.9274997711181001,
+            "p99": 1.8240003585815003
+          },
+          {
+            "median": -37.14249849319465,
+            "p95": -44.768497467041044,
+            "p99": -51.1280002593994
+          },
+          {
+            "median": 1.8860001564026003,
+            "p95": 1.1645002365112482,
+            "p99": 1.229500770568901
+          }
+        ]
+      }
+    },
+    {
+      "id": "shopping-street",
+      "high": {
+        "median": 11.8109998703003,
+        "p95": 17.19700050354,
+        "p99": 21.622499465942397
+      },
+      "highMedianRange": [
+        11.5740003585815,
+        13.1899995803833
+      ],
+      "highMedianSpreadMs": 1.6159992218018004,
+      "medium": {
+        "stats": {
+          "median": 10.8629999160767,
+          "p95": 15.456000328064,
+          "p99": 19.4389991760254
+        },
+        "pairedSavings": {
+          "median": 1.6494998931884517,
+          "p95": 3.6704998016357475,
+          "p99": 8.129500389099096
+        },
+        "pairedMedianRange": [
+          0.2215003967284499,
+          1.8500003814697
+        ],
+        "paired": [
+          {
+            "median": 1.6494998931884517,
+            "p95": 3.68249988555905,
+            "p99": 8.129500389099096
+          },
+          {
+            "median": 1.8500003814697,
+            "p95": 3.6704998016357475,
+            "p99": 8.838999748229998
+          },
+          {
+            "median": 0.2215003967284499,
+            "p95": 0.659998893737697,
+            "p99": -0.9914999008178995
+          }
+        ]
+      },
+      "low": {
+        "stats": {
+          "median": 10.5640001296997,
+          "p95": 15.2170000076294,
+          "p99": 18.6009998321533
+        },
+        "pairedSavings": {
+          "median": 1.1164999008178498,
+          "p95": 1.923999786376898,
+          "p99": 1.7095003128052007
+        },
+        "pairedMedianRange": [
+          -38.5460014343262,
+          2.2915000915527504
+        ],
+        "paired": [
+          {
+            "median": 2.2915000915527504,
+            "p95": 4.06550025939945,
+            "p99": 10.294499397277797
+          },
+          {
+            "median": -38.5460014343262,
+            "p95": -67.23550128936765,
+            "p99": -270.8340120315548
+          },
+          {
+            "median": 1.1164999008178498,
+            "p95": 1.923999786376898,
+            "p99": 1.7095003128052007
+          }
+        ]
+      }
+    },
+    {
+      "id": "under-bridge",
+      "high": {
+        "median": 18.29500007629395,
+        "p95": 23.54199981689455,
+        "p99": 40.29450035095215
+      },
+      "highMedianRange": [
+        18.1140003204346,
+        18.7099990844727
+      ],
+      "highMedianSpreadMs": 0.5959987640381001,
+      "medium": {
+        "stats": {
+          "median": 16.4820003509521,
+          "p95": 20.5410003662109,
+          "p99": 42.1319999694824
+        },
+        "pairedSavings": {
+          "median": 1.8129997253418502,
+          "p95": 4.0149993896485014,
+          "p99": 7.423500061035156
+        },
+        "pairedMedianRange": [
+          1.682000160217349,
+          2.038999557495149
+        ],
+        "paired": [
+          {
+            "median": 1.682000160217349,
+            "p95": 4.0149993896485014,
+            "p99": 7.423500061035156
+          },
+          {
+            "median": 2.038999557495149,
+            "p95": 5.097000122070348,
+            "p99": 14.059000015258803
+          },
+          {
+            "median": 1.8129997253418502,
+            "p95": 2.4060001373290483,
+            "p99": -8.5694999694824
+          }
+        ]
+      },
+      "low": {
+        "stats": {
+          "median": 15.8889999389648,
+          "p95": 19.7689990997314,
+          "p99": 39.5730018615723
+        },
+        "pairedSavings": {
+          "median": 2.4060001373291495,
+          "p95": 3.690000534057649,
+          "p99": -6.010501861572301
+        },
+        "pairedMedianRange": [
+          -12.590999603271449,
+          2.6599998474121485
+        ],
+        "paired": [
+          {
+            "median": 2.6599998474121485,
+            "p95": 4.844999313354499,
+            "p99": 30.590499877929656
+          },
+          {
+            "median": -12.590999603271449,
+            "p95": -40.66700172424316,
+            "p99": -136.36300086975092
+          },
+          {
+            "median": 2.4060001373291495,
+            "p95": 3.690000534057649,
+            "p99": -6.010501861572301
+          }
+        ]
+      }
+    }
+  ],
+  "hostHealth": [
+    {
+      "arm": "H0",
+      "quality": 4,
+      "freeRamGiB": 9.290916442871094,
+      "gpu3DPercent": 99.83178826299603,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 15.4739999771118
+        },
+        {
+          "id": "shopping-street",
+          "median": 11.835000038147
+        },
+        {
+          "id": "under-bridge",
+          "median": 18.1140003204346
+        }
+      ]
+    },
+    {
+      "arm": "M1",
+      "quality": 3,
+      "freeRamGiB": 14.278850555419922,
+      "gpu3DPercent": 98.13920794205647,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 14.701000213623
+        },
+        {
+          "id": "shopping-street",
+          "median": 10.8629999160767
+        },
+        {
+          "id": "under-bridge",
+          "median": 16.7299995422363
+        }
+      ]
+    },
+    {
+      "arm": "L1",
+      "quality": 2,
+      "freeRamGiB": 14.214160919189453,
+      "gpu3DPercent": 99.8552249799309,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 13.5229997634888
+        },
+        {
+          "id": "shopping-street",
+          "median": 10.2209997177124
+        },
+        {
+          "id": "under-bridge",
+          "median": 15.7519998550415
+        }
+      ]
+    },
+    {
+      "arm": "H1",
+      "quality": 4,
+      "freeRamGiB": 9.897998809814453,
+      "gpu3DPercent": 99.7817947733974,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 15.543999671936
+        },
+        {
+          "id": "shopping-street",
+          "median": 13.1899995803833
+        },
+        {
+          "id": "under-bridge",
+          "median": 18.7099990844727
+        }
+      ]
+    },
+    {
+      "arm": "L2",
+      "quality": 2,
+      "freeRamGiB": 4.688282012939453,
+      "gpu3DPercent": 63.51053984875754,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 52.6209983825684
+        },
+        {
+          "id": "shopping-street",
+          "median": 50.9280014038086
+        },
+        {
+          "id": "under-bridge",
+          "median": 31.0949993133545
+        }
+      ]
+    },
+    {
+      "arm": "M2",
+      "quality": 3,
+      "freeRamGiB": 14.538284301757812,
+      "gpu3DPercent": 99.26519764923917,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 14.0430002212524
+        },
+        {
+          "id": "shopping-street",
+          "median": 10.5319995880127
+        },
+        {
+          "id": "under-bridge",
+          "median": 16.4650001525879
+        }
+      ]
+    },
+    {
+      "arm": "H2",
+      "quality": 4,
+      "freeRamGiB": 14.498100280761719,
+      "gpu3DPercent": 99.87965460480444,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 15.4130001068115
+        },
+        {
+          "id": "shopping-street",
+          "median": 11.5740003585815
+        },
+        {
+          "id": "under-bridge",
+          "median": 18.2980003356934
+        }
+      ]
+    },
+    {
+      "arm": "M3",
+      "quality": 3,
+      "freeRamGiB": 10.933425903320312,
+      "gpu3DPercent": 99.13404164469237,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 14.0699996948242
+        },
+        {
+          "id": "shopping-street",
+          "median": 11.4589996337891
+        },
+        {
+          "id": "under-bridge",
+          "median": 16.4820003509521
+        }
+      ]
+    },
+    {
+      "arm": "L3",
+      "quality": 2,
+      "freeRamGiB": 11.25606918334961,
+      "gpu3DPercent": 98.31587368349005,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 13.6040000915527
+        },
+        {
+          "id": "shopping-street",
+          "median": 10.5640001296997
+        },
+        {
+          "id": "under-bridge",
+          "median": 15.8889999389648
+        }
+      ]
+    },
+    {
+      "arm": "H3",
+      "quality": 4,
+      "freeRamGiB": 11.366374969482422,
+      "gpu3DPercent": 99.2385763449651,
+      "frameMedians": [
+        {
+          "id": "firefight-65",
+          "median": 15.5670003890991
+        },
+        {
+          "id": "shopping-street",
+          "median": 11.7869997024536
+        },
+        {
+          "id": "under-bridge",
+          "median": 18.2919998168945
+        }
+      ]
+    }
+  ],
+  "resourceCaveat": "L2 is retained despite anomalously slow timing correlated with low available RAM and reduced GPU utilization at report end. Cause not isolated. Do not treat LOW aggregate medians as a clean 3/3 causal quality comparison."
+}
