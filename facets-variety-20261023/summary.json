@@ -1,0 +1,400 @@
+{
+  "conditions": {
+    "scene": "saved visual arena; collision shapes omitted; zero enemies; no gameplay simulation",
+    "source": "res://artifacts/facet-study/visual-arena.scn",
+    "sourceSha256": "1046db91af218cb99fbb54781715027f3f603ffc9afcfcdda0f3dbe8de68bb5a",
+    "commit": "3e9aae592fe3db2cb1a7fe6bc428f913767213bf",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "profile": false,
+    "framesOnly": true,
+    "plan": {
+      "building": "buildings_112332",
+      "views": [
+        {
+          "id": "5m",
+          "position": [
+            -403.6585030952033,
+            -15.55,
+            -389.98389296982333
+          ],
+          "yaw": -1.6179237560578112,
+          "pitch": 0.1,
+          "fov": 75,
+          "target": [
+            -398.6640530952033,
+            -15.55,
+            -389.74834296982334
+          ],
+          "horizontalTargetDistance": 5.0000014604997585
+        },
+        {
+          "id": "20m",
+          "position": [
+            -404.57078432240246,
+            -15.55,
+            -370.6404712963577
+          ],
+          "yaw": -0.2998076844049945,
+          "pitch": 0.04,
+          "fov": 75,
+          "target": [
+            -398.6640530952033,
+            -15.55,
+            -389.74834296982334
+          ],
+          "horizontalTargetDistance": 20.000005841999148
+        },
+        {
+          "id": "shop",
+          "position": [
+            -404,
+            -15.582,
+            -390
+          ],
+          "yaw": 0,
+          "pitch": 0.1,
+          "fov": 55
+        },
+        {
+          "id": "side",
+          "position": [
+            -421,
+            -15.6,
+            -366
+          ],
+          "yaw": -1.54,
+          "pitch": 0.015,
+          "fov": 70
+        }
+      ]
+    },
+    "sequence": [
+      "plain",
+      "v1",
+      "plain",
+      "v2",
+      "plain",
+      "v3",
+      "plain"
+    ]
+  },
+  "engine": {
+    "bufferMemoryBytes": 3134491770,
+    "displayServer": "Windows",
+    "frameProfile": false,
+    "framesOnly": true,
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "screenSpaceAA": 2,
+    "staticMemoryBytes": 7148623812,
+    "taa": false,
+    "textureMemoryBytes": 844840960,
+    "threadModel": 2,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 6772097024,
+    "viewportSize": [
+      1920,
+      1080
+    ],
+    "vsyncMode": 0
+  },
+  "rows": [
+    {
+      "variant": "plain",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "views": {
+        "5m": {
+          "controlMediansMs": [
+            6.39699983596802,
+            6.43200016021729,
+            6.43599987030029,
+            6.43699979782104
+          ],
+          "medianOfControlMediansMs": 6.43400001525879,
+          "controlRangeMs": 0.03999996185301935,
+          "rendererCounters": {
+            "cameraDrawCalls": 294,
+            "cameraPrimitives": 2490541,
+            "height": 720,
+            "scale3D": 1,
+            "screenSpaceAA": 2,
+            "shadowDrawCalls": 4283,
+            "shadowPrimitives": 11339820,
+            "taa": false,
+            "width": 1280
+          }
+        },
+        "20m": {
+          "controlMediansMs": [
+            6.59100008010864,
+            6.61800003051758,
+            6.62400007247925,
+            6.61499977111816
+          ],
+          "medianOfControlMediansMs": 6.616499900817869,
+          "controlRangeMs": 0.03299999237060991,
+          "rendererCounters": {
+            "cameraDrawCalls": 1510,
+            "cameraPrimitives": 3400588,
+            "height": 720,
+            "scale3D": 1,
+            "screenSpaceAA": 2,
+            "shadowDrawCalls": 3123,
+            "shadowPrimitives": 7748495,
+            "taa": false,
+            "width": 1280
+          }
+        }
+      }
+    },
+    {
+      "variant": "v1",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 190,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.85,
+          "wallTone": 0.24
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "v1"
+      },
+      "views": {
+        "5m": {
+          "medianMs": 6.49399995803833,
+          "p95Ms": 6.67799997329712,
+          "p99Ms": 6.78399991989136,
+          "meanMs": 6.493836033700583,
+          "frames": 1543,
+          "windowMs": 10020.194,
+          "caveats": [],
+          "adjacentControlMediansMs": [
+            6.39699983596802,
+            6.43200016021729
+          ],
+          "pairedDeltaMs": 0.07949995994567516,
+          "rendererCounters": {
+            "cameraDrawCalls": 294,
+            "cameraPrimitives": 2613951,
+            "height": 720,
+            "scale3D": 1,
+            "screenSpaceAA": 2,
+            "shadowDrawCalls": 4283,
+            "shadowPrimitives": 11339820,
+            "taa": false,
+            "width": 1280
+          }
+        },
+        "20m": {
+          "medianMs": 6.63199996948242,
+          "p95Ms": 6.82800006866455,
+          "p99Ms": 6.91200017929077,
+          "meanMs": 6.634212060967528,
+          "frames": 1509,
+          "windowMs": 10011.219,
+          "caveats": [],
+          "adjacentControlMediansMs": [
+            6.59100008010864,
+            6.61800003051758
+          ],
+          "pairedDeltaMs": 0.027499914169309747,
+          "rendererCounters": {
+            "cameraDrawCalls": 1510,
+            "cameraPrimitives": 3456056,
+            "height": 720,
+            "scale3D": 1,
+            "screenSpaceAA": 2,
+            "shadowDrawCalls": 3123,
+            "shadowPrimitives": 7748495,
+            "taa": false,
+            "width": 1280
+          }
+        }
+      }
+    },
+    {
+      "variant": "v2",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 189,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v2"
+      },
+      "views": {
+        "5m": {
+          "medianMs": 6.42000007629395,
+          "p95Ms": 6.61100006103516,
+          "p99Ms": 6.68100023269653,
+          "meanMs": 6.413478233034571,
+          "frames": 1562,
+          "windowMs": 10018.081,
+          "caveats": [],
+          "adjacentControlMediansMs": [
+            6.43200016021729,
+            6.43599987030029
+          ],
+          "pairedDeltaMs": -0.013999938964840197,
+          "rendererCounters": {
+            "cameraDrawCalls": 294,
+            "cameraPrimitives": 2485704,
+            "height": 720,
+            "scale3D": 1,
+            "screenSpaceAA": 2,
+            "shadowDrawCalls": 4283,
+            "shadowPrimitives": 11339820,
+            "taa": false,
+            "width": 1280
+          }
+        },
+        "20m": {
+          "medianMs": 6.61299991607666,
+          "p95Ms": 6.79400014877319,
+          "p99Ms": 6.87799978256226,
+          "meanMs": 6.60520698747528,
+          "frames": 1517,
+          "windowMs": 10020.305,
+          "caveats": [],
+          "adjacentControlMediansMs": [
+            6.61800003051758,
+            6.62400007247925
+          ],
+          "pairedDeltaMs": -0.008000135421754706,
+          "rendererCounters": {
+            "cameraDrawCalls": 1510,
+            "cameraPrimitives": 3398159,
+            "height": 720,
+            "scale3D": 1,
+            "screenSpaceAA": 2,
+            "shadowDrawCalls": 3123,
+            "shadowPrimitives": 7748495,
+            "taa": false,
+            "width": 1280
+          }
+        }
+      }
+    },
+    {
+      "variant": "v3",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 182,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.14,
+          "tone": 0.5,
+          "wallTone": 0.18
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v3"
+      },
+      "views": {
+        "5m": {
+          "medianMs": 6.50699996948242,
+          "p95Ms": 6.67199993133545,
+          "p99Ms": 6.76599979400635,
+          "meanMs": 6.500422077922078,
+          "frames": 1540,
+          "windowMs": 10010.883,
+          "caveats": [],
+          "adjacentControlMediansMs": [
+            6.43599987030029,
+            6.43699979782104
+          ],
+          "pairedDeltaMs": 0.0705001354217547,
+          "rendererCounters": {
+            "cameraDrawCalls": 294,
+            "cameraPrimitives": 2630308,
+            "height": 720,
+            "scale3D": 1,
+            "screenSpaceAA": 2,
+            "shadowDrawCalls": 4283,
+            "shadowPrimitives": 11339820,
+            "taa": false,
+            "width": 1280
+          }
+        },
+        "20m": {
+          "medianMs": 6.65899991989136,
+          "p95Ms": 6.82499980926514,
+          "p99Ms": 6.90000009536743,
+          "meanMs": 6.654649402390438,
+          "frames": 1506,
+          "windowMs": 10022.123,
+          "caveats": [],
+          "adjacentControlMediansMs": [
+            6.62400007247925,
+            6.61499977111816
+          ],
+          "pairedDeltaMs": 0.03949999809265581,
+          "rendererCounters": {
+            "cameraDrawCalls": 1510,
+            "cameraPrimitives": 3483271,
+            "height": 720,
+            "scale3D": 1,
+            "screenSpaceAA": 2,
+            "shadowDrawCalls": 3123,
+            "shadowPrimitives": 7748495,
+            "taa": false,
+            "width": 1280
+          }
+        }
+      }
+    }
+  ],
+  "measurementCount": 14,
+  "cliCaveatCount": 0,
+  "scope": "saved visual arena matching sampled main map inputs; physics omitted; zero enemies; no combat claim",
+  "logicalViewportNote": "get_visible_rect reports 1280x720 under canvas_items stretch; native frame pixels and root window are 1920x1080 at 3D scale 1",
+  "trianglesScope": "native source near-architecture triangles across all 237 architecture surfaces, not total arena/renderer triangles",
+  "sourceReceiptSha256": "2313024a0b139241b74da99d3f80e09c532c9df05f491a69be3ce3627211896f"
+}

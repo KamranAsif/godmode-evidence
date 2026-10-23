@@ -1,0 +1,1832 @@
+{
+  "conditions": {
+    "scene": "saved visual arena; collision shapes omitted; zero enemies; no gameplay simulation",
+    "source": "res://artifacts/facet-study/visual-arena.scn",
+    "sourceSha256": "1046db91af218cb99fbb54781715027f3f603ffc9afcfcdda0f3dbe8de68bb5a",
+    "commit": "3e9aae592fe3db2cb1a7fe6bc428f913767213bf",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "profile": false,
+    "framesOnly": true,
+    "plan": {
+      "building": "buildings_112332",
+      "views": [
+        {
+          "id": "5m",
+          "position": [
+            -403.6585030952033,
+            -15.55,
+            -389.98389296982333
+          ],
+          "yaw": -1.6179237560578112,
+          "pitch": 0.1,
+          "fov": 75,
+          "target": [
+            -398.6640530952033,
+            -15.55,
+            -389.74834296982334
+          ],
+          "horizontalTargetDistance": 5.0000014604997585
+        },
+        {
+          "id": "20m",
+          "position": [
+            -404.57078432240246,
+            -15.55,
+            -370.6404712963577
+          ],
+          "yaw": -0.2998076844049945,
+          "pitch": 0.04,
+          "fov": 75,
+          "target": [
+            -398.6640530952033,
+            -15.55,
+            -389.74834296982334
+          ],
+          "horizontalTargetDistance": 20.000005841999148
+        },
+        {
+          "id": "shop",
+          "position": [
+            -404,
+            -15.582,
+            -390
+          ],
+          "yaw": 0,
+          "pitch": 0.1,
+          "fov": 55
+        },
+        {
+          "id": "side",
+          "position": [
+            -421,
+            -15.6,
+            -366
+          ],
+          "yaw": -1.54,
+          "pitch": 0.015,
+          "fov": 70
+        }
+      ]
+    },
+    "sequence": [
+      "plain",
+      "v1",
+      "plain",
+      "v2",
+      "plain",
+      "v3",
+      "plain"
+    ]
+  },
+  "rows": [
+    {
+      "run": 0,
+      "variant": "plain",
+      "view": "5m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1567,
+        "engineFrames": 1567,
+        "sampled": 1567,
+        "dropped": 0,
+        "windowMs": 10022.901,
+        "fps": 156.3419612744853,
+        "meanMs": 6.3960746649649005,
+        "medianMs": 6.39699983596802,
+        "p95Ms": 6.57299995422363,
+        "p99Ms": 6.65299987792969,
+        "worstMs": 6.746,
+        "bestMs": 0.151,
+        "engine": {
+          "bufferMemoryBytes": 3134491770,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 7148623812,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 6772097024,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 294,
+          "cameraPrimitives": 2490541,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4283,
+          "shadowPrimitives": 11339820,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 153,
+          "cameraPrimitives": 2090633,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1885,
+          "shadowPrimitives": 8083072,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 0,
+      "variant": "plain",
+      "view": "20m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1521,
+        "engineFrames": 1521,
+        "sampled": 1521,
+        "dropped": 0,
+        "windowMs": 10018.248,
+        "fps": 151.82295347449974,
+        "meanMs": 6.586483234714003,
+        "medianMs": 6.59100008010864,
+        "p95Ms": 6.76200008392334,
+        "p99Ms": 6.85200023651123,
+        "worstMs": 6.951,
+        "bestMs": 0.363,
+        "engine": {
+          "bufferMemoryBytes": 3134491770,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 7155021650,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 6788874240,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1510,
+          "cameraPrimitives": 3400588,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 3123,
+          "shadowPrimitives": 7748495,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 942,
+          "cameraPrimitives": 2903366,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1718,
+          "shadowPrimitives": 6173695,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 0,
+      "variant": "plain",
+      "view": "shop",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": null,
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1134,
+          "cameraPrimitives": 2679662,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 2011,
+          "shadowPrimitives": 5706330,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 946,
+          "cameraPrimitives": 2667060,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1448,
+          "shadowPrimitives": 5243064,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 0,
+      "variant": "plain",
+      "view": "side",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": null,
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 5091,
+          "cameraPrimitives": 9010350,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4488,
+          "shadowPrimitives": 11053478,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 3615,
+          "cameraPrimitives": 8069526,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 2547,
+          "shadowPrimitives": 9150836,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 1,
+      "variant": "v1",
+      "view": "5m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 190,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.85,
+          "wallTone": 0.24
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "v1"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1543,
+        "engineFrames": 1543,
+        "sampled": 1543,
+        "dropped": 0,
+        "windowMs": 10020.194,
+        "fps": 153.9890345436426,
+        "meanMs": 6.493836033700583,
+        "medianMs": 6.49399995803833,
+        "p95Ms": 6.67799997329712,
+        "p99Ms": 6.78399991989136,
+        "worstMs": 7.138,
+        "bestMs": 0.369,
+        "engine": {
+          "bufferMemoryBytes": 3853812426,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8166120730,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7510294528,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 294,
+          "cameraPrimitives": 2613951,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4283,
+          "shadowPrimitives": 11339820,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 153,
+          "cameraPrimitives": 2090633,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1885,
+          "shadowPrimitives": 8083072,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 1,
+      "variant": "v1",
+      "view": "20m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 190,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.85,
+          "wallTone": 0.24
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "v1"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1509,
+        "engineFrames": 1509,
+        "sampled": 1509,
+        "dropped": 0,
+        "windowMs": 10011.219,
+        "fps": 150.73089500888955,
+        "meanMs": 6.634212060967528,
+        "medianMs": 6.63199996948242,
+        "p95Ms": 6.82800006866455,
+        "p99Ms": 6.91200017929077,
+        "worstMs": 7.057,
+        "bestMs": 0.245,
+        "engine": {
+          "bufferMemoryBytes": 3853812426,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8172359058,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7527071744,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1510,
+          "cameraPrimitives": 3456056,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 3123,
+          "shadowPrimitives": 7748495,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 942,
+          "cameraPrimitives": 2935328,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1718,
+          "shadowPrimitives": 6173695,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 1,
+      "variant": "v1",
+      "view": "shop",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 190,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.85,
+          "wallTone": 0.24
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "v1"
+      },
+      "measurement": null,
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1134,
+          "cameraPrimitives": 2720876,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 2011,
+          "shadowPrimitives": 5706330,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 946,
+          "cameraPrimitives": 2675886,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1448,
+          "shadowPrimitives": 5243064,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 1,
+      "variant": "v1",
+      "view": "side",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 190,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.85,
+          "wallTone": 0.24
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "v1"
+      },
+      "measurement": null,
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 5091,
+          "cameraPrimitives": 9792255,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4488,
+          "shadowPrimitives": 11053478,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 3615,
+          "cameraPrimitives": 8443595,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 2547,
+          "shadowPrimitives": 9150836,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 2,
+      "variant": "plain",
+      "view": "5m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1556,
+        "engineFrames": 1556,
+        "sampled": 1556,
+        "dropped": 0,
+        "windowMs": 10007.802,
+        "fps": 155.47869552175393,
+        "meanMs": 6.431602827763497,
+        "medianMs": 6.43200016021729,
+        "p95Ms": 6.63700008392334,
+        "p99Ms": 6.72100019454956,
+        "worstMs": 6.841,
+        "bestMs": 0.352,
+        "engine": {
+          "bufferMemoryBytes": 5178412290,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 14807455758,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 8919580672,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 294,
+          "cameraPrimitives": 2490541,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4283,
+          "shadowPrimitives": 11339820,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 153,
+          "cameraPrimitives": 2090633,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1885,
+          "shadowPrimitives": 8083072,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 2,
+      "variant": "plain",
+      "view": "20m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1513,
+        "engineFrames": 1513,
+        "sampled": 1513,
+        "dropped": 0,
+        "windowMs": 10011.259,
+        "fps": 151.1298429098678,
+        "meanMs": 6.616685393258427,
+        "medianMs": 6.61800003051758,
+        "p95Ms": 6.80700016021729,
+        "p99Ms": 6.88800001144409,
+        "worstMs": 6.991,
+        "bestMs": 0.233,
+        "engine": {
+          "bufferMemoryBytes": 5178412290,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 14807472302,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 8919580672,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1510,
+          "cameraPrimitives": 3400588,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 3123,
+          "shadowPrimitives": 7748495,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 942,
+          "cameraPrimitives": 2903366,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1718,
+          "shadowPrimitives": 6173695,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 3,
+      "variant": "v2",
+      "view": "5m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 189,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v2"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1562,
+        "engineFrames": 1562,
+        "sampled": 1562,
+        "dropped": 0,
+        "windowMs": 10018.081,
+        "fps": 155.91808451139494,
+        "meanMs": 6.413478233034571,
+        "medianMs": 6.42000007629395,
+        "p95Ms": 6.61100006103516,
+        "p99Ms": 6.68100023269653,
+        "worstMs": 6.819,
+        "bestMs": 0.251,
+        "engine": {
+          "bufferMemoryBytes": 3922776090,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8282737282,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7577403392,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 294,
+          "cameraPrimitives": 2485704,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4283,
+          "shadowPrimitives": 11339820,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 153,
+          "cameraPrimitives": 2089127,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1885,
+          "shadowPrimitives": 8083072,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 3,
+      "variant": "v2",
+      "view": "20m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 189,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v2"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1517,
+        "engineFrames": 1517,
+        "sampled": 1517,
+        "dropped": 0,
+        "windowMs": 10020.305,
+        "fps": 151.39259733111916,
+        "meanMs": 6.60520698747528,
+        "medianMs": 6.61299991607666,
+        "p95Ms": 6.79400014877319,
+        "p99Ms": 6.87799978256226,
+        "worstMs": 7.103,
+        "bestMs": 0.366,
+        "engine": {
+          "bufferMemoryBytes": 3922776090,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8288975346,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7594180608,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1510,
+          "cameraPrimitives": 3398159,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 3123,
+          "shadowPrimitives": 7748495,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 942,
+          "cameraPrimitives": 2926417,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1718,
+          "shadowPrimitives": 6173695,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 3,
+      "variant": "v2",
+      "view": "shop",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 189,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v2"
+      },
+      "measurement": null,
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1134,
+          "cameraPrimitives": 2702845,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 2011,
+          "shadowPrimitives": 5706330,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 946,
+          "cameraPrimitives": 2664496,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1448,
+          "shadowPrimitives": 5243064,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 3,
+      "variant": "v2",
+      "view": "side",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 189,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v2"
+      },
+      "measurement": null,
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 5091,
+          "cameraPrimitives": 9157155,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4488,
+          "shadowPrimitives": 11053478,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 3615,
+          "cameraPrimitives": 8130842,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 2547,
+          "shadowPrimitives": 9150836,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 4,
+      "variant": "plain",
+      "view": "5m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1557,
+        "engineFrames": 1557,
+        "sampled": 1557,
+        "dropped": 0,
+        "windowMs": 10010.392,
+        "fps": 155.5383645315788,
+        "meanMs": 6.429026332691073,
+        "medianMs": 6.43599987030029,
+        "p95Ms": 6.60300016403198,
+        "p99Ms": 6.67999982833862,
+        "worstMs": 7.045,
+        "bestMs": 0.374,
+        "engine": {
+          "bufferMemoryBytes": 3858807936,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8067493510,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7644512256,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 294,
+          "cameraPrimitives": 2490541,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4283,
+          "shadowPrimitives": 11339820,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 153,
+          "cameraPrimitives": 2090633,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1885,
+          "shadowPrimitives": 8083072,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 4,
+      "variant": "plain",
+      "view": "20m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1514,
+        "engineFrames": 1514,
+        "sampled": 1514,
+        "dropped": 0,
+        "windowMs": 10016.823,
+        "fps": 151.14572754255516,
+        "meanMs": 6.6159993394980185,
+        "medianMs": 6.62400007247925,
+        "p95Ms": 6.80200004577637,
+        "p99Ms": 6.89099979400635,
+        "worstMs": 7.109,
+        "bestMs": 0.235,
+        "engine": {
+          "bufferMemoryBytes": 3858807936,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8067510182,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7644512256,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1510,
+          "cameraPrimitives": 3400588,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 3123,
+          "shadowPrimitives": 7748495,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 942,
+          "cameraPrimitives": 2903366,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1718,
+          "shadowPrimitives": 6173695,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 5,
+      "variant": "v3",
+      "view": "5m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 182,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.14,
+          "tone": 0.5,
+          "wallTone": 0.18
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v3"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1540,
+        "engineFrames": 1540,
+        "sampled": 1540,
+        "dropped": 0,
+        "windowMs": 10010.883,
+        "fps": 153.83258399883408,
+        "meanMs": 6.500422077922078,
+        "medianMs": 6.50699996948242,
+        "p95Ms": 6.67199993133545,
+        "p99Ms": 6.76599979400635,
+        "worstMs": 7.009,
+        "bestMs": 0.267,
+        "engine": {
+          "bufferMemoryBytes": 3924508200,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8310728894,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7644512256,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 294,
+          "cameraPrimitives": 2630308,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4283,
+          "shadowPrimitives": 11339820,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 153,
+          "cameraPrimitives": 2089127,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1885,
+          "shadowPrimitives": 8083072,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 5,
+      "variant": "v3",
+      "view": "20m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 182,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.14,
+          "tone": 0.5,
+          "wallTone": 0.18
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v3"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1506,
+        "engineFrames": 1506,
+        "sampled": 1506,
+        "dropped": 0,
+        "windowMs": 10022.123,
+        "fps": 150.26756307021975,
+        "meanMs": 6.654649402390438,
+        "medianMs": 6.65899991989136,
+        "p95Ms": 6.82499980926514,
+        "p99Ms": 6.90000009536743,
+        "worstMs": 7.218,
+        "bestMs": 0.376,
+        "engine": {
+          "bufferMemoryBytes": 3924508200,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8316967222,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7661289472,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1510,
+          "cameraPrimitives": 3483271,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 3123,
+          "shadowPrimitives": 7748495,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 942,
+          "cameraPrimitives": 2932867,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1718,
+          "shadowPrimitives": 6173695,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 5,
+      "variant": "v3",
+      "view": "shop",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 182,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.14,
+          "tone": 0.5,
+          "wallTone": 0.18
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v3"
+      },
+      "measurement": null,
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1134,
+          "cameraPrimitives": 2718555,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 2011,
+          "shadowPrimitives": 5706330,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 946,
+          "cameraPrimitives": 2672886,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1448,
+          "shadowPrimitives": 5243064,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 5,
+      "variant": "v3",
+      "view": "side",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 182,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.6,
+          "mixed": true,
+          "size": 1.2,
+          "tilt": 0.14,
+          "tone": 0.5,
+          "wallTone": 0.18
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6676716,
+        "variant": "v3"
+      },
+      "measurement": null,
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 5091,
+          "cameraPrimitives": 9802993,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4488,
+          "shadowPrimitives": 11053478,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 3615,
+          "cameraPrimitives": 8429618,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 2547,
+          "shadowPrimitives": 9150836,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 6,
+      "variant": "plain",
+      "view": "5m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1556,
+        "engineFrames": 1556,
+        "sampled": 1556,
+        "dropped": 0,
+        "windowMs": 10009.561,
+        "fps": 155.45137294232984,
+        "meanMs": 6.432721722365039,
+        "medianMs": 6.43699979782104,
+        "p95Ms": 6.61100006103516,
+        "p99Ms": 6.69899988174438,
+        "worstMs": 6.86,
+        "bestMs": 0.281,
+        "engine": {
+          "bufferMemoryBytes": 3907912656,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8281637142,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7644512256,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 294,
+          "cameraPrimitives": 2490541,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 4283,
+          "shadowPrimitives": 11339820,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 153,
+          "cameraPrimitives": 2090633,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1885,
+          "shadowPrimitives": 8083072,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    },
+    {
+      "run": 6,
+      "variant": "plain",
+      "view": "20m",
+      "geometry": {
+        "accepted": true,
+        "lodNodes": 197,
+        "nodes": 237,
+        "profile": {
+          "jitter": 0.28,
+          "size": 1.2,
+          "tilt": 0.075,
+          "tone": 0.28
+        },
+        "shadowNodes": 0,
+        "size": 1.2,
+        "surfaces": 237,
+        "triangles": 6761315,
+        "variant": "plain"
+      },
+      "measurement": {
+        "url": "http://127.0.0.1:59197/frames",
+        "requestedWindowMs": 10000,
+        "warmupMs": 5000,
+        "frames": 1515,
+        "engineFrames": 1515,
+        "sampled": 1515,
+        "dropped": 0,
+        "windowMs": 10013.946,
+        "fps": 151.2890123433859,
+        "meanMs": 6.609722772277228,
+        "medianMs": 6.61499977111816,
+        "p95Ms": 6.78000020980835,
+        "p99Ms": 6.85599994659424,
+        "worstMs": 7.159,
+        "bestMs": 0.226,
+        "engine": {
+          "bufferMemoryBytes": 3907912656,
+          "displayServer": "Windows",
+          "frameProfile": false,
+          "framesOnly": true,
+          "headless": false,
+          "lowTextures": false,
+          "maxFps": 0,
+          "msaa": 0,
+          "noLightmap": false,
+          "physicsTicksPerSecond": 60,
+          "refreshRateHz": 60,
+          "renderingDriver": "d3d12",
+          "renderingMethod": "forward_plus",
+          "scaling3dScale": 1,
+          "screenSpaceAA": 2,
+          "staticMemoryBytes": 8281653862,
+          "taa": false,
+          "textureMemoryBytes": 844840960,
+          "threadModel": 2,
+          "videoAdapter": "AMD Radeon RX 9070 XT",
+          "videoMemoryBytes": 7644512256,
+          "viewportSize": [
+            1920,
+            1080
+          ],
+          "vsyncMode": 0
+        },
+        "caveats": []
+      },
+      "renderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 1510,
+          "cameraPrimitives": 3400588,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 3123,
+          "shadowPrimitives": 7748495,
+          "taa": false,
+          "width": 1280
+        }
+      },
+      "adsRenderStats": {
+        "accepted": true,
+        "stats": {
+          "cameraDrawCalls": 942,
+          "cameraPrimitives": 2903366,
+          "height": 720,
+          "scale3D": 1,
+          "screenSpaceAA": 2,
+          "shadowDrawCalls": 1718,
+          "shadowPrimitives": 6173695,
+          "taa": false,
+          "width": 1280
+        }
+      }
+    }
+  ]
+}
