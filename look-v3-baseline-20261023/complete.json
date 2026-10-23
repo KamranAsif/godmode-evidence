@@ -1,0 +1,238 @@
+{
+  "views": [
+    {
+      "id": "01-shop",
+      "title": "Shop street",
+      "position": [
+        -404,
+        -15.582,
+        -390
+      ],
+      "yaw": 0,
+      "pitch": 0.02
+    },
+    {
+      "id": "02-facade",
+      "title": "Facade at 5 m",
+      "position": [
+        -404.5,
+        -15.582,
+        -402
+      ],
+      "yaw": 1.5707963267948966,
+      "pitch": 0.35
+    },
+    {
+      "id": "03-bridge",
+      "title": "Under the bridge",
+      "position": [
+        -518,
+        -13.7,
+        -375
+      ],
+      "yaw": -2.15,
+      "pitch": -0.06
+    },
+    {
+      "id": "04-fight",
+      "title": "Mid-fight / 12 riflemen",
+      "position": [
+        -404,
+        -15.582,
+        -414
+      ],
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "combat": true
+    },
+    {
+      "id": "05-side-street",
+      "title": "Shaded side street",
+      "position": [
+        -421,
+        -15.6,
+        -366
+      ],
+      "yaw": -1.54,
+      "pitch": 0.015
+    },
+    {
+      "id": "06-wide",
+      "title": "Wide waterfront",
+      "position": [
+        -435,
+        -11,
+        -484
+      ],
+      "yaw": -0.93,
+      "pitch": -0.18
+    }
+  ],
+  "variants": {
+    "V2": {
+      "LookV3Grade": {
+        "visible": false
+      },
+      "Environment": {
+        "tonemap_exposure": 0.7,
+        "tonemap_agx_contrast": 1.15,
+        "adjustment_brightness": 1,
+        "adjustment_contrast": 1.08,
+        "adjustment_saturation": 1.08,
+        "ambient_light_energy": 0.75,
+        "ssao_radius": 3,
+        "ssao_intensity": 5,
+        "fog_density": 0.00008,
+        "fog_aerial_perspective": 0.04
+      },
+      "Sun": {
+        "light_angular_distance": 0.35,
+        "shadow_blur": 1
+      },
+      "morning_sky_shader": {
+        "panorama_energy": 1.6,
+        "atmosphere_blue": 0.9
+      },
+      "Viewport": {
+        "msaa_3d": 0,
+        "screen_space_aa": 2,
+        "use_taa": false
+      },
+      "RenderingServer.calls": {
+        "environment_set_ssao_quality": [
+          "ENV_SSAO_QUALITY_MEDIUM",
+          false,
+          0.5,
+          2,
+          50,
+          300
+        ],
+        "environment_set_ssil_quality": [
+          "ENV_SSIL_QUALITY_MEDIUM",
+          true,
+          0.5,
+          2,
+          50,
+          300
+        ]
+      }
+    },
+    "V3": {
+      "Viewport": {
+        "msaa_3d": 2
+      },
+      "RenderingServer.calls": {
+        "environment_set_ssao_quality": [
+          "ENV_SSAO_QUALITY_HIGH",
+          false,
+          0.5,
+          2,
+          50,
+          300
+        ],
+        "environment_set_ssil_quality": [
+          "ENV_SSIL_QUALITY_HIGH",
+          true,
+          0.5,
+          2,
+          50,
+          300
+        ]
+      }
+    },
+    "V3-AA-A": {
+      "Viewport": {
+        "msaa_3d": 0
+      },
+      "RenderingServer.calls": {
+        "environment_set_ssao_quality": [
+          "ENV_SSAO_QUALITY_HIGH",
+          false,
+          0.5,
+          2,
+          50,
+          300
+        ],
+        "environment_set_ssil_quality": [
+          "ENV_SSIL_QUALITY_HIGH",
+          true,
+          0.5,
+          2,
+          50,
+          300
+        ]
+      }
+    },
+    "V3-AA-B": {
+      "Viewport": {
+        "msaa_3d": 1
+      },
+      "RenderingServer.calls": {
+        "environment_set_ssao_quality": [
+          "ENV_SSAO_QUALITY_HIGH",
+          false,
+          0.5,
+          2,
+          50,
+          300
+        ],
+        "environment_set_ssil_quality": [
+          "ENV_SSIL_QUALITY_HIGH",
+          true,
+          0.5,
+          2,
+          50,
+          300
+        ]
+      }
+    },
+    "V3-effects-A": {
+      "Viewport": {
+        "msaa_3d": 2
+      },
+      "RenderingServer.calls": {
+        "environment_set_ssao_quality": [
+          "ENV_SSAO_QUALITY_MEDIUM",
+          false,
+          0.5,
+          2,
+          50,
+          300
+        ],
+        "environment_set_ssil_quality": [
+          "ENV_SSIL_QUALITY_MEDIUM",
+          true,
+          0.5,
+          2,
+          50,
+          300
+        ]
+      }
+    },
+    "V3-effects-C": {
+      "Viewport": {
+        "msaa_3d": 2
+      },
+      "RenderingServer.calls": {
+        "environment_set_ssao_quality": [
+          "ENV_SSAO_QUALITY_ULTRA",
+          false,
+          0.5,
+          2,
+          50,
+          300
+        ],
+        "environment_set_ssil_quality": [
+          "ENV_SSIL_QUALITY_ULTRA",
+          false,
+          0.5,
+          2,
+          50,
+          300
+        ]
+      }
+    }
+  },
+  "engine": "revision 2",
+  "seed": 1136293662
+}
