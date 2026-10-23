@@ -1,0 +1,992 @@
+{
+  "order": [
+    "B1",
+    "A1",
+    "B2",
+    "A2",
+    "B3",
+    "A3",
+    "B4"
+  ],
+  "beforeCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+  "afterCommit": "137111c4226da5d260d6ccd9109c1d1fa66e3ac3",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "framesOnly": true,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "enemies": 65,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "firefight-65",
+        "durationMs": 30000,
+        "from": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "fixedCamera": true,
+        "settleMs": 13000,
+        "expectedLivingEnemies": 65,
+        "setup": [
+          {
+            "atMs": 0,
+            "kind": "wave",
+            "count": 65
+          }
+        ],
+        "events": []
+      },
+      {
+        "id": "shopping-street",
+        "durationMs": 12000,
+        "from": [
+          -404,
+          -15.582,
+          -390
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 65
+          }
+        ]
+      },
+      {
+        "id": "under-bridge",
+        "durationMs": 12000,
+        "from": [
+          -518,
+          -13.7,
+          -375
+        ],
+        "to": [
+          -534,
+          -13.7,
+          -395
+        ],
+        "yaw": -2.15,
+        "pitch": -0.06,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 65
+          },
+          {
+            "atMs": 4000,
+            "name": "debug_survival_command",
+            "payload": {
+              "command": "streak:blast:rcxd:12"
+            },
+            "optional": false
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "hardware": [
+    {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.7029"
+    }
+  ],
+  "rows": [
+    {
+      "id": "firefight-65",
+      "before": {
+        "median": 15.513999938964801,
+        "p95": 19.479500770568848,
+        "p99": 20.8420000076294
+      },
+      "after": {
+        "median": 15.71399974823,
+        "p95": 19.6480007171631,
+        "p99": 21.132999420166
+      },
+      "pairedMedianMsSaved": -0.14750051498410066,
+      "pairedRangeMs": [
+        -0.3374996185303001,
+        -0.0689997673033993
+      ],
+      "maxAdjacentControlDriftMs": 0.5880002975464009,
+      "pairedP95MsSaved": -0.1684999465942525,
+      "maxAdjacentControlP95DriftMs": 0.17000007629389913,
+      "pairedP99MsSaved": -0.09449958801270242,
+      "maxAdjacentControlP99DriftMs": 0.5149993896483984,
+      "pairs": [
+        {
+          "median": -0.3374996185303001,
+          "p95": -0.1684999465942525,
+          "p99": 0.25150108337399857
+        },
+        {
+          "median": -0.0689997673033993,
+          "p95": -0.027000427246100855,
+          "p99": -0.09449958801270242
+        },
+        {
+          "median": -0.14750051498410066,
+          "p95": -0.4550008773803498,
+          "p99": -0.29799938201900034
+        }
+      ],
+      "verdict": "p95 within observed drift"
+    },
+    {
+      "id": "shopping-street",
+      "before": {
+        "median": 11.70749998092655,
+        "p95": 17.079999923706048,
+        "p99": 19.331500053405748
+      },
+      "after": {
+        "median": 11.7819995880127,
+        "p95": 17.2399997711182,
+        "p99": 19.5160007476807
+      },
+      "pairedMedianMsSaved": -0.07249927520749999,
+      "pairedRangeMs": [
+        -0.22300052642814983,
+        -0.02049970626825015
+      ],
+      "maxAdjacentControlDriftMs": 0.28199958801270064,
+      "pairedP95MsSaved": -0.07999897003179868,
+      "maxAdjacentControlP95DriftMs": 0.37199974060060015,
+      "pairedP99MsSaved": -0.29500102996829725,
+      "maxAdjacentControlP99DriftMs": 0.8349990844727024,
+      "pairs": [
+        {
+          "median": -0.22300052642814983,
+          "p95": -0.07999897003179868,
+          "p99": 0.4645004272461506
+        },
+        {
+          "median": -0.02049970626825015,
+          "p95": 0.13100147247315164,
+          "p99": -0.5574998855590536
+        },
+        {
+          "median": -0.07249927520749999,
+          "p95": -0.16900062561035156,
+          "p99": -0.29500102996829725
+        }
+      ],
+      "verdict": "p95 within observed drift"
+    },
+    {
+      "id": "under-bridge",
+      "before": {
+        "median": 18.4399995803833,
+        "p95": 23.7390003204346,
+        "p99": 33.35500144958495
+      },
+      "after": {
+        "median": 18.6520004272461,
+        "p95": 24.1469993591309,
+        "p99": 46.5419998168945
+      },
+      "pairedMedianMsSaved": -0.22949886322019708,
+      "pairedRangeMs": [
+        -0.24000072479245205,
+        -0.14550018310550072
+      ],
+      "maxAdjacentControlDriftMs": 0.1000003814697017,
+      "pairedP95MsSaved": -0.4079990386962997,
+      "maxAdjacentControlP95DriftMs": 0.09900093078610084,
+      "pairedP99MsSaved": -8.180999755859347,
+      "maxAdjacentControlP99DriftMs": 16.655998229980504,
+      "pairs": [
+        {
+          "median": -0.14550018310550072,
+          "p95": -0.4079990386962997,
+          "p99": -5.497999191284151
+        },
+        {
+          "median": -0.22949886322019708,
+          "p95": 0.03800010681149857,
+          "p99": -13.373998641967752
+        },
+        {
+          "median": -0.24000072479245205,
+          "p95": -0.4105005264282511,
+          "p99": -8.180999755859347
+        }
+      ],
+      "verdict": "p95 regressed"
+    },
+    {
+      "id": "overall",
+      "before": {
+        "median": 15.40000009536745,
+        "p95": 20.081000328064,
+        "p99": 23.88299942016605
+      },
+      "after": {
+        "median": 15.5939998626709,
+        "p95": 20.3899993896484,
+        "p99": 24.2250003814697
+      },
+      "pairedMedianMsSaved": -0.13999938964844993,
+      "pairedRangeMs": [
+        -0.30249977111814985,
+        -0.004499912261950456
+      ],
+      "maxAdjacentControlDriftMs": 0.564999580383299,
+      "pairedP95MsSaved": -0.36149978637689983,
+      "maxAdjacentControlP95DriftMs": 0.10300064086920102,
+      "pairedP99MsSaved": -0.3250007629394496,
+      "maxAdjacentControlP99DriftMs": 0.22200012207030184,
+      "pairs": [
+        {
+          "median": -0.30249977111814985,
+          "p95": -0.36149978637689983,
+          "p99": -0.7730007171630504
+        },
+        {
+          "median": -0.004499912261950456,
+          "p95": -0.24800014495849965,
+          "p99": 0.145500183105451
+        },
+        {
+          "median": -0.13999938964844993,
+          "p95": -0.47899913787839665,
+          "p99": -0.3250007629394496
+        }
+      ],
+      "verdict": "p95 regressed"
+    }
+  ],
+  "componentMetrics": null,
+  "definition": "Arm columns are medians of per-run median/p95/p99. Savings use the mean of adjacent controls minus the candidate, then the median of three pairs. Verdicts use paired p95 savings against maximum adjacent-control p95 drift.",
+  "runs": [
+    {
+      "label": "before-1",
+      "buildCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+      "workloadHash": "2aa3990fb3c38833509e8a0a9170d15d6a9c3d04713c40aaafb85939d92d987e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "firefight-65",
+          "frames": 1924,
+          "frameMs": {
+            "median": 15.4820003509521,
+            "p95": 19.4950008392334,
+            "p99": 20.818000793457,
+            "max": 24.6270008087158,
+            "mean": 15.584188150021241
+          },
+          "hitches": {
+            "over33Ms": 0,
+            "over50Ms": 0
+          }
+        },
+        {
+          "id": "shopping-street",
+          "frames": 980,
+          "frameMs": {
+            "median": 11.4270000457764,
+            "p95": 17.3460006713867,
+            "p99": 20.0179996490479,
+            "max": 175.518005371094,
+            "mean": 12.255097966291467
+          },
+          "hitches": {
+            "over33Ms": 4,
+            "over50Ms": 4
+          }
+        },
+        {
+          "id": "under-bridge",
+          "frames": 616,
+          "frameMs": {
+            "median": 18.4179992675781,
+            "p95": 23.7360000610352,
+            "p99": 32.3790016174316,
+            "max": 171.518005371094,
+            "mean": 19.500590934381858
+          },
+          "hitches": {
+            "over33Ms": 6,
+            "over50Ms": 6
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 15.4049997329712,
+          "p95": 19.9769992828369,
+          "p99": 23.8999996185303,
+          "max": 175.518005371094,
+          "mean": 15.342709665677765
+        },
+        "hitches": {
+          "over33Ms": 10,
+          "over50Ms": 10
+        }
+      }
+    },
+    {
+      "label": "after-1",
+      "buildCommit": "137111c4226da5d260d6ccd9109c1d1fa66e3ac3",
+      "workloadHash": "2aa3990fb3c38833509e8a0a9170d15d6a9c3d04713c40aaafb85939d92d987e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "7141af4f680dabddb340bc902298045dcc85dc80cad5bbe0245b42cd38e337c7",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "firefight-65",
+          "frames": 1917,
+          "frameMs": {
+            "median": 15.71399974823,
+            "p95": 19.6480007171631,
+            "p99": 20.8169994354248,
+            "max": 28.5219993591309,
+            "mean": 15.643842464321656
+          },
+          "hitches": {
+            "over33Ms": 0,
+            "over50Ms": 0
+          }
+        },
+        {
+          "id": "shopping-street",
+          "frames": 976,
+          "frameMs": {
+            "median": 11.7910003662109,
+            "p95": 17.2399997711182,
+            "p99": 19.1359996795654,
+            "max": 174.07600402832,
+            "mean": 12.298099387376032
+          },
+          "hitches": {
+            "over33Ms": 5,
+            "over50Ms": 4
+          }
+        },
+        {
+          "id": "under-bridge",
+          "frames": 607,
+          "frameMs": {
+            "median": 18.5900001525879,
+            "p95": 24.1469993591309,
+            "p99": 38.8530006408691,
+            "max": 174.02099609375,
+            "mean": 19.77968367084836
+          },
+          "hitches": {
+            "over33Ms": 8,
+            "over50Ms": 6
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 15.5939998626709,
+          "p95": 20.3899993896484,
+          "p99": 24.6560001373291,
+          "max": 174.07600402832,
+          "mean": 15.42813114125388
+        },
+        "hitches": {
+          "over33Ms": 13,
+          "over50Ms": 10
+        }
+      }
+    },
+    {
+      "label": "before-2",
+      "buildCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+      "workloadHash": "2aa3990fb3c38833509e8a0a9170d15d6a9c3d04713c40aaafb85939d92d987e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "firefight-65",
+          "frames": 1921,
+          "frameMs": {
+            "median": 15.2709999084473,
+            "p95": 19.4640007019043,
+            "p99": 21.3190002441406,
+            "max": 25.3479995727539,
+            "mean": 15.609136905600664
+          },
+          "hitches": {
+            "over33Ms": 0,
+            "over50Ms": 0
+          }
+        },
+        {
+          "id": "shopping-street",
+          "frames": 983,
+          "frameMs": {
+            "median": 11.7089996337891,
+            "p95": 16.9740009307861,
+            "p99": 19.1830005645752,
+            "max": 173.212005615234,
+            "mean": 12.214714159921856
+          },
+          "hitches": {
+            "over33Ms": 4,
+            "over50Ms": 4
+          }
+        },
+        {
+          "id": "under-bridge",
+          "frames": 616,
+          "frameMs": {
+            "median": 18.4710006713867,
+            "p95": 23.742000579834,
+            "p99": 34.3310012817383,
+            "max": 172.375,
+            "mean": 19.48038638102544
+          },
+          "hitches": {
+            "over33Ms": 7,
+            "over50Ms": 6
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 15.1780004501343,
+          "p95": 20.0799999237061,
+          "p99": 23.8659992218018,
+          "max": 173.212005615234,
+          "mean": 15.338674439083446
+        },
+        "hitches": {
+          "over33Ms": 11,
+          "over50Ms": 10
+        }
+      }
+    },
+    {
+      "label": "after-2",
+      "buildCommit": "137111c4226da5d260d6ccd9109c1d1fa66e3ac3",
+      "workloadHash": "2aa3990fb3c38833509e8a0a9170d15d6a9c3d04713c40aaafb85939d92d987e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "7141af4f680dabddb340bc902298045dcc85dc80cad5bbe0245b42cd38e337c7",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "firefight-65",
+          "frames": 1923,
+          "frameMs": {
+            "median": 15.6339998245239,
+            "p95": 19.5300006866455,
+            "p99": 21.1560001373291,
+            "max": 27.4379997253418,
+            "mean": 15.592332800787313
+          },
+          "hitches": {
+            "over33Ms": 0,
+            "over50Ms": 0
+          }
+        },
+        {
+          "id": "shopping-street",
+          "frames": 978,
+          "frameMs": {
+            "median": 11.7279996871948,
+            "p95": 16.9459991455078,
+            "p99": 19.8889999389648,
+            "max": 172.934997558594,
+            "mean": 12.269953979792527
+          },
+          "hitches": {
+            "over33Ms": 4,
+            "over50Ms": 4
+          }
+        },
+        {
+          "id": "under-bridge",
+          "frames": 606,
+          "frameMs": {
+            "median": 18.6959991455078,
+            "p95": 23.6770000457764,
+            "p99": 46.5419998168945,
+            "max": 172.996002197266,
+            "mean": 19.819374614816294
+          },
+          "hitches": {
+            "over33Ms": 8,
+            "over50Ms": 6
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 15.4650001525879,
+          "p95": 20.3290004730225,
+          "p99": 23.681999206543,
+          "max": 172.996002197266,
+          "mean": 15.396239516603869
+        },
+        "hitches": {
+          "over33Ms": 12,
+          "over50Ms": 10
+        }
+      }
+    },
+    {
+      "label": "before-3",
+      "buildCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+      "workloadHash": "2aa3990fb3c38833509e8a0a9170d15d6a9c3d04713c40aaafb85939d92d987e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "firefight-65",
+          "frames": 1915,
+          "frameMs": {
+            "median": 15.8590002059937,
+            "p95": 19.5419998168945,
+            "p99": 20.8040008544922,
+            "max": 26.8560009002686,
+            "mean": 15.653240722028768
+          },
+          "hitches": {
+            "over33Ms": 0,
+            "over50Ms": 0
+          }
+        },
+        {
+          "id": "shopping-street",
+          "frames": 982,
+          "frameMs": {
+            "median": 11.706000328064,
+            "p95": 17.1800003051758,
+            "p99": 19.4799995422363,
+            "max": 173.09700012207,
+            "mean": 12.223171073890267
+          },
+          "hitches": {
+            "over33Ms": 4,
+            "over50Ms": 4
+          }
+        },
+        {
+          "id": "under-bridge",
+          "frames": 615,
+          "frameMs": {
+            "median": 18.4619998931885,
+            "p95": 23.6879997253418,
+            "p99": 32.0050010681152,
+            "max": 173.841003417969,
+            "mean": 19.521861778817527
+          },
+          "hitches": {
+            "over33Ms": 6,
+            "over50Ms": 6
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 15.7430000305176,
+          "p95": 20.0820007324219,
+          "p99": 23.7889995574951,
+          "max": 173.841003417969,
+          "mean": 15.371598795904928
+        },
+        "hitches": {
+          "over33Ms": 10,
+          "over50Ms": 10
+        }
+      }
+    },
+    {
+      "label": "after-3",
+      "buildCommit": "137111c4226da5d260d6ccd9109c1d1fa66e3ac3",
+      "workloadHash": "2aa3990fb3c38833509e8a0a9170d15d6a9c3d04713c40aaafb85939d92d987e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "7141af4f680dabddb340bc902298045dcc85dc80cad5bbe0245b42cd38e337c7",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "firefight-65",
+          "frames": 1913,
+          "frameMs": {
+            "median": 15.8500003814697,
+            "p95": 19.9120006561279,
+            "p99": 21.132999420166,
+            "max": 24.0270004272461,
+            "mean": 15.669116577551245
+          },
+          "hitches": {
+            "over33Ms": 0,
+            "over50Ms": 0
+          }
+        },
+        {
+          "id": "shopping-street",
+          "frames": 978,
+          "frameMs": {
+            "median": 11.7819995880127,
+            "p95": 17.2490005493164,
+            "p99": 19.5160007476807,
+            "max": 173.481994628906,
+            "mean": 12.27862372403252
+          },
+          "hitches": {
+            "over33Ms": 4,
+            "over50Ms": 4
+          }
+        },
+        {
+          "id": "under-bridge",
+          "frames": 604,
+          "frameMs": {
+            "median": 18.6520004272461,
+            "p95": 24.1480007171631,
+            "p99": 48.5139999389648,
+            "max": 171.641006469727,
+            "mean": 19.883773143717786
+          },
+          "hitches": {
+            "over33Ms": 8,
+            "over50Ms": 6
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 15.7089996337891,
+          "p95": 20.5979995727539,
+          "p99": 24.2250003814697,
+          "max": 173.481994628906,
+          "mean": 15.448730470318992
+        },
+        "hitches": {
+          "over33Ms": 12,
+          "over50Ms": 10
+        }
+      }
+    },
+    {
+      "label": "before-4",
+      "buildCommit": "a0b792d0e38bed257172eef172c9736db2ef9ca3",
+      "workloadHash": "2aa3990fb3c38833509e8a0a9170d15d6a9c3d04713c40aaafb85939d92d987e",
+      "measurementHash": "918155b5d88ed056c64a5ac97654fa6ca11e7fbbf31f5a64a10c16bfd7b161c1",
+      "arenaReceiptSha256": "e21798db0d1c45ce6bc298f304f18c79b9aff689d6be7109f54065d64a8401a8",
+      "engine": {
+        "threadModel": 2,
+        "maxFps": 0,
+        "framesOnly": true,
+        "frameProfile": false,
+        "viewportSize": [
+          2560,
+          1440
+        ],
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      },
+      "segments": [
+        {
+          "id": "firefight-65",
+          "frames": 1921,
+          "frameMs": {
+            "median": 15.5459995269775,
+            "p95": 19.3719997406006,
+            "p99": 20.8659992218018,
+            "max": 28.3910007476807,
+            "mean": 15.60804320622831
+          },
+          "hitches": {
+            "over33Ms": 0,
+            "over50Ms": 0
+          }
+        },
+        {
+          "id": "shopping-street",
+          "frames": 979,
+          "frameMs": {
+            "median": 11.7130002975464,
+            "p95": 16.9799995422363,
+            "p99": 18.9619998931885,
+            "max": 173.92399597168,
+            "mean": 12.259829392593899
+          },
+          "hitches": {
+            "over33Ms": 4,
+            "over50Ms": 4
+          }
+        },
+        {
+          "id": "under-bridge",
+          "frames": 617,
+          "frameMs": {
+            "median": 18.3619995117188,
+            "p95": 23.7870006561279,
+            "p99": 48.6609992980957,
+            "max": 174.145004272461,
+            "mean": 19.45131604443493
+          },
+          "hitches": {
+            "over33Ms": 7,
+            "over50Ms": 6
+          }
+        }
+      ],
+      "overall": {
+        "frameMs": {
+          "median": 15.3950004577637,
+          "p95": 20.1560001373291,
+          "p99": 24.0109996795654,
+          "max": 174.145004272461,
+          "mean": 15.350266128498822
+        },
+        "hitches": {
+          "over33Ms": 11,
+          "over50Ms": 10
+        }
+      }
+    }
+  ],
+  "geometryAttribution": {
+    "buildCommit": "137111c4226da5d260d6ccd9109c1d1fa66e3ac3",
+    "framesOnly": false,
+    "profile": false,
+    "segments": [
+      {
+        "id": "firefight-65",
+        "mean": {
+          "visiblePrimitives": 9032898.576704545,
+          "shadowPrimitives": 20892746.022727273,
+          "visibleDrawCalls": 3588.59375,
+          "shadowDrawCalls": 7999.105113636364
+        },
+        "peak": {
+          "visiblePrimitives": 9209855,
+          "shadowPrimitives": 21406550,
+          "visibleDrawCalls": 3609,
+          "shadowDrawCalls": 8008
+        }
+      },
+      {
+        "id": "shopping-street",
+        "mean": {
+          "visiblePrimitives": 5423877.9185667755,
+          "shadowPrimitives": 11645780.078175895,
+          "visibleDrawCalls": 1286.5830618892508,
+          "shadowDrawCalls": 2508.3745928338762
+        },
+        "peak": {
+          "visiblePrimitives": 6750074,
+          "shadowPrimitives": 17444423,
+          "visibleDrawCalls": 1500,
+          "shadowDrawCalls": 2769
+        }
+      },
+      {
+        "id": "under-bridge",
+        "mean": {
+          "visiblePrimitives": 14988536.989528796,
+          "shadowPrimitives": 15414214.193717277,
+          "visibleDrawCalls": 8507.816753926701,
+          "shadowDrawCalls": 5589.795811518325
+        },
+        "peak": {
+          "visiblePrimitives": 16070974,
+          "shadowPrimitives": 21561148,
+          "visibleDrawCalls": 8867,
+          "shadowDrawCalls": 5910
+        }
+      },
+      {
+        "id": "park-foliage",
+        "mean": {
+          "visiblePrimitives": 3036261.657142857,
+          "shadowPrimitives": 4528820.26122449,
+          "visibleDrawCalls": 994.7224489795918,
+          "shadowDrawCalls": 928.9285714285714
+        },
+        "peak": {
+          "visiblePrimitives": 3326646,
+          "shadowPrimitives": 4859694,
+          "visibleDrawCalls": 1156,
+          "shadowDrawCalls": 1085
+        }
+      }
+    ],
+    "caveat": "Godot counters for the complete scene, not bush-only geometry or a GPU hardware census. MultiMesh mesh-LOD counters can omit instance multiplication. The new bush tiers use separate explicit meshes and native visibility ranges. Instrumented frame times excluded from headline results."
+  },
+  "verdict": [
+    {
+      "id": "firefight-65",
+      "median": "within observed drift",
+      "p95": "within observed drift",
+      "p99": "within observed drift"
+    },
+    {
+      "id": "shopping-street",
+      "median": "within observed drift",
+      "p95": "within observed drift",
+      "p99": "within observed drift"
+    },
+    {
+      "id": "under-bridge",
+      "median": "regressed",
+      "p95": "regressed",
+      "p99": "within observed drift"
+    }
+  ],
+  "revision": 2,
+  "mainIncludes": "V2 lighting (#2209)",
+  "validation": {
+    "nativeClientSha256": "0bc4d42cb262225ddc089a91fbcb71218aadb65edf934846b49f225c140ea703",
+    "nativeServerSha256": "21dbb3867af856168a17c4832f4266739835c7b4d36c454647cf9da2c4130171",
+    "nativeStrictClientServer": "PASS; zero normal/property/uniform/position diffs",
+    "prebuiltFinalizationVersion": 4,
+    "renderedNativeBushFixture": "PASS",
+    "headlessGameConsoleSmoke": "PASS",
+    "rootTestStages": {
+      "passed": 11,
+      "total": 11
+    }
+  },
+  "tierGeometry": {
+    "variant": 0,
+    "visibleRangesM": [
+      12,
+      30,
+      70
+    ],
+    "shadowProxyM": [
+      12,
+      55
+    ],
+    "floweringTriangles": [
+      6348,
+      4224,
+      3342,
+      1602
+    ],
+    "greenTriangles": [
+      5376,
+      3792,
+      3216,
+      1518
+    ],
+    "shadowProxyTriangles": 56,
+    "leafCoreCounts": [
+      900,
+      900,
+      900
+    ],
+    "brightShootCounts": [
+      72,
+      72,
+      72
+    ],
+    "generation": "All visible tiers derive from the locked near mesh; no visible coarse-shell replacement"
+  },
+  "worstCamera": "under-bridge"
+}
