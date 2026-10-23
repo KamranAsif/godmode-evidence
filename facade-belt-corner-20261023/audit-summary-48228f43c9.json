@@ -1,0 +1,224 @@
+{
+  "description": "Native finalized-source diagnostic for continuous belt joins and buildings_48791 internal-cap crossing",
+  "baseCommit": "0fd16446f",
+  "candidateRuntimeCommit": "2d7067400",
+  "facetSizeMeters": 2.4,
+  "releaseVerified": false,
+  "physicsDisabled": true,
+  "rebasedOnto": "d948e4a9f",
+  "rebaseNote": "Captured before rebase onto opening-story PR #2214. The rebase changed no geometry inputs; all four repair source files and masonry bytes match the native source receipt. Arena regeneration remains release-owned.",
+  "auditedSourceFilesMatchAfterRebase": [
+    "scripts/client/building_shell_tones.ts",
+    "scripts/environment_modules/building_fidelity.ts",
+    "scripts/environment_modules/placement_rules.ts",
+    "scripts/environment_modules/tencent_daily_models.ts",
+    "assets/environment/buildings/masonry.glb"
+  ],
+  "coverage": "All map-wide belt-course instances and all buildings_48791 window batches, against every neighbour and their own material/self contacts. Not a whole-map clearance claim.",
+  "focusPlan": {
+    "groups": [
+      {
+        "id": "beltCourses",
+        "idContains": "/belt-course-"
+      },
+      {
+        "id": "cornerWindows",
+        "idContains": "/windows_buildings_48791_"
+      }
+    ],
+    "contactRegions": [
+      {
+        "id": "cornerSeam",
+        "group": "cornerWindows",
+        "otherFacade": true,
+        "bounds": [
+          -683,
+          -17,
+          -128.32,
+          -679,
+          19.2,
+          -127.4
+        ]
+      }
+    ]
+  },
+  "cameraPlan": {
+    "views": [
+      {
+        "id": "belt-5m",
+        "building": "buildings_112332",
+        "position": [
+          -403.6585030952033,
+          -15.55,
+          -389.98389296982333
+        ],
+        "yaw": -1.6179237560578112,
+        "pitch": 0.1,
+        "fov": 75,
+        "horizontalTargetDistance": 5
+      },
+      {
+        "id": "belt-20m",
+        "building": "buildings_112332",
+        "position": [
+          -404.57078432240246,
+          -15.55,
+          -370.6404712963577
+        ],
+        "yaw": -0.2998076844049945,
+        "pitch": 0.04,
+        "fov": 75,
+        "horizontalTargetDistance": 20
+      },
+      {
+        "id": "corner-5m",
+        "building": "buildings_48791",
+        "position": [
+          -676.4811,
+          -11.97,
+          -125.57385
+        ],
+        "yaw": 1.2202303197136772,
+        "pitch": 0,
+        "fov": 75,
+        "target": [
+          -681.177,
+          -11.97,
+          -127.291
+        ],
+        "horizontalTargetDistance": 5
+      },
+      {
+        "id": "corner-20m",
+        "position": [
+          -668.1685810122301,
+          -11.97,
+          -142.48252166040743
+        ],
+        "yaw": 2.4334555428630638,
+        "pitch": 0,
+        "fov": 75,
+        "target": [
+          -681.177,
+          -11.97,
+          -127.291
+        ],
+        "horizontalTargetDistance": 20,
+        "building": "buildings_48791"
+      }
+    ]
+  },
+  "placementIdentity": {
+    "building": "buildings_48791",
+    "beforeCount": 930,
+    "afterCount": 930,
+    "identical": true,
+    "beforeSha256": "598e33e13e7dfbb122b8cafe0ae6b844b53c3e34a6b6e6206a7a7aea13bdfc99",
+    "afterSha256": "598e33e13e7dfbb122b8cafe0ae6b844b53c3e34a6b6e6206a7a7aea13bdfc99",
+    "moduleCounts": {
+      "shopfront-family": 82,
+      "window-lintel-sash": 847,
+      "door-surround-style-family": 1
+    },
+    "meaning": "Exact serialized placement objects, including module, variant, pose and footprint; belt courses excluded."
+  },
+  "collinearBeltPairDefinition": "Both belt instances, different instances, parallel length axes (abs normalized dot > 0.99999), origin height difference < 5 mm and distance from same horizontal axis line < 5 mm. Derived from exact native finding pairs, not a checker exclusion.",
+  "collinearBeltPairs": {
+    "before": 1967,
+    "after": 0
+  },
+  "sourceBuilds": {
+    "before": {
+      "sourceFingerprint": "3ad6308fbb9fa014ee54aa58c409462f5a83de12b05776c5c445dacd49ed58f2",
+      "releaseVerified": false,
+      "liveAudit": true,
+      "physicsDisabled": true,
+      "memory": {
+        "totalBytes": 34032001024,
+        "startFreeBytes": 21053341696,
+        "minimumObservedFreeBytes": 9433010176
+      },
+      "geometryScope": "actual live finalized generator meshes and transforms; physics simulation disabled; no saved/reload verification"
+    },
+    "after": {
+      "sourceFingerprint": "5d039bd9f808660b0b2dd20ab2db7c54e9b6fd1300f2d8ab48ccca35aafd76b6",
+      "releaseVerified": false,
+      "liveAudit": true,
+      "physicsDisabled": true,
+      "memory": {
+        "totalBytes": 34032001024,
+        "startFreeBytes": 20853952512,
+        "minimumObservedFreeBytes": 9591488512
+      },
+      "geometryScope": "actual live finalized generator meshes and transforms; physics simulation disabled; no saved/reload verification"
+    }
+  },
+  "stages": {
+    "before": {
+      "snapshotHash": "da043ace5f592b13673a80a68279d82720b3d1ac472b03baebef1bf49b89d11a",
+      "algorithmHash": "c7b4795929f73ac72d71680a24da514e5f4c02ab60782a1a2ee4013c96b639f6",
+      "instances": 62427,
+      "broadphasePairs": 69008,
+      "triangleTests": 87256960,
+      "findingPairs": 11731,
+      "groupCounts": {
+        "beltCourses": {
+          "instances": 2698,
+          "pairs": 10564,
+          "selfMaterialPairs": 750,
+          "betweenSelectedInstances": 1991,
+          "facadePairs": 5648,
+          "coplanarOnlyPairs": 3119,
+          "contacts": 943807
+        },
+        "cornerWindows": {
+          "instances": 114,
+          "pairs": 1167,
+          "selfMaterialPairs": 189,
+          "betweenSelectedInstances": 0,
+          "facadePairs": 8,
+          "coplanarOnlyPairs": 0,
+          "contacts": 59516
+        }
+      },
+      "contactPointRegionCounts": {
+        "cornerSeam": 1299
+      },
+      "contactPointRegionMeaning": "Counts individual exact triangle contacts whose representative contact point lies inside the named box; not a clipped-volume or visibility test.",
+      "elapsedMs": 130695.9207
+    },
+    "after": {
+      "snapshotHash": "55a73c9bc9ecb66c485aa7f950341c5689e7b00934415381d1671f3d840e3212",
+      "algorithmHash": "c7b4795929f73ac72d71680a24da514e5f4c02ab60782a1a2ee4013c96b639f6",
+      "instances": 60235,
+      "broadphasePairs": 17082,
+      "triangleTests": 9073130,
+      "findingPairs": 3249,
+      "groupCounts": {
+        "beltCourses": {
+          "instances": 506,
+          "pairs": 2090,
+          "selfMaterialPairs": 0,
+          "betweenSelectedInstances": 40,
+          "facadePairs": 539,
+          "coplanarOnlyPairs": 111,
+          "contacts": 87004
+        },
+        "cornerWindows": {
+          "instances": 114,
+          "pairs": 1159,
+          "selfMaterialPairs": 189,
+          "betweenSelectedInstances": 0,
+          "facadePairs": 0,
+          "coplanarOnlyPairs": 0,
+          "contacts": 57023
+        }
+      },
+      "contactPointRegionCounts": {
+        "cornerSeam": 0
+      },
+      "contactPointRegionMeaning": "Counts individual exact triangle contacts whose representative contact point lies inside the named box; not a clipped-volume or visibility test.",
+      "elapsedMs": 45564.9796
+    }
+  }
+}
