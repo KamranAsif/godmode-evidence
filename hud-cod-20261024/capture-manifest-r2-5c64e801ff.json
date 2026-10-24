@@ -1,0 +1,111 @@
+{
+  "revision": 2,
+  "sourceCommit": "b6b6e48a54dcefc79929b132808e2d06b5d857bf",
+  "prHead": "b6b6e48a54dcefc79929b132808e2d06b5d857bf",
+  "binarySha256": "b195700284f5c813f7d7065f9ae82d0c5356a4924fb369667a6486f84b7252d3",
+  "currentPreflight": {
+    "head": "b6b6e48a54dcefc79929b132808e2d06b5d857bf",
+    "rootSuite": "11/11 passed",
+    "arenaFingerprint": "ca58b55a6deb979abe74a7f9c1e0eb7ab5464f69cebdf52b9eb620d37bd9cb19",
+    "exportCheck": "passed; matching verified cache restored and published",
+    "import": {
+      "schemaVersion": 1,
+      "ok": true,
+      "message": "Refreshed project resource imports",
+      "data": {
+        "projectPath": "D:\\work\\godmode-roguelite-worktrees\\hud-cod-20261024",
+        "godotPath": "C:\\tools\\GodotJS-4.6.1-v8-nopc-2\\editor\\godot.windows.editor.x86_64.exe",
+        "resourceImport": {
+          "imported": true,
+          "missingBefore": 0,
+          "attempts": 1,
+          "command": [
+            "C:\\tools\\GodotJS-4.6.1-v8-nopc-2\\editor\\godot.windows.editor.x86_64.exe",
+            "--path",
+            "D:\\work\\godmode-roguelite-worktrees\\hud-cod-20261024",
+            "--editor",
+            "--headless",
+            "--quit"
+          ]
+        }
+      }
+    },
+    "finishedAt": "2026-10-24T09:23:36.868Z"
+  },
+  "engine": "GodotJS 4.6.1 V8 no-pointer-compression revision 2",
+  "preset": "Windows Playtest",
+  "debug": true,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "capture": "Native managed Windows game window via godot-cli game capture --os-window",
+  "comparison": {
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "sameFight": "authoritative simulation paused, style-only redraw",
+    "worldRegions": {
+      "sky and facade": {
+        "box": [
+          400,
+          100,
+          800,
+          340
+        ],
+        "meanAbsoluteRgbDifference": 0
+      },
+      "pavement": {
+        "box": [
+          400,
+          660,
+          660,
+          800
+        ],
+        "meanAbsoluteRgbDifference": 0
+      },
+      "sight opening": {
+        "box": [
+          900,
+          490,
+          1020,
+          590
+        ],
+        "meanAbsoluteRgbDifference": 3.022472222222222
+      }
+    },
+    "crops": "Literal 200% native source pixels, nearest-neighbor; no repainting or compositing"
+  },
+  "overlay": "Hidden through OS.is_debug_build()-guarded hudoverlay off",
+  "score": "Normal authoritative fire/raycast/kill events, SCORE_PER_KILL=100",
+  "changes": {
+    "minimap": "85% charcoal backplate independent of full-opacity clip mask; 1 px border at 90%",
+    "streaks": "100% white ready state;3 px accent underline;85% dark offset icon shadow;38% idle",
+    "feed": "Continuous rifle barrel prevents subpixel neck dropout and detached muzzle dot",
+    "score": "x1152 y480 on 1920x1080;upward stack;900ms total life;160ms fade",
+    "care": "Device READY status only; single [E] HOLD radial prompt in HUD"
+  },
+  "tests": {
+    "root": "pnpm test:11/11 steps passed after rebase",
+    "typescript": "passed",
+    "focused": "74 passed,0 failed",
+    "eslint": "pnpm lint:0 errors;12 existing max-lines warnings"
+  },
+  "conventions": "https://github.com/KamranAsif/Godmode.exe-roguelite/blob/b6b6e48a54dcefc79929b132808e2d06b5d857bf/docs/hud-cod-conventions.md",
+  "media": {
+    "cod-1080-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-1080-r2-06be5fad2e.png",
+    "legacy-1080-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-1080-r2-a40bac7ca0.png",
+    "cod-minimap-200pct-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-minimap-200pct-r2-10a33fd4dc.png",
+    "cod-streaks-200pct-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-streaks-200pct-r2-4838588449.png",
+    "cod-kill-feed-200pct-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-kill-feed-200pct-r2-865f975aeb.png",
+    "legacy-minimap-200pct-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-minimap-200pct-r2-ccf5eac630.png",
+    "legacy-streaks-200pct-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-streaks-200pct-r2-95bc21958d.png",
+    "legacy-kill-feed-200pct-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-kill-feed-200pct-r2-f19b931be1.png",
+    "cod-ready-idle-streaks-200pct-r2.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-ready-idle-streaks-200pct-r2-f35491a4f1.png"
+  },
+  "mediaSourceCommits": {
+    "default": "b6b6e48a54dcefc79929b132808e2d06b5d857bf",
+    "cod-ready-idle-streaks-200pct-r2.png": "e2b2a81e107b4849e28dd62162c521e4ac5b30a6"
+  }
+}
