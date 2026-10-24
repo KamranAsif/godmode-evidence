@@ -1,0 +1,281 @@
+{
+  "candidate": "aa98fbaf8",
+  "sections": [
+    "concrete 5m",
+    "metal 5m",
+    "wood 5m",
+    "glass 5m",
+    "concrete 10m",
+    "metal 10m",
+    "wood 10m",
+    "glass 10m"
+  ],
+  "sectionSeconds": 6,
+  "shotsMs": [
+    800,
+    2200,
+    2300,
+    2400,
+    2500,
+    2600,
+    2700
+  ],
+  "trimStartMs": 100,
+  "seed": 1871,
+  "notes": "Matched Windows Playtest exports. Second warmed fixture cycle. Cuts only between material cases; native 30 fps capture cadence, no interpolation. Silent. Unused arena loader overlay is listed in each build manifest; fixture never loads the arena.",
+  "clips": [
+    {
+      "variant": "control",
+      "file": "artifacts/juice/surface-followup/four-material-control.mp4",
+      "bytes": 1396883,
+      "cases": [
+        {
+          "index": 0,
+          "material": "concrete",
+          "distance": 5,
+          "utcMs": 1792885862358,
+          "startFrame": 1462
+        },
+        {
+          "index": 1,
+          "material": "metal",
+          "distance": 5,
+          "utcMs": 1792885868858,
+          "startFrame": 1657
+        },
+        {
+          "index": 2,
+          "material": "wood",
+          "distance": 5,
+          "utcMs": 1792885875358,
+          "startFrame": 1852
+        },
+        {
+          "index": 3,
+          "material": "glass",
+          "distance": 5,
+          "utcMs": 1792885881858,
+          "startFrame": 2047
+        },
+        {
+          "index": 4,
+          "material": "concrete",
+          "distance": 10,
+          "utcMs": 1792885888358,
+          "startFrame": 2242
+        },
+        {
+          "index": 5,
+          "material": "metal",
+          "distance": 10,
+          "utcMs": 1792885894857,
+          "startFrame": 2437
+        },
+        {
+          "index": 6,
+          "material": "wood",
+          "distance": 10,
+          "utcMs": 1792885901391,
+          "startFrame": 2632
+        },
+        {
+          "index": 7,
+          "material": "glass",
+          "distance": 10,
+          "utcMs": 1792885907891,
+          "startFrame": 2827
+        }
+      ],
+      "captureGapMedianMs": 33.35700000000361,
+      "captureGapMaxMs": 58.895999999993364,
+      "maxGameDeltaMs": 34,
+      "build": {
+        "base": "47f0647dc660de343c157d87964190d808aad887",
+        "variant": "control",
+        "sourceHashes": {
+          "scripts/client/surface_sparks.ts": "941cc541863dca913436fca903e468082a1643b5f916528dccda8379f110fb49",
+          "scripts/surface_debris.ts": "4f5877cc2ce4ba6e7b69150810631ef010885976ca24ec7e1c007a686c554137",
+          "scripts/fixtures/juice_surface_review.ts": "803058952974c3b2a2371edda8b3c3a3fd2408fdb49008e98bca39d003fd9deb"
+        },
+        "unusedArenaLoader": "8777d61dd",
+        "arenaCache": "491f54e1bd390a441c5a6aa9478992c4339bc94f4c2b16cacdd5ce658e7ccb0f",
+        "exeBytes": 2462723834,
+        "exportedAt": "2026-10-24T21:44:10.305Z"
+      }
+    },
+    {
+      "variant": "shard",
+      "file": "artifacts/juice/surface-followup/four-material-shard.mp4",
+      "bytes": 1321623,
+      "cases": [
+        {
+          "index": 0,
+          "material": "concrete",
+          "distance": 5,
+          "utcMs": 1792886004612,
+          "startFrame": 1470
+        },
+        {
+          "index": 1,
+          "material": "metal",
+          "distance": 5,
+          "utcMs": 1792886011113,
+          "startFrame": 1665
+        },
+        {
+          "index": 2,
+          "material": "wood",
+          "distance": 5,
+          "utcMs": 1792886017612,
+          "startFrame": 1860
+        },
+        {
+          "index": 3,
+          "material": "glass",
+          "distance": 5,
+          "utcMs": 1792886024112,
+          "startFrame": 2055
+        },
+        {
+          "index": 4,
+          "material": "concrete",
+          "distance": 10,
+          "utcMs": 1792886030613,
+          "startFrame": 2250
+        },
+        {
+          "index": 5,
+          "material": "metal",
+          "distance": 10,
+          "utcMs": 1792886037112,
+          "startFrame": 2445
+        },
+        {
+          "index": 6,
+          "material": "wood",
+          "distance": 10,
+          "utcMs": 1792886043612,
+          "startFrame": 2640
+        },
+        {
+          "index": 7,
+          "material": "glass",
+          "distance": 10,
+          "utcMs": 1792886050112,
+          "startFrame": 2835
+        }
+      ],
+      "captureGapMedianMs": 33.36599999999453,
+      "captureGapMaxMs": 50.92399999999907,
+      "maxGameDeltaMs": 34,
+      "build": {
+        "base": "3dbea0e81fe30488982cf98d445a1e3990a3cd43",
+        "variant": "shard",
+        "sourceHashes": {
+          "scripts/client/surface_sparks.ts": "3c140b21485ccb6f32e668a89ddb7e85709cb6e2bec9cabac83f2a541a55c1ab",
+          "scripts/surface_debris.ts": "9046c1a263d8858733f929b7744f1d7b5706904af73f7eff11d2f53bc36b6e38",
+          "scripts/fixtures/juice_surface_review.ts": "803058952974c3b2a2371edda8b3c3a3fd2408fdb49008e98bca39d003fd9deb"
+        },
+        "unusedArenaLoader": "8777d61dd",
+        "arenaCache": "491f54e1bd390a441c5a6aa9478992c4339bc94f4c2b16cacdd5ce658e7ccb0f",
+        "exeBytes": 2462865956,
+        "exportedAt": "2026-10-24T23:46:20.221Z"
+      }
+    },
+    {
+      "variant": "glint",
+      "file": "artifacts/juice/surface-followup/four-material-glint.mp4",
+      "bytes": 1368629,
+      "cases": [
+        {
+          "index": 0,
+          "material": "concrete",
+          "distance": 5,
+          "utcMs": 1792886145559,
+          "startFrame": 1427
+        },
+        {
+          "index": 1,
+          "material": "metal",
+          "distance": 5,
+          "utcMs": 1792886152059,
+          "startFrame": 1621
+        },
+        {
+          "index": 2,
+          "material": "wood",
+          "distance": 5,
+          "utcMs": 1792886158559,
+          "startFrame": 1817
+        },
+        {
+          "index": 3,
+          "material": "glass",
+          "distance": 5,
+          "utcMs": 1792886165059,
+          "startFrame": 2012
+        },
+        {
+          "index": 4,
+          "material": "concrete",
+          "distance": 10,
+          "utcMs": 1792886171559,
+          "startFrame": 2206
+        },
+        {
+          "index": 5,
+          "material": "metal",
+          "distance": 10,
+          "utcMs": 1792886178059,
+          "startFrame": 2402
+        },
+        {
+          "index": 6,
+          "material": "wood",
+          "distance": 10,
+          "utcMs": 1792886184592,
+          "startFrame": 2598
+        },
+        {
+          "index": 7,
+          "material": "glass",
+          "distance": 10,
+          "utcMs": 1792886191092,
+          "startFrame": 2793
+        }
+      ],
+      "captureGapMedianMs": 33.36000000000058,
+      "captureGapMaxMs": 51.46499999999651,
+      "maxGameDeltaMs": 34,
+      "build": {
+        "base": "3dbea0e81fe30488982cf98d445a1e3990a3cd43",
+        "variant": "glint",
+        "sourceHashes": {
+          "scripts/client/surface_sparks.ts": "3c140b21485ccb6f32e668a89ddb7e85709cb6e2bec9cabac83f2a541a55c1ab",
+          "scripts/surface_debris.ts": "385cea125a5433a7d027d9b95c6ba6aad5d01c553589ea6c9baf02742c99497d",
+          "scripts/fixtures/juice_surface_review.ts": "803058952974c3b2a2371edda8b3c3a3fd2408fdb49008e98bca39d003fd9deb"
+        },
+        "unusedArenaLoader": "8777d61dd",
+        "arenaCache": "491f54e1bd390a441c5a6aa9478992c4339bc94f4c2b16cacdd5ce658e7ccb0f",
+        "exeBytes": 2462865956,
+        "exportedAt": "2026-10-24T23:48:14.047Z"
+      }
+    },
+    {
+      "variant": "control-vs-shard",
+      "file": "artifacts/juice/surface-followup/control-vs-shard.mp4",
+      "bytes": 2393778
+    },
+    {
+      "variant": "control-vs-glint",
+      "file": "artifacts/juice/surface-followup/control-vs-glint.mp4",
+      "bytes": 2417440
+    }
+  ],
+  "continuityCheck": {
+    "counterCrop": "280:34:300:0",
+    "freezedetect": "n=-66dB:d=0.25",
+    "intervalsDetected": 0,
+    "review": "Consecutive native 30 fps event frames inspected for metal burst and glass at 10 m."
+  }
+}
