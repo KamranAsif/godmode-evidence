@@ -1,0 +1,82 @@
+{
+  "sourceCommit": "0f01a6a69a004155c630d3a2db00c52ae5418657",
+  "integrationCommit": "5bf96e8429676e06814a9d1e89c5b8e89951d9c4",
+  "engineLayerSmokeCommit": "8fcdd9764",
+  "baseCommit": "d1b3f75f9",
+  "engine": "GodotJS 4.6.1 V8 no-pointer-compression revision 2",
+  "exportPreset": "Windows Playtest",
+  "debugExport": true,
+  "binarySha256": "4B3E2846707960495A5DBE8D96209E2AB58F6CFCF5DB616847A2B704F4487C19",
+  "capture": "Native Windows PrintWindow, verified managed game PID only",
+  "stills": "Same authoritative paused fight at both resolutions; style-only redraw",
+  "overlay": "Strict debug-only hudoverlay mask; one overlay-on coexistence still",
+  "score": "Confirmed own kills use shared scoreboard SCORE_PER_KILL=100; headshots do not alter points",
+  "loadout": "Invincibility, Aimbot, Enemy Radar, Damage/Crit/Projectiles rank5; five granted streaks; ordinary ADS/fire/R",
+  "conventions": "https://github.com/KamranAsif/Godmode.exe-roguelite/blob/5bf96e8429676e06814a9d1e89c5b8e89951d9c4/docs/hud-cod-conventions.md",
+  "media": {
+    "cod-1080.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-1080-2c1453d887.png",
+    "legacy-1080.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-1080-a96cd64a38.png",
+    "cod-1440.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-1440-e46d2087bf.png",
+    "legacy-1440.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-1440-e4b7beb049.png",
+    "cod-overlay-on-1440.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-overlay-on-1440-1d45b840f8.png",
+    "cod-ammo-200pct.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-ammo-200pct-893ee197c2.png",
+    "cod-kill-feed-200pct.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-kill-feed-200pct-f2cb61566b.png",
+    "cod-streaks-200pct.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-streaks-200pct-d56fadcc0e.png",
+    "cod-minimap-200pct.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-minimap-200pct-99294becb6.png",
+    "legacy-ammo-200pct.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-ammo-200pct-ab1504f5cf.png",
+    "legacy-kill-feed-200pct.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-kill-feed-200pct-68f371d321.png",
+    "legacy-streaks-200pct.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-streaks-200pct-76f8a99813.png",
+    "legacy-minimap-200pct.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-minimap-200pct-ddd2714606.png",
+    "cod-fight-10s.mp4": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-fight-10s-bddfc07aa4.mp4",
+    "cod-low-health-1080.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/cod-low-health-1080-38945517f6.png",
+    "legacy-fight-10s.mp4": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/hud-cod-20261024/legacy-fight-10s-6c2687227c.mp4"
+  },
+  "tests": {
+    "rootBeforeIntegration": "11/11 passed;181.2s",
+    "rootAfterIntegration": "10/11 passed; Windows process-identity test failed under load; isolated assertion rerun passed 1/1",
+    "subsequent": "TypeScript, focused HUD/ammo tests, headless setup all5ready",
+    "lint": "0errors;12existingmax-lineswarnings",
+    "cliTierRetry": "289 passed,6 skipped,0 failed;66.5s",
+    "integrationSmoke": "headless engine: overlay off/on CanvasLayer visibility verified; Tab open while codHud.visible;30/90;all5ready"
+  },
+  "codVideo": {
+    "style": "cod",
+    "source": "cod-raw.mp4",
+    "output": "cod-fight-10s.mp4",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 300,
+    "fps": 30,
+    "durationSeconds": 10,
+    "rawElapsedMs": 24997,
+    "rawFrames": 750,
+    "rawMaxFrameGapMs": 56.399999999999636,
+    "rawGapsOver50ms": 73,
+    "trimStartFrame": 235,
+    "fightStartAlignmentErrorMs": 24.41388085937524,
+    "audio": "game process Master mix only",
+    "audioSaved": true
+  },
+  "legacyVideo": {
+    "style": "legacy",
+    "source": "legacy-raw.mp4",
+    "output": "legacy-fight-10s.mp4",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 300,
+    "fps": 30,
+    "durationSeconds": 10,
+    "rawElapsedMs": 24999,
+    "rawFrames": 750,
+    "rawMaxFrameGapMs": 56.5049999999992,
+    "rawGapsOver50ms": 58,
+    "trimStartFrame": 234,
+    "fightStartAlignmentErrorMs": 4.462966796874753,
+    "audio": "game process Master mix only",
+    "audioSaved": true
+  }
+}
