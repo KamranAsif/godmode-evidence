@@ -1,0 +1,576 @@
+{
+  "revision": 7,
+  "sourceCommit": "05c911adfaf17742d4be07310b9e592f8aa31f78",
+  "arenaFinalizationVersion": 8,
+  "engine": "GodotJS 4.6.1 v8-nopc revision 2",
+  "palette": "Canonical sRGB pigment -> linear V1 vertex colors exactly once; foliage unchanged",
+  "lockedSource": "76e0a3cd08bbd503a99485e2acf0c452e441f5e2",
+  "sourcePlantingEnvelopes": 6937,
+  "fittedCrowns": 18823,
+  "sources": {
+    "door-canopy-folded-metal": 1,
+    "fitted-container-crown-0": 38,
+    "fitted-container-crown-1": 27,
+    "fitted-container-crown-2": 39,
+    "fitted-container-crown-3": 28,
+    "fitted-family-shrub-24": 311,
+    "fitted-family-shrub-38": 47,
+    "fitted-family-shrub-41": 280,
+    "fitted-family-shrub-55": 47,
+    "fitted-family-shrub-58": 129,
+    "fitted-family-shrub-7": 311,
+    "fitted-family-shrub-72": 47,
+    "fitted-family-shrub-mass-0": 45,
+    "fitted-family-shrub-mass-1": 47,
+    "fitted-family-shrub-mass-2": 53,
+    "fitted-family-shrub-mass-3": 59,
+    "frontage-part-1895157561": 505,
+    "frontage-part-1960041748": 256,
+    "merged-ground:planter-full-shrubs": 12,
+    "planter-full-shrubs": 10,
+    "shop-frontage-flowering-trough": 53,
+    "shop-frontage-stoop-planter": 11,
+    "street-dressing-shrub": 61,
+    "street-use-pot": 21,
+    "window-part-2248603249": 1804,
+    "window-use-plants": 1783,
+    "world-fill-blind-wall-plant": 53,
+    "world-fill-grounded-wall-planter": 21,
+    "world-fill-landscape-hedge-0": 12,
+    "world-fill-landscape-hedge-1": 13,
+    "world-fill-landscape-hedge-2": 8,
+    "world-fill-landscape-hedge-3": 8,
+    "world-fill-landscape-mass-0": 8,
+    "world-fill-landscape-mass-1": 15,
+    "world-fill-landscape-mass-2": 14,
+    "world-fill-landscape-mass-3": 15,
+    "world-fill-large-planter-0": 1,
+    "world-fill-large-planter-1": 9,
+    "world-fill-large-planter-2": 2,
+    "world-fill-large-planter-3": 2,
+    "world-fill-street-pit-shrub-0": 13,
+    "world-fill-street-pit-shrub-1": 26,
+    "world-fill-street-pit-shrub-2": 13,
+    "world-fill-underplanting-0": 123,
+    "world-fill-underplanting-2": 103,
+    "world-fill-underplanting-4": 120,
+    "world-fill-underplanting-5": 88,
+    "world-fill-underplanting-6": 130,
+    "world-fill-underplanting-7": 115
+  },
+  "after": {
+    "type": "Exported Windows Playtest, native OS-window pixels",
+    "sourceCommit": "b864418dc0e0e70e86eb6007c90b3902f2da0bc5",
+    "sourceNote": "Core V1 mesh, palette and checkpoint files are byte-identical. The saved arena/export and timing evidence predate the final facade/menu integration rebase; no second arena generation was run.",
+    "testedRuntimeHead": "36b20807d428e431d5d08188c6b9f51a3ef1fb37",
+    "integrationBase": "563de695e8ec0bd3ae880b14e444c06aca0a4251",
+    "rebasedVerificationHead": "05c911adfaf17742d4be07310b9e592f8aa31f78",
+    "byteIdenticalFoliageAndPipelineFiles": 68,
+    "binarySha256": "75626673dfc778dd40ee54ab62fa885d2fbf567d156670255cb79a9d7e0140f3",
+    "graphics": "HIGH, SMAA, 100%, Lens correction Off for legacy camera matching, bilinear",
+    "renderThread": "Safe (still captures only; headline timing uses Separate)",
+    "window": "Temporary exported override starts windowed to avoid the Windows fullscreen two-pixel expansion offset",
+    "defaultHighViews": [
+      {
+        "index": 12,
+        "lens": "high",
+        "file": "default-high-12-3m-75.png",
+        "sha256": "63434d93ad814602b909dd6719c2120c54ea14b091882411149d8f40565eb066",
+        "camera": {
+          "position": [
+            -460.7764892578125,
+            -13.805763244628906,
+            -381.5008850097656
+          ],
+          "rotation": [
+            -0.38050639629364014,
+            2.4672131538391113,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        }
+      }
+    ],
+    "views": [
+      {
+        "index": 0,
+        "name": "Street pit",
+        "distance": 20,
+        "fov": 75,
+        "camera": {
+          "position": [
+            -404.6070251464844,
+            -12.594038963317871,
+            -311.557861328125
+          ],
+          "rotation": [
+            -0.059928156435489655,
+            -2.9115755558013916,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "0-20m-75.png",
+        "sha256": "438dbf7595b10efd098050aa743e58f9f40f4e0177f5938ebdfeeec840c2815a"
+      },
+      {
+        "index": 1,
+        "name": "Street pit",
+        "distance": 20,
+        "fov": 32,
+        "camera": {
+          "position": [
+            -404.6070251464844,
+            -12.594038963317871,
+            -311.557861328125
+          ],
+          "rotation": [
+            -0.059928156435489655,
+            -2.9115755558013916,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "1-20m-32.png",
+        "sha256": "324a7a016fcde914f65512bb739ed852f50c918c4b268674ffa8e8120e32d3f8"
+      },
+      {
+        "index": 2,
+        "name": "Street pit",
+        "distance": 3,
+        "fov": 75,
+        "camera": {
+          "position": [
+            -400.73114013671875,
+            -12.594038963317871,
+            -295.005615234375
+          ],
+          "rotation": [
+            -0.38050636649131775,
+            -2.9115755558013916,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "2-3m-75.png",
+        "sha256": "17df1fc6069c160190766f026c726f7289f323ef76e2f2acfab46e6f221a1334"
+      },
+      {
+        "index": 5,
+        "name": "Hedge",
+        "distance": 20,
+        "fov": 75,
+        "camera": {
+          "position": [
+            -376.2109680175781,
+            -15.418416023254395,
+            -434.7933349609375
+          ],
+          "rotation": [
+            -0.05992816388607025,
+            -1.302406668663025,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "5-20m-75.png",
+        "sha256": "7380c1bcf7488acd9015be8574f4b3305b0276c647b243918d7aed444aeb98a0"
+      },
+      {
+        "index": 6,
+        "name": "Hedge",
+        "distance": 20,
+        "fov": 32,
+        "camera": {
+          "position": [
+            -376.2109680175781,
+            -15.418416023254395,
+            -434.7933349609375
+          ],
+          "rotation": [
+            -0.05992816388607025,
+            -1.302406668663025,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "6-20m-32.png",
+        "sha256": "1d51e8bc87839644919e72dd1970dc94ffb6228cc3540e78b944568c86963b5d"
+      },
+      {
+        "index": 7,
+        "name": "Hedge",
+        "distance": 3,
+        "fov": 75,
+        "camera": {
+          "position": [
+            -359.819580078125,
+            -15.418416023254395,
+            -439.3013916015625
+          ],
+          "rotation": [
+            -0.38050639629364014,
+            -1.302406668663025,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "7-3m-75.png",
+        "sha256": "7d20c9d696dfee930f7682dd3cc300914fd4d8559c4405e56502656dc489524f"
+      },
+      {
+        "index": 10,
+        "name": "Flower planter",
+        "distance": 20,
+        "fov": 75,
+        "camera": {
+          "position": [
+            -450.1614685058594,
+            -13.805763244628906,
+            -394.77947998046875
+          ],
+          "rotation": [
+            -0.059928156435489655,
+            2.4672131538391113,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "10-20m-75.png",
+        "sha256": "24fb14b08017eb09c494dcd01f2d2ff4b80bc1b22272e89ccf91e57ff0eed7a1"
+      },
+      {
+        "index": 8,
+        "name": "Hedge",
+        "distance": 40,
+        "fov": 75,
+        "camera": {
+          "position": [
+            -393.67620849609375,
+            -15.418416023254395,
+            -455.8923034667969
+          ],
+          "rotation": [
+            -0.02999100461602211,
+            -1.9767382144927979,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "8-40m-75.png",
+        "sha256": "c87ce8a9e06c1414162ad45f4b200d3607906b1bf3182b16fbc4baab1ce6ccbd"
+      },
+      {
+        "index": 9,
+        "name": "Hedge",
+        "distance": 40,
+        "fov": 32,
+        "camera": {
+          "position": [
+            -393.67620849609375,
+            -15.418416023254395,
+            -455.8923034667969
+          ],
+          "rotation": [
+            -0.02999100461602211,
+            -1.9767382144927979,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "9-40m-32.png",
+        "sha256": "ca3e7908900720634df284805c0d5bdba57bf0da6aeccef8d0d8ce459bdd3b23"
+      },
+      {
+        "index": 12,
+        "name": "Flower planter",
+        "distance": 3,
+        "fov": 75,
+        "camera": {
+          "position": [
+            -460.7764892578125,
+            -13.805763244628906,
+            -381.5008850097656
+          ],
+          "rotation": [
+            -0.38050639629364014,
+            2.4672131538391113,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "12-3m-75.png",
+        "sha256": "6216292c6486a5e491e6bbd6efd3b48c980eb06465c644f9deabbae2a8b03c06"
+      },
+      {
+        "index": 11,
+        "name": "Flower planter",
+        "distance": 20,
+        "fov": 32,
+        "camera": {
+          "position": [
+            -450.1614685058594,
+            -13.805763244628906,
+            -394.77947998046875
+          ],
+          "rotation": [
+            -0.059928156435489655,
+            2.4672131538391113,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "11-20m-32.png",
+        "sha256": "e2480b424481b10b1c8cbf3d4cbba26f0bcbfe9757483f61dd6410df9200bf56"
+      },
+      {
+        "index": 14,
+        "name": "Flower planter",
+        "distance": 40,
+        "fov": 32,
+        "camera": {
+          "position": [
+            -470.64813232421875,
+            -13.805763244628906,
+            -418.3497619628906
+          ],
+          "rotation": [
+            -0.02999100647866726,
+            -2.9402754306793213,
+            0
+          ],
+          "fov": 32,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "14-40m-32.png",
+        "sha256": "4401fe4a4448fde710dfbe8b38d39d26e29cbc8c87cd924156734e146b7e354f"
+      },
+      {
+        "index": 13,
+        "name": "Flower planter",
+        "distance": 40,
+        "fov": 75,
+        "camera": {
+          "position": [
+            -470.64813232421875,
+            -13.805763244628906,
+            -418.3497619628906
+          ],
+          "rotation": [
+            -0.02999100647866726,
+            -2.9402754306793213,
+            0
+          ],
+          "fov": 75,
+          "near": 0.05000000074505806,
+          "far": 4000,
+          "keepAspect": 1
+        },
+        "resolution": {
+          "width": 1280,
+          "height": 720,
+          "windowWidth": 2560,
+          "windowHeight": 1440,
+          "scale3d": 1
+        },
+        "build": "commit=b864418dc0e0\nbranch=feat/all-bushes-v1-20261022\nbuilt=2026-10-24T06:00:48.682Z",
+        "file": "13-40m-75.png",
+        "sha256": "5a8a5b4da40021a52e0b09858012c9368a842e6aa7a2e9011e585f392ddc913c"
+      }
+    ]
+  },
+  "before": {
+    "type": "Preserved R6 native main baseline captures; not exported Playtest",
+    "sourceCommit": "e9c221b3b417ba68603b7f692b6e563040e49a32",
+    "nativeGeometryBase": "7d6e94ea37e003a63399c426d63e0258585245af",
+    "runtimeBase": "c59b590a7c960b7e5324f4ef41007fb28d21e61a",
+    "cameraPlan": "Same positions/yaw/pitch/FOV and native 2560x1440; V2 exposure0.70"
+  },
+  "nativeReload": {
+    "client": {
+      "nodes": 415000,
+      "contentSha256": "31cbadf049f6013fb64d49f879686e22d143f011c51860d1876a1f06415b9b9f",
+      "matches": true,
+      "differences": []
+    },
+    "server": {
+      "nodes": 364122,
+      "contentSha256": "fb48d768d688833f9ab90314af9781e01ffaef2d4c6b6810a2999fce3b2e142f",
+      "matches": true,
+      "differences": []
+    }
+  },
+  "fixture": {
+    "checkpointDiskRoundTrip": true,
+    "checkpointFormat": "RSRC",
+    "cullingReadback": false,
+    "nativeVisibility": true,
+    "nearTriangles": 6348,
+    "passed": true,
+    "ready": true,
+    "tiers": 5
+  },
+  "walk": {
+    "type": "Supplemental native production-arena fixture recording, separate from headline timing",
+    "pose": {
+      "id": "bushes-hedge-walk",
+      "position": [
+        -389.0140712922083,
+        -15.4184158325195,
+        -456.60958632660316
+      ],
+      "yaw": -1.9767382570888004,
+      "pitch": -0.033320995878247196,
+      "fov": 32
+    },
+    "target": [
+      -356.926971435547,
+      -16.6184158325195,
+      -440.096923828125
+    ],
+    "distance": 40,
+    "displacement": 40.00000553077535,
+    "captureMs": 26000
+  },
+  "validation": {
+    "build": "PASS",
+    "lint": "PASS (existing warnings)",
+    "targetedTests": "40/40 PASS",
+    "rootSuite": "11/11 stages PASS",
+    "review": "kamran-reviewer: no blocking findings; obsolete R3 documentation replaced"
+  }
+}
