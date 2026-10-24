@@ -1,0 +1,49 @@
+{
+  "camera": {
+    "position": [
+      5.5,
+      2.2,
+      6
+    ],
+    "fov": 45
+  },
+  "baseline": "1bda1b6ca9d1b9924f491dc033ca99d91c372939",
+  "candidate": "1b6cc43b9",
+  "notes": "Native Windows Playtest fixture. Three continuous sections with cuts between cases. Original 30 fps cadence; no interpolation. Visible process-frame/simulation clock. One-frame repeats can occur in Windows capture; no prior multi-second scene holds. Corpse is shown before its existing 4.5s sink deadline.",
+  "clips": [
+    {
+      "arm": "before",
+      "sourceStartFrame": 51,
+      "sections": [
+        "running",
+        "lateral",
+        "airborne"
+      ],
+      "sectionSourceSpacingSeconds": 6.5,
+      "sectionSeconds": 5.2,
+      "outputBytes": 414884,
+      "frames": 468,
+      "captureGapMedianMs": 33.34900000000016,
+      "captureGapMaxMs": 51.431000000000495,
+      "method": "PrintWindow/PW_RENDERFULLCONTENT",
+      "sourceCaptureStartedAt": "2026-10-24T17:20:23.7280159Z"
+    },
+    {
+      "arm": "after",
+      "sourceStartFrame": 71,
+      "sections": [
+        "running",
+        "lateral",
+        "airborne"
+      ],
+      "sectionSourceSpacingSeconds": 6.5,
+      "sectionSeconds": 5.2,
+      "outputBytes": 453886,
+      "frames": 468,
+      "captureGapMedianMs": 33.34200000000055,
+      "captureGapMaxMs": 52.128999999998996,
+      "method": "PrintWindow/PW_RENDERFULLCONTENT",
+      "sourceCaptureStartedAt": "2026-10-24T17:16:03.3726983Z"
+    }
+  ]
+}
