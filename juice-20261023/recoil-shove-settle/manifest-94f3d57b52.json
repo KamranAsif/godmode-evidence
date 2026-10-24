@@ -1,0 +1,108 @@
+{
+  "base": "475fe5fff",
+  "fixtureCommit": "9ef679e24",
+  "productionRecoilCommit": "8777d61dd",
+  "arenaLoaderFrom": "8777d61dd",
+  "verifiedArenaCache": "491f54e1bd390a441c5a6aa9478992c4339bc94f4c2b16cacdd5ce658e7ccb0f",
+  "default": "punch",
+  "sections": [
+    "rifle hip",
+    "rifle ADS",
+    "pistol hip",
+    "pistol ADS"
+  ],
+  "sectionSeconds": 5.8,
+  "shotsFromOriginalCaseMs": [
+    800,
+    3000
+  ],
+  "trimmedFromOriginalCaseMs": 100,
+  "method": "PrintWindow/PW_RENDERFULLCONTENT",
+  "captureGapMedianMs": 33.349999999998545,
+  "captureGapMaxMs": 51.36300000000483,
+  "maxGameDeltaMs": 33.333333333333336,
+  "notes": "Windows Playtest export; live native viewmodel and unchanged production recoil spring. The unused arena loader uses the merged recoil revision to reuse its verified cache; no arena is loaded in this fixture. Fixed camera, procedural carry disabled to isolate weapon motion. Two isolated single shots per section. Original 30 fps cadence; no interpolation. Silent.",
+  "productionSourceSha256": "d30dd7f9ff949820ff1dcd99a55b6f94deba2ae4620e71fac4d42402e6dbd19c",
+  "clips": [
+    {
+      "feel": "punch",
+      "bytes": 703870,
+      "cases": [
+        {
+          "index": 0,
+          "weapon": "machineGun",
+          "ads": false,
+          "feel": "punch",
+          "utcMs": 1792874038728,
+          "startFrame": 1259
+        },
+        {
+          "index": 2,
+          "weapon": "machineGun",
+          "ads": true,
+          "feel": "punch",
+          "utcMs": 1792874050761,
+          "startFrame": 1621
+        },
+        {
+          "index": 4,
+          "weapon": "pistol",
+          "ads": false,
+          "feel": "punch",
+          "utcMs": 1792874062761,
+          "startFrame": 1981
+        },
+        {
+          "index": 6,
+          "weapon": "pistol",
+          "ads": true,
+          "feel": "punch",
+          "utcMs": 1792874074760,
+          "startFrame": 2340
+        }
+      ]
+    },
+    {
+      "feel": "weight",
+      "bytes": 743315,
+      "cases": [
+        {
+          "index": 1,
+          "weapon": "machineGun",
+          "ads": false,
+          "feel": "weight",
+          "utcMs": 1792874044760,
+          "startFrame": 1440
+        },
+        {
+          "index": 3,
+          "weapon": "machineGun",
+          "ads": true,
+          "feel": "weight",
+          "utcMs": 1792874056760,
+          "startFrame": 1800
+        },
+        {
+          "index": 5,
+          "weapon": "pistol",
+          "ads": false,
+          "feel": "weight",
+          "utcMs": 1792874068761,
+          "startFrame": 2161
+        },
+        {
+          "index": 7,
+          "weapon": "pistol",
+          "ads": true,
+          "feel": "weight",
+          "utcMs": 1792874080760,
+          "startFrame": 2521
+        }
+      ]
+    },
+    {
+      "feel": "side-by-side",
+      "bytes": 1340607
+    }
+  ]
+}
