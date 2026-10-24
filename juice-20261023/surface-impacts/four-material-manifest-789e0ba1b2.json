@@ -1,0 +1,54 @@
+{
+  "baseline": "1bda1b6ca9d1b9924f491dc033ca99d91c372939",
+  "candidate": "7fdca6590",
+  "productionHashes": {
+    "scripts/combat_vfx.ts": "4790127265a09f76893d018666a7a390520c556ef2524850bbae2543fbd64424",
+    "scripts/client/surface_fragment.ts": "611b7edf4334e4c742807009c7ad9441634eba19dae1e99fdb2275c4a3bcd7f0",
+    "scripts/surface_debris.ts": "4f5877cc2ce4ba6e7b69150810631ef010885976ca24ec7e1c007a686c554137"
+  },
+  "sections": [
+    "concrete 5m",
+    "metal 5m",
+    "wood 5m",
+    "glass 5m",
+    "concrete 10m",
+    "metal 10m",
+    "wood 10m",
+    "glass 10m"
+  ],
+  "sectionSeconds": 6,
+  "sourceSectionSpacingSeconds": 6.5,
+  "shotsMs": [
+    800,
+    2200,
+    2300,
+    2400,
+    2500,
+    2600,
+    2700
+  ],
+  "randomSeed": 1871,
+  "notes": "Native Windows Playtest exports, identical fixture/materials/camera/shot protocol. Cuts only between cases; original 30 fps cadence, no interpolation. Visible native frame/simulation counter. Occasional one-frame Windows capture repeats can occur. Silent.",
+  "clips": [
+    {
+      "arm": "before",
+      "sourceStartFrame": 67,
+      "outputBytes": 1501003,
+      "frames": 1440,
+      "captureGapMedianMs": 33.42399999999907,
+      "captureGapMaxMs": 60.52399999999761,
+      "method": "PrintWindow/PW_RENDERFULLCONTENT",
+      "sourceCaptureStartedAt": "2026-10-24T18:01:14.8722985Z"
+    },
+    {
+      "arm": "after",
+      "sourceStartFrame": 72,
+      "outputBytes": 1412145,
+      "frames": 1440,
+      "captureGapMedianMs": 33.362999999997555,
+      "captureGapMaxMs": 52.1720000000023,
+      "method": "PrintWindow/PW_RENDERFULLCONTENT",
+      "sourceCaptureStartedAt": "2026-10-24T17:54:38.2207546Z"
+    }
+  ]
+}
