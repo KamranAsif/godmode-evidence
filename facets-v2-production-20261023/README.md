@@ -1,5 +1,9 @@
 # BattleDuty: V2 mixed facets in production
 
+Status: promotion blocked by the requested reviewer on the four introduced quoin/wall crossings. The frames and full native audit below represent that blocked candidate, not the pending correction.
+
+A proposed map-wide correction clips quoin back edges to the existing 3 mm masonry clearance while retaining proud fronts. Fifteen focused clearance/window tests pass. [CPU-only same-predicate probe](quoin-clearance-probe.json): all seven involved native instances reproduce four crossings before and zero after clipping/repacking. This does not replace whole-map native verification. A second arena regeneration, full audit and updated export/captures are awaiting user approval of the additional run.
+
 10-23: 1.2 m facets with mixed 2.4/1.2/0.6 m regions; Kamran picked V2.
 
 [Native labelled sheet](facets-v2-playtest-sheet.png), [smaller overview](facets-v2-playtest-overview.jpg), [eight raw native PNGs](raw-frames.zip).
