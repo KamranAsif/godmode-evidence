@@ -1,0 +1,36 @@
+server grunt-seconds / visible grunt-seconds                   242.37 / 26.57
+ground speed m/s p50 / p95 / max                               3.62 / 6.81 / 8.43
+lateral speed m/s p50 / p95 / max                              0.01 / 3.57 / 6.69
+forward / backpedal m/s p50                                    3.49 / 1.51
+accel m/s^2 p50 / p95 / max (limit 20)                         40.8 / 136.16 / 188.78
+server body turn deg/s p95 / max                               74.48 / 3351.8
+direction flips / lateral flips per grunt-min                  3.22 / 4.21
+strafe leg ms p50, legs under 1 s                              1050, 8
+drawn body turn deg/s p95 / max (limit 450)                    43.37 / 264.57
+drawn aim turn deg/s p95 / max (limit 720)                     457.8 / 1656.84
+aim snaps / body snaps per grunt-min                           115.17 / 0
+spine twist share of aimed frames                              0.012
+pose pops per grunt-min, popped frame share                    471.97, 0.162
+foot slides per grunt-min, share of plants, cm p95             144.53, 0.831, 106.31
+clip changes / states < 100 ms / playhead jumps per grunt-min  318.41 / 234.86 / 0
+moonwalk / idle-slide share of moving frames                   0 / 0.009
+stride jitter share of gait frames                             0.107
+server vs drawn position cm p50 / p95 / max                    0.53 / 11 / 21.21
+posed share of visible frames (animation LOD)                  0.98
+player hit rate, rifleman hits, kills, deaths                  0.57, 52, 79, 2
+
+Ranked glitch categories (per grunt-minute):
+ 1. pose pops (frames where a bone jumps > 10 cm against the root): 471.97 e.g. soldier-e4 rt=91664.9
+ 2. animation thrash (clip held < 100 ms): 234.86 e.g. soldier-e4 rt=91655
+ 3. stride jitter (gait rate changes > 25% between posed frames): 149.04 e.g. soldier-e4 rt=91775.3
+ 4. foot slides (planted foot moves > 5 cm): 144.53 e.g. soldier-e4 rt=91707.8
+ 5. aim snaps (barrel jumps > 20 deg in a frame): 115.17 e.g. soldier-e4 rt=91905
+ 6. acceleration over 20 m/s^2 (server): 100.76 e.g. soldier-e4 ms=87921
+ 7. spine twist episodes (aim > 60 deg off body): 24.84 e.g. soldier-e4 rt=91920.4
+ 8. idle legs while moving episodes (> 0.8 m/s): 15.81 e.g. soldier-e21 rt=121177.3
+ 9. strafe reversals (server): 4.21 e.g. soldier-e4 ms=87253
+10. travel direction flips > 120 deg in 250 ms (server): 3.22 e.g. soldier-e34 ms=141665
+11. body snaps (body yaw jumps > 25 deg in a frame): 0
+12. playhead jumps (a clip skipped > 0.1 s): 0
+13. moonwalk episodes (legs > 67.5 deg off travel): 0
+14. server-to-drawn position error > 25 cm (interpolation): 0
