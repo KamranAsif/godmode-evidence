@@ -1,0 +1,319 @@
+{
+  "order": [
+    "B1",
+    "A1",
+    "B2",
+    "A2",
+    "B3",
+    "A3",
+    "B4"
+  ],
+  "beforeCommit": "d1b3f75f9d324c80ec9d967820a72af82e2bb434",
+  "afterCommit": "36b20807d428e431d5d08188c6b9f51a3ef1fb37",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "framesOnly": true,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "lensCorrection": "high",
+    "enemies": 65,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "firefight-65",
+        "durationMs": 30000,
+        "from": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "fixedCamera": true,
+        "settleMs": 13000,
+        "expectedLivingEnemies": 65,
+        "setup": [
+          {
+            "atMs": 0,
+            "kind": "wave",
+            "count": 65
+          }
+        ],
+        "events": []
+      },
+      {
+        "id": "shopping-street",
+        "durationMs": 12000,
+        "from": [
+          -404,
+          -15.582,
+          -390
+        ],
+        "to": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 65
+          }
+        ]
+      },
+      {
+        "id": "under-bridge",
+        "durationMs": 12000,
+        "from": [
+          -518,
+          -13.7,
+          -375
+        ],
+        "to": [
+          -534,
+          -13.7,
+          -395
+        ],
+        "yaw": -2.15,
+        "pitch": -0.06,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 65
+          },
+          {
+            "atMs": 4000,
+            "name": "debug_survival_command",
+            "payload": {
+              "command": "streak:blast:rcxd:12"
+            },
+            "optional": false
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "graphicsPreset": "high",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "hardware": [
+    {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.7029"
+    }
+  ],
+  "rows": [
+    {
+      "id": "firefight-65",
+      "before": {
+        "median": 15.71999979019165,
+        "p95": 20.04449939727785,
+        "p99": 21.6820001602173
+      },
+      "after": {
+        "median": 15.7200002670288,
+        "p95": 19.488000869751,
+        "p99": 21.0359992980957
+      },
+      "pairedMedianMsSaved": 0.11549949645995028,
+      "pairedRangeMs": [
+        -0.14849996566769974,
+        0.17950010299684926
+      ],
+      "maxAdjacentControlDriftMs": 0.2309999465941992,
+      "pairedP95MsSaved": 0.3109998703002468,
+      "maxAdjacentControlP95DriftMs": 0.8540000915527983,
+      "pairedP99MsSaved": 0.47400093078610084,
+      "maxAdjacentControlP99DriftMs": 0.8880004882812997,
+      "pairs": [
+        {
+          "median": 0.17950010299684926,
+          "p95": 0.5564985275268484,
+          "p99": 0.8840007781982493
+        },
+        {
+          "median": -0.14849996566769974,
+          "p95": 0.3109998703002468,
+          "p99": 0.47400093078610084
+        },
+        {
+          "median": 0.11549949645995028,
+          "p95": 0.15999984741210227,
+          "p99": 0.036000251769998215
+        }
+      ],
+      "medianWithinDriftOrBetter": true,
+      "medianWithinPoint2": true,
+      "p99WithinDriftOrBetter": true,
+      "verdict": "Target met"
+    },
+    {
+      "id": "shopping-street",
+      "before": {
+        "median": 12.0945000648499,
+        "p95": 17.57400035858155,
+        "p99": 21.6634998321533
+      },
+      "after": {
+        "median": 11.8439998626709,
+        "p95": 17.0699996948242,
+        "p99": 19.6000003814697
+      },
+      "pairedMedianMsSaved": 0.2195000648498997,
+      "pairedRangeMs": [
+        -0.159499645233101,
+        0.3745002746582511
+      ],
+      "maxAdjacentControlDriftMs": 0.9230003356933008,
+      "pairedP95MsSaved": 0.8279991149902486,
+      "maxAdjacentControlP95DriftMs": 2.1090011596679012,
+      "pairedP99MsSaved": 3.1855001449584996,
+      "maxAdjacentControlP99DriftMs": 8.156999588012699,
+      "pairs": [
+        {
+          "median": 0.3745002746582511,
+          "p95": 0.8279991149902486,
+          "p99": 1.5154991149902486
+        },
+        {
+          "median": 0.2195000648498997,
+          "p95": 1.0725002288818466,
+          "p99": 3.8164987564086488
+        },
+        {
+          "median": -0.159499645233101,
+          "p95": 0.6205015182494513,
+          "p99": 3.1855001449584996
+        }
+      ],
+      "medianWithinDriftOrBetter": true,
+      "medianWithinPoint2": true,
+      "p99WithinDriftOrBetter": true,
+      "verdict": "Target met"
+    },
+    {
+      "id": "under-bridge",
+      "before": {
+        "median": 18.42549991607665,
+        "p95": 23.973500251769998,
+        "p99": 36.665500640869155
+      },
+      "after": {
+        "median": 18.1569995880127,
+        "p95": 23.6060009002686,
+        "p99": 40.4290008544922
+      },
+      "pairedMedianMsSaved": 0.22550010681149857,
+      "pairedRangeMs": [
+        0.02600002288815162,
+        0.31499958038325104
+      ],
+      "maxAdjacentControlDriftMs": 0.17499923706060017,
+      "pairedP95MsSaved": 0.7624998092650976,
+      "maxAdjacentControlP95DriftMs": 1.6929988861083984,
+      "pairedP99MsSaved": 2.536499023437557,
+      "maxAdjacentControlP99DriftMs": 24.5460014343261,
+      "pairs": [
+        {
+          "median": 0.22550010681149857,
+          "p95": 1.0244989395140998,
+          "p99": 7.587999343872049
+        },
+        {
+          "median": 0.02600002288815162,
+          "p95": 0.7624998092650976,
+          "p99": 2.536499023437557
+        },
+        {
+          "median": 0.31499958038325104,
+          "p95": -0.41150093078615413,
+          "p99": -6.862998962402344
+        }
+      ],
+      "medianWithinDriftOrBetter": true,
+      "medianWithinPoint2": true,
+      "p99WithinDriftOrBetter": true,
+      "verdict": "Target met"
+    },
+    {
+      "id": "overall",
+      "before": {
+        "median": 15.638000011444099,
+        "p95": 20.50749969482425,
+        "p99": 24.6870002746582
+      },
+      "after": {
+        "median": 15.5869998931885,
+        "p95": 20.0470008850098,
+        "p99": 24.0230007171631
+      },
+      "pairedMedianMsSaved": 0.15450000762935012,
+      "pairedRangeMs": [
+        0.005999565124549022,
+        0.2794995307923003
+      ],
+      "maxAdjacentControlDriftMs": 0.2360000610350994,
+      "pairedP95MsSaved": 0.27249908447264914,
+      "maxAdjacentControlP95DriftMs": 0.9079990386962997,
+      "pairedP99MsSaved": 0.6829996109009002,
+      "maxAdjacentControlP99DriftMs": 1.6210002899169993,
+      "pairs": [
+        {
+          "median": 0.2794995307923003,
+          "p95": 0.7389993667602504,
+          "p99": 0.6829996109009002
+        },
+        {
+          "median": 0.005999565124549022,
+          "p95": 0.27249908447264914,
+          "p99": 1.4570007324218999
+        },
+        {
+          "median": 0.15450000762935012,
+          "p95": 0.2385005950928516,
+          "p99": -0.0554990768433008
+        }
+      ],
+      "medianWithinDriftOrBetter": true,
+      "medianWithinPoint2": true,
+      "p99WithinDriftOrBetter": true,
+      "verdict": "Target met"
+    }
+  ],
+  "componentMetrics": null,
+  "definition": "Arm columns are medians of per-run median/p95/p99. Savings use the mean of adjacent controls minus the candidate, then the median of three pairs. Target requires at most 0.2 ms paired median cost, median within control drift or better, and no p99 regression beyond control drift."
+}
