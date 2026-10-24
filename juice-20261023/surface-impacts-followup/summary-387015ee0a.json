@@ -1,0 +1,77 @@
+{
+  "base": "47f0647dc660de343c157d87964190d808aad887",
+  "rows": [
+    {
+      "file": "1-control.json",
+      "arm": "control",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.4499998092651,
+      "p95": 17.4179992675781,
+      "p99": 30.9540004730225,
+      "max": 83.8980026245117,
+      "mean": 13.937794432269017,
+      "frames": 861
+    },
+    {
+      "file": "2-shard.json",
+      "arm": "shard",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.5080003738403,
+      "p95": 17.3850002288818,
+      "p99": 30.6870002746582,
+      "max": 64.8659973144531,
+      "mean": 14.032367980925835,
+      "frames": 856
+    },
+    {
+      "file": "3-glint.json",
+      "arm": "glint",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.5290002822876,
+      "p95": 17.0540008544922,
+      "p99": 28.6889991760254,
+      "max": 68.3320007324219,
+      "mean": 13.815291128718263,
+      "frames": 869
+    },
+    {
+      "file": "4-glint.json",
+      "arm": "glint",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.5430002212524,
+      "p95": 17.1609992980957,
+      "p99": 28.5230007171631,
+      "max": 52.826000213623,
+      "mean": 13.853115337530223,
+      "frames": 867
+    },
+    {
+      "file": "5-shard.json",
+      "arm": "shard",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.4060001373291,
+      "p95": 17.0659999847412,
+      "p99": 28.2900009155273,
+      "max": 54.6640014648438,
+      "mean": 13.698804786760514,
+      "frames": 876
+    },
+    {
+      "file": "6-control.json",
+      "arm": "control",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.5799999237061,
+      "p95": 17.375,
+      "p99": 28.5170001983643,
+      "max": 75.0790023803711,
+      "mean": 13.97357741334802,
+      "frames": 859
+    }
+  ],
+  "control": 13.5149998664856,
+  "shard": 13.457000255584699,
+  "glint": 13.53600025177,
+  "shardDelta": -0.05799961090090022,
+  "glintDelta": 0.021000385284400735,
+  "notes": "Five runs in first exclusive timing hold; final control repeated in this hold before recording. Native startup prevented six runs fitting ten minutes."
+}
