@@ -1,0 +1,522 @@
+{
+  "head": "36a535c35e656e056b9b714d5e45a8204103fd8a",
+  "exe": "artifacts/bf6-playtest/BattleDuty.exe",
+  "sha256": "eeb61a5ccd82e6a0b383015d4675b5eb75847320239bfc9d3b7444e14dc20801",
+  "engine": "GodotJS 4.6.1 v8-nopc revision 2",
+  "preset": "Windows Playtest",
+  "debug": true,
+  "exportedAt": "2026-10-24T22:32:51.667Z",
+  "session": "bf6-focusfree-final-20261024",
+  "instance": "bf6-focus-free",
+  "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\ec340971c59d\\game-bf6-focus-free.log",
+  "planSha256": "d37d04cecefd9878a53a2f8d26c2e792822f89e953aff03014ab644205f08d27",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "capturedAt": "2026-10-24T22:43:36.912Z",
+  "scriptErrorCount": 0,
+  "startupTextureErrors": [],
+  "method": "Finite one-shot Playtest review dispatches ordinary console and runtime input/pause handlers in the exported binary. Game capture --os-window reads the verified rendered client without OS focus; window-input is used ONLY for focus-free sizing. No inspection bridge, listener, HUD-value injection or repainting.",
+  "setup": "Invincible live player with actual equipped inventory; spawn 20 real riflemen, normal input targets a head and fires. Server resolves ammunition, raycasts, kills, score and the real care-package offer. Whole stream overlay is debug-masked for pure HUD views.",
+  "captures": [
+    {
+      "name": "bf6-fight-1080",
+      "marker": {
+        "mark": "ready-bf6-fight-1080",
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "pauseOpen": false,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "StoicPanther",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 27,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1227,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": 0.5297219558964525,
+          "pitch": 0.033,
+          "weaponReadyAtMs": 49538,
+          "weaponSwitchEndsAtMs": 49538,
+          "firedRevealUntilMs": 71837,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.052980000000000006
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-focus-free",
+          "pid": 3844,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-cod-20261024\\artifacts\\bf6\\locked-r1\\bf6-fight-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 81929,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "264962922"
+          }
+        }
+      },
+      "sha256": "4d3734ca3804541ef473c43611389384de699a88776378973409ec6439c44509",
+      "capturedAt": "2026-10-24T22:42:05.923Z"
+    },
+    {
+      "name": "bf6-low-ammo-1080",
+      "marker": {
+        "mark": "ready-bf6-low-ammo-1080",
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "pauseOpen": false,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "StoicPanther",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 3,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1461,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6270373921380633,
+          "pitch": -0.04245,
+          "weaponReadyAtMs": 49538,
+          "weaponSwitchEndsAtMs": 49538,
+          "firedRevealUntilMs": 75658,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11166666666666666
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-focus-free",
+          "pid": 3844,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-cod-20261024\\artifacts\\bf6\\locked-r1\\bf6-low-ammo-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 99827,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "264962922"
+          }
+        }
+      },
+      "sha256": "52886488414ce68170a5281715c5ed21b22898247a3d203aa389a3fbc4c0f190",
+      "capturedAt": "2026-10-24T22:42:23.822Z"
+    },
+    {
+      "name": "bf6-overlay-on-1080",
+      "marker": {
+        "mark": "ready-bf6-overlay-on-1080",
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "pauseOpen": false,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "StoicPanther",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 3,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1461,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6270373921380633,
+          "pitch": -0.04245,
+          "weaponReadyAtMs": 49538,
+          "weaponSwitchEndsAtMs": 49538,
+          "firedRevealUntilMs": 75658,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11166666666666666
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-focus-free",
+          "pid": 3844,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-cod-20261024\\artifacts\\bf6\\locked-r1\\bf6-overlay-on-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 116832,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "264962922"
+          }
+        }
+      },
+      "sha256": "86e698a704c4164e055438400f00c2e37ea5b7c29ff23d60baa2ec1863390aac",
+      "capturedAt": "2026-10-24T22:42:40.826Z"
+    },
+    {
+      "name": "bf6-scoreboard-1080",
+      "marker": {
+        "mark": "ready-bf6-scoreboard-1080",
+        "width": 1920,
+        "height": 1078,
+        "chatActive": true,
+        "pauseOpen": false,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "StoicPanther",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 3,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1461,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6270373921380633,
+          "pitch": -0.04245,
+          "weaponReadyAtMs": 49538,
+          "weaponSwitchEndsAtMs": 49538,
+          "firedRevealUntilMs": 75658,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11166666666666666
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-focus-free",
+          "pid": 3844,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-cod-20261024\\artifacts\\bf6\\locked-r1\\bf6-scoreboard-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 133649,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "264962922"
+          }
+        }
+      },
+      "sha256": "8c712c19666dd48ec14f3c2cb8ae24c829ec4c18e088cd35b23dad4edb0434eb",
+      "capturedAt": "2026-10-24T22:42:57.641Z"
+    },
+    {
+      "name": "bf6-pause-1080",
+      "marker": {
+        "mark": "ready-bf6-pause-1080",
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "pauseOpen": true,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "StoicPanther",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 3,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1461,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6270373921380633,
+          "pitch": -0.04245,
+          "weaponReadyAtMs": 49538,
+          "weaponSwitchEndsAtMs": 49538,
+          "firedRevealUntilMs": 75658,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11166666666666666
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-focus-free",
+          "pid": 3844,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-cod-20261024\\artifacts\\bf6\\locked-r1\\bf6-pause-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 152006,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "264962922"
+          }
+        }
+      },
+      "sha256": "33a4e7728abdb05e8414ab5e4a399fa273937b686dcc424a36f3da48c1c2aca5",
+      "capturedAt": "2026-10-24T22:43:16.000Z"
+    },
+    {
+      "name": "bf6-upgrade-1080",
+      "marker": {
+        "mark": "ready-bf6-upgrade-1080",
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "pauseOpen": false,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "StoicPanther",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 3,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1461,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6270373921380633,
+          "pitch": -0.04245,
+          "weaponReadyAtMs": 49538,
+          "weaponSwitchEndsAtMs": 49538,
+          "firedRevealUntilMs": 75658,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11166666666666666
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-focus-free",
+          "pid": 3844,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-cod-20261024\\artifacts\\bf6\\locked-r1\\bf6-upgrade-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 172813,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "264962922"
+          }
+        }
+      },
+      "sha256": "6b9587607b63c44da00a65ffdbc539834f7606ac05a9becb0493e3cae0ca06ac",
+      "capturedAt": "2026-10-24T22:43:36.807Z"
+    }
+  ]
+}
