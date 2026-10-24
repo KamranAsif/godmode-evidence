@@ -1,0 +1,142 @@
+{
+  "summary": {
+    "bodySeconds": 41.319999999999766,
+    "bodyYawRateP95": 13.333333333334986,
+    "bodyYawSnapsPerMin": 1.4520813165537354,
+    "hipsStepP99": 29.690000000000055,
+    "chestStepP99": 19.889999999999986,
+    "boreStepP99": 11.059999999999945,
+    "boreYawSnapsPerMin": 4.356243949661206,
+    "borePitchSnapsPerMin": 5.808325266214942,
+    "aimYawErrFiringMean": 0.6409830508474568,
+    "aimYawErrFiringP95": 2.11,
+    "aimPitchErrFiringP95": 3.14,
+    "aimYawErrMovingMean": 1.9426653696498053,
+    "aimYawErrIdleMean": 1.465971223021582,
+    "aimOffOver20Share": 0.01631321370309951,
+    "twistP95": 46.99000000000001,
+    "slideMovingMean": 1.621594281689153,
+    "slideMovingOver05Share": 0.6240601503759399,
+    "slideIdleMean": 0.20233195325387746,
+    "slideIdleOver03Share": 0.061872909698996656,
+    "popsPerMin": 21.78121974830603,
+    "upperPopsPerMin": 15.972894482091089,
+    "legPopsPerMin": 7.260406582768676,
+    "clipChangesPerMin": 62.43949661181061,
+    "postureFlipsPerMin": 14.520813165537351,
+    "postureThrashPerMin": 1.4520813165537354,
+    "gaitThrashPerMin": 1.4520813165537354,
+    "primaryFlipsPerMin": 24.685382381413497,
+    "airFlickersPerMin": 2.904162633107471,
+    "turnOffsetJumpsPerMin": 0,
+    "moonwalkShare": 0,
+    "hitSeconds": 1.3666666666666667,
+    "hitUpperStepP95": 8.12,
+    "hitBoreStepP95": 6.220000000000027,
+    "legBlendKeptShare": 0.9636363636363636
+  },
+  "popBones": {
+    "Spine": 2,
+    "LeftFoot": 6,
+    "RightFoot": 3,
+    "LeftArm": 4
+  },
+  "events": [
+    {
+      "type": "bodyYawSnap",
+      "size": 154.2,
+      "t": 93022,
+      "id": "soldier-e36",
+      "d": 6.62,
+      "detail": "62.75->-91.45 tgt=local ph=none"
+    },
+    {
+      "type": "boreYawSnap",
+      "size": 154.2,
+      "t": 93022,
+      "id": "soldier-e36",
+      "d": 6.62,
+      "detail": "clip=RifleAimIdle->RifleAimIdle posture=walk->walk air=ground"
+    },
+    {
+      "type": "upperPop",
+      "size": 98.2,
+      "t": 92754,
+      "id": "soldier-e34",
+      "d": 30.9,
+      "detail": "clip=MachineGunRunStrafeRight->MachineGunRunBackwardRight posture=jog->jog hit=:0 ph=none->none shot=-"
+    },
+    {
+      "type": "upperPop",
+      "size": 86.1,
+      "t": 92952,
+      "id": "soldier-e34",
+      "d": 31.06,
+      "detail": "clip=MachineGunRunBackwardRight->MachineGunRunStrafeRight posture=jog->jog hit=:0 ph=none->none shot=-"
+    },
+    {
+      "type": "pop",
+      "size": 86.1,
+      "t": 92952,
+      "id": "soldier-e34",
+      "d": 31.06,
+      "detail": "Spine clip=MachineGunRunBackwardRight->MachineGunRunStrafeRight posture=jog->jog hit=:0 air=ground->ground"
+    },
+    {
+      "type": "boreYawSnap",
+      "size": 82.5,
+      "t": 72120,
+      "id": "soldier-e3",
+      "d": 31.96,
+      "detail": "clip=RifleAimIdle->RifleAimIdle posture=jog->jog air=ground"
+    },
+    {
+      "type": "pop",
+      "size": 81.6,
+      "t": 115632,
+      "id": "soldier-e51",
+      "d": 6.62,
+      "detail": "LeftFoot clip=MachineGunJumpLoop->MachineGunJumpLoop posture=walk->walk hit=:0 air=loop->loop"
+    },
+    {
+      "type": "upperPop",
+      "size": 69.2,
+      "t": 60246,
+      "id": "soldier-e6",
+      "d": 11.32,
+      "detail": "clip=MachineGunRun->MachineGunRunBackwardRight posture=jog->jog hit=GroundHitFront:0 ph=none->none shot=-"
+    },
+    {
+      "type": "pop",
+      "size": 69.2,
+      "t": 60246,
+      "id": "soldier-e6",
+      "d": 11.32,
+      "detail": "Spine clip=MachineGunRun->MachineGunRunBackwardRight posture=jog->jog hit=GroundHitFront:0 air=ground->ground"
+    },
+    {
+      "type": "borePitchSnap",
+      "size": 64.7,
+      "t": 56445,
+      "id": "soldier-e5",
+      "d": 38.99,
+      "detail": "pitch 0->0 clip=RifleAimIdle->RifleAimIdle"
+    },
+    {
+      "type": "borePitchSnap",
+      "size": 62,
+      "t": 92487,
+      "id": "soldier-e34",
+      "d": 31.11,
+      "detail": "pitch 0.08->-0.08 clip=MachineGunJumpLoop->MachineGunJumpLoop"
+    },
+    {
+      "type": "pop",
+      "size": 60.7,
+      "t": 127624,
+      "id": "soldier-e66",
+      "d": 30.58,
+      "detail": "LeftFoot clip=MachineGunWalkForwardRight->MachineGunRunForwardRight posture=walk->jog hit=:0 air=ground->ground"
+    }
+  ]
+}
