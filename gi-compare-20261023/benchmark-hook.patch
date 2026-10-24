@@ -1,0 +1,34 @@
+diff --git a/tools/godot-cli/runner/gameplay_benchmark.gd b/tools/godot-cli/runner/gameplay_benchmark.gd
+index cf2404fd4..5a188a005 100644
+--- a/tools/godot-cli/runner/gameplay_benchmark.gd
++++ b/tools/godot-cli/runner/gameplay_benchmark.gd
+@@ -56,6 +56,10 @@ func step() -> void:
+             return
+         player_id = int(store.localPeerId)
+         checked("debug_roguelite_seed", {"seed": config.seed})
++        # Temporary GI comparison hook. Same standard workload and harness in both arms.
++        var gi_compare := OS.get_environment("BATTLEDUTY_GI_COMPARE")
++        if gi_compare in ["ssil", "sdfgi"]:
++            checked("debug_lighting", {"globalIllumination": gi_compare})
+         checked("debug_console", {"invincible": true, "open": false, "run": "stream hold on"})
+         checked("debug_survival_command", {"playerId": player_id, "command": "spawns-off"})
+         checked("debug_survival_command", {"playerId": player_id, "command": "bench"})
+@@ -64,6 +68,9 @@ func step() -> void:
+         checked("debug_survival_command", {"playerId": player_id, "command": "streak:loadout:214b:any:ready:normal"})
+         foliage = load(get_script().resource_path.get_base_dir().path_join("foliage_visibility.gd")).new(target, str(config.get("foliage", "on")))
+         Engine.physics_ticks_per_second = 60
++        # Enforce the benchmark's existing uncapped contract after the client applies settings.
++        DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
++        Engine.max_fps = 0
+         # A headless smoke draws nothing; uncapped, its frames measure the CPU work instead of the cheap profile's 30 fps cap.
+         if DisplayServer.get_name() == "headless":
+             Engine.max_fps = 0
+@@ -214,6 +221,8 @@ func event(entry: Dictionary) -> void:
+ 
+ func finish() -> void:
+     finished = true
++    if OS.get_environment("BATTLEDUTY_GI_COMPARE") in ["ssil", "sdfgi"]:
++        checked("debug_lighting", {})
+     if foliage:
+         foliage.stop()
+     var output := FileAccess.open(str(config.rawOutput) + ".tmp", FileAccess.WRITE)

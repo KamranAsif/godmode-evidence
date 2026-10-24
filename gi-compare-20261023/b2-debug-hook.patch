@@ -1,0 +1,47 @@
+diff --git a/scripts/client/daylight.ts b/scripts/client/daylight.ts
+index 8eb8e3edd..3ef62b220 100644
+--- a/scripts/client/daylight.ts
++++ b/scripts/client/daylight.ts
+@@ -131,6 +131,7 @@ export interface LightingOptions {
+     /** Temporarily unbind the Study atlas for matched native comparisons. */
+     readonly bakedLighting?: boolean;
+     readonly globalIllumination?: "sdfgi" | "ssil" | "off";
++    readonly sdfgiEnergy?: number;
+     readonly tonemap?: "filmic" | "agx" | "aces";
+     readonly exposure?: number;
+     readonly white?: number;
+@@ -249,6 +250,7 @@ export function applyLightingOptions(environment: Environment, options: Lighting
+         }
+         environment.ambient_light_energy = gi === "off" ? DAYLIGHT.ambientEnergy : DAYLIGHT.ambientEnergyWithGi;
+     }
++    if (options.sdfgiEnergy !== undefined) environment.sdfgi_energy = options.sdfgiEnergy;
+     if (options.tonemap !== undefined) environment.tonemap_mode = TONEMAPPERS[options.tonemap];
+     if (options.exposure !== undefined) environment.tonemap_exposure = options.exposure;
+     if (options.white !== undefined) environment.tonemap_white = options.white;
+@@ -343,6 +345,14 @@ export function applyDebugLighting(viewport: Viewport, payload: Record<string, u
+         bakedProbeCount: probePoints?.size() ?? 0,
+         bakedProbeBounds: probePoints?.size() ? probeBounds : null,
+         sdfgi: environment.sdfgi_enabled,
++        sdfgiSettings: {
++            energy: environment.sdfgi_energy,
++            minCellSize: environment.sdfgi_min_cell_size,
++            cascades: environment.sdfgi_cascades,
++            bounceFeedback: environment.sdfgi_bounce_feedback,
++            readSkyLight: environment.sdfgi_read_sky_light,
++            useOcclusion: environment.sdfgi_use_occlusion,
++        },
+         ssil: environment.ssil_enabled,
+         ssr: environment.ssr_enabled,
+         tonemap: environment.tonemap_mode,
+diff --git a/scripts/runtime_actions/debug_action_fields.ts b/scripts/runtime_actions/debug_action_fields.ts
+index 0755a1c21..22bc2939d 100644
+--- a/scripts/runtime_actions/debug_action_fields.ts
++++ b/scripts/runtime_actions/debug_action_fields.ts
+@@ -85,6 +85,7 @@ export const DEBUG_ACTION_FIELDS: Readonly<Record<string, readonly string[]>> =
+         "fogAerialPerspective",
+         "fogDensity",
+         "globalIllumination",
++        "sdfgiEnergy",
+         "shadowAngularDistance",
+         "shadowBias",
+         "shadowNormalBias",
