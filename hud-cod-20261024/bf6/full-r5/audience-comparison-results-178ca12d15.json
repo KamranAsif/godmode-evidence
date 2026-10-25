@@ -1,0 +1,149 @@
+{
+  "seed": 1871,
+  "method": {
+    "originalHarnessSha256": "2cb69fc2d1c8c73a5af2bdf7c004a7dad4eadadbb5e639fb3176d28677b4b25c",
+    "diagnosticSha256": "afc7c2af12f1a5b23f8fb47cfd83586655b732bce8bcd8a8f10f614f8b2fff57",
+    "change": "Omit idle-death/restart setup only; active input loop, seed, fresh profiles and all two-minute assertions unchanged. Not a claim that the full first-run gate passes."
+  },
+  "runs": {
+    "mainFull": {
+      "revision": "69212d895607647d7e6ad121ed84e3dc2b6c6472",
+      "fullGate": true,
+      "passed": false,
+      "failure": "first-run setup did not become ready",
+      "lastSample": null,
+      "lastAudience": null
+    },
+    "mainActive": {
+      "revision": "69212d895607647d7e6ad121ed84e3dc2b6c6472",
+      "fullGate": false,
+      "passed": false,
+      "failure": "stream failed at 50385 ms\n\ntrue !== false\n",
+      "lastSample": {
+        "elapsedMs": 50294,
+        "viewers": 3,
+        "kills": 17,
+        "health": 21,
+        "position": [
+          -593.8955078125,
+          -15.9814453125,
+          -275.9580078125
+        ],
+        "known": 2,
+        "coverGoal": null,
+        "alive": true,
+        "enemies": 7,
+        "streak": 2,
+        "performance": {
+          "actual": 7.90909090909091,
+          "expected": 9.338565,
+          "p": 0.846927864087353
+        },
+        "aimbot": {
+          "target": "smg-e20",
+          "ads": true,
+          "reacquiring": false
+        },
+        "aiming": true,
+        "heldStreaks": [],
+        "exposedEnemies": 2,
+        "phoneOverlay": false,
+        "missile": null
+      },
+      "lastAudience": {
+        "elapsedMs": 50163,
+        "kills": 16,
+        "p": 0.77188660476748,
+        "previousViewers": 4,
+        "viewerDelta": -2,
+        "viewers": 3
+      }
+    },
+    "round5Active": {
+      "revision": "d02653545ef7bf4b905eb69d87aace12ab9f49ea",
+      "fullGate": false,
+      "passed": false,
+      "failure": "reasonable two-minute play must build an audience, not merely cling to the last viewer",
+      "lastSample": {
+        "elapsedMs": 127814,
+        "viewers": 1,
+        "kills": 56,
+        "health": 66,
+        "position": [
+          -604.2900390625,
+          -16.3212890625,
+          -403.046875
+        ],
+        "known": 6,
+        "coverGoal": [
+          -603.994294847534,
+          -16.3212890625,
+          -402.772073734595
+        ],
+        "alive": true,
+        "enemies": 10,
+        "streak": 2,
+        "performance": {
+          "actual": 6.31168831168831,
+          "expected": 9.8816775,
+          "p": 0.463476401634572
+        },
+        "aimbot": {
+          "target": null,
+          "ads": false,
+          "reacquiring": false
+        },
+        "aiming": false,
+        "heldStreaks": [],
+        "exposedEnemies": 0,
+        "phoneOverlay": false,
+        "missile": {
+          "boosted": false,
+          "pitch": -1.16056617404876,
+          "position": [
+            -598.123668622046,
+            -21.5504163651838,
+            -393.750281658039
+          ],
+          "yaw": -4.60150290863054
+        }
+      },
+      "lastAudience": {
+        "elapsedMs": 127780,
+        "kills": 56,
+        "p": 0.463476401634572,
+        "previousViewers": 2,
+        "viewerDelta": -1,
+        "viewers": 1
+      }
+    }
+  },
+  "conclusion": "The first-run gate already fails on main. Its full run timed out at the post-idle restart; the isolated unchanged active fight ended at 50.385 seconds. Round 5 reached two minutes but failed the >=5-viewer assertion. These are different failure points, not a claim of an identical exact-assertion reproduction on main. No audience thresholds or rules were relaxed.",
+  "identicalRulesAndController": [
+    {
+      "path": "packages/game-rules/src/performance_stream.ts",
+      "blob": "8373610bc9addfd05c3eab40d49579407d23eefe",
+      "identical": true
+    },
+    {
+      "path": "packages/game-rules/src/live_stream.ts",
+      "blob": "a9601cca1efc0e08a2082942a7be7e41b4b2d9e7",
+      "identical": true
+    },
+    {
+      "path": "packages/game-rules/src/stream_account.ts",
+      "blob": "dc2fa6e522801f0806df1fb1e62fca716ba17fcc",
+      "identical": true
+    },
+    {
+      "path": "tests/integration/first-run-playability.mjs",
+      "blob": "3b49ac23b3e711de8cdef12e3e74eb6ef1d28836",
+      "identical": true
+    },
+    {
+      "path": "tests/integration/first-run-input.mjs",
+      "blob": "2b4f71735825d588141596aa7b78247d77a74eab",
+      "identical": true
+    }
+  ]
+}
