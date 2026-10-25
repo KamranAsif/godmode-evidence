@@ -1,0 +1,55 @@
+{
+  "rows": [
+    {
+      "file": "1-control.json",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 30.0380001068115,
+      "p95": 66.411003112793,
+      "p99": 127.123001098633,
+      "max": 313.045989990234,
+      "mean": 36.39904845844615,
+      "frames": 330
+    },
+    {
+      "file": "2-strike.json",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.4779996871948,
+      "p95": 17.5620002746582,
+      "p99": 34.2299995422363,
+      "max": 442.269012451172,
+      "mean": 15.246908647154793,
+      "frames": 788
+    },
+    {
+      "file": "3-danger.json",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.5100002288818,
+      "p95": 17.7129993438721,
+      "p99": 33.4550018310547,
+      "max": 212.904006958008,
+      "mean": 14.634923182464227,
+      "frames": 820
+    },
+    {
+      "file": "5-control.json",
+      "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+      "median": 13.4919996261597,
+      "p95": 17.8090000152588,
+      "p99": 30.7129993438721,
+      "max": 148.248001098633,
+      "mean": 14.353765559538699,
+      "frames": 836
+    }
+  ],
+  "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+  "control": 13.4919996261597,
+  "strikeDelta": -0.013999938964900593,
+  "dangerDelta": 0.018000602722100467,
+  "invalidAttempts": [
+    {
+      "file": "4-control.json.raw.json",
+      "reason": "Timed-out command left its owned engine alive until separate cleanup. Raw write finished just after the GPU ticket was released. Discarded entirely; earlier recovery/summary artifacts are invalid and superseded by this summary."
+    }
+  ],
+  "notes": "All accepted reports completed the official harness checks inside owned exclusive timing holds <=10 min. First control much slower; using the faster valid control as the stricter reference. Three valid reports in first hold, replacement control in a later hold. No claim of a large speedup."
+}
