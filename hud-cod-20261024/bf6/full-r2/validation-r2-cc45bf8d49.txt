@@ -1,0 +1,22 @@
+BF6 HUD round 2 validation
+
+pnpm install: completed.
+pnpm format: run; final changed files formatted again.
+pnpm lint / format:check / build: passed in the root suite.
+Focused HUD, layout and Playtest replay: 76/76 passed.
+pnpm test: 11/11 steps ran, 10 passed. godot-cli failed two screenshot
+serialization tests during Windows Get-CimInstance process enumeration timeouts.
+Exact isolated rerun: 2/2 passed. Fake-engine post-suite check: no survivors.
+
+Native actual-arena orthographic map render: completed, zero native/script errors.
+Map/font/SVG imports: native importer completed, sidecars retained.
+Cheap headless smoke: blocked in cheap-arena run preparation before the game
+started. Its nested builder was stopped by its session cleanup. No smoke pass
+is claimed. The exported rendered pass below is the actual UI validation.
+
+Exported Windows Playtest validation: seven 1920x1080 frames captured, zero
+script/runtime errors and zero startup texture errors. Six requested views
+are Radar off; the supplementary paused Radar-on frame retains cached contacts
+and is not a live Radar functional check. Source metadata records that fact.
+GPU jobs use explicit tickets <=10 minutes and stop/release on completion.
+No OS focus, real keypresses, overlay edits or gameplay visibility-rule changes.
