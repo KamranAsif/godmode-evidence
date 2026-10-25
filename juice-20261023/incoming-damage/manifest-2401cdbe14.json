@@ -1,0 +1,130 @@
+{
+  "baseline": "b7f154702",
+  "candidate": "08fa4a80fe7f4155594a02adfe542fe73b744955",
+  "sourceHashes": {
+    "scripts/client/damage_arc_shape.ts": "d72f3f43f50891c7bd2016220111c6615e719e26398494dc14693eee7e931c94",
+    "scripts/client/damage_view.ts": "48d4919ed807fd5404c9e82fde16117ab3fd7985f76104571e4511790f769b9b",
+    "scripts/client/admin_hit_indicator.ts": "4bd899a725ce3d71c0f7524f8e51c6824d16c8e583c37d853646f44fb355e9c0",
+    "scripts/fixtures/juice_damage_review.ts": "2a758971b7cc34c1aac5efee0211c29aa90fccb9dd1440a9fb8626cb4a3ccb09"
+  },
+  "sections": [
+    "single left hit while returning rifle fire",
+    "successive right/left hits while returning ADS rifle fire"
+  ],
+  "sectionSeconds": 5.8,
+  "trimStartMs": 100,
+  "hitTimes": [
+    [
+      1600
+    ],
+    [
+      1600,
+      1780,
+      1960,
+      3200,
+      3380
+    ]
+  ],
+  "damage": [
+    18,
+    9
+  ],
+  "method": "PrintWindow/PW_RENDERFULLCONTENT",
+  "maxGameDeltaMs": 50.15166666666667,
+  "notes": "One Windows Playtest export, scripted return-fire fixture using production native grunts/SoldierView, live Infima rifle, muzzle VFX and damage presenters. Three matched static profiles, baseline reproduces original geometry and pulse. Aim/camera kick held identical. Native 30 fps capture cadence, no interpolation, silent; cuts only between cases. Unused arena loader 8777d61dd reuses verified 491f54e1bd390a441c5a6aa9478992c4339bc94f4c2b16cacdd5ce658e7ccb0f cache; fixture does not load arena.",
+  "clips": [
+    {
+      "feel": "baseline",
+      "file": "artifacts/juice/incoming-damage/baseline-incoming.mp4",
+      "bytes": 2201747,
+      "cases": [
+        {
+          "index": 0,
+          "feel": "baseline",
+          "crossfire": false,
+          "utcMs": 1792897760387,
+          "startFrame": 114
+        },
+        {
+          "index": 3,
+          "feel": "baseline",
+          "crossfire": true,
+          "utcMs": 1792897784386,
+          "startFrame": 834
+        }
+      ],
+      "captureGapMedianMs": 33.36499999999978,
+      "captureGapMaxMs": 50.850000000000364,
+      "published": false
+    },
+    {
+      "feel": "strike",
+      "file": "artifacts/juice/incoming-damage/strike-incoming.mp4",
+      "bytes": 2162385,
+      "cases": [
+        {
+          "index": 1,
+          "feel": "strike",
+          "crossfire": false,
+          "utcMs": 1792897768386,
+          "startFrame": 354
+        },
+        {
+          "index": 4,
+          "feel": "strike",
+          "crossfire": true,
+          "utcMs": 1792897792386,
+          "startFrame": 1074
+        }
+      ],
+      "captureGapMedianMs": 33.40400000000227,
+      "captureGapMaxMs": 50.828999999997905,
+      "published": false
+    },
+    {
+      "feel": "danger",
+      "file": "artifacts/juice/incoming-damage/danger-incoming.mp4",
+      "bytes": 2170693,
+      "cases": [
+        {
+          "index": 2,
+          "feel": "danger",
+          "crossfire": false,
+          "utcMs": 1792897776387,
+          "startFrame": 594
+        },
+        {
+          "index": 5,
+          "feel": "danger",
+          "crossfire": true,
+          "utcMs": 1792897800420,
+          "startFrame": 1315
+        }
+      ],
+      "captureGapMedianMs": 33.3859999999986,
+      "captureGapMaxMs": 51.06800000000658,
+      "published": false
+    },
+    {
+      "feel": "baseline-vs-strike",
+      "file": "artifacts/juice/incoming-damage/baseline-vs-strike-incoming.mp4",
+      "bytes": 4150255,
+      "published": true
+    },
+    {
+      "feel": "baseline-vs-danger",
+      "file": "artifacts/juice/incoming-damage/baseline-vs-danger-incoming.mp4",
+      "bytes": 4108348,
+      "published": true
+    }
+  ],
+  "rebasedTo": "b7d84901a",
+  "prBase": "9ce408e15",
+  "effectAndFixtureFilesUnchangedOnRebase": true,
+  "continuityCheck": {
+    "counterCrop": "1000:32:0:0",
+    "freezedetect": "n=-66dB:d=0.25",
+    "frozenIntervalsDetected": 0,
+    "review": "Consecutive 30 fps hit-onset and decay frames inspected. Full native comparative frames inspected. Native enemies and rifle continue moving through the cue."
+  }
+}
