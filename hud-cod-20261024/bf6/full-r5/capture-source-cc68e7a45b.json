@@ -1,0 +1,3046 @@
+{
+  "head": "46a2eaa3dde5b78e142d1189ab2762dfa33bf80b",
+  "exe": "artifacts/bf6-playtest/BattleDuty.exe",
+  "sha256": "d859ee7bedfc6c3b2a5d52637d427e48a7a69c29da61631ebaa43e3460e216c2",
+  "engine": "GodotJS 4.6.1 v8-nopc revision 2",
+  "preset": "Windows Playtest",
+  "debug": true,
+  "exportedAt": "2026-10-25T08:27:57.247Z",
+  "preview": {
+    "preset": "Windows Playtest",
+    "debug": true,
+    "shaderPrebake": false,
+    "runtimeShadersUnchanged": true,
+    "reason": "Two fully rendered shader-baking exports exceeded the ten-minute GPU-turn budget. Preview uses normal runtime compilation; game/HUD materials, geometry, lighting and quality settings are unchanged.",
+    "sourcePresetSha256": "e0fbb06c1a77ce979a55981fdef7ecff599f0cbfc2e46d30b3adf55e03f634bc",
+    "previewPresetSha256": "504722ccd78880506aa379d73aecdde8745d2801016c6e9cb582299ef37e9a97",
+    "importsAreCurrent": false,
+    "arenaPublication": false
+  },
+  "validationHead": "d02653545ef7bf4b905eb69d87aace12ab9f49ea",
+  "hudEquivalence": {
+    "buildHead": "46a2eaa3dde5b78e142d1189ab2762dfa33bf80b",
+    "validationHead": "d02653545ef7bf4b905eb69d87aace12ab9f49ea",
+    "identicalFiles": [
+      {
+        "path": "assets/ui/bf6/icons/README.md",
+        "blob": "17d426254e2cd81819289234b13cfedcf9dd83f0"
+      },
+      {
+        "path": "assets/ui/bf6/icons/streak-emp.svg",
+        "blob": "3c29e01904c9190b041a5b4e12aef47ff68b86e1"
+      },
+      {
+        "path": "assets/ui/bf6/icons/streak-tacticalNuke.svg",
+        "blob": "a9ce6032ba01e0a64eb04e7d35eba67ab6615750"
+      },
+      {
+        "path": "assets/ui/bf6/icons/weapon-machineGun.svg",
+        "blob": "a271fdaf8280786d71d9156031d37e140e389f6f"
+      },
+      {
+        "path": "assets/ui/bf6/minimap-terrain.gdshader",
+        "blob": "e4331a8eb226f0413ae0b5f84e9414317d58819d"
+      },
+      {
+        "path": "packages/game-rules/src/fake_lobby.ts",
+        "blob": "c560fa6972a67c79ab924a8a97fa968c19ac7bf5"
+      },
+      {
+        "path": "packages/game-rules/src/keybindings.ts",
+        "blob": "be7affeb1671de579285650cdfe7271ac353c32f"
+      },
+      {
+        "path": "packages/game-rules/test/fake_lobby.test.ts",
+        "blob": "8a8b5ace0b481d4511a9d92c9df08f212f36fcfa"
+      },
+      {
+        "path": "scripts/client/bf6_hud_theme.ts",
+        "blob": "86afb0f7778ca9e56630d7d5f9865e56fc974731"
+      },
+      {
+        "path": "scripts/client/bf6_menu_style.ts",
+        "blob": "757bb4df655d853a1c5c2837856b56e74d6ba5c7"
+      },
+      {
+        "path": "scripts/client/bf6_menu_tokens.ts",
+        "blob": "260815b6f7c02b959eb7954c48391a0551833c83"
+      },
+      {
+        "path": "scripts/client/bf6_scoreboard.ts",
+        "blob": "425ef0ba22aac0bfb16ea1d8b2f476c48dfd2a1e"
+      },
+      {
+        "path": "scripts/client/bf6_upgrade_copy.ts",
+        "blob": "6407ada6f08f18b282a992097140b0c61ccf2afe"
+      },
+      {
+        "path": "scripts/client/bf6_upgrade_picker.ts",
+        "blob": "af34720c91c716c007b4bb358830b749f9389d17"
+      },
+      {
+        "path": "scripts/client/game_hud_kill_feed.ts",
+        "blob": "b0ee0812a8b367ad808747c772976f175a67b7d0"
+      },
+      {
+        "path": "scripts/client/game_hud_scoreboard.ts",
+        "blob": "f2df9e27e23d4385dc2c409133a77464f5e17633"
+      },
+      {
+        "path": "scripts/client/game_hud_style.ts",
+        "blob": "1559df9cb1f4d98527549558d310e52195a8e621"
+      },
+      {
+        "path": "scripts/client/hud_controller.ts",
+        "blob": "de0e9c4f802a5f6f388c9b0d54a227644b6d70f7"
+      },
+      {
+        "path": "scripts/client/input_controller.ts",
+        "blob": "9164c1aff8def149379713a3d062858609e437c6"
+      },
+      {
+        "path": "scripts/client/menu_controller.ts",
+        "blob": "d325535b95f10a14b474468a2af5277f8024a17b"
+      },
+      {
+        "path": "scripts/client/playtest_review_replay.ts",
+        "blob": "53bbe9b7759730388e67dd7b797755d20210aeb4"
+      },
+      {
+        "path": "scripts/client/roguelite_minimap.ts",
+        "blob": "77ec91ba5e457ec3414404469291ea77100b74be"
+      },
+      {
+        "path": "scripts/client/roguelite_view.ts",
+        "blob": "451c57a25d7c1bdc47562a667e9aed8288fb4f2e"
+      },
+      {
+        "path": "scripts/fixtures/bf6_map_capture.ts",
+        "blob": "f9c413aeb920bc086f6623c97bb0132744fe5e8f"
+      },
+      {
+        "path": "scripts/server/survival_run.ts",
+        "blob": "261fe88d4ba13b7f832511cb7146fc2b2b091760"
+      }
+    ],
+    "nonHudUpstreamChanges": [
+      "assets/ui/plasma/search-field-focus.svg",
+      "assets/ui/plasma/search-field-focus.svg.import",
+      "assets/ui/plasma/search-field.svg",
+      "assets/ui/plasma/search-field.svg.import",
+      "scripts/client/help_center_app.ts",
+      "scripts/client/image_viewer_app.ts",
+      "scripts/client/plasma_shell.ts",
+      "scripts/runtime_actions/runtime_actions.ts",
+      "tests/unit/opening-desktop.test.mjs"
+    ],
+    "note": "Only upstream KDE Help Center/Gwenview/search UI changes since this export. The complete R5-authored runtime/assets set is byte-identical. Exported build source remains explicitly labelled."
+  },
+  "session": "s-mvnntmt9-d80f7749b8e6",
+  "instance": "bf6-r5-focus-free",
+  "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\fc96c6d12ea6\\game-bf6-r5-focus-free.log",
+  "planSha256": "b2a0e39c79ae30956fa49445598c1b3cc816cdf8eefd17e54c54b1624f48c5c7",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "capturedAt": "2026-10-25T10:07:23.984Z",
+  "scriptErrorCount": 0,
+  "startupTextureErrors": [],
+  "method": "Finite one-shot Playtest review dispatches ordinary console and runtime input/pause handlers in the exported binary. Game capture --os-window reads the verified rendered client without OS focus; window-input is used ONLY for focus-free sizing. No inspection bridge, listener, HUD-value injection or repainting.",
+  "setup": "Invincible live player with actual equipped inventory; spawn 20 real riflemen, normal input targets a head and fires. Server resolves ammunition, raycasts, kills, score and the real care-package offer. Whole stream overlay is debug-masked for pure HUD views.",
+  "captures": [
+    {
+      "name": "bf6-fight-1080",
+      "marker": {
+        "mark": "ready-bf6-fight-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "27",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "rcxd",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "emp",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "tacticalNuke",
+              "ready": true
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 474,
+          "atMs": 81729,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:40",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 1,
+            "deaths": 0,
+            "score": 100,
+            "you": true
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 1,
+          "names": [
+            "xXnoscopeXx",
+            "GLASS"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 474,
+            "atMs": 81729,
+            "killer": "xXnoscopeXx",
+            "victim": "GLASS",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 27,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 27,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1235,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -1.3696069031639502,
+          "pitch": -0.09225,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 83949,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.05234666666666667
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-fight-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 86456,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "bbb878318bb5f26318f6f5b2c9433a90d984f8f2bfbd51ae758afe4b25df8375",
+      "capturedAt": "2026-10-25T10:06:31.224Z"
+    },
+    {
+      "name": "bf6-low-ammo-1080",
+      "marker": {
+        "mark": "ready-bf6-low-ammo-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "00",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "SUPER KILL",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "rcxd",
+              "ready": true
+            },
+            {
+              "key": 3,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "emp",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "tacticalNuke",
+              "ready": true
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 665,
+          "atMs": 85935,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:35",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 8,
+            "deaths": 0,
+            "score": 800,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "ASH",
+            "GLASS",
+            "ORBIT",
+            "ROOK",
+            "ROOK-2",
+            "STATIC",
+            "VANDAL"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 602,
+            "atMs": 84725,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 576,
+            "atMs": 84291,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 0,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1518,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.3174496644295302,
+          "pitch": -0.0916,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 88260,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.099
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-low-ammo-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 93619,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "6713bff09fae910656784d6eff96abab5b3e06af24bdd0ed83ba836e90e2d2bb",
+      "capturedAt": "2026-10-25T10:06:38.385Z"
+    },
+    {
+      "name": "bf6-map-hidden-1080",
+      "marker": {
+        "mark": "ready-bf6-map-hidden-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "00",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "SUPER KILL",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "rcxd",
+              "ready": true
+            },
+            {
+              "key": 3,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "emp",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "tacticalNuke",
+              "ready": true
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 665,
+          "atMs": 85935,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:35",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 8,
+            "deaths": 0,
+            "score": 800,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "ASH",
+            "GLASS",
+            "ORBIT",
+            "ROOK",
+            "ROOK-2",
+            "STATIC",
+            "VANDAL"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 602,
+            "atMs": 84725,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 576,
+            "atMs": 84291,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 0,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 0,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1518,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.3174496644295302,
+          "pitch": -0.0916,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 88260,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.099
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-map-hidden-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 96489,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "cd0dec4231285bafed7d1372be90cdb90cc464d9e1b65210b344bdb58c1e1524",
+      "capturedAt": "2026-10-25T10:06:41.255Z"
+    },
+    {
+      "name": "bf6-radar-on-1080",
+      "marker": {
+        "mark": "ready-bf6-radar-on-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "00",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "SUPER KILL",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 665,
+          "atMs": 85935,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:35",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 8,
+            "deaths": 0,
+            "score": 800,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "ASH",
+            "GLASS",
+            "ORBIT",
+            "ROOK",
+            "ROOK-2",
+            "STATIC",
+            "VANDAL"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 602,
+            "atMs": 84725,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 576,
+            "atMs": 84291,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": true,
+        "radarActive": true,
+        "drawnMarkers": 20,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 0,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1518,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.3174496644295302,
+          "pitch": -0.0916,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 88260,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.099
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-radar-on-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 101881,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "5836a2c33ca1bbbe20f1ac9a706c8b69f781269748d95edaa1e2ae1923008873",
+      "capturedAt": "2026-10-25T10:06:46.647Z"
+    },
+    {
+      "name": "bf6-overlay-on-1080",
+      "marker": {
+        "mark": "ready-bf6-overlay-on-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "00",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "SUPER KILL",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 665,
+          "atMs": 85935,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:35",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 8,
+            "deaths": 0,
+            "score": 800,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "ASH",
+            "GLASS",
+            "ORBIT",
+            "ROOK",
+            "ROOK-2",
+            "STATIC",
+            "VANDAL"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 602,
+            "atMs": 84725,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 576,
+            "atMs": 84291,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 0,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1518,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.3174496644295302,
+          "pitch": -0.0916,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 88260,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.099
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-overlay-on-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 107906,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "b6d355ec94169bee0d6356fe51941f52056d0a7c73cb435badf8a79550e3984a",
+      "capturedAt": "2026-10-25T10:06:52.674Z"
+    },
+    {
+      "name": "bf6-radar-on-live-1080",
+      "marker": {
+        "mark": "ready-bf6-radar-on-live-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "00",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 665,
+          "atMs": 85935,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:33",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 8,
+            "deaths": 0,
+            "score": 800,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "ASH",
+            "GLASS",
+            "ORBIT",
+            "ROOK",
+            "ROOK-2",
+            "STATIC",
+            "VANDAL"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 602,
+            "atMs": 84725,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 576,
+            "atMs": 84291,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": false,
+        "serverRadar": true,
+        "radarActive": true,
+        "drawnMarkers": 20,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 0,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1639,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.3174496644295302,
+          "pitch": -0.0934,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 88260,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.028
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-radar-on-live-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 113852,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "dc6add03b7246cbd8005e087affa1d2313f7b4dbc63b44e8af99f88af6879cb5",
+      "capturedAt": "2026-10-25T10:06:58.619Z"
+    },
+    {
+      "name": "bf6-scoreboard-1080",
+      "marker": {
+        "mark": "ready-bf6-scoreboard-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "13",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 745,
+          "atMs": 90975,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:29",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 9,
+            "deaths": 0,
+            "score": 900,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT-5",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "ASH",
+            "GLASS",
+            "ORBIT",
+            "ORBIT-5",
+            "ROOK",
+            "ROOK-2",
+            "STATIC"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 745,
+            "atMs": 90975,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT-5",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 19,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 13,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1882,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": 0.49386385426653884,
+          "pitch": 0.0427,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 94722,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11293333333333333
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-scoreboard-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 122742,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "e2665efbeec1bde2e0eb108e5776861c41cb8b7b1795901971187597d6c242ae",
+      "capturedAt": "2026-10-25T10:07:07.508Z"
+    },
+    {
+      "name": "bf6-scoreboard-page2-1080",
+      "marker": {
+        "mark": "ready-bf6-scoreboard-page2-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "13",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 745,
+          "atMs": 90975,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:29",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 9,
+            "deaths": 0,
+            "score": 900,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT-5",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 1,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "VANDAL",
+            "VANDAL-2"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 745,
+            "atMs": 90975,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT-5",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 19,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 13,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1882,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": 0.49386385426653884,
+          "pitch": 0.0427,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 94722,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11293333333333333
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-scoreboard-page2-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 127001,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "5518cecf411173201746c58d9c91a7ccf66fd74ee8463b2c873b4987bf0fd0a1",
+      "capturedAt": "2026-10-25T10:07:11.766Z"
+    },
+    {
+      "name": "bf6-pause-1080",
+      "marker": {
+        "mark": "ready-bf6-pause-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "13",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 745,
+          "atMs": 90975,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:29",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 9,
+            "deaths": 0,
+            "score": 900,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT-5",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "ASH",
+            "GLASS",
+            "ORBIT",
+            "ORBIT-5",
+            "ROOK",
+            "ROOK-2",
+            "STATIC"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 745,
+            "atMs": 90975,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT-5",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": true,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 19,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 13,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1882,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": 0.49386385426653884,
+          "pitch": 0.0427,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 94722,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11293333333333333
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-pause-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 131931,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "b30d39d70ad9fba2b9911124470698d0a98f6d3211ed7558ab25c888f81944ae",
+      "capturedAt": "2026-10-25T10:07:16.695Z"
+    },
+    {
+      "name": "bf6-upgrade-1080",
+      "marker": {
+        "mark": "ready-bf6-upgrade-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "13",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 745,
+          "atMs": 90975,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:29",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 9,
+            "deaths": 0,
+            "score": 900,
+            "you": true
+          },
+          {
+            "name": "ASH",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "GLASS",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ORBIT-5",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "ROOK-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "STATIC",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "VANDAL-2",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 2,
+          "names": [
+            "xXnoscopeXx",
+            "ASH",
+            "GLASS",
+            "ORBIT",
+            "ORBIT-5",
+            "ROOK",
+            "ROOK-2",
+            "STATIC"
+          ]
+        },
+        "feedEntries": [
+          {
+            "seq": 745,
+            "atMs": 90975,
+            "killer": "xXnoscopeXx",
+            "victim": "ORBIT-5",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 665,
+            "atMs": 85935,
+            "killer": "xXnoscopeXx",
+            "victim": "STATIC",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 643,
+            "atMs": 85501,
+            "killer": "xXnoscopeXx",
+            "victim": "VANDAL",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          },
+          {
+            "seq": 624,
+            "atMs": 85178,
+            "killer": "xXnoscopeXx",
+            "victim": "ROOK-2",
+            "killerIsYou": true,
+            "victimIsYou": false,
+            "icon": {
+              "kind": "weapon",
+              "id": "machineGun"
+            }
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 19,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 13,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1882,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": 0.49386385426653884,
+          "pitch": 0.0427,
+          "weaponReadyAtMs": 61385,
+          "weaponSwitchEndsAtMs": 61385,
+          "firedRevealUntilMs": 94722,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.11293333333333333
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r5-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r5-focus-free",
+          "pid": 37020,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round5-20261025\\artifacts\\bf6\\full-r5-native\\bf6-upgrade-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 139107,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "7604658"
+          }
+        }
+      },
+      "sha256": "37a1b5f42efe45626d7a3d68c5d6ce727e073cbb76d8fec2b12194ea48b62eb5",
+      "capturedAt": "2026-10-25T10:07:23.872Z"
+    }
+  ]
+}
