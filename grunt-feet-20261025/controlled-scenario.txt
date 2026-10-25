@@ -1,0 +1,8 @@
+Controlled headless scenario (scratch tool, same script both ways): 6 riflemen + reinforcements and the cheat drone
+against a scripted player, 60 s, animation LOD off so every soldier is posed every frame. Scored with the grunt
+meter's own foot-slide rule (planted = foot within 4 cm of its 1 s low; slid = > 5 cm across the plant), riflemen.
+
+                                 share of plants slid   slides per body-min   slide cm p50 / p95
+plant off (main), ~140 fps       0.79                   95.3                  20.4 / 84.4
+this branch, ~140 fps            0.30                   39.6                  16.2 / 87.1
+this branch, 30 fps cap          0.44                   58.9                  15.9 / 75.6

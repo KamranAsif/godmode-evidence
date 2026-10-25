@@ -1,0 +1,1906 @@
+{
+  "limits": {
+    "bodyTurnDegPerSecond": 450,
+    "bodySnapDegPerFrame": 25,
+    "aimTurnDegPerSecond": 720,
+    "aimSnapDegPerFrame": 20,
+    "accelMetersPerSecond2": 20,
+    "minimumStrafeMs": 1000,
+    "movingMetersPerSecond": 1,
+    "flipDegrees": 120,
+    "flipWindowMs": 250,
+    "footSlideCm": 5,
+    "footPlantedCm": 4,
+    "popCm": 10,
+    "footPopCm": 15,
+    "rateJitter": 0.25,
+    "shortStateMs": 100,
+    "moonwalkDegrees": 67.5,
+    "spineTwistDegrees": 60,
+    "divergenceCm": 25,
+    "visibleMeters": 40
+  },
+  "kinds": [
+    "rifle",
+    "pistol",
+    "shotgun"
+  ],
+  "overall": {
+    "server": {
+      "gruntSeconds": 140.75,
+      "groundSpeed": {
+        "p50": 3.41,
+        "p95": 6.79,
+        "max": 6.94
+      },
+      "lateralSpeed": {
+        "p50": 0.01,
+        "p95": 3.39,
+        "max": 6.01
+      },
+      "forwardSpeed": {
+        "p50": 3.4,
+        "p95": 6.8,
+        "max": 6.88
+      },
+      "backpedalSpeed": {
+        "p50": 1.54,
+        "p95": 3.62,
+        "max": 5.06
+      },
+      "accelMps2": {
+        "p50": 23.02,
+        "p95": 136.09,
+        "max": 156.98
+      },
+      "accelOverLimitPerMin": 109.98,
+      "bodyTurnDegPerS": {
+        "p50": 0,
+        "p95": 193.66,
+        "max": 3599.53
+      },
+      "aimTurnDegPerS": {
+        "p50": 5.73,
+        "p95": 17.19,
+        "max": 1069.14
+      },
+      "directionFlipsPerMin": 2.13,
+      "lateralFlipsPerMin": 2.56,
+      "strafeLegMs": {
+        "p50": 2800,
+        "p95": 4600,
+        "max": 4600
+      },
+      "strafeLegsUnder1s": 1,
+      "teleports": 0
+    },
+    "client": {
+      "visibleGruntSeconds": 23.29,
+      "posedShare": 0.99,
+      "bodyTurnDegPerS": {
+        "p50": 5.49,
+        "p95": 25.87,
+        "max": 101.08
+      },
+      "bodyTurnOverLimitShare": 0,
+      "bodySnapsPerMin": 0,
+      "aimTurnDegPerS": {
+        "p50": 11.3,
+        "p95": 212.89,
+        "max": 508.79
+      },
+      "aimTurnOverLimitShare": 0,
+      "aimSnapsPerMin": 0,
+      "spineTwistShare": 0,
+      "clipChangesPerMin": 77.28,
+      "shortStatesPerMin": 15.46,
+      "playheadJumpsPerMin": 0,
+      "strideJitterShare": 0.005,
+      "strideJittersPerMin": 10.3,
+      "moonwalksPerMin": 0,
+      "idleSlidesPerMin": 0,
+      "spineTwistsPerMin": 0,
+      "secondaryChangesPerMin": 100.47,
+      "moonwalkShare": 0,
+      "idleSlideShare": 0,
+      "footSlidesPerMin": 115.92,
+      "footSlideShare": 0.643,
+      "footSlideCm": {
+        "p50": 28.25,
+        "p95": 122.22,
+        "max": 172.62
+      },
+      "posePopsPerMin": 164.87,
+      "poppedFrameShare": 0.048,
+      "divergenceCm": {
+        "p50": 1.64,
+        "p95": 10.83,
+        "max": 23.55
+      },
+      "divergenceOverPerMin": 0
+    },
+    "hit": {
+      "shots": 450,
+      "hitRate": 0.65,
+      "riflemanHits": 86,
+      "kills": 87,
+      "deaths": 1
+    }
+  },
+  "ranking": [
+    {
+      "name": "pose pops (frames where a bone jumps > 10 cm against the root)",
+      "perGruntMinute": 164.87,
+      "example": {
+        "kind": "posePop",
+        "id": "soldier-e4",
+        "rt": 99329,
+        "f": 370,
+        "utc": 1792886650439,
+        "bone": "LeftHand",
+        "cm": 19.86,
+        "clip": "RifleAimIdle",
+        "fromClip": "RifleAimIdle",
+        "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+      }
+    },
+    {
+      "name": "foot slides (planted foot moves > 5 cm)",
+      "perGruntMinute": 115.92,
+      "example": {
+        "kind": "footSlide",
+        "id": "soldier-e4",
+        "rt": 97941.7,
+        "f": 286,
+        "utc": 1792886649012,
+        "foot": "LeftFoot",
+        "cm": 33.37,
+        "clip": "MachineGunRunBackwardRight",
+        "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+      }
+    },
+    {
+      "name": "acceleration over 20 m/s^2 (server)",
+      "perGruntMinute": 109.98,
+      "example": {
+        "kind": "accelSpike",
+        "id": "soldier-e4",
+        "ms": 95507,
+        "tick": 147,
+        "accel": 22.8,
+        "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+      }
+    },
+    {
+      "name": "animation thrash (clip held < 100 ms)",
+      "perGruntMinute": 15.46,
+      "example": {
+        "kind": "stateThrash",
+        "id": "soldier-e18",
+        "rt": 120936,
+        "f": 1651,
+        "utc": 1792886672016,
+        "from": "MachineGunRunStrafeRight",
+        "to": "RifleAimIdle",
+        "heldMs": 52,
+        "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+      }
+    },
+    {
+      "name": "stride jitter (gait rate changes > 25% between posed frames)",
+      "perGruntMinute": 10.3,
+      "example": {
+        "kind": "strideJitter",
+        "id": "soldier-e15",
+        "rt": 119119.1,
+        "f": 1543,
+        "utc": 1792886670214,
+        "clip": "MachineGunWalkForwardRight",
+        "from": 0.405,
+        "to": 0.54,
+        "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+      }
+    },
+    {
+      "name": "strafe reversals (server)",
+      "perGruntMinute": 2.56,
+      "example": {
+        "kind": "shortStrafe",
+        "id": "soldier-e37",
+        "ms": 152417,
+        "tick": 3561,
+        "legMs": 900,
+        "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+      }
+    },
+    {
+      "name": "travel direction flips > 120 deg in 250 ms (server)",
+      "perGruntMinute": 2.13,
+      "example": {
+        "kind": "directionFlip",
+        "id": "soldier-e33",
+        "ms": 147220,
+        "tick": 3249,
+        "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+      }
+    },
+    {
+      "name": "aim snaps (barrel jumps > 20 deg in a frame)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "body snaps (body yaw jumps > 25 deg in a frame)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "playhead jumps (a clip skipped > 0.1 s)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "moonwalk episodes (legs > 67.5 deg off travel)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "idle legs while moving episodes (> 0.8 m/s)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "spine twist episodes (aim > 60 deg off body)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "server-to-drawn position error > 25 cm (interpolation)",
+      "perGruntMinute": 0,
+      "example": null
+    }
+  ],
+  "fights": [
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871",
+      "grunts": 8,
+      "drawnGrunts": 8,
+      "server": {
+        "gruntSeconds": 47.63,
+        "groundSpeed": {
+          "p50": 3.54,
+          "p95": 6.81,
+          "max": 6.84
+        },
+        "lateralSpeed": {
+          "p50": 0.01,
+          "p95": 3.43,
+          "max": 5.36
+        },
+        "forwardSpeed": {
+          "p50": 3.47,
+          "p95": 6.81,
+          "max": 6.84
+        },
+        "backpedalSpeed": {
+          "p50": 1.71,
+          "p95": 3.13,
+          "max": 3.69
+        },
+        "accelMps2": {
+          "p50": 30.99,
+          "p95": 136.17,
+          "max": 136.82
+        },
+        "accelOverLimitPerMin": 84.39,
+        "bodyTurnDegPerS": {
+          "p50": 0,
+          "p95": 120.32,
+          "max": 2786.87
+        },
+        "aimTurnDegPerS": {
+          "p50": 4.58,
+          "p95": 14.9,
+          "max": 1069.14
+        },
+        "directionFlipsPerMin": 1.26,
+        "lateralFlipsPerMin": 2.52,
+        "strafeLegMs": {
+          "p50": 2800,
+          "p95": 2800,
+          "max": 2800
+        },
+        "strafeLegsUnder1s": 1,
+        "teleports": 0
+      },
+      "client": {
+        "visibleGruntSeconds": 8.78,
+        "posedShare": 1,
+        "bodyTurnDegPerS": {
+          "p50": 2.29,
+          "p95": 13.17,
+          "max": 57.13
+        },
+        "bodyTurnOverLimitShare": 0,
+        "bodySnapsPerMin": 0,
+        "aimTurnDegPerS": {
+          "p50": 5.72,
+          "p95": 242.25,
+          "max": 355.04
+        },
+        "aimTurnOverLimitShare": 0,
+        "aimSnapsPerMin": 0,
+        "spineTwistShare": 0,
+        "clipChangesPerMin": 54.65,
+        "shortStatesPerMin": 6.83,
+        "playheadJumpsPerMin": 0,
+        "strideJitterShare": 0.013,
+        "strideJittersPerMin": 20.49,
+        "moonwalksPerMin": 0,
+        "idleSlidesPerMin": 0,
+        "spineTwistsPerMin": 0,
+        "secondaryChangesPerMin": 54.65,
+        "moonwalkShare": 0,
+        "idleSlideShare": 0,
+        "footSlidesPerMin": 102.46,
+        "footSlideShare": 0.833,
+        "footSlideCm": {
+          "p50": 25.24,
+          "p95": 107.37,
+          "max": 107.37
+        },
+        "posePopsPerMin": 109.29,
+        "poppedFrameShare": 0.031,
+        "divergenceCm": {
+          "p50": 0.1,
+          "p95": 9.39,
+          "max": 23.55
+        },
+        "divergenceOverPerMin": 0
+      },
+      "hit": {
+        "shots": 150,
+        "hitRate": 0.65,
+        "riflemanHits": 28,
+        "kills": 28,
+        "deaths": 1,
+        "streamFailed": false,
+        "survivedMs": 60061
+      }
+    },
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488",
+      "grunts": 9,
+      "drawnGrunts": 9,
+      "server": {
+        "gruntSeconds": 38.6,
+        "groundSpeed": {
+          "p50": 3.4,
+          "p95": 5.04,
+          "max": 6.56
+        },
+        "lateralSpeed": {
+          "p50": 0.01,
+          "p95": 3.69,
+          "max": 6.01
+        },
+        "forwardSpeed": {
+          "p50": 3.34,
+          "p95": 4.99,
+          "max": 6.56
+        },
+        "backpedalSpeed": {
+          "p50": 0.79,
+          "p95": 3.63,
+          "max": 3.63
+        },
+        "accelMps2": {
+          "p50": 18.87,
+          "p95": 66.03,
+          "max": 156.98
+        },
+        "accelOverLimitPerMin": 153.89,
+        "bodyTurnDegPerS": {
+          "p50": 0,
+          "p95": 394.19,
+          "max": 3599.53
+        },
+        "aimTurnDegPerS": {
+          "p50": 8.02,
+          "p95": 18.33,
+          "max": 65.32
+        },
+        "directionFlipsPerMin": 3.11,
+        "lateralFlipsPerMin": 3.11,
+        "strafeLegMs": {
+          "p50": 4600,
+          "p95": 4600,
+          "max": 4600
+        },
+        "strafeLegsUnder1s": 0,
+        "teleports": 0
+      },
+      "client": {
+        "visibleGruntSeconds": 5.62,
+        "posedShare": 1,
+        "bodyTurnDegPerS": {
+          "p50": 7.99,
+          "p95": 16.86,
+          "max": 41.91
+        },
+        "bodyTurnOverLimitShare": 0,
+        "bodySnapsPerMin": 0,
+        "aimTurnDegPerS": {
+          "p50": 24.17,
+          "p95": 235.28,
+          "max": 508.79
+        },
+        "aimTurnOverLimitShare": 0,
+        "aimSnapsPerMin": 0,
+        "spineTwistShare": 0,
+        "clipChangesPerMin": 106.7,
+        "shortStatesPerMin": 10.67,
+        "playheadJumpsPerMin": 0,
+        "strideJitterShare": 0,
+        "strideJittersPerMin": 0,
+        "moonwalksPerMin": 0,
+        "idleSlidesPerMin": 0,
+        "spineTwistsPerMin": 0,
+        "secondaryChangesPerMin": 117.37,
+        "moonwalkShare": 0,
+        "idleSlideShare": 0,
+        "footSlidesPerMin": 117.37,
+        "footSlideShare": 0.524,
+        "footSlideCm": {
+          "p50": 44.01,
+          "p95": 122.22,
+          "max": 122.22
+        },
+        "posePopsPerMin": 266.75,
+        "poppedFrameShare": 0.082,
+        "divergenceCm": {
+          "p50": 3.28,
+          "p95": 10.82,
+          "max": 15.42
+        },
+        "divergenceOverPerMin": 0
+      },
+      "hit": {
+        "shots": 150,
+        "hitRate": 0.68,
+        "riflemanHits": 32,
+        "kills": 31,
+        "deaths": 0,
+        "streamFailed": false,
+        "survivedMs": 60111
+      }
+    },
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7",
+      "grunts": 10,
+      "drawnGrunts": 10,
+      "server": {
+        "gruntSeconds": 54.52,
+        "groundSpeed": {
+          "p50": 3.41,
+          "p95": 6.8,
+          "max": 6.94
+        },
+        "lateralSpeed": {
+          "p50": 0.01,
+          "p95": 3.02,
+          "max": 5.89
+        },
+        "forwardSpeed": {
+          "p50": 3.4,
+          "p95": 6.8,
+          "max": 6.88
+        },
+        "backpedalSpeed": {
+          "p50": 1.99,
+          "p95": 5.03,
+          "max": 5.06
+        },
+        "accelMps2": {
+          "p50": 21.6,
+          "p95": 136.23,
+          "max": 138.86
+        },
+        "accelOverLimitPerMin": 101.25,
+        "bodyTurnDegPerS": {
+          "p50": 0,
+          "p95": 287.62,
+          "max": 3324.3
+        },
+        "aimTurnDegPerS": {
+          "p50": 5.73,
+          "p95": 19.48,
+          "max": 49.27
+        },
+        "directionFlipsPerMin": 2.2,
+        "lateralFlipsPerMin": 2.2,
+        "strafeLegMs": {
+          "p50": 2700,
+          "p95": 2700,
+          "max": 2700
+        },
+        "strafeLegsUnder1s": 0,
+        "teleports": 0
+      },
+      "client": {
+        "visibleGruntSeconds": 8.88,
+        "posedShare": 0.98,
+        "bodyTurnDegPerS": {
+          "p50": 8.26,
+          "p95": 32.3,
+          "max": 101.08
+        },
+        "bodyTurnOverLimitShare": 0,
+        "bodySnapsPerMin": 0,
+        "aimTurnDegPerS": {
+          "p50": 12.61,
+          "p95": 157.84,
+          "max": 349.94
+        },
+        "aimTurnOverLimitShare": 0,
+        "aimSnapsPerMin": 0,
+        "spineTwistShare": 0,
+        "clipChangesPerMin": 81.04,
+        "shortStatesPerMin": 27.01,
+        "playheadJumpsPerMin": 0,
+        "strideJitterShare": 0.002,
+        "strideJittersPerMin": 6.75,
+        "moonwalksPerMin": 0,
+        "idleSlidesPerMin": 0,
+        "spineTwistsPerMin": 0,
+        "secondaryChangesPerMin": 135.07,
+        "moonwalkShare": 0,
+        "idleSlideShare": 0,
+        "footSlidesPerMin": 128.32,
+        "footSlideShare": 0.613,
+        "footSlideCm": {
+          "p50": 28.25,
+          "p95": 172.62,
+          "max": 172.62
+        },
+        "posePopsPerMin": 155.33,
+        "poppedFrameShare": 0.044,
+        "divergenceCm": {
+          "p50": 2.34,
+          "p95": 12.22,
+          "max": 21.19
+        },
+        "divergenceOverPerMin": 0
+      },
+      "hit": {
+        "shots": 150,
+        "hitRate": 0.62,
+        "riflemanHits": 26,
+        "kills": 28,
+        "deaths": 0,
+        "streamFailed": false,
+        "survivedMs": 60103
+      }
+    }
+  ],
+  "examples": [
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e4",
+      "ms": 95507,
+      "tick": 147,
+      "accel": 22.8,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e4",
+      "ms": 95766,
+      "tick": 162,
+      "accel": 26.8,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e4",
+      "ms": 97022,
+      "tick": 237,
+      "accel": 87.6,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e4",
+      "ms": 97909,
+      "tick": 291,
+      "accel": 36.8,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e14",
+      "ms": 112313,
+      "tick": 1155,
+      "accel": 76.97,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e14",
+      "ms": 113256,
+      "tick": 1212,
+      "accel": 24.17,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e14",
+      "ms": 113425,
+      "tick": 1221,
+      "accel": 30.53,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e14",
+      "ms": 113788,
+      "tick": 1242,
+      "accel": 43.6,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e14",
+      "ms": 113935,
+      "tick": 1251,
+      "accel": 102.46,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e14",
+      "ms": 114047,
+      "tick": 1260,
+      "accel": 31.46,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e14",
+      "ms": 114261,
+      "tick": 1272,
+      "accel": 28.98,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 114190,
+      "tick": 1269,
+      "accel": 22.56,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 114497,
+      "tick": 1287,
+      "accel": 25.59,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 114956,
+      "tick": 1314,
+      "accel": 55.04,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 115394,
+      "tick": 1341,
+      "accel": 20.8,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 115864,
+      "tick": 1368,
+      "accel": 48.24,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 116102,
+      "tick": 1383,
+      "accel": 35.68,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 116892,
+      "tick": 1431,
+      "accel": 24.24,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 117126,
+      "tick": 1446,
+      "accel": 33.92,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 117276,
+      "tick": 1455,
+      "accel": 26,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 119028,
+      "tick": 1560,
+      "accel": 31.56,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e15",
+      "ms": 119613,
+      "tick": 1593,
+      "accel": 35.13,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 117889,
+      "tick": 1491,
+      "accel": 45.2,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 118110,
+      "tick": 1503,
+      "accel": 48.65,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 118277,
+      "tick": 1515,
+      "accel": 30.42,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 118438,
+      "tick": 1524,
+      "accel": 24.15,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 119001,
+      "tick": 1557,
+      "accel": 34.24,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 120594,
+      "tick": 1653,
+      "accel": 22.88,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 120880,
+      "tick": 1671,
+      "accel": 35.92,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 121322,
+      "tick": 1695,
+      "accel": 54.56,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 121453,
+      "tick": 1704,
+      "accel": 52.8,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 121730,
+      "tick": 1722,
+      "accel": 24.56,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 122681,
+      "tick": 1779,
+      "accel": 65.16,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e17",
+      "ms": 122781,
+      "tick": 1785,
+      "accel": 21.68,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e18",
+      "ms": 119806,
+      "tick": 1605,
+      "accel": 22.78,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e18",
+      "ms": 119913,
+      "tick": 1611,
+      "accel": 59.89,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e18",
+      "ms": 120269,
+      "tick": 1632,
+      "accel": 40.89,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e18",
+      "ms": 120382,
+      "tick": 1641,
+      "accel": 40.68,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e18",
+      "ms": 120780,
+      "tick": 1665,
+      "accel": 20.24,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 143567,
+      "tick": 3030,
+      "accel": 45.2,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 144116,
+      "tick": 3063,
+      "accel": 20.87,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 144534,
+      "tick": 3087,
+      "accel": 54.59,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 144717,
+      "tick": 3099,
+      "accel": 21.78,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 144983,
+      "tick": 3114,
+      "accel": 51.7,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 145587,
+      "tick": 3150,
+      "accel": 47.29,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 145834,
+      "tick": 3165,
+      "accel": 23.02,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 146027,
+      "tick": 3177,
+      "accel": 43.67,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 146370,
+      "tick": 3198,
+      "accel": 44.8,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 146737,
+      "tick": 3219,
+      "accel": 24.16,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 146974,
+      "tick": 3234,
+      "accel": 24.52,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e33",
+      "ms": 147220,
+      "tick": 3249,
+      "accel": 132.14,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 149328,
+      "tick": 3375,
+      "accel": 64.17,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 149463,
+      "tick": 3384,
+      "accel": 27.05,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 149777,
+      "tick": 3402,
+      "accel": 23.12,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 150315,
+      "tick": 3435,
+      "accel": 21.87,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 150765,
+      "tick": 3462,
+      "accel": 26,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 150966,
+      "tick": 3474,
+      "accel": 25.68,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 151173,
+      "tick": 3486,
+      "accel": 58.48,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 151616,
+      "tick": 3513,
+      "accel": 46.71,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e37",
+      "ms": 152216,
+      "tick": 3549,
+      "accel": 51.85,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e33",
+      "ms": 147220,
+      "tick": 3249,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e10",
+      "ms": 79623,
+      "tick": 1239,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e36",
+      "ms": 118674,
+      "tick": 3579,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e31",
+      "ms": 81126,
+      "tick": 2841,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e31",
+      "ms": 92086,
+      "tick": 3498,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "shortStrafe",
+      "id": "soldier-e37",
+      "ms": 152417,
+      "tick": 3561,
+      "legMs": 900,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e4",
+      "rt": 97941.7,
+      "f": 286,
+      "utc": 1792886649012,
+      "foot": "LeftFoot",
+      "cm": 33.37,
+      "clip": "MachineGunRunBackwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e14",
+      "rt": 112716,
+      "f": 1159,
+      "utc": 1792886663787,
+      "foot": "LeftFoot",
+      "cm": 67.07,
+      "clip": "MachineGunRun",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e15",
+      "rt": 117410,
+      "f": 1440,
+      "utc": 1792886668480,
+      "foot": "RightFoot",
+      "cm": 12.15,
+      "clip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e17",
+      "rt": 122056.4,
+      "f": 1717,
+      "utc": 1792886673138,
+      "foot": "LeftFoot",
+      "cm": 10.47,
+      "clip": "MachineGunRunBackwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e33",
+      "rt": 145974.8,
+      "f": 3134,
+      "utc": 1792886697054,
+      "foot": "RightFoot",
+      "cm": 20.98,
+      "clip": "MachineGunRunBackwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e37",
+      "rt": 152088.8,
+      "f": 3492,
+      "utc": 1792886705162,
+      "foot": "LeftFoot",
+      "cm": 5.14,
+      "clip": "MachineGunRunForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e38",
+      "rt": 153107.5,
+      "f": 3553,
+      "utc": 1792886706205,
+      "foot": "RightFoot",
+      "cm": 10.32,
+      "clip": "MachineGunRunForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e4",
+      "rt": 62639.6,
+      "f": 213,
+      "utc": 1792886957598,
+      "foot": "LeftFoot",
+      "cm": 122.22,
+      "clip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e6",
+      "rt": 66009.7,
+      "f": 415,
+      "utc": 1792886960999,
+      "foot": "RightFoot",
+      "cm": 112.14,
+      "clip": "MachineGunRunStrafeLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e9",
+      "rt": 72691.3,
+      "f": 815,
+      "utc": 1792886967669,
+      "foot": "LeftFoot",
+      "cm": 10.48,
+      "clip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e10",
+      "rt": 83741.2,
+      "f": 1453,
+      "utc": 1792886978719,
+      "foot": "LeftFoot",
+      "cm": 5.05,
+      "clip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e13",
+      "rt": 78929.8,
+      "f": 1187,
+      "utc": 1792886973896,
+      "foot": "LeftFoot",
+      "cm": 5.83,
+      "clip": "MachineGunRunForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e14",
+      "rt": 80696.7,
+      "f": 1291,
+      "utc": 1792886975696,
+      "foot": "RightFoot",
+      "cm": 17.58,
+      "clip": "MachineGunRunForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e18",
+      "rt": 87627.5,
+      "f": 1670,
+      "utc": 1792886982600,
+      "foot": "LeftFoot",
+      "cm": 44.01,
+      "clip": "MachineGunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e33",
+      "rt": 111706.4,
+      "f": 3011,
+      "utc": 1792887006687,
+      "foot": "RightFoot",
+      "cm": 27.42,
+      "clip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e12",
+      "rt": 48938.8,
+      "f": 894,
+      "utc": 1792887528986,
+      "foot": "RightFoot",
+      "cm": 32.8,
+      "clip": "MachineGunRunStrafeLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e13",
+      "rt": 52122.9,
+      "f": 1086,
+      "utc": 1792887532184,
+      "foot": "LeftFoot",
+      "cm": 13.66,
+      "clip": "MachineGunRunForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e17",
+      "rt": 57463.3,
+      "f": 1404,
+      "utc": 1792887537521,
+      "foot": "LeftFoot",
+      "cm": 34.54,
+      "clip": "MachineGunWalkForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e20",
+      "rt": 64605.5,
+      "f": 1832,
+      "utc": 1792887544663,
+      "foot": "RightFoot",
+      "cm": 111.91,
+      "clip": "MachineGunRunForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e28",
+      "rt": 81733.3,
+      "f": 2856,
+      "utc": 1792887561793,
+      "foot": "LeftFoot",
+      "cm": 172.62,
+      "clip": "MachineGunRunForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e29",
+      "rt": 79683.9,
+      "f": 2734,
+      "utc": 1792887559764,
+      "foot": "RightFoot",
+      "cm": 60.53,
+      "clip": "MachineGunRunStrafeLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e31",
+      "rt": 89121.8,
+      "f": 3299,
+      "utc": 1792887569183,
+      "foot": "RightFoot",
+      "cm": 12.88,
+      "clip": "MachineGunRunForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e31",
+      "rt": 92730.4,
+      "f": 3514,
+      "utc": 1792887572810,
+      "foot": "RightFoot",
+      "cm": 9.32,
+      "clip": "MachineGunRunBackwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "footSlide",
+      "id": "soldier-e32",
+      "rt": 84789.6,
+      "f": 3039,
+      "utc": 1792887564845,
+      "foot": "RightFoot",
+      "cm": 5.01,
+      "clip": "MachineGunWalkForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e4",
+      "rt": 99329,
+      "f": 370,
+      "utc": 1792886650439,
+      "bone": "LeftHand",
+      "cm": 19.86,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e14",
+      "rt": 112716,
+      "f": 1159,
+      "utc": 1792886663787,
+      "bone": "RightToeBase",
+      "cm": 16.21,
+      "clip": "MachineGunRun",
+      "fromClip": "MachineGunWalk",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e14",
+      "rt": 114466.8,
+      "f": 1265,
+      "utc": 1792886665564,
+      "bone": "LeftHand",
+      "cm": 15.97,
+      "clip": "MachineGunRun",
+      "fromClip": "MachineGunRun",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e15",
+      "rt": 117556,
+      "f": 1449,
+      "utc": 1792886668642,
+      "bone": "LeftToeBase",
+      "cm": 18.15,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e17",
+      "rt": 122624.8,
+      "f": 1751,
+      "utc": 1792886673723,
+      "bone": "LeftHand",
+      "cm": 11.77,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e18",
+      "rt": 120968.5,
+      "f": 1653,
+      "utc": 1792886672062,
+      "bone": "LeftToeBase",
+      "cm": 17.89,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e37",
+      "rt": 152318.5,
+      "f": 3506,
+      "utc": 1792886705388,
+      "bone": "Head",
+      "cm": 11.09,
+      "clip": "MachineGunRun",
+      "fromClip": "MachineGunRunForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e37",
+      "rt": 152376.8,
+      "f": 3510,
+      "utc": 1792886705445,
+      "bone": "LeftHand",
+      "cm": 13.64,
+      "clip": "MachineGunRun",
+      "fromClip": "MachineGunRun",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e37",
+      "rt": 152606.4,
+      "f": 3524,
+      "utc": 1792886705705,
+      "bone": "RightToeBase",
+      "cm": 29.44,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e4",
+      "rt": 62655.5,
+      "f": 214,
+      "utc": 1792886957631,
+      "bone": "LeftHand",
+      "cm": 14.39,
+      "clip": "MachineGunRunStrafeRight",
+      "fromClip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e6",
+      "rt": 65808.7,
+      "f": 403,
+      "utc": 1792886960798,
+      "bone": "LeftHand",
+      "cm": 17.96,
+      "clip": "MachineGunRunStrafeLeft",
+      "fromClip": "MachineGunRunStrafeLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e9",
+      "rt": 72320.5,
+      "f": 793,
+      "utc": 1792886967306,
+      "bone": "LeftToeBase",
+      "cm": 17.35,
+      "clip": "MachineGunRunForwardRight",
+      "fromClip": "MachineGunRunForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e9",
+      "rt": 72420.3,
+      "f": 799,
+      "utc": 1792886967411,
+      "bone": "RightFoot",
+      "cm": 23.42,
+      "clip": "MachineGunJumpLoop",
+      "fromClip": "MachineGunJumpLoop",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e9",
+      "rt": 72437,
+      "f": 800,
+      "utc": 1792886967426,
+      "bone": "RightToeBase",
+      "cm": 19.84,
+      "clip": "MachineGunJumpLoop",
+      "fromClip": "MachineGunJumpLoop",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e9",
+      "rt": 72520.6,
+      "f": 805,
+      "utc": 1792886967516,
+      "bone": "LeftFoot",
+      "cm": 16.29,
+      "clip": "MachineGunRunForwardRight",
+      "fromClip": "MachineGunRun",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e10",
+      "rt": 84119.1,
+      "f": 1471,
+      "utc": 1792886979096,
+      "bone": "LeftFoot",
+      "cm": 15.7,
+      "clip": "RifleAimIdle",
+      "fromClip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e10",
+      "rt": 84825.3,
+      "f": 1511,
+      "utc": 1792886979826,
+      "bone": "LeftHand",
+      "cm": 19.74,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e13",
+      "rt": 79196.8,
+      "f": 1203,
+      "utc": 1792886974184,
+      "bone": "LeftHand",
+      "cm": 17.08,
+      "clip": "MachineGunRunForwardLeft",
+      "fromClip": "MachineGunRunForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e18",
+      "rt": 87685,
+      "f": 1674,
+      "utc": 1792886982654,
+      "bone": "LeftFoot",
+      "cm": 15,
+      "clip": "MachineGunRunStrafeRight",
+      "fromClip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e18",
+      "rt": 87893.9,
+      "f": 1687,
+      "utc": 1792886982900,
+      "bone": "LeftToeBase",
+      "cm": 23.83,
+      "clip": "MachineGunJumpLoop",
+      "fromClip": "MachineGunJumpLoop",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e18",
+      "rt": 87910.5,
+      "f": 1688,
+      "utc": 1792886982913,
+      "bone": "RightToeBase",
+      "cm": 16,
+      "clip": "MachineGunJumpLoop",
+      "fromClip": "MachineGunJumpLoop",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e33",
+      "rt": 111979.8,
+      "f": 3024,
+      "utc": 1792887006966,
+      "bone": "LeftHand",
+      "cm": 13.79,
+      "clip": "MachineGunRunStrafeRight",
+      "fromClip": "MachineGunRunStrafeRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e12",
+      "rt": 49285.8,
+      "f": 916,
+      "utc": 1792887529348,
+      "bone": "LeftHand",
+      "cm": 12.75,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e13",
+      "rt": 52239.9,
+      "f": 1093,
+      "utc": 1792887532318,
+      "bone": "LeftHand",
+      "cm": 12.42,
+      "clip": "MachineGunRunForwardLeft",
+      "fromClip": "MachineGunRunForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e17",
+      "rt": 57101.4,
+      "f": 1382,
+      "utc": 1792887537154,
+      "bone": "Head",
+      "cm": 10.14,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e17",
+      "rt": 57117.9,
+      "f": 1383,
+      "utc": 1792887537172,
+      "bone": "RightToeBase",
+      "cm": 23.66,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e17",
+      "rt": 57539.8,
+      "f": 1408,
+      "utc": 1792887537607,
+      "bone": "LeftToeBase",
+      "cm": 24.21,
+      "clip": "MachineGunWalkForwardLeft",
+      "fromClip": "MachineGunWalkForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e20",
+      "rt": 64554.9,
+      "f": 1829,
+      "utc": 1792887544637,
+      "bone": "LeftHand",
+      "cm": 12.57,
+      "clip": "MachineGunRunForwardRight",
+      "fromClip": "MachineGunRunForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e28",
+      "rt": 81666.9,
+      "f": 2852,
+      "utc": 1792887561747,
+      "bone": "LeftHand",
+      "cm": 16.22,
+      "clip": "MachineGunRunForwardRight",
+      "fromClip": "MachineGunRunForwardRight",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e31",
+      "rt": 83917.3,
+      "f": 2987,
+      "utc": 1792887564002,
+      "bone": "LeftHand",
+      "cm": 17.4,
+      "clip": "RifleAimIdle",
+      "fromClip": "RifleAimIdle",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e31",
+      "rt": 91961.9,
+      "f": 3469,
+      "utc": 1792887572041,
+      "bone": "LeftHand",
+      "cm": 18.59,
+      "clip": "MachineGunRunForwardLeft",
+      "fromClip": "MachineGunRun",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e31",
+      "rt": 92012.9,
+      "f": 3472,
+      "utc": 1792887572086,
+      "bone": "Head",
+      "cm": 18.52,
+      "clip": "MachineGunRunStrafeLeft",
+      "fromClip": "MachineGunRunForwardLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e31",
+      "rt": 92030,
+      "f": 3473,
+      "utc": 1792887572102,
+      "bone": "LeftToeBase",
+      "cm": 54.79,
+      "clip": "MachineGunRunStrafeLeft",
+      "fromClip": "MachineGunRunStrafeLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e31",
+      "rt": 92047,
+      "f": 3474,
+      "utc": 1792887572141,
+      "bone": "RightToeBase",
+      "cm": 66.23,
+      "clip": "MachineGunRunBackwardLeft",
+      "fromClip": "MachineGunRunStrafeLeft",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e31",
+      "rt": 92081.2,
+      "f": 3476,
+      "utc": 1792887572159,
+      "bone": "RightFoot",
+      "cm": 19.01,
+      "clip": "MachineGunRunBackward",
+      "fromClip": "MachineGunRunBackward",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "posePop",
+      "id": "soldier-e31",
+      "rt": 94339.6,
+      "f": 3609,
+      "utc": 1792887574404,
+      "bone": "LeftHand",
+      "cm": 11.05,
+      "clip": "MachineGunJumpLoop",
+      "fromClip": "MachineGunJumpLoop",
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "strideJitter",
+      "id": "soldier-e15",
+      "rt": 119119.1,
+      "f": 1543,
+      "utc": 1792886670214,
+      "clip": "MachineGunWalkForwardRight",
+      "from": 0.405,
+      "to": 0.54,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "strideJitter",
+      "id": "soldier-e17",
+      "rt": 122742.1,
+      "f": 1758,
+      "utc": 1792886673865,
+      "clip": "MachineGunWalkBackwardRight",
+      "from": 0.661,
+      "to": 1.007,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "strideJitter",
+      "id": "soldier-e17",
+      "rt": 57266.1,
+      "f": 1392,
+      "utc": 1792887537338,
+      "clip": "MachineGunWalkForwardLeft",
+      "from": 0.762,
+      "to": 1.025,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "stateThrash",
+      "id": "soldier-e18",
+      "rt": 120936,
+      "f": 1651,
+      "utc": 1792886672016,
+      "from": "MachineGunRunStrafeRight",
+      "to": "RifleAimIdle",
+      "heldMs": 52,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-1871"
+    },
+    {
+      "kind": "stateThrash",
+      "id": "soldier-e9",
+      "rt": 72520.6,
+      "f": 805,
+      "utc": 1792886967516,
+      "from": "MachineGunRun",
+      "to": "MachineGunRunForwardRight",
+      "heldMs": 59,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-2853137488"
+    },
+    {
+      "kind": "stateThrash",
+      "id": "soldier-e17",
+      "rt": 57134.4,
+      "f": 1384,
+      "utc": 1792887537188,
+      "from": "RifleAimIdle",
+      "to": "MachineGunWalkForwardLeft",
+      "heldMs": 46,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "stateThrash",
+      "id": "soldier-e31",
+      "rt": 92012.9,
+      "f": 3472,
+      "utc": 1792887572086,
+      "from": "MachineGunRunForwardLeft",
+      "to": "MachineGunRunStrafeLeft",
+      "heldMs": 45,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "stateThrash",
+      "id": "soldier-e31",
+      "rt": 92047,
+      "f": 3474,
+      "utc": 1792887572141,
+      "from": "MachineGunRunStrafeLeft",
+      "to": "MachineGunRunBackwardLeft",
+      "heldMs": 56,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    },
+    {
+      "kind": "stateThrash",
+      "id": "soldier-e31",
+      "rt": 92064.1,
+      "f": 3475,
+      "utc": 1792887572150,
+      "from": "MachineGunRunBackwardLeft",
+      "to": "MachineGunRunBackward",
+      "heldMs": 8,
+      "fight": "D:\\work\\godmode-roguelite-worktrees\\grunt-feet-meter-20261025\\artifacts\\grunt-meter\\feet-before\\seed-7"
+    }
+  ]
+}
