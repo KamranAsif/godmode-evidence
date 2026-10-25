@@ -1,0 +1,214 @@
+{
+  "base": "b7f154702",
+  "fixtureCommit": "39042e4e1",
+  "productionRecoilCommit": "8777d61dd",
+  "baseline": "Zero added shove: viewmodelRecoilOffset with shove=0 is numerically identical to the function before #2241. Native clips and ordinary recoil remain active in every variant.",
+  "default": "punch",
+  "sections": [
+    "rifle hip full-auto",
+    "rifle ADS full-auto",
+    "pistol hip rapid fire",
+    "pistol ADS rapid fire"
+  ],
+  "sectionSeconds": 5.8,
+  "shotsMs": {
+    "machineGun": [
+      800,
+      900,
+      1000,
+      1100,
+      1200,
+      1300,
+      1400,
+      1500,
+      1600,
+      1700,
+      1800,
+      1900,
+      2000,
+      2100,
+      2200,
+      2300,
+      2400,
+      2500,
+      2600,
+      2700,
+      2800,
+      2900,
+      3000,
+      3100,
+      3200
+    ],
+    "pistol": [
+      800,
+      980,
+      1160,
+      1340,
+      1520,
+      1700,
+      1880,
+      2060,
+      2240,
+      2420,
+      2600,
+      2780,
+      2960,
+      3140
+    ]
+  },
+  "burstStartMs": 800,
+  "burstEndMs": 3300,
+  "trimmedFromOriginalCaseMs": 100,
+  "method": "PrintWindow/PW_RENDERFULLCONTENT",
+  "maxGameDeltaMs": 33.333333333333336,
+  "unusedArenaLoader": "8777d61dd",
+  "arenaCache": "491f54e1bd390a441c5a6aa9478992c4339bc94f4c2b16cacdd5ce658e7ccb0f",
+  "notes": "Single Windows Playtest export, matched cases using live native Infima presenter and unchanged production spring. Fixed camera, carry disabled to isolate recoil. Authoritative catalogue cadence: rifle 100 ms, pistol 180 ms. Camera kick is held fixed identically in all variants. 25 rifle shots / 14 pistol shots per case, with settling after release. Cuts only between cases; original 30 fps cadence, no interpolation. Silent.",
+  "productionSourceSha256": "d30dd7f9ff949820ff1dcd99a55b6f94deba2ae4620e71fac4d42402e6dbd19c",
+  "clips": [
+    {
+      "feel": "baseline",
+      "file": "artifacts/juice/recoil-rapid-review/baseline-rapid.mp4",
+      "bytes": 1906433,
+      "cases": [
+        {
+          "index": 0,
+          "weapon": "machineGun",
+          "ads": false,
+          "feel": "baseline",
+          "utcMs": 1792891217789,
+          "startFrame": 1238
+        },
+        {
+          "index": 3,
+          "weapon": "machineGun",
+          "ads": true,
+          "feel": "baseline",
+          "utcMs": 1792891235789,
+          "startFrame": 1777
+        },
+        {
+          "index": 6,
+          "weapon": "pistol",
+          "ads": false,
+          "feel": "baseline",
+          "utcMs": 1792891253822,
+          "startFrame": 2318
+        },
+        {
+          "index": 9,
+          "weapon": "pistol",
+          "ads": true,
+          "feel": "baseline",
+          "utcMs": 1792891271822,
+          "startFrame": 2859
+        }
+      ],
+      "captureGapMedianMs": 33.363999999986845,
+      "captureGapMaxMs": 51.59200000000419
+    },
+    {
+      "feel": "punch",
+      "file": "artifacts/juice/recoil-rapid-review/punch-rapid.mp4",
+      "bytes": 2017740,
+      "cases": [
+        {
+          "index": 1,
+          "weapon": "machineGun",
+          "ads": false,
+          "feel": "punch",
+          "utcMs": 1792891223789,
+          "startFrame": 1418
+        },
+        {
+          "index": 4,
+          "weapon": "machineGun",
+          "ads": true,
+          "feel": "punch",
+          "utcMs": 1792891241789,
+          "startFrame": 1958
+        },
+        {
+          "index": 7,
+          "weapon": "pistol",
+          "ads": false,
+          "feel": "punch",
+          "utcMs": 1792891259822,
+          "startFrame": 2498
+        },
+        {
+          "index": 10,
+          "weapon": "pistol",
+          "ads": true,
+          "feel": "punch",
+          "utcMs": 1792891277822,
+          "startFrame": 3039
+        }
+      ],
+      "captureGapMedianMs": 33.37599999998929,
+      "captureGapMaxMs": 50.94899999999325
+    },
+    {
+      "feel": "weight",
+      "file": "artifacts/juice/recoil-rapid-review/weight-rapid.mp4",
+      "bytes": 2683257,
+      "cases": [
+        {
+          "index": 2,
+          "weapon": "machineGun",
+          "ads": false,
+          "feel": "weight",
+          "utcMs": 1792891229789,
+          "startFrame": 1597
+        },
+        {
+          "index": 5,
+          "weapon": "machineGun",
+          "ads": true,
+          "feel": "weight",
+          "utcMs": 1792891247822,
+          "startFrame": 2138
+        },
+        {
+          "index": 8,
+          "weapon": "pistol",
+          "ads": false,
+          "feel": "weight",
+          "utcMs": 1792891265822,
+          "startFrame": 2678
+        },
+        {
+          "index": 11,
+          "weapon": "pistol",
+          "ads": true,
+          "feel": "weight",
+          "utcMs": 1792891283822,
+          "startFrame": 3219
+        }
+      ],
+      "captureGapMedianMs": 33.37300000000687,
+      "captureGapMaxMs": 51.42499999998836
+    },
+    {
+      "feel": "baseline-vs-punch",
+      "file": "artifacts/juice/recoil-rapid-review/baseline-vs-punch-rapid.mp4",
+      "bytes": 3734356
+    },
+    {
+      "feel": "baseline-vs-weight",
+      "file": "artifacts/juice/recoil-rapid-review/baseline-vs-weight-rapid.mp4",
+      "bytes": 3956410
+    },
+    {
+      "feel": "baseline-punch-weight",
+      "file": "artifacts/juice/recoil-rapid-review/baseline-punch-weight-rapid.mp4",
+      "bytes": 5894275
+    }
+  ],
+  "continuityCheck": {
+    "counterCrop": "500:30:300:0",
+    "freezedetect": "n=-66dB:d=0.25",
+    "intervalsDetected": 0,
+    "review": "Consecutive native event frames inspected for the rifle and pistol release/settle. Native gameplay framing preserved for hip and ADS."
+  }
+}
