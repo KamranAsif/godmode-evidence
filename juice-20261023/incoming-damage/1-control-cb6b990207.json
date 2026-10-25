@@ -1,0 +1,1719 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-25T01:59:34.793Z",
+  "buildCommit": "b7f154702c8f33cbd0b6378d79e3e2cb4cb3a0a7",
+  "checkoutCommit": "b7f154702c8f33cbd0b6378d79e3e2cb4cb3a0a7",
+  "dirty": "M scripts/desktop_boot.gd\n M scripts/fixtures/viewmodel_capture.ts\n M tests/unit/damage-arc.test.mjs\n M tests/unit/streak-viewmodel.test.mjs\n?? scenes/fixtures/juice_damage_review.tscn\n?? scripts/fixtures/juice_damage_review.ts\n?? scripts/fixtures/juice_damage_review.ts.uid",
+  "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+  "measurementHash": "be4822d62f184c01396f48baaacc0d3db9968d67f0b8f609cdde5c0963d761fa",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "framesOnly": true,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "lensCorrection": "high",
+    "enemies": 16,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "firefight",
+        "durationMs": 12000,
+        "from": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "to": [
+          -401,
+          -15.582,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          },
+          {
+            "atMs": 3000,
+            "kind": "shot",
+            "targetIndex": 0,
+            "optional": true
+          },
+          {
+            "atMs": 3200,
+            "kind": "shot",
+            "targetIndex": 1,
+            "optional": true
+          },
+          {
+            "atMs": 3400,
+            "kind": "shot",
+            "targetIndex": 2,
+            "optional": true
+          },
+          {
+            "atMs": 3600,
+            "kind": "shot",
+            "targetIndex": 3,
+            "optional": true
+          },
+          {
+            "atMs": 3800,
+            "kind": "shot",
+            "targetIndex": 4,
+            "optional": true
+          },
+          {
+            "atMs": 4000,
+            "kind": "shot",
+            "targetIndex": 5,
+            "optional": true
+          },
+          {
+            "atMs": 4200,
+            "kind": "shot",
+            "targetIndex": 6,
+            "optional": true
+          },
+          {
+            "atMs": 4400,
+            "kind": "shot",
+            "targetIndex": 7,
+            "optional": true
+          },
+          {
+            "atMs": 4600,
+            "kind": "shot",
+            "targetIndex": 8,
+            "optional": true
+          },
+          {
+            "atMs": 4800,
+            "kind": "shot",
+            "targetIndex": 9,
+            "optional": true
+          },
+          {
+            "atMs": 5000,
+            "kind": "shot",
+            "targetIndex": 10,
+            "optional": true
+          },
+          {
+            "atMs": 5200,
+            "kind": "shot",
+            "targetIndex": 11,
+            "optional": true
+          },
+          {
+            "atMs": 5400,
+            "kind": "shot",
+            "targetIndex": 12,
+            "optional": true
+          },
+          {
+            "atMs": 5600,
+            "kind": "shot",
+            "targetIndex": 13,
+            "optional": true
+          },
+          {
+            "atMs": 5800,
+            "kind": "shot",
+            "targetIndex": 14,
+            "optional": true
+          },
+          {
+            "atMs": 6000,
+            "kind": "shot",
+            "targetIndex": 15,
+            "optional": true
+          },
+          {
+            "atMs": 6200,
+            "kind": "shot",
+            "targetIndex": 0,
+            "optional": true
+          },
+          {
+            "atMs": 6400,
+            "kind": "shot",
+            "targetIndex": 1,
+            "optional": true
+          },
+          {
+            "atMs": 6600,
+            "kind": "shot",
+            "targetIndex": 2,
+            "optional": true
+          },
+          {
+            "atMs": 6800,
+            "kind": "shot",
+            "targetIndex": 3,
+            "optional": true
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "engine": {
+    "bufferMemoryBytes": 2656290444,
+    "displayServer": "Windows",
+    "frameProfile": false,
+    "framesOnly": true,
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "screenSpaceAA": 2,
+    "staticMemoryBytes": 5319533231,
+    "taa": false,
+    "textureMemoryBytes": 3151986688,
+    "threadModel": 2,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 11058462720,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "engineVersion": "4.6.1.stable.custom_build.14d19694e",
+  "buildKind": "GodotJS editor with development inspection",
+  "machine": {
+    "platform": "win32",
+    "arch": "x64",
+    "osRelease": "10.0.19045",
+    "cpuModel": "AMD Ryzen 7 9800X3D 8-Core Processor           ",
+    "logicalCores": 16,
+    "ramBytes": 34032001024
+  },
+  "hardware": [
+    {
+      "Name": "AMD Radeon RX 9070 XT",
+      "DriverVersion": "32.0.32015.7029",
+      "DriverDate": "/Date(1792281600000)/",
+      "PNPDeviceID": "PCI\\VEN_1002&DEV_7550&SUBSYS_061A1043&REV_C0\\6&203361C1&0&00000009"
+    }
+  ],
+  "arenaReceiptSha256": "4b35b8c2e520dd2381c83c0ab059250598554a5c00b22f079ed9caa2f55587fd",
+  "segments": [
+    {
+      "id": "firefight",
+      "windowMs": 12011.758,
+      "stats": {
+        "frames": 330,
+        "frameMs": {
+          "median": 30.0380001068115,
+          "p95": 66.411003112793,
+          "p99": 127.123001098633,
+          "max": 313.045989990234,
+          "mean": 36.39904845844615
+        },
+        "worstOnePercentMs": 212.16399765014648,
+        "onePercentLowFps": 4.713335019492689,
+        "hitches": {
+          "over33Ms": 122,
+          "over50Ms": 44
+        },
+        "cpuMs": {
+          "process": null,
+          "physics": null,
+          "render": null,
+          "otherViewports": null
+        },
+        "gpuMs": {
+          "render": null,
+          "otherViewports": null
+        },
+        "drawCalls": null,
+        "primitives": null,
+        "memory": {
+          "staticBytesMean": null,
+          "videoBytesMean": null,
+          "staticBytesPeak": null,
+          "videoBytesPeak": null
+        },
+        "monitorsMean": {},
+        "monitorsPeak": {}
+      },
+      "samplesMs": [
+        7.83500003814697,
+        28.3330001831055,
+        41.7630004882812,
+        17.7959995269775,
+        32.5299987792969,
+        30.4150009155273,
+        28.6149997711182,
+        32.7379989624023,
+        25.8299999237061,
+        38.2970008850098,
+        25.3209991455078,
+        31.4449996948242,
+        34.560001373291,
+        30.548999786377,
+        31.363000869751,
+        33.2000007629395,
+        37.3040008544922,
+        47.439998626709,
+        213.557998657227,
+        313.045989990234,
+        194.929000854492,
+        32.6459999084473,
+        46.3419990539551,
+        63.4630012512207,
+        52.8810005187988,
+        44.7949981689453,
+        56.0089988708496,
+        65.3399963378906,
+        52.6150016784668,
+        50.8050003051758,
+        51.5900001525879,
+        40.1080017089844,
+        63.1910018920898,
+        54.8009986877441,
+        30.0389995574951,
+        34.4490013122559,
+        54.7879981994629,
+        46.3310012817383,
+        69.9229965209961,
+        84.370002746582,
+        65.6330032348633,
+        58.234001159668,
+        37.5349998474121,
+        44.3450012207031,
+        51.3580017089844,
+        29.431999206543,
+        38.7290000915527,
+        33.484001159668,
+        28.3880004882812,
+        36.6959991455078,
+        44.8950004577637,
+        39.298999786377,
+        32.576000213623,
+        45.1129989624023,
+        44.326000213623,
+        28.7970008850098,
+        36.8699989318848,
+        32.0470008850098,
+        35.2890014648438,
+        82.6070022583008,
+        58.4580001831055,
+        47.9860000610352,
+        84.7360000610352,
+        42.4269981384277,
+        60.6469993591309,
+        78.4189987182617,
+        43.2649993896484,
+        43.6059989929199,
+        38.1870002746582,
+        73.1880035400391,
+        37.7970008850098,
+        32.5120010375977,
+        34.564998626709,
+        32.101001739502,
+        87.3960037231445,
+        35.4889984130859,
+        36.7700004577637,
+        30.4379997253418,
+        62.4809989929199,
+        42.5340003967285,
+        30.798999786377,
+        38.8730010986328,
+        37.7509994506836,
+        72.677001953125,
+        39.3470001220703,
+        38.2599983215332,
+        31.7849998474121,
+        108.361000061035,
+        61.0410003662109,
+        47.2809982299805,
+        76.1220016479492,
+        34.5169982910156,
+        29.2940006256104,
+        39.3400001525879,
+        64.1240005493164,
+        39.431999206543,
+        38.0830001831055,
+        30.3010005950928,
+        47.0579986572266,
+        64.8580017089844,
+        44.8549995422363,
+        35.4679985046387,
+        29.1009998321533,
+        29.761999130249,
+        64.6829986572266,
+        36.015998840332,
+        30.1450004577637,
+        28.6590003967285,
+        31.4039993286133,
+        65.5169982910156,
+        40.2750015258789,
+        41.314998626709,
+        29.3519992828369,
+        44.1319999694824,
+        61.5400009155273,
+        53.193000793457,
+        35.8979988098145,
+        45.3559989929199,
+        86.463996887207,
+        38.3610000610352,
+        26.5270004272461,
+        40.0839996337891,
+        62.7799987792969,
+        30.7980003356934,
+        29.8290004730225,
+        33.9490013122559,
+        72.1100006103516,
+        66.3779983520508,
+        41.2179985046387,
+        38.0670013427734,
+        62.7560005187988,
+        37.5589981079102,
+        36.8330001831055,
+        24.1609992980957,
+        29.3010005950928,
+        21.9190006256104,
+        66.411003112793,
+        41.0149993896484,
+        29.5939998626709,
+        32.2249984741211,
+        33.0359992980957,
+        58.2859992980957,
+        35.7330017089844,
+        32.2540016174316,
+        23.6410007476807,
+        41.7929992675781,
+        35.298999786377,
+        25.0830001831055,
+        29.4780006408691,
+        30.42799949646,
+        26.6560001373291,
+        23.1800003051758,
+        30.3740005493164,
+        23.2970008850098,
+        26.7830009460449,
+        19.4020004272461,
+        20.6040000915527,
+        31.048999786377,
+        17.9360008239746,
+        33.3899993896484,
+        18.3920001983643,
+        34.2690010070801,
+        23.7520008087158,
+        39.7550010681152,
+        22.3999996185303,
+        21.6119995117188,
+        30.0380001068115,
+        27.5669994354248,
+        33.6609992980957,
+        27.7299995422363,
+        22.6140003204346,
+        38.4220008850098,
+        35.7150001525879,
+        26.3209991455078,
+        34.3050003051758,
+        35.5839996337891,
+        26.75,
+        32.8040008544922,
+        28.4990005493164,
+        22.9130001068115,
+        34.9770011901855,
+        23.5610008239746,
+        23.6569995880127,
+        37.5660018920898,
+        21.7220001220703,
+        29.5949993133545,
+        27.4349994659424,
+        27.1200008392334,
+        16.6830005645752,
+        26.3419990539551,
+        24.4780006408691,
+        25.9969997406006,
+        24.386999130249,
+        24.375,
+        25.2600002288818,
+        24.4969997406006,
+        29.1140003204346,
+        24.44700050354,
+        31.9360008239746,
+        27.1389999389648,
+        26.5900001525879,
+        25.636999130249,
+        30.5499992370605,
+        30.3920001983643,
+        19.1380004882812,
+        37.7779998779297,
+        22.1979999542236,
+        22.201000213623,
+        37.9609985351562,
+        25.5419998168945,
+        26.6229991912842,
+        29.2730007171631,
+        31.6410007476807,
+        18.5370006561279,
+        36.4449996948242,
+        29.5060005187988,
+        22.5839996337891,
+        30.9519996643066,
+        20.25,
+        127.123001098633,
+        14.3380002975464,
+        26.7600002288818,
+        20.5849990844727,
+        24.0289993286133,
+        26.511999130249,
+        20.6140003204346,
+        26.2770004272461,
+        22.9820003509521,
+        32.1139984130859,
+        22.6590003967285,
+        24.7789993286133,
+        28.0349998474121,
+        25.5249996185303,
+        29.431999206543,
+        30.621000289917,
+        27.2369995117188,
+        31.003999710083,
+        24.3950004577637,
+        26.3120002746582,
+        33.0480003356934,
+        22.67799949646,
+        26.8479995727539,
+        22.3810005187988,
+        27.0109996795654,
+        25.382999420166,
+        28.2430000305176,
+        20.6240005493164,
+        28.1299991607666,
+        22.2740001678467,
+        26.5459995269775,
+        30.2000007629395,
+        22.4659996032715,
+        37.5289993286133,
+        24.7940006256104,
+        28.1359996795654,
+        29.386999130249,
+        28.8619995117188,
+        22.3229999542236,
+        30.0219993591309,
+        30.7019996643066,
+        25.8150005340576,
+        30.2950000762939,
+        23.2329998016357,
+        31.0030002593994,
+        28.4209995269775,
+        28.8980007171631,
+        27.9829998016357,
+        26.1539993286133,
+        26.7759990692139,
+        33.1759986877441,
+        27.7479991912842,
+        21.6770000457764,
+        31.6790008544922,
+        29.1429996490479,
+        30.4619998931885,
+        27.3680000305176,
+        31.6480007171631,
+        23.1359996795654,
+        20.4740009307861,
+        26.7180004119873,
+        19.2029991149902,
+        23.6560001373291,
+        26.0690002441406,
+        21.4860000610352,
+        21.7159996032715,
+        28.7479991912842,
+        19.1200008392334,
+        28.636999130249,
+        22.0319995880127,
+        32.7019996643066,
+        25.6830005645752,
+        26.1760005950928,
+        20.761999130249,
+        27.32200050354,
+        20.6889991760254,
+        26.431999206543,
+        32.1559982299805,
+        21.9169998168945,
+        29.6669998168945,
+        28.4249992370605,
+        22.4300003051758,
+        28.9300003051758,
+        19.0599994659424,
+        29.6700000762939,
+        21.2290000915527,
+        23.5030002593994,
+        26.5170001983643,
+        25.2110004425049,
+        19.7070007324219,
+        27.8579998016357,
+        23.5830001831055,
+        29.1569995880127,
+        22.6180000305176,
+        27.9260005950928,
+        24.9459991455078,
+        25.992000579834,
+        29.371000289917,
+        29.8400001525879,
+        23.0610008239746,
+        26.3889999389648,
+        23.7339992523193,
+        26.8159999847412,
+        20.2080001831055,
+        24.5470008850098,
+        26.1219997406006,
+        28.0009994506836,
+        25.9449996948242,
+        27.4150009155273,
+        18.0179996490479,
+        31.3439998626709
+      ]
+    }
+  ],
+  "overall": {
+    "frames": 330,
+    "frameMs": {
+      "median": 30.0380001068115,
+      "p95": 66.411003112793,
+      "p99": 127.123001098633,
+      "max": 313.045989990234,
+      "mean": 36.39904845844615
+    },
+    "worstOnePercentMs": 212.16399765014648,
+    "onePercentLowFps": 4.713335019492689,
+    "hitches": {
+      "over33Ms": 122,
+      "over50Ms": 44
+    },
+    "cpuMs": {
+      "process": null,
+      "physics": null,
+      "render": null,
+      "otherViewports": null
+    },
+    "gpuMs": {
+      "render": null,
+      "otherViewports": null
+    },
+    "drawCalls": null,
+    "primitives": null,
+    "memory": {
+      "staticBytesMean": null,
+      "videoBytesMean": null,
+      "staticBytesPeak": null,
+      "videoBytesPeak": null
+    },
+    "monitorsMean": {},
+    "monitorsPeak": {}
+  },
+  "memory": {
+    "measuredAt": "2026-10-25T01:59:34.6748799Z",
+    "processes": [
+      {
+        "pid": 17336,
+        "dedicatedBytes": 10831794176,
+        "sharedBytes": 369242112,
+        "workingSetBytes": 7454289920,
+        "privateBytes": 18435543040,
+        "gpu3DPercent": 81.12414339993778
+      }
+    ],
+    "adapters": [
+      {
+        "name": "luid_0x00000000_0x000178E3_phys_0",
+        "dedicatedBytes": 0,
+        "sharedBytes": 8192
+      },
+      {
+        "name": "luid_0x00000000_0x00012959_phys_0",
+        "dedicatedBytes": 12520046592,
+        "sharedBytes": 594837504
+      }
+    ],
+    "ramTotalBytes": 34032001024,
+    "ramAvailableBytes": 6820286464
+  },
+  "events": [
+    {
+      "actualMs": 73905,
+      "name": "settings_graphics",
+      "payload": {
+        "option": "lensCorrection",
+        "value": "high"
+      },
+      "result": {
+        "accepted": true,
+        "engine": {
+          "clutter": null,
+          "clutterShortened": 0,
+          "glow": true,
+          "maxFps": 0,
+          "meshLodThreshold": 1,
+          "scaling3dMode": 0,
+          "scaling3dScale": 1,
+          "screenSpaceAa": 2,
+          "ssao": true,
+          "ssil": true,
+          "sunShadowMaxDistance": [
+            160
+          ],
+          "sunShadowMaxDistanceBefore": [
+            160
+          ],
+          "viewmodelScreenSpaceAa": 2,
+          "vsyncMode": 0
+        },
+        "preset": "high",
+        "quality": {
+          "ambientOcclusion": "high",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "indirectLight": "on",
+          "lensCorrection": "high",
+          "renderScale": "100",
+          "shadows": "high"
+        },
+        "sent": {
+          "lensStrength": 0.7,
+          "shadowAtlasSize": 8192,
+          "shadowFilterQuality": 2,
+          "ssaoHalfSize": false
+        }
+      },
+      "scheduledMs": -1,
+      "segment": -1
+    },
+    {
+      "actualMs": 74032,
+      "name": "debug_roguelite_seed",
+      "payload": {
+        "seed": 1136293662
+      },
+      "result": {
+        "accepted": true,
+        "seed": 1136293662,
+        "seedHex": "43BA771E"
+      },
+      "scheduledMs": -1,
+      "segment": -1
+    },
+    {
+      "actualMs": 74035,
+      "name": "debug_console",
+      "payload": {
+        "invincible": true,
+        "open": false,
+        "run": "stream hold on"
+      },
+      "result": {
+        "accepted": true,
+        "freeFly": null,
+        "open": false
+      },
+      "scheduledMs": -1,
+      "segment": -1
+    },
+    {
+      "actualMs": 74035,
+      "name": "debug_survival_command",
+      "payload": {
+        "command": "spawns-off",
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "command": "spawns-off"
+      },
+      "scheduledMs": -1,
+      "segment": -1
+    },
+    {
+      "actualMs": 74035,
+      "name": "debug_survival_command",
+      "payload": {
+        "command": "bench",
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "command": "bench"
+      },
+      "scheduledMs": -1,
+      "segment": -1
+    },
+    {
+      "actualMs": 74036,
+      "name": "input",
+      "payload": {
+        "hold": true,
+        "lookOnce": true
+      },
+      "result": {
+        "accepted": true,
+        "durationMs": null,
+        "form": "hold",
+        "holdId": 1,
+        "restoresHoldId": null,
+        "sequence": 5,
+        "tapFrames": null
+      },
+      "scheduledMs": -1,
+      "segment": -1
+    },
+    {
+      "actualMs": 74036,
+      "name": "debug_kill_admins",
+      "payload": {},
+      "result": {
+        "accepted": false,
+        "cleared": true,
+        "killed": []
+      },
+      "scheduledMs": -1,
+      "segment": -1
+    },
+    {
+      "actualMs": 74036,
+      "name": "debug_survival_command",
+      "payload": {
+        "command": "streak:loadout:214b:any:ready:normal",
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "command": "streak:loadout:214b:any:ready:normal"
+      },
+      "scheduledMs": -1,
+      "segment": -1
+    },
+    {
+      "actualMs": 89887,
+      "name": "debug_kill_admins",
+      "payload": {},
+      "result": {
+        "accepted": false,
+        "cleared": true,
+        "killed": []
+      },
+      "scheduledMs": -1,
+      "segment": 0
+    },
+    {
+      "actualMs": 89887,
+      "name": "debug_set_player_position",
+      "payload": {
+        "playerId": 2,
+        "x": -404,
+        "y": -16.2504989624023,
+        "z": -414
+      },
+      "result": {
+        "accepted": true
+      },
+      "scheduledMs": -1,
+      "segment": 0
+    },
+    {
+      "actualMs": 89887,
+      "name": "debug_look",
+      "payload": {
+        "playerId": 2,
+        "yaw": 3.14159265358979
+      },
+      "result": {
+        "accepted": true,
+        "playerId": 2,
+        "yaw": 3.14159265358979
+      },
+      "scheduledMs": -1,
+      "segment": 0
+    },
+    {
+      "actualMs": 89888,
+      "name": "debug_console",
+      "payload": {
+        "freeFly": false,
+        "lookAt": {
+          "pitch": 0,
+          "yaw": 3.14159265358979
+        }
+      },
+      "result": {
+        "accepted": true,
+        "freeFly": null,
+        "open": false
+      },
+      "scheduledMs": -1,
+      "segment": 0
+    },
+    {
+      "actualMs": 510,
+      "name": "debug_spawn_encounter",
+      "payload": {
+        "fixed": true,
+        "points": [
+          [
+            -401.3,
+            -16.2504989624023,
+            -405
+          ],
+          [
+            -403.1,
+            -16.2504989624023,
+            -405
+          ],
+          [
+            -404.9,
+            -16.2504989624023,
+            -405
+          ],
+          [
+            -406.7,
+            -16.2504989624023,
+            -405
+          ],
+          [
+            -401.3,
+            -16.2504989624023,
+            -403
+          ],
+          [
+            -403.1,
+            -16.2504989624023,
+            -403
+          ],
+          [
+            -404.9,
+            -16.2504989624023,
+            -403
+          ],
+          [
+            -406.7,
+            -16.2504989624023,
+            -403
+          ],
+          [
+            -401.3,
+            -16.2504989624023,
+            -401
+          ],
+          [
+            -403.1,
+            -16.2504989624023,
+            -401
+          ],
+          [
+            -404.9,
+            -16.2504989624023,
+            -401
+          ],
+          [
+            -406.7,
+            -16.2504989624023,
+            -401
+          ],
+          [
+            -401.3,
+            -16.2504989624023,
+            -399
+          ],
+          [
+            -403.1,
+            -16.2504989624023,
+            -399
+          ],
+          [
+            -404.9,
+            -16.2504989624023,
+            -399
+          ],
+          [
+            -406.7,
+            -16.2504989624023,
+            -399
+          ]
+        ],
+        "rifle": 16
+      },
+      "result": {
+        "accepted": true,
+        "ids": [
+          "soldier-e2",
+          "soldier-e3",
+          "soldier-e4",
+          "soldier-e5",
+          "soldier-e6",
+          "soldier-e7",
+          "soldier-e8",
+          "soldier-e9",
+          "soldier-e10",
+          "soldier-e11",
+          "soldier-e12",
+          "soldier-e13",
+          "soldier-e14",
+          "soldier-e15",
+          "soldier-e16",
+          "soldier-e17"
+        ]
+      },
+      "scheduledMs": 500,
+      "segment": 0
+    },
+    {
+      "actualMs": 3038,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e2",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 3000,
+      "segment": 0
+    },
+    {
+      "actualMs": 3228,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e3",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 3200,
+      "segment": 0
+    },
+    {
+      "actualMs": 3412,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e4",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 3400,
+      "segment": 0
+    },
+    {
+      "actualMs": 3616,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e5",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 3600,
+      "segment": 0
+    },
+    {
+      "actualMs": 3826,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e6",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 3800,
+      "segment": 0
+    },
+    {
+      "actualMs": 4016,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e7",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 4000,
+      "segment": 0
+    },
+    {
+      "actualMs": 4228,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e8",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 4200,
+      "segment": 0
+    },
+    {
+      "actualMs": 4415,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e9",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 4400,
+      "segment": 0
+    },
+    {
+      "actualMs": 4627,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e10",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 4600,
+      "segment": 0
+    },
+    {
+      "actualMs": 4806,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e11",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 4800,
+      "segment": 0
+    },
+    {
+      "actualMs": 5025,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e12",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 5000,
+      "segment": 0
+    },
+    {
+      "actualMs": 5231,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e13",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 5200,
+      "segment": 0
+    },
+    {
+      "actualMs": 5420,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e14",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 5400,
+      "segment": 0
+    },
+    {
+      "actualMs": 5641,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e15",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 5600,
+      "segment": 0
+    },
+    {
+      "actualMs": 5837,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e16",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 5800,
+      "segment": 0
+    },
+    {
+      "actualMs": 6028,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e17",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 6000,
+      "segment": 0
+    },
+    {
+      "actualMs": 6258,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e2",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 6200,
+      "segment": 0
+    },
+    {
+      "actualMs": 6404,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e3",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 6400,
+      "segment": 0
+    },
+    {
+      "actualMs": 6616,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e4",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 6600,
+      "segment": 0
+    },
+    {
+      "actualMs": 6820,
+      "name": "debug_fire_at_admin",
+      "payload": {
+        "adminId": "soldier-e5",
+        "aimHeight": 0,
+        "playerId": 2
+      },
+      "result": {
+        "accepted": true,
+        "aimHeight": 0
+      },
+      "scheduledMs": 6800,
+      "segment": 0
+    },
+    {
+      "actualMs": 9020,
+      "name": "debug_kill_admins",
+      "payload": {},
+      "result": {
+        "accepted": true,
+        "cleared": true,
+        "killed": [
+          "soldier-e2",
+          "soldier-e3",
+          "soldier-e4",
+          "soldier-e5",
+          "soldier-e6",
+          "soldier-e7",
+          "soldier-e8",
+          "soldier-e10",
+          "soldier-e11",
+          "soldier-e12",
+          "soldier-e13",
+          "soldier-e14",
+          "soldier-e15",
+          "soldier-e16",
+          "soldier-e17"
+        ]
+      },
+      "scheduledMs": 9000,
+      "segment": 0
+    }
+  ],
+  "realizedSegments": [
+    {
+      "durationMs": 12000,
+      "events": [
+        {
+          "atMs": 500,
+          "count": 16,
+          "kind": "wave"
+        },
+        {
+          "atMs": 3000,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 0
+        },
+        {
+          "atMs": 3200,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 1
+        },
+        {
+          "atMs": 3400,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 2
+        },
+        {
+          "atMs": 3600,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 3
+        },
+        {
+          "atMs": 3800,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 4
+        },
+        {
+          "atMs": 4000,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 5
+        },
+        {
+          "atMs": 4200,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 6
+        },
+        {
+          "atMs": 4400,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 7
+        },
+        {
+          "atMs": 4600,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 8
+        },
+        {
+          "atMs": 4800,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 9
+        },
+        {
+          "atMs": 5000,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 10
+        },
+        {
+          "atMs": 5200,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 11
+        },
+        {
+          "atMs": 5400,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 12
+        },
+        {
+          "atMs": 5600,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 13
+        },
+        {
+          "atMs": 5800,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 14
+        },
+        {
+          "atMs": 6000,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 15
+        },
+        {
+          "atMs": 6200,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 0
+        },
+        {
+          "atMs": 6400,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 1
+        },
+        {
+          "atMs": 6600,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 2
+        },
+        {
+          "atMs": 6800,
+          "kind": "shot",
+          "optional": true,
+          "targetIndex": 3
+        },
+        {
+          "atMs": 9000,
+          "name": "debug_kill_admins",
+          "optional": true,
+          "payload": {}
+        }
+      ],
+      "from": [
+        -404,
+        -15.6004989624023,
+        -414
+      ],
+      "id": "firefight",
+      "pitch": 0,
+      "to": [
+        -401,
+        -15.6439979553223,
+        -414
+      ],
+      "yaw": 3.14159265358979
+    }
+  ],
+  "foliageVisibility": {
+    "examples": [
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_0_-2_-8",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_0_-2_-8_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_0_-3_-4",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_0_-3_-4_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_0_-8_-1",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_0_-8_-1_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_0_-9_-5",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_0_-9_-5_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-10_-1",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-10_-1_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-10_-3",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-10_-3_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-10_-4",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-10_-4_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-2_-7",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-2_-7_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-5_-5",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-5_-5_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-8_-2",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-8_-2_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-9_-1",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-9_-1_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-9_-2",
+        "removed": [],
+        "surfaces": [
+          "trunks",
+          "leaves"
+        ]
+      },
+      {
+        "path": "DumboSurvivalArena/EnvironmentModules/family-tree-0_1_-9_-2_LeafShade_TrunkShade",
+        "removed": [],
+        "surfaces": [
+          "trunks"
+        ]
+      }
+    ],
+    "filteredNodes": 0,
+    "hiddenNodes": 0,
+    "leafParticleEmitters": 0,
+    "leafSurfaces": 566,
+    "mixedNukeDebrisBatches": 0,
+    "mixedNukeDebrisInstances": 0,
+    "mode": "on",
+    "nominalLeafTriangles": 4702438,
+    "nominalTrunkTriangles": 330813,
+    "removedSurfaces": 0,
+    "trunkSurfaces": 760
+  },
+  "expectedVisibleBirthDiagnostics": [
+    "soldier-e2",
+    "soldier-e3",
+    "soldier-e4",
+    "soldier-e5",
+    "soldier-e6",
+    "soldier-e7",
+    "soldier-e8",
+    "soldier-e9",
+    "soldier-e10",
+    "soldier-e11",
+    "soldier-e12",
+    "soldier-e13",
+    "soldier-e14",
+    "soldier-e15",
+    "soldier-e16",
+    "soldier-e17"
+  ],
+  "launch": {
+    "pid": 17336,
+    "kind": "game",
+    "instance": "gameplay-bench-10540",
+    "projectPath": "D:\\work\\godmode-roguelite-worktrees\\juice-incoming-hit-20261025",
+    "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\0a41bc7243d4\\game-gameplay-bench-10540.log",
+    "inspectionUrl": "http://127.0.0.1:56369/inspect",
+    "inspectPort": 56369,
+    "startedAt": "2026-10-25T01:57:39.407Z",
+    "sessionId": "juice-hit-timing-20261025",
+    "processStartToken": "argv:cf64ad1f2987cbb6507c2bde6448511a",
+    "launchPreparation": {
+      "runPrepareMs": 0,
+      "processSetupMs": 831
+    }
+  },
+  "inventory": {
+    "instances": []
+  },
+  "caveats": [
+    "Seeded live AI/physics and particles are repeatable workloads, not bit-identical across frame rates or drivers.",
+    "Shader and native arena caches retained; first-use pipeline hitches are included after startup warmup.",
+    "CPU and GPU monitor means are overlapping engine timings; they must not be added.",
+    "Frame-only main-loop timestamps: no per-frame engine monitors or synchronous RenderingServer statistics/timestamps; component metrics are null."
+  ]
+}
