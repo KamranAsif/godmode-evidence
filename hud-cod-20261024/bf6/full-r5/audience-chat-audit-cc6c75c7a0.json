@@ -1,0 +1,14 @@
+{
+  "head": "d02653545ef7bf4b905eb69d87aace12ab9f49ea",
+  "base": "69212d895607647d7e6ad121ed84e3dc2b6c6472",
+  "duration": "under 5 minutes",
+  "audienceOrChatBehaviorChanged": false,
+  "findings": [
+    "EnemyCallsigns assigns and retains display names. killFeedEnemy source lookup is read-only. The name is written to combat.kill victim/killer display metadata; projectile/officer source-name consumers also use it only as attribution.",
+    "recordStreamKill still passes the same type/health/closeCall/highlight values to applyPerformance, and the same killCause/headshot/nowMs arguments to chat.kill. StreamKill numeric records and sequence/cause fields are unchanged.",
+    "performance_stream.ts, chat_moderation.ts, live_stream.ts, stream_account.ts, chat_mode.ts, stream_session.ts and stream_chat_view.ts are unchanged. StreamSession consumes unchanged crowd.streamKills, without callsign names.",
+    "Presentation seam: RogueliteView passes scoreboard.displayedRows instead of full roster length to existing setScoreboardRows. This sizes the Tab moderation/chat backing and visible-message capacity; it does not dispatch chat actions, change moderation outcomes, or update audience counts.",
+    "Page Up/Down add scoreboard navigation only after existing chat actions are handled. No chat bindings or command payloads changed."
+  ],
+  "decision": "Record in PR and move on; do not retune audience or weaken assertions. First-run playability is not a merge gate per user instruction (dropped 2026-10-14)."
+}
