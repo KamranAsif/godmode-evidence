@@ -1,0 +1,1608 @@
+{
+  "limits": {
+    "bodyTurnDegPerSecond": 450,
+    "bodySnapDegPerFrame": 25,
+    "aimTurnDegPerSecond": 720,
+    "aimSnapDegPerFrame": 20,
+    "accelMetersPerSecond2": 20,
+    "minimumStrafeMs": 1000,
+    "movingMetersPerSecond": 1,
+    "flipDegrees": 120,
+    "flipWindowMs": 250,
+    "footSlideCm": 5,
+    "footPlantedCm": 4,
+    "popCm": 10,
+    "footPopCm": 15,
+    "rateJitter": 0.25,
+    "shortStateMs": 100,
+    "moonwalkDegrees": 67.5,
+    "spineTwistDegrees": 60,
+    "divergenceCm": 25,
+    "visibleMeters": 40
+  },
+  "kinds": [
+    "rifle"
+  ],
+  "overall": {
+    "server": {
+      "gruntSeconds": 416.22,
+      "groundSpeed": {
+        "p50": 3.67,
+        "p95": 6.76,
+        "max": 7.34
+      },
+      "lateralSpeed": {
+        "p50": 2.92,
+        "p95": 3.73,
+        "max": 4.99
+      },
+      "forwardSpeed": {
+        "p50": 3.59,
+        "p95": 6.78,
+        "max": 6.89
+      },
+      "backpedalSpeed": {
+        "p50": 1.83,
+        "p95": 3.16,
+        "max": 3.48
+      },
+      "accelMps2": {
+        "p50": 0,
+        "p95": 15.21,
+        "max": 45.5
+      },
+      "accelOverLimitPerMin": 3.17,
+      "accelContactOverLimitPerMin": 2.02,
+      "accelFreeOverLimitPerMin": 1.15,
+      "accelContactMps2": {
+        "p50": 0,
+        "p95": 14.81,
+        "max": 45.5
+      },
+      "accelFreeMps2": {
+        "p50": 0,
+        "p95": 15.21,
+        "max": 30.62
+      },
+      "bodyTurnDegPerS": {
+        "p50": 2.29,
+        "p95": 27.5,
+        "max": 450.56
+      },
+      "aimTurnDegPerS": {
+        "p50": 2.29,
+        "p95": 21.77,
+        "max": 3059.81
+      },
+      "directionFlipsPerMin": 0.72,
+      "lateralFlipsPerMin": 2.74,
+      "strafeLegMs": {
+        "p50": 4550,
+        "p95": 13700,
+        "max": 13700
+      },
+      "strafeLegsUnder1s": 2,
+      "teleports": 0,
+      "openStrafeLegs": 51,
+      "openSnapReversalsPerStrafeMin": 0,
+      "openLegTravelMs": {
+        "p50": 1150,
+        "p95": 5650,
+        "max": 10900
+      },
+      "openLegsUnder1s": 21,
+      "contactStrafeLegs": 24,
+      "contactSnapReversalsPerStrafeMin": 0,
+      "contactLegTravelMs": {
+        "p50": 3800,
+        "p95": 6150,
+        "max": 9700
+      },
+      "crouchedShare": 0.01,
+      "lowCoverShare": 0.057,
+      "firingFromCoverShare": 0.03,
+      "trailingShare": 0.014,
+      "fileShare": 0,
+      "filesPerMin": 0,
+      "longestFile": 2,
+      "strafeShareAtContact": 0.287
+    },
+    "client": {
+      "visibleGruntSeconds": 0,
+      "posedShare": 0,
+      "bodyTurnDegPerS": {
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "bodyTurnOverLimitShare": 0,
+      "bodySnapsPerMin": 0,
+      "aimTurnDegPerS": {
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "aimTurnOverLimitShare": 0,
+      "aimSnapsPerMin": 0,
+      "spineTwistShare": 0,
+      "clipChangesPerMin": 0,
+      "shortStatesPerMin": 0,
+      "playheadJumpsPerMin": 0,
+      "strideJitterShare": 0,
+      "strideJittersPerMin": 0,
+      "moonwalksPerMin": 0,
+      "idleSlidesPerMin": 0,
+      "spineTwistsPerMin": 0,
+      "secondaryChangesPerMin": 0,
+      "moonwalkShare": 0,
+      "idleSlideShare": 0,
+      "footSlidesPerMin": 0,
+      "footSlideShare": 0,
+      "footSlideCm": {
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "posePopsPerMin": 0,
+      "poppedFrameShare": 0,
+      "divergenceCm": {
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "divergenceOverPerMin": 0
+    },
+    "hit": {
+      "shots": 800,
+      "hitRate": 0.63,
+      "riflemanHits": 117,
+      "kills": 154,
+      "deaths": 4
+    }
+  },
+  "ranking": [
+    {
+      "name": "acceleration over 20 m/s^2 in collision response (server)",
+      "perGruntMinute": 2.02,
+      "example": {
+        "kind": "accelSpikeContact",
+        "id": "soldier-e36",
+        "ms": 100432.7,
+        "tick": 3192,
+        "accel": 21.73,
+        "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+      }
+    },
+    {
+      "name": "acceleration over 20 m/s^2 in free movement (server)",
+      "perGruntMinute": 1.15,
+      "example": {
+        "kind": "accelSpike",
+        "id": "soldier-e36",
+        "ms": 100932.7,
+        "tick": 3222,
+        "accel": 20.32,
+        "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+      }
+    },
+    {
+      "name": "travel direction flips > 120 deg in 250 ms (server)",
+      "perGruntMinute": 0.72,
+      "example": {
+        "kind": "directionFlip",
+        "id": "soldier-e16",
+        "ms": 74385,
+        "tick": 1650,
+        "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+      }
+    },
+    {
+      "name": "aim snaps (barrel jumps > 20 deg in a frame)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "body snaps (body yaw jumps > 25 deg in a frame)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "pose pops (frames where a bone jumps > 10 cm against the root)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "stride jitter (gait rate changes > 25% between posed frames)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "foot slides (planted foot moves > 5 cm)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "animation thrash (clip held < 100 ms)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "playhead jumps (a clip skipped > 0.1 s)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "moonwalk episodes (legs > 67.5 deg off travel)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "idle legs while moving episodes (> 0.8 m/s)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "spine twist episodes (aim > 60 deg off body)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "snap strafe reversals in the open (per strafe-minute)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "snap strafe reversals at walls/kerbs (per strafe-minute)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "server-to-drawn position error > 25 cm (interpolation)",
+      "perGruntMinute": 0,
+      "example": null
+    },
+    {
+      "name": "single-file columns of 3+ held 1 s (per fight-minute)",
+      "perGruntMinute": 0,
+      "example": null
+    }
+  ],
+  "fights": [
+    {
+      "dir": "artifacts/grunt-meter/cover-held-7/seed-1871",
+      "grunts": 7,
+      "drawnGrunts": 0,
+      "server": {
+        "gruntSeconds": 52.85,
+        "groundSpeed": {
+          "p50": 3.66,
+          "p95": 6.54,
+          "max": 6.78
+        },
+        "lateralSpeed": {
+          "p50": 3.26,
+          "p95": 4.11,
+          "max": 4.99
+        },
+        "forwardSpeed": {
+          "p50": 4.85,
+          "p95": 5.86,
+          "max": 6.53
+        },
+        "backpedalSpeed": {
+          "p50": 1.84,
+          "p95": 2.97,
+          "max": 3.48
+        },
+        "accelMps2": {
+          "p50": 0.4,
+          "p95": 15.6,
+          "max": 45.5
+        },
+        "accelOverLimitPerMin": 5.68,
+        "accelContactOverLimitPerMin": 4.54,
+        "accelFreeOverLimitPerMin": 1.14,
+        "accelContactMps2": {
+          "p50": 0,
+          "p95": 19.53,
+          "max": 45.5
+        },
+        "accelFreeMps2": {
+          "p50": 0.4,
+          "p95": 15.46,
+          "max": 22.41
+        },
+        "bodyTurnDegPerS": {
+          "p50": 3.44,
+          "p95": 13.75,
+          "max": 450.34
+        },
+        "aimTurnDegPerS": {
+          "p50": 4.58,
+          "p95": 12.61,
+          "max": 1058.83
+        },
+        "directionFlipsPerMin": 2.27,
+        "lateralFlipsPerMin": 2.27,
+        "strafeLegMs": {
+          "p50": 5700,
+          "p95": 5700,
+          "max": 5700
+        },
+        "strafeLegsUnder1s": 0,
+        "teleports": 0,
+        "openStrafeLegs": 7,
+        "openSnapReversalsPerStrafeMin": 0,
+        "openLegTravelMs": {
+          "p50": 1150,
+          "p95": 5050,
+          "max": 5050
+        },
+        "openLegsUnder1s": 2,
+        "contactStrafeLegs": 5,
+        "contactSnapReversalsPerStrafeMin": 0,
+        "contactLegTravelMs": {
+          "p50": 4850,
+          "p95": 9700,
+          "max": 9700
+        },
+        "crouchedShare": 0.018,
+        "lowCoverShare": 0.06,
+        "firingFromCoverShare": 0.072,
+        "trailingShare": 0.015,
+        "fileShare": 0,
+        "filesPerMin": 0,
+        "longestFile": 2,
+        "strafeShareAtContact": 0.413
+      },
+      "client": {
+        "visibleGruntSeconds": 0,
+        "posedShare": 0,
+        "bodyTurnDegPerS": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "bodyTurnOverLimitShare": 0,
+        "bodySnapsPerMin": 0,
+        "aimTurnDegPerS": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "aimTurnOverLimitShare": 0,
+        "aimSnapsPerMin": 0,
+        "spineTwistShare": 0,
+        "clipChangesPerMin": 0,
+        "shortStatesPerMin": 0,
+        "playheadJumpsPerMin": 0,
+        "strideJitterShare": 0,
+        "strideJittersPerMin": 0,
+        "moonwalksPerMin": 0,
+        "idleSlidesPerMin": 0,
+        "spineTwistsPerMin": 0,
+        "secondaryChangesPerMin": 0,
+        "moonwalkShare": 0,
+        "idleSlideShare": 0,
+        "footSlidesPerMin": 0,
+        "footSlideShare": 0,
+        "footSlideCm": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "posePopsPerMin": 0,
+        "poppedFrameShare": 0,
+        "divergenceCm": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "divergenceOverPerMin": 0
+      },
+      "hit": {
+        "shots": 269,
+        "hitRate": 0.62,
+        "riflemanHits": 24,
+        "kills": 53,
+        "deaths": 2,
+        "streamFailed": false,
+        "survivedMs": 120102
+      },
+      "strafeLegs": [
+        {
+          "id": "soldier-e5",
+          "side": -1,
+          "startMs": 49699.7,
+          "endMs": 52057.7,
+          "bucket": "open",
+          "travelMs": 2350,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e12",
+          "side": -1,
+          "startMs": 62062.7,
+          "endMs": 63162.7,
+          "bucket": "contact",
+          "travelMs": 1100,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e12",
+          "side": -1,
+          "startMs": 65916.7,
+          "endMs": 66916.7,
+          "bucket": "open",
+          "travelMs": 1000,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e16",
+          "side": -1,
+          "startMs": 68875.3,
+          "endMs": 74235,
+          "bucket": "contact",
+          "travelMs": 5200,
+          "endedBy": "reversal"
+        },
+        {
+          "id": "soldier-e16",
+          "side": 1,
+          "startMs": 74635,
+          "endMs": 75385,
+          "bucket": "open",
+          "travelMs": 750,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e16",
+          "side": -1,
+          "startMs": 75943.3,
+          "endMs": 77100.3,
+          "bucket": "open",
+          "travelMs": 1150,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e25",
+          "side": -1,
+          "startMs": 83000.7,
+          "endMs": 86450.7,
+          "bucket": "open",
+          "travelMs": 3400,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e36",
+          "side": 1,
+          "startMs": 99482.7,
+          "endMs": 101132.7,
+          "bucket": "contact",
+          "travelMs": 1650,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e55",
+          "side": -1,
+          "startMs": 128494,
+          "endMs": 133617.7,
+          "bucket": "contact",
+          "travelMs": 4850,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e55",
+          "side": -1,
+          "startMs": 135466.7,
+          "endMs": 135951.3,
+          "bucket": "open",
+          "travelMs": 450,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e68",
+          "side": -1,
+          "startMs": 148535,
+          "endMs": 153637.3,
+          "bucket": "open",
+          "travelMs": 5050,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e68",
+          "side": -1,
+          "startMs": 155685,
+          "endMs": 165942,
+          "bucket": "contact",
+          "travelMs": 9700,
+          "endedBy": "end"
+        }
+      ]
+    },
+    {
+      "dir": "artifacts/grunt-meter/cover-held-7/seed-2853137488",
+      "grunts": 15,
+      "drawnGrunts": 0,
+      "server": {
+        "gruntSeconds": 136.17,
+        "groundSpeed": {
+          "p50": 3.63,
+          "p95": 6.78,
+          "max": 7.34
+        },
+        "lateralSpeed": {
+          "p50": 2.77,
+          "p95": 3.68,
+          "max": 4.99
+        },
+        "forwardSpeed": {
+          "p50": 3.98,
+          "p95": 6.73,
+          "max": 6.85
+        },
+        "backpedalSpeed": {
+          "p50": 1.87,
+          "p95": 3.18,
+          "max": 3.2
+        },
+        "accelMps2": {
+          "p50": 0.4,
+          "p95": 15.28,
+          "max": 32.21
+        },
+        "accelOverLimitPerMin": 3.97,
+        "accelContactOverLimitPerMin": 1.32,
+        "accelFreeOverLimitPerMin": 2.64,
+        "accelContactMps2": {
+          "p50": 0,
+          "p95": 14.6,
+          "max": 32.21
+        },
+        "accelFreeMps2": {
+          "p50": 0.4,
+          "p95": 15.33,
+          "max": 30.62
+        },
+        "bodyTurnDegPerS": {
+          "p50": 4.58,
+          "p95": 40.11,
+          "max": 450.56
+        },
+        "aimTurnDegPerS": {
+          "p50": 4.58,
+          "p95": 26.36,
+          "max": 3059.81
+        },
+        "directionFlipsPerMin": 0.88,
+        "lateralFlipsPerMin": 3.53,
+        "strafeLegMs": {
+          "p50": 2550,
+          "p95": 12200,
+          "max": 12200
+        },
+        "strafeLegsUnder1s": 1,
+        "teleports": 0,
+        "openStrafeLegs": 20,
+        "openSnapReversalsPerStrafeMin": 0,
+        "openLegTravelMs": {
+          "p50": 1050,
+          "p95": 10900,
+          "max": 10900
+        },
+        "openLegsUnder1s": 8,
+        "contactStrafeLegs": 8,
+        "contactSnapReversalsPerStrafeMin": 0,
+        "contactLegTravelMs": {
+          "p50": 3950,
+          "p95": 6150,
+          "max": 6150
+        },
+        "crouchedShare": 0.001,
+        "lowCoverShare": 0.073,
+        "firingFromCoverShare": 0,
+        "trailingShare": 0.019,
+        "fileShare": 0,
+        "filesPerMin": 0,
+        "longestFile": 2,
+        "strafeShareAtContact": 0.256
+      },
+      "client": {
+        "visibleGruntSeconds": 0,
+        "posedShare": 0,
+        "bodyTurnDegPerS": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "bodyTurnOverLimitShare": 0,
+        "bodySnapsPerMin": 0,
+        "aimTurnDegPerS": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "aimTurnOverLimitShare": 0,
+        "aimSnapsPerMin": 0,
+        "spineTwistShare": 0,
+        "clipChangesPerMin": 0,
+        "shortStatesPerMin": 0,
+        "playheadJumpsPerMin": 0,
+        "strideJitterShare": 0,
+        "strideJittersPerMin": 0,
+        "moonwalksPerMin": 0,
+        "idleSlidesPerMin": 0,
+        "spineTwistsPerMin": 0,
+        "secondaryChangesPerMin": 0,
+        "moonwalkShare": 0,
+        "idleSlideShare": 0,
+        "footSlidesPerMin": 0,
+        "footSlideShare": 0,
+        "footSlideCm": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "posePopsPerMin": 0,
+        "poppedFrameShare": 0,
+        "divergenceCm": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "divergenceOverPerMin": 0
+      },
+      "hit": {
+        "shots": 291,
+        "hitRate": 0.65,
+        "riflemanHits": 49,
+        "kills": 57,
+        "deaths": 1,
+        "streamFailed": false,
+        "survivedMs": 120120
+      },
+      "strafeLegs": [
+        {
+          "id": "soldier-e6",
+          "side": -1,
+          "startMs": 61265.3,
+          "endMs": 62829.7,
+          "bucket": "open",
+          "travelMs": 1550,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e12",
+          "side": 1,
+          "startMs": 75949,
+          "endMs": 76249,
+          "bucket": "open",
+          "travelMs": 300,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e13",
+          "side": -1,
+          "startMs": 74846.3,
+          "endMs": 77333,
+          "bucket": "contact",
+          "travelMs": 2450,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e15",
+          "side": -1,
+          "startMs": 78035,
+          "endMs": 81997.3,
+          "bucket": "contact",
+          "travelMs": 3950,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e15",
+          "side": 1,
+          "startMs": 83702,
+          "endMs": 84863,
+          "bucket": "open",
+          "travelMs": 1150,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e23",
+          "side": 1,
+          "startMs": 90647.3,
+          "endMs": 92921,
+          "bucket": "contact",
+          "travelMs": 1950,
+          "endedBy": "reversal"
+        },
+        {
+          "id": "soldier-e23",
+          "side": -1,
+          "startMs": 93221,
+          "endMs": 94171,
+          "bucket": "contact",
+          "travelMs": 950,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e23",
+          "side": -1,
+          "startMs": 94921,
+          "endMs": 95337,
+          "bucket": "open",
+          "travelMs": 400,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e24",
+          "side": -1,
+          "startMs": 92971,
+          "endMs": 104654,
+          "bucket": "open",
+          "travelMs": 10900,
+          "endedBy": "reversal"
+        },
+        {
+          "id": "soldier-e24",
+          "side": 1,
+          "startMs": 104954,
+          "endMs": 105554,
+          "bucket": "open",
+          "travelMs": 600,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e24",
+          "side": -1,
+          "startMs": 106154,
+          "endMs": 106776.7,
+          "bucket": "open",
+          "travelMs": 600,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e24",
+          "side": -1,
+          "startMs": 108777.7,
+          "endMs": 111850,
+          "bucket": "contact",
+          "travelMs": 3050,
+          "endedBy": "reversal"
+        },
+        {
+          "id": "soldier-e24",
+          "side": 1,
+          "startMs": 111850,
+          "endMs": 111957.1,
+          "bucket": "open",
+          "travelMs": 50,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e26",
+          "side": -1,
+          "startMs": 97137,
+          "endMs": 103454,
+          "bucket": "contact",
+          "travelMs": 6150,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e26",
+          "side": -1,
+          "startMs": 105304,
+          "endMs": 106776.7,
+          "bucket": "open",
+          "travelMs": 1450,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e26",
+          "side": 1,
+          "startMs": 109380.7,
+          "endMs": 110130.7,
+          "bucket": "open",
+          "travelMs": 750,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e29",
+          "side": -1,
+          "startMs": 102354,
+          "endMs": 108157.3,
+          "bucket": "contact",
+          "travelMs": 5650,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e29",
+          "side": -1,
+          "startMs": 110280.7,
+          "endMs": 111336.7,
+          "bucket": "open",
+          "travelMs": 1050,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e33",
+          "side": -1,
+          "startMs": 109027.7,
+          "endMs": 110080.7,
+          "bucket": "open",
+          "travelMs": 1050,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e36",
+          "side": -1,
+          "startMs": 112988.7,
+          "endMs": 113988.7,
+          "bucket": "open",
+          "travelMs": 1000,
+          "endedBy": "reversal"
+        },
+        {
+          "id": "soldier-e36",
+          "side": 1,
+          "startMs": 114388.7,
+          "endMs": 120333.3,
+          "bucket": "open",
+          "travelMs": 5900,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e40",
+          "side": 1,
+          "startMs": 118860.3,
+          "endMs": 124163.7,
+          "bucket": "contact",
+          "travelMs": 5250,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e48",
+          "side": -1,
+          "startMs": 132459,
+          "endMs": 136821.7,
+          "bucket": "open",
+          "travelMs": 4300,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e48",
+          "side": -1,
+          "startMs": 138814.3,
+          "endMs": 138914.3,
+          "bucket": "open",
+          "travelMs": 100,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e50",
+          "side": -1,
+          "startMs": 135711,
+          "endMs": 136311,
+          "bucket": "open",
+          "travelMs": 600,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e50",
+          "side": 1,
+          "startMs": 136921.7,
+          "endMs": 138358.7,
+          "bucket": "open",
+          "travelMs": 1400,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e65",
+          "side": -1,
+          "startMs": 160348.7,
+          "endMs": 166462.7,
+          "bucket": "open",
+          "travelMs": 5650,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e67",
+          "side": 1,
+          "startMs": 163365.7,
+          "endMs": 165215.7,
+          "bucket": "open",
+          "travelMs": 1850,
+          "endedBy": "end"
+        }
+      ]
+    },
+    {
+      "dir": "artifacts/grunt-meter/cover-held-7/seed-7",
+      "grunts": 18,
+      "drawnGrunts": 0,
+      "server": {
+        "gruntSeconds": 227.2,
+        "groundSpeed": {
+          "p50": 3.76,
+          "p95": 6.84,
+          "max": 6.89
+        },
+        "lateralSpeed": {
+          "p50": 2.86,
+          "p95": 3.67,
+          "max": 4.97
+        },
+        "forwardSpeed": {
+          "p50": 2.78,
+          "p95": 6.87,
+          "max": 6.89
+        },
+        "backpedalSpeed": {
+          "p50": 1.75,
+          "p95": 3.07,
+          "max": 3.18
+        },
+        "accelMps2": {
+          "p50": 0,
+          "p95": 14.93,
+          "max": 37.72
+        },
+        "accelOverLimitPerMin": 2.11,
+        "accelContactOverLimitPerMin": 1.85,
+        "accelFreeOverLimitPerMin": 0.26,
+        "accelContactMps2": {
+          "p50": 0,
+          "p95": 13.21,
+          "max": 37.72
+        },
+        "accelFreeMps2": {
+          "p50": 0,
+          "p95": 14.95,
+          "max": 23.48
+        },
+        "bodyTurnDegPerS": {
+          "p50": 1.15,
+          "p95": 25.21,
+          "max": 450.34
+        },
+        "aimTurnDegPerS": {
+          "p50": 1.15,
+          "p95": 20.63,
+          "max": 1498.86
+        },
+        "directionFlipsPerMin": 0.26,
+        "lateralFlipsPerMin": 2.38,
+        "strafeLegMs": {
+          "p50": 4700,
+          "p95": 13700,
+          "max": 13700
+        },
+        "strafeLegsUnder1s": 1,
+        "teleports": 0,
+        "openStrafeLegs": 24,
+        "openSnapReversalsPerStrafeMin": 0,
+        "openLegTravelMs": {
+          "p50": 1150,
+          "p95": 4650,
+          "max": 4700
+        },
+        "openLegsUnder1s": 11,
+        "contactStrafeLegs": 11,
+        "contactSnapReversalsPerStrafeMin": 0,
+        "contactLegTravelMs": {
+          "p50": 3300,
+          "p95": 5400,
+          "max": 5400
+        },
+        "crouchedShare": 0.013,
+        "lowCoverShare": 0.046,
+        "firingFromCoverShare": 0.044,
+        "trailingShare": 0.008,
+        "fileShare": 0,
+        "filesPerMin": 0,
+        "longestFile": 2,
+        "strafeShareAtContact": 0.255
+      },
+      "client": {
+        "visibleGruntSeconds": 0,
+        "posedShare": 0,
+        "bodyTurnDegPerS": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "bodyTurnOverLimitShare": 0,
+        "bodySnapsPerMin": 0,
+        "aimTurnDegPerS": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "aimTurnOverLimitShare": 0,
+        "aimSnapsPerMin": 0,
+        "spineTwistShare": 0,
+        "clipChangesPerMin": 0,
+        "shortStatesPerMin": 0,
+        "playheadJumpsPerMin": 0,
+        "strideJitterShare": 0,
+        "strideJittersPerMin": 0,
+        "moonwalksPerMin": 0,
+        "idleSlidesPerMin": 0,
+        "spineTwistsPerMin": 0,
+        "secondaryChangesPerMin": 0,
+        "moonwalkShare": 0,
+        "idleSlideShare": 0,
+        "footSlidesPerMin": 0,
+        "footSlideShare": 0,
+        "footSlideCm": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "posePopsPerMin": 0,
+        "poppedFrameShare": 0,
+        "divergenceCm": {
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "divergenceOverPerMin": 0
+      },
+      "hit": {
+        "shots": 240,
+        "hitRate": 0.61,
+        "riflemanHits": 44,
+        "kills": 44,
+        "deaths": 1,
+        "streamFailed": false,
+        "survivedMs": 120196
+      },
+      "strafeLegs": [
+        {
+          "id": "soldier-e8",
+          "side": -1,
+          "startMs": 62302,
+          "endMs": 62902,
+          "bucket": "open",
+          "travelMs": 150,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e8",
+          "side": -1,
+          "startMs": 63452,
+          "endMs": 64302,
+          "bucket": "open",
+          "travelMs": 850,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e8",
+          "side": -1,
+          "startMs": 66302,
+          "endMs": 67602,
+          "bucket": "open",
+          "travelMs": 1300,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e17",
+          "side": -1,
+          "startMs": 72815.3,
+          "endMs": 78278.7,
+          "bucket": "contact",
+          "travelMs": 5400,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e20",
+          "side": 1,
+          "startMs": 77528.7,
+          "endMs": 81340,
+          "bucket": "contact",
+          "travelMs": 3800,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e20",
+          "side": 1,
+          "startMs": 82501.7,
+          "endMs": 84501.7,
+          "bucket": "open",
+          "travelMs": 2000,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e22",
+          "side": -1,
+          "startMs": 87468.3,
+          "endMs": 87668.3,
+          "bucket": "open",
+          "travelMs": 200,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e24",
+          "side": -1,
+          "startMs": 85309,
+          "endMs": 86468.3,
+          "bucket": "open",
+          "travelMs": 1150,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e25",
+          "side": -1,
+          "startMs": 87268.3,
+          "endMs": 88418.3,
+          "bucket": "open",
+          "travelMs": 1150,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e28",
+          "side": 1,
+          "startMs": 93001.3,
+          "endMs": 97265,
+          "bucket": "contact",
+          "travelMs": 4250,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e28",
+          "side": 1,
+          "startMs": 99067.3,
+          "endMs": 102498.3,
+          "bucket": "contact",
+          "travelMs": 3300,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e28",
+          "side": 1,
+          "startMs": 104165,
+          "endMs": 104865,
+          "bucket": "open",
+          "travelMs": 700,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e28",
+          "side": -1,
+          "startMs": 106816,
+          "endMs": 108030.7,
+          "bucket": "open",
+          "travelMs": 1200,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e29",
+          "side": 1,
+          "startMs": 94951.3,
+          "endMs": 99067.3,
+          "bucket": "contact",
+          "travelMs": 4100,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e29",
+          "side": 1,
+          "startMs": 101093.7,
+          "endMs": 105266,
+          "bucket": "open",
+          "travelMs": 4100,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e29",
+          "side": -1,
+          "startMs": 109880.7,
+          "endMs": 109960.1,
+          "bucket": "open",
+          "travelMs": 50,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e30",
+          "side": 1,
+          "startMs": 97015,
+          "endMs": 98017.3,
+          "bucket": "contact",
+          "travelMs": 1000,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e30",
+          "side": 1,
+          "startMs": 100081.7,
+          "endMs": 104815,
+          "bucket": "open",
+          "travelMs": 4700,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e30",
+          "side": 1,
+          "startMs": 106566,
+          "endMs": 106666,
+          "bucket": "open",
+          "travelMs": 100,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e30",
+          "side": -1,
+          "startMs": 107166,
+          "endMs": 110492.7,
+          "bucket": "open",
+          "travelMs": 3300,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e33",
+          "side": -1,
+          "startMs": 102098.3,
+          "endMs": 106116,
+          "bucket": "open",
+          "travelMs": 4000,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e33",
+          "side": -1,
+          "startMs": 107374.3,
+          "endMs": 112390.7,
+          "bucket": "contact",
+          "travelMs": 5000,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e36",
+          "side": -1,
+          "startMs": 107430.7,
+          "endMs": 112090.7,
+          "bucket": "open",
+          "travelMs": 4650,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e38",
+          "side": 1,
+          "startMs": 111042.7,
+          "endMs": 112640.7,
+          "bucket": "contact",
+          "travelMs": 1450,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e38",
+          "side": -1,
+          "startMs": 112990.7,
+          "endMs": 113540.7,
+          "bucket": "open",
+          "travelMs": 550,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e43",
+          "side": -1,
+          "startMs": 118290.7,
+          "endMs": 122840.7,
+          "bucket": "open",
+          "travelMs": 4250,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e43",
+          "side": -1,
+          "startMs": 124740.7,
+          "endMs": 126040.7,
+          "bucket": "contact",
+          "travelMs": 1300,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e44",
+          "side": -1,
+          "startMs": 120340.7,
+          "endMs": 120940.7,
+          "bucket": "open",
+          "travelMs": 600,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e44",
+          "side": 1,
+          "startMs": 125090.7,
+          "endMs": 125140.7,
+          "bucket": "open",
+          "travelMs": 50,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e47",
+          "side": 1,
+          "startMs": 126040.7,
+          "endMs": 126940.7,
+          "bucket": "contact",
+          "travelMs": 900,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e55",
+          "side": -1,
+          "startMs": 138505,
+          "endMs": 139105,
+          "bucket": "open",
+          "travelMs": 600,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e66",
+          "side": -1,
+          "startMs": 155271,
+          "endMs": 157479,
+          "bucket": "contact",
+          "travelMs": 2100,
+          "endedBy": "stop"
+        },
+        {
+          "id": "soldier-e66",
+          "side": 1,
+          "startMs": 160054,
+          "endMs": 164650,
+          "bucket": "open",
+          "travelMs": 4450,
+          "endedBy": "reversal"
+        },
+        {
+          "id": "soldier-e66",
+          "side": -1,
+          "startMs": 165000,
+          "endMs": 165500,
+          "bucket": "open",
+          "travelMs": 500,
+          "endedBy": "end"
+        },
+        {
+          "id": "soldier-e69",
+          "side": 1,
+          "startMs": 161149.7,
+          "endMs": 165250,
+          "bucket": "open",
+          "travelMs": 3550,
+          "endedBy": "end"
+        }
+      ]
+    }
+  ],
+  "examples": [
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e16",
+      "ms": 74385,
+      "tick": 1650,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e36",
+      "ms": 101282.7,
+      "tick": 3243,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e29",
+      "ms": 109980.7,
+      "tick": 3144,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e29",
+      "ms": 110280.7,
+      "tick": 3162,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "directionFlip",
+      "id": "soldier-e30",
+      "ms": 106866,
+      "tick": 3048,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e36",
+      "ms": 100432.7,
+      "tick": 3192,
+      "accel": 21.73,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e55",
+      "ms": 132767.7,
+      "tick": 5106,
+      "accel": 45.5,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e68",
+      "ms": 157628,
+      "tick": 6567,
+      "accel": 24.56,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e68",
+      "ms": 160028,
+      "tick": 6711,
+      "accel": 20.14,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e23",
+      "ms": 91521,
+      "tick": 2043,
+      "accel": 26,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e29",
+      "ms": 102854,
+      "tick": 2721,
+      "accel": 28.16,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e40",
+      "ms": 122813.7,
+      "tick": 3906,
+      "accel": 22.92,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e20",
+      "ms": 79834.7,
+      "tick": 1434,
+      "accel": 33.84,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e28",
+      "ms": 93751.3,
+      "tick": 2265,
+      "accel": 37.41,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e30",
+      "ms": 97767.3,
+      "tick": 2505,
+      "accel": 25.43,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e33",
+      "ms": 107830.7,
+      "tick": 3105,
+      "accel": 30.24,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e38",
+      "ms": 111890.7,
+      "tick": 3348,
+      "accel": 28.54,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e43",
+      "ms": 125090.7,
+      "tick": 4140,
+      "accel": 36.41,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "accelSpikeContact",
+      "id": "soldier-e66",
+      "ms": 156679,
+      "tick": 5997,
+      "accel": 37.72,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e36",
+      "ms": 100932.7,
+      "tick": 3222,
+      "accel": 20.32,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-1871"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e6",
+      "ms": 62679.7,
+      "tick": 393,
+      "accel": 20.99,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e13",
+      "ms": 77283,
+      "tick": 1197,
+      "accel": 21,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e24",
+      "ms": 101954,
+      "tick": 2667,
+      "accel": 20.62,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e24",
+      "ms": 106726.7,
+      "tick": 2952,
+      "accel": 30.62,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e24",
+      "ms": 109430.7,
+      "tick": 3111,
+      "accel": 26.69,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e65",
+      "ms": 164115.7,
+      "tick": 6351,
+      "accel": 20.83,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "accelSpike",
+      "id": "soldier-e43",
+      "ms": 124990.7,
+      "tick": 4134,
+      "accel": 23.48,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    },
+    {
+      "kind": "shortStrafe",
+      "id": "soldier-e29",
+      "ms": 102354,
+      "tick": 2691,
+      "legMs": 300,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-2853137488"
+    },
+    {
+      "kind": "shortStrafe",
+      "id": "soldier-e8",
+      "ms": 61346,
+      "tick": 345,
+      "legMs": 900,
+      "fight": "artifacts/grunt-meter/cover-held-7/seed-7"
+    }
+  ]
+}
