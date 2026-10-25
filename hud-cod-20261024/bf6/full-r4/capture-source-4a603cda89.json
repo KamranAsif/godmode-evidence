@@ -1,0 +1,1735 @@
+{
+  "head": "f9e52e5f611cacf0d7a92f7c089ff2523615c6ad",
+  "exe": "artifacts/bf6-playtest/BattleDuty.exe",
+  "sha256": "763b8c815ca021f979ea76c1a9335f05de834313906a7c6c21cbe53213555551",
+  "engine": "GodotJS 4.6.1 v8-nopc revision 2",
+  "preset": "Windows Playtest",
+  "debug": true,
+  "exportedAt": "2026-10-25T05:48:09.526Z",
+  "session": "s-mvneu5cm-186d4bedfc40",
+  "instance": "bf6-r4-focus-free",
+  "logPath": "C:\\Users\\Kam\\AppData\\Local\\Temp\\godot-cli\\e0477530d578\\game-bf6-r4-focus-free.log",
+  "planSha256": "cf208b41a561fb3ea3b27014fb2d60ea006ded8c02f02561552d5da8fdee09c6",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "capturedAt": "2026-10-25T05:55:20.723Z",
+  "scriptErrorCount": 0,
+  "startupTextureErrors": [],
+  "method": "Finite one-shot Playtest review dispatches ordinary console and runtime input/pause handlers in the exported binary. Game capture --os-window reads the verified rendered client without OS focus; window-input is used ONLY for focus-free sizing. No inspection bridge, listener, HUD-value injection or repainting.",
+  "setup": "Invincible live player with actual equipped inventory; spawn 20 real riflemen, normal input targets a head and fires. Server resolves ammunition, raycasts, kills, score and the real care-package offer. Whole stream overlay is debug-masked for pure HUD views.",
+  "captures": [
+    {
+      "name": "bf6-fight-1080",
+      "marker": {
+        "mark": "ready-bf6-fight-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "28",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "rcxd",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "emp",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "tacticalNuke",
+              "ready": true
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 427,
+          "atMs": 105257,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:34",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 1,
+            "deaths": 0,
+            "score": 100,
+            "you": true
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 4,
+        "enemyCount": 25,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 28,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1007,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": 0.3790987535953979,
+          "pitch": 0.0154,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 107510,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.04820000000000001
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-fight-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 117787,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "0893356dcf7d8dbc66c38003324448885dafbfebf241320360b1154bf5050f9a",
+      "capturedAt": "2026-10-25T05:53:49.573Z"
+    },
+    {
+      "name": "bf6-low-ammo-1080",
+      "marker": {
+        "mark": "ready-bf6-low-ammo-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "04",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "FRENZY KILL",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "rcxd",
+              "ready": true
+            },
+            {
+              "key": 3,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "emp",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "tacticalNuke",
+              "ready": true
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 581,
+          "atMs": 108990,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:30",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 6,
+            "deaths": 0,
+            "score": 600,
+            "you": true
+          },
+          {
+            "name": "Mint",
+            "kills": 0,
+            "deaths": 4,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Ember",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 1,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 4,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1242,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.661744966442953,
+          "pitch": -0.0818,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 111321,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.1104
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-low-ammo-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 136878,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "e4170003cb8f53ce705f72fd3c1aaf9c7c0279aa5582437162e147482c95749f",
+      "capturedAt": "2026-10-25T05:54:08.667Z"
+    },
+    {
+      "name": "bf6-map-hidden-1080",
+      "marker": {
+        "mark": "ready-bf6-map-hidden-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "04",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "FRENZY KILL",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "rcxd",
+              "ready": true
+            },
+            {
+              "key": 3,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "emp",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "tacticalNuke",
+              "ready": true
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 581,
+          "atMs": 108990,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:30",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 6,
+            "deaths": 0,
+            "score": 600,
+            "you": true
+          },
+          {
+            "name": "Mint",
+            "kills": 0,
+            "deaths": 4,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Ember",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 0,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 4,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1242,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.661744966442953,
+          "pitch": -0.0818,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 111321,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.1104
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-map-hidden-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 139423,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "a22ab4af470bcef38a3af60705ee8a82668ed2ec47812759850a7942beb950f0",
+      "capturedAt": "2026-10-25T05:54:11.210Z"
+    },
+    {
+      "name": "bf6-radar-on-1080",
+      "marker": {
+        "mark": "ready-bf6-radar-on-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "04",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "FRENZY KILL",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 581,
+          "atMs": 108990,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:30",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 6,
+            "deaths": 0,
+            "score": 600,
+            "you": true
+          },
+          {
+            "name": "Mint",
+            "kills": 0,
+            "deaths": 4,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Ember",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": true,
+        "radarActive": true,
+        "drawnMarkers": 20,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 4,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1242,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.661744966442953,
+          "pitch": -0.0818,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 111321,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.1104
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-radar-on-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 146990,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "b6e6193f04d516ada439d5d6c69944c76a59688eb22095fc8f946e9e69b60ad7",
+      "capturedAt": "2026-10-25T05:54:18.778Z"
+    },
+    {
+      "name": "bf6-overlay-on-1080",
+      "marker": {
+        "mark": "ready-bf6-overlay-on-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "04",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "FRENZY KILL",
+          "scores": [
+            100
+          ],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 581,
+          "atMs": 108990,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:30",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 6,
+            "deaths": 0,
+            "score": 600,
+            "you": true
+          },
+          {
+            "name": "Mint",
+            "kills": 0,
+            "deaths": 4,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Ember",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 1,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 4,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1242,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.661744966442953,
+          "pitch": -0.0818,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 111321,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.1104
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-overlay-on-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 153293,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "27294322c468a738b76f90d0517d2382aa402c8fe43efc6cf6c0e79e0a834496",
+      "capturedAt": "2026-10-25T05:54:25.079Z"
+    },
+    {
+      "name": "bf6-radar-on-live-1080",
+      "marker": {
+        "mark": "ready-bf6-radar-on-live-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": true,
+          "magazine": "04",
+          "reserve": "/90",
+          "prompt": "RELOAD",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 581,
+          "atMs": 108990,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:28",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 6,
+            "deaths": 0,
+            "score": 600,
+            "you": true
+          },
+          {
+            "name": "Mint",
+            "kills": 0,
+            "deaths": 4,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Ember",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": false,
+        "serverRadar": true,
+        "radarActive": true,
+        "drawnMarkers": 20,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 4,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1353,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6698945349952061,
+          "pitch": -0.09,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 111321,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.04010000000000004
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-radar-on-live-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 164028,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "68d95b0926f464248da04f0d082b0b001da03980e3965a9aca61fc8b10996548",
+      "capturedAt": "2026-10-25T05:54:35.824Z"
+    },
+    {
+      "name": "bf6-scoreboard-1080",
+      "marker": {
+        "mark": "ready-bf6-scoreboard-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "04",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 581,
+          "atMs": 108990,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": true,
+        "moderation": {
+          "hint": "TAB Back to game",
+          "badges": [],
+          "rows": [
+            "[E] Thank tip: No tips waiting",
+            "[B] Ban troll: 0 trolls in chat",
+            "[Q] Accept challenge: No challenge waiting",
+            "[SPACE] Run ads: Available in 0:26"
+          ],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:26",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": true,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 6,
+            "deaths": 0,
+            "score": 600,
+            "you": true
+          },
+          {
+            "name": "Mint",
+            "kills": 0,
+            "deaths": 4,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Ember",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 4,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1474,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6698945349952061,
+          "pitch": -0.09,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 111321,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.028
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-scoreboard-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 169639,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "a93ba3033bec0ccb47014e3b9e6018a925270eb16e92265cb3029a6fd170a44b",
+      "capturedAt": "2026-10-25T05:54:41.424Z"
+    },
+    {
+      "name": "bf6-pause-1080",
+      "marker": {
+        "mark": "ready-bf6-pause-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "04",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 581,
+          "atMs": 108990,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:26",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 6,
+            "deaths": 0,
+            "score": 600,
+            "you": true
+          },
+          {
+            "name": "Mint",
+            "kills": 0,
+            "deaths": 4,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Ember",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": true,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 4,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1474,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6698945349952061,
+          "pitch": -0.09,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 111321,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.028
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-pause-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 187767,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "93310a08c9be408687b48bc5647d50421171432f435e05a9092ec3759d6ed7a9",
+      "capturedAt": "2026-10-25T05:54:59.551Z"
+    },
+    {
+      "name": "bf6-upgrade-1080",
+      "marker": {
+        "mark": "ready-bf6-upgrade-1080",
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "04",
+          "reserve": "/90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": true
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": {
+          "seq": 581,
+          "atMs": 108990,
+          "score": 100,
+          "headshot": true
+        },
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:26",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 6,
+            "deaths": 0,
+            "score": 600,
+            "you": true
+          },
+          {
+            "name": "Mint",
+            "kills": 0,
+            "deaths": 4,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Ember",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          },
+          {
+            "name": "Vandal",
+            "kills": 0,
+            "deaths": 1,
+            "score": 0,
+            "you": false
+          }
+        ],
+        "pauseOpen": false,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 3,
+        "enemyCount": 20,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 4,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 1474,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "yaw": -0.6698945349952061,
+          "pitch": -0.09,
+          "weaponReadyAtMs": 73306,
+          "weaponSwitchEndsAtMs": 73306,
+          "firedRevealUntilMs": 111321,
+          "firedRevealPosition": [
+            -409.5986328125,
+            -14.65234375,
+            -331.0810546875
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.028
+        }
+      },
+      "capture": {
+        "schemaVersion": 1,
+        "ok": true,
+        "message": "Captured Windows game window bf6-r4-focus-free (1920x1080)",
+        "data": {
+          "instance": "bf6-r4-focus-free",
+          "pid": 10004,
+          "outputPath": "D:\\work\\godmode-roguelite-worktrees\\hud-bf6-round4-20261025\\artifacts\\bf6\\full-r4-native\\bf6-upgrade-1080.png",
+          "width": 1920,
+          "height": 1080,
+          "launchToCaptureMs": 208824,
+          "window": {
+            "method": "PrintWindow/PW_RENDERFULLCONTENT",
+            "width": 1920,
+            "height": 1080,
+            "hwnd": "60557572"
+          }
+        }
+      },
+      "sha256": "7ed38e9f743ec31fc0cdb226db3babd710190e08a8660cc741eb1df1dd3012c3",
+      "capturedAt": "2026-10-25T05:55:20.608Z"
+    }
+  ]
+}
