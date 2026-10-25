@@ -1,0 +1,252 @@
+{
+  "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+  "conditions": {
+    "scenarioVersion": 1,
+    "seed": 1136293662,
+    "resolution": [
+      2560,
+      1440
+    ],
+    "taa": false,
+    "screenSpaceAA": 2,
+    "profile": false,
+    "framesOnly": true,
+    "msaa": 0,
+    "scaling": 1,
+    "fov": 75,
+    "lensCorrection": "high",
+    "enemies": 16,
+    "warmupMs": 10000,
+    "segments": [
+      {
+        "id": "firefight",
+        "durationMs": 12000,
+        "from": [
+          -404,
+          -15.582,
+          -414
+        ],
+        "to": [
+          -401,
+          -15.582,
+          -414
+        ],
+        "yaw": 3.141592653589793,
+        "pitch": 0,
+        "events": [
+          {
+            "atMs": 500,
+            "kind": "wave",
+            "count": 16
+          },
+          {
+            "atMs": 3000,
+            "kind": "shot",
+            "targetIndex": 0,
+            "optional": true
+          },
+          {
+            "atMs": 3200,
+            "kind": "shot",
+            "targetIndex": 1,
+            "optional": true
+          },
+          {
+            "atMs": 3400,
+            "kind": "shot",
+            "targetIndex": 2,
+            "optional": true
+          },
+          {
+            "atMs": 3600,
+            "kind": "shot",
+            "targetIndex": 3,
+            "optional": true
+          },
+          {
+            "atMs": 3800,
+            "kind": "shot",
+            "targetIndex": 4,
+            "optional": true
+          },
+          {
+            "atMs": 4000,
+            "kind": "shot",
+            "targetIndex": 5,
+            "optional": true
+          },
+          {
+            "atMs": 4200,
+            "kind": "shot",
+            "targetIndex": 6,
+            "optional": true
+          },
+          {
+            "atMs": 4400,
+            "kind": "shot",
+            "targetIndex": 7,
+            "optional": true
+          },
+          {
+            "atMs": 4600,
+            "kind": "shot",
+            "targetIndex": 8,
+            "optional": true
+          },
+          {
+            "atMs": 4800,
+            "kind": "shot",
+            "targetIndex": 9,
+            "optional": true
+          },
+          {
+            "atMs": 5000,
+            "kind": "shot",
+            "targetIndex": 10,
+            "optional": true
+          },
+          {
+            "atMs": 5200,
+            "kind": "shot",
+            "targetIndex": 11,
+            "optional": true
+          },
+          {
+            "atMs": 5400,
+            "kind": "shot",
+            "targetIndex": 12,
+            "optional": true
+          },
+          {
+            "atMs": 5600,
+            "kind": "shot",
+            "targetIndex": 13,
+            "optional": true
+          },
+          {
+            "atMs": 5800,
+            "kind": "shot",
+            "targetIndex": 14,
+            "optional": true
+          },
+          {
+            "atMs": 6000,
+            "kind": "shot",
+            "targetIndex": 15,
+            "optional": true
+          },
+          {
+            "atMs": 6200,
+            "kind": "shot",
+            "targetIndex": 0,
+            "optional": true
+          },
+          {
+            "atMs": 6400,
+            "kind": "shot",
+            "targetIndex": 1,
+            "optional": true
+          },
+          {
+            "atMs": 6600,
+            "kind": "shot",
+            "targetIndex": 2,
+            "optional": true
+          },
+          {
+            "atMs": 6800,
+            "kind": "shot",
+            "targetIndex": 3,
+            "optional": true
+          },
+          {
+            "atMs": 9000,
+            "name": "debug_kill_admins",
+            "payload": {},
+            "optional": true
+          }
+        ]
+      }
+    ],
+    "headlessSmoke": false,
+    "highlightEvent": false,
+    "foliage": "on",
+    "settings": {
+      "audioPercent": 100,
+      "showFps": false,
+      "shakePercent": 0,
+      "crashReports": false,
+      "stream": false,
+      "streaksAlwaysReady": true,
+      "newKillstreakFlow": false
+    }
+  },
+  "engine": {
+    "bufferMemoryBytes": 2656290780,
+    "displayServer": "Windows",
+    "frameProfile": false,
+    "framesOnly": true,
+    "headless": false,
+    "lowTextures": false,
+    "maxFps": 0,
+    "msaa": 0,
+    "noLightmap": false,
+    "physicsTicksPerSecond": 60,
+    "refreshRateHz": 60,
+    "renderingDriver": "d3d12",
+    "renderingMethod": "forward_plus",
+    "scaling3dScale": 1,
+    "screenSpaceAA": 2,
+    "staticMemoryBytes": 5323865258,
+    "taa": false,
+    "textureMemoryBytes": 3157819392,
+    "threadModel": 2,
+    "videoAdapter": "AMD Radeon RX 9070 XT",
+    "videoMemoryBytes": 11192680448,
+    "viewportSize": [
+      2560,
+      1440
+    ],
+    "vsyncMode": 0
+  },
+  "overall": {
+    "frames": 839,
+    "frameMs": {
+      "median": 13.3470001220703,
+      "p95": 18.7970008850098,
+      "p99": 31.1630001068115,
+      "max": 165.231002807617,
+      "mean": 14.309239575632708
+    },
+    "worstOnePercentMs": 72.30022239685057,
+    "onePercentLowFps": 13.831216099323651,
+    "hitches": {
+      "over33Ms": 6,
+      "over50Ms": 5
+    },
+    "cpuMs": {
+      "process": null,
+      "physics": null,
+      "render": null,
+      "otherViewports": null
+    },
+    "gpuMs": {
+      "render": null,
+      "otherViewports": null
+    },
+    "drawCalls": null,
+    "primitives": null,
+    "memory": {
+      "staticBytesMean": null,
+      "videoBytesMean": null,
+      "staticBytesPeak": null,
+      "videoBytesPeak": null
+    },
+    "monitorsMean": {},
+    "monitorsPeak": {}
+  },
+  "recovered": true,
+  "rawFile": "4-control.json.raw.json",
+  "rawSha256": "e2a7f5afdb7951d4b56469039f2d6e500eccb652f18c10d4edef8d85609cd46f",
+  "notes": "The command timed out after its complete raw frame capture. Validated the same frame-integrity and render-setting assertions as the harness, then summarized offline with its official summarize function. Memory/final command summary was not recovered. Owned engine stopped separately."
+}
