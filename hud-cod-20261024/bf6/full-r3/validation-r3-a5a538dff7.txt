@@ -1,0 +1,29 @@
+BF6 HUD round 3 validation
+
+pnpm format, build, lint and format:check passed.
+pnpm test after rebase: 11/11 gates passed (197.2 s).
+Final visual-token/corner source: 10/11 gates (208.0 s); godot-cli failed two
+Windows process-enumeration checks. Both passed 2/2 in sequential isolation.
+No surviving fake engines. This is reported as 10/11 plus isolated recovery,
+not an unconditional full-suite pass.
+Focused HUD/layout/replay: 80/80 passed.
+
+Pre-fix native source Radar verification: server and client true, 23 visible
+red-triangle contacts for 23 living enemies. Off: 3/23. Paused toggles retained
+cached contacts until resume. That presentation path is now refreshed, without
+advancing the held clock or changing contact rules. Unit regression covers it.
+
+The actual arena overview was regenerated without cast shadows and imported.
+Pinned GodotJS 4.6.1 v8-nopc revision2. Every rendered/exported job has an explicit
+GPU ticket <=10 minutes, an owned instance, a RAM guard and cleanup.
+
+Final exported Windows Playtest: see capture-source.json for HEAD, executable
+SHA-256, native dimensions, server/client Radar assertions, clocks and errors.
+No OS focus or real input is required; the finite fixture calls existing game
+handlers and CLI capture reads the verified client. No HUD values are painted.
+
+Rajdhani font pick: original SIL-OFL binaries retained with pinned URLs/hashes.
+Metric-only tabular variants preserve letterforms and hinting; non-digit outlines
+were compared unchanged. All digit advances equal per weight. 80 targeted checks
+passed after the final core-font and native font-report wiring. Capture asserts
+the actual font family is Rajdhani HUD, not an accidental fallback.
