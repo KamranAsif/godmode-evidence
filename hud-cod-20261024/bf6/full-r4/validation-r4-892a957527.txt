@@ -1,0 +1,33 @@
+BattleDuty BF6 HUD round 4 validation
+Branch: hud/bf6-climb-10-20261025
+Base: c3351e4f3 (merged #2229); only follow-up commits
+Source: f9e52e5f611cacf0d7a92f7c089ff2523615c6ad
+Windows Playtest EXE SHA-256: 763b8c815ca021f979ea76c1a9335f05de834313906a7c6c21cbe53213555551
+Engine: patched GodotJS 4.6.1 v8-nopc revision 2; FSR2 disabled
+pnpm install: passed
+pnpm --dir tools/godot-cli run build: passed
+pnpm build:scripts: passed
+godot-cli project import --project . --gpu-timeout-ms 0: passed, one attempt, native engine exited
+Affected HUD/Tab/streak/layout/replay/export-boundary tests: 214/214 passed
+pnpm test: 11/11 gates passed, 216.7 seconds; lint has existing warnings and zero errors
+Windows Playtest debug export: passed under a capture GPU ticket of at most 10 minutes
+Nine exported native 1920x1080 views: fight, low ammo, held map-hidden diagnostic, overlay on, scoreboard, pause, picker, Radar held-on and Radar live-on
+Native source icon appendix: separately labelled, uses the real picker assets and optical scale, excluded debug fixture; not an exported gameplay claim
+Runtime/script errors: 0, startup texture errors: 0
+Low-ammo evidence requires a real headshot receipt, active chain award and score; all five equipped tiles are present in that view
+Default captures require Radar off; held/live Radar-on require server/client enabled and markers equal living enemies
+Exact 200% nearest-neighbor crops and padded comparisons preserve native pixels; manifests retain source hashes and rectangles
+No OS focus, human input or painted HUD values; finite local debug plan invokes normal console/input/pause handlers
+New debug icon method remains strict OS.is_debug_build() gated and excluded from all export presets; release-boundary tests cover the entry point
+Map provenance checked: actual footprint source, native overview and role-mask hashes match
+Final cleanup: zero owned renderers, holds and waiters; no editors retained between runs
+Target remains 10/10 from both critics; R4 has not been graded yet
+bf6-fight-1080: Radar=False, server=False, markers=4, enemies=25, paused=True
+bf6-low-ammo-1080: Radar=False, server=False, markers=1, enemies=20, paused=True
+bf6-map-hidden-1080: Radar=False, server=False, markers=0, enemies=20, paused=True
+bf6-radar-on-1080: Radar=True, server=True, markers=20, enemies=20, paused=True
+bf6-overlay-on-1080: Radar=False, server=False, markers=1, enemies=20, paused=True
+bf6-radar-on-live-1080: Radar=True, server=True, markers=20, enemies=20, paused=False
+bf6-scoreboard-1080: Radar=False, server=False, markers=3, enemies=20, paused=True
+bf6-pause-1080: Radar=False, server=False, markers=3, enemies=20, paused=True
+bf6-upgrade-1080: Radar=False, server=False, markers=3, enemies=20, paused=True
