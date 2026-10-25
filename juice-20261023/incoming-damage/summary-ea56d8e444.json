@@ -1,0 +1,45 @@
+{
+  "rows": [
+    {
+      "file": "1-control.json",
+      "median": 30.0380001068115,
+      "p95": 66.411003112793,
+      "p99": 127.123001098633,
+      "max": 313.045989990234,
+      "mean": 36.39904845844615,
+      "frames": 330
+    },
+    {
+      "file": "2-strike.json",
+      "median": 13.4779996871948,
+      "p95": 17.5620002746582,
+      "p99": 34.2299995422363,
+      "max": 442.269012451172,
+      "mean": 15.246908647154793,
+      "frames": 788
+    },
+    {
+      "file": "3-danger.json",
+      "median": 13.5100002288818,
+      "p95": 17.7129993438721,
+      "p99": 33.4550018310547,
+      "max": 212.904006958008,
+      "mean": 14.634923182464227,
+      "frames": 820
+    },
+    {
+      "file": "4-control-recovered.json",
+      "median": 13.3470001220703,
+      "p95": 18.7970008850098,
+      "p99": 31.1630001068115,
+      "max": 165.231002807617,
+      "mean": 14.309239575632708,
+      "frames": 839
+    }
+  ],
+  "workloadHash": "3f0f49e6dbd6acc297ea46c40e3c2adb9667ca3607a6f9b7538339d57d8a1f73",
+  "control": 13.3470001220703,
+  "strikeDelta": 0.13099956512449928,
+  "dangerDelta": 0.16300010681150034,
+  "notes": "Original-code controls bracket candidates in one exclusive timing hold <=10 min. Initial control was much slower; the faster control is used as the stricter budget reference. The final control has a complete validated raw frame sample, recovered offline after command timeout. No claim of a large performance improvement."
+}
