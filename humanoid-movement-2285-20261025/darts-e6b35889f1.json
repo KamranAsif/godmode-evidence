@@ -1,0 +1,1107 @@
+{
+  "definition": "Every cell is before -> after. Spikes use the existing analyzer threshold of 20 m/s^2 and its body-minute denominator. Darts count episodes of three-tick displacement greater than 1.4 times a velocity envelope: the maximum reported horizontal speed over six ticks, multiplied by 50 ms, with expected travel at least 3 cm. The six-tick history allows the intentional two-tick snapshot delay while stopping. Contiguous windows are one episode. The earlier integrated-current-velocity proxy is retained separately in darts.json because it can misclassify delayed stopping motion. Discontinuities above 12 m/s are retained separately because the existing analyzer excludes them from speed statistics. Strike-associated dart episodes are counted separately in darts.json; association does not establish whether a dart is intentional. Open/contact snap rates use strafe-minutes. Headless fights do not measure client pose quality.\n",
+  "omittedFinalRows": [
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+      "lineNumber": 185351,
+      "length": 204
+    },
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+      "lineNumber": 185870,
+      "length": 252
+    },
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-7",
+      "lineNumber": 182887,
+      "length": 168
+    },
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+      "lineNumber": 181713,
+      "length": 258
+    },
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+      "lineNumber": 182108,
+      "length": 48
+    },
+    {
+      "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-7",
+      "lineNumber": 182839,
+      "length": 108
+    }
+  ],
+  "darts": {
+    "before": {
+      "rifle": {
+        "episodes": 16,
+        "windows": 37,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 23,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e4",
+            "tick": 40,
+            "ms": 30046.3,
+            "travelled": 0.10600471687617921,
+            "expected": 0.03727415324323277,
+            "ratio": 2.84392018738681,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e5",
+            "tick": 41,
+            "ms": 30063,
+            "travelled": 0.07963039620643467,
+            "expected": 0.03751333096380539,
+            "ratio": 2.1227226204803245,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e4",
+            "tick": 1159,
+            "ms": 49155.7,
+            "travelled": 0.08875246475452053,
+            "expected": 0.05001142369499192,
+            "ratio": 1.7746438352925373,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "pistol": {
+        "episodes": 10,
+        "windows": 12,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 21,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "soldier-e6",
+            "tick": 3794,
+            "ms": 92921.3,
+            "travelled": 0.0708801805866726,
+            "expected": 0.03608774030055083,
+            "ratio": 1.9641069237463649,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "soldier-e6",
+            "tick": 3796,
+            "ms": 92954.7,
+            "travelled": 0.09677293009922418,
+            "expected": 0.057927389894591313,
+            "ratio": 1.670590203966015,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "soldier-e6",
+            "tick": 3798,
+            "ms": 92988,
+            "travelled": 0.12278436382537328,
+            "expected": 0.08260342002604976,
+            "ratio": 1.4864319635512924,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "shotgun": {
+        "episodes": 13,
+        "windows": 15,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 32,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "soldier-e8",
+            "tick": 224,
+            "ms": 32665.7,
+            "travelled": 0.08544588931016439,
+            "expected": 0.059802278384690336,
+            "ratio": 1.4288065876105305,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "soldier-e9",
+            "tick": 231,
+            "ms": 32782.3,
+            "travelled": 0.05261178575189011,
+            "expected": 0.0324912680577413,
+            "ratio": 1.6192592316924033,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "soldier-e9",
+            "tick": 239,
+            "ms": 32916,
+            "travelled": 0.07629547824084056,
+            "expected": 0.04999204936787449,
+            "ratio": 1.526152242317735,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "smg": {
+        "episodes": 20,
+        "windows": 45,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 37,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "smg-e23",
+            "tick": 46,
+            "ms": 30158.3,
+            "travelled": 0.07907591289386877,
+            "expected": 0.03749736657420091,
+            "ratio": 2.1088391030711713,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "smg-e22",
+            "tick": 418,
+            "ms": 36595,
+            "travelled": 0.08395236744724927,
+            "expected": 0.037521727039143596,
+            "ratio": 2.2374334571451917,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "smg-e23",
+            "tick": 439,
+            "ms": 36948,
+            "travelled": 0.3553378673882418,
+            "expected": 0.25001575950327615,
+            "ratio": 1.4212618760282012,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "marksman": {
+        "episodes": 43,
+        "windows": 58,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 58,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "marksman-e14",
+            "tick": 97,
+            "ms": 31060,
+            "travelled": 0.12249489785293281,
+            "expected": 0.08531195695797865,
+            "ratio": 1.4358467701458195,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "marksman-e14",
+            "tick": 99,
+            "ms": 31093.3,
+            "travelled": 0.14469277798149394,
+            "expected": 0.1007500372208368,
+            "ratio": 1.4361560747053406,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "marksman-e15",
+            "tick": 383,
+            "ms": 36011.7,
+            "travelled": 0.11400438588057688,
+            "expected": 0.03501728144787942,
+            "ratio": 3.255660667155553,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "grenadier": {
+        "episodes": 12,
+        "windows": 30,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 20,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "grenadier-e17",
+            "tick": 61,
+            "ms": 30460,
+            "travelled": 0.059169248770030276,
+            "expected": 0.03749946666287401,
+            "ratio": 1.5778690748316757,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "grenadier-e16",
+            "tick": 73,
+            "ms": 30660,
+            "travelled": 0.06419501538278041,
+            "expected": 0.037474824882846355,
+            "ratio": 1.713017087697317,
+            "attack": "none",
+            "wall": true
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "grenadier-e16",
+            "tick": 3429,
+            "ms": 87528,
+            "travelled": 0.12431009613057817,
+            "expected": 0.07491236546792525,
+            "ratio": 1.659406899703404,
+            "attack": "none",
+            "wall": true
+          }
+        ]
+      },
+      "rpg": {
+        "episodes": 18,
+        "windows": 45,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 38,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "rpg-e24",
+            "tick": 61,
+            "ms": 30460,
+            "travelled": 0.09541488353501056,
+            "expected": 0.036783997879512774,
+            "ratio": 2.593923690609847,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "rpg-e24",
+            "tick": 385,
+            "ms": 36045,
+            "travelled": 0.22980426453833205,
+            "expected": 0.1600199128233733,
+            "ratio": 1.4360979235877056,
+            "attack": "none",
+            "wall": true
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "rpg-e25",
+            "tick": 1245,
+            "ms": 50595.3,
+            "travelled": 0.08570297544428618,
+            "expected": 0.05628270160537783,
+            "ratio": 1.5227231991311738,
+            "attack": "none",
+            "wall": true
+          }
+        ]
+      },
+      "medic": {
+        "episodes": 32,
+        "windows": 100,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 49,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "medic-e20",
+            "tick": 159,
+            "ms": 32110.7,
+            "travelled": 0.0796241169495765,
+            "expected": 0.05039893352046252,
+            "ratio": 1.5798770209541881,
+            "attack": "none",
+            "wall": true
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "medic-e20",
+            "tick": 269,
+            "ms": 34105.7,
+            "travelled": 0.12952219886953442,
+            "expected": 0.06499532675508295,
+            "ratio": 1.992792487336871,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "medic-e20",
+            "tick": 271,
+            "ms": 34139,
+            "travelled": 0.11544695751732185,
+            "expected": 0.03502013706426633,
+            "ratio": 3.2965878261830404,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "shield": {
+        "episodes": 76,
+        "windows": 247,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 101,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "shield-e10",
+            "tick": 489,
+            "ms": 37794.7,
+            "travelled": 0.20081085628028295,
+            "expected": 0.12497929828575612,
+            "ratio": 1.6067529505658087,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "shield-e10",
+            "tick": 491,
+            "ms": 37828,
+            "travelled": 0.2053874387590847,
+            "expected": 0.12497929828575612,
+            "ratio": 1.6433716749591696,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "shield-e10",
+            "tick": 499,
+            "ms": 37961.3,
+            "travelled": 0.11216059914247693,
+            "expected": 0.06001204045856132,
+            "ratio": 1.868968265125471,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "heavy": {
+        "episodes": 33,
+        "windows": 48,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 30,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "heavy-e13",
+            "tick": 55,
+            "ms": 30328.7,
+            "travelled": 0.059211485372318656,
+            "expected": 0.03751752923634498,
+            "ratio": 1.5782352030516373,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "heavy-e12",
+            "tick": 117,
+            "ms": 31400.3,
+            "travelled": 0.16168178623453797,
+            "expected": 0.11001438542299823,
+            "ratio": 1.4696422255406136,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "heavy-e12",
+            "tick": 119,
+            "ms": 31433.7,
+            "travelled": 0.18122085972651458,
+            "expected": 0.11001438542299823,
+            "ratio": 1.6472469398409313,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "minigun": {
+        "episodes": 13,
+        "windows": 20,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 28,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "minigun-e26",
+            "tick": 575,
+            "ms": 39234.3,
+            "travelled": 0.17392527130927882,
+            "expected": 0.12002442459766263,
+            "ratio": 1.449082317139189,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "minigun-e26",
+            "tick": 581,
+            "ms": 39334.3,
+            "travelled": 0.17013524032367452,
+            "expected": 0.12001541567648717,
+            "ratio": 1.4176115573543489,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "minigun-e26",
+            "tick": 629,
+            "ms": 40147.3,
+            "travelled": 0.17191858538281374,
+            "expected": 0.12001338467021082,
+            "ratio": 1.4324950992360987,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "officer": {
+        "episodes": 5,
+        "windows": 8,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 5,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "officer-e28",
+            "tick": 51,
+            "ms": 29762.7,
+            "travelled": 0.08884255736987162,
+            "expected": 0.03751546347841114,
+            "ratio": 2.368158330790647,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "officer-e29",
+            "tick": 5341,
+            "ms": 118994.7,
+            "travelled": 0.10638138934982522,
+            "expected": 0.0321587468661327,
+            "ratio": 3.3080079206027304,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-7",
+            "id": "officer-e28",
+            "tick": 246,
+            "ms": 32987,
+            "travelled": 0.22900873345794387,
+            "expected": 0.16003003624320028,
+            "ratio": 1.4310359407150013,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "cloaker": {
+        "episodes": 24,
+        "windows": 41,
+        "strikeEpisodes": 8,
+        "rawIntegratedEpisodes": 340,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "cloaker-e19",
+            "tick": 37,
+            "ms": 29941.3,
+            "travelled": 0.42616076778605233,
+            "expected": 0.27499394993344856,
+            "ratio": 1.5497096132085368,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "cloaker-e18",
+            "tick": 39,
+            "ms": 30029.7,
+            "travelled": 0.3917754458871203,
+            "expected": 0.2750195311246094,
+            "ratio": 1.4245368112041819,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-main-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "cloaker-e19",
+            "tick": 134,
+            "ms": 31694,
+            "travelled": 0.07300684899367682,
+            "expected": 0.04452426304836499,
+            "ratio": 1.639709317914421,
+            "attack": "strike",
+            "wall": true
+          }
+        ]
+      }
+    },
+    "after": {
+      "rifle": {
+        "episodes": 15,
+        "windows": 47,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 15,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e4",
+            "tick": 45,
+            "ms": 61442,
+            "travelled": 0.10600471687617921,
+            "expected": 0.03727415324323277,
+            "ratio": 2.84392018738681,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e5",
+            "tick": 47,
+            "ms": 61475.3,
+            "travelled": 0.07920227269465621,
+            "expected": 0.03751246459511825,
+            "ratio": 2.1113588123176354,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e5",
+            "tick": 52,
+            "ms": 61588.7,
+            "travelled": 0.10623088063270353,
+            "expected": 0.07499448313042766,
+            "ratio": 1.4165159382184243,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "pistol": {
+        "episodes": 12,
+        "windows": 26,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 24,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e6",
+            "tick": 50,
+            "ms": 61555.3,
+            "travelled": 0.05249761899368035,
+            "expected": 0.037423555416341715,
+            "ratio": 1.402796137610064,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "soldier-e6",
+            "tick": 42,
+            "ms": 46915.7,
+            "travelled": 0.05860034129593586,
+            "expected": 0.03749006535070324,
+            "ratio": 1.5630898678824692,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "soldier-e6",
+            "tick": 683,
+            "ms": 58088.3,
+            "travelled": 0.07824321056808818,
+            "expected": 0.05582051594172165,
+            "ratio": 1.4016927154485013,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "shotgun": {
+        "episodes": 25,
+        "windows": 37,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 47,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e9",
+            "tick": 43,
+            "ms": 61381,
+            "travelled": 0.05692099788299704,
+            "expected": 0.0375085323626505,
+            "ratio": 1.5175479896855868,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e8",
+            "tick": 46,
+            "ms": 61458.7,
+            "travelled": 0.13520355024917793,
+            "expected": 0.08751264194389288,
+            "ratio": 1.544960216557754,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "soldier-e8",
+            "tick": 1540,
+            "ms": 87180,
+            "travelled": 0.0630634601017441,
+            "expected": 0.03749586643884896,
+            "ratio": 1.681877659890662,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "smg": {
+        "episodes": 45,
+        "windows": 73,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 50,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "smg-e23",
+            "tick": 57,
+            "ms": 61678,
+            "travelled": 0.054817880294662905,
+            "expected": 0.03748953187224402,
+            "ratio": 1.4622183195423735,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "smg-e23",
+            "tick": 60,
+            "ms": 61728,
+            "travelled": 0.11997082978789832,
+            "expected": 0.07500933275266485,
+            "ratio": 1.599412038279145,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "smg-e22",
+            "tick": 78,
+            "ms": 62038.7,
+            "travelled": 0.0538516480713974,
+            "expected": 0.037478327070455,
+            "ratio": 1.4368743826308579,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "marksman": {
+        "episodes": 4,
+        "windows": 10,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 5,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "marksman-e14",
+            "tick": 62,
+            "ms": 61764.7,
+            "travelled": 0.06506919393993006,
+            "expected": 0.03750336651555431,
+            "ratio": 1.7350227455698672,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "marksman-e15",
+            "tick": 51,
+            "ms": 47133.3,
+            "travelled": 0.07700649323271169,
+            "expected": 0.03751752923634498,
+            "ratio": 2.0525470306853766,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-7",
+            "id": "marksman-e15",
+            "tick": 54,
+            "ms": 49890.7,
+            "travelled": 0.0772334124585967,
+            "expected": 0.0375242921318977,
+            "ratio": 2.0582243680206314,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "grenadier": {
+        "episodes": 3,
+        "windows": 6,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 10,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "grenadier-e17",
+            "tick": 69,
+            "ms": 61888.7,
+            "travelled": 0.10793516572462694,
+            "expected": 0.07498776566880762,
+            "ratio": 1.4393703394409088,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "grenadier-e16",
+            "tick": 157,
+            "ms": 63391.3,
+            "travelled": 0.0566038867923267,
+            "expected": 0.037511664852416235,
+            "ratio": 1.5089675975466785,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "grenadier-e16",
+            "tick": 57,
+            "ms": 47246.3,
+            "travelled": 0.07655063683602467,
+            "expected": 0.037221834989693885,
+            "ratio": 2.0566056686141425,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "rpg": {
+        "episodes": 3,
+        "windows": 3,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 6,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "rpg-e24",
+            "tick": 73,
+            "ms": 61955.3,
+            "travelled": 0.05964059020497118,
+            "expected": 0.03743988514939649,
+            "ratio": 1.5929693685487323,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "rpg-e24",
+            "tick": 3854,
+            "ms": 127118.7,
+            "travelled": 0.05403702434444336,
+            "expected": 0.038230910269048006,
+            "ratio": 1.41343807835494,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-7",
+            "id": "rpg-e25",
+            "tick": 1482,
+            "ms": 74332,
+            "travelled": 0.06870953354521916,
+            "expected": 0.03774771516264263,
+            "ratio": 1.8202302642470445,
+            "attack": "none",
+            "wall": true
+          }
+        ]
+      },
+      "medic": {
+        "episodes": 32,
+        "windows": 70,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 54,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "medic-e20",
+            "tick": 357,
+            "ms": 66925.7,
+            "travelled": 0.05412947441088811,
+            "expected": 0.03487294796830345,
+            "ratio": 1.5521909550086561,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "medic-e20",
+            "tick": 371,
+            "ms": 67159,
+            "travelled": 0.07829431652428398,
+            "expected": 0.03749536638039426,
+            "ratio": 2.088106453740984,
+            "attack": "none",
+            "wall": true
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "medic-e20",
+            "tick": 375,
+            "ms": 67225.7,
+            "travelled": 0.05503635162328864,
+            "expected": 0.03749536638039426,
+            "ratio": 1.4678174114886442,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "shield": {
+        "episodes": 63,
+        "windows": 219,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 69,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "shield-e10",
+            "tick": 41,
+            "ms": 61347.7,
+            "travelled": 0.08215229759421358,
+            "expected": 0.037488264830477284,
+            "ratio": 2.1914137121498682,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "shield-e11",
+            "tick": 69,
+            "ms": 61888.7,
+            "travelled": 0.1761391495380833,
+            "expected": 0.12499383984821012,
+            "ratio": 1.409182642536488,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "shield-e11",
+            "tick": 71,
+            "ms": 61922,
+            "travelled": 0.17646529403822317,
+            "expected": 0.12499383984821012,
+            "ratio": 1.41179192712632,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "heavy": {
+        "episodes": 27,
+        "windows": 31,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 32,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "heavy-e13",
+            "tick": 1335,
+            "ms": 83666.3,
+            "travelled": 0.1628649747490511,
+            "expected": 0.11002528118573475,
+            "ratio": 1.4802504751077814,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "heavy-e13",
+            "tick": 1341,
+            "ms": 83766.3,
+            "travelled": 0.15966527487221224,
+            "expected": 0.11001647603881887,
+            "ratio": 1.4512851222018328,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-2853137488",
+            "id": "heavy-e12",
+            "tick": 115,
+            "ms": 48244.3,
+            "travelled": 0.15910059710767216,
+            "expected": 0.11001168119795282,
+            "ratio": 1.4462154870753199,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "minigun": {
+        "episodes": 21,
+        "windows": 24,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 30,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "minigun-e27",
+            "tick": 389,
+            "ms": 67459,
+            "travelled": 0.1791089054178715,
+            "expected": 0.12000592693696426,
+            "ratio": 1.492500495512629,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "minigun-e27",
+            "tick": 391,
+            "ms": 67492.3,
+            "travelled": 0.17651062290983532,
+            "expected": 0.12000255205619587,
+            "ratio": 1.4708905759535627,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "minigun-e27",
+            "tick": 404,
+            "ms": 67709,
+            "travelled": 0.17001764614306927,
+            "expected": 0.12002774679214805,
+            "ratio": 1.4164861932923618,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "officer": {
+        "episodes": 36,
+        "windows": 91,
+        "strikeEpisodes": 0,
+        "rawIntegratedEpisodes": 49,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "officer-e29",
+            "tick": 273,
+            "ms": 65499.3,
+            "travelled": 0.0908735385026773,
+            "expected": 0.04999412465480319,
+            "ratio": 1.8176843605150834,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "officer-e29",
+            "tick": 275,
+            "ms": 65532.7,
+            "travelled": 0.11587061750075923,
+            "expected": 0.0749806141612617,
+            "ratio": 1.545341003096546,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "officer-e29",
+            "tick": 277,
+            "ms": 65566,
+            "travelled": 0.14045995870713587,
+            "expected": 0.09998824930960638,
+            "ratio": 1.4047646566169167,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      },
+      "cloaker": {
+        "episodes": 31,
+        "windows": 62,
+        "strikeEpisodes": 5,
+        "rawIntegratedEpisodes": 352,
+        "examples": [
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "cloaker-e19",
+            "tick": 39,
+            "ms": 61247.7,
+            "travelled": 0.3948936565709985,
+            "expected": 0.27501325422604644,
+            "ratio": 1.4359077262742277,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "cloaker-e19",
+            "tick": 713,
+            "ms": 73053.7,
+            "travelled": 0.38548281414349034,
+            "expected": 0.2750235671719789,
+            "ratio": 1.401635569298098,
+            "attack": "none",
+            "wall": false
+          },
+          {
+            "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-20261025\\artifacts\\humanoid-verification\\meter\\seed-1871",
+            "id": "cloaker-e18",
+            "tick": 4063,
+            "ms": 130686.3,
+            "travelled": 0.3884996782495106,
+            "expected": 0.27501872663511484,
+            "ratio": 1.4126299070715946,
+            "attack": "none",
+            "wall": false
+          }
+        ]
+      }
+    }
+  }
+}
