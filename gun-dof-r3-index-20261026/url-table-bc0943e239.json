@@ -1,0 +1,959 @@
+{
+  "schemaVersion": 1,
+  "dof": {
+    "pr": "https://github.com/KamranAsif/Godmode.exe-roguelite/pull/2308",
+    "uploads": [
+      {
+        "file": "control-before-anchor-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/control-before-anchor-ads-f578f056f7.png"
+      },
+      {
+        "file": "control-before-avenue-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/control-before-avenue-ads-eaf91b53b0.png"
+      },
+      {
+        "file": "control-before-park-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/control-before-park-ads-866710ab9a.png"
+      },
+      {
+        "file": "candidate-anchor-hip.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/candidate-anchor-hip-0c2e2bf57d.png"
+      },
+      {
+        "file": "candidate-anchor-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/candidate-anchor-ads-95ac95f562.png"
+      },
+      {
+        "file": "candidate-avenue-hip.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/candidate-avenue-hip-bbd94990bd.png"
+      },
+      {
+        "file": "candidate-avenue-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/candidate-avenue-ads-890cd8a802.png"
+      },
+      {
+        "file": "candidate-park-hip.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/candidate-park-hip-adbb6c8941.png"
+      },
+      {
+        "file": "candidate-park-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/candidate-park-ads-1b28ab48ee.png"
+      },
+      {
+        "file": "control-after-anchor-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/control-after-anchor-ads-1a7704b6fa.png"
+      },
+      {
+        "file": "control-after-avenue-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/control-after-avenue-ads-eaf91b53b0.png"
+      },
+      {
+        "file": "control-after-park-ads.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/control-after-park-ads-3367f9ce88.png"
+      },
+      {
+        "file": "picked-dof-sheet.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/picked-dof-sheet-bdc9a10a2c.png"
+      },
+      {
+        "file": "frame-costs.csv",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/frame-costs-796dbce6f2.csv"
+      },
+      {
+        "file": "frame-costs.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/frame-costs-33b32886e0.json"
+      },
+      {
+        "file": "aim-pixel-check.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/dof-selected-20261026/aim-pixel-check-06cd9f6173.json"
+      }
+    ],
+    "frameCosts": {
+      "method": "Separate static no-DOF control and selected-only exports; control / candidate / control. High 2560x1440/SMAA, VSync off, uncapped exclusive timing, native monitors off, empty frozen views, 5-second samples.",
+      "rows": [
+        {
+          "pose": "anchor",
+          "medianFrameMs": 10.043,
+          "p95FrameMs": 10.761,
+          "p99FrameMs": 11.033,
+          "controlBeforeMedianMs": 9.531,
+          "controlAfterMedianMs": 9.644,
+          "addedMedianMs": 0.4554999999999989,
+          "controlDriftPercent": 1.1786179921773094,
+          "samples": 496
+        },
+        {
+          "pose": "avenue",
+          "medianFrameMs": 10.159,
+          "p95FrameMs": 10.822,
+          "p99FrameMs": 11.09,
+          "controlBeforeMedianMs": 9.686,
+          "controlAfterMedianMs": 9.795,
+          "addedMedianMs": 0.41849999999999987,
+          "controlDriftPercent": 1.1190390637030951,
+          "samples": 491
+        },
+        {
+          "pose": "park",
+          "medianFrameMs": 7.911,
+          "p95FrameMs": 8.374,
+          "p99FrameMs": 8.634,
+          "controlBeforeMedianMs": 7.495,
+          "controlAfterMedianMs": 7.543,
+          "addedMedianMs": 0.39199999999999946,
+          "controlDriftPercent": 0.6383827636653816,
+          "samples": 630
+        }
+      ],
+      "exportedBuilds": {
+        "control-before": {
+          "ok": true,
+          "binary": "D:\\work\\godmode-roguelite-worktrees\\gun-dof-picked-control-20261026\\artifacts\\dof-picked\\export/windows/BattleDuty.exe",
+          "at": "2026-10-26T18:20:29.656Z",
+          "head": "856b0acc5946505f672f466b18801b9ceb7f4325",
+          "debug": true,
+          "preset": "Windows Playtest",
+          "shaderPrebake": false,
+          "normalRuntimeCompilation": true,
+          "inspectionBridge": false,
+          "bytes": 2500424682,
+          "role": "static-no-dof-control",
+          "sourceOverrideSha256": "68484ce18cb7852d59f012cc0da707f19fceb0541f8c1ef245879a408b6bb359"
+        },
+        "candidate": {
+          "ok": true,
+          "binary": "D:\\work\\godmode-roguelite-worktrees\\gun-dof-variants-20261025\\artifacts\\dof-picked\\candidate/windows/BattleDuty.exe",
+          "at": "2026-10-26T18:23:15.800Z",
+          "head": "856b0acc5946505f672f466b18801b9ceb7f4325",
+          "debug": true,
+          "preset": "Windows Playtest",
+          "shaderPrebake": false,
+          "normalRuntimeCompilation": true,
+          "inspectionBridge": false,
+          "bytes": 2500436164
+        },
+        "control-after": {
+          "ok": true,
+          "binary": "D:\\work\\godmode-roguelite-worktrees\\gun-dof-picked-control-20261026\\artifacts\\dof-picked\\export/windows/BattleDuty.exe",
+          "at": "2026-10-26T18:20:29.656Z",
+          "head": "856b0acc5946505f672f466b18801b9ceb7f4325",
+          "debug": true,
+          "preset": "Windows Playtest",
+          "shaderPrebake": false,
+          "normalRuntimeCompilation": true,
+          "inspectionBridge": false,
+          "bytes": 2500424682,
+          "role": "static-no-dof-control",
+          "sourceOverrideSha256": "68484ce18cb7852d59f012cc0da707f19fceb0541f8c1ef245879a408b6bb359"
+        }
+      },
+      "rawTiming": {
+        "control-before": [
+          {
+            "mark": "control-before-anchor-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "static-no-dof-control",
+              "focusMeters": 30,
+              "targetMeters": 30,
+              "foreground": 0,
+              "periphery": 0,
+              "installed": false,
+              "amount": 0,
+              "farEnabled": false,
+              "nearEnabled": false
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 524,
+              "mean": 9.532620229007636,
+              "median": 9.531,
+              "p95": 10.163,
+              "p99": 10.383
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          },
+          {
+            "mark": "control-before-avenue-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "static-no-dof-control",
+              "focusMeters": 30,
+              "targetMeters": 30,
+              "foreground": 0,
+              "periphery": 0,
+              "installed": false,
+              "amount": 0,
+              "farEnabled": false,
+              "nearEnabled": false
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 514,
+              "mean": 9.69197276264591,
+              "median": 9.686,
+              "p95": 10.312,
+              "p99": 10.466
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          },
+          {
+            "mark": "control-before-park-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "static-no-dof-control",
+              "focusMeters": 30,
+              "targetMeters": 30,
+              "foreground": 0,
+              "periphery": 0,
+              "installed": false,
+              "amount": 0,
+              "farEnabled": false,
+              "nearEnabled": false
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 666,
+              "mean": 7.492321321321317,
+              "median": 7.495,
+              "p95": 8.069,
+              "p99": 8.22
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          }
+        ],
+        "candidate": [
+          {
+            "mark": "candidate-anchor-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "hip-off-ads-subtle",
+              "focusMeters": 23.684429168701172,
+              "targetMeters": 23.684429168701172,
+              "foreground": 0.5,
+              "periphery": 0.35,
+              "installed": true,
+              "amount": 0.03500000014901161,
+              "farEnabled": false,
+              "nearEnabled": true
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 496,
+              "mean": 10.052012096774186,
+              "median": 10.043,
+              "p95": 10.761,
+              "p99": 11.033
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          },
+          {
+            "mark": "candidate-avenue-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "hip-off-ads-subtle",
+              "focusMeters": 127.31432342529297,
+              "targetMeters": 127.31432342529297,
+              "foreground": 0.5,
+              "periphery": 0.35,
+              "installed": true,
+              "amount": 0.03500000014901161,
+              "farEnabled": false,
+              "nearEnabled": true
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 491,
+              "mean": 10.163346232179233,
+              "median": 10.159,
+              "p95": 10.822,
+              "p99": 11.09
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          },
+          {
+            "mark": "candidate-park-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "hip-off-ads-subtle",
+              "focusMeters": 31.580886840820312,
+              "targetMeters": 31.580886840820312,
+              "foreground": 0.5,
+              "periphery": 0.35,
+              "installed": true,
+              "amount": 0.03500000014901161,
+              "farEnabled": false,
+              "nearEnabled": true
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 630,
+              "mean": 7.913415873015875,
+              "median": 7.911,
+              "p95": 8.374,
+              "p99": 8.634
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          }
+        ],
+        "control-after": [
+          {
+            "mark": "control-after-anchor-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "static-no-dof-control",
+              "focusMeters": 30,
+              "targetMeters": 30,
+              "foreground": 0,
+              "periphery": 0,
+              "installed": false,
+              "amount": 0,
+              "farEnabled": false,
+              "nearEnabled": false
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 517,
+              "mean": 9.649506769825917,
+              "median": 9.644,
+              "p95": 10.346,
+              "p99": 10.597
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          },
+          {
+            "mark": "control-after-avenue-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "static-no-dof-control",
+              "focusMeters": 30,
+              "targetMeters": 30,
+              "foreground": 0,
+              "periphery": 0,
+              "installed": false,
+              "amount": 0,
+              "farEnabled": false,
+              "nearEnabled": false
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 509,
+              "mean": 9.794086444007858,
+              "median": 9.795,
+              "p95": 10.297,
+              "p99": 10.641
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          },
+          {
+            "mark": "control-after-park-ads",
+            "durationMs": 5000,
+            "components": false,
+            "variant": {
+              "profile": "static-no-dof-control",
+              "focusMeters": 30,
+              "targetMeters": 30,
+              "foreground": 0,
+              "periphery": 0,
+              "installed": false,
+              "amount": 0,
+              "farEnabled": false,
+              "nearEnabled": false
+            },
+            "aimBlend": 1,
+            "wallFrameMs": {
+              "samples": 661,
+              "mean": 7.552683812405457,
+              "median": 7.543,
+              "p95": 8.001,
+              "p99": 8.242
+            },
+            "worldAndWeaponGpuMs": null,
+            "renderCpuMs": null,
+            "maxFps": 0,
+            "vsync": 0,
+            "graphics": {
+              "preset": "high",
+              "quality": {
+                "shadows": "high",
+                "ambientOcclusion": "high",
+                "indirectLight": "on",
+                "antiAliasing": "smaa",
+                "bloom": "on",
+                "detailDistance": "far",
+                "renderScale": "100",
+                "lensCorrection": "high"
+              },
+              "vsync": false,
+              "frameLimit": 0
+            }
+          }
+        ]
+      }
+    }
+  },
+  "gunMaterials": {
+    "sourceHead": "105a07028247782213e499f1f855f5dd0d2bba4d",
+    "variants": [
+      "parkerized",
+      "r3a",
+      "r3b",
+      "r3c"
+    ],
+    "originalProceduralTextures": true,
+    "frameSize": [
+      2560,
+      1440
+    ],
+    "finalUploads": [
+      {
+        "file": "grip-2x-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/grip-2x-parkerized-c6d78658bd.png"
+      },
+      {
+        "file": "grip-2x-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/grip-2x-r3a-dd36712b70.png"
+      },
+      {
+        "file": "grip-2x-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/grip-2x-r3b-ee51be4529.png"
+      },
+      {
+        "file": "grip-2x-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/grip-2x-r3c-e36ab589b0.png"
+      },
+      {
+        "file": "receiver-2x-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/receiver-2x-parkerized-d3305cda48.png"
+      },
+      {
+        "file": "receiver-2x-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/receiver-2x-r3a-4a36bb950e.png"
+      },
+      {
+        "file": "receiver-2x-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/receiver-2x-r3b-05accdbc6b.png"
+      },
+      {
+        "file": "receiver-2x-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/receiver-2x-r3c-80c357d8d1.png"
+      },
+      {
+        "file": "receiver-2x-sheet.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/receiver-2x-sheet-6d3d8e4f34.png"
+      },
+      {
+        "file": "grip-2x-sheet.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/grip-2x-sheet-6731d3a375.png"
+      },
+      {
+        "file": "materials-anchor-ads-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-anchor-ads-parkerized-4a54d29b40.png"
+      },
+      {
+        "file": "materials-anchor-ads-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-anchor-ads-r3a-36a0943874.png"
+      },
+      {
+        "file": "materials-anchor-ads-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-anchor-ads-r3b-2a8b463f49.png"
+      },
+      {
+        "file": "materials-anchor-ads-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-anchor-ads-r3c-218e5110ea.png"
+      },
+      {
+        "file": "materials-anchor-hip-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-anchor-hip-parkerized-235d73153b.png"
+      },
+      {
+        "file": "materials-anchor-hip-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-anchor-hip-r3a-121aa14857.png"
+      },
+      {
+        "file": "materials-anchor-hip-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-anchor-hip-r3b-ed802f0d2e.png"
+      },
+      {
+        "file": "materials-anchor-hip-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-anchor-hip-r3c-31c3eac6ef.png"
+      },
+      {
+        "file": "materials-avenue-ads-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-avenue-ads-parkerized-253735d7b0.png"
+      },
+      {
+        "file": "materials-avenue-ads-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-avenue-ads-r3a-202cd643a2.png"
+      },
+      {
+        "file": "materials-avenue-ads-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-avenue-ads-r3b-a64a8f2c4d.png"
+      },
+      {
+        "file": "materials-avenue-ads-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-avenue-ads-r3c-f75732ea24.png"
+      },
+      {
+        "file": "materials-avenue-hip-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-avenue-hip-parkerized-14a633a2d5.png"
+      },
+      {
+        "file": "materials-avenue-hip-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-avenue-hip-r3a-4b7a80fffc.png"
+      },
+      {
+        "file": "materials-avenue-hip-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-avenue-hip-r3b-d51696190c.png"
+      },
+      {
+        "file": "materials-avenue-hip-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-avenue-hip-r3c-0dbe61cfad.png"
+      },
+      {
+        "file": "materials-park-ads-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-park-ads-parkerized-79c73628d3.png"
+      },
+      {
+        "file": "materials-park-ads-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-park-ads-r3a-343d59b4cd.png"
+      },
+      {
+        "file": "materials-park-ads-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-park-ads-r3b-6e07fd1660.png"
+      },
+      {
+        "file": "materials-park-ads-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-park-ads-r3c-f1c64f0d7c.png"
+      },
+      {
+        "file": "materials-park-hip-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-park-hip-parkerized-cb3abc72b9.png"
+      },
+      {
+        "file": "materials-park-hip-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-park-hip-r3a-eeb6e541a0.png"
+      },
+      {
+        "file": "materials-park-hip-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-park-hip-r3b-22ace575d4.png"
+      },
+      {
+        "file": "materials-park-hip-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-park-hip-r3c-c957a076f7.png"
+      },
+      {
+        "file": "materials-surface-hip-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-surface-hip-parkerized-58c1ed80f1.png"
+      },
+      {
+        "file": "materials-surface-hip-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-surface-hip-r3a-5826fa7b65.png"
+      },
+      {
+        "file": "materials-surface-hip-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-surface-hip-r3b-a4ad11b096.png"
+      },
+      {
+        "file": "materials-surface-hip-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-surface-hip-r3c-34baee42e7.png"
+      },
+      {
+        "file": "materials-r3-sheet.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/materials-r3-sheet-a29fd7842e.png"
+      },
+      {
+        "file": "verified-manifest.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/verified-manifest-a5dc49eaa3.json"
+      },
+      {
+        "file": "burst-parkerized.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/burst-parkerized-d374d93e25.mp4"
+      },
+      {
+        "file": "burst-r3a.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/burst-r3a-d19edfa488.mp4"
+      },
+      {
+        "file": "burst-r3b.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/burst-r3b-d6f9eca34d.mp4"
+      },
+      {
+        "file": "burst-r3c.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/burst-r3c-bac4dbd9d4.mp4"
+      },
+      {
+        "file": "burst-proof.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-final-20261026/burst-proof-95c392f843.json"
+      }
+    ],
+    "initialUploads": [
+      {
+        "file": "grip-2x-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/grip-2x-parkerized-c6d78658bd.png"
+      },
+      {
+        "file": "grip-2x-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/grip-2x-r3a-c79544b891.png"
+      },
+      {
+        "file": "grip-2x-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/grip-2x-r3b-bc69ad7b4f.png"
+      },
+      {
+        "file": "grip-2x-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/grip-2x-r3c-0ee5ffd522.png"
+      },
+      {
+        "file": "receiver-2x-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/receiver-2x-parkerized-d3305cda48.png"
+      },
+      {
+        "file": "receiver-2x-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/receiver-2x-r3a-00fa49b0a4.png"
+      },
+      {
+        "file": "receiver-2x-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/receiver-2x-r3b-21b61da3a8.png"
+      },
+      {
+        "file": "receiver-2x-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/receiver-2x-r3c-f483f39b08.png"
+      },
+      {
+        "file": "receiver-2x-sheet.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/receiver-2x-sheet-234b401f03.png"
+      },
+      {
+        "file": "grip-2x-sheet.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/grip-2x-sheet-74a3ff5331.png"
+      },
+      {
+        "file": "materials-anchor-ads-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-anchor-ads-parkerized-0c93ce990d.png"
+      },
+      {
+        "file": "materials-anchor-ads-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-anchor-ads-r3a-2cfe277543.png"
+      },
+      {
+        "file": "materials-anchor-ads-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-anchor-ads-r3b-8c7d410009.png"
+      },
+      {
+        "file": "materials-anchor-ads-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-anchor-ads-r3c-28a81c5551.png"
+      },
+      {
+        "file": "materials-anchor-hip-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-anchor-hip-parkerized-c53c3911c8.png"
+      },
+      {
+        "file": "materials-anchor-hip-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-anchor-hip-r3a-c74eec238b.png"
+      },
+      {
+        "file": "materials-anchor-hip-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-anchor-hip-r3b-2d26a65c2f.png"
+      },
+      {
+        "file": "materials-anchor-hip-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-anchor-hip-r3c-83ee721edb.png"
+      },
+      {
+        "file": "materials-avenue-ads-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-avenue-ads-parkerized-253735d7b0.png"
+      },
+      {
+        "file": "materials-avenue-ads-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-avenue-ads-r3a-8771ea61ff.png"
+      },
+      {
+        "file": "materials-avenue-ads-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-avenue-ads-r3b-6ff79090d7.png"
+      },
+      {
+        "file": "materials-avenue-ads-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-avenue-ads-r3c-02121ba828.png"
+      },
+      {
+        "file": "materials-avenue-hip-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-avenue-hip-parkerized-14a633a2d5.png"
+      },
+      {
+        "file": "materials-avenue-hip-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-avenue-hip-r3a-ed7ca1e107.png"
+      },
+      {
+        "file": "materials-avenue-hip-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-avenue-hip-r3b-d589ba5c17.png"
+      },
+      {
+        "file": "materials-avenue-hip-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-avenue-hip-r3c-69f0c5bb11.png"
+      },
+      {
+        "file": "materials-park-ads-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-park-ads-parkerized-2aa6a4634c.png"
+      },
+      {
+        "file": "materials-park-ads-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-park-ads-r3a-aea7d21b92.png"
+      },
+      {
+        "file": "materials-park-ads-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-park-ads-r3b-fd470c7456.png"
+      },
+      {
+        "file": "materials-park-ads-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-park-ads-r3c-57bf345e63.png"
+      },
+      {
+        "file": "materials-park-hip-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-park-hip-parkerized-d5e0b6b835.png"
+      },
+      {
+        "file": "materials-park-hip-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-park-hip-r3a-d56c2b25da.png"
+      },
+      {
+        "file": "materials-park-hip-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-park-hip-r3b-b5713c9e0a.png"
+      },
+      {
+        "file": "materials-park-hip-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-park-hip-r3c-4bf45d9c48.png"
+      },
+      {
+        "file": "materials-surface-hip-parkerized.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-surface-hip-parkerized-e80754c39d.png"
+      },
+      {
+        "file": "materials-surface-hip-r3a.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-surface-hip-r3a-4c75ec3b7b.png"
+      },
+      {
+        "file": "materials-surface-hip-r3b.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-surface-hip-r3b-b306be1a26.png"
+      },
+      {
+        "file": "materials-surface-hip-r3c.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-surface-hip-r3c-6a2fdb5d07.png"
+      },
+      {
+        "file": "materials-r3-sheet.png",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/materials-r3-sheet-371e16a999.png"
+      },
+      {
+        "file": "burst-parkerized.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/burst-parkerized-eaa944fc30.mp4"
+      },
+      {
+        "file": "burst-r3a.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/burst-r3a-dcbb561fd2.mp4"
+      },
+      {
+        "file": "burst-r3b.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/burst-r3b-44de03576e.mp4"
+      },
+      {
+        "file": "burst-r3c.mp4",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/burst-r3c-6f394b29c4.mp4"
+      },
+      {
+        "file": "verified-manifest.json",
+        "url": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/gun-r3-20261026/verified-manifest-96da81ec79.json"
+      }
+    ],
+    "burstProof": [
+      {
+        "variant": "parkerized",
+        "width": 2560,
+        "height": 1440,
+        "frames": 84,
+        "ammoBefore": 30,
+        "ammoAfter": 18,
+        "decodedMiddleFrame": true
+      },
+      {
+        "variant": "r3a",
+        "width": 2560,
+        "height": 1440,
+        "frames": 84,
+        "ammoBefore": 30,
+        "ammoAfter": 18,
+        "decodedMiddleFrame": true
+      },
+      {
+        "variant": "r3b",
+        "width": 2560,
+        "height": 1440,
+        "frames": 84,
+        "ammoBefore": 30,
+        "ammoAfter": 18,
+        "decodedMiddleFrame": true
+      },
+      {
+        "variant": "r3c",
+        "width": 2560,
+        "height": 1440,
+        "frames": 84,
+        "ammoBefore": 30,
+        "ammoAfter": 18,
+        "decodedMiddleFrame": true
+      }
+    ]
+  }
+}
