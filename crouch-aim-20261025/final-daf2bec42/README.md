@@ -1,0 +1,13 @@
+Crouch-to-aim matched exported recapture - 2026-10-26
+
+BEFORE: 31835dd27ee616c82f2167df61ff43a6cb6c840a (original presentation baseline). AFTER: daf2bec42d0f5e46d646b2110fc7021fcedfe61d. AFTER is a fresh Windows Playtest release export from that exact source; BEFORE uses the retained exported baseline executable. Both arms were recaptured in this dispatch.
+
+Videos are BEFORE ABOVE / AFTER BELOW, each half natively 1280x720, encoded at 30 FPS, real time, silent. Course/player is 9.000 seconds / 270 frames; course/side is 8.967 seconds / 269 frames after cut-point quantization. Both retain the opening and the complete crouch/rise/fire/return cycle. Fight is 30.000 seconds / 900 frames. Original full course recordings are 35 seconds. High graphics preset, scale 100%, FSR2 off, safe render thread, fresh settings and 30 FPS capture holds for both arms.
+
+The first course take uses the normal player camera at the same site, level pitch and yaw. Before the course, each arm briefly frames the stationary rifleman at level pitch, disables framing and returns to the normal player camera via noclip; this corrects the prior baseline looking down at grass without resizing the window. The second course take uses frame rifle 90 6 0.5 45. Camera plans, course sites, source hashes and timing receipts are retained. The player views now both face the wall; slight framing/interpolation differences remain. Capture gaps above 66.7 ms occurred only outside the retained course excerpts; both fight captures also have no gaps above 66.7 ms. See capture-gaps.json and clip-validation.json.
+
+Fight: identical scenario hud, spawn rifleman 6 and automatic frame rifle 90 6 0.5 45 setup, recording 15 seconds after the first presented gameplay frame. Live AI placement and movement may diverge; this is a matched setup, not synchronized actors or a causal movement regression test.
+
+Audit focus: complete ascent and return barrel clearance, alert held head/spine behind cover, opening leg proportions, and the existing movement/collision behavior separately. The AFTER trace reports coverTuckRadians (sideways arm tuck), replacing the former whole-upper-body muzzleHoldLowering. No new animation libraries were baked. No visual PASS is claimed; these clips are supplied for the requested audit. The after-course trace has one incomplete trailing row from shutdown, after both course takes; all retained course rows remain readable.
+
+Raw client logs contain local audio-console credentials and are excluded. No runtime inspection bridge is present in the exported executables. All owned Godot processes were stopped before publication.
