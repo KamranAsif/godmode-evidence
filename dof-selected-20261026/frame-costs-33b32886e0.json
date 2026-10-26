@@ -1,0 +1,475 @@
+{
+  "method": "Separate static no-DOF control and selected-only exports; control / candidate / control. High 2560x1440/SMAA, VSync off, uncapped exclusive timing, native monitors off, empty frozen views, 5-second samples.",
+  "rows": [
+    {
+      "pose": "anchor",
+      "medianFrameMs": 10.043,
+      "p95FrameMs": 10.761,
+      "p99FrameMs": 11.033,
+      "controlBeforeMedianMs": 9.531,
+      "controlAfterMedianMs": 9.644,
+      "addedMedianMs": 0.4554999999999989,
+      "controlDriftPercent": 1.1786179921773094,
+      "samples": 496
+    },
+    {
+      "pose": "avenue",
+      "medianFrameMs": 10.159,
+      "p95FrameMs": 10.822,
+      "p99FrameMs": 11.09,
+      "controlBeforeMedianMs": 9.686,
+      "controlAfterMedianMs": 9.795,
+      "addedMedianMs": 0.41849999999999987,
+      "controlDriftPercent": 1.1190390637030951,
+      "samples": 491
+    },
+    {
+      "pose": "park",
+      "medianFrameMs": 7.911,
+      "p95FrameMs": 8.374,
+      "p99FrameMs": 8.634,
+      "controlBeforeMedianMs": 7.495,
+      "controlAfterMedianMs": 7.543,
+      "addedMedianMs": 0.39199999999999946,
+      "controlDriftPercent": 0.6383827636653816,
+      "samples": 630
+    }
+  ],
+  "exportedBuilds": {
+    "control-before": {
+      "ok": true,
+      "binary": "D:\\work\\godmode-roguelite-worktrees\\gun-dof-picked-control-20261026\\artifacts\\dof-picked\\export/windows/BattleDuty.exe",
+      "at": "2026-10-26T18:20:29.656Z",
+      "head": "856b0acc5946505f672f466b18801b9ceb7f4325",
+      "debug": true,
+      "preset": "Windows Playtest",
+      "shaderPrebake": false,
+      "normalRuntimeCompilation": true,
+      "inspectionBridge": false,
+      "bytes": 2500424682,
+      "role": "static-no-dof-control",
+      "sourceOverrideSha256": "68484ce18cb7852d59f012cc0da707f19fceb0541f8c1ef245879a408b6bb359"
+    },
+    "candidate": {
+      "ok": true,
+      "binary": "D:\\work\\godmode-roguelite-worktrees\\gun-dof-variants-20261025\\artifacts\\dof-picked\\candidate/windows/BattleDuty.exe",
+      "at": "2026-10-26T18:23:15.800Z",
+      "head": "856b0acc5946505f672f466b18801b9ceb7f4325",
+      "debug": true,
+      "preset": "Windows Playtest",
+      "shaderPrebake": false,
+      "normalRuntimeCompilation": true,
+      "inspectionBridge": false,
+      "bytes": 2500436164
+    },
+    "control-after": {
+      "ok": true,
+      "binary": "D:\\work\\godmode-roguelite-worktrees\\gun-dof-picked-control-20261026\\artifacts\\dof-picked\\export/windows/BattleDuty.exe",
+      "at": "2026-10-26T18:20:29.656Z",
+      "head": "856b0acc5946505f672f466b18801b9ceb7f4325",
+      "debug": true,
+      "preset": "Windows Playtest",
+      "shaderPrebake": false,
+      "normalRuntimeCompilation": true,
+      "inspectionBridge": false,
+      "bytes": 2500424682,
+      "role": "static-no-dof-control",
+      "sourceOverrideSha256": "68484ce18cb7852d59f012cc0da707f19fceb0541f8c1ef245879a408b6bb359"
+    }
+  },
+  "rawTiming": {
+    "control-before": [
+      {
+        "mark": "control-before-anchor-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "static-no-dof-control",
+          "focusMeters": 30,
+          "targetMeters": 30,
+          "foreground": 0,
+          "periphery": 0,
+          "installed": false,
+          "amount": 0,
+          "farEnabled": false,
+          "nearEnabled": false
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 524,
+          "mean": 9.532620229007636,
+          "median": 9.531,
+          "p95": 10.163,
+          "p99": 10.383
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      },
+      {
+        "mark": "control-before-avenue-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "static-no-dof-control",
+          "focusMeters": 30,
+          "targetMeters": 30,
+          "foreground": 0,
+          "periphery": 0,
+          "installed": false,
+          "amount": 0,
+          "farEnabled": false,
+          "nearEnabled": false
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 514,
+          "mean": 9.69197276264591,
+          "median": 9.686,
+          "p95": 10.312,
+          "p99": 10.466
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      },
+      {
+        "mark": "control-before-park-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "static-no-dof-control",
+          "focusMeters": 30,
+          "targetMeters": 30,
+          "foreground": 0,
+          "periphery": 0,
+          "installed": false,
+          "amount": 0,
+          "farEnabled": false,
+          "nearEnabled": false
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 666,
+          "mean": 7.492321321321317,
+          "median": 7.495,
+          "p95": 8.069,
+          "p99": 8.22
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      }
+    ],
+    "candidate": [
+      {
+        "mark": "candidate-anchor-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "hip-off-ads-subtle",
+          "focusMeters": 23.684429168701172,
+          "targetMeters": 23.684429168701172,
+          "foreground": 0.5,
+          "periphery": 0.35,
+          "installed": true,
+          "amount": 0.03500000014901161,
+          "farEnabled": false,
+          "nearEnabled": true
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 496,
+          "mean": 10.052012096774186,
+          "median": 10.043,
+          "p95": 10.761,
+          "p99": 11.033
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      },
+      {
+        "mark": "candidate-avenue-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "hip-off-ads-subtle",
+          "focusMeters": 127.31432342529297,
+          "targetMeters": 127.31432342529297,
+          "foreground": 0.5,
+          "periphery": 0.35,
+          "installed": true,
+          "amount": 0.03500000014901161,
+          "farEnabled": false,
+          "nearEnabled": true
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 491,
+          "mean": 10.163346232179233,
+          "median": 10.159,
+          "p95": 10.822,
+          "p99": 11.09
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      },
+      {
+        "mark": "candidate-park-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "hip-off-ads-subtle",
+          "focusMeters": 31.580886840820312,
+          "targetMeters": 31.580886840820312,
+          "foreground": 0.5,
+          "periphery": 0.35,
+          "installed": true,
+          "amount": 0.03500000014901161,
+          "farEnabled": false,
+          "nearEnabled": true
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 630,
+          "mean": 7.913415873015875,
+          "median": 7.911,
+          "p95": 8.374,
+          "p99": 8.634
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      }
+    ],
+    "control-after": [
+      {
+        "mark": "control-after-anchor-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "static-no-dof-control",
+          "focusMeters": 30,
+          "targetMeters": 30,
+          "foreground": 0,
+          "periphery": 0,
+          "installed": false,
+          "amount": 0,
+          "farEnabled": false,
+          "nearEnabled": false
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 517,
+          "mean": 9.649506769825917,
+          "median": 9.644,
+          "p95": 10.346,
+          "p99": 10.597
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      },
+      {
+        "mark": "control-after-avenue-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "static-no-dof-control",
+          "focusMeters": 30,
+          "targetMeters": 30,
+          "foreground": 0,
+          "periphery": 0,
+          "installed": false,
+          "amount": 0,
+          "farEnabled": false,
+          "nearEnabled": false
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 509,
+          "mean": 9.794086444007858,
+          "median": 9.795,
+          "p95": 10.297,
+          "p99": 10.641
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      },
+      {
+        "mark": "control-after-park-ads",
+        "durationMs": 5000,
+        "components": false,
+        "variant": {
+          "profile": "static-no-dof-control",
+          "focusMeters": 30,
+          "targetMeters": 30,
+          "foreground": 0,
+          "periphery": 0,
+          "installed": false,
+          "amount": 0,
+          "farEnabled": false,
+          "nearEnabled": false
+        },
+        "aimBlend": 1,
+        "wallFrameMs": {
+          "samples": 661,
+          "mean": 7.552683812405457,
+          "median": 7.543,
+          "p95": 8.001,
+          "p99": 8.242
+        },
+        "worldAndWeaponGpuMs": null,
+        "renderCpuMs": null,
+        "maxFps": 0,
+        "vsync": 0,
+        "graphics": {
+          "preset": "high",
+          "quality": {
+            "shadows": "high",
+            "ambientOcclusion": "high",
+            "indirectLight": "on",
+            "antiAliasing": "smaa",
+            "bloom": "on",
+            "detailDistance": "far",
+            "renderScale": "100",
+            "lensCorrection": "high"
+          },
+          "vsync": false,
+          "frameLimit": 0
+        }
+      }
+    ]
+  }
+}
