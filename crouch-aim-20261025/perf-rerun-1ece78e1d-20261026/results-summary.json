@@ -1,0 +1,129 @@
+{
+  "beforeCommit": "e53c4366bbe473ee5c07c19295f13b31a483661a",
+  "afterCommit": "1ece78e1d1a6bb060753bf9dca9acb6df6aa6ca6",
+  "results": {
+    "standard": {
+      "before-1": {
+        "median": 15.0279998779297,
+        "p95": 17.6529998779297,
+        "p99": 19.1070003509521,
+        "frames": 1994,
+        "enemies": 65
+      },
+      "after": {
+        "median": 15.6730003356934,
+        "p95": 18.0669994354248,
+        "p99": 19.6760005950928,
+        "frames": 1903,
+        "enemies": 65
+      },
+      "before-2": {
+        "median": 14.7810001373291,
+        "p95": 17.636999130249,
+        "p99": 19.6219997406006,
+        "frames": 2017,
+        "enemies": 65
+      }
+    },
+    "cover": {
+      "before-1": {
+        "median": 10.8070001602173,
+        "p95": 11.6040000915527,
+        "p99": 12.66100025177,
+        "frames": 748,
+        "enemies": 1
+      },
+      "after": {
+        "median": 10.8959999084473,
+        "p95": 11.9820003509521,
+        "p99": 13.1160001754761,
+        "frames": 740,
+        "enemies": 1
+      },
+      "before-2": {
+        "median": 10.8269996643066,
+        "p95": 11.7189998626709,
+        "p99": 12.5970001220703,
+        "frames": 746,
+        "enemies": 1
+      }
+    }
+  },
+  "comparisonToMeanControls": {
+    "standard": {
+      "median": {
+        "baselineMeanMs": 14.9045000076294,
+        "afterDeltaMs": 0.7685003280640004,
+        "afterDeltaPercent": 5.156163089473753,
+        "controlSpanMs": 0.24699974060060015,
+        "addedCostWithinControlSpan": false
+      },
+      "p95": {
+        "baselineMeanMs": 17.64499950408935,
+        "afterDeltaMs": 0.42199993133545277,
+        "afterDeltaPercent": 2.391612032846191,
+        "controlSpanMs": 0.016000747680703142,
+        "addedCostWithinControlSpan": false
+      },
+      "p99": {
+        "baselineMeanMs": 19.36450004577635,
+        "afterDeltaMs": 0.3115005493164489,
+        "afterDeltaPercent": 1.6086165332442448,
+        "controlSpanMs": 0.5149993896485014,
+        "addedCostWithinControlSpan": true
+      }
+    },
+    "cover": {
+      "median": {
+        "baselineMeanMs": 10.816999912261949,
+        "afterDeltaMs": 0.0789999961853507,
+        "afterDeltaPercent": 0.7303318556543426,
+        "controlSpanMs": 0.0199995040893004,
+        "addedCostWithinControlSpan": false
+      },
+      "p95": {
+        "baselineMeanMs": 11.6614999771118,
+        "afterDeltaMs": 0.32050037384030006,
+        "afterDeltaPercent": 2.748363199154058,
+        "controlSpanMs": 0.11499977111819959,
+        "addedCostWithinControlSpan": false
+      },
+      "p99": {
+        "baselineMeanMs": 12.62900018692015,
+        "afterDeltaMs": 0.48699998855595084,
+        "afterDeltaPercent": 3.8562038272858423,
+        "controlSpanMs": 0.06400012969969993,
+        "addedCostWithinControlSpan": false
+      }
+    }
+  },
+  "goal": "Added cover-cycle p95 cost no greater than the observed before-control span",
+  "goalMet": false,
+  "interpretation": "Cover p95 residual +0.320500ms is greater than the 0.1149998ms control span. Standard p95 residual +0.4219999ms is greater than the 0.0160007ms span. Both pairwise standard comparator results are within the default5% threshold, but that does not satisfy the user's stricter noise criterion.",
+  "earlierObservedCoverP95AddedMs": 3.28700017929075,
+  "earlierComparisonNote": "Earlier head1c890e645 was paired with main41e5803ca; this rerun uses current matching maine53c4366b and head1ece78e1d. Do not attribute absolute cross-dispatch timing changes solely to the optimization.",
+  "standardCommand": "node tools/performance/gameplay-benchmark.mjs run --project CHECKOUT --subset firefight-65 --enemies 65 --resolution 1440p --taa off --frames-only --warmup-ms 10000 --build-commit SHA --output REPORT.json",
+  "coverCommand": "course cover; wait native cover start marker; runtime frames --window-ms 8000 --warmup-ms 0",
+  "conditions": "Same scenes/settings as preceding dispatch: standard1440p/SMAA/scale1,seed43BA771E,65actors,10swarmup+13ssettle+30sretained; cover640x360 fullarena/low,seed1871,oneactor; uncapped,VSync off,frame-only,profiling/traces off,threadModel2,exclusive timing holds.",
+  "arenaSemanticReceiptSha256": "8ca45d0b4bb539487ac85768eb637a2a0137d35a76877d992c4ef59aa92c0706",
+  "verifiedSceneContentSha256": {
+    "assets/maps/dumbo/prebuilt/survival_client.scn": {
+      "before": "ad363907cd070a53671791e7b44c05c2091174e9b7121525ba19b1014b8576bb",
+      "after": "ad363907cd070a53671791e7b44c05c2091174e9b7121525ba19b1014b8576bb"
+    },
+    "assets/maps/dumbo/prebuilt/survival_server.scn": {
+      "before": "14b4c567b0ad5827a0719f0a49128d4a26a18f88c2d2aef600cdb24ef8340c1d",
+      "after": "14b4c567b0ad5827a0719f0a49128d4a26a18f88c2d2aef600cdb24ef8340c1d"
+    }
+  },
+  "invalidAttempts": [],
+  "gameCodeChanged": false,
+  "cleanup": {
+    "utc": "2026-10-26T16:21:31.865510+00:00",
+    "managedInstances": 0,
+    "nativeGodotOrBattleDutyProcesses": 0,
+    "timingHold": null,
+    "captures": [],
+    "queue": []
+  }
+}
