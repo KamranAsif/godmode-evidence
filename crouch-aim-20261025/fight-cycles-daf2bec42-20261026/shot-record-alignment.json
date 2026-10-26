@@ -1,0 +1,1318 @@
+{
+  "captureCommit": "daf2bec42d0f5e46d646b2110fc7021fcedfe61d",
+  "actorId": "soldier-e27",
+  "evidenceSource": "Existing animation trace shot field = authoritative snapshot lastAttackAtMs. These are not recovered full soldier.shot event payloads: the local-server ring buffer was not persisted before shutdown.",
+  "sourceCodeProof": [
+    "scripts/server/soldier_ai.ts fireRound: systemAdminAttackRecorded(nowMs) followed by soldier.shot(nowMs)",
+    "packages/game-rules/src/match.ts systemAdminAttackRecorded reducer: lastAttackAtMs = action.nowMs",
+    "scripts/client/admin_animation_trace.ts: shot = admin.lastAttackAtMs"
+  ],
+  "alignment": {
+    "wallClockMinusEngineMs": 1793019162212.0,
+    "clockSamples": 135,
+    "clockSampleRangeMs": [
+      1793019162212.0,
+      1793019162213.0
+    ],
+    "clipUtcStartMs": 1793019910370.895,
+    "clipOriginEngineMs": 748158.8950195312,
+    "method": "135 UTC/t pairs from the capture client log, engine ticks equal simulation clock at normal scale with no pause. Median UTC-engine offset; range is 1 ms. Subtract native recording startedAt plus master trim of 3000 ms. Capture rasterization is quantized to 30 fps; do not shift stamps to fit audit windows."
+  },
+  "rows": [
+    {
+      "criticWindowSeconds": [
+        4.07,
+        5.03
+      ],
+      "serverShotStampsMs": [
+        753005,
+        753105,
+        753204
+      ],
+      "wallAlignedClipSeconds": [
+        4.846105,
+        4.946105,
+        5.045105
+      ],
+      "shotsStrictlyInsideWindow": 2
+    },
+    {
+      "criticWindowSeconds": [
+        8.5,
+        9.5
+      ],
+      "serverShotStampsMs": [
+        757439,
+        757539,
+        757639
+      ],
+      "wallAlignedClipSeconds": [
+        9.280105,
+        9.380105,
+        9.480105
+      ],
+      "shotsStrictlyInsideWindow": 3
+    },
+    {
+      "criticWindowSeconds": [
+        13,
+        13.9
+      ],
+      "serverShotStampsMs": [
+        761904,
+        762004,
+        762105
+      ],
+      "wallAlignedClipSeconds": [
+        13.745105,
+        13.845105,
+        13.946105
+      ],
+      "shotsStrictlyInsideWindow": 2
+    },
+    {
+      "criticWindowSeconds": [
+        17.43,
+        18.37
+      ],
+      "serverShotStampsMs": [
+        766339,
+        766439,
+        766539
+      ],
+      "wallAlignedClipSeconds": [
+        18.180105,
+        18.280105,
+        18.380105
+      ],
+      "shotsStrictlyInsideWindow": 2
+    }
+  ],
+  "traceRecords": [
+    {
+      "serverShotMs": 753005,
+      "firstObservedTrace": {
+        "f": 21421,
+        "t": 753008,
+        "rt": 752880.9,
+        "lt": 752981,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": false,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 753005,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.2,
+        "rate": 1,
+        "plays": 99,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 0.43,
+        "hipsFix": 0,
+        "hipsYaw": 87.48,
+        "chestYaw": 80.68,
+        "boreYaw": 142.13,
+        "borePitch": -0.03,
+        "borePitchEnd": -0.03,
+        "aimYawErr": 0.21,
+        "aimPitchErr": 0.66,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.879,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 0.26,
+        "upperPop": 0.26,
+        "popBone": "LeftArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 753105,
+      "firstObservedTrace": {
+        "f": 21424,
+        "t": 753109,
+        "rt": 752980.9,
+        "lt": 753081,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": false,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 753105,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.3,
+        "rate": 1,
+        "plays": 99,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 4.44,
+        "hipsFix": 0,
+        "hipsYaw": 87.5,
+        "chestYaw": 80.81,
+        "boreYaw": 142.15,
+        "borePitch": -0.02,
+        "borePitchEnd": -0.02,
+        "aimYawErr": 0.2,
+        "aimPitchErr": 0.66,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.879,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 0.27,
+        "upperPop": 0.27,
+        "popBone": "RightForeArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 753204,
+      "firstObservedTrace": {
+        "f": 21427,
+        "t": 753208,
+        "rt": 753080.9,
+        "lt": 753181,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": true,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 753204,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.4,
+        "rate": 1,
+        "plays": 99,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 4.44,
+        "hipsFix": 0,
+        "hipsYaw": 87.5,
+        "chestYaw": 80.89,
+        "boreYaw": 142.14,
+        "borePitch": -0.03,
+        "borePitchEnd": -0.03,
+        "aimYawErr": 0.2,
+        "aimPitchErr": 0.66,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.878,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 0.12,
+        "upperPop": 0.12,
+        "popBone": "LeftArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 757439,
+      "firstObservedTrace": {
+        "f": 21555,
+        "t": 757474,
+        "rt": 757347.7,
+        "lt": 757431,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": false,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 757439,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.233,
+        "rate": 1,
+        "plays": 101,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 0.43,
+        "hipsFix": 0,
+        "hipsYaw": 87.48,
+        "chestYaw": 80.73,
+        "boreYaw": 142.14,
+        "borePitch": -0.01,
+        "borePitchEnd": -0.01,
+        "aimYawErr": 0.2,
+        "aimPitchErr": 0.64,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.879,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 0.29,
+        "upperPop": 0.29,
+        "popBone": "LeftArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 757539,
+      "firstObservedTrace": {
+        "f": 21558,
+        "t": 757574,
+        "rt": 757447.7,
+        "lt": 757531,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": false,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 757539,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.333,
+        "rate": 1,
+        "plays": 101,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 3.54,
+        "hipsFix": 0,
+        "hipsYaw": 87.48,
+        "chestYaw": 80.66,
+        "boreYaw": 141.82,
+        "borePitch": 3.08,
+        "borePitchEnd": 3.08,
+        "aimYawErr": 0.53,
+        "aimPitchErr": -2.47,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.879,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 3.17,
+        "upperPop": 3.17,
+        "popBone": "LeftArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 757639,
+      "firstObservedTrace": {
+        "f": 21561,
+        "t": 757674,
+        "rt": 757547.7,
+        "lt": 757631,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": true,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 757639,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.433,
+        "rate": 1,
+        "plays": 101,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 3.54,
+        "hipsFix": 0,
+        "hipsYaw": 87.48,
+        "chestYaw": 80.73,
+        "boreYaw": 141.83,
+        "borePitch": 3.09,
+        "borePitchEnd": 3.09,
+        "aimYawErr": 0.51,
+        "aimPitchErr": -2.48,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.878,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.051,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 3.18,
+        "upperPop": 3.18,
+        "popBone": "Neck",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 761904,
+      "firstObservedTrace": {
+        "f": 21688,
+        "t": 761908,
+        "rt": 761780.9,
+        "lt": 761881,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": false,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 761904,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.2,
+        "rate": 1,
+        "plays": 103,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 0.43,
+        "hipsFix": 0,
+        "hipsYaw": 87.48,
+        "chestYaw": 80.68,
+        "boreYaw": 142.13,
+        "borePitch": -0.03,
+        "borePitchEnd": -0.03,
+        "aimYawErr": 0.21,
+        "aimPitchErr": 0.66,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.879,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 0.26,
+        "upperPop": 0.26,
+        "popBone": "LeftArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 762004,
+      "firstObservedTrace": {
+        "f": 21691,
+        "t": 762008,
+        "rt": 761880.9,
+        "lt": 761981,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": false,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 762004,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.3,
+        "rate": 1,
+        "plays": 103,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 4.38,
+        "hipsFix": 0,
+        "hipsYaw": 87.5,
+        "chestYaw": 80.81,
+        "boreYaw": 142.15,
+        "borePitch": -0.02,
+        "borePitchEnd": -0.02,
+        "aimYawErr": 0.2,
+        "aimPitchErr": 0.66,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.879,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 0.27,
+        "upperPop": 0.27,
+        "popBone": "RightForeArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 762105,
+      "firstObservedTrace": {
+        "f": 21694,
+        "t": 762108,
+        "rt": 761980.9,
+        "lt": 762081,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": true,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 762105,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.4,
+        "rate": 1,
+        "plays": 103,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 4.38,
+        "hipsFix": 0,
+        "hipsYaw": 87.5,
+        "chestYaw": 80.89,
+        "boreYaw": 142.14,
+        "borePitch": -0.03,
+        "borePitchEnd": -0.03,
+        "aimYawErr": 0.2,
+        "aimPitchErr": 0.66,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.878,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 0.12,
+        "upperPop": 0.12,
+        "popBone": "LeftArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 766339,
+      "firstObservedTrace": {
+        "f": 21822,
+        "t": 766374,
+        "rt": 766247.7,
+        "lt": 766331,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": false,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 766339,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.233,
+        "rate": 1,
+        "plays": 105,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 0.43,
+        "hipsFix": 0,
+        "hipsYaw": 87.48,
+        "chestYaw": 80.73,
+        "boreYaw": 142.14,
+        "borePitch": -0.01,
+        "borePitchEnd": -0.01,
+        "aimYawErr": 0.2,
+        "aimPitchErr": 0.64,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.879,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 0.29,
+        "upperPop": 0.29,
+        "popBone": "LeftArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 766439,
+      "firstObservedTrace": {
+        "f": 21825,
+        "t": 766474,
+        "rt": 766347.7,
+        "lt": 766431,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": false,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 766439,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.333,
+        "rate": 1,
+        "plays": 105,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 3.54,
+        "hipsFix": 0,
+        "hipsYaw": 87.48,
+        "chestYaw": 80.66,
+        "boreYaw": 141.82,
+        "borePitch": 3.08,
+        "borePitchEnd": 3.08,
+        "aimYawErr": 0.53,
+        "aimPitchErr": -2.47,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.879,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.052,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 3.17,
+        "upperPop": 3.17,
+        "popBone": "LeftArm",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    },
+    {
+      "serverShotMs": 766539,
+      "firstObservedTrace": {
+        "f": 21828,
+        "t": 766574,
+        "rt": 766447.7,
+        "lt": 766531,
+        "id": "soldier-e27",
+        "kind": "rifle",
+        "crouched": true,
+        "crouchWeight": 0,
+        "coverTuckRadians": 0,
+        "legStretch": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "d": 6.11,
+        "posed": true,
+        "x": -548.376,
+        "z": -362.889,
+        "sx": -548.376,
+        "sz": -362.889,
+        "tgt": "local",
+        "ph": "none",
+        "shot": 766539,
+        "fl": 0,
+        "gr": true,
+        "tr": null,
+        "cover": "none",
+        "yaw": 142.2,
+        "vx": 0,
+        "vz": 0,
+        "clip": "RifleAimIdle",
+        "at": 1.433,
+        "rate": 1,
+        "plays": 105,
+        "gait": "idle",
+        "sec": "MachineGunRunStrafeLeft",
+        "w": 0,
+        "sp": 0,
+        "posture": "jog",
+        "turn": "planted",
+        "turnOff": 0.12,
+        "trans": false,
+        "hit": "",
+        "hitW": 0,
+        "baked": true,
+        "stun": false,
+        "air": "ground",
+        "pitch": 3.54,
+        "hipsFix": 0,
+        "hipsYaw": 87.48,
+        "chestYaw": 80.73,
+        "boreYaw": 141.83,
+        "borePitch": 3.09,
+        "borePitchEnd": 3.09,
+        "aimYawErr": 0.51,
+        "aimPitchErr": -2.48,
+        "feet": [
+          [
+            -548.299,
+            -0.756,
+            -363.119
+          ],
+          [
+            -548.462,
+            -0.69,
+            -362.605
+          ],
+          [
+            -548.205,
+            -0.878,
+            -363.195
+          ],
+          [
+            -548.367,
+            -0.799,
+            -362.515
+          ]
+        ],
+        "hipsY": 0.009,
+        "stanceSink": 0.08,
+        "stanceShift": 0.028,
+        "rearTip": 0,
+        "plant": 3,
+        "plantPull": 0.051,
+        "plantRel": "",
+        "walkW": 1,
+        "pop": 3.18,
+        "upperPop": 3.18,
+        "popBone": "Neck",
+        "legBlend": null,
+        "legKept": null,
+        "legPrimary": null
+      }
+    }
+  ],
+  "sourceClientLogSha256": "07d6c5edef844cc35e15e6a4d45a736496639e61ab842e4385e2fb0dc456c53b"
+}
