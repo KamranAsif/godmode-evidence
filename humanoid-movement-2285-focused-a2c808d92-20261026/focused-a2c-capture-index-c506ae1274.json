@@ -1,0 +1,1583 @@
+{
+  "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+  "frozenBaseline": "b1be5c9813c679ed545450dc4501f8724d4668dd",
+  "priorHead": "344983665a1546661b7fa1650c54f3883a7cc1a8",
+  "description": "New native seeded mixed fights. Old event ticks are not replayed. Each target keeps normal AI/input/physics; separate fixed-bearing spectator follows translation. Diagnostic VFX suppression. These traces do not establish causation or clear non-reproduced old flags.",
+  "cases": [
+    {
+      "name": "grenadier-3",
+      "seed": 2853137488,
+      "id": "grenadier-e17",
+      "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+      "result": {
+        "meter": true,
+        "seed": 2853137488,
+        "survivedMs": 120127,
+        "streamFailed": false,
+        "restarts": 0,
+        "deaths": 0,
+        "kills": 0,
+        "maxAlive": 26,
+        "shots": 0
+      },
+      "selected": {
+        "turn": {
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 174,
+          "ms": 63886.3,
+          "fromTick": 171,
+          "fromMs": 63836.3,
+          "speed": 0,
+          "turnDegS": 450.3448269728271,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn"
+        },
+        "speed": {
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 4122,
+          "ms": 132148,
+          "fromTick": 4119,
+          "fromMs": 132098,
+          "speed": 6.834325131277796,
+          "turnDegS": 6.875493541569885,
+          "attack": "none",
+          "phase": "move",
+          "event": "speed"
+        },
+        "ratio": {
+          "event": "dart",
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 393,
+          "ms": 67697,
+          "ratio": 1.432953821631986,
+          "travel": 0.14534441853751448,
+          "expected": 0.10142993887408197,
+          "attack": "none",
+          "phase": "move",
+          "wall": false
+        }
+      },
+      "targetEvents": [
+        {
+          "event": "dart",
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 393,
+          "ms": 67697,
+          "ratio": 1.432953821631986,
+          "travel": 0.14534441853751448,
+          "expected": 0.10142993887408197,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 393,
+          "lastTick": 393
+        },
+        {
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 174,
+          "ms": 63886.3,
+          "fromTick": 171,
+          "fromMs": 63836.3,
+          "speed": 0,
+          "turnDegS": 450.3448269728271,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn-window"
+        },
+        {
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 177,
+          "ms": 63936.3,
+          "fromTick": 174,
+          "fromMs": 63886.3,
+          "speed": 0,
+          "turnDegS": 449.1989113825654,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn-window"
+        },
+        {
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 180,
+          "ms": 64017.3,
+          "fromTick": 177,
+          "fromMs": 63936.3,
+          "speed": 0.040000000000190994,
+          "turnDegS": 450.34482697282687,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn-window"
+        },
+        {
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 183,
+          "ms": 64067.3,
+          "fromTick": 180,
+          "fromMs": 64017.3,
+          "speed": 0.12649110640662015,
+          "turnDegS": 450.3448269728271,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn-window"
+        },
+        {
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "tick": 186,
+          "ms": 64125.7,
+          "fromTick": 183,
+          "fromMs": 64067.3,
+          "speed": 0.20396078054357047,
+          "turnDegS": 436.5938398896873,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn-window"
+        },
+        {
+          "event": "raw-turn-maximum",
+          "id": "grenadier-e17",
+          "tick": 174,
+          "ms": 63886.3,
+          "kind": "grenadier",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "tick": 392,
+          "ms": 67680.3,
+          "delta": 0.016666666666666666,
+          "turnDelta": 0,
+          "phaseBefore": "move",
+          "phaseAfter": "move",
+          "rate": 6.3789868734417094,
+          "event": "cadence-transition",
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "tick": 393,
+          "ms": 67697,
+          "delta": 0.016666666666666666,
+          "turnDelta": 0,
+          "phaseBefore": "move",
+          "phaseAfter": "move",
+          "rate": 6.3789868734417094,
+          "event": "cadence-transition",
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "tick": 4225,
+          "ms": 133913,
+          "delta": 0.05,
+          "turnDelta": 0.016666666666666666,
+          "phaseBefore": "move",
+          "phaseAfter": "move",
+          "rate": 32.659027629657864,
+          "event": "cadence-transition",
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "tick": 1414,
+          "ms": 85244,
+          "delta": 0.05,
+          "turnDelta": 0.05,
+          "phaseAfter": "move",
+          "rate": 6.5886736809611,
+          "event": "aim-to-fire",
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "tick": 1738,
+          "ms": 90778.7,
+          "delta": 0.05,
+          "turnDelta": 0.05,
+          "phaseAfter": "move",
+          "rate": 2.682078683280607,
+          "event": "aim-to-fire",
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "tick": 2155,
+          "ms": 97994.7,
+          "delta": 0.05,
+          "turnDelta": 0.05,
+          "phaseAfter": "move",
+          "rate": 2.2225435559221496,
+          "event": "aim-to-fire",
+          "id": "grenadier-e17",
+          "kind": "grenadier",
+          "phase": "move",
+          "attack": "none"
+        }
+      ],
+      "omittedFinalRows": {
+        "server": 1,
+        "rich-server": 1,
+        "client": 1
+      },
+      "sources": {
+        "server": {
+          "selectedRows": 7050,
+          "sha256": "a491c3d3bff4e980ce3cc8451a40573af6a85e0c912595a3da21c4c09d0b6431"
+        },
+        "rich-server": {
+          "selectedRows": 7050,
+          "sha256": "e5950ee541deadbf194e26d8f09015d854e5a5c89d994b1bd9538c36782f5e4f"
+        },
+        "client": {
+          "selectedRows": 4901,
+          "sha256": "33d7860881f46b040b91431b2bcc3e00a904b1288cf0a12598a1bd513fdab21b"
+        }
+      },
+      "camera": {
+        "bearing": 95,
+        "rise": 2.6,
+        "fixedWorldBearing": true,
+        "translationFollow": true
+      },
+      "recording": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 3600,
+        "startedAt": "2026-10-26T11:52:18.6612439Z",
+        "elapsedMs": 120298,
+        "maxGapMs": 70.95500000000175,
+        "gapsOver100Ms": 0,
+        "gapsOver200Ms": 0
+      },
+      "traceArtifact": "focused-a2c-grenadier-3-grenadier-e17-traces.jsonl.gz",
+      "nonTargetOpenReversals": [],
+      "nativeTurn": {
+        "dir": "D:\\work\\godmode-roguelite-worktrees\\verify-humanoid-2285-v2-20261025\\artifacts\\humanoid-verification\\focused-cadence\\grenadier-3\\seed-2853137488",
+        "id": "grenadier-e17",
+        "rows": 7050,
+        "malformed": 1,
+        "peakRawTurn": {
+          "tick": 174,
+          "ms": 63886.33333333329,
+          "fromTick": 171,
+          "rate": 450.00004667333667
+        },
+        "turnToleranceDegS": 0.001,
+        "turnCapPass": true,
+        "cadenceBudgetTransitions": [
+          {
+            "tick": 392,
+            "ms": 67680.33333333342,
+            "delta": 0.016666666666666666,
+            "turnDelta": 0,
+            "phaseBefore": "move",
+            "phaseAfter": "move",
+            "rate": 6.3789868734417094
+          },
+          {
+            "tick": 393,
+            "ms": 67697.00000000009,
+            "delta": 0.016666666666666666,
+            "turnDelta": 0,
+            "phaseBefore": "move",
+            "phaseAfter": "move",
+            "rate": 6.3789868734417094
+          },
+          {
+            "tick": 4225,
+            "ms": 133912.99999999985,
+            "delta": 0.05,
+            "turnDelta": 0.016666666666666666,
+            "phaseBefore": "move",
+            "phaseAfter": "move",
+            "rate": 32.659027629657864
+          }
+        ],
+        "aimToFire": [
+          {
+            "tick": 1414,
+            "ms": 85244,
+            "delta": 0.05,
+            "turnDelta": 0.05,
+            "phaseAfter": "move",
+            "rate": 6.5886736809611
+          },
+          {
+            "tick": 1738,
+            "ms": 90778.66666666669,
+            "delta": 0.05,
+            "turnDelta": 0.05,
+            "phaseAfter": "move",
+            "rate": 2.682078683280607
+          },
+          {
+            "tick": 2155,
+            "ms": 97994.66666666667,
+            "delta": 0.05,
+            "turnDelta": 0.05,
+            "phaseAfter": "move",
+            "rate": 2.2225435559221496
+          }
+        ],
+        "result": {
+          "seed": 2853137488,
+          "summary": {
+            "meter": true,
+            "seed": 2853137488,
+            "survivedMs": 120127,
+            "streamFailed": false,
+            "restarts": 0,
+            "deaths": 0,
+            "kills": 0,
+            "maxAlive": 26,
+            "shots": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "smg-1",
+      "seed": 1871,
+      "id": "smg-e23",
+      "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+      "result": {
+        "meter": true,
+        "seed": 1871,
+        "survivedMs": 120091,
+        "streamFailed": false,
+        "restarts": 0,
+        "deaths": 0,
+        "kills": 0,
+        "maxAlive": 26,
+        "shots": 0
+      },
+      "selected": {
+        "turn": {
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 183,
+          "ms": 87398.7,
+          "fromTick": 180,
+          "fromMs": 87337,
+          "speed": 0,
+          "turnDegS": 450.3448269728271,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn"
+        },
+        "speed": {
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 1752,
+          "ms": 115604,
+          "fromTick": 1749,
+          "fromMs": 115554,
+          "speed": 7.756494053371813,
+          "turnDegS": 13.750987083139771,
+          "attack": "none",
+          "phase": "move",
+          "event": "speed"
+        },
+        "ratio": {
+          "event": "dart",
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 377,
+          "ms": 91056,
+          "ratio": 1.233672571213953,
+          "travel": 0.23817010727628404,
+          "expected": 0.19305779575039184,
+          "attack": "none",
+          "phase": "move",
+          "wall": false
+        }
+      },
+      "targetEvents": [],
+      "omittedFinalRows": {
+        "server": 1,
+        "rich-server": 1,
+        "client": 1
+      },
+      "sources": {
+        "server": {
+          "selectedRows": 6814,
+          "sha256": "7be142a0960255aca25ef9b3220d54deade39ed06d005ac4b2ca87582ff04bd1"
+        },
+        "rich-server": {
+          "selectedRows": 6814,
+          "sha256": "26c1eadcb659ae9cb3749301a3efa1e58e859776355f76adbcbd11a34d9f3bcc"
+        },
+        "client": {
+          "selectedRows": 4852,
+          "sha256": "7a5668cc207fe16fb1ca6bcd36e5fb04e07d1c94c1dddea4d8094e3703683db9"
+        }
+      },
+      "camera": {
+        "bearing": 95,
+        "rise": 2.6,
+        "fixedWorldBearing": true,
+        "translationFollow": true
+      },
+      "recording": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 3600,
+        "startedAt": "2026-10-26T11:56:03.2122238Z",
+        "elapsedMs": 119991,
+        "maxGapMs": 72.05699999999888,
+        "gapsOver100Ms": 0,
+        "gapsOver200Ms": 0
+      },
+      "traceArtifact": "focused-a2c-smg-1-smg-e23-traces.jsonl.gz",
+      "nonTargetOpenReversals": []
+    },
+    {
+      "name": "shotgun2853-1",
+      "seed": 2853137488,
+      "id": "soldier-e9",
+      "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+      "result": {
+        "meter": true,
+        "seed": 2853137488,
+        "survivedMs": 120033,
+        "streamFailed": false,
+        "restarts": 0,
+        "deaths": 0,
+        "kills": 0,
+        "maxAlive": 26,
+        "shots": 0
+      },
+      "selected": {
+        "turn": {
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 2235,
+          "ms": 105981.7,
+          "fromTick": 2232,
+          "fromMs": 105931.7,
+          "speed": 1.6190120444264193,
+          "turnDegS": 450.34482697282726,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn"
+        },
+        "speed": {
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 2067,
+          "ms": 103081.3,
+          "fromTick": 2064,
+          "fromMs": 103025.7,
+          "speed": 5.005037462397684,
+          "turnDegS": 26.356058576017503,
+          "attack": "none",
+          "phase": "move",
+          "event": "speed"
+        },
+        "ratio": {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 333,
+          "ms": 73439.3,
+          "ratio": 1.2848748944787185,
+          "travel": 0.055000000000063665,
+          "expected": 0.042805723916317547,
+          "attack": "none",
+          "phase": "move",
+          "wall": false
+        }
+      },
+      "targetEvents": [
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 70928.3,
+          "tick": 186,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun2853-1/seed-2853137488",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 73439.3,
+          "tick": 333,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun2853-1/seed-2853137488",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        }
+      ],
+      "omittedFinalRows": {
+        "server": 1,
+        "rich-server": 1,
+        "client": 1
+      },
+      "sources": {
+        "server": {
+          "selectedRows": 6959,
+          "sha256": "d002987e27dcdb5ab7e9ad087d1faf65d76a7c97f7af0948a3fb5e0ffe0b7f7b"
+        },
+        "rich-server": {
+          "selectedRows": 6959,
+          "sha256": "9c52e1405dfb43beaf8ced96bc4643dc92ef79d79133d32818d4f55e4236832c"
+        },
+        "client": {
+          "selectedRows": 4567,
+          "sha256": "2242716f6e0a99020853bc4595d48a0bd0f98c9d9ec92c5783f8bdd5852c4e54"
+        }
+      },
+      "camera": {
+        "bearing": 95,
+        "rise": 2.6,
+        "fixedWorldBearing": true,
+        "translationFollow": true
+      },
+      "recording": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 3600,
+        "startedAt": "2026-10-26T11:59:18.4109258Z",
+        "elapsedMs": 119993,
+        "maxGapMs": 72.87099999999919,
+        "gapsOver100Ms": 0,
+        "gapsOver200Ms": 0
+      },
+      "traceArtifact": "focused-a2c-shotgun2853-1-soldier-e9-traces.jsonl.gz",
+      "nonTargetOpenReversals": [
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 88976,
+          "tick": 1245,
+          "legMs": 400,
+          "gapMs": 350,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun2853-1/seed-2853137488",
+          "event": "open-reversal",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 130715.3,
+          "tick": 3678,
+          "legMs": 800,
+          "gapMs": 350,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun2853-1/seed-2853137488",
+          "event": "open-reversal",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 177876.3,
+          "tick": 6417,
+          "legMs": 100,
+          "gapMs": 200,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun2853-1/seed-2853137488",
+          "event": "open-reversal",
+          "phase": "move",
+          "attack": "none"
+        }
+      ]
+    },
+    {
+      "name": "shotgun7e8-1",
+      "seed": 7,
+      "id": "soldier-e8",
+      "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+      "result": {
+        "meter": true,
+        "seed": 7,
+        "survivedMs": 120070,
+        "streamFailed": false,
+        "restarts": 0,
+        "deaths": 0,
+        "kills": 0,
+        "maxAlive": 26,
+        "shots": 0
+      },
+      "selected": {
+        "turn": {
+          "id": "soldier-e8",
+          "kind": "shotgun",
+          "tick": 162,
+          "ms": 85886.7,
+          "fromTick": 159,
+          "fromMs": 85789.7,
+          "speed": 2.216393466874273,
+          "turnDegS": 450.3448269728271,
+          "attack": "none",
+          "phase": "settle",
+          "event": "turn"
+        },
+        "speed": {
+          "id": "soldier-e8",
+          "kind": "shotgun",
+          "tick": 855,
+          "ms": 98754.7,
+          "fromTick": 852,
+          "fromMs": 98704.7,
+          "speed": 7.838009951512365,
+          "turnDegS": 18.33464944418636,
+          "attack": "none",
+          "phase": "move",
+          "event": "speed"
+        },
+        "ratio": {
+          "event": "dart",
+          "id": "soldier-e8",
+          "kind": "shotgun",
+          "tick": 155,
+          "ms": 85713,
+          "ratio": 2.7917368793753767,
+          "travel": 0.10473776778221879,
+          "expected": 0.037517062784818325,
+          "attack": "none",
+          "phase": "move",
+          "wall": false
+        }
+      },
+      "targetEvents": [
+        {
+          "event": "dart",
+          "id": "soldier-e8",
+          "kind": "shotgun",
+          "tick": 155,
+          "ms": 85713,
+          "ratio": 2.7917368793753767,
+          "travel": 0.10473776778221879,
+          "expected": 0.037517062784818325,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 155,
+          "lastTick": 158
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e8",
+          "kind": "shotgun",
+          "tick": 162,
+          "ms": 85886.7,
+          "ratio": 1.4778896096413103,
+          "travel": 0.11081967334371366,
+          "expected": 0.0749850818496586,
+          "attack": "none",
+          "phase": "settle",
+          "wall": false,
+          "firstTick": 162,
+          "lastTick": 163
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e8",
+          "kind": "shotgun",
+          "tick": 168,
+          "ms": 86020.7,
+          "ratio": 1.757614846831756,
+          "travel": 0.05277309920780213,
+          "expected": 0.030025405908996466,
+          "attack": "none",
+          "phase": "settle",
+          "wall": false,
+          "firstTick": 167,
+          "lastTick": 168
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e8",
+          "kind": "shotgun",
+          "tick": 4807,
+          "ms": 203262.3,
+          "ratio": 1.7334744728260814,
+          "travel": 0.05346026561849259,
+          "expected": 0.030839949740555674,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4807,
+          "lastTick": 4807
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 85729.7,
+          "tick": 156,
+          "legMs": 50,
+          "gapMs": 150,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "contact-reversal",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 119422.3,
+          "tick": 2040,
+          "legMs": 350,
+          "gapMs": 350,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "contact-reversal",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 114718,
+          "tick": 1767,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 119200.3,
+          "tick": 2028,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 121759.3,
+          "tick": 2178,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 156882.7,
+          "tick": 3333,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 186993,
+          "tick": 3996,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 202895.7,
+          "tick": 4785,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 203295.7,
+          "tick": 4809,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e8-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        }
+      ],
+      "omittedFinalRows": {
+        "server": 1,
+        "rich-server": 1,
+        "client": 0
+      },
+      "sources": {
+        "server": {
+          "selectedRows": 4763,
+          "sha256": "3952c0718d18b0e2547ce36c62e9e2ef5d9f5f6066d4f5ea6667a44503d7db36"
+        },
+        "rich-server": {
+          "selectedRows": 4763,
+          "sha256": "fcceef760626399b97e60e4ec54100585089b4344412e23aa5f402a118d6dfd4"
+        },
+        "client": {
+          "selectedRows": 2345,
+          "sha256": "7befca37575eab5771d9b14c7d1fd8757efa9ac7572713e63f8a8bf0bc426dff"
+        }
+      },
+      "camera": {
+        "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+        "subject": "shotgun7e8",
+        "id": "soldier-e8",
+        "seed": "7",
+        "take": "1",
+        "bearing": -70,
+        "rise": 4.5,
+        "fixedWorldBearing": true,
+        "translationFollow": true,
+        "noCameraCuts": true,
+        "diagnosticSmokeSuppression": true,
+        "aiInputsPhysicsUnchanged": true,
+        "exit": 0
+      },
+      "recording": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 3600,
+        "startedAt": "2026-10-26T12:02:47.7800335Z",
+        "elapsedMs": 119998,
+        "maxGapMs": 123.64200000000001,
+        "gapsOver100Ms": 1,
+        "gapsOver200Ms": 0
+      },
+      "traceArtifact": "focused-a2c-shotgun7e8-1-soldier-e8-traces.jsonl.gz",
+      "nonTargetOpenReversals": []
+    },
+    {
+      "name": "shotgun7e9-1",
+      "seed": 7,
+      "id": "soldier-e9",
+      "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+      "result": {
+        "meter": true,
+        "seed": 7,
+        "survivedMs": 120048,
+        "streamFailed": false,
+        "restarts": 0,
+        "deaths": 0,
+        "kills": 0,
+        "maxAlive": 26,
+        "shots": 0
+      },
+      "selected": {
+        "turn": {
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4857,
+          "ms": 147185.3,
+          "fromTick": 4854,
+          "fromMs": 147135.3,
+          "speed": 0.3006659275672301,
+          "turnDegS": 450.34482697282726,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn"
+        },
+        "speed": {
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4482,
+          "ms": 140768,
+          "fromTick": 4479,
+          "fromMs": 140718,
+          "speed": 15.911568118824277,
+          "turnDegS": 449.1989113825653,
+          "attack": "none",
+          "phase": "move",
+          "event": "speed"
+        },
+        "ratio": {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4481,
+          "ms": 140751.3,
+          "ratio": 7.60042651362989,
+          "travel": 0.7876858510853477,
+          "expected": 0.10363705900883141,
+          "attack": "none",
+          "phase": "move",
+          "wall": false
+        }
+      },
+      "targetEvents": [
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 1857,
+          "ms": 95456.7,
+          "ratio": 1.6002096963895616,
+          "travel": 0.0646219776856165,
+          "expected": 0.04038344338958728,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 1857,
+          "lastTick": 1857
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4393,
+          "ms": 139211.3,
+          "ratio": 1.6134146341075046,
+          "travel": 0.06844705983459957,
+          "expected": 0.04242372567325978,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4393,
+          "lastTick": 4393
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4395,
+          "ms": 139244.7,
+          "ratio": 1.7871649573241246,
+          "travel": 0.09178779875342302,
+          "expected": 0.05135944411692947,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4395,
+          "lastTick": 4395
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4397,
+          "ms": 139278,
+          "ratio": 1.5363553731304167,
+          "travel": 0.11661903789687793,
+          "expected": 0.07590629091188689,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4397,
+          "lastTick": 4397
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4399,
+          "ms": 139337.7,
+          "ratio": 1.4064753591848045,
+          "travel": 0.14183441049335382,
+          "expected": 0.10084386446383341,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4399,
+          "lastTick": 4399
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4481,
+          "ms": 140751.3,
+          "ratio": 7.60042651362989,
+          "travel": 0.7876858510853477,
+          "expected": 0.10363705900883141,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4479,
+          "lastTick": 4485
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4861,
+          "ms": 147252,
+          "ratio": 1.5222816737849105,
+          "travel": 0.0646219776856165,
+          "expected": 0.0424507361538054,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4861,
+          "lastTick": 4861
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4863,
+          "ms": 147285.3,
+          "ratio": 1.5492458117103034,
+          "travel": 0.07684399781373293,
+          "expected": 0.049600907249767116,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4863,
+          "lastTick": 4863
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4896,
+          "ms": 147844,
+          "ratio": 1.5188442130147808,
+          "travel": 0.11764352935881543,
+          "expected": 0.07745595522617998,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4896,
+          "lastTick": 4896
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4898,
+          "ms": 147877.3,
+          "ratio": 1.5155150526356522,
+          "travel": 0.10217631819552223,
+          "expected": 0.06742019356246316,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4898,
+          "lastTick": 4898
+        },
+        {
+          "event": "dart",
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4955,
+          "ms": 148863.7,
+          "ratio": 1.494489640428285,
+          "travel": 0.05600892785980137,
+          "expected": 0.03747695958852585,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 4955,
+          "lastTick": 4955
+        },
+        {
+          "id": "soldier-e9",
+          "kind": "shotgun",
+          "tick": 4482,
+          "ms": 140768,
+          "fromTick": 4479,
+          "fromMs": 140718,
+          "speed": 15.911568118824277,
+          "turnDegS": 449.1989113825653,
+          "attack": "none",
+          "phase": "move",
+          "event": "discontinuity"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 66709,
+          "tick": 183,
+          "legMs": 400,
+          "gapMs": 250,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "contact-reversal",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 66709,
+          "tick": 183,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 95456.7,
+          "tick": 1857,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 95727.7,
+          "tick": 1872,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 108949.7,
+          "tick": 2637,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 139244.7,
+          "tick": 4395,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 145297,
+          "tick": 4749,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 147285.3,
+          "tick": 4863,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 149288.3,
+          "tick": 4980,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e9",
+          "ms": 164574.7,
+          "tick": 5865,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "direction-flip",
+          "phase": "move",
+          "attack": "none"
+        }
+      ],
+      "omittedFinalRows": {
+        "server": 1,
+        "rich-server": 1,
+        "client": 1
+      },
+      "sources": {
+        "server": {
+          "selectedRows": 6927,
+          "sha256": "3fad7e950bfd9d66211d239868392acdef358689558058b230f777fd5fa78af0"
+        },
+        "rich-server": {
+          "selectedRows": 6927,
+          "sha256": "6661a271a6abc486e137b160414a75c9a40fbce3ed42e9249a0710a72adc9367"
+        },
+        "client": {
+          "selectedRows": 5219,
+          "sha256": "12d8d2ae6810076be01788d5be304e92f0e2570d03e8112d70e0e1daa655744f"
+        }
+      },
+      "camera": {
+        "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+        "subject": "shotgun7e9",
+        "id": "soldier-e9",
+        "seed": "7",
+        "take": "1",
+        "bearing": -70,
+        "rise": 4.5,
+        "fixedWorldBearing": true,
+        "translationFollow": true,
+        "noCameraCuts": true,
+        "diagnosticSmokeSuppression": true,
+        "aiInputsPhysicsUnchanged": true,
+        "exit": 0
+      },
+      "recording": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 3600,
+        "startedAt": "2026-10-26T12:05:59.9074484Z",
+        "elapsedMs": 120002,
+        "maxGapMs": 72.8859999999986,
+        "gapsOver100Ms": 0,
+        "gapsOver200Ms": 0
+      },
+      "traceArtifact": "focused-a2c-shotgun7e9-1-soldier-e9-traces.jsonl.gz",
+      "nonTargetOpenReversals": [
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 85322.7,
+          "tick": 1266,
+          "legMs": 600,
+          "gapMs": 300,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "open-reversal",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 98965.3,
+          "tick": 2061,
+          "legMs": 850,
+          "gapMs": 350,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "open-reversal",
+          "phase": "move",
+          "attack": "none"
+        },
+        {
+          "kind": "shotgun",
+          "id": "soldier-e8",
+          "ms": 99332,
+          "tick": 2082,
+          "legMs": 100,
+          "gapMs": 250,
+          "fight": "artifacts/humanoid-verification/focused-cadence/shotgun7e9-1/seed-7",
+          "event": "open-reversal",
+          "phase": "move",
+          "attack": "none"
+        }
+      ]
+    },
+    {
+      "name": "smg-2",
+      "seed": 1871,
+      "id": "smg-e23",
+      "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+      "result": {
+        "meter": true,
+        "seed": 1871,
+        "survivedMs": 120085,
+        "streamFailed": false,
+        "restarts": 0,
+        "deaths": 0,
+        "kills": 0,
+        "maxAlive": 26,
+        "shots": 0
+      },
+      "selected": {
+        "turn": {
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 2151,
+          "ms": 73054.7,
+          "fromTick": 2148,
+          "fromMs": 73004.7,
+          "speed": 2.3364930986414274,
+          "turnDegS": 450.55717335890205,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn"
+        },
+        "speed": {
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 1605,
+          "ms": 63707.3,
+          "fromTick": 1602,
+          "fromMs": 63657.3,
+          "speed": 7.887864096192329,
+          "turnDegS": 6.8754935415696306,
+          "attack": "none",
+          "phase": "move",
+          "event": "speed"
+        },
+        "ratio": {
+          "event": "dart",
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 6579,
+          "ms": 151607,
+          "ratio": 1.4301980332001136,
+          "travel": 0.06100000000003547,
+          "expected": 0.042651436083677184,
+          "attack": "none",
+          "phase": "move",
+          "wall": false
+        }
+      },
+      "targetEvents": [
+        {
+          "event": "dart",
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 6187,
+          "ms": 144775.7,
+          "ratio": 1.423353718353836,
+          "travel": 0.05345091205963645,
+          "expected": 0.037552796167529254,
+          "attack": "none",
+          "phase": "settle",
+          "wall": false,
+          "firstTick": 6187,
+          "lastTick": 6187
+        },
+        {
+          "event": "dart",
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 6579,
+          "ms": 151607,
+          "ratio": 1.4301980332001136,
+          "travel": 0.06100000000003547,
+          "expected": 0.042651436083677184,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 6579,
+          "lastTick": 6579
+        }
+      ],
+      "omittedFinalRows": {
+        "server": 1,
+        "rich-server": 1,
+        "client": 1
+      },
+      "sources": {
+        "server": {
+          "selectedRows": 6801,
+          "sha256": "795eb936957f0d810150bc646af0a168fd20c26a0833ce5ed7e018caeb1ce9d0"
+        },
+        "rich-server": {
+          "selectedRows": 6802,
+          "sha256": "6393a0e8513911d26735afd2391bf949291ac5650c8d8835f8acd52dd8802c10"
+        },
+        "client": {
+          "selectedRows": 4752,
+          "sha256": "31e22833dcf66e8d495bb5a429d0bbcaac40ec3c7c0f0267481795b7042c4b74"
+        }
+      },
+      "camera": {
+        "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+        "subject": "smg",
+        "id": "smg-e23",
+        "seed": "1871",
+        "take": "2",
+        "bearing": -70,
+        "rise": 4.5,
+        "fixedWorldBearing": true,
+        "translationFollow": true,
+        "noCameraCuts": true,
+        "diagnosticSmokeSuppression": true,
+        "aiInputsPhysicsUnchanged": true,
+        "exit": 0
+      },
+      "recording": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 3600,
+        "startedAt": "2026-10-26T12:08:42.6966178Z",
+        "elapsedMs": 120006,
+        "maxGapMs": 70.73199999999997,
+        "gapsOver100Ms": 0,
+        "gapsOver200Ms": 0
+      },
+      "traceArtifact": "focused-a2c-smg-2-smg-e23-traces.jsonl.gz",
+      "nonTargetOpenReversals": []
+    },
+    {
+      "name": "smg-3",
+      "seed": 1871,
+      "id": "smg-e23",
+      "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+      "result": {
+        "meter": true,
+        "seed": 1871,
+        "survivedMs": 120124,
+        "streamFailed": false,
+        "restarts": 0,
+        "deaths": 0,
+        "kills": 0,
+        "maxAlive": 26,
+        "shots": 0
+      },
+      "selected": {
+        "turn": {
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 186,
+          "ms": 39345.7,
+          "fromTick": 183,
+          "fromMs": 39295.7,
+          "speed": 0,
+          "turnDegS": 450.3448269728271,
+          "attack": "none",
+          "phase": "move",
+          "event": "turn"
+        },
+        "speed": {
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 1911,
+          "ms": 70691.3,
+          "fromTick": 1908,
+          "fromMs": 70641.3,
+          "speed": 13.88437971246919,
+          "turnDegS": 450.3448269728271,
+          "attack": "none",
+          "phase": "move",
+          "event": "speed"
+        },
+        "ratio": {
+          "event": "dart",
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 1911,
+          "ms": 70691.3,
+          "ratio": 7.631880768836158,
+          "travel": 0.6942189856234595,
+          "expected": 0.09096302820377081,
+          "attack": "none",
+          "phase": "move",
+          "wall": false
+        }
+      },
+      "targetEvents": [
+        {
+          "event": "dart",
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 532,
+          "ms": 45210.3,
+          "ratio": 1.618759254056194,
+          "travel": 0.08095677859204518,
+          "expected": 0.050011623648907856,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 532,
+          "lastTick": 532
+        },
+        {
+          "event": "dart",
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 1911,
+          "ms": 70691.3,
+          "ratio": 7.631880768836158,
+          "travel": 0.6942189856234595,
+          "expected": 0.09096302820377081,
+          "attack": "none",
+          "phase": "move",
+          "wall": false,
+          "firstTick": 1909,
+          "lastTick": 1914
+        },
+        {
+          "id": "smg-e23",
+          "kind": "smg",
+          "tick": 1911,
+          "ms": 70691.3,
+          "fromTick": 1908,
+          "fromMs": 70641.3,
+          "speed": 13.88437971246919,
+          "turnDegS": 450.3448269728271,
+          "attack": "none",
+          "phase": "move",
+          "event": "discontinuity"
+        }
+      ],
+      "omittedFinalRows": {
+        "server": 1,
+        "rich-server": 1,
+        "client": 1
+      },
+      "sources": {
+        "server": {
+          "selectedRows": 6831,
+          "sha256": "7c7acee4ae6c60de9c52f85b814badc3ffe59b481834772e9380c6b9d0541b01"
+        },
+        "rich-server": {
+          "selectedRows": 6832,
+          "sha256": "37ce0ae5c18bc9a95ede7a0df419ecbe8ca3b5738b0c019030ba581b44ae3118"
+        },
+        "client": {
+          "selectedRows": 4775,
+          "sha256": "4c2978f3467ee22cc39c863316c580643bf99a9a1e376b4aeca5e5151da99477"
+        }
+      },
+      "camera": {
+        "sha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+        "subject": "smg",
+        "id": "smg-e23",
+        "seed": "1871",
+        "take": "3",
+        "bearing": -70,
+        "rise": 4.5,
+        "fixedWorldBearing": true,
+        "translationFollow": true,
+        "noCameraCuts": true,
+        "diagnosticSmokeSuppression": true,
+        "aiInputsPhysicsUnchanged": true,
+        "exit": 0
+      },
+      "recording": {
+        "width": 1280,
+        "height": 720,
+        "fps": 30,
+        "frames": 3600,
+        "startedAt": "2026-10-26T12:11:25.5647811Z",
+        "elapsedMs": 120011,
+        "maxGapMs": 73.40600000000268,
+        "gapsOver100Ms": 0,
+        "gapsOver200Ms": 0
+      },
+      "traceArtifact": "focused-a2c-smg-3-smg-e23-traces.jsonl.gz",
+      "nonTargetOpenReversals": []
+    }
+  ]
+}
