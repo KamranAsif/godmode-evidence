@@ -1,0 +1,641 @@
+{
+  "method": "Exclusive timing hold; High 2560x1440/SMAA; uncapped, VSync off; frame profiling and native GPU/CPU monitors off. Three-second frozen-view wall-frame samples; Off controls bracket Subtle/Strong. Delta uses mean of the two Off medians. No 65-enemy combat throughput claim.",
+  "source": "ee87c1a4bac484484672b3c5dbe64707df47c452",
+  "rows": [
+    {
+      "pose": "anchor",
+      "stance": "ads",
+      "variant": "off",
+      "medianFrameMs": 9.452,
+      "meanFrameMs": 9.451645569620254,
+      "p95FrameMs": 10.254,
+      "p99FrameMs": 10.422,
+      "deltaMedianVsOffControlMs": -0.0235000000000003,
+      "offRepeatDriftPercent": 0.49601604136985483,
+      "samples": 316,
+      "focusMeters": 30
+    },
+    {
+      "pose": "anchor",
+      "stance": "ads",
+      "variant": "subtle",
+      "medianFrameMs": 9.852,
+      "meanFrameMs": 9.855617161716173,
+      "p95FrameMs": 10.43,
+      "p99FrameMs": 10.615,
+      "deltaMedianVsOffControlMs": 0.37650000000000006,
+      "offRepeatDriftPercent": 0.49601604136985483,
+      "samples": 303,
+      "focusMeters": 23.684429168701172
+    },
+    {
+      "pose": "anchor",
+      "stance": "ads",
+      "variant": "strong",
+      "medianFrameMs": 9.869,
+      "meanFrameMs": 9.872337748344378,
+      "p95FrameMs": 10.365,
+      "p99FrameMs": 10.631,
+      "deltaMedianVsOffControlMs": 0.3934999999999995,
+      "offRepeatDriftPercent": 0.49601604136985483,
+      "samples": 302,
+      "focusMeters": 23.684429168701172
+    },
+    {
+      "pose": "avenue",
+      "stance": "ads",
+      "variant": "off",
+      "medianFrameMs": 9.623,
+      "meanFrameMs": 9.622148387096772,
+      "p95FrameMs": 10.115,
+      "p99FrameMs": 10.357,
+      "deltaMedianVsOffControlMs": -0.012500000000001066,
+      "offRepeatDriftPercent": 0.25945721550516687,
+      "samples": 310,
+      "focusMeters": 23.684429168701172
+    },
+    {
+      "pose": "avenue",
+      "stance": "ads",
+      "variant": "subtle",
+      "medianFrameMs": 9.971,
+      "meanFrameMs": 10.00066107382551,
+      "p95FrameMs": 10.467,
+      "p99FrameMs": 10.667,
+      "deltaMedianVsOffControlMs": 0.3354999999999997,
+      "offRepeatDriftPercent": 0.25945721550516687,
+      "samples": 298,
+      "focusMeters": 127.31432342529297
+    },
+    {
+      "pose": "avenue",
+      "stance": "ads",
+      "variant": "strong",
+      "medianFrameMs": 9.977,
+      "meanFrameMs": 10.000237458193974,
+      "p95FrameMs": 10.432,
+      "p99FrameMs": 10.654,
+      "deltaMedianVsOffControlMs": 0.3414999999999999,
+      "offRepeatDriftPercent": 0.25945721550516687,
+      "samples": 299,
+      "focusMeters": 127.31432342529297
+    },
+    {
+      "pose": "park",
+      "stance": "ads",
+      "variant": "off",
+      "medianFrameMs": 7.425,
+      "meanFrameMs": 7.430034825870644,
+      "p95FrameMs": 8.132,
+      "p99FrameMs": 8.283,
+      "deltaMedianVsOffControlMs": -0.004999999999999893,
+      "offRepeatDriftPercent": 0.13458950201883968,
+      "samples": 402,
+      "focusMeters": 127.31432342529297
+    },
+    {
+      "pose": "park",
+      "stance": "ads",
+      "variant": "subtle",
+      "medianFrameMs": 7.794,
+      "meanFrameMs": 7.799997389033946,
+      "p95FrameMs": 8.42,
+      "p99FrameMs": 8.668,
+      "deltaMedianVsOffControlMs": 0.3639999999999999,
+      "offRepeatDriftPercent": 0.13458950201883968,
+      "samples": 383,
+      "focusMeters": 31.580886840820312
+    },
+    {
+      "pose": "park",
+      "stance": "ads",
+      "variant": "strong",
+      "medianFrameMs": 7.794,
+      "meanFrameMs": 7.796493472584856,
+      "p95FrameMs": 8.256,
+      "p99FrameMs": 8.388,
+      "deltaMedianVsOffControlMs": 0.3639999999999999,
+      "offRepeatDriftPercent": 0.13458950201883968,
+      "samples": 383,
+      "focusMeters": 31.580886840820312
+    }
+  ],
+  "rawTiming": [
+    {
+      "mark": "dof-anchor-ads-off",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "off",
+        "focusMeters": 30,
+        "foreground": 0,
+        "installed": true,
+        "amount": 0,
+        "farEnabled": false,
+        "nearEnabled": false,
+        "periphery": 0,
+        "targetMeters": 30
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 316,
+        "mean": 9.451645569620254,
+        "median": 9.452,
+        "p95": 10.254,
+        "p99": 10.422
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-anchor-ads-subtle",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "subtle",
+        "focusMeters": 23.684429168701172,
+        "foreground": 0.5,
+        "installed": true,
+        "amount": 0.03500000014901161,
+        "farEnabled": false,
+        "nearEnabled": true,
+        "periphery": 0.35,
+        "targetMeters": 23.684429168701172
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 303,
+        "mean": 9.855617161716173,
+        "median": 9.852,
+        "p95": 10.43,
+        "p99": 10.615
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-anchor-ads-strong",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "strong",
+        "focusMeters": 23.684429168701172,
+        "foreground": 1.6,
+        "installed": true,
+        "amount": 0.11999999731779099,
+        "farEnabled": false,
+        "nearEnabled": true,
+        "periphery": 1,
+        "targetMeters": 23.684429168701172
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 302,
+        "mean": 9.872337748344378,
+        "median": 9.869,
+        "p95": 10.365,
+        "p99": 10.631
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-anchor-ads-off-repeat",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "off",
+        "focusMeters": 23.684429168701172,
+        "foreground": 0,
+        "installed": true,
+        "amount": 0,
+        "farEnabled": false,
+        "nearEnabled": false,
+        "periphery": 0,
+        "targetMeters": 23.684429168701172
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 314,
+        "mean": 9.498713375796175,
+        "median": 9.499,
+        "p95": 9.988,
+        "p99": 10.118
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-avenue-ads-off",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "off",
+        "focusMeters": 23.684429168701172,
+        "foreground": 0,
+        "installed": true,
+        "amount": 0,
+        "farEnabled": false,
+        "nearEnabled": false,
+        "periphery": 0,
+        "targetMeters": 23.684429168701172
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 310,
+        "mean": 9.622148387096772,
+        "median": 9.623,
+        "p95": 10.115,
+        "p99": 10.357
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-avenue-ads-subtle",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "subtle",
+        "focusMeters": 127.31432342529297,
+        "foreground": 0.5,
+        "installed": true,
+        "amount": 0.03500000014901161,
+        "farEnabled": false,
+        "nearEnabled": true,
+        "periphery": 0.35,
+        "targetMeters": 127.31432342529297
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 298,
+        "mean": 10.00066107382551,
+        "median": 9.971,
+        "p95": 10.467,
+        "p99": 10.667
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-avenue-ads-strong",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "strong",
+        "focusMeters": 127.31432342529297,
+        "foreground": 1.6,
+        "installed": true,
+        "amount": 0.11999999731779099,
+        "farEnabled": false,
+        "nearEnabled": true,
+        "periphery": 1,
+        "targetMeters": 127.31432342529297
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 299,
+        "mean": 10.000237458193974,
+        "median": 9.977,
+        "p95": 10.432,
+        "p99": 10.654
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-avenue-ads-off-repeat",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "off",
+        "focusMeters": 127.31432342529297,
+        "foreground": 0,
+        "installed": true,
+        "amount": 0,
+        "farEnabled": false,
+        "nearEnabled": false,
+        "periphery": 0,
+        "targetMeters": 127.31432342529297
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 310,
+        "mean": 9.64309354838709,
+        "median": 9.648,
+        "p95": 10.325,
+        "p99": 10.458
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-park-ads-off",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "off",
+        "focusMeters": 127.31432342529297,
+        "foreground": 0,
+        "installed": true,
+        "amount": 0,
+        "farEnabled": false,
+        "nearEnabled": false,
+        "periphery": 0,
+        "targetMeters": 127.31432342529297
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 402,
+        "mean": 7.430034825870644,
+        "median": 7.425,
+        "p95": 8.132,
+        "p99": 8.283
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-park-ads-subtle",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "subtle",
+        "focusMeters": 31.580886840820312,
+        "foreground": 0.5,
+        "installed": true,
+        "amount": 0.03500000014901161,
+        "farEnabled": false,
+        "nearEnabled": true,
+        "periphery": 0.35,
+        "targetMeters": 31.580886840820312
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 383,
+        "mean": 7.799997389033946,
+        "median": 7.794,
+        "p95": 8.42,
+        "p99": 8.668
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-park-ads-strong",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "strong",
+        "focusMeters": 31.580886840820312,
+        "foreground": 1.6,
+        "installed": true,
+        "amount": 0.11999999731779099,
+        "farEnabled": false,
+        "nearEnabled": true,
+        "periphery": 1,
+        "targetMeters": 31.580886840820312
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 383,
+        "mean": 7.796493472584856,
+        "median": 7.794,
+        "p95": 8.256,
+        "p99": 8.388
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    },
+    {
+      "mark": "dof-park-ads-off-repeat",
+      "durationMs": 3000,
+      "components": false,
+      "variant": {
+        "variant": "off",
+        "focusMeters": 31.580886840820312,
+        "foreground": 0,
+        "installed": true,
+        "amount": 0,
+        "farEnabled": false,
+        "nearEnabled": false,
+        "periphery": 0,
+        "targetMeters": 31.580886840820312
+      },
+      "aimBlend": 1,
+      "wallFrameMs": {
+        "samples": 402,
+        "mean": 7.433980099502486,
+        "median": 7.435,
+        "p95": 7.879,
+        "p99": 8.174
+      },
+      "worldAndWeaponGpuMs": null,
+      "renderCpuMs": null,
+      "maxFps": 0,
+      "vsync": 0,
+      "graphics": {
+        "preset": "high",
+        "quality": {
+          "shadows": "high",
+          "ambientOcclusion": "high",
+          "indirectLight": "on",
+          "antiAliasing": "smaa",
+          "bloom": "on",
+          "detailDistance": "far",
+          "renderScale": "100",
+          "lensCorrection": "high"
+        },
+        "vsync": false,
+        "frameLimit": 0
+      }
+    }
+  ]
+}
