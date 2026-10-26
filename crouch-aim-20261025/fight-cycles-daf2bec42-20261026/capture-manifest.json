@@ -1,0 +1,65 @@
+{
+  "source": "daf2bec42d0f5e46d646b2110fc7021fcedfe61d",
+  "binarySha256": "849d377268d7e9deb49f67ce59dfd5e6a313164d1fce7edc78fea81e4cca19c3",
+  "binaryBytes": 2611418220,
+  "binaryBuild": "Windows Playtest release, retained export built 2026-10-26T10:36:20.776Z",
+  "subject": "soldier-e27",
+  "subjectNode": "/root/Game/SystemAdminSoldiere27",
+  "cover": "Existing parked sedan in the DUMBO arena; ordinary AI selected and retained this low-cover spot.",
+  "subjectXZ": [
+    -548.376,
+    -362.889
+  ],
+  "cameraMode": "Fixed side view; frame tracking off before final camera load and retained recording.",
+  "clip": {
+    "file": "fight-two-cycles-daf2bec42.mp4",
+    "master": "fight-cycles-final-master.mp4",
+    "masterStartFrame": 90,
+    "masterEndFrameExclusive": 690,
+    "frames": 600,
+    "fps": 30,
+    "durationSeconds": 20,
+    "crop": [
+      0,
+      0,
+      1264,
+      678
+    ],
+    "cropReason": "Remove blank native window margins at right and bottom; no image rescaling.",
+    "processing": "One continuous master interval, H.264 CRF18, no retiming or frame interpolation, no audio."
+  },
+  "capture": {
+    "masterFrames": 900,
+    "masterStartedAt": "2026-10-26T13:05:07.3708951Z",
+    "masterElapsedMs": 29984,
+    "retainedMaxCaptureGapMs": 67.0,
+    "retainedGapsAbove100ms": 0,
+    "retainedGapsAbove66_7ms": 2
+  },
+  "setup": {
+    "gameCodeChanged": false,
+    "retainedExportChanged": false,
+    "playerInvincible": true,
+    "spawnsPausedAfterSetup": true,
+    "enemyGoalsPosesAndFireForced": false,
+    "courseUsed": false,
+    "syntheticCoverUsed": false,
+    "playerTeleportBeforeRecording": [
+      -532,
+      -16.1,
+      -384
+    ],
+    "requestedRiflemen": 6,
+    "directorAddsOtherEnemyKinds": true,
+    "photoMode": "HUD hidden only; simulation continues at normal speed."
+  },
+  "checks": {
+    "sameCameraBeforeAfter": true,
+    "sameSubjectIdentifiedByCameraMarks": true,
+    "traceQualifiedCycles": 4,
+    "bodyFeetCoverage": "Subject native crops inspected across the full excerpt at 2 fps; sequential native crops inspected around first two recorded firing/return intervals.",
+    "cameraAllAdjacentFrames": "camera-continuity.json; 599 adjacent pairs, maximum median static-background flow 0.01266 native pixels.",
+    "firing": "Existing authoritative lastAttackAtMs advances for each round; same soldier visibly stands, recoils and returns. No injected fire or pose commands.",
+    "cleanup": "All owned Godot/BattleDuty processes closed; managed/native inventory empty and GPU hold released."
+  }
+}
