@@ -1,0 +1,126 @@
+{
+  "beforeCommit": "41e5803ca517c5b46415e389442cfbfbc0273fca",
+  "afterCommit": "1c890e6450b6b1578da739b145cb7bc99cac251e",
+  "standardCommand": "node tools/performance/gameplay-benchmark.mjs run --project CHECKOUT --subset firefight-65 --enemies 65 --resolution 1440p --taa off --frames-only --warmup-ms 10000 --build-commit SHA --output REPORT.json",
+  "standardConditions": "2560x1440, SMAA, scale1, seed43BA771E, 10s warmup + 13s settling + 30s retained, native engine threadModel2, 65 living riflemen at both boundaries, exclusive timing hold per run.",
+  "coverCommand": "runtime action debug_console course cover; wait for native GODMODE_GRUNT_COURSE=cover start; runtime frames --window-ms 8000 --warmup-ms 0",
+  "coverConditions": "640x360 full arena, low graphics, seed1871, uncapped/VSync off, frame-only bridge, profiling/traces off; one grunt; measurement receipts cover rise at +4s and return at +6.5s while subject remains present.",
+  "results": {
+    "standard": {
+      "before-1": {
+        "median": 16.992000579834,
+        "p95": 22.1229991912842,
+        "p99": 24.7320003509521,
+        "frames": 1721,
+        "enemies": 65
+      },
+      "after": {
+        "median": 15.8219995498657,
+        "p95": 18.5830001831055,
+        "p99": 21.1849994659424,
+        "frames": 1878,
+        "enemies": 65
+      },
+      "before-2": {
+        "median": 15.048999786377,
+        "p95": 17.6119995117188,
+        "p99": 19.30299949646,
+        "frames": 1988,
+        "enemies": 65
+      }
+    },
+    "cover": {
+      "before-1": {
+        "median": 11.6379995346069,
+        "p95": 14.4989995956421,
+        "p99": 19.3110008239746,
+        "frames": 671,
+        "enemies": 1
+      },
+      "after": {
+        "median": 11.9289999008179,
+        "p95": 17.8819999694824,
+        "p99": 19.9799995422363,
+        "frames": 636,
+        "enemies": 1
+      },
+      "before-2": {
+        "median": 11.7980003356934,
+        "p95": 14.6909999847412,
+        "p99": 16.5939998626709,
+        "frames": 665,
+        "enemies": 1
+      }
+    }
+  },
+  "bracketComparison": {
+    "standard": {
+      "median": {
+        "baselineMeanMs": 16.020500183105497,
+        "afterDeltaMs": -0.1985006332397976,
+        "afterDeltaPercent": -1.239041421747411,
+        "baselineSpanMs": 1.9430007934569993
+      },
+      "p95": {
+        "baselineMeanMs": 19.8674993515015,
+        "afterDeltaMs": -1.2844991683959996,
+        "afterDeltaPercent": -6.465328855284058,
+        "baselineSpanMs": 4.510999679565401
+      },
+      "p99": {
+        "baselineMeanMs": 22.017499923706048,
+        "afterDeltaMs": -0.832500457763647,
+        "afterDeltaPercent": -3.781085321441524,
+        "baselineSpanMs": 5.429000854492099
+      }
+    },
+    "cover": {
+      "median": {
+        "baselineMeanMs": 11.71799993515015,
+        "afterDeltaMs": 0.21099996566774948,
+        "afterDeltaPercent": 1.8006482918200062,
+        "baselineSpanMs": 0.1600008010865004
+      },
+      "p95": {
+        "baselineMeanMs": 14.59499979019165,
+        "afterDeltaMs": 3.28700017929075,
+        "afterDeltaPercent": 22.52141299446766,
+        "baselineSpanMs": 0.19200038909909978
+      },
+      "p99": {
+        "baselineMeanMs": 17.952500343322747,
+        "afterDeltaMs": 2.027499198913553,
+        "afterDeltaPercent": 11.29368700815907,
+        "baselineSpanMs": 2.7170009613037003
+      }
+    }
+  },
+  "arenaSemanticReceiptSha256": "8ca45d0b4bb539487ac85768eb637a2a0137d35a76877d992c4ef59aa92c0706",
+  "verifiedSceneContentSha256": {
+    "assets/maps/dumbo/prebuilt/survival_client.scn": {
+      "before": "ad363907cd070a53671791e7b44c05c2091174e9b7121525ba19b1014b8576bb",
+      "after": "ad363907cd070a53671791e7b44c05c2091174e9b7121525ba19b1014b8576bb"
+    },
+    "assets/maps/dumbo/prebuilt/survival_server.scn": {
+      "before": "14b4c567b0ad5827a0719f0a49128d4a26a18f88c2d2aef600cdb24ef8340c1d",
+      "after": "14b4c567b0ad5827a0719f0a49128d4a26a18f88c2d2aef600cdb24ef8340c1d"
+    }
+  },
+  "arenaNote": "Full receipt hashes differ solely in timestamps/cache stamps. Receipt report, input hashes and output hashes are identical after removing stamps; client/server scene bytes were rehashed and verified equal.",
+  "excludedAttempts": [
+    "Final-source startup failed on missing HUD imports; refreshed 3 imports before successful rerun.",
+    "Cheap supplemental launch missing its derived cheap arena; switched both arms to full arena/640x360.",
+    "Preliminary 10s cover windows ended before return; retained privately, excluded from final results.",
+    "15s cover attempt reached course auto-removal (1->0 enemies); rejected, excluded."
+  ],
+  "conclusion": "Standard median difference is smaller than baseline drift: inconclusive. The faster standard control produces a +5.51% p95 comparator flag. Focused cover median adds 0.211ms (+1.80%); p95 adds3.287ms (+22.52%) over the mean controls, with a p95 control span of0.192ms: a measured focused tail cost, not hidden as noise. Whole-cycle scope and ordinary-fight scope differ; do not multiply one-grunt cost by65 or assert a general no-regression/performance-win result.",
+  "cleanup": {
+    "timeUtc": "2026-10-26T15:30:58.660096+00:00",
+    "managedGodotInstances": 0,
+    "nativeGodotOrBattleDutyProcesses": 0,
+    "timingHold": null,
+    "captureHolds": [],
+    "pendingQueue": []
+  },
+  "gameCodeChangedForTiming": false
+}
