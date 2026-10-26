@@ -1,0 +1,31 @@
+{
+  "source": "daf2bec42d0f5e46d646b2110fc7021fcedfe61d",
+  "durationMs": 30000,
+  "recordAtSeconds": 22,
+  "scene": "0 scenario hud; 2 spawn rifleman 6; 12 frame rifle 90 8 0.8 60; 14 frame off; 14.2 perf mark; 56 perf mark",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "graphics": "high",
+  "renderThread": "safe",
+  "camera": "Choose a clear side view during setup, then clear soldierFraming at 14 seconds and retain free-fly without input. No actor tracking or camera changes during the clip.",
+  "before": {
+    "binary": "artifacts/crouch-aim/export-before/BattleDuty.exe",
+    "sha256": "8d6bea4bf551f224e27c9c0fa324f0bf656cf3e1b8f9c154ced18f085f3051a7",
+    "bytes": 2443188776,
+    "source": "31835dd27ee616c82f2167df61ff43a6cb6c840a"
+  },
+  "after": {
+    "binary": "artifacts/crouch-aim/recapture-daf2bec42/export/BattleDuty.exe",
+    "sha256": "849d377268d7e9deb49f67ce59dfd5e6a313164d1fce7edc78fea81e4cca19c3",
+    "bytes": 2611418220,
+    "source": "daf2bec42d0f5e46d646b2110fc7021fcedfe61d"
+  },
+  "verification": [
+    "Both perf camera receipts must match in position, rotation, FOV, projection and resolution.",
+    "No frame commands are permitted between the initial frame off and the end of recording.",
+    "Inspect every consecutive frame from 4.20 through 4.67 seconds and check the complete clip for view changes before publication.",
+    "Keep original timing receipts and full 30-second clips; disclose any camera drift or capture gaps.",
+    "Capture BEFORE and AFTER sequentially using the retained exports; preserve the accepted course/side evidence."
+  ]
+}
