@@ -1,0 +1,1242 @@
+{
+  "sourceSha": "a2c808d928c6e84a2329553aa131ac385d0b3afa",
+  "fixSha": "b8ffebf3ffacc2d55b5e491334c8ef011a6c51cc",
+  "seed": 1871,
+  "id": "smg-e23",
+  "fromTick": 1908,
+  "toTick": 1911,
+  "speedMetersPerSecond": 13.88437971246919,
+  "dartRatio": 7.631880768836158,
+  "writer": "SoldierAi.think close-player retreat -> moveWithStepClimb -> moveBodyForDelta -> CharacterBody3D.move_and_slide -> Jolt player-capsule overlap recovery",
+  "cause": "NPC layer 2/mask 1 vs player layer 1/mask 1: players ignore NPCs, NPC motion queries include players. A dashing player penetrates the grunt; native recovery adds displacement outside its own velocity ramp.",
+  "nativeModel": {
+    "playerRadius": 0.4,
+    "npcRadius": 0.4,
+    "safeMargin": 0.001,
+    "recoveryIterations": 4,
+    "recoveryAmount": 0.4,
+    "source": "Pinned Godot source modules/jolt_physics/jolt_project_settings.cpp and spaces/jolt_physics_direct_space_state_3d.cpp; source read only, no engine launched"
+  },
+  "steps": [
+    {
+      "tick": 1909,
+      "ms": 70658.00000000006,
+      "npcBefore": [
+        -599.2113647460938,
+        -16.69753646850586,
+        -305.45025634765625
+      ],
+      "npcAfter": [
+        -599.4263916015625,
+        -16.701717376708984,
+        -305.5652770996094
+      ],
+      "previousPlayerPhysicsPose": [
+        -598.7256469726562,
+        -16.64006233215332,
+        -305.1871337890625
+      ],
+      "ownVelocity": [
+        -1.4894917011260986,
+        0,
+        -0.7191711068153381
+      ],
+      "physicsDelta": 0.016666666666666666,
+      "extraBeyondVelocityDelta": [
+        -0.19020199378331504,
+        -0.10303456683953603
+      ],
+      "extraMeters": 0.2163167131845319,
+      "awayDirectionCosine": 0.9999999999821054,
+      "predictedRecoveryMeters": 0.21637397431855748,
+      "predictionErrorMeters": -0.000057261134025571314,
+      "phaseBefore": "move",
+      "phaseAfter": "move",
+      "stepStats": {
+        "moves": 1,
+        "skippedNotPressed": 1
+      }
+    },
+    {
+      "tick": 1910,
+      "ms": 70674.66666666673,
+      "npcBefore": [
+        -599.4263916015625,
+        -16.701717376708984,
+        -305.5652770996094
+      ],
+      "npcAfter": [
+        -599.6181640625,
+        -16.7049503326416,
+        -305.7234802246094
+      ],
+      "previousPlayerPhysicsPose": [
+        -599.008056640625,
+        -16.643285751342773,
+        -305.2099304199219
+      ],
+      "ownVelocity": [
+        -1.47170090675354,
+        0,
+        -0.9685372710227966
+      ],
+      "physicsDelta": 0.016666666666666666,
+      "extraBeyondVelocityDelta": [
+        -0.16724411249160767,
+        -0.14206083714962006
+      ],
+      "extraMeters": 0.2194353540675622,
+      "awayDirectionCosine": 0.9999999999865233,
+      "predictedRecoveryMeters": 0.21944037342687153,
+      "predictionErrorMeters": -0.000005019359309327287,
+      "phaseBefore": "move",
+      "phaseAfter": "move",
+      "stepStats": {
+        "moves": 1,
+        "skippedNotPressed": 1
+      }
+    },
+    {
+      "tick": 1911,
+      "ms": 70691.3333333334,
+      "npcBefore": [
+        -599.6181640625,
+        -16.7049503326416,
+        -305.7234802246094
+      ],
+      "npcAfter": [
+        -599.742919921875,
+        -16.70775604248047,
+        -305.89605712890625
+      ],
+      "previousPlayerPhysicsPose": [
+        -599.2904663085938,
+        -16.646509170532227,
+        -305.23272705078125
+      ],
+      "ownVelocity": [
+        -1.370340347290039,
+        0,
+        -1.197067379951477
+      ],
+      "physicsDelta": 0.016666666666666666,
+      "extraBeyondVelocityDelta": [
+        -0.10191685358683268,
+        -0.15262578129768373
+      ],
+      "extraMeters": 0.1835256771184029,
+      "awayDirectionCosine": 0.9999999999659556,
+      "predictedRecoveryMeters": 0.18356257692456834,
+      "predictionErrorMeters": -0.00003689980616544686,
+      "phaseBefore": "move",
+      "phaseAfter": "move",
+      "stepStats": {
+        "moves": 1,
+        "skippedNotPressed": 1
+      }
+    }
+  ],
+  "originalRows": [
+    {
+      "tick": 1903,
+      "ms": 70558.00000000003,
+      "utc": 1793016718791,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.129638671875,
+        -16.696460723876953,
+        -305.4275817871094
+      ],
+      "stamped": [
+        -599.129638671875,
+        -16.696460723876953,
+        -305.4275817871094
+      ],
+      "v": [
+        -0.24537062644958496,
+        0,
+        -0.047887980937957764
+      ],
+      "yaw": 1.3780531883239746,
+      "intended": [
+        -0.24537062041256322,
+        -0.0478879801030886
+      ],
+      "target": [
+        -597.3135986328125,
+        -16.624797821044922,
+        -305.0731506347656
+      ],
+      "targetDistance": 1.8503034522017854,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [
+        {
+          "normal": [
+            -0.01074858196079731,
+            0.9999082088470459,
+            -0.008248390629887581
+          ],
+          "position": [
+            -599.1217651367188,
+            -17.54730224609375,
+            -305.423583984375
+          ]
+        },
+        {
+          "normal": [
+            -0.01074858196079731,
+            0.9999082088470459,
+            -0.008248390629887581
+          ],
+          "position": [
+            -599.1220092773438,
+            -17.547306060791016,
+            -305.4236145019531
+          ]
+        }
+      ],
+      "motion": {
+        "tick": 1903,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "burst",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.1254272460938,
+          -16.696409225463867,
+          -305.4267578125
+        ],
+        "after": [
+          -599.129638671875,
+          -16.696460723876953,
+          -305.4275817871094
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1904,
+      "ms": 70574.6666666667,
+      "utc": 1793016718808,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.1378784179688,
+        -16.696563720703125,
+        -305.42926025390625
+      ],
+      "stamped": [
+        -599.1378784179688,
+        -16.696563720703125,
+        -305.42926025390625
+      ],
+      "v": [
+        -0.48963719606399536,
+        0,
+        -0.10112182050943375
+      ],
+      "yaw": 1.3578338623046875,
+      "intended": [
+        -0.48963719190184246,
+        -0.10112182321884372
+      ],
+      "target": [
+        -597.5960083007812,
+        -16.627277374267578,
+        -305.095947265625
+      ],
+      "targetDistance": 1.577485659659945,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [
+        {
+          "normal": [
+            -0.01074873749166727,
+            0.9999082088470459,
+            -0.008248466067016125
+          ],
+          "position": [
+            -599.1266479492188,
+            -17.54736328125,
+            -305.424560546875
+          ]
+        },
+        {
+          "normal": [
+            -0.010748736560344696,
+            0.9999081492424011,
+            -0.00824846513569355
+          ],
+          "position": [
+            -599.1270751953125,
+            -17.5473690032959,
+            -305.42462158203125
+          ]
+        }
+      ],
+      "motion": {
+        "tick": 1904,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.129638671875,
+          -16.696460723876953,
+          -305.4275817871094
+        ],
+        "after": [
+          -599.1378784179688,
+          -16.696563720703125,
+          -305.42926025390625
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1905,
+      "ms": 70591.33333333337,
+      "utc": 1793016718873,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.1502075195312,
+        -16.69671630859375,
+        -305.4319763183594
+      ],
+      "stamped": [
+        -599.1502075195312,
+        -16.69671630859375,
+        -305.4319763183594
+      ],
+      "v": [
+        -0.7319678664207458,
+        0,
+        -0.16256965696811676
+      ],
+      "yaw": 1.3290700912475586,
+      "intended": [
+        -0.7319678813045168,
+        -0.16256966267333192
+      ],
+      "target": [
+        -597.87841796875,
+        -16.63040542602539,
+        -305.1187438964844
+      ],
+      "targetDistance": 1.3097951029035235,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [
+        {
+          "normal": [
+            -0.010748572647571564,
+            0.9999082088470459,
+            -0.008248564787209034
+          ],
+          "position": [
+            -599.135498046875,
+            -17.54747200012207,
+            -305.4263916015625
+          ]
+        },
+        {
+          "normal": [
+            -0.010748572647571564,
+            0.9999082088470459,
+            -0.008248565718531609
+          ],
+          "position": [
+            -599.1361083984375,
+            -17.5474796295166,
+            -305.426513671875
+          ]
+        }
+      ],
+      "motion": {
+        "tick": 1905,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.1378784179688,
+          -16.696563720703125,
+          -305.42926025390625
+        ],
+        "after": [
+          -599.1502075195312,
+          -16.69671630859375,
+          -305.4319763183594
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1906,
+      "ms": 70608.00000000004,
+      "utc": 1793016718877,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.16650390625,
+        -16.69692611694336,
+        -305.43597412109375
+      ],
+      "stamped": [
+        -599.16650390625,
+        -16.69692611694336,
+        -305.43597412109375
+      ],
+      "v": [
+        -0.9704588651657104,
+        0,
+        -0.23755009472370148
+      ],
+      "yaw": 1.2852643728256226,
+      "intended": [
+        -0.9704588359387964,
+        -0.23755009050373288
+      ],
+      "target": [
+        -598.1608276367188,
+        -16.633617401123047,
+        -305.14154052734375
+      ],
+      "targetDistance": 1.0478911681213996,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [
+        {
+          "normal": [
+            -0.010748527012765408,
+            0.9999081492424011,
+            -0.008248837664723396
+          ],
+          "position": [
+            -599.1484375,
+            -17.547636032104492,
+            -305.4292907714844
+          ]
+        },
+        {
+          "normal": [
+            -0.010748526081442833,
+            0.9999082088470459,
+            -0.008248837664723396
+          ],
+          "position": [
+            -599.1492919921875,
+            -17.54764747619629,
+            -305.42950439453125
+          ]
+        }
+      ],
+      "motion": {
+        "tick": 1906,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.1502075195312,
+          -16.69671630859375,
+          -305.4319763183594
+        ],
+        "after": [
+          -599.16650390625,
+          -16.69692611694336,
+          -305.43597412109375
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1907,
+      "ms": 70624.66666666672,
+      "utc": 1793016718881,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.1865844726562,
+        -16.697189331054688,
+        -305.4416198730469
+      ],
+      "stamped": [
+        -599.1865844726562,
+        -16.697189331054688,
+        -305.4416198730469
+      ],
+      "v": [
+        -1.1998361349105835,
+        0,
+        -0.33697864413261414
+      ],
+      "yaw": 1.2115263938903809,
+      "intended": [
+        -1.1998361689029546,
+        -0.33697865341323935
+      ],
+      "target": [
+        -598.4432373046875,
+        -16.636838912963867,
+        -305.1643371582031
+      ],
+      "targetDistance": 0.7933793015186881,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [
+        {
+          "normal": [
+            -0.010748794302344322,
+            0.9999082088470459,
+            -0.008248880505561829
+          ],
+          "position": [
+            -599.1653442382812,
+            -17.547853469848633,
+            -305.4335632324219
+          ]
+        },
+        {
+          "normal": [
+            -0.010748794302344322,
+            0.9999081492424011,
+            -0.008248879574239254
+          ],
+          "position": [
+            -599.1663818359375,
+            -17.547866821289062,
+            -305.433837890625
+          ]
+        }
+      ],
+      "motion": {
+        "tick": 1907,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.16650390625,
+          -16.69692611694336,
+          -305.43597412109375
+        ],
+        "after": [
+          -599.1865844726562,
+          -16.697189331054688,
+          -305.4416198730469
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1908,
+      "ms": 70641.33333333339,
+      "utc": 1793016718895,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.2113647460938,
+        -16.69753646850586,
+        -305.45025634765625
+      ],
+      "stamped": [
+        -599.2113647460938,
+        -16.69753646850586,
+        -305.45025634765625
+      ],
+      "v": [
+        -1.4010589122772217,
+        0,
+        -0.48533424735069275
+      ],
+      "yaw": 1.0806267261505127,
+      "intended": [
+        -1.401058965174208,
+        -0.48533426085959663
+      ],
+      "target": [
+        -598.7256469726562,
+        -16.64006233215332,
+        -305.1871337890625
+      ],
+      "targetDistance": 0.5524085772994515,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [
+        {
+          "normal": [
+            -0.010749111883342266,
+            0.9999082684516907,
+            -0.008248688653111458
+          ],
+          "position": [
+            -599.1887817382812,
+            -17.54816436767578,
+            -305.4407653808594
+          ]
+        },
+        {
+          "normal": [
+            -0.010749110952019691,
+            0.9999082088470459,
+            -0.008248688653111458
+          ],
+          "position": [
+            -599.1920166015625,
+            -17.548208236694336,
+            -305.4417724609375
+          ]
+        }
+      ],
+      "motion": {
+        "tick": 1908,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.1865844726562,
+          -16.697189331054688,
+          -305.4416198730469
+        ],
+        "after": [
+          -599.2113647460938,
+          -16.69753646850586,
+          -305.45025634765625
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1909,
+      "ms": 70658.00000000006,
+      "utc": 1793016718898,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.4263916015625,
+        -16.701717376708984,
+        -305.5652770996094
+      ],
+      "stamped": [
+        -599.4263916015625,
+        -16.701717376708984,
+        -305.5652770996094
+      ],
+      "v": [
+        -1.4894917011260986,
+        0,
+        -0.7191711068153381
+      ],
+      "yaw": 0.9497270584106445,
+      "intended": [
+        -1.489491655352434,
+        -0.7191710828270573
+      ],
+      "target": [
+        -599.008056640625,
+        -16.643285751342773,
+        -305.2099304199219
+      ],
+      "targetDistance": 0.5488856003827304,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [],
+      "motion": {
+        "tick": 1909,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.2113647460938,
+          -16.69753646850586,
+          -305.45025634765625
+        ],
+        "after": [
+          -599.4263916015625,
+          -16.701717376708984,
+          -305.5652770996094
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1910,
+      "ms": 70674.66666666673,
+      "utc": 1793016718908,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.6181640625,
+        -16.7049503326416,
+        -305.7234802246094
+      ],
+      "stamped": [
+        -599.6181640625,
+        -16.7049503326416,
+        -305.7234802246094
+      ],
+      "v": [
+        -1.47170090675354,
+        0,
+        -0.9685372710227966
+      ],
+      "yaw": 0.8188273310661316,
+      "intended": [
+        -1.4717009464636985,
+        -0.9685372607206046
+      ],
+      "target": [
+        -599.2904663085938,
+        -16.646509170532227,
+        -305.23272705078125
+      ],
+      "targetDistance": 0.5901054952612956,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [],
+      "motion": {
+        "tick": 1910,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.4263916015625,
+          -16.701717376708984,
+          -305.5652770996094
+        ],
+        "after": [
+          -599.6181640625,
+          -16.7049503326416,
+          -305.7234802246094
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1911,
+      "ms": 70691.3333333334,
+      "utc": 1793016718923,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.742919921875,
+        -16.70775604248047,
+        -305.89605712890625
+      ],
+      "stamped": [
+        -599.742919921875,
+        -16.70775604248047,
+        -305.89605712890625
+      ],
+      "v": [
+        -1.370340347290039,
+        0,
+        -1.197067379951477
+      ],
+      "yaw": 0.6879276037216187,
+      "intended": [
+        -1.3703403883854945,
+        -1.1970674278016162
+      ],
+      "target": [
+        -599.5728759765625,
+        -16.64973258972168,
+        -305.2555236816406
+      ],
+      "targetDistance": 0.6627201825834381,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [],
+      "motion": {
+        "tick": 1911,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.6181640625,
+          -16.7049503326416,
+          -305.7234802246094
+        ],
+        "after": [
+          -599.742919921875,
+          -16.70775604248047,
+          -305.89605712890625
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1912,
+      "ms": 70708.00000000007,
+      "utc": 1793016718984,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.7954711914062,
+        -16.70952796936035,
+        -306.03631591796875
+      ],
+      "stamped": [
+        -599.7954711914062,
+        -16.70952796936035,
+        -306.03631591796875
+      ],
+      "v": [
+        -1.2998473644256592,
+        0,
+        -1.4369231462478638
+      ],
+      "yaw": 0.5570279955863953,
+      "intended": [
+        -1.2998474001622167,
+        -1.4369230898389191
+      ],
+      "target": [
+        -599.6019287109375,
+        -16.6500244140625,
+        -305.2530822753906
+      ],
+      "targetDistance": 0.806792185517556,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [],
+      "motion": {
+        "tick": 1912,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.742919921875,
+          -16.70775604248047,
+          -305.89605712890625
+        ],
+        "after": [
+          -599.7954711914062,
+          -16.70952796936035,
+          -306.03631591796875
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1913,
+      "ms": 70724.66666666674,
+      "utc": 1793016718989,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.8159790039062,
+        -16.7091064453125,
+        -306.0643310546875
+      ],
+      "stamped": [
+        -599.8159790039062,
+        -16.7091064453125,
+        -306.0643310546875
+      ],
+      "v": [
+        -1.2240374088287354,
+        0,
+        -1.6751517057418823
+      ],
+      "yaw": 0.4261282980442047,
+      "intended": [
+        -1.2240374107158583,
+        -1.6751516471114323
+      ],
+      "target": [
+        -599.6309814453125,
+        -16.65031623840332,
+        -305.2506408691406
+      ],
+      "targetDistance": 0.8344554000909551,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [
+        {
+          "normal": [
+            -0.01074881199747324,
+            0.9999082684516907,
+            -0.008249429054558277
+          ],
+          "position": [
+            -599.7943725585938,
+            -17.55959701538086,
+            -306.0373840332031
+          ]
+        },
+        {
+          "normal": [
+            -0.010748814791440964,
+            0.9999082088470459,
+            -0.008249431848526001
+          ],
+          "position": [
+            -599.7962036132812,
+            -17.55963706970215,
+            -306.0398254394531
+          ]
+        }
+      ],
+      "motion": {
+        "tick": 1913,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.7954711914062,
+          -16.70952796936035,
+          -306.03631591796875
+        ],
+        "after": [
+          -599.8159790039062,
+          -16.7091064453125,
+          -306.0643310546875
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    },
+    {
+      "tick": 1914,
+      "ms": 70765,
+      "utc": 1793016719050,
+      "id": "smg-e23",
+      "kind": "smg",
+      "raw": [
+        -599.8350219726562,
+        -16.709604263305664,
+        -306.09625244140625
+      ],
+      "stamped": [
+        -599.8350219726562,
+        -16.709604263305664,
+        -306.09625244140625
+      ],
+      "v": [
+        -1.1399439573287964,
+        0,
+        -1.910583734512329
+      ],
+      "yaw": 0.2952285706996918,
+      "intended": [
+        -1.1399439641397642,
+        -1.9105837864700033
+      ],
+      "target": [
+        -599.6600341796875,
+        -16.65060806274414,
+        -305.2481994628906
+      ],
+      "targetDistance": 0.8659183460680904,
+      "stride": 1,
+      "heldTicks": 0,
+      "heldFor": 0,
+      "phase": "move",
+      "attack": "none",
+      "recovery": false,
+      "attackState": {
+        "phase": "none",
+        "phaseStartedAtMs": 70296,
+        "strikes": 0,
+        "flinchUntilMs": 0,
+        "flinchedAtMs": null
+      },
+      "nav": "idle",
+      "floor": true,
+      "wall": false,
+      "contacts": [
+        {
+          "normal": [
+            -0.010748783126473427,
+            0.9999081492424011,
+            -0.00824938528239727
+          ],
+          "position": [
+            -599.814697265625,
+            -17.56005096435547,
+            -306.0660095214844
+          ]
+        },
+        {
+          "normal": [
+            -0.010748782195150852,
+            0.9999081492424011,
+            -0.008249386213719845
+          ],
+          "position": [
+            -599.81640625,
+            -17.56009292602539,
+            -306.0689392089844
+          ]
+        }
+      ],
+      "motion": {
+        "tick": 1914,
+        "update": true,
+        "delta": 0.016666666666666666,
+        "turnDelta": 0.016666666666666666,
+        "phaseBefore": "move",
+        "think": true,
+        "move": "moveWithStepClimb",
+        "moveDelta": 0.016666666666666666,
+        "before": [
+          -599.8159790039062,
+          -16.7091064453125,
+          -306.0643310546875
+        ],
+        "after": [
+          -599.8350219726562,
+          -16.709604263305664,
+          -306.09625244140625
+        ],
+        "stepStats": {
+          "moves": 1,
+          "skippedNotPressed": 1
+        },
+        "phaseAfter": "move"
+      }
+    }
+  ],
+  "verification": "Trace/native-source attribution and CPU regression pass. Native verification of the fix awaits fresh GO."
+}
