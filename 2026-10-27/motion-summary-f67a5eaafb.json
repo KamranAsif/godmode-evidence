@@ -1,0 +1,133 @@
+{
+  "method": "Full-detail native Windows Game; temporary read-only post-draw socket telemetry, same fixed anchor and 1100 ms bound fire input. Exactly 11 accepted rounds per build. Camera lock isolates gun motion; Weight and #2313 smoothing are unchanged. Pixel coordinates are unbounded 1920x1080 viewmodel-camera RearSightSocket projections. Behind-camera samples are counted and omitted from front-facing path totals.",
+  "revisions": {
+    "main": "858db7663",
+    "r5": "c59501512"
+  },
+  "runs": {
+    "main": {
+      "frames": 688,
+      "ammoStart": 30,
+      "ammoEnd": 19,
+      "baselineRearPixels": [
+        1209.33642578125,
+        700.890991210938
+      ],
+      "baselineFrontPixels": [
+        1029.95153808594,
+        585.144409179688
+      ],
+      "peakDisplacementPixelsFrontFacing": 25189.829650995584,
+      "peakDisplacementPixelsFrameClamped": 997.4319877232645,
+      "accumulatedPathPixels30HzFrameClamped": 9422.934284265653,
+      "peakHorizontalDisplacementPixelsFrontFacing": 23040.94677734375,
+      "accumulatedPathPixels30HzFrontFacing": 47522.94107722616,
+      "pathDefinition": "30 Hz interpolation, first accepted shot aligned at t=0, window -0.5 to +2.5 s; omit pairs spanning a behind-camera sample",
+      "settledDriftPixels": 0.0,
+      "behindCameraFrames": 1,
+      "offscreenFrontFacingFrames": 16,
+      "firstShotProbeMs": 6006.349,
+      "lastShotProbeMs": 7039.039,
+      "maxSampledRecoilScalar": 1.50111111111111,
+      "jointsCameraMeters": {
+        "hand_l": [
+          0.04095458984375,
+          -0.159454345703125,
+          -0.33349609375
+        ],
+        "lowerarm_l": [
+          -0.106689453125,
+          -0.351066589355469,
+          -0.2203369140625
+        ],
+        "upperarm_l": [
+          -0.126007080078125,
+          -0.155941009521484,
+          0.0111083984375
+        ]
+      },
+      "upperArmLengthMeters": 0.3033382522776704,
+      "forearmLengthMeters": 0.2670562024915191,
+      "clip": {
+        "originalSeconds": 11,
+        "originalFrames": 330,
+        "fps": 30,
+        "normalSeconds": 10,
+        "normalFrames": 300,
+        "trimStartSeconds": 0.5,
+        "internalCuts": 0,
+        "maxAcquisitionIntervalMsAfterTrim": 51.42399999999998,
+        "aimBlend": 0
+      }
+    },
+    "r5": {
+      "frames": 693,
+      "ammoStart": 30,
+      "ammoEnd": 19,
+      "baselineRearPixels": [
+        1382.29553222656,
+        581.747680664062
+      ],
+      "baselineFrontPixels": [
+        1151.91076660156,
+        601.568481445312
+      ],
+      "peakDisplacementPixelsFrontFacing": 1129.7766414733924,
+      "peakDisplacementPixelsFrameClamped": 743.5799767720293,
+      "accumulatedPathPixels30HzFrameClamped": 5496.033985862454,
+      "peakHorizontalDisplacementPixelsFrontFacing": 1005.75134277344,
+      "accumulatedPathPixels30HzFrontFacing": 6146.935884946077,
+      "pathDefinition": "30 Hz interpolation, first accepted shot aligned at t=0, window -0.5 to +2.5 s; omit pairs spanning a behind-camera sample",
+      "settledDriftPixels": 0.0,
+      "behindCameraFrames": 0,
+      "offscreenFrontFacingFrames": 8,
+      "firstShotProbeMs": 6206.803,
+      "lastShotProbeMs": 7255.908,
+      "maxSampledRecoilScalar": 1.49724074074074,
+      "jointsCameraMeters": {
+        "hand_l": [
+          0.067108154296875,
+          -0.136730194091797,
+          -0.4100341796875
+        ],
+        "lowerarm_l": [
+          -0.175750732421875,
+          -0.212562561035156,
+          -0.3287353515625
+        ],
+        "upperarm_l": [
+          -0.110809326171875,
+          -0.046905517578125,
+          -0.0830078125
+        ]
+      },
+      "upperArmLengthMeters": 0.3033836939361848,
+      "forearmLengthMeters": 0.26709639868220086,
+      "clip": {
+        "originalSeconds": 11,
+        "originalFrames": 330,
+        "fps": 30,
+        "normalSeconds": 10,
+        "normalFrames": 300,
+        "trimStartSeconds": 0.5,
+        "internalCuts": 0,
+        "maxAcquisitionIntervalMsAfterTrim": 55.60100000000057,
+        "aimBlend": 0
+      }
+    }
+  },
+  "settledR5MinusR4Pixels": {
+    "rear": [
+      -72.74133300782,
+      -96.93743896484398
+    ],
+    "front": [
+      -0.07800292969000111,
+      -35.634643554687955
+    ]
+  },
+  "frameClampedMethod": "Secondary visible-frame metric: front-facing projected coordinates clamped to [0,1919] x [0,1079]; behind-camera samples/pairs excluded. Same 30 Hz aligned window for accumulated travel.",
+  "armConstraint": "R4 support elbow pole is unchanged at 0.15 m; R5 adds only a 2.5 degree axial roll after the native-length solve, preserving forearm joint positions and the sampled wrist grip. Whole-assembly yaw/lift changes camera-local joint positions.",
+  "recoilVerdict": "No reduction to approved Weight kick or #2313 smoothing. Compare measured peak and accumulated travel against main.",
+  "r5NoGreaterThanMain": true
+}
