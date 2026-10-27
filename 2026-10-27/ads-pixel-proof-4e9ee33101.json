@@ -1,0 +1,72 @@
+{
+  "revisions": {
+    "main": "3f039e6f9",
+    "r6": "49337f516",
+    "r7": "321b014a7"
+  },
+  "preset": "Windows Playtest",
+  "debug": true,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "comparison": "Untouched native PNG RGB, no alignment/resizing/colour correction before difference",
+  "poses": {
+    "anchor": {
+      "r6": {
+        "maxPixelDifference": 0,
+        "changedPixels": 0,
+        "changedChannels": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "r7": {
+        "maxPixelDifference": 0,
+        "changedPixels": 0,
+        "changedChannels": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      }
+    },
+    "avenue": {
+      "r6": {
+        "maxPixelDifference": 1,
+        "changedPixels": 5,
+        "changedChannels": 5,
+        "meanAbsoluteChannelDifference": 8.037551440329218e-07
+      },
+      "r7": {
+        "maxPixelDifference": 1,
+        "changedPixels": 4,
+        "changedChannels": 4,
+        "meanAbsoluteChannelDifference": 6.430041152263375e-07
+      }
+    },
+    "park": {
+      "r6": {
+        "maxPixelDifference": 0,
+        "changedPixels": 0,
+        "changedChannels": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      },
+      "r7": {
+        "maxPixelDifference": 0,
+        "changedPixels": 0,
+        "changedChannels": 0,
+        "meanAbsoluteChannelDifference": 0.0
+      }
+    }
+  },
+  "binaries": {
+    "main": {
+      "commit": "3f039e6f9",
+      "sha256": "ac3e89633c4338cda8cf65caa4f831ed6f7cff6bbcf534a5fec8f28d809feff6"
+    },
+    "r6": {
+      "commit": "49337f516",
+      "sha256": "448e04c91d81212ab0579c67bd0f3ce59f9d2a50cf01fe1c88b62c390c188338"
+    },
+    "r7": {
+      "commit": "321b014a7",
+      "sha256": "2af924b8660eabf2d0db0c4d93aeefb07363ec3fa1ac3bc70ebc880e534fb735"
+    }
+  }
+}
