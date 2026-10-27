@@ -1,0 +1,97 @@
+{
+  "scenario": "Full-detail native Windows Game, High 1920x1080 fixed anchor, zero enemies, paused simulation, settled HIP Idle; R6 elbow solve active. Exclusive timing hold, uncapped/vsync off, no profiler, 10 s warmup + 10 s measurement per build.",
+  "mainCommit": "858db7663",
+  "r6Commit": "49337f516",
+  "limitation": "One window per build, R6 then main; no bracketing control. Whole-frame timing includes the renderer and cannot isolate the arm solve cost.",
+  "main": {
+    "frames": 847,
+    "meanMs": 11.834520661157026,
+    "medianMs": 11.8299999237061,
+    "p95Ms": 12.8249998092651,
+    "p99Ms": 13.03600025177,
+    "engine": {
+      "bufferMemoryBytes": 2627857820,
+      "displayServer": "Windows",
+      "frameProfile": false,
+      "framesOnly": true,
+      "headless": false,
+      "lowTextures": false,
+      "maxFps": 0,
+      "msaa": 0,
+      "noLightmap": false,
+      "physicsTicksPerSecond": 60,
+      "refreshRateHz": 60,
+      "renderingDriver": "d3d12",
+      "renderingMethod": "forward_plus",
+      "scaling3dScale": 1,
+      "screenSpaceAA": 2,
+      "staticMemoryBytes": 5326184728,
+      "taa": false,
+      "textureMemoryBytes": 3057098752,
+      "threadModel": 2,
+      "videoAdapter": "AMD Radeon RX 9070 XT",
+      "videoMemoryBytes": 10905780224,
+      "viewportSize": [
+        1920,
+        1080
+      ],
+      "vsyncMode": 0
+    },
+    "caveats": [],
+    "pose": {
+      "boneCount": 68,
+      "clip": "AssaultRifleIdle",
+      "emptyBolt": false,
+      "phase": 0.746,
+      "reloadReturnBlend": 1,
+      "sprintBlend": 0
+    }
+  },
+  "r6": {
+    "frames": 843,
+    "meanMs": 11.882432977461447,
+    "medianMs": 11.8929996490479,
+    "p95Ms": 12.8690004348755,
+    "p99Ms": 13.1079998016357,
+    "engine": {
+      "bufferMemoryBytes": 2628302528,
+      "displayServer": "Windows",
+      "frameProfile": false,
+      "framesOnly": true,
+      "headless": false,
+      "lowTextures": false,
+      "maxFps": 0,
+      "msaa": 0,
+      "noLightmap": false,
+      "physicsTicksPerSecond": 60,
+      "refreshRateHz": 60,
+      "renderingDriver": "d3d12",
+      "renderingMethod": "forward_plus",
+      "scaling3dScale": 1,
+      "screenSpaceAA": 2,
+      "staticMemoryBytes": 5330416009,
+      "taa": false,
+      "textureMemoryBytes": 3057098752,
+      "threadModel": 2,
+      "videoAdapter": "AMD Radeon RX 9070 XT",
+      "videoMemoryBytes": 10838671360,
+      "viewportSize": [
+        1920,
+        1080
+      ],
+      "vsyncMode": 0
+    },
+    "caveats": [],
+    "pose": {
+      "boneCount": 68,
+      "clip": "AssaultRifleIdle",
+      "emptyBolt": false,
+      "phase": 0.9965,
+      "reloadReturnBlend": 1,
+      "sprintBlend": 0
+    }
+  },
+  "deltaMedianMs": 0.06299972534179865,
+  "deltaMeanMs": 0.047912316304421054,
+  "deltaMedianPercent": 0.5325420604234636
+}
