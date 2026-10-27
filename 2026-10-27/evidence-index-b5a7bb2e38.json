@@ -1,0 +1,439 @@
+{
+  "repository": "KamranAsif/Godmode.exe-roguelite",
+  "branch": "codex/gun-hip-concept-20261026",
+  "head": "321b014a76a01a1f2b8aba0d6394cca07d3d5369",
+  "baseline": "3f039e6f9",
+  "previousRound": "49337f516",
+  "concept": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/concept-a-4302e3bfda.jpg",
+  "adsProof": {
+    "revisions": {
+      "main": "3f039e6f9",
+      "r6": "49337f516",
+      "r7": "321b014a7"
+    },
+    "preset": "Windows Playtest",
+    "debug": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "comparison": "Untouched native PNG RGB, no alignment/resizing/colour correction before difference",
+    "poses": {
+      "anchor": {
+        "r6": {
+          "maxPixelDifference": 0,
+          "changedPixels": 0,
+          "changedChannels": 0,
+          "meanAbsoluteChannelDifference": 0.0
+        },
+        "r7": {
+          "maxPixelDifference": 0,
+          "changedPixels": 0,
+          "changedChannels": 0,
+          "meanAbsoluteChannelDifference": 0.0
+        }
+      },
+      "avenue": {
+        "r6": {
+          "maxPixelDifference": 1,
+          "changedPixels": 5,
+          "changedChannels": 5,
+          "meanAbsoluteChannelDifference": 8.037551440329218e-07
+        },
+        "r7": {
+          "maxPixelDifference": 1,
+          "changedPixels": 4,
+          "changedChannels": 4,
+          "meanAbsoluteChannelDifference": 6.430041152263375e-07
+        }
+      },
+      "park": {
+        "r6": {
+          "maxPixelDifference": 0,
+          "changedPixels": 0,
+          "changedChannels": 0,
+          "meanAbsoluteChannelDifference": 0.0
+        },
+        "r7": {
+          "maxPixelDifference": 0,
+          "changedPixels": 0,
+          "changedChannels": 0,
+          "meanAbsoluteChannelDifference": 0.0
+        }
+      }
+    },
+    "binaries": {
+      "main": {
+        "commit": "3f039e6f9",
+        "sha256": "ac3e89633c4338cda8cf65caa4f831ed6f7cff6bbcf534a5fec8f28d809feff6"
+      },
+      "r6": {
+        "commit": "49337f516",
+        "sha256": "448e04c91d81212ab0579c67bd0f3ce59f9d2a50cf01fe1c88b62c390c188338"
+      },
+      "r7": {
+        "commit": "321b014a7",
+        "sha256": "2af924b8660eabf2d0db0c4d93aeefb07363ec3fa1ac3bc70ebc880e534fb735"
+      }
+    }
+  },
+  "motion": {
+    "method": "Full-detail native Windows Game; temporary read-only post-draw socket telemetry, identical fixed anchor and 1100 ms bound fire input. Exactly 11 rounds per build. Camera lock isolates gun motion. Weight and #2313 smoothing unchanged. Unbounded 1920x1080 rear-sight projections; behind-camera or nonfinite samples/pairs are omitted from front-facing path metrics.",
+    "revisions": {
+      "main": "858db7663",
+      "r6": "49337f516",
+      "r7": "321b014a7"
+    },
+    "nearStockPointModelMeters": [
+      0.03,
+      0.02,
+      0.08
+    ],
+    "runs": {
+      "main": {
+        "frames": 704,
+        "ammoStart": 30,
+        "ammoEnd": 19,
+        "baselineRearPixels": [
+          1209.33642578125,
+          700.890991210938
+        ],
+        "baselineFrontPixels": [
+          1029.95153808594,
+          585.144409179688
+        ],
+        "baselineNearStockPixels": [
+          2155.490234375,
+          1770.556640625
+        ],
+        "peakDisplacementPixelsFrontFacing": 25189.829650995584,
+        "peakHorizontalDisplacementPixelsFrontFacing": 23040.94677734375,
+        "accumulatedPathPixels30HzFrontFacing": 51860.56329723762,
+        "peakDisplacementPixelsFrameClamped": 997.4319877232645,
+        "accumulatedPathPixels30HzFrameClamped": 10512.37069477338,
+        "pathDefinition": "30 Hz, first shot t=0, window -0.5 to +2.5 s; omit pairs spanning a behind-camera/nonfinite sample",
+        "settledDriftPixels": 0.0,
+        "behindCameraFrames": 1,
+        "nonfiniteProjectionFrames": 0,
+        "offscreenFrontFacingFrames": 15,
+        "firstShotProbeMs": 6197.761,
+        "lastShotProbeMs": 7223.448,
+        "maxSampledRecoilScalar": 1.50111111111111,
+        "jointsCameraMeters": {
+          "hand_l": [
+            0.04095458984375,
+            -0.159454345703125,
+            -0.33349609375
+          ],
+          "lowerarm_l": [
+            -0.106689453125,
+            -0.351066589355469,
+            -0.2203369140625
+          ],
+          "upperarm_l": [
+            -0.126007080078125,
+            -0.155941009521484,
+            0.0111083984375
+          ]
+        },
+        "wristInWeapon": {
+          "position": [
+            -0.011016845703125,
+            -0.115070343017578,
+            -0.19537353515625
+          ],
+          "rotation": [
+            0.155360236763954,
+            0.557745039463043,
+            -0.0560480430722237,
+            0.813413977622986
+          ]
+        },
+        "upperArmLengthMeters": 0.3033382522776704,
+        "forearmLengthMeters": 0.2670562024915191,
+        "clip": {
+          "originalSeconds": 11,
+          "originalFrames": 330,
+          "fps": 30,
+          "normalSeconds": 10,
+          "normalFrames": 300,
+          "trimStartSeconds": 0.5,
+          "internalCuts": 0,
+          "maxAcquisitionIntervalMsAfterTrim": 50.777000000000044,
+          "aimBlend": 0
+        }
+      },
+      "r6": {
+        "frames": 701,
+        "ammoStart": 30,
+        "ammoEnd": 19,
+        "baselineRearPixels": [
+          1383.99243164062,
+          595.577880859375
+        ],
+        "baselineFrontPixels": [
+          1151.98999023438,
+          601.573913574219
+        ],
+        "baselineNearStockPixels": [
+          1748.8115234375,
+          941.886596679688
+        ],
+        "peakDisplacementPixelsFrontFacing": 1168.1846435126386,
+        "peakHorizontalDisplacementPixelsFrontFacing": 1052.31640625,
+        "accumulatedPathPixels30HzFrontFacing": 5577.769058387846,
+        "peakDisplacementPixelsFrameClamped": 737.2371671841105,
+        "accumulatedPathPixels30HzFrameClamped": 4853.524477919893,
+        "pathDefinition": "30 Hz, first shot t=0, window -0.5 to +2.5 s; omit pairs spanning a behind-camera/nonfinite sample",
+        "settledDriftPixels": 0.0,
+        "behindCameraFrames": 0,
+        "nonfiniteProjectionFrames": 0,
+        "offscreenFrontFacingFrames": 10,
+        "firstShotProbeMs": 6193.296,
+        "lastShotProbeMs": 7177.356,
+        "maxSampledRecoilScalar": 1.50885185185185,
+        "jointsCameraMeters": {
+          "hand_l": [
+            0.057220458984375,
+            -0.134880065917969,
+            -0.412353515625
+          ],
+          "lowerarm_l": [
+            -0.188262939453125,
+            -0.201305389404297,
+            -0.33099365234375
+          ],
+          "upperarm_l": [
+            -0.116607666015625,
+            -0.0390129089355469,
+            -0.08489990234375
+          ]
+        },
+        "wristInWeapon": {
+          "position": [
+            -0.011077880859375,
+            -0.115066528320312,
+            -0.19537353515625
+          ],
+          "rotation": [
+            0.155360281467438,
+            0.557745099067688,
+            -0.0560480505228043,
+            0.813413977622986
+          ]
+        },
+        "upperArmLengthMeters": 0.3033734682156055,
+        "forearmLengthMeters": 0.2670090819837996,
+        "clip": {
+          "originalSeconds": 11,
+          "originalFrames": 330,
+          "fps": 30,
+          "normalSeconds": 10,
+          "normalFrames": 300,
+          "trimStartSeconds": 0.5,
+          "internalCuts": 0,
+          "maxAcquisitionIntervalMsAfterTrim": 51.582000000000335,
+          "aimBlend": 0
+        }
+      },
+      "r7": {
+        "frames": 691,
+        "ammoStart": 30,
+        "ammoEnd": 19,
+        "baselineRearPixels": [
+          1362.89501953125,
+          478.517425537109
+        ],
+        "baselineFrontPixels": [
+          1144.2060546875,
+          517.325012207031
+        ],
+        "baselineNearStockPixels": [
+          1829.70434570312,
+          726.877807617188
+        ],
+        "peakDisplacementPixelsFrontFacing": 1250.7773009578061,
+        "peakHorizontalDisplacementPixelsFrontFacing": 981.85375976563,
+        "accumulatedPathPixels30HzFrontFacing": 8147.671683503499,
+        "peakDisplacementPixelsFrameClamped": 733.6427440142862,
+        "accumulatedPathPixels30HzFrameClamped": 6462.7989954437335,
+        "pathDefinition": "30 Hz, first shot t=0, window -0.5 to +2.5 s; omit pairs spanning a behind-camera/nonfinite sample",
+        "settledDriftPixels": 0.0,
+        "behindCameraFrames": 0,
+        "nonfiniteProjectionFrames": 0,
+        "offscreenFrontFacingFrames": 8,
+        "firstShotProbeMs": 7032.812,
+        "lastShotProbeMs": 8062.833,
+        "maxSampledRecoilScalar": 1.50111111111111,
+        "jointsCameraMeters": {
+          "hand_l": [
+            0.124908447265625,
+            -0.106777191162109,
+            -0.4212646484375
+          ],
+          "lowerarm_l": [
+            -0.092620849609375,
+            -0.246547698974609,
+            -0.35443115234375
+          ],
+          "upperarm_l": [
+            -0.0645751953125,
+            -0.103263854980469,
+            -0.0885009765625
+          ]
+        },
+        "wristInWeapon": {
+          "position": [
+            -0.011077880859375,
+            -0.115066528320312,
+            -0.1954345703125
+          ],
+          "rotation": [
+            0.155360281467438,
+            0.557745099067688,
+            -0.0560480579733849,
+            0.813413977622986
+          ]
+        },
+        "upperArmLengthMeters": 0.30337382396265405,
+        "forearmLengthMeters": 0.2670608658212755,
+        "clip": {
+          "originalSeconds": 11,
+          "originalFrames": 330,
+          "fps": 30,
+          "normalSeconds": 10,
+          "normalFrames": 300,
+          "trimStartSeconds": 0.5,
+          "internalCuts": 0,
+          "maxAcquisitionIntervalMsAfterTrim": 58.720000000001164,
+          "aimBlend": 0
+        }
+      }
+    },
+    "settledR7MinusR6Pixels": {
+      "rear": [
+        -21.097412109369998,
+        -117.06045532226602
+      ],
+      "front": [
+        -7.783935546880002,
+        -84.24890136718795
+      ],
+      "nearStock": [
+        80.89282226562,
+        -215.0087890625
+      ]
+    },
+    "supportGripComparisonR7VsR6": {
+      "wristPositionDeltaMeters": 6.103515625e-05,
+      "wristOrientationDeltaDegrees": 0.0,
+      "upperArmLengthDeltaMeters": 3.55747048541577e-07,
+      "forearmLengthDeltaMeters": 5.178383747589388e-05
+    },
+    "frameClampedMethod": "Secondary metric clamps front-facing x/y to [0,1919] x [0,1079], same aligned 30 Hz path window.",
+    "r7NoGreaterThanMain": true,
+    "armConstraint": "R6 support-arm settings and native arm lengths unchanged; R7 only levels the complete HIP assembly, retaining its translation and yaw.",
+    "sightUp": {
+      "main": [],
+      "r6": [],
+      "r7": [
+        {
+          "socket": "rear",
+          "cameraUp": [
+            2.23517417907715e-08,
+            1.0,
+            0.0
+          ],
+          "screenUp30mmPixels": [
+            -0.0767822265625,
+            -96.3098449707031
+          ],
+          "screenLeanDegrees": -0.04567857619260933
+        },
+        {
+          "socket": "front",
+          "cameraUp": [
+            2.23517417907715e-08,
+            1.0,
+            0.0
+          ],
+          "screenUp30mmPixels": [
+            -0.0245361328125,
+            -35.5251159667969
+          ],
+          "screenLeanDegrees": -0.03957247130469782
+        }
+      ]
+    },
+    "baselineReuse": "Main 858db7663 and R6 49337f516 recordings/telemetry reused from round 6, same anchor and 1100 ms fire plan. Current main 3f039e6f9 differs only in ignored tool art archive; no gameplay/render source changes. R7 is newly recorded."
+  },
+  "repeatCheck": {
+    "status": "No repeat frames acquired",
+    "reason": "Shared capture slots full; queued admission then failed Windows process enumeration. Extra repeat check was not allowed to bypass GPU admission.",
+    "primaryResult": "Untouched main/R6/R7 stills: anchor and park maximum difference 0; avenue R6 max1 at5 pixels, R7 max1 at4 pixels.",
+    "inference": "Earlier R6 avenue frame from the same exported R6 executable is pixel-identical to current main. This suggests capture/run variation; its cause is unconfirmed.",
+    "initialPassRetained": true
+  },
+  "performance": "Not measured: shared GPU with killstreak lane; no runtime frames or timing hold. Shared capture is visual evidence only.",
+  "files": {
+    "plain/comparison-anchor-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-anchor-ads-3443f74ce9.png",
+    "plain/comparison-anchor-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-anchor-hip-3a56b68997.png",
+    "plain/comparison-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-avenue-ads-c12ff1a3b7.png",
+    "plain/comparison-avenue-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-avenue-hip-858a158989.png",
+    "plain/comparison-park-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-park-ads-5a363fae83.png",
+    "plain/comparison-park-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-park-hip-9cdee8fcb2.png",
+    "plain/main-anchor-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-anchor-ads-4e7d598f6f.png",
+    "plain/main-anchor-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-anchor-hip-18d7e0f3ac.png",
+    "plain/main-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-avenue-ads-3e5e36387b.png",
+    "plain/main-avenue-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-avenue-hip-36685e73e4.png",
+    "plain/main-park-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-park-ads-e5cb317b9b.png",
+    "plain/main-park-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-park-hip-cc78d6ec92.png",
+    "plain/proof-anchor-r6-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-anchor-r6-ads-difference-8x-0f52608dd0.png",
+    "plain/proof-anchor-r7-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-anchor-r7-ads-difference-8x-0f52608dd0.png",
+    "plain/proof-avenue-r6-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-avenue-r6-ads-difference-8x-d0fcd34361.png",
+    "plain/proof-avenue-r7-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-avenue-r7-ads-difference-8x-49d25baf6f.png",
+    "plain/proof-park-r6-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-park-r6-ads-difference-8x-0f52608dd0.png",
+    "plain/proof-park-r7-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-park-r7-ads-difference-8x-0f52608dd0.png",
+    "plain/r6-anchor-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r6-anchor-ads-4e7d598f6f.png",
+    "plain/r6-anchor-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r6-anchor-hip-3e8077d4b1.png",
+    "plain/r6-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r6-avenue-ads-01babd59d1.png",
+    "plain/r6-avenue-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r6-avenue-hip-948008c674.png",
+    "plain/r6-park-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r6-park-ads-e5cb317b9b.png",
+    "plain/r6-park-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r6-park-hip-5e0710ebc7.png",
+    "plain/r7-anchor-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-anchor-ads-4e7d598f6f.png",
+    "plain/r7-anchor-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-anchor-hip-a0978da7f3.png",
+    "plain/r7-anchor-sight-up-overlay.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-anchor-sight-up-overlay-df6418c34a.png",
+    "plain/r7-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-avenue-ads-b9435ac362.png",
+    "plain/r7-avenue-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-avenue-hip-39d8bf7767.png",
+    "plain/r7-avenue-sight-up-overlay.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-avenue-sight-up-overlay-dcb2ae4b22.png",
+    "plain/r7-park-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-park-ads-e5cb317b9b.png",
+    "plain/r7-park-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-park-hip-8650be521e.png",
+    "plain/r7-park-sight-up-overlay.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-park-sight-up-overlay-60904d7b63.png",
+    "first-pass/main-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-avenue-ads-3e5e36387b.png",
+    "first-pass/r6-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r6-avenue-ads-01babd59d1.png",
+    "first-pass/r7-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/r7-avenue-ads-b9435ac362.png",
+    "first-pass/ads-pixel-proof.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/ads-pixel-proof-4e9ee33101.json",
+    "main/hip-burst-normal.mp4": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-normal-1a58453400.mp4",
+    "main/motion.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/motion-30ead2f5dd.json",
+    "main/rear-sight-samples.csv": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/rear-sight-samples-b0611329f8.csv",
+    "main/hip-burst-original.mp4.timing.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-original.mp4.timing-14dfefc299.json",
+    "main/hip-preview.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-preview-a9864ff469.png",
+    "r6/hip-burst-normal.mp4": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-normal-99c87677d1.mp4",
+    "r6/motion.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/motion-608d82a171.json",
+    "r6/rear-sight-samples.csv": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/rear-sight-samples-ba41786d99.csv",
+    "r6/hip-burst-original.mp4.timing.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-original.mp4.timing-936cab73bf.json",
+    "r6/hip-preview.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-preview-d8998a4832.png",
+    "r7/hip-burst-normal.mp4": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-normal-658b27192a.mp4",
+    "r7/motion.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/motion-226d8529d2.json",
+    "r7/rear-sight-samples.csv": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/rear-sight-samples-a84a2ca821.csv",
+    "r7/hip-burst-original.mp4.timing.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-original.mp4.timing-d88947612f.json",
+    "r7/hip-preview.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-preview-366fdc27a2.png",
+    "r7/hip-burst-quarter-speed.mp4": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-quarter-speed-10440c1aa7.mp4",
+    "recoil-excursion.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/recoil-excursion-c1c3c52f98.png",
+    "motion-summary.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/motion-summary-bacd79882a.json",
+    "socket-up-projection.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/socket-up-projection-93ca9bd59d.json",
+    "ads-pixel-proof.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/ads-pixel-proof-4e9ee33101.json",
+    "repeat-check.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/repeat-check-50649c4bdb.json"
+  },
+  "captureNotes": "HIP/ADS stills are plain exported Windows Playtest debug builds with separate fresh settings. R6 uses preserved original export. Main advanced from 858db7663 only by archived tool source art in 3f039e6f9, with no runtime change. Bursts use full-detail native Windows Game with a temporary read-only post-draw socket logger removed after capture. No image colour correction. Sight-up overlays are annotated copies, separate from untouched proof PNGs."
+}
