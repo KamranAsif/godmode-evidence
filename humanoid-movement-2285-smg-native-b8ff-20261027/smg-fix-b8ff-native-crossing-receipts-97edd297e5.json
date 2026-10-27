@@ -1,0 +1,332 @@
+{
+  "source": "b8ffebf3ffacc2d55b5e491334c8ef011a6c51cc",
+  "scenario": "Controlled actual-player dash across a landed SMG, native AI/movement; compare original collision policy with the committed exception policy.",
+  "cases": [
+    {
+      "oldPolicy": true,
+      "id": "smg-e4",
+      "nativeExceptionAtArm": false,
+      "nativeExceptionInSamples": [
+        false
+      ],
+      "dashUtc": 1793096984758,
+      "rows": 129,
+      "minGapMeters": 0.512117252536595,
+      "minPreMovePhysicsGapMeters": 0.512117252536595,
+      "maxPlayerSpeedMetersPerSecond": 17.00008307552375,
+      "minSignedPlayerAlong": -3.4999929858700467,
+      "maxSignedPlayerAlong": -0.512117252536595,
+      "peakSpeed": {
+        "tick": 581,
+        "ms": 45600.999999998654,
+        "utc": 1793096985063,
+        "fromTick": 578,
+        "metersPerSecond": 17.984957144534796
+      },
+      "peakExcess": {
+        "tick": 581,
+        "utc": 1793096985063,
+        "meters": 0.27768182946956527,
+        "moveDelta": 0.016666666666666666,
+        "velocity": [
+          -1.9445440769195557,
+          0,
+          1.9445432424545288
+        ],
+        "before": [
+          -472.64141845703125,
+          -16.40802001953125,
+          -503.89190673828125
+        ],
+        "after": [
+          -472.87017822265625,
+          -16.405834197998047,
+          -503.66314697265625
+        ],
+        "player": [
+          -472.3258972167969,
+          -16.354949951171875,
+          -504.2074279785156
+        ]
+      },
+      "eventTick": 581,
+      "eventMs": 45600.999999998654,
+      "client": {
+        "f": 533,
+        "us": 45796215,
+        "utc": 1793096985114,
+        "rt": 45600.8,
+        "id": "smg-e4",
+        "kind": "smg",
+        "x": -472.759,
+        "y": -16.406,
+        "z": -503.774,
+        "yaw": 2.356,
+        "dist": 7.5,
+        "onScreen": true,
+        "seen": true,
+        "sx": 0.5,
+        "sy": 0.46,
+        "posed": true,
+        "clip": "MachineGunRunBackward",
+        "at": 0.301,
+        "len": 0.5,
+        "rate": 1.255,
+        "plays": 8,
+        "attack": "none",
+        "bones": {
+          "Hips": [
+            -472.781,
+            -16.411,
+            -503.782
+          ],
+          "Spine2": [
+            -472.748,
+            -16.088,
+            -503.79
+          ],
+          "Head": [
+            -472.646,
+            -15.929,
+            -503.784
+          ],
+          "LeftHand": [
+            -472.372,
+            -16.225,
+            -504.074
+          ],
+          "RightHand": [
+            -472.515,
+            -16.187,
+            -503.78
+          ],
+          "LeftFoot": [
+            -472.641,
+            -17.188,
+            -503.945
+          ],
+          "RightFoot": [
+            -472.923,
+            -17.143,
+            -503.509
+          ],
+          "LeftToeBase": [
+            -472.516,
+            -17.295,
+            -504.008
+          ],
+          "RightToeBase": [
+            -472.838,
+            -17.269,
+            -503.426
+          ]
+        },
+        "head": [
+          0.752,
+          -0.412,
+          -0.515
+        ],
+        "gun": [
+          0.7,
+          -0.19,
+          -0.688
+        ],
+        "muzzle": [
+          -472.049,
+          -16.22,
+          -504.288
+        ],
+        "meta": {
+          "animationState": "machinegunrunbackward",
+          "gaitSecondary": "MachineGunRunBackwardRight",
+          "gaitBlendWeight": 0,
+          "gaitSpeed": 5.786,
+          "gaitPosture": "jog",
+          "gaitPlaybackRate": 1.255,
+          "gaitFacingYaw": 2.356,
+          "groundTransitionActive": false,
+          "groundTransitionAnimation": "GroundWalkStartBackward",
+          "groundTurnActive": false,
+          "groundTurnAnimation": "planted",
+          "nativeCoverClip": "",
+          "nativeStunned": false,
+          "bakedEnemyAim": true
+        }
+      },
+      "eventFrame": {
+        "frame": 67,
+        "requestedMs": 2233.333,
+        "startedMs": 2239.077,
+        "capturedMs": 2254.313,
+        "writtenMs": 2254.718
+      },
+      "firstFrame": 43,
+      "lastFrameExclusive": 92,
+      "clip": "smg-fix-b8ff-native-old-policy-control.mp4"
+    },
+    {
+      "oldPolicy": false,
+      "id": "smg-e4",
+      "nativeExceptionAtArm": true,
+      "nativeExceptionInSamples": [
+        true
+      ],
+      "dashUtc": 1793096993068,
+      "rows": 130,
+      "minGapMeters": 0.04108677097714803,
+      "minPreMovePhysicsGapMeters": 0.04108677097714803,
+      "maxPlayerSpeedMetersPerSecond": 17.00008307552375,
+      "minSignedPlayerAlong": -3.4999929858700467,
+      "maxSignedPlayerAlong": 2.435793827514463,
+      "peakSpeed": {
+        "tick": 1093,
+        "ms": 54134.333333330746,
+        "utc": 1793096993564,
+        "fromTick": 1090,
+        "metersPerSecond": 2.063401852296482
+      },
+      "peakExcess": {
+        "tick": 1073,
+        "utc": 1793096993223,
+        "meters": 0.00012194067290646058,
+        "moveDelta": 0.016666666666666666,
+        "velocity": [
+          -0.7071083784103394,
+          0,
+          0.7071051597595215
+        ],
+        "before": [
+          -471.75933837890625,
+          -16.398841857910156,
+          -504.77398681640625
+        ],
+        "after": [
+          -471.7712097167969,
+          -16.39899253845215,
+          -504.7621154785156
+        ],
+        "player": [
+          -471.0697937011719,
+          -16.339941024780273,
+          -505.4635314941406
+        ]
+      },
+      "eventTick": 1077,
+      "eventMs": 53867.66666666412,
+      "client": {
+        "f": 895,
+        "us": 54086025,
+        "utc": 1793096993403,
+        "rt": 53870.2,
+        "id": "smg-e4",
+        "kind": "smg",
+        "x": -471.843,
+        "y": -16.399,
+        "z": -504.69,
+        "yaw": 1.968,
+        "dist": 7.5,
+        "onScreen": true,
+        "seen": true,
+        "sx": 0.5,
+        "sy": 0.46,
+        "posed": true,
+        "clip": "MachineGunWalkBackward",
+        "at": 0.49,
+        "len": 1,
+        "rate": 0.609,
+        "plays": 19,
+        "attack": "none",
+        "bones": {
+          "Hips": [
+            -471.782,
+            -16.391,
+            -504.747
+          ],
+          "Spine2": [
+            -471.765,
+            -16.069,
+            -504.752
+          ],
+          "Head": [
+            -471.678,
+            -15.907,
+            -504.714
+          ],
+          "LeftHand": [
+            -471.308,
+            -16.171,
+            -504.872
+          ],
+          "RightHand": [
+            -471.549,
+            -16.132,
+            -504.649
+          ],
+          "LeftFoot": [
+            -471.73,
+            -17.161,
+            -504.951
+          ],
+          "RightFoot": [
+            -471.768,
+            -17.17,
+            -504.578
+          ],
+          "LeftToeBase": [
+            -471.644,
+            -17.28,
+            -505.049
+          ],
+          "RightToeBase": [
+            -471.656,
+            -17.285,
+            -504.514
+          ]
+        },
+        "head": [
+          0.905,
+          -0.385,
+          -0.182
+        ],
+        "gun": [
+          0.948,
+          -0.104,
+          -0.301
+        ],
+        "muzzle": [
+          -470.906,
+          -16.109,
+          -504.899
+        ],
+        "meta": {
+          "animationState": "machinegunwalkbackward",
+          "gaitSecondary": "MachineGunWalkBackwardRight",
+          "gaitBlendWeight": 0.494,
+          "gaitSpeed": 1.038,
+          "gaitPosture": "walk",
+          "gaitPlaybackRate": 0.609,
+          "gaitFacingYaw": 1.968,
+          "groundTransitionActive": true,
+          "groundTransitionAnimation": "GroundWalkStartBackward",
+          "groundTurnActive": false,
+          "groundTurnAnimation": "planted",
+          "nativeCoverClip": "",
+          "nativeStunned": false,
+          "bakedEnemyAim": true
+        }
+      },
+      "eventFrame": {
+        "frame": 315,
+        "requestedMs": 10500,
+        "startedMs": 10508.185,
+        "capturedMs": 10551.398,
+        "writtenMs": 10551.793
+      },
+      "firstFrame": 291,
+      "lastFrameExclusive": 340,
+      "clip": "smg-fix-b8ff-native-fixed-crossing.mp4"
+    }
+  ],
+  "runtimeErrorMatches": 0,
+  "videoDescription": "Same b8ffebf3f native build and actual 17 m/s player dash. Negative control explicitly restores old collision policy; fixed case uses the committed exception. Normal AI and native movement execute in both. Setup teleports are outside the cut dash windows. Each event clip has 49 original frames +/-0.8 s then quarter speed; comparison has 72 original frames per case, then quarter speed."
+}
