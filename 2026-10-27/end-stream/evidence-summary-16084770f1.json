@@ -1,0 +1,86 @@
+{
+  "sourceBefore": "858db7663",
+  "sourceAfter": "4eaa348c4",
+  "platform": "Windows D3D12 RX 9070 XT",
+  "size": [
+    1280,
+    720
+  ],
+  "measurement": "15-second runtime frames window, no JS or engine-stat profiler, END STREAM at approximately 2 seconds, full detail, SMAA, VSync 60Hz on; includes transition, not a steady rendering benchmark",
+  "unitRegressionBefore": {
+    "pass": 1,
+    "fail": 4
+  },
+  "unitRegressionAfter": {
+    "pass": 5,
+    "fail": 0
+  },
+  "fullSuite": "11/11 checks passed",
+  "frameOnly": {
+    "before-clean": {
+      "frames": 795,
+      "medianMs": 18.4349994659424,
+      "meanMs": 18.891788679245284,
+      "worstMs": 137.679,
+      "vsyncMode": 1
+    },
+    "after-clean": {
+      "frames": 900,
+      "medianMs": 16.678500175476103,
+      "meanMs": 16.69793222222222,
+      "worstMs": 88.378,
+      "vsyncMode": 1
+    }
+  },
+  "attribution": {
+    "before": {
+      "frameClientInclusiveMs": 15.3063189189189,
+      "frameClientExclusiveMs": 14.8999405405405,
+      "note": "profiling and engine monitors enabled; separate attribution run, not headline frame-only timing"
+    },
+    "after": {
+      "frameClientInclusiveMs": 1.88027247191011,
+      "frameClientExclusiveMs": 0.880446629213483,
+      "note": "profiling and engine monitors enabled; separate attribution run, not headline frame-only timing"
+    }
+  },
+  "gpuPassSampleAfter": {
+    "count": 242,
+    "totalMs": 21.446959,
+    "largestIntervals": [
+      {
+        "label": "Render Depth Pre-Pass",
+        "ms": 7.98912
+      },
+      {
+        "label": "Render Opaque Pass",
+        "ms": 7.064199
+      },
+      {
+        "label": "Render Shadows",
+        "ms": 3.38796
+      },
+      {
+        "label": "Render OmniLight Shadows",
+        "ms": 0.25148
+      },
+      {
+        "label": "Render Depth Pre-Pass",
+        "ms": 0.223679
+      },
+      {
+        "label": "Render Opaque Pass",
+        "ms": 0.200081
+      },
+      {
+        "label": "Render Shadows",
+        "ms": 0.1874
+      },
+      {
+        "label": "Render OmniLight Shadows",
+        "ms": 0.1526
+      }
+    ],
+    "note": "native RenderingDevice --gpu-profile, optional temporary CLI observer restored before commit"
+  }
+}
