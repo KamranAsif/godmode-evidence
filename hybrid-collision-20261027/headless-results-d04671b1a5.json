@@ -1,0 +1,727 @@
+{
+  "commit": "1af8a75cfec199cb616a25e69332deb9fc9ae6dc",
+  "status": "Draft; strict shot equivalence is NOT achieved; GPU work pending user GO",
+  "client": {
+    "before": {
+      "nodes": 415000,
+      "shapes": 358475,
+      "bodies": 5356,
+      "geometry": 48135,
+      "propCounts": null,
+      "folded": null
+    },
+    "after": {
+      "nodes": 123867,
+      "shapes": 68967,
+      "bodies": 3731,
+      "geometry": 48135,
+      "propCounts": {
+        "instances": 13062,
+        "facadeInstances": 10553,
+        "facadeBoxes": 270542,
+        "facadeShapes": 304,
+        "convexInstances": 392,
+        "compoundInstances": 2117,
+        "solidShapes": 63797
+      },
+      "folded": {
+        "removedBodies": 1743,
+        "removedShapes": 1743,
+        "addedBodies": 55,
+        "addedShapes": 118
+      }
+    },
+    "coverageFailures": 0
+  },
+  "server": {
+    "before": {
+      "nodes": 364122,
+      "shapes": 358478,
+      "bodies": 5359,
+      "geometry": 0,
+      "propCounts": null,
+      "folded": null
+    },
+    "after": {
+      "nodes": 72989,
+      "shapes": 68970,
+      "bodies": 3734,
+      "geometry": 0,
+      "propCounts": {
+        "instances": 13062,
+        "facadeInstances": 10553,
+        "facadeBoxes": 270542,
+        "facadeShapes": 304,
+        "convexInstances": 392,
+        "compoundInstances": 2117,
+        "solidShapes": 63797
+      },
+      "folded": {
+        "removedBodies": 1743,
+        "removedShapes": 1743,
+        "addedBodies": 55,
+        "addedShapes": 118
+      }
+    },
+    "coverageFailures": 0,
+    "beforeBytes": 134209754,
+    "candidateBytes": 146612092
+  },
+  "strictShotParity": {
+    "ok": false,
+    "groups": {
+      "facade-exterior": {
+        "shots": 564,
+        "changed": 0,
+        "hitMiss": 0,
+        "surface": 0,
+        "position": 0,
+        "normal": 0
+      },
+      "interior-start": {
+        "shots": 266,
+        "changed": 58,
+        "hitMiss": 0,
+        "surface": 7,
+        "position": 55,
+        "normal": 56
+      },
+      "solid-prop-exterior": {
+        "shots": 4105,
+        "changed": 407,
+        "hitMiss": 0,
+        "surface": 0,
+        "position": 375,
+        "normal": 322
+      }
+    },
+    "strictChanges": 465,
+    "total": 4935
+  },
+  "validation": {
+    "aimLibrariesRefreshed": 21,
+    "initialPnpmTest": "11/11 passed",
+    "finalPnpmTest": "10/11 steps passed; five CLI mock CIM timeouts",
+    "isolatedCliRetry": "5/5 passed serially",
+    "traversalModelChecks": 27,
+    "coverAndPalmModelChecks": 54,
+    "carBullet": "passed",
+    "kerbCrossing": "passed",
+    "playability": {
+      "1871": {
+        "passed": true,
+        "seed": 1871,
+        "survivedMs": 120035,
+        "kills": 63,
+        "deaths": 1
+      },
+      "2853137488": {
+        "passed": true,
+        "seed": 2853137488,
+        "survivedMs": 120671,
+        "kills": 56,
+        "deaths": 1
+      }
+    }
+  },
+  "navigation": {
+    "control": {
+      "accepted": true,
+      "gapMeters": {
+        "max": 4.186,
+        "min": -0.35,
+        "p50": 0.019,
+        "p90": 0.04,
+        "p99": 0.075
+      },
+      "measured": 2000,
+      "missed": 0,
+      "outliers": [
+        {
+          "gap": 2.85618776441174,
+          "point": [
+            -258.517026322148,
+            -16.9406871235426,
+            -391.322375766359
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "Cell_-5_-7",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -258.517028808594,
+              -15.0844993591309,
+              -391.322387695312
+            ],
+            "shape": "Shape1243",
+            "shapeIndex": 1243,
+            "surface": "concrete"
+          },
+          "sample": 473
+        },
+        {
+          "gap": 2.901358921419,
+          "point": [
+            -291.595432114711,
+            -15.035859424959,
+            -319.406683275611
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "Cell_-5_-6",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -291.595428466797,
+              -13.13450050354,
+              -319.406677246094
+            ],
+            "shape": "Shape10121",
+            "shapeIndex": 10121,
+            "surface": "concrete"
+          },
+          "sample": 638
+        },
+        {
+          "gap": 2.79334264831903,
+          "point": [
+            -450.381016169942,
+            -15.8108425720251,
+            -363.70088177172
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "Cell_-8_-6",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -450.381011962891,
+              -14.0174999237061,
+              -363.700866699219
+            ],
+            "shape": "Shape2142",
+            "shapeIndex": 2142,
+            "surface": "metal"
+          },
+          "sample": 1026
+        },
+        {
+          "gap": 2.97170154799002,
+          "point": [
+            -533.663256316004,
+            -15.786721155534,
+            -335.852235144598
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "Cell_-9_-6",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -533.663269042969,
+              -13.8150196075439,
+              -335.852233886719
+            ],
+            "shape": "Shape2133",
+            "shapeIndex": 2133,
+            "surface": "concrete"
+          },
+          "sample": 1155
+        },
+        {
+          "gap": 2.8495002746582,
+          "point": [
+            -352.16788553201,
+            -16.6,
+            -432.774637488294
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "Cell_-6_-7",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -352.167877197266,
+              -14.7504997253418,
+              -432.774627685547
+            ],
+            "shape": "Shape81",
+            "shapeIndex": 81,
+            "surface": "metal"
+          },
+          "sample": 1362
+        },
+        {
+          "gap": 4.18640762385375,
+          "point": [
+            -278.704060741404,
+            -16.776239929762,
+            -387.546173281676
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "EnvironmentModules_Solid932",
+            "hit": true,
+            "normal": [
+              0.0303070098161697,
+              0.999537527561188,
+              0.00249956105835735
+            ],
+            "position": [
+              -278.704071044922,
+              -13.5898323059082,
+              -387.546173095703
+            ],
+            "shape": "@CollisionShape3D@1838",
+            "shapeIndex": 0,
+            "surface": "metal"
+          },
+          "sample": 1472
+        },
+        {
+          "gap": 3.78758079309379,
+          "point": [
+            -531.707442338575,
+            -15.7513468911162,
+            -344.333727422457
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "EnvironmentModules_Solid252",
+            "hit": true,
+            "normal": [
+              0.00147978996392339,
+              0.99999612569809,
+              -0.00234901648946106
+            ],
+            "position": [
+              -531.707458496094,
+              -12.9637660980225,
+              -344.333740234375
+            ],
+            "shape": "@CollisionShape3D@1132",
+            "shapeIndex": 0,
+            "surface": "metal"
+          },
+          "sample": 1491
+        },
+        {
+          "gap": 2.87352785255676,
+          "point": [
+            -505.981081334557,
+            -15.9520266928888,
+            -366.211542165155
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "Cell_-8_-6",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -505.981079101562,
+              -14.078498840332,
+              -366.211547851562
+            ],
+            "shape": "Shape1678",
+            "shapeIndex": 1678,
+            "surface": "concrete"
+          },
+          "sample": 1656
+        },
+        {
+          "gap": 2.55100021362304,
+          "point": [
+            -690.685736788335,
+            -14.85,
+            -212.412983543697
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "Cell_-11_-4",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -690.685729980469,
+              -13.298999786377,
+              -212.412979125977
+            ],
+            "shape": "Shape6920",
+            "shapeIndex": 6920,
+            "surface": "concrete"
+          },
+          "sample": 1817
+        }
+      ],
+      "overHalfMetre": 9,
+      "samples": 2000,
+      "source": "dumbo-survival"
+    },
+    "candidate": {
+      "accepted": true,
+      "gapMeters": {
+        "max": 4.42,
+        "min": -0.35,
+        "p50": 0.019,
+        "p90": 0.04,
+        "p99": 0.078
+      },
+      "measured": 2000,
+      "missed": 0,
+      "outliers": [
+        {
+          "gap": 2.85618967176037,
+          "point": [
+            -258.517026322148,
+            -16.9406871235426,
+            -391.322375766359
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-5_-7",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -258.517028808594,
+              -15.0844974517822,
+              -391.322387695312
+            ],
+            "shape": "Facade_concrete",
+            "shapeIndex": 1,
+            "surface": "concrete"
+          },
+          "sample": 473
+        },
+        {
+          "gap": 2.90136464346489,
+          "point": [
+            -291.595432114711,
+            -15.035859424959,
+            -319.406683275611
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-5_-6",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -291.595428466797,
+              -13.1344947814941,
+              -319.406677246094
+            ],
+            "shape": "Facade_concrete",
+            "shapeIndex": 2,
+            "surface": "concrete"
+          },
+          "sample": 638
+        },
+        {
+          "gap": 2.7933407409704,
+          "point": [
+            -450.381016169942,
+            -15.8108425720251,
+            -363.70088177172
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-8_-6",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -450.381011962891,
+              -14.0175018310547,
+              -363.700866699219
+            ],
+            "shape": "Facade_metal",
+            "shapeIndex": 0,
+            "surface": "metal"
+          },
+          "sample": 1026
+        },
+        {
+          "gap": 4.41971419275504,
+          "point": [
+            -655.272940836762,
+            -14.9227850240539,
+            -276.394851348471
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-11_-5",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -655.27294921875,
+              -11.5030708312988,
+              -276.394836425781
+            ],
+            "shape": "Facade_concrete",
+            "shapeIndex": 0,
+            "surface": "concrete"
+          },
+          "sample": 1052
+        },
+        {
+          "gap": 2.97170154799002,
+          "point": [
+            -533.663256316004,
+            -15.786721155534,
+            -335.852235144598
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-9_-6",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -533.663269042969,
+              -13.8150196075439,
+              -335.852233886719
+            ],
+            "shape": "Facade_concrete",
+            "shapeIndex": 2,
+            "surface": "concrete"
+          },
+          "sample": 1155
+        },
+        {
+          "gap": 2.84949645996094,
+          "point": [
+            -352.16788553201,
+            -16.6,
+            -432.774637488294
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-6_-7",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -352.167877197266,
+              -14.7505035400391,
+              -432.774627685547
+            ],
+            "shape": "Facade_metal",
+            "shapeIndex": 0,
+            "surface": "metal"
+          },
+          "sample": 1362
+        },
+        {
+          "gap": 4.18640953120239,
+          "point": [
+            -278.704060741404,
+            -16.776239929762,
+            -387.546173281676
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-5_-7",
+            "hit": true,
+            "normal": [
+              0.0294750053435564,
+              0.999562501907349,
+              0.00246389931999146
+            ],
+            "position": [
+              -278.704071044922,
+              -13.5898303985596,
+              -387.546173095703
+            ],
+            "shape": "Facade_metal",
+            "shapeIndex": 0,
+            "surface": "metal"
+          },
+          "sample": 1472
+        },
+        {
+          "gap": 3.78757888574516,
+          "point": [
+            -531.707442338575,
+            -15.7513468911162,
+            -344.333727422457
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-9_-6",
+            "hit": true,
+            "normal": [
+              0.0015189767582342,
+              0.999995946884155,
+              -0.00239853025414049
+            ],
+            "position": [
+              -531.707458496094,
+              -12.9637680053711,
+              -344.333740234375
+            ],
+            "shape": "Facade_metal",
+            "shapeIndex": 0,
+            "surface": "metal"
+          },
+          "sample": 1491
+        },
+        {
+          "gap": 2.87352403785949,
+          "point": [
+            -505.981081334557,
+            -15.9520266928888,
+            -366.211542165155
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-8_-6",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -505.981079101562,
+              -14.0785026550293,
+              -366.211547851562
+            ],
+            "shape": "Facade_concrete",
+            "shapeIndex": 2,
+            "surface": "concrete"
+          },
+          "sample": 1656
+        },
+        {
+          "gap": 2.55099639892578,
+          "point": [
+            -690.685736788335,
+            -14.85,
+            -212.412983543697
+          ],
+          "probe": {
+            "asset": "",
+            "collider": "FacadeCell_-11_-4",
+            "hit": true,
+            "normal": [
+              0,
+              1,
+              0
+            ],
+            "position": [
+              -690.685729980469,
+              -13.2990036010742,
+              -212.412979125977
+            ],
+            "shape": "Facade_concrete",
+            "shapeIndex": 2,
+            "surface": "concrete"
+          },
+          "sample": 1817
+        }
+      ],
+      "overHalfMetre": 10,
+      "samples": 2000,
+      "source": "dumbo-survival"
+    },
+    "newOutlierOrigin": {
+      "navSample": 1052,
+      "origin": [
+        -655.272940836762,
+        -10.9227850240539,
+        -276.394851348471
+      ],
+      "originalBoxesContainingOrigin": [
+        {
+          "key": "EnvironmentModules/windows_buildings_69124_30003_-11_-5_opaque:0",
+          "asset": "window-frames-and-juliet-rails",
+          "part": {
+            "size": [
+              1.5,
+              0.9200000166893005,
+              0.4699999988079071
+            ],
+            "centre": [
+              -655.6162719726562,
+              -11.04306411743164,
+              -276.2205505371094
+            ],
+            "basis": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "surface": "concrete",
+            "nativeGlass": false
+          },
+          "localPoint": [
+            0.3433311358942319,
+            0.12027909337774112,
+            -0.17430081136160425
+          ]
+        }
+      ]
+    },
+    "freshness": "Pre-existing manifest/nine GLB input mismatches; no navigation assets or receipts changed"
+  },
+  "pending": [
+    "Rendered arena writer and full client packed size",
+    "Exported Windows Playtest visual check",
+    "Cold/warm instantiate-to-first-gameplay timing",
+    "Resolution or explicit review of non-exact shot geometry before merge"
+  ]
+}
