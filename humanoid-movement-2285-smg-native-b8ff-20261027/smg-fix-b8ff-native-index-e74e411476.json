@@ -1,0 +1,361 @@
+{
+  "source": "b8ffebf3ffacc2d55b5e491334c8ef011a6c51cc",
+  "fixCommit": "b8ffebf3ffacc2d55b5e491334c8ef011a6c51cc",
+  "controlled": {
+    "scenario": "Controlled actual-player dash across a landed SMG, native AI/movement; compare original collision policy with the committed exception policy.",
+    "cases": [
+      {
+        "oldPolicy": true,
+        "id": "smg-e4",
+        "nativeExceptionAtArm": false,
+        "nativeExceptionInSamples": [
+          false
+        ],
+        "dashUtc": 1793096984758,
+        "rows": 129,
+        "minGapMeters": 0.512117252536595,
+        "minPreMovePhysicsGapMeters": 0.512117252536595,
+        "maxPlayerSpeedMetersPerSecond": 17.00008307552375,
+        "minSignedPlayerAlong": -3.4999929858700467,
+        "maxSignedPlayerAlong": -0.512117252536595,
+        "peakSpeed": {
+          "tick": 581,
+          "ms": 45600.999999998654,
+          "utc": 1793096985063,
+          "fromTick": 578,
+          "metersPerSecond": 17.984957144534796
+        },
+        "peakExcess": {
+          "tick": 581,
+          "utc": 1793096985063,
+          "meters": 0.27768182946956527,
+          "moveDelta": 0.016666666666666666,
+          "velocity": [
+            -1.9445440769195557,
+            0,
+            1.9445432424545288
+          ],
+          "before": [
+            -472.64141845703125,
+            -16.40802001953125,
+            -503.89190673828125
+          ],
+          "after": [
+            -472.87017822265625,
+            -16.405834197998047,
+            -503.66314697265625
+          ],
+          "player": [
+            -472.3258972167969,
+            -16.354949951171875,
+            -504.2074279785156
+          ]
+        }
+      },
+      {
+        "oldPolicy": false,
+        "id": "smg-e4",
+        "nativeExceptionAtArm": true,
+        "nativeExceptionInSamples": [
+          true
+        ],
+        "dashUtc": 1793096993068,
+        "rows": 130,
+        "minGapMeters": 0.04108677097714803,
+        "minPreMovePhysicsGapMeters": 0.04108677097714803,
+        "maxPlayerSpeedMetersPerSecond": 17.00008307552375,
+        "minSignedPlayerAlong": -3.4999929858700467,
+        "maxSignedPlayerAlong": 2.435793827514463,
+        "peakSpeed": {
+          "tick": 1093,
+          "ms": 54134.333333330746,
+          "utc": 1793096993564,
+          "fromTick": 1090,
+          "metersPerSecond": 2.063401852296482
+        },
+        "peakExcess": {
+          "tick": 1073,
+          "utc": 1793096993223,
+          "meters": 0.00012194067290646058,
+          "moveDelta": 0.016666666666666666,
+          "velocity": [
+            -0.7071083784103394,
+            0,
+            0.7071051597595215
+          ],
+          "before": [
+            -471.75933837890625,
+            -16.398841857910156,
+            -504.77398681640625
+          ],
+          "after": [
+            -471.7712097167969,
+            -16.39899253845215,
+            -504.7621154785156
+          ],
+          "player": [
+            -471.0697937011719,
+            -16.339941024780273,
+            -505.4635314941406
+          ]
+        }
+      }
+    ],
+    "runtimeErrorMatches": 0,
+    "timing": {
+      "frames": 660,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "startedAt": "2026-10-27T10:29:42.8986623Z",
+      "elapsedMs": 22023,
+      "maxGapMs": 65.85899999999856,
+      "gapsOver100Ms": 0,
+      "gapsOver200Ms": 0
+    },
+    "note": "Same b8ff build, actual native AI and player dash. Negative control explicitly removes only the player collision exception; fixed case restores the committed policy. Setup position writes are outside the analyzed dash windows."
+  },
+  "mixed": {
+    "seed": 1871,
+    "target": "smg-e23",
+    "subject": {
+      "turn": {
+        "id": "smg-e23",
+        "kind": "smg",
+        "tick": 174,
+        "ms": 63480,
+        "fromTick": 171,
+        "fromMs": 63400,
+        "speed": 0.5663920903397046,
+        "turnDegS": 450.3448269728271,
+        "attack": "none",
+        "phase": "move",
+        "event": "turn"
+      },
+      "speed": {
+        "id": "smg-e23",
+        "kind": "smg",
+        "tick": 5253,
+        "ms": 150862,
+        "fromTick": 5250,
+        "fromMs": 150812,
+        "speed": 7.604972057804608,
+        "turnDegS": 24.06422739549447,
+        "attack": "none",
+        "phase": "move",
+        "event": "speed"
+      },
+      "ratio": {
+        "event": "dart",
+        "id": "smg-e23",
+        "kind": "smg",
+        "tick": 6641,
+        "ms": 174684.3,
+        "ratio": 1.7048954976624378,
+        "travel": 0.08987213138681521,
+        "expected": 0.05271415843964503,
+        "attack": "none",
+        "phase": "move",
+        "wall": false
+      }
+    },
+    "flags": [
+      {
+        "event": "dart",
+        "id": "smg-e23",
+        "kind": "smg",
+        "tick": 2749,
+        "ms": 107789.3,
+        "ratio": 1.497212417715349,
+        "travel": 0.14279005567609493,
+        "expected": 0.09537060605868036,
+        "attack": "none",
+        "phase": "move",
+        "wall": false,
+        "firstTick": 2749,
+        "lastTick": 2749
+      },
+      {
+        "event": "dart",
+        "id": "smg-e23",
+        "kind": "smg",
+        "tick": 6607,
+        "ms": 174117.7,
+        "ratio": 1.5589609193684408,
+        "travel": 0.06603786792436508,
+        "expected": 0.042360181774869665,
+        "attack": "none",
+        "phase": "move",
+        "wall": false,
+        "firstTick": 6607,
+        "lastTick": 6607
+      },
+      {
+        "event": "dart",
+        "id": "smg-e23",
+        "kind": "smg",
+        "tick": 6639,
+        "ms": 174651,
+        "ratio": 1.404343792486925,
+        "travel": 0.08660831368868774,
+        "expected": 0.06167173177396595,
+        "attack": "none",
+        "phase": "move",
+        "wall": false,
+        "firstTick": 6639,
+        "lastTick": 6639
+      },
+      {
+        "event": "dart",
+        "id": "smg-e23",
+        "kind": "smg",
+        "tick": 6641,
+        "ms": 174684.3,
+        "ratio": 1.7048954976624378,
+        "travel": 0.08987213138681521,
+        "expected": 0.05271415843964503,
+        "attack": "none",
+        "phase": "move",
+        "wall": false,
+        "firstTick": 6641,
+        "lastTick": 6641
+      },
+      {
+        "event": "dart",
+        "id": "smg-e23",
+        "kind": "smg",
+        "tick": 6643,
+        "ms": 174725.7,
+        "ratio": 1.4261354391418701,
+        "travel": 0.10261091559871044,
+        "expected": 0.07195033008958333,
+        "attack": "none",
+        "phase": "move",
+        "wall": false,
+        "firstTick": 6643,
+        "lastTick": 6643
+      }
+    ],
+    "allSmgCounts": {
+      "dartEpisodes": 14,
+      "dartWindows": 15,
+      "discontinuities": 0
+    },
+    "allSmgMaxima": {
+      "turn": {
+        "id": "smg-e22",
+        "kind": "smg",
+        "tick": 174,
+        "ms": 63480,
+        "fromTick": 171,
+        "fromMs": 63400,
+        "speed": 0.520000000001346,
+        "turnDegS": 450.3448269728271,
+        "attack": "none",
+        "phase": "move",
+        "event": "turn"
+      },
+      "speed": {
+        "id": "smg-e22",
+        "kind": "smg",
+        "tick": 4383,
+        "ms": 135898.3,
+        "fromTick": 4380,
+        "fromMs": 135848.3,
+        "speed": 7.8657231072558185,
+        "turnDegS": 25.210142985756498,
+        "attack": "none",
+        "phase": "move",
+        "event": "speed"
+      },
+      "ratio": {
+        "event": "dart",
+        "id": "smg-e22",
+        "kind": "smg",
+        "tick": 1352,
+        "ms": 83628.7,
+        "ratio": 2.272217722519802,
+        "travel": 0.08429116205155437,
+        "expected": 0.03709642839951038,
+        "attack": "none",
+        "phase": "move",
+        "wall": false
+      }
+    },
+    "result": {
+      "meter": true,
+      "seed": 1871,
+      "survivedMs": 120071,
+      "streamFailed": false,
+      "restarts": 0,
+      "deaths": 0,
+      "kills": 0,
+      "maxAlive": 26,
+      "shots": 0
+    },
+    "timing": {
+      "frames": 3600,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "startedAt": "2026-10-27T10:22:04.1893271Z",
+      "elapsedMs": 120018,
+      "maxGapMs": 130.994,
+      "gapsOver100Ms": 1,
+      "gapsOver200Ms": 0
+    },
+    "visualLimits": "The complete target traces and extrema are retained. Mixed highest-ratio and speed films include intermittent scenery/crowd overlap and are not claimed as complete visual clearance of all residual darts."
+  },
+  "traces": [
+    {
+      "name": "mixed",
+      "id": "smg-e23",
+      "file": "smg-fix-b8ff-mixed-target-traces.jsonl.gz",
+      "sources": {
+        "server": {
+          "selected": 7010,
+          "total": 182263,
+          "omittedFinalRows": 1,
+          "sourceSha256": "deb5875d237d63743b15924cc262460adfa6048cc9e7f48177dc43fe20fe2b54"
+        },
+        "rich-server": {
+          "selected": 7010,
+          "total": 182268,
+          "omittedFinalRows": 1,
+          "sourceSha256": "90bc139dd55ba6beff8b0be03482112cf34ebf822a0f42916f0277cf270131ea"
+        },
+        "client": {
+          "selected": 5092,
+          "total": 132394,
+          "omittedFinalRows": 1,
+          "sourceSha256": "c956c7f352b210ee31c0a903a83cfd47db3cd423dd0efecad7fc2de902a0e449"
+        }
+      }
+    },
+    {
+      "name": "crossing",
+      "id": "smg-e4",
+      "file": "smg-fix-b8ff-crossing-target-traces.jsonl.gz",
+      "sources": {
+        "server": {
+          "selected": 1697,
+          "total": 1786,
+          "omittedFinalRows": 1,
+          "sourceSha256": "6587b0abfdb5b8b244a6e7c4abc4172635152b25827283dcd3c6c71e80f3bb1f"
+        },
+        "rich-server": {
+          "selected": 1698,
+          "total": 1787,
+          "omittedFinalRows": 1,
+          "sourceSha256": "da5c24a093cad524e02c0813dbe8a9082004a7fed576d247d8f8ac0b03ed8ffd"
+        },
+        "client": {
+          "selected": 1322,
+          "total": 1406,
+          "omittedFinalRows": 0,
+          "sourceSha256": "4b726217d945814c670c1ec3e33e4df090b7382901a62e3bc38031a4c84e6a64"
+        }
+      }
+    }
+  ]
+}
