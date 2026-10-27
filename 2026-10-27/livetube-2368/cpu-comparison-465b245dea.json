@@ -1,0 +1,94 @@
+{
+  "scenario": "Exported Windows Playtest debug, roguelite opening, all three room modes on, emote waves off; seeded 30-stream channel history (2330); native 1920x1080; capture-mode CLI configured 30 FPS; GODMODE_FRAME_PROFILE=0 and GODMODE_ENGINE_STATS=0",
+  "selection": "Every deduplicated stream.chatDraw frame from spike history whose outer context has enemyCount=1 and 0<elapsedMs<1200. Context is an outer-record snapshot for the adjacent 5-frame history. Cold startup, spike-adjacent CPU attribution only, not steady-state frame cost or GPU throughput.",
+  "samples": {
+    "before": {
+      "pid": 1100,
+      "build": "commit=48476a134605\nbranch=HEAD\nbuilt=2026-10-27T16:39:34.377Z",
+      "records": 30,
+      "matchingRecords": [
+        {
+          "frame": 1973,
+          "enemyCount": 1,
+          "elapsedMs": 869
+        }
+      ],
+      "cpuSectionMs": {
+        "n": 4,
+        "median": 0.084,
+        "max": 1.79
+      },
+      "frameWallMs": {
+        "n": 4,
+        "median": 432.8675,
+        "max": 5221.747
+      },
+      "frames": [
+        {
+          "frame": 1970,
+          "frameMs": 5221.747,
+          "chatDrawMs": 0.083
+        },
+        {
+          "frame": 1971,
+          "frameMs": 795.779,
+          "chatDrawMs": 1.79
+        },
+        {
+          "frame": 1972,
+          "frameMs": 40.983,
+          "chatDrawMs": 0.085
+        },
+        {
+          "frame": 1973,
+          "frameMs": 69.956,
+          "chatDrawMs": 0.076
+        }
+      ]
+    },
+    "after": {
+      "pid": 35924,
+      "build": "commit=39123c036cb9\nbranch=fix/livetube-playtest-20261027\nbuilt=2026-10-27T17:50:50.672Z",
+      "records": 21,
+      "matchingRecords": [
+        {
+          "frame": 2589,
+          "enemyCount": 1,
+          "elapsedMs": 812
+        }
+      ],
+      "cpuSectionMs": {
+        "n": 4,
+        "median": 0.1275,
+        "max": 1.807
+      },
+      "frameWallMs": {
+        "n": 4,
+        "median": 414.29200000000003,
+        "max": 4823.845
+      },
+      "frames": [
+        {
+          "frame": 2586,
+          "frameMs": 4823.845,
+          "chatDrawMs": 0.119
+        },
+        {
+          "frame": 2587,
+          "frameMs": 752.123,
+          "chatDrawMs": 1.807
+        },
+        {
+          "frame": 2588,
+          "frameMs": 39.707,
+          "chatDrawMs": 0.072
+        },
+        {
+          "frame": 2589,
+          "frameMs": 76.461,
+          "chatDrawMs": 0.136
+        }
+      ]
+    }
+  }
+}
