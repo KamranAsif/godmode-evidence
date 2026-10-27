@@ -1,0 +1,155 @@
+{
+  "method": "Full-detail native Windows Game; temporary read-only post-draw socket telemetry, same fixed anchor and 1100 ms bound fire input. 11 accepted rounds per build. Camera lock isolates gun motion; Weight and #2313 recoil are unmodified. Pixel coordinates are unbounded 1920x1080 viewmodel-camera projections of RearSightSocket; offscreen positions remain numeric. Behind-camera samples are counted and excluded from front-facing path totals.",
+  "revisions": {
+    "main": "858db7663",
+    "r3": "dbe88c871",
+    "r4": "2022cbcb4"
+  },
+  "runs": {
+    "main": {
+      "frames": 501,
+      "ammoStart": 30,
+      "ammoEnd": 19,
+      "baselineRearPixels": [
+        1209.33642578125,
+        700.890991210938
+      ],
+      "peakDisplacementPixelsFrontFacing": 13561.483871296412,
+      "peakHorizontalDisplacementPixelsFrontFacing": 12414.83154296875,
+      "accumulatedPathPixels30HzFrontFacing": 28553.089081640028,
+      "pathDefinition": "30 Hz interpolation, first accepted shot aligned at t=0, window -0.5 to +2.5 s; omit pairs spanning a behind-camera sample",
+      "settledDriftPixels": 0.0,
+      "behindCameraFrames": 1,
+      "offscreenFrontFacingFrames": 10,
+      "firstShotProbeMs": 6214.453,
+      "lastShotProbeMs": 7295.156,
+      "maxSampledRecoilScalar": 1.48175925925926,
+      "jointsCameraMeters": {
+        "hand_l": [
+          0.04095458984375,
+          -0.159454345703125,
+          -0.33349609375
+        ],
+        "lowerarm_l": [
+          -0.106689453125,
+          -0.351066589355469,
+          -0.2203369140625
+        ],
+        "upperarm_l": [
+          -0.126007080078125,
+          -0.155941009521484,
+          0.0111083984375
+        ]
+      },
+      "clip": {
+        "originalSeconds": 11,
+        "originalFrames": 330,
+        "fps": 30,
+        "normalSeconds": 10,
+        "trimStartSeconds": 0.5,
+        "internalCuts": 0,
+        "maxAcquisitionIntervalMsAfterTrim": 68.06899999999996,
+        "aimBlend": 0
+      }
+    },
+    "r3": {
+      "frames": 519,
+      "ammoStart": 30,
+      "ammoEnd": 20,
+      "baselineRearPixels": [
+        1305.2119140625,
+        682.738525390625
+      ],
+      "peakDisplacementPixelsFrontFacing": 655.8623191141713,
+      "peakHorizontalDisplacementPixelsFrontFacing": 615.6142578125,
+      "accumulatedPathPixels30HzFrontFacing": 3857.9798246106475,
+      "pathDefinition": "30 Hz interpolation, first accepted shot aligned at t=0, window -0.5 to +2.5 s; omit pairs spanning a behind-camera sample",
+      "settledDriftPixels": 0.0,
+      "behindCameraFrames": 0,
+      "offscreenFrontFacingFrames": 1,
+      "firstShotProbeMs": 6155.73,
+      "lastShotProbeMs": 7194.226,
+      "maxSampledRecoilScalar": 1.43938888888889,
+      "jointsCameraMeters": {
+        "hand_l": [
+          0.079010009765625,
+          -0.177406311035156,
+          -0.4117431640625
+        ],
+        "lowerarm_l": [
+          -0.1160888671875,
+          -0.327526092529297,
+          -0.30828857421875
+        ],
+        "upperarm_l": [
+          -0.12335205078125,
+          -0.113990783691406,
+          -0.0928955078125
+        ]
+      },
+      "clip": {
+        "originalSeconds": 11,
+        "originalFrames": 330,
+        "fps": 30,
+        "normalSeconds": 10,
+        "trimStartSeconds": 0.5,
+        "internalCuts": 0,
+        "maxAcquisitionIntervalMsAfterTrim": 70.38800000000083,
+        "aimBlend": 0
+      }
+    },
+    "r4": {
+      "frames": 498,
+      "ammoStart": 30,
+      "ammoEnd": 20,
+      "baselineRearPixels": [
+        1455.03686523438,
+        678.685119628906
+      ],
+      "peakDisplacementPixelsFrontFacing": 889.3812405886104,
+      "peakHorizontalDisplacementPixelsFrontFacing": 859.326171875,
+      "accumulatedPathPixels30HzFrontFacing": 6134.7744288296535,
+      "pathDefinition": "30 Hz interpolation, first accepted shot aligned at t=0, window -0.5 to +2.5 s; omit pairs spanning a behind-camera sample",
+      "settledDriftPixels": 0.0,
+      "behindCameraFrames": 0,
+      "offscreenFrontFacingFrames": 10,
+      "firstShotProbeMs": 6206.137,
+      "lastShotProbeMs": 7267.386,
+      "maxSampledRecoilScalar": 1.42003703703704,
+      "jointsCameraMeters": {
+        "hand_l": [
+          0.08203125,
+          -0.166728973388672,
+          -0.40570068359375
+        ],
+        "lowerarm_l": [
+          -0.1573486328125,
+          -0.24090576171875,
+          -0.3135986328125
+        ],
+        "upperarm_l": [
+          -0.0797119140625,
+          -0.076904296875,
+          -0.07037353515625
+        ]
+      },
+      "clip": {
+        "originalSeconds": 11,
+        "originalFrames": 330,
+        "fps": 30,
+        "normalSeconds": 10,
+        "trimStartSeconds": 0.5,
+        "internalCuts": 0,
+        "maxAcquisitionIntervalMsAfterTrim": 69.13499999999931,
+        "aimBlend": 0
+      }
+    }
+  },
+  "elbowDeltaR4MinusR3Meters": [
+    -0.041259765625,
+    0.08662033081054699,
+    -0.00531005859375
+  ],
+  "elbowLimitation": "Actual left shift is about 4.1 cm. The 15 cm pole target is constrained by native arm lengths with wrist contact retained; the requested 8-15 cm actual shift is not reached.",
+  "recoilVerdict": "Main has greater peak and accumulated projected excursion than R3 and R4. Both candidates settle without drift. Leave approved Weight recoil and smoothing unchanged."
+}
