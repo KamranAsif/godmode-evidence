@@ -1,0 +1,205 @@
+{
+  "repository": "KamranAsif/Godmode.exe-roguelite",
+  "branch": "codex/gun-hip-concept-20261026",
+  "head": "dbe88c871",
+  "baseline": "858db7663",
+  "concept": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/concept-a-4302e3bfda.jpg",
+  "hipFraming": {
+    "positionMeters": [
+      0.031571,
+      0.013704,
+      -0.096286
+    ],
+    "rotationDegrees": [
+      -4.7,
+      -6.8,
+      -11
+    ],
+    "frontSightNormalizedApprox": [
+      0.6,
+      0.59
+    ],
+    "viewmodelFov": 65,
+    "scale": 1
+  },
+  "poses": {
+    "anchor": {
+      "eye": [
+        -518,
+        -13.7,
+        -375
+      ],
+      "yaw": -2.15,
+      "pitch": -0.06
+    },
+    "avenue": {
+      "eye": [
+        -404,
+        -15.582,
+        -390
+      ],
+      "yaw": 0,
+      "pitch": 0.1
+    },
+    "park": {
+      "eye": [
+        -431,
+        -15.5135,
+        -453
+      ],
+      "yaw": -2.75,
+      "pitch": -0.025
+    }
+  },
+  "adsProof": {
+    "mainCommit": "858db7663",
+    "branchCommit": "dbe88c871",
+    "buildPreset": "Windows Playtest",
+    "debugTemplate": true,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "nativeAdsWorldFov": 45,
+    "viewmodelFov": 65,
+    "viewmodelScale": 1,
+    "comparison": "Unmodified exported-build PNG RGB channels, no resizing, max absolute channel difference",
+    "poses": {
+      "anchor": {
+        "size": [
+          1920,
+          1080
+        ],
+        "maxPixelDifference": 0,
+        "meanAbsoluteDifference": 0.0,
+        "changedPixels": 0,
+        "totalPixels": 2073600
+      },
+      "avenue": {
+        "size": [
+          1920,
+          1080
+        ],
+        "maxPixelDifference": 1,
+        "meanAbsoluteDifference": 8.037551440329218e-07,
+        "changedPixels": 5,
+        "totalPixels": 2073600
+      },
+      "park": {
+        "size": [
+          1920,
+          1080
+        ],
+        "maxPixelDifference": 0,
+        "meanAbsoluteDifference": 0.0,
+        "changedPixels": 0,
+        "totalPixels": 2073600
+      }
+    },
+    "mainBinarySha256": "f48b0b67396f4504119a156a0a15df5ad240f8e1ee43a169dbfa8e31f389cfbe",
+    "branchBinarySha256": "647545d6b89dbacdee89506bccf75ae589701f9c3c31947c64f15a07f2611365"
+  },
+  "burst": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "originalFrames": 270,
+    "originalElapsedMs": 8997,
+    "normalClip": {
+      "frames": 240,
+      "seconds": 8,
+      "trimStartSeconds": 0.5,
+      "internalCuts": 0
+    },
+    "slowMotion": 0.25,
+    "hipLeadInAmmo": 30,
+    "afterBurstAmmo": 19,
+    "aimBlend": 0,
+    "maxCaptureIntervalMsAll": 149.618,
+    "maxCaptureIntervalMsAfterStartup": 54.521999999999935
+  },
+  "performance": {
+    "scenario": "Full-detail 1920x1080, fixed anchor camera, zero enemies, paused simulation, native rifle reload pinned at phase 0.5",
+    "warmupMs": 10000,
+    "measurementMs": 10000,
+    "profiling": false,
+    "vsync": false,
+    "frameCap": 0,
+    "limitation": "One matched window per build; whole-frame timings, not an isolated instruction microbenchmark. No enemy-scaled work was added.",
+    "main": {
+      "frames": 850,
+      "meanMs": 11.778662352941176,
+      "medianMs": 11.7980003356934,
+      "p95Ms": 12.66100025177,
+      "p99Ms": 12.8990001678467,
+      "caveats": [],
+      "engine": {
+        "headless": false,
+        "frameProfile": false,
+        "framesOnly": true,
+        "maxFps": 0,
+        "viewportSize": [
+          1920,
+          1080
+        ],
+        "vsyncMode": 0,
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      }
+    },
+    "branch": {
+      "frames": 832,
+      "meanMs": 12.040379807692307,
+      "medianMs": 11.8000001907349,
+      "p95Ms": 12.8680000305176,
+      "p99Ms": 23.5459995269775,
+      "caveats": [],
+      "engine": {
+        "headless": false,
+        "frameProfile": false,
+        "framesOnly": true,
+        "maxFps": 0,
+        "viewportSize": [
+          1920,
+          1080
+        ],
+        "vsyncMode": 0,
+        "videoAdapter": "AMD Radeon RX 9070 XT"
+      }
+    }
+  },
+  "validation": {
+    "pnpm test": "11/11 steps passed",
+    "focusedTests": 75,
+    "technicalReview": "kamran-reviewer: ready, no technical blockers",
+    "remainingGate": "Critics A/B framing agreement before PR"
+  },
+  "files": {
+    "main-anchor-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-anchor-hip-fc723cf099.png",
+    "main-anchor-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-anchor-ads-4e7d598f6f.png",
+    "main-avenue-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-avenue-hip-36685e73e4.png",
+    "main-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-avenue-ads-01babd59d1.png",
+    "main-park-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-park-hip-cc78d6ec92.png",
+    "main-park-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/main-park-ads-e5cb317b9b.png",
+    "branch-anchor-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/branch-anchor-hip-b58bc0203c.png",
+    "branch-anchor-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/branch-anchor-ads-4e7d598f6f.png",
+    "branch-avenue-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/branch-avenue-hip-f0123874c0.png",
+    "branch-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/branch-avenue-ads-3e5e36387b.png",
+    "branch-park-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/branch-park-hip-01d124905f.png",
+    "branch-park-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/branch-park-ads-e5cb317b9b.png",
+    "comparison-anchor-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-anchor-hip-78afb948f1.png",
+    "comparison-avenue-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-avenue-hip-a6572b33d8.png",
+    "comparison-park-hip.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-park-hip-920e45b112.png",
+    "comparison-anchor-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-anchor-ads-b36349fcdc.png",
+    "comparison-avenue-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-avenue-ads-9a14e9fed7.png",
+    "comparison-park-ads.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/comparison-park-ads-f4032539de.png",
+    "proof-anchor-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-anchor-ads-difference-8x-0f52608dd0.png",
+    "proof-avenue-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-avenue-ads-difference-8x-d0fcd34361.png",
+    "proof-park-ads-difference-8x.png": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/proof-park-ads-difference-8x-0f52608dd0.png",
+    "hip-burst-normal.mp4": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-normal-d29b8c48d8.mp4",
+    "hip-burst-quarter-speed.mp4": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/hip-burst-quarter-speed-6e10f2618b.mp4",
+    "ads-pixel-proof.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/ads-pixel-proof-d09b2294b9.json",
+    "burst-receipt.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/burst-receipt-800fca015f.json",
+    "branch-hip-burst.mp4.timing.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/branch-hip-burst.mp4.timing-6b4533f596.json",
+    "performance-summary.json": "https://raw.githubusercontent.com/KamranAsif/godmode-evidence/main/2026-10-27/performance-summary-8afbbf29ca.json"
+  }
+}
