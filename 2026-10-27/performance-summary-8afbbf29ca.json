@@ -1,0 +1,49 @@
+{
+  "scenario": "Full-detail 1920x1080, fixed anchor camera, zero enemies, paused simulation, native rifle reload pinned at phase 0.5",
+  "warmupMs": 10000,
+  "measurementMs": 10000,
+  "profiling": false,
+  "vsync": false,
+  "frameCap": 0,
+  "limitation": "One matched window per build; whole-frame timings, not an isolated instruction microbenchmark. No enemy-scaled work was added.",
+  "main": {
+    "frames": 850,
+    "meanMs": 11.778662352941176,
+    "medianMs": 11.7980003356934,
+    "p95Ms": 12.66100025177,
+    "p99Ms": 12.8990001678467,
+    "caveats": [],
+    "engine": {
+      "headless": false,
+      "frameProfile": false,
+      "framesOnly": true,
+      "maxFps": 0,
+      "viewportSize": [
+        1920,
+        1080
+      ],
+      "vsyncMode": 0,
+      "videoAdapter": "AMD Radeon RX 9070 XT"
+    }
+  },
+  "branch": {
+    "frames": 832,
+    "meanMs": 12.040379807692307,
+    "medianMs": 11.8000001907349,
+    "p95Ms": 12.8680000305176,
+    "p99Ms": 23.5459995269775,
+    "caveats": [],
+    "engine": {
+      "headless": false,
+      "frameProfile": false,
+      "framesOnly": true,
+      "maxFps": 0,
+      "viewportSize": [
+        1920,
+        1080
+      ],
+      "vsyncMode": 0,
+      "videoAdapter": "AMD Radeon RX 9070 XT"
+    }
+  }
+}
