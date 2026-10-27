@@ -1,0 +1,88 @@
+{
+  "interval": "direct-start fixture engine startup to first presented gameplay, engine clock; NOT GO LIVE",
+  "cache": "cold application cache then warm same cache; OS and driver caches retained",
+  "runsPerArm": 1,
+  "source": "e0bc87e1a plus common private measurement overlay",
+  "rows": [
+    {
+      "arm": "control",
+      "state": "cold",
+      "geometryMs": 7052.6860000000015,
+      "binarySha256": "ef9c96e76b52699519b116185d83f54ba21f2fc7a0817edff2f0918ac546a4e1",
+      "cache": "Godmode-startup-loading-fixture-control-1793086414405-1",
+      "gameplay": {
+        "phase": "gameplay.presented",
+        "atMs": 33544.424,
+        "textureBytes": 3443560448,
+        "bufferBytes": 2664141028,
+        "pipelines": {
+          "mesh": 497,
+          "surface": 757,
+          "draw": 3,
+          "specialization": 470
+        }
+      },
+      "engineStartupToGameplayMs": 33544.424
+    },
+    {
+      "arm": "control",
+      "state": "warm",
+      "geometryMs": 6967.418999999998,
+      "binarySha256": "ef9c96e76b52699519b116185d83f54ba21f2fc7a0817edff2f0918ac546a4e1",
+      "cache": "Godmode-startup-loading-fixture-control-1793086414405-1",
+      "gameplay": {
+        "phase": "gameplay.presented",
+        "atMs": 32703.324,
+        "textureBytes": 3443560448,
+        "bufferBytes": 2664141028,
+        "pipelines": {
+          "mesh": 497,
+          "surface": 757,
+          "draw": 3,
+          "specialization": 448
+        }
+      },
+      "engineStartupToGameplayMs": 32703.324
+    },
+    {
+      "arm": "fix",
+      "state": "cold",
+      "geometryMs": 7021.605,
+      "binarySha256": "7fd1c76f8622abcafc3eeeb5dff80e43ed72c2b3881c97a2586fdb5345f21ef1",
+      "cache": "Godmode-startup-loading-fixture-fix-1793086487640-1",
+      "gameplay": {
+        "phase": "gameplay.presented",
+        "atMs": 33738.781,
+        "textureBytes": 3443560448,
+        "bufferBytes": 2664141380,
+        "pipelines": {
+          "mesh": 494,
+          "surface": 759,
+          "draw": 5,
+          "specialization": 468
+        }
+      },
+      "engineStartupToGameplayMs": 33738.781
+    },
+    {
+      "arm": "fix",
+      "state": "warm",
+      "geometryMs": 6902.111000000001,
+      "binarySha256": "7fd1c76f8622abcafc3eeeb5dff80e43ed72c2b3881c97a2586fdb5345f21ef1",
+      "cache": "Godmode-startup-loading-fixture-fix-1793086487640-1",
+      "gameplay": {
+        "phase": "gameplay.presented",
+        "atMs": 32531.764,
+        "textureBytes": 3443560448,
+        "bufferBytes": 2664141028,
+        "pipelines": {
+          "mesh": 494,
+          "surface": 759,
+          "draw": 5,
+          "specialization": 474
+        }
+      },
+      "engineStartupToGameplayMs": 32531.764
+    }
+  ]
+}
