@@ -1,0 +1,841 @@
+{
+  "issue": 2355,
+  "branch": "art/shutter-concepts-2355",
+  "branchCommit": "390fbe0254e9b964ad96b76105bf64fd00abe91b",
+  "mainCommit": "994428693239461eb581736a6804135d18c0cd32",
+  "viewport": [
+    1920,
+    1080
+  ],
+  "preset": "High",
+  "scale3d": 1,
+  "lensCorrection": "off",
+  "motion": {
+    "seconds": 24,
+    "startMetres": 40,
+    "endMetres": 2,
+    "method": "Identical uncommitted camera-replay harness extension in both builds; eye-height oblique approach along the street",
+    "targetFinish": "galvanized",
+    "from": [
+      -453.00700073464105,
+      -15.274,
+      -369.6807601186313
+    ],
+    "to": [
+      -413.5771411510607,
+      -15.274,
+      -373.83842451335335
+    ],
+    "target": [
+      -413.4834609260218,
+      -15.274,
+      -375.8362293124858
+    ]
+  },
+  "timing": {
+    "metres": 5,
+    "warmupSeconds": 20,
+    "windows": 3,
+    "secondsPerWindow": 10,
+    "exclusiveTimingHold": true,
+    "holds": "Separate exclusive timing holds with the same fixed camera/settings; main baseline can run before branch build completes",
+    "components": false,
+    "instrumentation": "Wall-clock frame intervals only; no GPU/CPU component getters or profile timers",
+    "driftControl": "No bracketed control; differences smaller than baseline drift are inconclusive",
+    "scene": "Fixed photo-mode view, simulation held, 5 m from half-open galvanized shutter; same High settings; median of three 10 s window medians per build; unrecorded, uninstrumented wall-clock frame intervals (component collection off), uncapped, VSync disabled, separate exclusive timing holds; no bracketed drift control, so small differences are inconclusive"
+  },
+  "closedState": "Authored variants 2/3 (closed galvanized/charcoal), captured at the same retained frontage poses through the local Playtest variant-preview flag; normal map poses and half-open timing runs remain unchanged",
+  "publication": "GODMODE_PREBUILT_PUBLISH=0; final arena stored only in task-private arena-cache (on C: through worktree junction); shared content-addressed neutral geometry chunks reused, no completed branch arena in shared release fallback",
+  "hardware": "AMD Radeon RX 9070 XT; D3D12 Forward+; GodotJS 4.6.1 v8-nopc-2",
+  "variantMap": {
+    "0": "half-open galvanized",
+    "1": "half-open charcoal",
+    "2": "closed galvanized",
+    "3": "closed charcoal"
+  },
+  "localExportTooling": {
+    "sourceCommits": [
+      "01c770397",
+      "9e90e8fc4"
+    ],
+    "patchSha256": "23574b7d3c6adc4a502dcdf83ce08735887af83cba7718f0ae2f313c8d184c9a",
+    "purpose": "Bound native buffer copies during export and avoid redundant finalized-checkpoint walks; retain exact source/job and native file hash validation",
+    "preserveFailedCheckpoints": "Retain the preceding checkpoint on export failure; source job and all file hashes must still validate before any resume."
+  },
+  "packaging": "Local Windows Playtest preset, export-time shader precompilation disabled in both copies to permit headless CPU packaging; D3D12 Forward+ at runtime; warmed views for timing",
+  "localCompatibilityFix": "prop_collision_policy.ts accepts procedural shop companions by using their module ID when texturedMesh.path is absent; retains frontage collision class. Reproduced the source failure in CPU tests, then added a regression test.",
+  "scratchStorage": "Exported binaries retained locally through worktree junctions to C:/Users/Kam/AppData/Local/Temp/shutter-evidence-2355-20261027 to preserve D: space",
+  "localGpuQueueTooling": "Local CLI hold argument wait ceiling raised from 1h to4h for future requeues only; scheduler/FIFO, capture budgets and hold TTL unchanged",
+  "captureConcurrencyLimit": 3,
+  "previousShutterCommit": "1dcbefe30ca4e9bdaa266f571c6923aa7a150843",
+  "requestedShutterCommit": "ddfc6f1acdd322993582112f60bd56e93c502d22",
+  "sourceRebasedOnto": "30159a837b9413a9435da00b1fd67381927a72b0",
+  "captureTriangles": {
+    "halfOpen": [
+      364,
+      304,
+      90
+    ],
+    "closed": [
+      496,
+      436,
+      90
+    ],
+    "mapHalfOpenInstances": 222,
+    "allInstancesLod0UpperBound": 80808
+  },
+  "visualQA": "Five native exported-build stills and sampled walk-up frames inspected; no visible moire in samples; full clips supplied for temporal review. Capture has frame delivery gaps; this is not a performance recording.",
+  "shutterImplementationMatchesRequestedCommit": true,
+  "localEvidenceInstrumentationPatchSha256": "dcdde7c068784ab649fceaaffef12f9281ebb1ccf2595da1df3f5ddd282e992c",
+  "localSourceDeltaSha256": {
+    "main": "0aa4bb98d320d96c0a085efa16cba61066f672b3e4b802b610bea0563ab4947f",
+    "branch": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "results": {
+    "main": {
+      "label": "main",
+      "camera": {
+        "position": [
+          -413.71766148861906,
+          -15.274,
+          -370.84171731465466
+        ],
+        "rotation": [
+          0,
+          -0.046857257289538684,
+          0
+        ],
+        "fov": 75,
+        "near": 0.05,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "actualCamera": {
+        "line": 2,
+        "position": [
+          -413.7176513671875,
+          -15.27400016784668,
+          -370.8417053222656
+        ],
+        "rotation": [
+          0,
+          -0.046857260167598724,
+          0
+        ],
+        "fov": 75
+      },
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sceneReceipt": {
+        "mark": "shutter-five-metres",
+        "dofReview": {
+          "profile": "hip-off-ads-subtle",
+          "focusMeters": 30,
+          "targetMeters": 30,
+          "foreground": 0,
+          "periphery": 0,
+          "installed": false,
+          "amount": 0,
+          "farEnabled": false,
+          "nearEnabled": false,
+          "camera": {
+            "position": [
+              -413.7176513671875,
+              -15.27400016784668,
+              -370.8417053222656
+            ],
+            "rotation": [
+              0,
+              -0.046857260167598724,
+              0
+            ],
+            "fov": 75
+          },
+          "aimBlend": 0,
+          "graphics": {
+            "preset": "high",
+            "quality": {
+              "shadows": "high",
+              "ambientOcclusion": "high",
+              "indirectLight": "on",
+              "antiAliasing": "smaa",
+              "bloom": "on",
+              "detailDistance": "far",
+              "renderScale": "100",
+              "lensCorrection": "off"
+            },
+            "vsync": false,
+            "frameLimit": 0
+          }
+        },
+        "captureLighting": null,
+        "captureCamera": null,
+        "gunVisible": null,
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "30",
+          "reserve": "/ 90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": false
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": null,
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:55",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 0,
+            "deaths": 0,
+            "score": 0,
+            "you": true
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 1,
+          "names": [
+            "xXnoscopeXx"
+          ]
+        },
+        "feedEntries": [],
+        "pauseOpen": true,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 0,
+        "supplyMarkers": 0,
+        "supplyDrops": [],
+        "careSupply": {
+          "nextCrateInMs": 45835,
+          "drops": [],
+          "owned": []
+        },
+        "enemyCount": 5,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 30,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 267,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -499.4150390625,
+            -15.96875,
+            -403.34765625
+          ],
+          "yaw": -1.5707574304889742,
+          "pitch": 0,
+          "weaponReadyAtMs": 61380,
+          "weaponSwitchEndsAtMs": 61380,
+          "firedRevealUntilMs": 0,
+          "firedRevealPosition": [
+            0,
+            0,
+            0
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.028
+        }
+      },
+      "samples": [
+        {
+          "mark": "shutter-five-metres",
+          "durationMs": 10000,
+          "components": false,
+          "variant": {
+            "profile": "hip-off-ads-subtle",
+            "focusMeters": 30,
+            "targetMeters": 30,
+            "foreground": 0,
+            "periphery": 0,
+            "installed": false,
+            "amount": 0,
+            "farEnabled": false,
+            "nearEnabled": false
+          },
+          "aimBlend": 0,
+          "wallFrameMs": {
+            "samples": 1409,
+            "mean": 7.089171753016317,
+            "median": 7.052,
+            "p95": 8.157,
+            "p99": 8.523
+          },
+          "worldAndWeaponGpuMs": null,
+          "renderCpuMs": null,
+          "maxFps": 0,
+          "vsync": 0,
+          "graphics": {
+            "preset": "high",
+            "quality": {
+              "shadows": "high",
+              "ambientOcclusion": "high",
+              "indirectLight": "on",
+              "antiAliasing": "smaa",
+              "bloom": "on",
+              "detailDistance": "far",
+              "renderScale": "100",
+              "lensCorrection": "off"
+            },
+            "vsync": false,
+            "frameLimit": 0
+          }
+        },
+        {
+          "mark": "shutter-five-metres",
+          "durationMs": 10000,
+          "components": false,
+          "variant": {
+            "profile": "hip-off-ads-subtle",
+            "focusMeters": 30,
+            "targetMeters": 30,
+            "foreground": 0,
+            "periphery": 0,
+            "installed": false,
+            "amount": 0,
+            "farEnabled": false,
+            "nearEnabled": false
+          },
+          "aimBlend": 0,
+          "wallFrameMs": {
+            "samples": 1406,
+            "mean": 7.102529871977245,
+            "median": 7.041,
+            "p95": 8.341,
+            "p99": 8.603
+          },
+          "worldAndWeaponGpuMs": null,
+          "renderCpuMs": null,
+          "maxFps": 0,
+          "vsync": 0,
+          "graphics": {
+            "preset": "high",
+            "quality": {
+              "shadows": "high",
+              "ambientOcclusion": "high",
+              "indirectLight": "on",
+              "antiAliasing": "smaa",
+              "bloom": "on",
+              "detailDistance": "far",
+              "renderScale": "100",
+              "lensCorrection": "off"
+            },
+            "vsync": false,
+            "frameLimit": 0
+          }
+        },
+        {
+          "mark": "shutter-five-metres",
+          "durationMs": 10000,
+          "components": false,
+          "variant": {
+            "profile": "hip-off-ads-subtle",
+            "focusMeters": 30,
+            "targetMeters": 30,
+            "foreground": 0,
+            "periphery": 0,
+            "installed": false,
+            "amount": 0,
+            "farEnabled": false,
+            "nearEnabled": false
+          },
+          "aimBlend": 0,
+          "wallFrameMs": {
+            "samples": 1405,
+            "mean": 7.108052669039144,
+            "median": 7.091,
+            "p95": 8.06,
+            "p99": 8.295
+          },
+          "worldAndWeaponGpuMs": null,
+          "renderCpuMs": null,
+          "maxFps": 0,
+          "vsync": 0,
+          "graphics": {
+            "preset": "high",
+            "quality": {
+              "shadows": "high",
+              "ambientOcclusion": "high",
+              "indirectLight": "on",
+              "antiAliasing": "smaa",
+              "bloom": "on",
+              "detailDistance": "far",
+              "renderScale": "100",
+              "lensCorrection": "off"
+            },
+            "vsync": false,
+            "frameLimit": 0
+          }
+        }
+      ],
+      "medianFrameMs": 7.052,
+      "medianGpuMs": null,
+      "sourceHead": "994428693239461eb581736a6804135d18c0cd32",
+      "binarySha256": "18b6e09afffa45109e44bc3da0397694f3a57b205254114c0c9df77ead830876"
+    },
+    "branch": {
+      "label": "branch",
+      "camera": {
+        "position": [
+          -413.71766148861906,
+          -15.274,
+          -370.84171731465466
+        ],
+        "rotation": [
+          0,
+          -0.046857257289538684,
+          0
+        ],
+        "fov": 75,
+        "near": 0.05,
+        "far": 4000,
+        "keepAspect": 1
+      },
+      "actualCamera": {
+        "line": 2,
+        "position": [
+          -413.7176513671875,
+          -15.27400016784668,
+          -370.8417053222656
+        ],
+        "rotation": [
+          0,
+          -0.046857260167598724,
+          0
+        ],
+        "fov": 75
+      },
+      "resolution": [
+        1920,
+        1080
+      ],
+      "sceneReceipt": {
+        "mark": "shutter-five-metres",
+        "dofReview": {
+          "profile": "hip-off-ads-subtle",
+          "focusMeters": 30,
+          "targetMeters": 30,
+          "foreground": 0,
+          "periphery": 0,
+          "installed": false,
+          "amount": 0,
+          "farEnabled": false,
+          "nearEnabled": false,
+          "camera": {
+            "position": [
+              -413.7176513671875,
+              -15.27400016784668,
+              -370.8417053222656
+            ],
+            "rotation": [
+              0,
+              -0.046857260167598724,
+              0
+            ],
+            "fov": 75
+          },
+          "aimBlend": 0,
+          "graphics": {
+            "preset": "high",
+            "quality": {
+              "shadows": "high",
+              "ambientOcclusion": "high",
+              "indirectLight": "on",
+              "antiAliasing": "smaa",
+              "bloom": "on",
+              "detailDistance": "far",
+              "renderScale": "100",
+              "lensCorrection": "off"
+            },
+            "vsync": false,
+            "frameLimit": 0
+          }
+        },
+        "captureLighting": null,
+        "captureCamera": null,
+        "gunVisible": null,
+        "hudFont": "Rajdhani HUD",
+        "hud": {
+          "visible": false,
+          "magazine": "30",
+          "reserve": "/ 90",
+          "prompt": "",
+          "medal": "",
+          "scores": [],
+          "slots": [
+            {
+              "key": 1,
+              "id": "predatorMissile",
+              "ready": false
+            },
+            {
+              "key": 2,
+              "id": "precisionAirstrike",
+              "ready": false
+            },
+            {
+              "key": 3,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 4,
+              "id": "",
+              "ready": false
+            },
+            {
+              "key": 5,
+              "id": "",
+              "ready": false
+            }
+          ]
+        },
+        "latestScoreReceipt": null,
+        "width": 1920,
+        "height": 1078,
+        "chatActive": false,
+        "moderation": {
+          "hint": "TAB Interact with chat",
+          "badges": [],
+          "rows": [],
+          "buttons": [
+            {
+              "text": "[E] Thank tip",
+              "detail": "No tips waiting",
+              "enabled": false
+            },
+            {
+              "text": "[B] Ban troll",
+              "detail": "0 trolls in chat",
+              "enabled": false
+            },
+            {
+              "text": "[Q] Accept challenge",
+              "detail": "No challenge waiting",
+              "enabled": false
+            },
+            {
+              "text": "[SPACE] Run ads",
+              "detail": "Available in 0:56",
+              "enabled": false
+            }
+          ],
+          "shown": true,
+          "expanded": false,
+          "pulsing": false
+        },
+        "standings": [
+          {
+            "name": "xXnoscopeXx",
+            "kills": 0,
+            "deaths": 0,
+            "score": 0,
+            "you": true
+          }
+        ],
+        "scoreboardPage": {
+          "index": 0,
+          "pages": 1,
+          "names": [
+            "xXnoscopeXx"
+          ]
+        },
+        "feedEntries": [],
+        "pauseOpen": true,
+        "simulationPaused": true,
+        "serverRadar": false,
+        "radarActive": false,
+        "drawnMarkers": 0,
+        "supplyMarkers": 0,
+        "supplyDrops": [],
+        "careSupply": {
+          "nextCrateInMs": 35982,
+          "drops": [],
+          "owned": []
+        },
+        "enemyCount": 5,
+        "player": {
+          "mantle": null,
+          "id": 2,
+          "name": "xXnoscopeXx",
+          "team": "",
+          "role": "cheater",
+          "health": 100,
+          "runArmor": 0,
+          "grenades": 0,
+          "reserveAmmo": 90,
+          "loadedAmmo": 30,
+          "reloading": false,
+          "reloadScale": 1,
+          "aiming": false,
+          "crouching": false,
+          "sprinting": false,
+          "sprintRaiseEndsAtMs": 0,
+          "dashEndsAtMs": 0,
+          "dashReadyAtMs": 0,
+          "dashDirectionX": 0,
+          "dashDirectionZ": 0,
+          "grounded": true,
+          "verticalVelocity": 0,
+          "lastInputSequence": 286,
+          "kills": 0,
+          "deaths": 0,
+          "alive": true,
+          "respawnAtMs": null,
+          "position": [
+            -531.197265625,
+            -16.494140625,
+            -366.5927734375
+          ],
+          "yaw": -1.5707574304889742,
+          "pitch": 0,
+          "weaponReadyAtMs": 63345,
+          "weaponSwitchEndsAtMs": 63345,
+          "firedRevealUntilMs": 0,
+          "firedRevealPosition": [
+            0,
+            0,
+            0
+          ],
+          "invincible": true,
+          "category": "assault",
+          "startingWeapon": "machineGun",
+          "movementMultiplier": 1,
+          "infiniteAmmo": false,
+          "fireRateMultiplier": 1,
+          "weapon": "machineGun",
+          "accuracySpreadRadians": 0.028
+        }
+      },
+      "samples": [
+        {
+          "mark": "shutter-five-metres",
+          "durationMs": 10000,
+          "components": false,
+          "variant": {
+            "profile": "hip-off-ads-subtle",
+            "focusMeters": 30,
+            "targetMeters": 30,
+            "foreground": 0,
+            "periphery": 0,
+            "installed": false,
+            "amount": 0,
+            "farEnabled": false,
+            "nearEnabled": false
+          },
+          "aimBlend": 0,
+          "wallFrameMs": {
+            "samples": 1403,
+            "mean": 7.122283677833228,
+            "median": 7.081,
+            "p95": 8.126,
+            "p99": 8.335
+          },
+          "worldAndWeaponGpuMs": null,
+          "renderCpuMs": null,
+          "maxFps": 0,
+          "vsync": 0,
+          "graphics": {
+            "preset": "high",
+            "quality": {
+              "shadows": "high",
+              "ambientOcclusion": "high",
+              "indirectLight": "on",
+              "antiAliasing": "smaa",
+              "bloom": "on",
+              "detailDistance": "far",
+              "renderScale": "100",
+              "lensCorrection": "off"
+            },
+            "vsync": false,
+            "frameLimit": 0
+          }
+        },
+        {
+          "mark": "shutter-five-metres",
+          "durationMs": 10000,
+          "components": false,
+          "variant": {
+            "profile": "hip-off-ads-subtle",
+            "focusMeters": 30,
+            "targetMeters": 30,
+            "foreground": 0,
+            "periphery": 0,
+            "installed": false,
+            "amount": 0,
+            "farEnabled": false,
+            "nearEnabled": false
+          },
+          "aimBlend": 0,
+          "wallFrameMs": {
+            "samples": 1402,
+            "mean": 7.1248288159771835,
+            "median": 7.128,
+            "p95": 7.993,
+            "p99": 8.229
+          },
+          "worldAndWeaponGpuMs": null,
+          "renderCpuMs": null,
+          "maxFps": 0,
+          "vsync": 0,
+          "graphics": {
+            "preset": "high",
+            "quality": {
+              "shadows": "high",
+              "ambientOcclusion": "high",
+              "indirectLight": "on",
+              "antiAliasing": "smaa",
+              "bloom": "on",
+              "detailDistance": "far",
+              "renderScale": "100",
+              "lensCorrection": "off"
+            },
+            "vsync": false,
+            "frameLimit": 0
+          }
+        },
+        {
+          "mark": "shutter-five-metres",
+          "durationMs": 10000,
+          "components": false,
+          "variant": {
+            "profile": "hip-off-ads-subtle",
+            "focusMeters": 30,
+            "targetMeters": 30,
+            "foreground": 0,
+            "periphery": 0,
+            "installed": false,
+            "amount": 0,
+            "farEnabled": false,
+            "nearEnabled": false
+          },
+          "aimBlend": 0,
+          "wallFrameMs": {
+            "samples": 1401,
+            "mean": 7.13073019271949,
+            "median": 7.114,
+            "p95": 8.036,
+            "p99": 8.277
+          },
+          "worldAndWeaponGpuMs": null,
+          "renderCpuMs": null,
+          "maxFps": 0,
+          "vsync": 0,
+          "graphics": {
+            "preset": "high",
+            "quality": {
+              "shadows": "high",
+              "ambientOcclusion": "high",
+              "indirectLight": "on",
+              "antiAliasing": "smaa",
+              "bloom": "on",
+              "detailDistance": "far",
+              "renderScale": "100",
+              "lensCorrection": "off"
+            },
+            "vsync": false,
+            "frameLimit": 0
+          }
+        }
+      ],
+      "medianFrameMs": 7.114,
+      "medianGpuMs": null,
+      "sourceHead": "5435e1dbb71bcc064fa634319363cd3ac4f7b82c",
+      "binarySha256": "596590adbb65327df58969f6acb9cc90e9df534f6b28a86b20078a6bf3859ae2"
+    }
+  },
+  "viewportObserved": [
+    1920,
+    1078
+  ],
+  "frameTimeChangePercent": 0.8791832104367625
+}
