@@ -1,0 +1,187 @@
+{
+  "weapons": {
+    "drone": {
+      "tiers": [
+        "basic",
+        "basic",
+        "basic",
+        "basic",
+        "basic"
+      ],
+      "increments": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "totals": [
+        10,
+        20,
+        30,
+        40,
+        50
+      ],
+      "nativeFinal": "MAX 5/5; +50%"
+    },
+    "claymores": {
+      "tiers": [
+        "basic",
+        "pink",
+        "basic",
+        "basic",
+        "basic"
+      ],
+      "increments": [
+        10,
+        20,
+        10,
+        10,
+        10
+      ],
+      "totals": [
+        10,
+        30,
+        40,
+        50,
+        60
+      ],
+      "nativeFinal": "MAX 5/5; +60%"
+    },
+    "mortar": {
+      "tiers": [
+        "basic",
+        "pink",
+        "gold",
+        "pink",
+        "pink"
+      ],
+      "increments": [
+        10,
+        20,
+        40,
+        20,
+        20
+      ],
+      "totals": [
+        10,
+        30,
+        70,
+        90,
+        110
+      ],
+      "nativeFinal": "MAX 5/5; +110%"
+    },
+    "knives": {
+      "tiers": [
+        "pink",
+        "pink",
+        "basic",
+        "basic",
+        "basic"
+      ],
+      "increments": [
+        20,
+        20,
+        10,
+        10,
+        10
+      ],
+      "totals": [
+        20,
+        40,
+        50,
+        60,
+        70
+      ],
+      "nativeFinal": "MAX 5/5; +70%"
+    }
+  },
+  "armour": [
+    {
+      "offer": 21,
+      "tier": "basic",
+      "beforeGranted": 0,
+      "added": 10,
+      "afterGranted": 10,
+      "poolBefore": 30,
+      "poolAfter": 40,
+      "level": 1
+    },
+    {
+      "offer": 22,
+      "tier": "basic",
+      "beforeGranted": 10,
+      "added": 10,
+      "afterGranted": 20,
+      "poolBefore": 40,
+      "poolAfter": 50,
+      "level": 2
+    },
+    {
+      "offer": 28,
+      "tier": "pink",
+      "beforeGranted": 20,
+      "added": 15,
+      "afterGranted": 35,
+      "poolBefore": 50,
+      "poolAfter": 65,
+      "level": 3
+    },
+    {
+      "offer": 29,
+      "tier": "basic",
+      "beforeGranted": 35,
+      "added": 10,
+      "afterGranted": 45,
+      "poolBefore": 65,
+      "poolAfter": 75,
+      "level": 4
+    },
+    {
+      "offer": 30,
+      "tier": "gold",
+      "beforeGranted": 45,
+      "added": 30,
+      "afterGranted": 75,
+      "poolBefore": 75,
+      "poolAfter": 105,
+      "level": 5
+    },
+    {
+      "offer": 31,
+      "tier": "gold",
+      "beforeGranted": 75,
+      "added": 30,
+      "afterGranted": 105,
+      "poolBefore": 105,
+      "poolAfter": 135,
+      "level": 6
+    },
+    {
+      "offer": 34,
+      "tier": "basic",
+      "beforeGranted": 105,
+      "added": 10,
+      "afterGranted": 115,
+      "poolBefore": 135,
+      "poolAfter": 145,
+      "level": 7
+    },
+    {
+      "offer": 35,
+      "tier": "basic",
+      "beforeGranted": 115,
+      "added": 5,
+      "afterGranted": 120,
+      "poolBefore": 145,
+      "poolAfter": 150,
+      "level": 8
+    }
+  ],
+  "exclusives": {
+    "headshotAim": "BASIC 5 + GOLD 20 = 25%; 2/5 in native inventory",
+    "overclock": "COVERT 35 + BASIC 15 = 50%; 2/5 in selected offer"
+  },
+  "note": "Observed selected-offer text and installed panels are the authority. The raw automation ledger expectedAfterFromCatalog is a calculation; it omits current-armour headroom and predicts 125 where native clipping correctly grants 120."
+}
