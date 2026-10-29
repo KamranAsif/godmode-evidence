@@ -1,0 +1,13 @@
+Before: 61792ef4116b54740e3300da83959809a6b15e80; after: 0b1e525e4b4658e212b154a118e99f160378eba9. Threshold: p95 > +5%.
+
+| Segment | Median ms before -> after | p95 ms before -> after | p99 ms before -> after | 1% low FPS before -> after | p95 change | Result |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| shopping-street | 8.12 -> 8.96 | 11.81 -> 12.22 | 13.04 -> 13.28 | 36.25 -> 36.13 | 3.46% | within threshold |
+| firefight | 12.93 -> 13.69 | 16.66 -> 18.53 | 26.51 -> 29.10 | 23.48 -> 22.55 | 11.25% | REGRESSION |
+| intersection-explosions | 13.47 -> 13.94 | 16.42 -> 17.04 | 28.28 -> 29.25 | 21.47 -> 20.28 | 3.76% | within threshold |
+| under-bridge | 15.22 -> 15.88 | 17.55 -> 17.78 | 20.97 -> 20.64 | 25.30 -> 22.53 | 1.32% | within threshold |
+| waterfront-rcxd | 9.39 -> 9.58 | 12.72 -> 13.00 | 13.53 -> 13.70 | 34.65 -> 37.63 | 2.24% | within threshold |
+| park-foliage | 6.79 -> 6.98 | 8.20 -> 8.38 | 9.05 -> 9.01 | 102.83 -> 105.28 | 2.19% | within threshold |
+| chopper-gunner | 8.09 -> 8.64 | 11.12 -> 11.28 | 13.22 -> 13.54 | 53.49 -> 54.96 | 1.47% | within threshold |
+| bridge-view-nuke | 10.28 -> 10.48 | 12.63 -> 12.81 | 14.44 -> 13.98 | 43.72 -> 44.76 | 1.37% | within threshold |
+| overall | 9.25 -> 9.44 | 15.07 -> 15.64 | 17.04 -> 17.62 | 35.00 -> 34.04 | 3.76% | within threshold |
