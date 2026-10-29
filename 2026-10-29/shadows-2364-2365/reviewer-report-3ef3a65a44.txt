@@ -1,0 +1,28 @@
+kamran-reviewer: origin/main..912f5604e
+
+Verdict: READY WITH NITS to open the scoped shadow-fix PR. No blocking implementation findings. This is not certification that the 120 fps requirement is met: the measured 8.3 ms target remains unmet on both baseline and candidate and must stay prominent in the PR and delivery.
+
+Implementation and scope
+- The six-file diff is proportionate. shadowBlur 0.15 -> 1 uses the existing PCF path; angular distance, sun direction/energy, exposure, ambient, grading, opacity and fog stay unchanged.
+- shadow_casters.gd:7-28 removes the second native visibility-range cutoff from the existing shadow-only batches. The directional light retains its own shadow-distance/cascade policy. Cached-load refresh changes render-instance state once; it does not replace meshes, re-enable source casters, change camera visibility or add frame-loop work.
+- prebuilt_arena.ts:195 and :360 cover offline finalization and full-detail cached client loading. Server and cheap paths are unaffected. Existing prebuilt group naming is its own producer/consumer contract, not arbitrary camera pinning.
+- The changed native fixture exercises both newly built and legacy-capped proxies, preserves mesh identity/source-caster settings, and checks repeat calls. The lighting test retains the surrounding mood assertions.
+
+Important disclosed limitations (not hidden by the ready verdict)
+1. Budget is still missed. Standard 1440p/SMAA, frames-only ABBA results show route median 9.33 -> 9.43 ms, under-bridge 15.22 -> 15.89 ms, shopping street 8.32 -> 8.83 ms. The bridge's +0.67 ms is reproducible beyond its ~0.01 ms control drift. This is a real quality cost, not a free fix. Do not say the change stays inside 8.3 ms or that every scenario passes the performance comparison.
+2. The official comparisons flag route firefight p95 +11.25% in the first pair and intersection-explosions p95 +5.19% in the second pair. Include these or a link to complete results. Fixed 65-enemy combat medians improved (17.92 -> 15.74 ms), but the 10.4% control drift and first control's large tail spike prevent attributing a combat speedup to the shadow change.
+3. pnpm test is not an all-green run: 10/11 tiers passed, with the unrelated CLI record-removal test failing. The reported isolated official-wrapper rerun passed 1/1. Preserve that distinction in the PR; do not report full-suite PASS.
+4. Export/timing evidence is at 0b1e525e4 before the rebase, whereas targeted/native/full-suite validation is on 912f5604e. The rebase is the unrelated drone/audio/UI main change. Name both revisions. Clips share route/endpoints, but recording initialization does not align their first frames; do not offer them as synchronized time-index wipes.
+
+Nit
+- scripts/environment_modules/shadow_casters.gd:176 still says "Only their shadows have a range" next to copies now set to unlimited native instance range. It would be clearer to describe separate shadow render instances governed by the sun range. This is a comment only and does not warrant delaying native export evidence or reopening the pipeline.
+
+Evidence inspected
+- Read AGENTS.md, the requested reviewer contract, PERF.md, changed runtime code and both changed tests; git diff origin/main..HEAD and git diff --check (clean). No code was edited and no Godot/test processes were launched by this review.
+- Read final-performance/summary.json and both official route comparison reports. Checked a raw combat report: AMD Radeon RX 9070 XT, D3D12, viewport 2560x1440, frameProfile=false, framesOnly=true, maxFps=0, vsyncMode=0, clean measured checkout. The supplied driver uses an exclusive timing hold and ABBA order.
+- Inspected actual exported before-v2-bridge.png and fixed-v2-bridge.png: same view and mood, visibly wider/softer rail shadow edges. Inspected paired approach samples 01, 02 and 04: fixed building-detail shadows remain present over the approach, with near appearance retained. These are sampled visual checks, not a claim to have watched all 840 frames.
+- Read native fixture output: {cameraTriangles:2, ok:true, reducedShadowTriangles:1, shadowBatches:2, unknownStateRejected:true}.
+- Read full-suite failure details at C:/Users/Kam/.local/state/agentview/jobs/mvtaise6z6d/log.txt. The failure concerns CLI process-record ownership, which this PR does not modify; no surviving fake engines were reported. Targeted 60/60 and isolated rerun outcomes are supplied by the author and were not rerun by this reviewer.
+- Native before/after lighting receipts and walk displacement are supplied in the packet. Uploading individual frames/reference-first comparison rows and linking the continuous clip remains the author's publication step.
+
+No safety, authority, or resource-ownership issue found in the committed change. Publication must retain the performance and test caveats above; readiness here is for review of this scoped fix, not an assertion that the user's absolute frame-time target has been achieved.
